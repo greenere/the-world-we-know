@@ -15,7 +15,9 @@ import {type IControl, type Map as MlMap, type MapLayerMouseEvent, Marker} from 
 import type {AppData} from './data';
 import {bookShelf, homeAt, loadBooks, loadData, loadZh} from './data';
 import {getLang, initialLang, isZh, type Lang, rememberLang, setLang, t, tx} from './i18n';
-import {FogField} from './fog/field';
+import {ensembleFor, fallbackOf, homeOf, landAt, styleFor, traditionFor, type Tradition} from './audio/choose';
+import {type Hearing, Music} from './audio/music';
+import {FogField, fogAmount} from './fog/field';
 import {buildGrid, cellAt, type Grid} from './fog/grid';
 import type {FogLayerUniforms} from './fog/layer';
 import type {JourneyGeo} from './journey-geo';
@@ -28,6 +30,7 @@ import {DEFAULT_STATE, isListPanel, type ListPanel, readUrl, type Shelf, SHELVES
 import {formatRange, formatYear, PRESENT, START} from './time';
 import type {Living, SearchEntry, VpId} from './types';
 import {About} from './ui/about';
+import {Settings} from './ui/settings';
 import {Cards, type JourneyAt, levelName} from './ui/cards';
 import {JourneyCard} from './ui/journey-card';
 import {hexToRgb, mixHex, rgb01} from './ui/color';
@@ -88,6 +91,7 @@ class App {
     search: Search;
     inset: Inset;
     about: About;
+    settings: Settings;
   };
   tip: HTMLElement;
   private labelCanvas: HTMLCanvasElement;
@@ -115,6 +119,64 @@ class App {
   private highlightMask: Uint8Array | null = null;
   /** The auto camera on the timeline: frames what the viewpoint knows and widens with it. */
   private widen: WideningFrame;
+  /** The music follows how much of the world is known and whether time is running. Off until asked for. */
+  private music = new Music(() => this.hearing());
+  private travellerKey = '';
+  private travellerAt: [number, number] | null = null;
+
+  /**
+   * What the music should play now. A tradition picked in the settings, or, while following a journey, the
+   * music of the land the traveller is passing through (their own at sea), or else the viewpoint's in this year.
+   */
+  private hearing(): Hearing & {why: string} {
+    const s = this.store.state;
+    const sc = this.data.soundscapes;
+    const geo = this.geo(s.journey);
+    let tradition: Tradition;
+    let vp: VpId | null = s.vps[0];
+    let why: string;
+    if (this.music.audition) {
+      tradition = sc.traditions.find(x => x.id === this.music.audition) ?? fallbackOf(sc);
+      vp = homeOf(sc, tradition.id);
+      why = t('Chosen in the settings');
+    } else if (geo) {
+      const key = `${geo.journey.id}|${s.progress.toFixed(2)}`;
+      if (key !== this.travellerKey) {
+        this.travellerKey = key;
+        this.travellerAt = travelled(geo, s.progress).pos;
+      }
+      const pos = this.travellerAt;
+      const land = pos ? landAt(sc, this.data, this.grid, pos[0], pos[1], s.year) : null;
+      vp = land?.vp ?? geo.journey.viewpoint;
+      tradition = traditionFor(sc, vp, s.year);
+      const j = geo.journey;
+      const who = (j.traveler && tx.journey(j.id, 'traveler', j.traveler)) || tx.journey(j.id, 'name', j.name);
+      const region = land ? this.data.regionById.get(land.region) : undefined;
+      why = region ? t('With {who}, in {place}', {who, place: tx.region(region.id, region.name)}) : t('With {who}', {who});
+    } else {
+      tradition = traditionFor(sc, s.vps[0], s.year);
+      why = t('{vp} in {year}', {vp: tx.viewpoint(s.vps[0], 'name', this.data.vp[s.vps[0]].name), year: formatYear(Math.round(s.year))});
+    }
+    const {style, voices} = styleFor(tradition, this.data, vp, s.year);
+    return {known: this.knownShare(), moving: s.playing || this.travelTarget !== null, style, voices, ...ensembleFor(tradition, this.data, vp, s.year), why};
+  }
+  private knownKey = '';
+  private known = 0;
+
+  /** How much of the world the viewpoints on show know, 0–1: the share of the map their fog has left. */
+  private knownShare(): number {
+    const {vps, year} = this.store.state;
+    const key = `${vps.join()}|${Math.round(year / 2)}`;
+    if (key === this.knownKey) return this.known;
+    const {grid} = this;
+    let clear = 0;
+    for (const vp of vps) {
+      const {level} = this.field.levelsFor(vp, year);
+      for (let c = 0; c < grid.count; c++) clear += 1 - fogAmount(level[c], grid.land[c] === 1, grid.coastal[c] === 1);
+    }
+    this.knownKey = key;
+    return (this.known = clear / (grid.count * vps.length));
+  }
 
   /** A region and every region inside it, by index: so Africa outlines the whole continent. */
   private regionMask(id: string): Uint8Array {
@@ -140,6 +202,11 @@ class App {
     this.widen = new WideningFrame(grid, this.field, this.map);
 
     this.ui = this.buildUi();
+    // The music button in the top bar and the settings both show the music's state.
+    this.music.onChange = () => {
+      this.ui.top.showMusic();
+      this.ui.settings.refresh();
+    };
     this.tip = h('div.hover-tip');
     this.labelCanvas = h('canvas.label-canvas', {'aria-hidden': 'true'});
     document.getElementById('map')!.after(this.labelCanvas);
@@ -171,7 +238,7 @@ class App {
       flyTo: (lng: number, lat: number, zoom?: number) => this.map.flyTo({center: [lng, lat], zoom: zoom ?? this.map.getZoom()}),
     };
     const ui: App['ui'] = {
-      top: new TopBar(data, this.store, () => this.setLanguage(isZh() ? 'en' : 'zh')),
+      top: new TopBar(data, this.store, () => this.setLanguage(isZh() ? 'en' : 'zh'), this.music),
       timeline: new Timeline(data, this.store, d => this.step(d), id => this.openInvention(id), id => this.ui.journey.openEra(id), id => this.startJourney(id)),
       cards: new Cards(data, this.store, this.field, actions),
       journey: new JourneyPanel(data, this.store, this.field, {
@@ -212,6 +279,10 @@ class App {
       search: new Search(data, this.store, e => this.choose(e)),
       inset: new Inset(data),
       about: new About(data, this.store),
+      settings: new Settings(data, this.store, this.music, {
+        openLiving: id => this.openLiving(id),
+        openCity: id => this.openCity(id, true),
+      }),
     };
     this.uiNodes = [
       ui.top.el,
@@ -222,6 +293,7 @@ class App {
       ui.timeline.el,
       ui.search.el,
       ui.about.el,
+      ui.settings.el,
     ];
     document.getElementById('app')!.prepend(...this.uiNodes);
     return ui;
@@ -343,6 +415,7 @@ class App {
     this.ui.journey.update(s);
     this.ui.search.update(s);
     this.ui.about.update(s);
+    this.ui.settings.update(s);
     this.ui.inset.update(s, geo, performance.now());
     document.documentElement.style.setProperty('--vp', this.data.vp[s.vps[0]].color);
     document.body.classList.toggle('has-journey', !!s.journey || isListPanel(s.panel));
@@ -881,7 +954,7 @@ class App {
 
   /** When a viewpoint came to know a plant or animal, on the timeline's scale. */
   private livingYear(x: Living, vp: VpId): number {
-    return Math.max(START, Math.min(PRESENT, Math.round(x.known[vp] ?? x.origin.mid)));
+    return Math.max(START, Math.min(PRESENT, Math.round(x.kind === 'music' ? x.origin.mid : x.known[vp] ?? x.origin.mid)));
   }
 
   /** Open a plant or animal at the year the viewpoint came to know it (or at `year`), framing where it spread. */
@@ -1146,7 +1219,7 @@ class App {
       return target instanceof HTMLElement && (target.isContentEditable || !!target.closest('input, textarea, select'));
     };
     const blocked = (e: KeyboardEvent) => e.defaultPrevented || e.isComposing || e.altKey || e.ctrlKey || e.metaKey || editing(e);
-    const overlayOpen = () => this.store.state.search || this.store.state.panel === 'about' || !!document.querySelector('.lightbox');
+    const overlayOpen = () => this.store.state.search || this.store.state.panel === 'about' || this.store.state.panel === 'settings' || !!document.querySelector('.lightbox');
 
     // Capture card navigation before MapLibre can use arrows to pan a focused map.
     document.addEventListener('keydown', e => {
@@ -1177,6 +1250,8 @@ class App {
       if (e.key === '/') {
         e.preventDefault();
         this.store.set({search: true});
+      } else if (e.key === 'm' || e.key === 'M') {
+        this.ui.top.toggleMusic();
       } else if (e.key === ' ' || e.code === 'Space') {
         if (t?.tagName === 'BUTTON') return;
         e.preventDefault();

@@ -1,3 +1,4 @@
+import type {Soundscapes} from './audio/choose';
 import type {
   Beyond,
   Book,
@@ -39,6 +40,8 @@ export interface AppData {
   inventions: Invention[];
   inventionById: Map<string, Invention>;
   living: Living[];
+  /** The music: its traditions, and who hears which where (data/soundscapes.json). */
+  soundscapes: Soundscapes;
   livingById: Map<string, Living>;
   sources: Record<string, Source>;
   search: SearchEntry[];
@@ -62,7 +65,7 @@ export function dataUrl(path: string): string {
 export async function loadData(): Promise<AppData> {
   const manifest = await get<{version: string}>('manifest.json', String(Date.now()));
   const v = manifest.version;
-  const [viewpoints, regions, cities, journeys, series, inventions, living, sources, search, grid, beyond, ...fogs] = await Promise.all([
+  const [viewpoints, regions, cities, journeys, series, inventions, living, soundscapes, sources, search, grid, beyond, ...fogs] = await Promise.all([
     get<Viewpoint[]>('viewpoints.json', v),
     get<Region[]>('regions.json', v),
     get<City[]>('cities.json', v),
@@ -70,6 +73,7 @@ export async function loadData(): Promise<AppData> {
     get<Series[]>('series.json', v),
     get<Invention[]>('inventions.json', v),
     get<Living[]>('living.json', v),
+    get<Soundscapes>('soundscapes.json', v),
     get<Record<string, Source>>('sources.json', v),
     get<SearchEntry[]>('search.json', v),
     get<GridDoc>('grid.json', v),
@@ -94,6 +98,7 @@ export async function loadData(): Promise<AppData> {
     inventionById: new Map(inventions.map(x => [x.id, x])),
     living,
     livingById: new Map(living.map(x => [x.id, x])),
+    soundscapes,
     sources,
     search,
     grid,

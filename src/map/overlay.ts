@@ -42,6 +42,8 @@ const BRASS: [number, number, number] = [138, 102, 40];
 const RUBRIC: [number, number, number] = [155, 47, 32];
 /** Natural landmarks: a muted moss green, apart from the ink of what people built. */
 const MOSS: [number, number, number] = [72, 94, 58];
+/** Music's ink on the map and its shelf. */
+const PLUM: [number, number, number] = [110, 62, 92];
 /** Canals: the blue-grey of deep water. */
 const CANAL: [number, number, number] = [62, 98, 116];
 /** Italic labels in English. Chinese has no italic, and an italic face over every Chinese character overflows
@@ -1030,7 +1032,7 @@ export class OverlayModel {
   private livingLayers(state: State, P: (p: LngLat) => LngLat, now: number): Layer[] {
     const x: Living | undefined = state.living ? this.ctx.data.livingById.get(state.living) : undefined;
     if (!x) return [];
-    const ink = x.kind === 'plant' ? MOSS : BRASS;
+    const ink = x.kind === 'plant' ? MOSS : x.kind === 'music' ? PLUM : BRASS;
     const vp = state.vps[0];
     const vpColor = hexToRgb(this.ctx.data.vp[vp].color);
     const points: LivingPoint[] = [

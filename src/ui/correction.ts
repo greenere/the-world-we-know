@@ -10,7 +10,7 @@ export const REPO_URL = 'https://github.com/Greenere/the-world-we-know';
 /** What a card shows, as a correction needs to name it: its kind and id, its English name, and what the card
  * says at the moment of the click (in English, whatever the reader's language: it is for whoever keeps the data). */
 export interface Subject {
-  kind: 'region' | 'place' | 'journey' | 'invention' | 'book' | 'plant or animal';
+  kind: 'region' | 'place' | 'journey' | 'invention' | 'book' | 'plant or animal' | 'music';
   id: string;
   name: string;
   context?: (s: State) => string[];

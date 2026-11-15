@@ -58,6 +58,7 @@ export class TopBar {
   private chips = new Map<VpId, HTMLButtonElement>();
   private compareBtn: HTMLButtonElement;
   private globeBtn: HTMLButtonElement;
+  private musicBtn: HTMLButtonElement;
   /** The left panel's two faces: where people went, and what they came to know that travelled. */
   private journeysBtn: HTMLButtonElement;
   private discoveriesBtn: HTMLButtonElement;
@@ -71,6 +72,7 @@ export class TopBar {
     private data: AppData,
     private store: Store,
     private onLang: () => void,
+    private music: {enabled: boolean; toggle(): boolean},
   ) {
     const chips = ALL_VPS.map(id => {
       const vp = data.vp[id];
@@ -152,7 +154,7 @@ export class TopBar {
     );
     this.discoveriesBtn = h(
       'button.tool.tool-wide',
-      {type: 'button', title: t('Inventions, books, plants and animals'), onclick: () => this.togglePanel('discoveries')},
+      {type: 'button', title: t('Inventions, books, plants and animals, and music'), onclick: () => this.togglePanel('discoveries')},
       h('span.tool-icon', {html: livingIcons.plant}),
       h('span.tool-label', t('Discoveries')),
     );
@@ -162,12 +164,16 @@ export class TopBar {
       'aria-label': t('Toggle globe view'),
       onclick: () => store.set({globe: !store.state.globe}),
     });
+    this.musicBtn = h('button.tool.tool-music', {type: 'button', onclick: () => this.toggleMusic()});
+    this.showMusic();
     this.note = h('div.cartouche-note.panel');
     const about = h('button.tool', {type: 'button', title: t('About this atlas'), 'aria-label': t('About'), onclick: () => this.togglePanel('about'), html: icons.info});
     const tools = h(
       'div.tools',
       h('button.tool', {type: 'button', title: t('Search  /'), 'aria-label': t('Search'), onclick: () => store.set({search: true}), html: icons.search}),
       this.globeBtn,
+      this.musicBtn,
+      h('button.tool', {type: 'button', title: t('Settings and music'), 'aria-label': t('Settings'), onclick: () => this.togglePanel('settings'), html: icons.settings}),
       h(
         'button.tool.tool-lang',
         {type: 'button', title: getLang() === 'zh' ? 'English' : '中文', 'aria-label': getLang() === 'zh' ? 'Switch to English' : '切换到中文', onclick: () => this.onLang()},
@@ -265,7 +271,21 @@ export class TopBar {
     this.moreBtn.classList.remove('open');
   }
 
-  private togglePanel(p: 'journeys' | 'discoveries' | 'about') {
+  /** The music is the reader's to turn on: it starts silent, and the choice is remembered. */
+  toggleMusic() {
+    this.music.toggle();
+  }
+
+  /** Show whether the music is on (it can be turned on or off from the settings too). */
+  showMusic() {
+    const on = this.music.enabled;
+    setIcon(this.musicBtn, on ? icons.music : icons.musicOff);
+    this.musicBtn.title = on ? t('Turn the music off  M') : t('Turn the music on  M');
+    this.musicBtn.setAttribute('aria-label', t('Music'));
+    this.musicBtn.setAttribute('aria-pressed', String(on));
+  }
+
+  private togglePanel(p: 'journeys' | 'discoveries' | 'about' | 'settings') {
     this.store.set({panel: this.store.state.panel === p ? 'none' : p});
   }
 

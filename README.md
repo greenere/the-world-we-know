@@ -30,14 +30,14 @@
   - Wonders within a city (the Alhambra in Granada) are listed on their city's card.
 - **82 inventions** that changed how people saw the world, from the spoked-wheel chariot to GPS. Those made in a city are listed on its card.
 - **53 plants and animals**, and how word of them spread: maize from Mexico to China, tea to Europe by caravan and by sea, the giraffe greeted as a qilin at the Ming court, the camel across the Sahara, vanilla freed from Mexico by a boy on Réunion, and the dodo, the great auk, the passenger pigeon and the thylacine lost. Each has the year every viewpoint came to know it, and its arrivals marked on the map.
-- **449 books** the atlas is drawn from: 240 works written in their own time, from Herodotus and the Shiji to Ma Huan, Ibn Battuta and Darwin, and 209 modern studies. Each book's card shows what it brought: the regions it made known to each viewpoint, and the journeys, places, inventions, plants and animals it tells of. The bound books among the inventions, such as Ortelius's atlas, are shelved here too.
+- **466 books** the atlas is drawn from: 240 works written in their own time, from Herodotus and the Shiji to Ma Huan, Ibn Battuta and Darwin, and 226 modern studies. Each book's card shows what it brought: the regions it made known to each viewpoint, and the journeys, places, inventions, plants and animals it tells of. The bound books among the inventions, such as Ortelius's atlas, are shelved here too.
 - **505 cities** that rise, fall to ruin, are forgotten and are found again, named as each viewpoint named them.
-- **Two panels.** Journeys holds the journeys and landmarks; Discoveries holds the inventions, the books, and the plants and animals.
+- **Two panels.** Journeys holds the journeys and landmarks; Discoveries holds the inventions, the books, the plants and animals, and music: a dozen instruments and ways of writing music down, each with the places it travelled to.
 - **Compare mode** for two viewpoints, a globe as well as the flat map, and a timeline marked with shared eras: from Out of Africa to One shared map. While you follow a journey, the timeline becomes the journey's own: land and sea legs, long stays folded with their length, and the news reaching home. The auto camera beside the play button frames what a viewpoint knows and widens with it as the timeline plays; touching the map hands the camera back to you.
 
 Every view is a link: `?vp=china&year=1420`, `?vp=europe,china&year=1420`, `?journey=zhenghe&stop=4`, `?city=loulan`, `?invention=magnetic-compass`, `?living=maize&vp=china`, `&globe=1`, `&lang=zh`.
 
-Keys: ← → key moments or journey stops · Shift ← → one year · Space play · `/` search · Esc close.
+Keys: ← → key moments or journey stops · Shift ← → one year · Space play · `/` search · `M` music · Esc close. The gear opens the settings, which list the music's traditions.
 
 ## How knowledge is modelled
 
@@ -114,6 +114,8 @@ The map is drawn with [MapLibre GL](https://maplibre.org/) and [deck.gl](https:/
 | `landmarks.csv` | Built and natural landmarks: dates, first encounters (`found`), when each became widely known (`widely`), story |
 | `landmark-paths.json` | Courses of walls, canals and canyons, and the ages of those rebuilt over time |
 | `inventions.json` | Instruments and ideas: when, where, who, what they changed, and the city they were made in |
+| `soundscapes.json` | The music: its traditions (scale, voices, manner, the instruments on the Music shelf it is played on), which one each viewpoint hears in which years, and whose music is heard in each land. A composed tradition also has an ensemble of sampled instruments and its surviving pieces, in a plain `pitch:beats` notation with sources |
+| `music.json` | Instruments and ways of keeping music: origin and dated arrivals, in the same form as `living.json` |
 | `living.json` | Plants and animals: origin, which viewpoints knew them from the start, and dated arrivals and encounters |
 | `names.csv` | What each viewpoint called each place, and when |
 | `sources.csv` | Every source cited, with its full citation, and whether it is a work of its time, a modern study or a record, when it was written and whose it is |

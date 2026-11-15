@@ -17,6 +17,9 @@ export const icons = {
   /** The atlas's own mark, before its name: a compass rose in red ink. */
   rose:
     '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10.5" stroke-width="1"/><circle cx="12" cy="12" r="7.6" stroke-width=".6"/><path d="M12 2.6 13.5 12 12 21.4 10.5 12z" fill="currentColor" stroke="none"/><path d="M2.6 12 12 10.6 21.4 12 12 13.4z" fill="currentColor" stroke="none" opacity=".5"/></svg>',
+  music: wrap('<path d="M7.6 14.4V5.2l8-1.7v9.3"/><ellipse cx="5.7" cy="14.4" rx="1.9" ry="1.5"/><ellipse cx="13.7" cy="12.8" rx="1.9" ry="1.5"/>'),
+  musicOff: wrap('<path d="M7.6 14.4V5.2l8-1.7v9.3" opacity=".45"/><ellipse cx="5.7" cy="14.4" rx="1.9" ry="1.5" opacity=".45"/><ellipse cx="13.7" cy="12.8" rx="1.9" ry="1.5" opacity=".45"/><path d="M3.6 3.6l12.8 12.8"/>'),
+  settings: wrap('<circle cx="10" cy="10" r="2.3"/><circle cx="10" cy="10" r="5.2"/><path d="M10 2.4v2.4M10 15.2v2.4M2.4 10h2.4M15.2 10h2.4M4.6 4.6l1.7 1.7M13.7 13.7l1.7 1.7M4.6 15.4l1.7-1.7M13.7 6.3l1.7-1.7"/>'),
   info: wrap('<circle cx="10" cy="10" r="7"/><path d="M10 9v4.6"/><circle cx="10" cy="6.4" r=".4" fill="currentColor"/>'),
   compare: wrap('<circle cx="7.6" cy="10" r="4.6"/><circle cx="12.4" cy="10" r="4.6"/>'),
   compass: wrap(
@@ -85,8 +88,9 @@ export const inventionIcons: Record<string, string> = {
   imaging: wrap('<path d="M2.5 10s3-5 7.5-5 7.5 5 7.5 5-3 5-7.5 5-7.5-5-7.5-5z"/><circle cx="10" cy="10" r="2.4"/>'),
 };
 
-/** Plants and animals: a sprig and a paw print. */
+/** Plants and animals: a sprig and a paw print. Music, shelved apart but spread the same way: a lyre. */
 export const livingIcons: Record<string, string> = {
+  music: wrap('<path d="M6.2 3c-2 3.6-1.9 8.3 1 11.8h5.6c2.9-3.5 3-8.2 1-11.8"/><path d="M5.3 6.4h9.4M8.2 6.4v8.4M10 6.4v8.4M11.8 6.4v8.4M8 17h4"/>'),
   plant: wrap('<path d="M10 17.5V8"/><path d="M10 11.5c-4.2.4-6.3-2.2-6-6 3.8-.3 6.2 2 6 6zM10 9c.1-3.6 2.3-5.8 6-5.6.2 3.7-2.3 5.9-6 5.6z"/>'),
   animal: wrap('<ellipse cx="10" cy="13.4" rx="3.6" ry="3"/><ellipse cx="5" cy="9" rx="1.5" ry="1.9"/><ellipse cx="8.2" cy="5.6" rx="1.5" ry="1.9"/><ellipse cx="11.8" cy="5.6" rx="1.5" ry="1.9"/><ellipse cx="15" cy="9" rx="1.5" ry="1.9"/>'),
 };

@@ -2,14 +2,14 @@ import type {VpId} from './types';
 import {getLang} from './i18n';
 import {ALL_VPS} from './types';
 
-export type Panel = 'none' | 'journeys' | 'discoveries' | 'about';
+export type Panel = 'none' | 'journeys' | 'discoveries' | 'about' | 'settings';
 
 /** Which list the left panel shows. */
-export type Shelf = 'journeys' | 'landmarks' | 'inventions' | 'books' | 'living';
+export type Shelf = 'journeys' | 'landmarks' | 'inventions' | 'books' | 'living' | 'music';
 
 /** The left panel's two faces and their lists: where people went and what they built, and what they came to
- * know of that travelled (instruments and ideas, the books that carried the news, plants and animals). */
-export const SHELVES = {journeys: ['journeys', 'landmarks'], discoveries: ['inventions', 'books', 'living']} as const satisfies Record<string, Shelf[]>;
+ * know of that travelled (instruments and ideas, the books that carried the news, plants and animals, music). */
+export const SHELVES = {journeys: ['journeys', 'landmarks'], discoveries: ['inventions', 'books', 'living', 'music']} as const satisfies Record<string, Shelf[]>;
 
 export type ListPanel = keyof typeof SHELVES;
 

@@ -3,6 +3,7 @@ import type {State, Store} from '../state';
 import type {SearchEntry} from '../types';
 import {h} from './dom';
 import {icons, inventionIcons, kindIcons, livingIcons} from './icons';
+import {KIND_NAMES} from './cards';
 import {t, tx} from '../i18n';
 import {formatRange} from '../time';
 
@@ -128,7 +129,7 @@ export class Search {
             : inv
               ? `${t('Invention')} · ${formatRange(inv.year)} · ${tx.invention(inv.id, 'place', inv.place)}`
               : lv
-                ? `${t(lv.kind === 'plant' ? 'Plant' : 'Animal')} · ${tx.living(lv.id, 'place', lv.origin.place)}`
+                ? `${t(KIND_NAMES[lv.kind])} · ${tx.living(lv.id, 'place', lv.origin.place)}`
                 : t(entry.t === 'city' ? 'City' : 'Region');
         const el = h(
           'li.search-item',

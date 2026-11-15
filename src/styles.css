@@ -1823,13 +1823,17 @@ kbd {
   background: color-mix(in srgb, var(--chip) 11%, transparent);
 }
 
-/* Plants in moss green, animals in brass, as their arcs are drawn on the map. */
+/* Plants in moss green, animals in brass, music in plum, as their arcs are drawn on the map. */
 .living-plant {
   --chip: #485e3a;
 }
 
 .living-animal {
   --chip: var(--brass);
+}
+
+.living-music {
+  --chip: #6e3e5c;
 }
 
 .living-item.current {
@@ -3977,4 +3981,206 @@ kbd {
 
 .jp-gantt .g-bar.g-sub {
   opacity: 0.7;
+}
+
+/* Settings: the music. A switch and a level, what is playing now, and the list of traditions. */
+.settings {
+  width: min(680px, calc(100vw - 32px));
+}
+
+.sound-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+  margin: 18px 0 8px;
+}
+
+.sound-switch,
+.sound-volume {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.switch {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  border-radius: 999px;
+  border: 1px solid var(--rule-2);
+  background: color-mix(in srgb, var(--ink) 8%, var(--paper));
+  transition: background 0.2s ease;
+}
+
+.switch-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: 0 1px 2px rgba(46, 31, 14, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.switch.on {
+  background: var(--rubric, #9b2f20);
+  border-color: transparent;
+}
+
+.switch.on .switch-knob {
+  transform: translateX(18px);
+}
+
+.volume {
+  width: 150px;
+  accent-color: var(--rubric, #9b2f20);
+}
+
+.volume:disabled {
+  opacity: 0.45;
+}
+
+.sound-now {
+  margin: 4px 0 6px;
+  padding: 8px 12px;
+  border-left: 2px solid #6e3e5c;
+  background: color-mix(in srgb, #6e3e5c 6%, transparent);
+  font-size: 14.5px;
+}
+
+.sound-now-label {
+  font-family: var(--font-sc);
+  letter-spacing: 0.05em;
+  color: var(--ink-2);
+}
+
+.sound-why {
+  color: var(--ink-2);
+}
+
+.sound-follow {
+  margin-left: 10px;
+  font-size: 13.5px;
+}
+
+.sound-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sound-item {
+  padding: 12px 0 14px;
+  border-top: 1px solid var(--rule);
+}
+
+.sound-item:first-child {
+  border-top: 0;
+}
+
+.sound-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sound-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.sound-item.playing .sound-name::after {
+  content: ' ♪';
+  color: #6e3e5c;
+}
+
+.sound-listen {
+  flex: none;
+  padding: 2px 12px 3px;
+  border: 1px solid var(--rule-2);
+  border-radius: 999px;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+
+.sound-listen:hover,
+.sound-listen.active {
+  color: #6e3e5c;
+  border-color: #6e3e5c;
+  background: color-mix(in srgb, #6e3e5c 8%, transparent);
+}
+
+.sound-summary {
+  margin: 4px 0 4px !important;
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+
+.sound-meta {
+  margin: 0 0 8px !important;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+
+.sound-meta strong {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.sound-item .card-src {
+  margin-top: 8px;
+  font-size: 12.5px;
+}
+
+/* On phones the note's quick switch gives way: the settings hold it. */
+@media (max-width: 760px) {
+  .tool-music {
+    display: none;
+  }
+}
+
+.sound-pieces {
+  margin: 2px 0 10px;
+  padding: 0 0 0 12px;
+  border-left: 1px solid var(--rule);
+  list-style: none;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.sound-pieces li {
+  margin: 4px 0;
+}
+
+.sound-pieces strong {
+  font-weight: 500;
+}
+
+.sound-pieces li.playing strong::after {
+  content: ' ♪';
+  color: #6e3e5c;
+}
+
+.sound-piece-when,
+.sound-piece-src {
+  color: var(--ink-3);
+}
+
+.sound-piece-src {
+  display: block;
+  font-style: italic;
+  font-size: 12.5px;
+}
+
+.sound-credit {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
 }

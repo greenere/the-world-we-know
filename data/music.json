@@ -1,0 +1,533 @@
+[
+ {
+  "id": "hurrian-hymn",
+  "kind": "music",
+  "name": "The oldest written melody",
+  "origin": {
+   "year": "-1400",
+   "place": "Ugarit",
+   "lat": 35.6,
+   "lon": 35.78,
+   "culture": "The Hurrians of Ugarit"
+  },
+  "summary": "A scribe at Ugarit presses a hymn to the moon goddess Nikkal into clay: the words in Hurrian, and under them Akkadian terms that tell a lyre player which strings to sound. It is the oldest melody set down whole. The string names are Babylonian, so a tuning worked out in Mesopotamia was already in use on the Syrian coast. How the tune went is still argued over.",
+  "source": "west-hurrian",
+  "confidence": "medium",
+  "spread": []
+ },
+ {
+  "id": "zeng-bells",
+  "kind": "music",
+  "name": "The bells of Marquis Yi of Zeng",
+  "native": "曾侯乙编钟",
+  "origin": {
+   "year": "-433",
+   "place": "Suizhou, in the state of Zeng",
+   "lat": 31.72,
+   "lon": 113.37,
+   "culture": "The court of Zeng"
+  },
+  "home": [
+   "china"
+  ],
+  "summary": "Sixty-five bronze bells on a lacquered frame go into the tomb of Marquis Yi. Each sounds two notes, a third apart, depending on where it is struck; together they span five octaves. Inscriptions give each note its name in Zeng and its equivalent in Chu, Zhou, Qi and Jin: a table for converting between the tunings of rival states. The bells themselves went nowhere. They were found in 1978 and can still be played.",
+  "source": "falkenhausen-bells",
+  "confidence": "high",
+  "spread": []
+ },
+ {
+  "id": "organ",
+  "kind": "music",
+  "name": "The organ",
+  "origin": {
+   "year": "-270..-240",
+   "place": "Alexandria",
+   "lat": 31.2,
+   "lon": 29.92,
+   "culture": "Greek engineers of Alexandria"
+  },
+  "home": [
+   "greece"
+  ],
+  "summary": "Ctesibius, an engineer of Alexandria, feeds a row of pipes from a pump and uses the weight of water to keep the air steady. A player opens each pipe with a key: the first keyboard instrument. Later builders replace the water with bellows.",
+  "source": "perrot-organ",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "60..68",
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "vp": "rome",
+    "note": "The water organ is played at the games and in great houses. Suetonius has Nero, in his last months, showing off a new kind to his advisers."
+   },
+   {
+    "year": 228,
+    "place": "Aquincum",
+    "lat": 47.56,
+    "lon": 19.05,
+    "from": "Rome",
+    "confidence": "high",
+    "note": "An organ is given to the guild that serves as the town's fire brigade, with a bronze plate naming the donor. Its remains were dug up in 1931."
+   },
+   {
+    "year": "390..395",
+    "place": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": "Rome",
+    "note": "The base of the obelisk of Theodosius in the Hippodrome shows organs blown by bellows. The instrument becomes part of court ceremony."
+   },
+   {
+    "year": 757,
+    "place": "Compiègne",
+    "lat": 49.42,
+    "lon": 2.83,
+    "vp": "france",
+    "from": "Constantinople",
+    "confidence": "high",
+    "note": "The emperor Constantine V sends an organ to Pepin, king of the Franks. The Frankish annals record it as a thing not seen before."
+   },
+   {
+    "year": "980..994",
+    "place": "Winchester",
+    "lat": 51.06,
+    "lon": -1.31,
+    "vp": "britain",
+    "from": "Compiègne",
+    "note": "The monk Wulfstan describes a great organ in the cathedral with four hundred pipes, worked by seventy men at the bellows. By now the organ belongs to the church."
+   }
+  ]
+ },
+ {
+  "id": "pipa",
+  "kind": "music",
+  "name": "The pipa",
+  "native": "琵琶",
+  "origin": {
+   "year": "1..200",
+   "place": "Bactria and Gandhara",
+   "lat": 36.76,
+   "lon": 66.9,
+   "culture": "Lute players of the Kushan lands"
+  },
+  "summary": "A short lute with a pear-shaped body appears in the carvings of the Kushan lands. With a bent neck and four strings it travels both ways along the caravan roads: west it becomes the Persian barbat, east the pipa.",
+  "source": "picken-lute",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "300..400",
+    "place": "Kucha",
+    "lat": 41.72,
+    "lon": 82.96,
+    "confidence": "medium",
+    "note": "The oasis kingdom is famous for its music. Its cave paintings show the bent-necked lute and a straight-necked one with five strings."
+   },
+   {
+    "year": 568,
+    "place": "Chang'an",
+    "lat": 34.26,
+    "lon": 108.94,
+    "vp": "china",
+    "from": "Kucha",
+    "note": "The Kuchean musician Sujiva comes to the Northern Zhou court in the train of a Turkic princess, bringing the pipa and the seven modes he plays on it."
+   },
+   {
+    "year": 756,
+    "place": "Nara",
+    "lat": 34.69,
+    "lon": 135.84,
+    "vp": "japan",
+    "from": "Chang'an",
+    "confidence": "high",
+    "note": "A five-stringed pipa of red sandalwood inlaid with mother-of-pearl is among the treasures given to Tōdai-ji. It is still kept in the Shōsōin."
+   }
+  ]
+ },
+ {
+  "id": "oud",
+  "kind": "music",
+  "name": "The oud",
+  "native": "عود",
+  "origin": {
+   "year": "762..800",
+   "place": "Baghdad",
+   "lat": 33.31,
+   "lon": 44.36,
+   "culture": "Musicians of the Abbasid court"
+  },
+  "home": [
+   "islam"
+  ],
+  "summary": "At the Abbasid court the short-necked lute, kin to the Persian barbat, becomes the instrument on which music is taught and its theory worked out. Its name goes with it into Europe: al-ʿūd becomes laúd, luth and lute.",
+  "source": "farmer-arabian-music",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": 822,
+    "place": "Córdoba",
+    "lat": 37.88,
+    "lon": -4.78,
+    "note": "The singer Ziryab leaves Baghdad and is received at the Umayyad court. By tradition he adds a fifth pair of strings and founds a school."
+   },
+   {
+    "year": "1270..1284",
+    "place": "Seville",
+    "lat": 37.39,
+    "lon": -5.98,
+    "vp": "iberia",
+    "from": "Córdoba",
+    "note": "The song book made for Alfonso X shows lute players, Muslim, Christian and Jewish, among the court's musicians."
+   },
+   {
+    "year": 1507,
+    "place": "Venice",
+    "lat": 45.44,
+    "lon": 12.33,
+    "from": "Seville",
+    "confidence": "high",
+    "note": "Ottaviano Petrucci prints the first book of lute music, in a notation that shows the fingers where to go."
+   }
+  ]
+ },
+ {
+  "id": "mbira",
+  "kind": "music",
+  "name": "The mbira",
+  "origin": {
+   "year": "700..1000",
+   "place": "The Zambezi valley",
+   "lat": -17.0,
+   "lon": 30.0,
+   "culture": "Ironworkers of the Zambezi valley"
+  },
+  "home": [
+   "zimbabwe"
+  ],
+  "summary": "Smiths of the Zambezi valley forge thin iron tongues and fix them over a wooden board, to be plucked with the thumbs. Earlier ones were cut from bamboo or raffia. Instruments of this kind spread over much of Africa under many names.",
+  "source": "kubik-lamellophone",
+  "confidence": "low",
+  "spread": [
+   {
+    "year": 1586,
+    "place": "Sofala",
+    "lat": -20.15,
+    "lon": 34.72,
+    "vp": "iberia",
+    "confidence": "medium",
+    "note": "The Dominican friar João dos Santos hears an instrument of iron keys played with the thumbs and describes it in a book printed in 1609."
+   },
+   {
+    "year": "1816..1831",
+    "place": "Rio de Janeiro",
+    "lat": -22.91,
+    "lon": -43.17,
+    "note": "Africans carried to Brazil in slavery make and play it there; the painter Jean-Baptiste Debret draws one in the streets of Rio."
+   }
+  ]
+ },
+ {
+  "id": "bowed-strings",
+  "kind": "music",
+  "name": "The bow on the string",
+  "origin": {
+   "year": "850..950",
+   "place": "Sogdiana and Khwarazm",
+   "lat": 40.5,
+   "lon": 64.0,
+   "culture": "The horse peoples of Central Asia"
+  },
+  "home": [
+   "steppe"
+  ],
+  "summary": "Somewhere in Central Asia players begin to draw a bow strung with horsehair across the strings of a lute, so that a note can be held as long as a breath. Within two centuries the bow is in use from Spain to China.",
+  "source": "bachmann-bowing",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "900..911",
+    "place": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "note": "The geographer Ibn Khurradadhbih lists a bowed lyra among the instruments of the Byzantines."
+   },
+   {
+    "year": "920..1000",
+    "place": "Northern Spain",
+    "lat": 42.3,
+    "lon": -3.7,
+    "vp": "iberia",
+    "note": "Painted manuscripts from the Christian north show players with bows: the earliest pictures of bowing in Europe."
+   },
+   {
+    "year": 1088,
+    "place": "Kaifeng",
+    "lat": 34.8,
+    "lon": 114.31,
+    "vp": "china",
+    "note": "Shen Kuo writes of a horse-tail fiddle played by soldiers on the northern frontier."
+   }
+  ]
+ },
+ {
+  "id": "staff-notation",
+  "kind": "music",
+  "name": "Music on lines",
+  "origin": {
+   "year": "1025..1030",
+   "place": "Arezzo",
+   "lat": 43.46,
+   "lon": 11.88,
+   "culture": "Guido, a monk teaching choirboys"
+  },
+  "home": [
+   "europe"
+  ],
+  "summary": "Guido of Arezzo writes chant on ruled lines a third apart, each marked with the note it stands for, and names the steps of the scale ut, re, mi, fa, sol, la. A singer can learn a melody never heard, from the page alone, and music begins to travel on parchment as well as in memory.",
+  "source": "palisca-guido",
+  "confidence": "high",
+  "spread": [
+   {
+    "year": "1028..1032",
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "confidence": "medium",
+    "note": "Pope John XIX sends for Guido and, by Guido's own account, learns to sing a verse from the new book at sight."
+   },
+   {
+    "year": "1180..1230",
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "vp": "france",
+    "from": "Rome",
+    "confidence": "medium",
+    "note": "The singers of Notre-Dame write music in several parts and find a way to show rhythm as well as pitch."
+   },
+   {
+    "year": 1501,
+    "place": "Venice",
+    "lat": 45.44,
+    "lon": 12.33,
+    "from": "Paris",
+    "note": "Ottaviano Petrucci prints a book of part-songs from movable type. Music can now be sold in copies."
+   },
+   {
+    "year": 1556,
+    "place": "Mexico City",
+    "lat": 19.43,
+    "lon": -99.13,
+    "from": "Venice",
+    "confidence": "medium",
+    "note": "A book of chant for the Mass comes off the press: the first music printed in the Americas."
+   },
+   {
+    "year": 1713,
+    "place": "Beijing",
+    "lat": 39.9,
+    "lon": 116.4,
+    "vp": "china",
+    "from": "Venice",
+    "confidence": "medium",
+    "note": "A treatise made for the Kangxi emperor explains the staff and its notes, drawing on the Jesuit Tomás Pereira and the missionary Teodorico Pedrini."
+   }
+  ]
+ },
+ {
+  "id": "gamelan",
+  "kind": "music",
+  "name": "The gamelan",
+  "origin": {
+   "year": "1300..1400",
+   "place": "Trowulan, in East Java",
+   "lat": -7.56,
+   "lon": 112.38,
+   "culture": "The courts of Java"
+  },
+  "home": [
+   "nusantara"
+  ],
+  "summary": "In the courts of Java, tuned bronze gongs, gong-chimes and metal-keyed instruments are played together as one orchestra, each set cast and tuned as a whole. Temple reliefs show some of the instruments centuries earlier; when they first became an ensemble is not known.",
+  "source": "kunst-java",
+  "confidence": "low",
+  "spread": [
+   {
+    "year": "1500..1600",
+    "place": "Gelgel, Bali",
+    "lat": -8.56,
+    "lon": 115.41,
+    "note": "By Balinese tradition, courtiers and musicians leaving Java as Majapahit falls bring their instruments to the Balinese courts."
+   },
+   {
+    "year": 1889,
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.29,
+    "vp": "france",
+    "confidence": "high",
+    "note": "A Javanese gamelan plays for months in a village built at the Exposition. Claude Debussy comes back to listen again and again."
+   },
+   {
+    "year": 1893,
+    "place": "Chicago",
+    "lat": 41.78,
+    "lon": -87.58,
+    "confidence": "medium",
+    "note": "A gamelan plays at the Columbian Exposition. The instruments stay behind, and are still in the city's Field Museum."
+   }
+  ]
+ },
+ {
+  "id": "violin",
+  "kind": "music",
+  "name": "The violin",
+  "origin": {
+   "year": "1550..1565",
+   "place": "Cremona",
+   "lat": 45.13,
+   "lon": 10.02,
+   "culture": "The workshop of Andrea Amati"
+  },
+  "home": [
+   "europe"
+  ],
+  "summary": "Andrea Amati's workshop in Cremona settles the form of the violin: four strings tuned in fifths, an arched body and f-holes. Italian players take it to every court in Europe, and ships take it further.",
+  "source": "boyden-violin",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "1564..1574",
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "vp": "france",
+    "note": "Amati makes a set of instruments painted with the arms of Charles IX of France. Some of them survive."
+   },
+   {
+    "year": 1660,
+    "place": "London",
+    "lat": 51.51,
+    "lon": -0.13,
+    "vp": "britain",
+    "from": "Paris",
+    "confidence": "high",
+    "note": "Charles II, back from exile in France, sets up a band of twenty-four violins on the French model."
+   },
+   {
+    "year": "1790..1810",
+    "place": "Madras",
+    "lat": 13.08,
+    "lon": 80.27,
+    "vp": "india",
+    "from": "London",
+    "note": "Baluswami Dikshitar learns the violin from the band at Fort St George and adapts it to Carnatic music, where it is played seated, the scroll resting on the foot."
+   }
+  ]
+ },
+ {
+  "id": "piano",
+  "kind": "music",
+  "name": "The piano",
+  "origin": {
+   "year": "1700",
+   "place": "Florence",
+   "lat": 43.77,
+   "lon": 11.25,
+   "culture": "Bartolomeo Cristofori, at the Medici court"
+  },
+  "home": [
+   "europe"
+  ],
+  "summary": "Bartolomeo Cristofori, keeper of instruments to the Medici, builds a harpsichord whose strings are struck by hammers that fall away at once, so that it can play soft and loud. An inventory of 1700 records it. Its twelve equal semitones become a tuning much of the world shares.",
+  "source": "pollens-piano",
+  "confidence": "high",
+  "spread": [
+   {
+    "year": "1726..1732",
+    "place": "Freiberg, Saxony",
+    "lat": 50.92,
+    "lon": 13.34,
+    "vp": "germany",
+    "confidence": "medium",
+    "note": "The organ builder Gottfried Silbermann makes pianos after a published account of Cristofori's action. Johann Sebastian Bach tries them and finds fault, then later approves."
+   },
+   {
+    "year": 1766,
+    "place": "London",
+    "lat": 51.51,
+    "lon": -0.13,
+    "vp": "britain",
+    "from": "Freiberg, Saxony",
+    "note": "Johannes Zumpe, a builder from Saxony, makes small square pianos that a household can afford."
+   },
+   {
+    "year": 1825,
+    "place": "Boston",
+    "lat": 42.36,
+    "lon": -71.06,
+    "from": "London",
+    "note": "Alpheus Babcock patents a frame cast in one piece of iron, which lets the strings be heavier and tighter and the sound larger."
+   },
+   {
+    "year": 1900,
+    "place": "Hamamatsu",
+    "lat": 34.71,
+    "lon": 137.73,
+    "vp": "japan",
+    "from": "Boston",
+    "note": "Yamaha Torakusu's company, which began with reed organs, builds its first upright piano."
+   }
+  ]
+ },
+ {
+  "id": "phonograph",
+  "kind": "music",
+  "name": "The phonograph",
+  "origin": {
+   "year": "1877",
+   "place": "Menlo Park, New Jersey",
+   "lat": 40.565,
+   "lon": -74.337,
+   "culture": "Thomas Edison's laboratory"
+  },
+  "summary": "Thomas Edison's machine cuts the vibrations of a voice into tinfoil wrapped round a cylinder, and plays them back. Sound can be kept, copied and sent, and the world's music can be heard far from where it is made.",
+  "source": "read-welch-phonograph",
+  "confidence": "high",
+  "spread": [
+   {
+    "year": 1890,
+    "place": "Calais, Maine",
+    "lat": 45.19,
+    "lon": -67.28,
+    "note": "Jesse Walter Fewkes records Passamaquoddy songs and stories on wax cylinders: the first recordings made in the field."
+   },
+   {
+    "year": 1900,
+    "place": "Berlin",
+    "lat": 52.52,
+    "lon": 13.4,
+    "vp": "germany",
+    "note": "Carl Stumpf records a court orchestra visiting from Siam, and an archive of the world's music begins."
+   },
+   {
+    "year": 1902,
+    "place": "Calcutta",
+    "lat": 22.57,
+    "lon": 88.36,
+    "vp": "india",
+    "from": "Berlin",
+    "note": "Fred Gaisberg of the Gramophone Company records the singer Gauhar Jaan. Recording engineers go on to Shanghai and Tokyo the next year."
+   },
+   {
+    "year": 1906,
+    "place": "Budapest",
+    "lat": 47.5,
+    "lon": 19.04,
+    "from": "Berlin",
+    "confidence": "medium",
+    "note": "Béla Bartók and Zoltán Kodály set out with a phonograph to record the songs of villages."
+   }
+  ]
+ }
+]

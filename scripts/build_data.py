@@ -1394,16 +1394,34 @@ def load_translations(journeys, regions_by_id, inventions, vp_ids, viewpoints, c
     stats["inventions"] = (len(inv), len(inv_ids))
 
     # Plants and animals: name, origin place and culture, summary, and each arrival's place and note by index.
-    lz = rd("living.json")
-    lby = {x["id"]: x for x in living}
-    for k, d in lz.items():
-        if k not in lby:
-            fail(f"i18n/zh/living.json: unknown plant or animal {k!r}")
-            continue
-        for i in d.get("spread", {}):
-            if not (i.isdigit() and int(i) < len(lby[k]["spread"])):
-                fail(f"i18n/zh/living.json: {k} has no arrival {i}")
-    stats["plants and animals"] = (len(lz), len(lby))
+    lz = {}
+    for name, label, music in (("living.json", "plants and animals", False), ("music.json", "music", True)):
+        part = rd(name)
+        lby = {x["id"]: x for x in living if (x["kind"] == "music") == music}
+        for k, d in part.items():
+            if k not in lby:
+                fail(f"i18n/zh/{name}: unknown entry {k!r}")
+                continue
+            for i in d.get("spread", {}):
+                if not (i.isdigit() and int(i) < len(lby[k]["spread"])):
+                    fail(f"i18n/zh/{name}: {k} has no arrival {i}")
+        stats[label] = (len(part), len(lby))
+        lz.update(part)
+
+    # The music's traditions: a name and a summary each.
+    sz = dict(rd("soundscapes.json"))
+    tz = sz.pop("_tunes", {})
+    straditions = json.loads((DATA / "soundscapes.json").read_text(encoding="utf-8"))["traditions"]
+    sids = {x["id"] for x in straditions}
+    tids = {tu["id"] for x in straditions for tu in x.get("tunes", [])}
+    for k in sz:
+        if k not in sids:
+            fail(f"i18n/zh/soundscapes.json: unknown tradition {k!r}")
+    for k in tz:
+        if k not in tids:
+            fail(f"i18n/zh/soundscapes.json: unknown tune {k!r}")
+    stats["music pieces"] = (len(tz), len(tids))
+    stats["music traditions"] = (len(sz), len(sids))
 
     vps = rd("viewpoints.json")
     for k in vps:
@@ -1466,7 +1484,7 @@ def load_translations(journeys, regions_by_id, inventions, vp_ids, viewpoints, c
     print("    中文: " + " · ".join(f"{k} {a}/{b}" for k, (a, b) in stats.items()))
     series = rd("series.json")
     return {"series": series, "names": names, "regions": regions, "journeys": jz, "inventions": inv, "living": lz, "viewpoints": vps, "moments": moments,
-            "depictions": dep, "stories": stories, "phases": phases, "notes": notes, "books": zb, "chars": chars}
+            "depictions": dep, "stories": stories, "phases": phases, "notes": notes, "books": zb, "soundscapes": sz, "tunes": tz, "chars": chars}
 
 
 INVENTION_CATEGORIES = ("navigation", "measurement", "mapping", "communication", "transport", "imaging")
@@ -1508,6 +1526,8 @@ def load_inventions(sources, vp_ids):
 
 
 LIVING_KINDS = ("plant", "animal")
+# Instruments and ways of keeping music are authored apart (music.json) and spread as plants and animals do.
+LIVING_FILES = {"living.json": LIVING_KINDS, "music.json": ("music",)}
 SHARED_MAP = 1900
 
 
@@ -1520,8 +1540,9 @@ def load_living(sources, viewpoints, journey_ids):
     communities = [v for v in viewpoints if v.get("community")]
     out = []
     seen = set()
-    for k, x in enumerate(json.loads((DATA / "living.json").read_text(encoding="utf-8"))):
-        where = f"living.json[{k}] {x.get('id')!r}"
+    entries = [(f"{name}[{k}] {x.get('id')!r}", kinds, x) for name, kinds in LIVING_FILES.items()
+               for k, x in enumerate(json.loads((DATA / name).read_text(encoding="utf-8")))]
+    for where, kinds, x in entries:
         for key in ("id", "kind", "name", "origin", "summary", "spread"):
             if key not in x:
                 fail(f"{where}: missing {key}")
@@ -1529,8 +1550,8 @@ def load_living(sources, viewpoints, journey_ids):
         if x.get("id") in seen:
             fail(f"{where}: duplicate id")
         seen.add(x.get("id"))
-        if x.get("kind") not in LIVING_KINDS:
-            fail(f"{where}: kind must be one of {', '.join(LIVING_KINDS)}")
+        if x.get("kind") not in kinds:
+            fail(f"{where}: kind must be one of {', '.join(kinds)}")
         check_ref(where, x.get("source"), x.get("confidence"), sources)
         doc = dict(x)
         origin = dict(x["origin"])
@@ -1589,6 +1610,103 @@ def load_living(sources, viewpoints, journey_ids):
         widely = max(x.get("widely", SHARED_MAP), oy.mid)
         doc["known"] = {vp: (oy.mid if vp == "humanity" else min(known.get(vp, math.inf), widely)) for vp in sorted(vp_ids)}
         out.append(doc)
+    return out
+
+
+SOUND_VOICES = ("pluck", "lute", "bow", "flute", "reed", "pipe", "voice", "bell", "metal", "tine", "keys")
+SOUND_PATTERNS = ("wander", "alap", "ostinato")
+SOUND_ROLES = ("melody", "accompany", "both", "accent")
+NOTE_RE = re.compile(r"^([A-G][#b]?-?\d|r):[\d.]+/?$")
+
+
+def check_notes(where: str, text: str) -> None:
+    """A tune's notes: `pitch:beats` (D4:1, C#5:0.5), `r:beats` for a rest, `/` after a phrase, `|` between bars."""
+    bad = [t for t in text.split() if t not in ("|", "/") and not NOTE_RE.match(t)]
+    if bad:
+        fail(f"{where}: cannot read the notes {' '.join(bad[:4])}")
+
+
+def load_soundscapes(sources, vp_ids, regions_by_id, music_ids, city_ids) -> dict:
+    """The atlas's music (data/soundscapes.json): the traditions it plays, which one each viewpoint hears in
+    which years, and whose music is heard in a region (for a traveller passing through)."""
+    doc = json.loads((DATA / "soundscapes.json").read_text(encoding="utf-8"))
+    out = {"traditions": [], "viewpoints": [], "lands": []}
+    manifest = ROOT / "public" / "audio" / "samples.json"
+    samples = json.loads(manifest.read_text(encoding="utf-8"))["instruments"] if manifest.exists() else {}
+    ids = set()
+    fallbacks = 0
+    for k, x in enumerate(doc.get("traditions", [])):
+        where = f"soundscapes.json traditions[{k}] {x.get('id')!r}"
+        for key in ("id", "name", "summary", "scales", "voices", "pattern", "beat", "places"):
+            if key not in x:
+                fail(f"{where}: missing {key}")
+        if x.get("id") in ids:
+            fail(f"{where}: duplicate id")
+        ids.add(x.get("id"))
+        if x.get("fallback"):
+            fallbacks += 1
+        else:
+            check_ref(where, x.get("source"), x.get("confidence"), sources)
+        if x.get("pattern") not in SOUND_PATTERNS:
+            fail(f"{where}: pattern must be one of {', '.join(SOUND_PATTERNS)}")
+        for s in x.get("scales", []):
+            c = s.get("cents", [])
+            if not c or c[0] != 0 or any(b <= a for a, b in zip(c, c[1:])) or c[-1] >= 1200:
+                fail(f"{where}: a scale's cents must start at 0 and rise within the octave")
+        for v in x.get("voices", []):
+            if v.get("voice") not in SOUND_VOICES:
+                fail(f"{where}: voice must be one of {', '.join(SOUND_VOICES)}")
+            if v.get("instrument") and v["instrument"] not in music_ids:
+                fail(f"{where}: {v['instrument']!r} is not on the Music shelf")
+        for m in x.get("also", []):
+            if m not in music_ids:
+                fail(f"{where}: {m!r} is not on the Music shelf")
+        ens = x.get("ensemble")
+        if ens:
+            for mem in ens.get("members", []):
+                w = f"{where} member {mem.get('id')!r}"
+                if mem.get("voice") not in SOUND_VOICES or mem.get("role") not in SOUND_ROLES:
+                    fail(f"{w}: needs a voice ({', '.join(SOUND_VOICES)}) and a role ({', '.join(SOUND_ROLES)})")
+                if mem.get("sample") and mem["sample"] not in samples:
+                    fail(f"{w}: no sample {mem['sample']!r} in public/audio/samples.json (run scripts/fetch_samples.py)")
+                if mem.get("instrument") and mem["instrument"] not in music_ids:
+                    fail(f"{w}: {mem['instrument']!r} is not on the Music shelf")
+            for i, m in enumerate(ens.get("motifs", [])):
+                check_notes(f"{where} motif {i}", m)
+        tune_ids = set()
+        for tune in x.get("tunes", []):
+            w = f"{where} tune {tune.get('id')!r}"
+            for key in ("id", "name", "notes", "beat", "meter", "source", "confidence"):
+                if key not in tune:
+                    fail(f"{w}: missing {key}")
+            if tune.get("id") in tune_ids:
+                fail(f"{w}: duplicate id")
+            tune_ids.add(tune.get("id"))
+            check_notes(w, tune.get("notes", ""))
+            check_ref(w, tune.get("source"), tune.get("confidence"), sources)
+        for r in x.get("recordings", []):
+            for key in ("file", "name", "source", "license"):
+                if key not in r:
+                    fail(f"{where} recording: missing {key}")
+            if not (ROOT / "public" / "audio" / r.get("file", "")).exists():
+                fail(f"{where} recording: no file public/audio/{r.get('file')}")
+        for c in x.get("places", []):
+            if c not in city_ids:
+                fail(f"{where}: unknown city {c!r}")
+        out["traditions"].append(x)
+    if fallbacks != 1:
+        fail("soundscapes.json: exactly one tradition must be the fallback")
+    for k, r in enumerate(doc.get("viewpoints", [])):
+        if r.get("vp") not in vp_ids or r.get("tradition") not in ids:
+            fail(f"soundscapes.json viewpoints[{k}]: unknown viewpoint or tradition")
+        out["viewpoints"].append(r)
+    for k, r in enumerate(doc.get("lands", [])):
+        if r.get("vp") not in vp_ids:
+            fail(f"soundscapes.json lands[{k}]: unknown viewpoint {r.get('vp')!r}")
+        for rid in r.get("regions", []):
+            if rid not in regions_by_id:
+                fail(f"soundscapes.json lands[{k}]: unknown region {rid!r}")
+        out["lands"].append(r)
     return out
 
 
@@ -1932,6 +2050,8 @@ def main() -> int:
     sizes["series.json"] = write_json("series.json", series)
     sizes["inventions.json"] = write_json("inventions.json", inventions)
     sizes["living.json"] = write_json("living.json", living)
+    soundscapes = load_soundscapes(sources, vp_ids, regions_by_id, {x["id"] for x in living if x["kind"] == "music"}, {c["id"] for c in cities})
+    sizes["soundscapes.json"] = write_json("soundscapes.json", soundscapes)
     sizes["beyond.json"] = write_json("beyond.json", beyond)
     sizes["sources.json"] = write_json("sources.json", sources)
     books = load_books(sources, events, journeys, cities, inventions, living, viewpoints)

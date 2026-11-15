@@ -176,11 +176,12 @@ export class JourneyPanel {
     else if (shelf === 'inventions') this.listEl.append(...this.inventionList());
     else if (shelf === 'books') this.listEl.append(...this.bookList());
     else if (shelf === 'living') this.listEl.append(...this.livingList(this.store.state));
+    else if (shelf === 'music') this.listEl.append(...this.musicList());
     else this.listEl.append(...this.landmarkList(this.store.state));
     return [
       h(
         'div.jp-head',
-        h('div.jp-tabs', {role: 'tablist'}, ...(this.store.state.panel === 'discoveries' ? [tab('inventions', 'Inventions'), tab('books', 'Books'), tab('living', 'Species')] : [tab('journeys', 'Journeys'), tab('landmarks', 'Landmarks')])),
+        h('div.jp-tabs', {role: 'tablist'}, ...(this.store.state.panel === 'discoveries' ? [tab('inventions', 'Inventions'), tab('books', 'Books'), tab('living', 'Species'), tab('music', 'Music')] : [tab('journeys', 'Journeys'), tab('landmarks', 'Landmarks')])),
         h('button.card-close', {type: 'button', 'aria-label': t('Close'), onclick: () => this.store.set({panel: 'none'}), html: icons.close}),
       ),
       this.listEl,
@@ -794,6 +795,7 @@ export class JourneyPanel {
     this.livingItems.clear();
     const vpName = tx.viewpoint(vp, 'name', this.data.vp[vp].name);
     const all = this.data.living
+      .filter(x => x.kind !== 'music')
       .map(x => ({x, from: Math.max(START, Math.min(PRESENT, x.known[vp] ?? x.origin.mid))}))
       .sort((a, b) => a.from - b.from || a.x.name.localeCompare(b.x.name));
     return [
@@ -816,6 +818,37 @@ export class JourneyPanel {
                 {type: 'button', class: `living-${x.kind}`, onclick: () => this.actions.openLiving(x.id)},
                 h('span.jp-item-icon', {html: livingIcons[x.kind]}),
                 h('span.jp-item-text', h('span.jp-item-name', tx.living(x.id, 'name', x.name)), h('span.jp-item-meta', `${when} · ${tx.living(x.id, 'place', x.origin.place)}`)),
+              );
+              this.livingItems.set(x.id, btn);
+              return h('li', btn);
+            }),
+          ),
+        );
+      }),
+    ].filter(Boolean) as Node[];
+  }
+
+  /** Instruments and ways of keeping music, by when each was made: where it began, to open and watch travel. */
+  private musicList(): Node[] {
+    this.livingItems.clear();
+    const all = this.data.living.filter(x => x.kind === 'music').sort((a, b) => a.origin.mid - b.origin.mid);
+    return [
+      h('p.jp-intro', t('Instruments, and ways of writing music down and keeping it, that went from one people to another. Open one to watch it travel.')),
+      ...ERAS.map(era => {
+        const list = all.filter(x => x.origin.mid >= era.from && x.origin.mid < era.to);
+        if (!list.length) return null;
+        return h(
+          'section.jp-group',
+          {'data-era': era.id},
+          h('h3.card-h', t(era.name)),
+          h(
+            'ul.jp-list',
+            list.map(x => {
+              const btn = h(
+                'button.jp-item.living-item.living-music',
+                {type: 'button', onclick: () => this.actions.openLiving(x.id)},
+                h('span.jp-item-icon', {html: livingIcons.music}),
+                h('span.jp-item-text', h('span.jp-item-name', tx.living(x.id, 'name', x.name)), h('span.jp-item-meta', `${formatRange(x.origin.year)} · ${tx.living(x.id, 'place', x.origin.place)}`)),
               );
               this.livingItems.set(x.id, btn);
               return h('li', btn);

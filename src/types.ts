@@ -347,7 +347,8 @@ export interface Invention {
   confidence: string;
 }
 
-export type LivingKind = 'plant' | 'animal';
+/** `music` is an instrument or a way of keeping music (data/music.json): it has its own shelf, and spreads as the others do. */
+export type LivingKind = 'plant' | 'animal' | 'music';
 
 /** A place a plant or animal reached, or where a viewpoint first met it. */
 export interface Arrival {

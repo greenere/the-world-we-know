@@ -26,7 +26,7 @@ export class About {
       landmarks: data.cities.filter(c => c.kind).length,
       journeys: data.journeys.length,
       inventions: data.inventions.length,
-      living: data.living.length,
+      living: data.living.filter(x => x.kind !== 'music').length,
     });
     this.el = h(
       'div.modal-overlay',
@@ -76,6 +76,7 @@ export class About {
             ['Shift ← →', 'One year back / forward'],
             ['Space', 'Play or pause'],
             ['/', 'Search'],
+            ['M', 'Music on or off'],
             ['Esc', 'Close cards'],
           ].map(([k, v]) => [h('dt', h('kbd', k)), h('dd', t(v))]),
         ),

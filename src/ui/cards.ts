@@ -9,6 +9,9 @@ import {ALL_VPS, CONFIDENCE_NAMES, HUMANITY_LEVEL_NAMES, LEVEL_NAMES} from '../t
 import {isZh, t, tx} from '../i18n';
 import {h} from './dom';
 import {icons, inventionIcons, kindIcons, livingIcons, naturalIcons} from './icons';
+
+/** What a plant, an animal or a piece of music is called on its card and in search. */
+export const KIND_NAMES = {plant: 'Plant', animal: 'Animal', music: 'Music'} as const;
 import {JourneySketchPlayback, journeyPageStep, journeySceneAt} from '../journey-scenes';
 import {citySceneAt, citySketchPages} from '../city-sketches';
 import type {ScenePlate} from './journey-card';
@@ -207,7 +210,7 @@ export class Cards {
     }
     if (s.living) {
       const x = this.data.livingById.get(s.living);
-      return {kind: 'plant or animal', id: s.living, name: x?.name ?? s.living, context: st => (x ? this.livingContext(x, st) : [])};
+      return {kind: x?.kind === 'music' ? 'music' : 'plant or animal', id: s.living, name: x?.name ?? s.living, context: st => (x ? this.livingContext(x, st) : [])};
     }
     if (s.city) {
       const c = this.data.cityById.get(s.city);
@@ -306,8 +309,8 @@ export class Cards {
   private livingContext(x: Living, s: State): string[] {
     const vp = s.vps[0];
     const out = [
-      `A ${x.kind} from ${x.origin.place}, ${plainYear(x.origin.year)}${x.origin.culture ? ` (${x.origin.culture})` : ''}`,
-      `Known to ${this.data.vp[vp].name} from: ${plainYear(x.known[vp] ?? x.origin.mid)}${x.home?.includes(vp) ? ' (from the start)' : ''}`,
+      `${x.kind === 'music' ? 'Music' : `A ${x.kind}`} from ${x.origin.place}, ${plainYear(x.origin.year)}${x.origin.culture ? ` (${x.origin.culture})` : ''}`,
+      ...(x.kind === 'music' ? [] : [`Known to ${this.data.vp[vp].name} from: ${plainYear(x.known[vp] ?? x.origin.mid)}${x.home?.includes(vp) ? ' (from the start)' : ''}`]),
       `Source: ${x.source}, ${x.confidence} confidence`,
     ];
     const a = s.arrival !== null ? x.spread[s.arrival] : undefined;
@@ -808,21 +811,25 @@ export class Cards {
         culture ? ` · ${culture}` : null,
       ),
       h('p.card-story', tx.living(x.id, 'summary', x.summary)),
-      h(
+    ];
+    // When this viewpoint knew it. Not said of music: who had heard of an instrument, and when, is rarely known.
+    if (x.kind !== 'music') {
+      out.push(h(
         'p.living-known',
         {style: `--vp:${this.data.vp[vp].color}`},
         vp === 'humanity'
           ? t('Known to people from {year}', {year: formatYear(Math.round(known))})
           : t('Known to {vp} from {year}', {vp: vpName(this.data, vp), year: known <= START ? t('before {year}', {year: formatYear(START)}) : formatYear(Math.round(known))}),
-      ),
-    ];
+      ));
+    }
     if (x.extinct) out.push(h('p.living-extinct', `${t('Extinct')} · ${tx.living(x.id, 'extinct', x.extinct.note)}`));
-    out.push(h('h3.card-h', t('How it spread')), h('ol.ages.arrivals', originRow, rows));
+    // Something that stayed where it was made (a set of bells in a tomb) has no way to show.
+    if (rows.length) out.push(h('h3.card-h', t(x.kind === 'music' ? 'How it travelled' : 'How it spread')), h('ol.ages.arrivals', originRow, rows));
     out.push(h('p.card-src', {title: this.data.sources[x.source]?.citation ?? x.source}, `${t('Source:')} ${shortCitation(this.data.sources, x.source)} · ${t('{level} confidence', {level: t(x.confidence)})}`));
     let shownArrival: number | null = null;
     this.live = st => {
       const gone = !!x.extinct && st.year >= x.extinct.year;
-      swap(kicker, `${x.kind}|${gone}`, () => [h('span.kicker-icon', {html: livingIcons[x.kind]}), `${t(x.kind === 'plant' ? 'Plant' : 'Animal')}${gone ? ` · ${t('Extinct')}` : ''}`]);
+      swap(kicker, `${x.kind}|${gone}`, () => [h('span.kicker-icon', {html: livingIcons[x.kind]}), `${t(KIND_NAMES[x.kind])}${gone ? ` · ${t('Extinct')}` : ''}`]);
       // Places it has not reached yet stay faint; the latest it has reached is marked.
       let latest = -1;
       order.forEach(({a}, k) => {
@@ -997,7 +1004,10 @@ export class Cards {
     if (b.places?.length) sub(t('Places'), this.placeChips(b.places));
     const inventions = b.inventions?.filter(id => id !== b.invention) ?? [];
     if (inventions.length) sub(t('Inventions'), this.inventionChips(inventions));
-    if (b.living?.length) sub(t('Plants and animals'), this.livingChips(b.living));
+    const music = (b.living ?? []).filter(id => this.data.livingById.get(id)?.kind === 'music');
+    const species = (b.living ?? []).filter(id => !music.includes(id));
+    if (species.length) sub(t('Plants and animals'), this.livingChips(species));
+    if (music.length) sub(t('Music'), this.livingChips(music));
     if (b.moments?.length) {
       sub(
         t('On the timeline'),

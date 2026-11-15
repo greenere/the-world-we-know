@@ -1,0 +1,1059 @@
+{
+ "_about": "The atlas's music. Each tradition is a way of playing, built in the browser from its scale, voices and manner: an evocation, not a reconstruction. `voices` names who plays it; a voice tied to an `instrument` on the Music shelf (data/music.json) joins only once the viewpoint knows that instrument. `viewpoints` says which tradition a viewpoint hears in which years; `lands` says whose music is heard in a region, for a traveller passing through it. Scales are in cents above the shared tonic, D. A tradition with an `ensemble` is composed: its `tunes` (notes as pitch:beats, / after a phrase, moved by `transpose` semitones onto D) are stated, varied and improvised on by sampled instruments (public/audio, from scripts/fetch_samples.py); one with `recordings` plays those instead.",
+ "traditions": [
+  {
+   "id": "greek",
+   "name": "The lyre and the aulos",
+   "summary": "Greek music of the lyre and the double reed-pipe, in the Dorian harmonia: the mode Greek writers thought steady and manly. Players and singers improvised on set patterns of notes; a few dozen fragments of notated melody survive.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      100,
+      300,
+      500,
+      700,
+      800,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "reed"
+    },
+    {
+     "voice": "pipe",
+     "instrument": "organ"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.62,
+   "leaps": 0.3,
+   "ornament": 0.05,
+   "drone": 0.6,
+   "places": [
+    "athens",
+    "delphi"
+   ],
+   "source": "west-agm",
+   "confidence": "medium"
+  },
+  {
+   "id": "rome",
+   "name": "Imperial Rome",
+   "summary": "Music of the Roman world: Greek in its theory and much of its repertoire, played on the kithara and the double-piped tibia, with the water organ in the arena and frame drums, cymbals and the foot-clapper keeping time. A handful of its pieces survive in Greek notation, and these are among them.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      900,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "reed"
+    },
+    {
+     "voice": "pipe",
+     "instrument": "organ"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.62,
+   "leaps": 0.3,
+   "ornament": 0.05,
+   "drone": 0.25,
+   "ensemble": {
+    "members": [
+     {
+      "id": "kithara",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "both"
+     },
+     {
+      "id": "tibia",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "melody",
+      "gain": 0.9
+     },
+     {
+      "id": "hydraulis",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "accompany",
+      "instrument": "organ",
+      "gain": 0.8
+     }
+    ],
+    "percussion": {
+     "2": "D.k.",
+     "3": "D.k.t.",
+     "4": "D.k.t.k."
+    },
+    "motifs": [
+     "D5:1 C5:0.5 A4:0.5 G4:1 A4:1",
+     "A4:0.5 C5:0.5 D5:1 E5:0.5 D5:0.5 C5:1",
+     "F4:0.5 G4:0.5 A4:1 C5:0.5 A4:0.5 G4:1",
+     "E5:1 D5:0.5 C5:0.5 A4:1 G4:1"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "seikilos",
+     "name": "The Seikilos epitaph",
+     "about": "A short song carved on a grave column near Tralles in Asia Minor, words and notation together: \"While you live, shine.\"",
+     "from": -100,
+     "notes": "A4:0.5 E5:1 E5:1.5 | C#5:0.5 D5:0.5 E5:0.5 D5:1.5 / | C#5:1 D5:0.5 E5:0.5 D5:0.5 C#5:0.5 | B4:0.5 A4:1 B4:0.5 G4:1 / | A4:0.5 C#5:0.5 E5:0.5 D5:0.5 C#5:0.5 D5:0.5 | C#5:0.5 A4:1 B4:0.5 G4:1 / | A4:0.5 C#5:0.5 B4:0.5 D5:0.5 E5:0.5 C#5:0.5 | A4:0.5 A4:1 A4:0.5 F#4:0.5 E4:2 /",
+     "transpose": -2,
+     "beat": 0.7,
+     "meter": 3,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA)."
+    },
+    {
+     "id": "calliope",
+     "name": "Mesomedes: Prayer to Calliope",
+     "about": "By Mesomedes of Crete, court musician to the emperor Hadrian: a prayer to the Muse and to Apollo, copied with its notation in Byzantine manuscripts.",
+     "from": 120,
+     "notes": "A4:1 Bb4:0.5 C5:0.5 | Bb4:1 A4:0.5 G4:0.5 | A4:1 / G4:1 | C5:0.5 A4:0.5 A4:0.5 A4:0.5 | A4:1 A4:0.5 E4:0.5 | F4:1 G4:1 / | F4:1 G4:0.5 A4:0.5 | Bb4:1 C5:0.5 D5:0.5 | C5:1 / C5:1 | D5:1 F5:0.5 E5:0.5 / | D5:1 C5:0.5 Bb4:0.5 / | A4:1 C5:0.5 D5:0.5 / | C5:1 D5:0.5 E5:0.5 C5:0.5 D5:0.5 | G4:1 A4:0.5 A4:2 /",
+     "transpose": -7,
+     "beat": 0.6,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0)."
+    },
+    {
+     "id": "helios",
+     "name": "Mesomedes: Hymn to the Sun, the opening",
+     "about": "The first sentence of Mesomedes' hymn to Helios, \"father of rosy-eyelidded Dawn\", who drives his chariot across the sky.",
+     "from": 120,
+     "notes": "A4:0.5 A4:0.5 | A4:1 A4:0.5 D5:0.5 | A4:1 Bb4:0.5 A4:0.5 | G4:1.5 A4:1 / r:0.5 G4:0.5 C5:0.5 | C5:1 C5:0.5 C5:0.5 | D5:1 A4:0.5 G4:0.5 | C5:0.5 D5:1 C5:1 / r:0.5 C5:1 | D5:0.5 C5:0.5 D5:0.5 D5:0.5 | Bb4:1 C5:0.5 D5:0.5 | E5:1.5 E5:1 / r:0.5 C5:1 | E5:0.5 C5:0.5 E5:0.5 D5:0.5 | C5:1 D5:0.5 D5:0.5 | C5:1 E5:0.5 D5:1 / r:0.5 C5:0.5 D5:0.5 | E5:1 D5:0.5 C5:0.5 | D5:1 Bb4:0.5 G4:0.5 | A4:1 Bb4:0.5 Bb4:0.5 A4:1 /",
+     "transpose": -7,
+     "beat": 0.58,
+     "meter": 2,
+     "pickup": 1,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West."
+    }
+   ],
+   "places": [
+    "rome",
+    "alexandria"
+   ],
+   "source": "west-agm",
+   "confidence": "medium"
+  },
+  {
+   "id": "chant",
+   "name": "Chant",
+   "summary": "The plain, single line sung in churches and monasteries, Latin in the west and Greek in Constantinople, moving mostly by step within one of eight modes. Here in the first mode, on D. The organ joins it once the Franks have one.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      900,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "pipe",
+     "instrument": "organ"
+    },
+    {
+     "voice": "bow",
+     "instrument": "bowed-strings"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.78,
+   "leaps": 0.06,
+   "ornament": 0,
+   "drone": 0.9,
+   "places": [
+    "rome",
+    "constantinople",
+    "paris"
+   ],
+   "also": [
+    "staff-notation"
+   ],
+   "source": "hiley-chant",
+   "confidence": "medium"
+  },
+  {
+   "id": "consort",
+   "name": "Strings and keyboards",
+   "summary": "European music after about 1600, in major and minor keys: violins, lutes and keyboards playing in parts, tuned more and more to twelve equal semitones.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      400,
+      500,
+      700,
+      900,
+      1100
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "lute",
+     "instrument": "oud"
+    },
+    {
+     "voice": "bow",
+     "instrument": "violin"
+    },
+    {
+     "voice": "keys",
+     "instrument": "piano"
+    },
+    {
+     "voice": "pipe",
+     "instrument": "organ"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.55,
+   "leaps": 0.35,
+   "ornament": 0.08,
+   "drone": 0.35,
+   "places": [
+    "venice",
+    "florence",
+    "vienna",
+    "london"
+   ],
+   "source": "taruskin-ohwm",
+   "confidence": "medium"
+  },
+  {
+   "id": "maqam",
+   "name": "Maqam",
+   "summary": "The modes of Arabic, Persian and Turkish music, some with steps between a semitone and a tone. Here maqam Bayati, whose second step lies about three-quarters of a tone above the tonic. A melody explores the mode a few notes at a time, ornamented and sliding between them.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      150,
+      300,
+      500,
+      700,
+      800,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "flute"
+    },
+    {
+     "voice": "pluck",
+     "until": 762
+    },
+    {
+     "voice": "lute",
+     "instrument": "oud"
+    },
+    {
+     "voice": "bow",
+     "instrument": "bowed-strings"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.6,
+   "leaps": 0.15,
+   "ornament": 0.35,
+   "glide": true,
+   "drone": 0.7,
+   "places": [
+    "baghdad",
+    "cordoba",
+    "cairo",
+    "isfahan"
+   ],
+   "source": "touma-arabs",
+   "confidence": "medium"
+  },
+  {
+   "id": "raga",
+   "name": "Raga",
+   "summary": "Indian music over an unchanging drone of the tonic and fifth, Sa and Pa. A raga is more than a scale: it has its own turns of phrase, notes to dwell on and a time of day. Here raga Bhairav, sung at dawn, opened slowly as in an alap, without a beat.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      100,
+      400,
+      500,
+      700,
+      800,
+      1100
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "flute"
+    },
+    {
+     "voice": "bow"
+    },
+    {
+     "voice": "bow",
+     "instrument": "violin"
+    }
+   ],
+   "pattern": "alap",
+   "beat": 0.75,
+   "leaps": 0.1,
+   "ornament": 0.2,
+   "glide": true,
+   "drone": 0.6,
+   "tanpura": true,
+   "places": [
+    "varanasi",
+    "delhi",
+    "thanjavur"
+   ],
+   "source": "bor-raga",
+   "confidence": "medium"
+  },
+  {
+   "id": "china",
+   "name": "The five notes",
+   "summary": "Chinese music on the five notes gong, shang, jue, zhi and yu, tuned by fifths: the seven-stringed qin of scholars, the end-blown xiao, the bronze bells of the early courts, and later the pipa from the west and the fiddle from the north. Before the oldest tune here, the players improvise on idiomatic phrases written for this atlas.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      204,
+      408,
+      702,
+      906
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "flute"
+    },
+    {
+     "voice": "bell",
+     "instrument": "zeng-bells",
+     "until": 220
+    },
+    {
+     "voice": "lute",
+     "instrument": "pipa"
+    },
+    {
+     "voice": "bow",
+     "instrument": "bowed-strings"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.62,
+   "leaps": 0.25,
+   "ornament": 0.12,
+   "glide": true,
+   "drone": 0.45,
+   "places": [
+    "changan",
+    "luoyang",
+    "kaifeng"
+   ],
+   "source": "thrasher-chinese",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "qin",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "both",
+      "gain": 0.95
+     },
+     {
+      "id": "xiao",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "melody",
+      "gain": 0.9
+     },
+     {
+      "id": "pipa",
+      "sample": "shamisen",
+      "voice": "lute",
+      "role": "both",
+      "tremolo": true,
+      "instrument": "pipa"
+     },
+     {
+      "id": "huqin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "melody",
+      "instrument": "bowed-strings",
+      "gain": 0.85
+     },
+     {
+      "id": "bianzhong",
+      "voice": "bell",
+      "role": "accent",
+      "instrument": "zeng-bells",
+      "until": 220
+     }
+    ],
+    "percussion": {
+     "2": "b...",
+     "3": "b...k.",
+     "4": "b...k..."
+    },
+    "motifs": [
+     "A4:1 B4:0.5 A4:0.5 F#4:1 E4:1",
+     "D4:0.5 E4:0.5 F#4:0.5 A4:0.5 F#4:1 E4:1",
+     "B4:0.5 D5:0.5 B4:0.5 A4:0.5 F#4:2",
+     "E4:1 F#4:0.5 E4:0.5 D4:1 B3:1",
+     "A4:0.5 B4:0.5 D5:1 B4:0.5 A4:0.5 F#4:1",
+     "F#4:1.5 A4:0.5 E4:0.5 F#4:0.5 D4:1",
+     "B3:0.5 D4:0.5 E4:1 F#4:0.5 E4:0.5 D4:1"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "molihua",
+     "name": "Mo Li Hua (Jasmine Flower)",
+     "about": "A song of the lower Yangzi, sung by the 1790s, when John Barrow heard it with the Macartney embassy and printed it in his Travels in China (1804): the first Chinese melody many in Europe heard.",
+     "from": 1700,
+     "notes": "E4:1 E4:0.5 G4:0.5 A4:0.5 C5:0.5 C5:0.5 A4:0.5 | G4:1 G4:0.5 A4:0.5 G4:1 / r:1 | E4:1 E4:0.5 G4:0.5 A4:0.5 C5:0.5 C5:0.5 A4:0.5 | G4:1 G4:0.5 A4:0.5 G4:1 / r:1 | G4:1 G4:1 G4:1 E4:0.5 G4:0.5 | A4:1 A4:1 G4:2 / | E4:1 D4:0.5 E4:0.5 G4:1 E4:0.5 D4:0.5 | C4:1 C4:0.5 D4:0.5 C4:2 / | E4:0.5 D4:0.5 C4:0.5 E4:0.5 D4:1.5 E4:0.5 | G4:1 A4:0.5 C5:0.5 G4:2 / | D4:1 E4:0.5 G4:0.5 D4:0.5 E4:0.5 C4:0.5 A3:0.5 | G3:2 A3:1 C4:1 | D4:1.5 E4:0.5 C4:0.5 D4:0.5 C4:0.5 A3:0.5 | G3:2 /",
+     "transpose": 2,
+     "beat": 0.55,
+     "meter": 4,
+     "source": "barrow-travels",
+     "confidence": "medium",
+     "credit": "Barrow's melody as set on Wikimedia Commons (\"Jasmine barrow.svg\", public domain)."
+    }
+   ]
+  },
+  {
+   "id": "japan",
+   "name": "Yō and in",
+   "summary": "Japanese music on five-note scales: the yō scale, without semitones, of court and folk song, and from the seventeenth century the in scale of the koto and shamisen, with two. Bamboo flute, the biwa (Japan's pipa) and the koto.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      500,
+      700,
+      900
+     ]
+    },
+    {
+     "from": 1600,
+     "cents": [
+      0,
+      100,
+      500,
+      700,
+      800
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "flute"
+    },
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "lute",
+     "instrument": "pipa"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.8,
+   "leaps": 0.3,
+   "ornament": 0.1,
+   "glide": true,
+   "drone": 0.3,
+   "places": [
+    "nara",
+    "kyoto",
+    "edo"
+   ],
+   "source": "malm-japan",
+   "confidence": "medium"
+  },
+  {
+   "id": "gamelan",
+   "name": "Gamelan",
+   "summary": "Javanese music in slendro, a scale of five nearly equal steps that fits no Western tuning. Interlocking patterns on bronze keys and gong-chimes repeat in cycles, each closed by a stroke of the great gong.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      240,
+      480,
+      720,
+      960
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "flute"
+    },
+    {
+     "voice": "metal",
+     "instrument": "gamelan"
+    }
+   ],
+   "pattern": "ostinato",
+   "beat": 0.36,
+   "leaps": 0.2,
+   "ornament": 0,
+   "drone": 0,
+   "gong": true,
+   "places": [
+    "trowulan",
+    "yogyakarta"
+   ],
+   "source": "kunst-java",
+   "confidence": "low"
+  },
+  {
+   "id": "andes",
+   "name": "Panpipes of the Andes",
+   "summary": "Music of the Andes on cane panpipes and notched flutes, in a five-note scale without semitones. Large panpipe ensembles split the scale between two players, who sound alternate notes.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      300,
+      500,
+      700,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "flute"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.58,
+   "leaps": 0.3,
+   "ornament": 0.05,
+   "drone": 0,
+   "places": [
+    "cuzco"
+   ],
+   "source": "turino-andes",
+   "confidence": "low"
+  },
+  {
+   "id": "mbira",
+   "name": "Mbira",
+   "summary": "Shona music of the mbira: short cycles plucked by the thumbs and repeated, changing a note at a time, with a second line heard between the first. Tunings vary from one instrument to the next; this one divides the octave into seven roughly even steps.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      170,
+      340,
+      510,
+      690,
+      860,
+      1030
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "tine",
+     "instrument": "mbira"
+    }
+   ],
+   "pattern": "ostinato",
+   "beat": 0.3,
+   "leaps": 0.3,
+   "ornament": 0,
+   "drone": 0,
+   "places": [
+    "great-zimbabwe",
+    "mapungubwe"
+   ],
+   "source": "berliner-mbira",
+   "confidence": "low"
+  },
+  {
+   "id": "neutral",
+   "name": "The atlas's own",
+   "summary": "A plucked string over a drone, in a mode that belongs to no one viewpoint: for peoples whose music this atlas does not yet try to evoke, and for the sea.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      900,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "pluck"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.64,
+   "leaps": 0.2,
+   "ornament": 0,
+   "drone": 1,
+   "places": [],
+   "fallback": true
+  }
+ ],
+ "viewpoints": [
+  {
+   "vp": "europe",
+   "tradition": "greek",
+   "until": -100
+  },
+  {
+   "vp": "europe",
+   "tradition": "rome",
+   "from": -100,
+   "until": 500
+  },
+  {
+   "vp": "europe",
+   "tradition": "chant",
+   "from": 500,
+   "until": 1600
+  },
+  {
+   "vp": "europe",
+   "tradition": "consort",
+   "from": 1600
+  },
+  {
+   "vp": "greece",
+   "tradition": "greek",
+   "until": -146
+  },
+  {
+   "vp": "greece",
+   "tradition": "rome",
+   "from": -146,
+   "until": 330
+  },
+  {
+   "vp": "greece",
+   "tradition": "chant",
+   "from": 330
+  },
+  {
+   "vp": "rome",
+   "tradition": "rome",
+   "until": 400
+  },
+  {
+   "vp": "rome",
+   "tradition": "chant",
+   "from": 400
+  },
+  {
+   "vp": "egypt",
+   "tradition": "greek",
+   "from": -332,
+   "until": -30
+  },
+  {
+   "vp": "egypt",
+   "tradition": "rome",
+   "from": -30,
+   "until": 641
+  },
+  {
+   "vp": "egypt",
+   "tradition": "maqam",
+   "from": 641
+  },
+  {
+   "vp": "iberia",
+   "tradition": "chant",
+   "from": 500,
+   "until": 1600
+  },
+  {
+   "vp": "iberia",
+   "tradition": "consort",
+   "from": 1600
+  },
+  {
+   "vp": "france",
+   "tradition": "chant",
+   "from": 500,
+   "until": 1600
+  },
+  {
+   "vp": "france",
+   "tradition": "consort",
+   "from": 1600
+  },
+  {
+   "vp": "britain",
+   "tradition": "chant",
+   "from": 600,
+   "until": 1600
+  },
+  {
+   "vp": "britain",
+   "tradition": "consort",
+   "from": 1600
+  },
+  {
+   "vp": "germany",
+   "tradition": "chant",
+   "from": 750,
+   "until": 1600
+  },
+  {
+   "vp": "germany",
+   "tradition": "consort",
+   "from": 1600
+  },
+  {
+   "vp": "norse",
+   "tradition": "chant",
+   "from": 1050,
+   "until": 1600
+  },
+  {
+   "vp": "norse",
+   "tradition": "consort",
+   "from": 1600
+  },
+  {
+   "vp": "russia",
+   "tradition": "chant",
+   "from": 990,
+   "until": 1700
+  },
+  {
+   "vp": "russia",
+   "tradition": "consort",
+   "from": 1700
+  },
+  {
+   "vp": "islam",
+   "tradition": "maqam"
+  },
+  {
+   "vp": "arabia",
+   "tradition": "maqam"
+  },
+  {
+   "vp": "persia",
+   "tradition": "maqam"
+  },
+  {
+   "vp": "maghreb",
+   "tradition": "maqam",
+   "from": 700
+  },
+  {
+   "vp": "turks",
+   "tradition": "maqam",
+   "from": 950
+  },
+  {
+   "vp": "india",
+   "tradition": "raga"
+  },
+  {
+   "vp": "china",
+   "tradition": "china"
+  },
+  {
+   "vp": "korea",
+   "tradition": "china"
+  },
+  {
+   "vp": "japan",
+   "tradition": "japan",
+   "from": 600
+  },
+  {
+   "vp": "nusantara",
+   "tradition": "gamelan"
+  },
+  {
+   "vp": "inca",
+   "tradition": "andes"
+  },
+  {
+   "vp": "zimbabwe",
+   "tradition": "mbira"
+  },
+  {
+   "vp": "kongo",
+   "tradition": "mbira"
+  }
+ ],
+ "lands": [
+  {
+   "regions": [
+    "greece",
+    "crete",
+    "cyprus"
+   ],
+   "vp": "greece"
+  },
+  {
+   "regions": [
+    "anatolia"
+   ],
+   "vp": "greece",
+   "until": 1300
+  },
+  {
+   "regions": [
+    "anatolia"
+   ],
+   "vp": "turks",
+   "from": 1300
+  },
+  {
+   "regions": [
+    "italy",
+    "sicily"
+   ],
+   "vp": "rome",
+   "until": 1000
+  },
+  {
+   "regions": [
+    "italy",
+    "sicily"
+   ],
+   "vp": "europe",
+   "from": 1000
+  },
+  {
+   "regions": [
+    "iberia"
+   ],
+   "vp": "iberia",
+   "until": 711
+  },
+  {
+   "regions": [
+    "iberia"
+   ],
+   "vp": "islam",
+   "from": 711,
+   "until": 1250
+  },
+  {
+   "regions": [
+    "iberia"
+   ],
+   "vp": "iberia",
+   "from": 1250
+  },
+  {
+   "regions": [
+    "gaul"
+   ],
+   "vp": "france"
+  },
+  {
+   "regions": [
+    "britain",
+    "ireland"
+   ],
+   "vp": "britain"
+  },
+  {
+   "regions": [
+    "germania",
+    "alps-danube"
+   ],
+   "vp": "germany"
+  },
+  {
+   "regions": [
+    "scandinavia",
+    "iceland"
+   ],
+   "vp": "norse"
+  },
+  {
+   "regions": [
+    "rus",
+    "volga",
+    "russian-north"
+   ],
+   "vp": "russia"
+  },
+  {
+   "regions": [
+    "egypt"
+   ],
+   "vp": "egypt"
+  },
+  {
+   "regions": [
+    "maghreb",
+    "ifriqiya",
+    "libya"
+   ],
+   "vp": "maghreb"
+  },
+  {
+   "regions": [
+    "levant",
+    "mesopotamia",
+    "arabia-hejaz",
+    "arabia-felix",
+    "oman",
+    "arabia-interior"
+   ],
+   "vp": "arabia"
+  },
+  {
+   "regions": [
+    "persia",
+    "transoxiana",
+    "bactria"
+   ],
+   "vp": "persia"
+  },
+  {
+   "regions": [
+    "indus",
+    "india-north",
+    "bengal",
+    "west-india-coast",
+    "deccan",
+    "malabar",
+    "tamilakam",
+    "sri-lanka"
+   ],
+   "vp": "india"
+  },
+  {
+   "regions": [
+    "china-north",
+    "ordos",
+    "guanzhong",
+    "central-plain",
+    "hebei",
+    "shandong",
+    "shanxi",
+    "china-south",
+    "jiangnan",
+    "middle-yangzi",
+    "fujian",
+    "lingnan",
+    "sichuan",
+    "sichuan-basin",
+    "yunnan-guizhou",
+    "hexi"
+   ],
+   "vp": "china"
+  },
+  {
+   "regions": [
+    "korea"
+   ],
+   "vp": "korea"
+  },
+  {
+   "regions": [
+    "japan"
+   ],
+   "vp": "japan"
+  },
+  {
+   "regions": [
+    "java",
+    "sumatra",
+    "malay-peninsula",
+    "borneo",
+    "lesser-sunda"
+   ],
+   "vp": "nusantara"
+  },
+  {
+   "regions": [
+    "peru",
+    "ecuador",
+    "atacama-chile"
+   ],
+   "vp": "inca"
+  },
+  {
+   "regions": [
+    "zambezi",
+    "southern-africa"
+   ],
+   "vp": "zimbabwe"
+  },
+  {
+   "regions": [
+    "angola",
+    "congo"
+   ],
+   "vp": "kongo"
+  }
+ ]
+}

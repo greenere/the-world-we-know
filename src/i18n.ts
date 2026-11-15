@@ -13,6 +13,8 @@ export interface ZhContent {
   regions: Record<string, string>;
   journeys: Record<string, {name?: string; traveler?: string; years?: string; summary?: string; stops?: Record<string, {place?: string; note?: string; date?: string}>}>;
   inventions: Record<string, {name?: string; place?: string; culture?: string; summary?: string; changed?: string}>;
+  soundscapes?: Record<string, {name?: string; summary?: string}>;
+  tunes?: Record<string, {name?: string; about?: string}>;
   living: Record<string, {name?: string; place?: string; culture?: string; summary?: string; extinct?: string; spread?: Record<string, {place?: string; note?: string}>}>;
   viewpoints: Record<string, {name?: string; longName?: string; adjective?: string; tagline?: string; startNote?: string}>;
   moments: Record<string, string>;
@@ -101,6 +103,14 @@ export const tx = {
   /** A plant or animal: its name, its origin's place and culture, its story, or how it died out. */
   living(id: string, field: 'name' | 'place' | 'culture' | 'summary' | 'extinct', en: string): string {
     return (lang === 'zh' && zh?.living?.[id]?.[field]) || en;
+  },
+  /** A musical tradition: its name or what it is. */
+  soundscape(id: string, field: 'name' | 'summary', en: string): string {
+    return (lang === 'zh' && zh?.soundscapes?.[id]?.[field]) || en;
+  },
+  /** A piece of music: its name or what it is. */
+  tune(id: string, field: 'name' | 'about', en: string): string {
+    return (lang === 'zh' && zh?.tunes?.[id]?.[field]) || en;
   },
   arrival(id: string, index: number, field: 'place' | 'note', en: string): string {
     const z = lang === 'zh' ? zh?.living?.[id]?.spread?.[index]?.[field] : undefined;
