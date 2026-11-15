@@ -1,0 +1,12 @@
+{
+  "subject": "journey/alexander",
+  "scene": "patala-tide",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-14",
+  "prompt": "Create ONE archaeological travel sketch, landscape aspect ratio 3:2. PRIMARY SUBJECT: Wide Indus delta tidal mudflat 325 BCE at low tide, two modest ancient wooden river vessels grounded slightly tilted naturally on soft mud, water channel and mangrove-like sparse coastal vegetation distant, a few sailors inspecting hulls. Boats supported by mud not floating in air, no huge modern ship or dramatic ocean surf.\nCOMPOSITION PRIORITY: The landscape, architecture or object described above must occupy the page. NO foreground person, NO portrait, NO Alexander, NO red-cloaked observer, NO group conversing in front of the view. If any workers or troops are required by the scene, they are tiny distant figures, less than one tenth of image height. For the wagon and the sanctuary, no people at all. Do not add separate detail insets.\nMEDIUM: Loose visible graphite drawing with sepia pen and parallel hatching, a few pale washes of ochre, grey-green and faded blue. Generous irregular unfinished margins of bare warm cream paper, softly worn. An observational field sketch, not a polished painting, not a comic character scene. No text, captions, frame or labels. Late fourth century BCE: no modern or medieval structures or tools.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+  ],
+  "revision": "Recomposed as a landscape, architecture or object study without a foreground portrait."
+}

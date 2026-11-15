@@ -1,0 +1,12 @@
+{
+  "subject": "journey/alexander",
+  "scene": "persepolis-fire",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-14",
+  "prompt": "Create ONE archaeological travel sketch, landscape aspect ratio 3:2. PRIMARY SUBJECT: Quiet aftermath of Persepolis palace fire, blackened fallen timber beams lying on stone pavement between surviving columns and scorched doorway, light smoke thinning into pale morning sky, architecture damaged not citywide inferno. No corpses or triumphant posing figures, careful spatial load and rubble.\nCOMPOSITION PRIORITY: The landscape, architecture or object described above must occupy the page. NO foreground person, NO portrait, NO Alexander, NO red-cloaked observer, NO group conversing in front of the view. If any workers or troops are required by the scene, they are tiny distant figures, less than one tenth of image height. For the wagon and the sanctuary, no people at all. Do not add separate detail insets.\nMEDIUM: Loose visible graphite drawing with sepia pen and parallel hatching, a few pale washes of ochre, grey-green and faded blue. Generous irregular unfinished margins of bare warm cream paper, softly worn. An observational field sketch, not a polished painting, not a comic character scene. No text, captions, frame or labels. Late fourth century BCE: no modern or medieval structures or tools.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+  ],
+  "revision": "Recomposed as a landscape, architecture or object study without a foreground portrait."
+}

@@ -1,0 +1,11 @@
+{
+  "subject": "journey/nearchus",
+  "scene": "diridotis-incense",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-14",
+  "prompt": "Use case: historical-scene. Asset type: journey sketchbook card.\nOne landscape 3:2 page from a historical travel sketchbook. Loose visible graphite construction lines, quick sepia hatching, restrained uneven watercolour washes in ochre, grey-green and faded blue, irregular unfinished edges dissolving into lightly foxed cream paper. Observed and modest rather than cinematic or fantasy. One integrated scene, no border, no inset drawings, no legible text, labels, annotations or signature.\nDate and region: 324 BCE, Diridotis.\nSubject and composition: Medium interior view inside a simple ancient mudbrick riverside storehouse, ordinary local merchant weighing small pale frankincense resin pieces on a balanced two-pan beam scale, woven sacks and clay jars, daylight through open door reveals a reed-lined estuary and wooden trading boat. Two complete local adult figures in plain woven garments, no Greek admiral, no coins in close-up or readable inscriptions. Coherent scale geometry and natural hands.\nWhen vessels appear: fourth-century BCE wooden oared ships with one simple mast and square sail, or sail furled; coherent curved hull, evenly aligned oars attached at gunwales, steering oars rather than wheels. No lateen sails, Viking dragon heads, modern rigging, engines or modern harbour works.\nDo not insert Alexander or a recurring admiral into this scene. Follow the stated framing: landscape and object pages must not become foreground portraits.\nMaintain anatomically sound hands, bodies and animals, physically consistent boat-water relationships, plausible ancient materials. Respect the specific viewpoint and main subject.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+  ]
+}

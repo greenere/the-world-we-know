@@ -1,0 +1,11 @@
+{
+  "subject": "journey/nearchus",
+  "scene": "strait-headland",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-14",
+  "prompt": "Use case: historical-scene. Asset type: journey sketchbook card.\nOne landscape 3:2 page from a historical travel sketchbook. Loose visible graphite construction lines, quick sepia hatching, restrained uneven watercolour washes in ochre, grey-green and faded blue, irregular unfinished edges dissolving into lightly foxed cream paper. Observed and modest rather than cinematic or fantasy. One integrated scene, no border, no inset drawings, no legible text, labels, annotations or signature.\nDate and region: 325 BCE, Badis.\nSubject and composition: Wide open-water view in the Strait of Hormuz on the approach to Harmozeia: distant rugged Arabian Musandam headland across a broad expanse of hazy blue-grey sea, with two very small ancient wooden galleys following the nearer Persian coast. Mountain forms on horizon, no buildings, no foreground people, no map, no arrows. The distant coast is seen but not being landed upon.\nWhen vessels appear: fourth-century BCE wooden oared ships with one simple mast and square sail, or sail furled; coherent curved hull, evenly aligned oars attached at gunwales, steering oars rather than wheels. No lateen sails, Viking dragon heads, modern rigging, engines or modern harbour works.\nDo not insert Alexander or a recurring admiral into this scene. Follow the stated framing: landscape and object pages must not become foreground portraits.\nMaintain anatomically sound hands, bodies and animals, physically consistent boat-water relationships, plausible ancient materials. Respect the specific viewpoint and main subject.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+  ]
+}

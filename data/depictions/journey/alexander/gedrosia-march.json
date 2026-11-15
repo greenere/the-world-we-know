@@ -1,0 +1,12 @@
+{
+  "subject": "journey/alexander",
+  "scene": "gedrosia-march",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-14",
+  "prompt": "Create ONE archaeological travel sketch, landscape aspect ratio 3:2. PRIMARY SUBJECT: Huge harsh Gedrosian Makran desert landscape, bleached gravel plain and folded barren ridges rather than endless Sahara dunes, tiny straggling column of people and pack animals tracing dry wadi under white heat, no leader close-up, no corpses, no magical lush oasis.\nCOMPOSITION PRIORITY: The landscape, architecture or object described above must occupy the page. NO foreground person, NO portrait, NO Alexander, NO red-cloaked observer, NO group conversing in front of the view. If any workers or troops are required by the scene, they are tiny distant figures, less than one tenth of image height. For the wagon and the sanctuary, no people at all. Do not add separate detail insets.\nMEDIUM: Loose visible graphite drawing with sepia pen and parallel hatching, a few pale washes of ochre, grey-green and faded blue. Generous irregular unfinished margins of bare warm cream paper, softly worn. An observational field sketch, not a polished painting, not a comic character scene. No text, captions, frame or labels. Late fourth century BCE: no modern or medieval structures or tools.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+  ],
+  "revision": "Recomposed as a landscape, architecture or object study without a foreground portrait."
+}

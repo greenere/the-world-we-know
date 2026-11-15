@@ -1,0 +1,11 @@
+{
+  "subject": "journey/nearchus",
+  "scene": "harmozeia-messengers",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-14",
+  "prompt": "Use case: historical-scene. Asset type: journey sketchbook card.\nOne landscape 3:2 page from a historical travel sketchbook. Loose visible graphite construction lines, quick sepia hatching, restrained uneven watercolour washes in ochre, grey-green and faded blue, irregular unfinished edges dissolving into lightly foxed cream paper. Observed and modest rather than cinematic or fantasy. One integrated scene, no border, no inset drawings, no legible text, labels, annotations or signature.\nDate and region: 325 BCE, Harmozeia.\nSubject and composition: Eye-level inland Carmanian dusty track: weary Nearchus and two unarmed sailors with travel-stained tunics meeting two Macedonian mounted messengers who have stopped their horses. Admiral on foot with natural stance, no grand ceremony or Alexander, warm arid foothills and sparse shrubs. Horses anatomically coherent with four legs each and no stirrups; people spatially separated, no hands merged into reins.\nWhen vessels appear: fourth-century BCE wooden oared ships with one simple mast and square sail, or sail furled; coherent curved hull, evenly aligned oars attached at gunwales, steering oars rather than wheels. No lateen sails, Viking dragon heads, modern rigging, engines or modern harbour works.\nNearchus, Greek admiral in his thirties in 325 BCE: weathered olive skin, short dark curly hair and a short beard, lean build, plain off-white linen tunic and faded blue-grey cloak. No red royal cloak, crown, Roman armour or modern naval uniform. Only depict him in scenes explicitly requesting him.\nMaintain anatomically sound hands, bodies and animals, physically consistent boat-water relationships, plausible ancient materials. Respect the specific viewpoint and main subject.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "subject": "journey/nearchus",
+  "scene": "badis-fields",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-14",
+  "prompt": "Use case: historical-scene. Asset type: journey sketchbook card.\nOne landscape 3:2 page from a historical travel sketchbook. Loose visible graphite construction lines, quick sepia hatching, restrained uneven watercolour washes in ochre, grey-green and faded blue, irregular unfinished edges dissolving into lightly foxed cream paper. Observed and modest rather than cinematic or fantasy. One integrated scene, no border, no inset drawings, no legible text, labels, annotations or signature.\nDate and region: 325 BCE, Badis.\nSubject and composition: Wide landscape looking inland from the shore near Cape Jask, modest ancient mudbrick settlement, small grain plots and scattered date palms supplied by a narrow water channel, dry mountain backdrop. Productive but arid coastal agriculture, not lush jungle. One tiny boat at water edge for scale, no foreground people, no later domes or minarets.\nWhen vessels appear: fourth-century BCE wooden oared ships with one simple mast and square sail, or sail furled; coherent curved hull, evenly aligned oars attached at gunwales, steering oars rather than wheels. No lateen sails, Viking dragon heads, modern rigging, engines or modern harbour works.\nDo not insert Alexander or a recurring admiral into this scene. Follow the stated framing: landscape and object pages must not become foreground portraits.\nMaintain anatomically sound hands, bodies and animals, physically consistent boat-water relationships, plausible ancient materials. Respect the specific viewpoint and main subject.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+  ]
+}

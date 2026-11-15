@@ -1,0 +1,18 @@
+{
+  "subject": "journey/nearchus",
+  "scene": "pasitigris-honours",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-14",
+  "prompt": "Use case: historical-scene. Asset type: journey sketchbook card.\nOne landscape 3:2 page from a historical travel sketchbook. Loose visible graphite construction lines, quick sepia hatching, restrained uneven watercolour washes in ochre, grey-green and faded blue, irregular unfinished edges dissolving into lightly foxed cream paper. Observed and modest rather than cinematic or fantasy. One integrated scene, no border, no inset drawings, no legible text, labels, annotations or signature.\nDate and region: 324 BCE, Bridge on the Pasitigris.\nSubject and composition: Quiet close still-life on a rough wooden campaign stool beside a folded salt-worn linen cloak: a delicate ancient gold leaf wreath, a few fresh small flowers and simple cloth ribbons. Blurred tent edge and river light behind. No human figures, no severed body parts, no royal jeweled crown, no modern medals. Objects as modest material traces of the fleet's welcome, graphite detail and restrained pale gold wash.\nWhen vessels appear: fourth-century BCE wooden oared ships with one simple mast and square sail, or sail furled; coherent curved hull, evenly aligned oars attached at gunwales, steering oars rather than wheels. No lateen sails, Viking dragon heads, modern rigging, engines or modern harbour works.\nDo not insert Alexander or a recurring admiral into this scene. Follow the stated framing: landscape and object pages must not become foreground portraits.\nMaintain anatomically sound hands, bodies and animals, physically consistent boat-water relationships, plausible ancient materials. Respect the specific viewpoint and main subject.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+  ],
+  "edits": [
+    {
+      "method": "built-in imagegen",
+      "prompt": "Use case: precise-object-edit. Edit this historical watercolour sketchbook page. Change ONLY the distant bridge in the upper-left background: remove the entire arched bridge and replace its area with uninterrupted river water, a low distant reed bank and soft atmospheric trees. There must be NO bridge, no piers and no arches anywhere in this image. Preserve the foreground gold leaf wreath, flowers, ribbons, worn cloak, stool and tent exactly, and preserve the ancient boats, palette, loose graphite and watercolour style, cream paper edges and 3:2 composition. No new text or people.",
+      "input_sha256": "39b7b540fa1f4a0716565223586211b1036f94a1699fbd3e1898dccb7901df34"
+    }
+  ]
+}

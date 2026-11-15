@@ -1,0 +1,710 @@
+{
+  "traveller": "Alexander of Macedon, aged 22 at departure in 334 BCE and 32 in 323 BCE, young adult man with light olive skin, wavy light-brown hair swept back from forehead, clean-shaven, lean athletic build. Plain off-white short tunic and muted red travel cloak, practical fourth-century BCE Macedonian armor only when appropriate. Never medieval crown, Roman segmented armor or stirrups. Troops and local people have varied faces, ages and dress appropriate to each region. Alexander appears only when the scene explicitly asks for him.",
+  "scenes": [
+    {
+      "id": "pella-baggage",
+      "stop": 0,
+      "place": "Pella",
+      "title": "The baggage on the road",
+      "caption": "Pack animals carried food, tools and spare equipment behind the fighting troops. A campaign that would reach the Indus began with the ordinary work of loading bundles and keeping a long column moving.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Side view at baggage-animal height outside fourth-century BCE Pella, two Macedonian attendants loading woven sacks and rolled blankets onto one mule with anatomically sound legs and load balanced either side, column of infantry small behind on Macedonian plain. Modest mudbrick buildings, no Roman arches.",
+      "traveller": false,
+      "composition": {
+        "focus": "travel",
+        "view": "Side view at baggage-animal height outside fourth-century BCE Pella, two Macedonian attendants loading woven sacks and rolled blankets onto one mule with anatomically sound legs and load balanced either side, column of infantry small behind on Macedonian plain. Modest mudbrick buildings, no Roman arches."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "I.11; baggage details contextual",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "pella-sarissae",
+      "stop": 0,
+      "place": "Pella",
+      "title": "Preparing the long spears",
+      "caption": "Macedonian infantry fought in close ranks with long sarissas. Before a march, men would have checked wooden shafts, metal fittings and shield straps; the effectiveness of the formation depended on equipment as much as drill.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Close quiet field study of two seated Macedonian infantrymen repairing straps of small round shields and checking long wooden sarissa shafts lying horizontally on simple supports, fourth-century BCE linen tunics and practical helmets aside, restrained bronze iron details. No Roman segmented armor or medieval spearheads, no tangled hands.",
+      "traveller": false,
+      "composition": {
+        "focus": "objects",
+        "view": "Close quiet field study of two seated Macedonian infantrymen repairing straps of small round shields and checking long wooden sarissa shafts lying horizontally on simple supports, fourth-century BCE linen tunics and practical helmets aside, restrained bronze iron details. No Roman segmented armor or medieval spearheads, no tangled hands."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "I.14–16; contextual equipment study",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "granicus-ford",
+      "stop": 1,
+      "place": "The Granicus",
+      "title": "The opposite bank",
+      "caption": "At the Granicus, the approach to the far bank mattered as much as the water itself. Arrian describes cavalry trying to gain footing while Persian horsemen held the higher ground opposite them.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide low upstream view of shallow Granicus river in spring, sloping far bank with small Persian mounted troops silhouetted on higher ground, tiny Macedonian cavalry beginning a ford mid-distance, coherent horses feet submerged naturally, river terrain principal subject, no graphic wounds or giant waves.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Wide low upstream view of shallow Granicus river in spring, sloping far bank with small Persian mounted troops silhouetted on higher ground, tiny Macedonian cavalry beginning a ford mid-distance, coherent horses feet submerged naturally, river terrain principal subject, no graphic wounds or giant waves."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "I.13–16",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "gordium-wagon",
+      "stop": 2,
+      "place": "Gordium",
+      "title": "The knot on the wagon",
+      "caption": "The famous knot fastened a wagon's yoke to its pole. Ancient accounts disagree about how Alexander released it: the sword stroke is one version, while another describes him removing a fastening pin.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Close three-quarter study of ancient Phrygian wooden ox wagon front, a thick compact knot of bark-fibre cord fastening a transverse wooden yoke to single central draw pole, wooden peg visible, solid wooden wheel partly behind, simple shaded sanctuary courtyard. No person sword action, no modern steel wagon or readable inscriptions.",
+      "traveller": false,
+      "composition": {
+        "focus": "objects",
+        "view": "Close three-quarter study of ancient Phrygian wooden ox wagon front, a thick compact knot of bark-fibre cord fastening a transverse wooden yoke to single central draw pole, wooden peg visible, solid wooden wheel partly behind, simple shaded sanctuary courtyard. No person sword action, no modern steel wagon or readable inscriptions."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "II.3",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "issus-shore",
+      "stop": 3,
+      "place": "Issus",
+      "title": "Mountains beside the sea",
+      "caption": "The ground near Issus squeezed the armies between the mountains and the Mediterranean. From the coastal plain, the steep slopes and narrow river crossings help explain why Darius could not use his larger army as freely as he wished.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Grand landscape of Issus coastal plain southeastern Anatolia, sea on one side steep Amanus slopes on other with small river crossing narrow plain, tiny opposing fourth-century BCE army lines far apart secondary scale. No monumental city or modern roads, no bloody foreground combat.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Grand landscape of Issus coastal plain southeastern Anatolia, sea on one side steep Amanus slopes on other with small river crossing narrow plain, tiny opposing fourth-century BCE army lines far apart secondary scale. No monumental city or modern roads, no bloody foreground combat."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "II.7–11",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "tyre-causeway",
+      "stop": 4,
+      "place": "Tyre",
+      "title": "A road into the water",
+      "caption": "Timber and stone went into the causeway towards Tyre. As work reached deeper water, the builders faced a harder task and greater exposure to attacks from the island's walls and ships.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Low diagonal view along unfinished rubble and timber siege causeway toward clearly separate walled island Tyre across water, fourth-century BCE laborers tipping stones from wicker baskets foreground, piles braces and calm shallow surf, gap of deeper water before city still obvious. No completed modern peninsula, no cranes or fantasy towers.",
+      "traveller": false,
+      "composition": {
+        "focus": "work",
+        "view": "Low diagonal view along unfinished rubble and timber siege causeway toward clearly separate walled island Tyre across water, fourth-century BCE laborers tipping stones from wicker baskets foreground, piles braces and calm shallow surf, gap of deeper water before city still obvious. No completed modern peninsula, no cranes or fantasy towers."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "II.18–19",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "tyre-ships",
+      "stop": 4,
+      "place": "Tyre",
+      "title": "Ships under the walls",
+      "caption": "The siege changed when fleets from Phoenicia and Cyprus joined Alexander. Ships could block the harbours and bring siege equipment against the seaward walls, adding an approach the causeway alone could not provide.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "View from low boat across Tyre harbor mouth toward Phoenician stone sea wall, two fourth-century BCE oared warships seen side-on with coherent single hull each and orderly oar banks, lowered square sails bundled, small simple timber siege frame securely supported on one broad ship deck. No cannon, medieval galleon or skyscraper siege engine, no gore.",
+      "traveller": false,
+      "composition": {
+        "focus": "travel",
+        "view": "View from low boat across Tyre harbor mouth toward Phoenician stone sea wall, two fourth-century BCE oared warships seen side-on with coherent single hull each and orderly oar banks, lowered square sails bundled, small simple timber siege frame securely supported on one broad ship deck. No cannon, medieval galleon or skyscraper siege engine, no gore."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "II.20–24",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "alexandria-lines",
+      "stop": 5,
+      "place": "Alexandria",
+      "title": "Marking a future city",
+      "caption": "Alexander chose places for streets, sanctuaries and the market on the Egyptian coast. Arrian preserves a story that the builders used grain to mark out the walls when they had nothing suitable for scoring the ground.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide ground-level view of bare low Egyptian coastal site 331 BCE, young clean-shaven Alexander in simple off-white tunic muted red cloak observing two builders laying a narrow line of grain on ground from small baskets, stakes and coastline beyond, few fishing huts. No Lighthouse of Alexandria, no library, no finished Greek metropolis, no modern blueprint.",
+      "traveller": true,
+      "composition": {
+        "focus": "work",
+        "view": "Wide ground-level view of bare low Egyptian coastal site 331 BCE, young clean-shaven Alexander in simple off-white tunic muted red cloak observing two builders laying a narrow line of grain on ground from small baskets, stakes and coastline beyond, few fishing huts. No Lighthouse of Alexandria, no library, no finished Greek metropolis, no modern blueprint."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.1–2",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "siwa-oasis",
+      "stop": 6,
+      "place": "Siwa oasis",
+      "title": "Green ground in the desert",
+      "caption": "The approach to Ammon's sanctuary ended in an oasis surrounded by desert. Water and cultivated ground made this a place where people could live, receive travellers and maintain a shrine far from the Nile valley.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide Siwa oasis landscape from low rocky desert ridge, dense date palms and small cultivated plots around modest mudbrick settlement, desert beyond, small fourth-century BCE party approaching along track. Avoid medieval Shali skyline or modern water tanks, no exaggerated tropical jungle.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Wide Siwa oasis landscape from low rocky desert ridge, dense date palms and small cultivated plots around modest mudbrick settlement, desert beyond, small fourth-century BCE party approaching along track. Avoid medieval Shali skyline or modern water tanks, no exaggerated tropical jungle."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.3–4",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "siwa-sanctuary",
+      "stop": 6,
+      "place": "Siwa oasis",
+      "title": "At the sanctuary of Ammon",
+      "caption": "The oracle mattered to Alexander as a place of divine authority. Arrian says that he heard an answer pleasing to him, but does not give a dependable transcript of the private consultation.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Intimate architectural view of modest ancient Egyptian stone doorway at Aghurmi sanctuary of Ammon in Siwa, thick sandstone lintel and plain walls, shaded empty threshold opening into dark chamber, palm fronds glimpse outside. No enormous Karnak colonnade, no invented visible deity, no readable hieroglyphs or medieval mosque.",
+      "traveller": false,
+      "composition": {
+        "focus": "architecture",
+        "view": "Intimate architectural view of modest ancient Egyptian stone doorway at Aghurmi sanctuary of Ammon in Siwa, thick sandstone lintel and plain walls, shaded empty threshold opening into dark chamber, palm fronds glimpse outside. No enormous Karnak colonnade, no invented visible deity, no readable hieroglyphs or medieval mosque."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.3–4",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "gaugamela-plain",
+      "stop": 7,
+      "place": "Gaugamela",
+      "title": "Room to manoeuvre",
+      "caption": "Darius selected open ground at Gaugamela and had obstacles removed for his chariots. The broad plain gave cavalry room to move, making the direction and timing of each advance especially important.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Very wide dawn panorama of northern Mesopotamian open plain near Gaugamela, distant ordered cavalry lines and tiny chariots secondary to broad terrain, Macedonian spear ranks small near edge, low brown hills horizon. No medieval fortresses, no cinematic melee or wounds, dust and restrained light.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Very wide dawn panorama of northern Mesopotamian open plain near Gaugamela, distant ordered cavalry lines and tiny chariots secondary to broad terrain, Macedonian spear ranks small near edge, low brown hills horizon. No medieval fortresses, no cinematic melee or wounds, dust and restrained light."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.8–15",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "babylon-gateway",
+      "stop": 8,
+      "place": "Babylon",
+      "title": "Through the city gate",
+      "caption": "Babylon presented the army with a different scale of urban life. Glazed brick, broad approaches and massive defensive walls belonged to a city whose buildings and institutions had developed long before the Macedonians arrived.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Street-level grand view approaching Neo-Babylonian glazed-brick Ishtar gateway as it could stand under late Achaemenid rule 331 BCE, deep blue brick with restrained tiny animal reliefs, thick fortified gateway and broad processional approach, small ordinary residents beside incoming Macedonian soldiers for scale. No Hanging Gardens fantasy or modern museum facade, one coherent gateway not huge imaginary tower.",
+      "traveller": false,
+      "composition": {
+        "focus": "architecture",
+        "view": "Street-level grand view approaching Neo-Babylonian glazed-brick Ishtar gateway as it could stand under late Achaemenid rule 331 BCE, deep blue brick with restrained tiny animal reliefs, thick fortified gateway and broad processional approach, small ordinary residents beside incoming Macedonian soldiers for scale. No Hanging Gardens fantasy or modern museum facade, one coherent gateway not huge imaginary tower."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.16; architectural context",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "babylon-water",
+      "stop": 8,
+      "place": "Babylon",
+      "title": "Fields supplied by canals",
+      "caption": "Around Babylon, channels carried river water into cultivated land. An army passing through this plain depended on the same grain, water and transport networks that supported the people living there.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Low canal-bank view in Babylonian agricultural plain fourth century BCE, muddy irrigation channel with simple earthen bank opening into barley plots, date palms and one small cargo skiff, two local farmers tending bank with wooden tools, city distant indistinct. No modern pumping wheel or lush imaginary gardens.",
+      "traveller": false,
+      "composition": {
+        "focus": "daily-life",
+        "view": "Low canal-bank view in Babylonian agricultural plain fourth century BCE, muddy irrigation channel with simple earthen bank opening into barley plots, date palms and one small cargo skiff, two local farmers tending bank with wooden tools, city distant indistinct. No modern pumping wheel or lush imaginary gardens."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.16; contextual landscape",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "persepolis-hall",
+      "stop": 9,
+      "place": "Persepolis",
+      "title": "Under the palace columns",
+      "caption": "Persepolis had received delegations from across the Persian empire. Its high columns, carved stairways and large reception spaces gave the Macedonians a physical view of the royal power they were taking over.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Low interior architectural view within intact Achaemenid Apadana at Persepolis before fire 330 BCE, slender fluted stone columns with paired bull capitals supporting plausible heavy timber ceiling beams, light from open portico, shallow carved delegations on stair glimpsed outside, a few tiny Macedonian visitors. No modern roofless ruin, no Greek pediment or fantasy giant statues.",
+      "traveller": false,
+      "composition": {
+        "focus": "architecture",
+        "view": "Low interior architectural view within intact Achaemenid Apadana at Persepolis before fire 330 BCE, slender fluted stone columns with paired bull capitals supporting plausible heavy timber ceiling beams, light from open portico, shallow carved delegations on stair glimpsed outside, a few tiny Macedonian visitors. No modern roofless ruin, no Greek pediment or fantasy giant statues."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.18; architectural context",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "persepolis-fire",
+      "stop": 9,
+      "place": "Persepolis",
+      "title": "After the palace fire",
+      "caption": "Arrian records that Alexander burned the royal palace despite Parmenion's objections. The destruction removed more than a symbol of kingship: timber roofs and the rooms beneath them could not be recovered once the fire had passed.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Quiet aftermath of Persepolis palace fire, blackened fallen timber beams lying on stone pavement between surviving columns and scorched doorway, light smoke thinning into pale morning sky, architecture damaged not citywide inferno. No corpses or triumphant posing figures, careful spatial load and rubble.",
+      "traveller": false,
+      "composition": {
+        "focus": "aftermath",
+        "view": "Quiet aftermath of Persepolis palace fire, blackened fallen timber beams lying on stone pavement between surviving columns and scorched doorway, light smoke thinning into pale morning sky, architecture damaged not citywide inferno. No corpses or triumphant posing figures, careful spatial load and rubble."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.18",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "ecbatana-horses",
+      "stop": 10,
+      "place": "Ecbatana",
+      "title": "Changing the pace of pursuit",
+      "caption": "At Ecbatana, Alexander reorganised his forces and sent some allied troops home. The pursuit of Darius continued eastwards, with fresh horses and a lighter column becoming more useful than the full weight of an army.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Eye-level stable-yard scene near Ecbatana 330 BCE, two grooms tending saddled horses and removing travel bundles, low mudbrick courtyard and Zagros foothills distant, fourth-century BCE simple saddlecloths with no stirrups, ordinary work not heroic leader portrait, correct horse anatomy.",
+      "traveller": true,
+      "composition": {
+        "focus": "work",
+        "view": "Eye-level stable-yard scene near Ecbatana 330 BCE, two grooms tending saddled horses and removing travel bundles, low mudbrick courtyard and Zagros foothills distant, fourth-century BCE simple saddlecloths with no stirrups, ordinary work not heroic leader portrait, correct horse anatomy."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.19–21",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "bactra-town",
+      "stop": 11,
+      "place": "Bactra",
+      "title": "A city at the crossing of routes",
+      "caption": "Bactra stood within a settled landscape of cultivation and trade. The army's arrival brought it into contact with communities whose roads, stores and local knowledge mattered as much as the fortress walls.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Fourth-century BCE Bactra inhabited town lane, low flat-roofed mudbrick houses and storage courtyard, local Bactrian attendants with pack donkeys and woven grain baskets, irrigation greenery beyond gate distant mountains, no Islamic domes minarets Buddhist giant statues or Silk Road fantasy bazaar.",
+      "traveller": true,
+      "composition": {
+        "focus": "daily-life",
+        "view": "Fourth-century BCE Bactra inhabited town lane, low flat-roofed mudbrick houses and storage courtyard, local Bactrian attendants with pack donkeys and woven grain baskets, irrigation greenery beyond gate distant mountains, no Islamic domes minarets Buddhist giant statues or Silk Road fantasy bazaar."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.28–29; contextual settlement",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "oxus-skins",
+      "stop": 11,
+      "place": "Bactra",
+      "title": "Crossing without timber",
+      "caption": "On the march north from Bactra, the Oxus was difficult to bridge. Arrian describes hides filled with dry material and sewn shut, allowing the army to improvise floats where suitable timber was scarce.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Close riverbank working view Macedonian soldiers stuffing sewn animal-hide bags with dry straw and tying openings, several finished buoyant skin floats beside broad Oxus water, one small group testing floats near shore. No modern inflatable boats plastic valves or unsupported floating armor, hands simple natural, reeds dry earth.",
+      "traveller": true,
+      "composition": {
+        "focus": "objects",
+        "view": "Close riverbank working view Macedonian soldiers stuffing sewn animal-hide bags with dry straw and tying openings, several finished buoyant skin floats beside broad Oxus water, one small group testing floats near shore. No modern inflatable boats plastic valves or unsupported floating armor, hands simple natural, reeds dry earth."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.29",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "maracanda-orchards",
+      "stop": 12,
+      "place": "Maracanda",
+      "title": "Beyond the garrison",
+      "caption": "Holding Maracanda did not mean controlling the surrounding country. Irrigated fields, villages and routes through the valleys sustained communities that continued to resist Macedonian rule under Spitamenes.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide Sogdian irrigated valley near Maracanda fourth century BCE, small orchard with earthen irrigation furrows foreground, low walled adobe settlement beyond, distant dry foothills and a few mounted scouts tiny. No Registan blue tile domes or medieval architecture, landscape of inhabited farmland primary.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Wide Sogdian irrigated valley near Maracanda fourth century BCE, small orchard with earthen irrigation furrows foreground, low walled adobe settlement beyond, distant dry foothills and a few mounted scouts tiny. No Registan blue tile domes or medieval architecture, landscape of inhabited farmland primary."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "IV.3–6; contextual landscape",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "eschate-wall",
+      "stop": 13,
+      "place": "Alexandria Eschate",
+      "title": "Building a frontier town",
+      "caption": "Arrian describes the new settlement on the Jaxartes as both a base and a barrier. Soldiers no longer fit for service joined other settlers there, while the army built defences beside a river separating it from mobile groups on the far bank.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Oblique view along new earthen fortification beside Jaxartes river 329 BCE, Macedonian and local laborers carrying sun-dried bricks to low unfinished mudbrick wall with timber scaffolds, broad river and steppe beyond. Early practical settlement no monumental Greek marble city or medieval crenellated stone castle.",
+      "traveller": true,
+      "composition": {
+        "focus": "work",
+        "view": "Oblique view along new earthen fortification beside Jaxartes river 329 BCE, Macedonian and local laborers carrying sun-dried bricks to low unfinished mudbrick wall with timber scaffolds, broad river and steppe beyond. Early practical settlement no monumental Greek marble city or medieval crenellated stone castle."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "IV.1–4",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "taxila-street",
+      "stop": 14,
+      "place": "Taxila",
+      "title": "Through the older town",
+      "caption": "The Taxila of Alexander's day belonged to the settlement now called Bhir Mound. Its narrow streets and houses formed an older urban landscape, centuries before the monasteries and planned cities that survive elsewhere around Taxila.",
+      "sources": [
+        "arrian",
+        "alexander-taxila"
+      ],
+      "confidence": "medium",
+      "prompt": "Fourth-century BCE Taxila Bhir Mound reconstructed ordinary street at walking height, irregular narrow lane stone rubble lower house walls with mud plaster upper walls and flat timber-earth roofs, small courtyards and local residents in plain cotton garments. No Sirkap grid, no Gandharan Buddha statues, no later stupas Mughal domes or medieval temples.",
+      "traveller": false,
+      "composition": {
+        "focus": "architecture",
+        "view": "Fourth-century BCE Taxila Bhir Mound reconstructed ordinary street at walking height, irregular narrow lane stone rubble lower house walls with mud plaster upper walls and flat timber-earth roofs, small courtyards and local residents in plain cotton garments. No Sirkap grid, no Gandharan Buddha statues, no later stupas Mughal domes or medieval temples."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "V.3; Bhir Mound archaeological context",
+        "url": "https://doam.gov.pk/public/sites/9752"
+      }
+    },
+    {
+      "id": "taxila-supplies",
+      "stop": 14,
+      "place": "Taxila",
+      "title": "Provisioning the visitors",
+      "caption": "The ruler of Taxila supplied animals, money and other gifts to Alexander. Receiving an army was also a practical problem: food had to be gathered, loads counted and people assigned to move them.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Low courtyard provisioning scene in fourth-century BCE Taxila, attendants counting grain-filled woven baskets and a few tethered cattle behind, wooden balance with two pans on simple stand foreground, plain cotton tunics and wraps, no modern currency sacks printed writing or European medieval clothing.",
+      "traveller": true,
+      "composition": {
+        "focus": "daily-life",
+        "view": "Low courtyard provisioning scene in fourth-century BCE Taxila, attendants counting grain-filled woven baskets and a few tethered cattle behind, wooden balance with two pans on simple stand foreground, plain cotton tunics and wraps, no modern currency sacks printed writing or European medieval clothing."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "V.3; provisioning details contextual",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "hydaspes-night",
+      "stop": 15,
+      "place": "The Hydaspes",
+      "title": "The crossing in the rain",
+      "caption": "Alexander repeatedly moved men along the river to confuse Porus about where he would cross. The eventual passage took place upstream during stormy weather, using boats and floats while much of the army remained opposite the Indian camp.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Night river crossing on Hydaspes in monsoon rain 326 BCE, view from wooded near bank toward several simple wooden transport boats with seated Macedonian troops, broad dark river with coherent current and distant tree island, small storm-lit silhouettes, no cinematic lightning over every figure, no modern pontoons or galleons.",
+      "traveller": true,
+      "composition": {
+        "focus": "travel",
+        "view": "Night river crossing on Hydaspes in monsoon rain 326 BCE, view from wooded near bank toward several simple wooden transport boats with seated Macedonian troops, broad dark river with coherent current and distant tree island, small storm-lit silhouettes, no cinematic lightning over every figure, no modern pontoons or galleons."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "V.9–14",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "hydaspes-elephants",
+      "stop": 15,
+      "place": "The Hydaspes",
+      "title": "Elephants across the field",
+      "caption": "Porus placed elephants along the front of his army, with infantry in the spaces between them. Their size and effect on horses made them a tactical problem very different from the Persian cavalry the Macedonians had fought farther west.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Side-on medium distant view of two correctly proportioned Asian elephants spaced apart on wet Punjab plain, simple cloth pads and single mahout astride each neck, local infantry small in gaps, elephants four legs natural tusks trunks. No towers howdahs metal fantasy armor or fighting gore, animals principal subject before engagement.",
+      "traveller": false,
+      "composition": {
+        "focus": "animals",
+        "view": "Side-on medium distant view of two correctly proportioned Asian elephants spaced apart on wet Punjab plain, simple cloth pads and single mahout astride each neck, local infantry small in gaps, elephants four legs natural tusks trunks. No towers howdahs metal fantasy armor or fighting gore, animals principal subject before engagement."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "V.15–17",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "hyphasis-camp",
+      "stop": 16,
+      "place": "The Hyphasis",
+      "title": "Men who would go no farther",
+      "caption": "At the Hyphasis, the soldiers' exhaustion became a limit Alexander could not overcome. Arrian gives Coenus a speech asking him to consider the survivors who wanted to return home, rather than another river to cross.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Quiet eye-level scene at rain-soaked Macedonian camp beside Hyphasis, older bearded officer speaking to young clean-shaven Alexander in worn tunic and muted red cloak, seated exhausted soldiers behind with lowered spears, mud and damp cloth, humane restrained expressions, no triumphant rally or angry caricatures.",
+      "traveller": true,
+      "composition": {
+        "focus": "people",
+        "view": "Quiet eye-level scene at rain-soaked Macedonian camp beside Hyphasis, older bearded officer speaking to young clean-shaven Alexander in worn tunic and muted red cloak, seated exhausted soldiers behind with lowered spears, mud and damp cloth, humane restrained expressions, no triumphant rally or angry caricatures."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "V.25–29",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "patala-tide",
+      "stop": 17,
+      "place": "Patala",
+      "title": "Boats on the mud",
+      "caption": "Near the Indus mouth, the falling tide left vessels stranded. When the water returned, some boats were damaged as they lifted unevenly from the ground, a coastal hazard unfamiliar to many men used to inland rivers.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide Indus delta tidal mudflat 325 BCE at low tide, two modest ancient wooden river vessels grounded slightly tilted naturally on soft mud, water channel and mangrove-like sparse coastal vegetation distant, a few sailors inspecting hulls. Boats supported by mud not floating in air, no huge modern ship or dramatic ocean surf.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Wide Indus delta tidal mudflat 325 BCE at low tide, two modest ancient wooden river vessels grounded slightly tilted naturally on soft mud, water channel and mangrove-like sparse coastal vegetation distant, a few sailors inspecting hulls. Boats supported by mud not floating in air, no huge modern ship or dramatic ocean surf."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VI.18–20",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "patala-harbour",
+      "stop": 17,
+      "place": "Patala",
+      "title": "A base for the fleet",
+      "caption": "At Patala, Alexander ordered work on a harbour and dockyard. The river journey was becoming a sea expedition, and the fleet needed repairs, supplies and a place from which Nearchus could prepare to sail.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Patala Indus delta small ancient ship-repair yard, close oblique view of workers shaping timber alongside one modest wooden hull pulled onto earthen slip with sturdy props, adze and rope coils foreground, river behind. Fourth-century BCE plain cloth garments no power tools, no giant drydock or implausible hull skeleton.",
+      "traveller": true,
+      "composition": {
+        "focus": "work",
+        "view": "Patala Indus delta small ancient ship-repair yard, close oblique view of workers shaping timber alongside one modest wooden hull pulled onto earthen slip with sturdy props, adze and rope coils foreground, river behind. Fourth-century BCE plain cloth garments no power tools, no giant drydock or implausible hull skeleton."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VI.18–20",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "gedrosia-march",
+      "stop": 18,
+      "place": "Gedrosian desert",
+      "title": "The distance between water",
+      "caption": "The Gedrosian march crossed country where water and supplies could not reliably be found. A long column, baggage animals and people already weakened by the journey had to cover the same exposed ground, with little shelter from the heat.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Huge harsh Gedrosian Makran desert landscape, bleached gravel plain and folded barren ridges rather than endless Sahara dunes, tiny straggling column of people and pack animals tracing dry wadi under white heat, no leader close-up, no corpses, no magical lush oasis.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Huge harsh Gedrosian Makran desert landscape, bleached gravel plain and folded barren ridges rather than endless Sahara dunes, tiny straggling column of people and pack animals tracing dry wadi under white heat, no leader close-up, no corpses, no magical lush oasis."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VI.24–26",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "gedrosia-water",
+      "stop": 18,
+      "place": "Gedrosian desert",
+      "title": "The water in a helmet",
+      "caption": "Arrian tells of a small quantity of water brought to Alexander in a helmet while the army was suffering from thirst. He poured it away where the soldiers could see, refusing a drink that could not be shared with them.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Intimate waist-level scene young weathered clean-shaven Alexander in dusty short tunic and faded red cloak tilting plain bronze helmet to pour a small stream of water onto dry earth, hands anatomically simple, two exhausted soldiers watching quietly in background. No crown, no ornate gold bowl, no divine glow, no heroic statue pose.",
+      "traveller": true,
+      "composition": {
+        "focus": "people",
+        "view": "Intimate waist-level scene young weathered clean-shaven Alexander in dusty short tunic and faded red cloak tilting plain bronze helmet to pour a small stream of water onto dry earth, hands anatomically simple, two exhausted soldiers watching quietly in background. No crown, no ornate gold bowl, no divine glow, no heroic statue pose."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VI.26",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "carmania-meeting",
+      "stop": 19,
+      "place": "Carmania",
+      "title": "News from the coast",
+      "caption": "When Nearchus reached Alexander in Carmania, the land and sea parties could finally compare what had happened to them. His report brought news of the fleet and of a coastline the army crossing the desert had scarcely seen.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Small shaded Carmanian camp meeting, weathered bearded Greek sailor Nearchus in salt-stained simple tunic talking with clean-shaven Alexander seated beside him, two companions listening, low bowls and rolled travel cloth nearby. No modern map or compass, understated reunion in dry palm-edged foothill camp, no lavish victory parade.",
+      "traveller": true,
+      "composition": {
+        "focus": "people",
+        "view": "Small shaded Carmanian camp meeting, weathered bearded Greek sailor Nearchus in salt-stained simple tunic talking with clean-shaven Alexander seated beside him, two companions listening, low bowls and rolled travel cloth nearby. No modern map or compass, understated reunion in dry palm-edged foothill camp, no lavish victory parade."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VI.28",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "susa-wedding",
+      "stop": 20,
+      "place": "Susa",
+      "title": "A ceremony of alliance",
+      "caption": "At Susa, marriages linked Macedonian officers with women from Persian noble families. Arrian describes the ceremony as following Persian custom; it was also an attempt to bind the conquerors to the elite of the empire they had taken.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Side view of restrained Susa Persian court wedding ceremony 324 BCE, one adult Macedonian officer seated beside adult Persian noblewoman in long modest draped dress and veil, attendants presenting small cup, other couples small receding under palace colonnade. No white Western bridal gowns crosses crowns or modern banquet, respectful adult faces, no mandatory Alexander.",
+      "traveller": true,
+      "composition": {
+        "focus": "people",
+        "view": "Side view of restrained Susa Persian court wedding ceremony 324 BCE, one adult Macedonian officer seated beside adult Persian noblewoman in long modest draped dress and veil, attendants presenting small cup, other couples small receding under palace colonnade. No white Western bridal gowns crosses crowns or modern banquet, respectful adult faces, no mandatory Alexander."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VII.4",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "babylon-last-ships",
+      "stop": 21,
+      "place": "Babylon",
+      "title": "Boats for another voyage",
+      "caption": "In Babylon, preparations continued for an expedition towards Arabia. Ships, crews and harbour works belonged to plans Alexander would not carry out; his death left the army and its commanders facing the question of what came next.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide quiet Euphrates waterfront Babylon 323 BCE, several modest ancient oared vessels moored at muddy brick quay, stacked timber and rope foreground, low brick warehouses and distant city wall, pale evening water. No corpse or deathbed, no modern map, no Roman stone harbor arches or later Islamic skyline.",
+      "traveller": false,
+      "composition": {
+        "focus": "travel",
+        "view": "Wide quiet Euphrates waterfront Babylon 323 BCE, several modest ancient oared vessels moored at muddy brick quay, stacked timber and rope foreground, low brick warehouses and distant city wall, pale evening water. No corpse or deathbed, no modern map, no Roman stone harbor arches or later Islamic skyline."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VII.19–21,24–26",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    }
+  ]
+}

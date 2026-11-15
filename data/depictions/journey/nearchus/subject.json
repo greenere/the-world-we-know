@@ -1,0 +1,533 @@
+{
+  "traveller": "Nearchus, Greek admiral in his thirties in 325 BCE: weathered olive skin, short dark curly hair and a short beard, lean build, plain off-white linen tunic and faded blue-grey cloak. No red royal cloak, crown, Roman armour or modern naval uniform. Only depict him in scenes explicitly requesting him.",
+  "scenes": [
+    {
+      "id": "delta-stores",
+      "stop": 0,
+      "place": "Patala",
+      "title": "Preparing for the coast",
+      "caption": "The ships needed food, drinking water and equipment for a coast where supplies could not be guaranteed. At the Indus, loading a fleet meant fitting everyday necessities into vessels that still had to leave room for their crews.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Ground-level side view on an Indus riverbank: three ordinary sailors in plain linen tunics carrying woven grain sacks and sealed ceramic water jars into a low wooden transport boat moored alongside. A broad gangplank rests securely on bank and gunwale; no person balancing on a thin plank. Focus on loads, boat ribs and coordinated work, no officer or hero. Flat alluvial landscape, reeds, no later monumental docks.",
+      "traveller": false,
+      "composition": {
+        "focus": "work",
+        "view": "Ground-level side view on an Indus riverbank: three ordinary sailors in plain linen tunics carrying woven grain sacks and sealed ceramic water jars into a low wooden transport boat moored alongside. A broad gangplank rests securely on bank and gunwale; no person balancing on a thin plank. Focus on loads, boat ribs and coordinated work, no officer or hero. Flat alluvial landscape, reeds, no later monumental docks."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XX; contextual loading scene",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "delta-channels",
+      "stop": 0,
+      "place": "Patala",
+      "title": "Following the river out",
+      "caption": "Before the fleet reached open water, it moved through tidal channels of the Indus. Arrian describes salt water entering with the tide and a passage cut through an obstruction so that the ships could leave at high water.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "High oblique view across a broad ancient Indus delta tidal channel, sandbars and reeds, a small line of ancient wooden oared vessels following the water towards a hazy sea. Landscape occupies almost all the page; boats distant, no foreground figures, no map, no lettering, no modern concrete canals. Realistic connected river water, not ships on sand.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "High oblique view across a broad ancient Indus delta tidal channel, sandbars and reeds, a small line of ancient wooden oared vessels following the water towards a hazy sea. Landscape occupies almost all the page; boats distant, no foreground figures, no map, no lettering, no modern concrete canals. Realistic connected river water, not ships on sand."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXI",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "krokala-sand",
+      "stop": 1,
+      "place": "Krokala",
+      "title": "A short stop on sand",
+      "caption": "Krokala was a sandy island where the fleet stopped soon after leaving the river. It was a pause on the way to a more sheltered harbour; the month-long wait for better winds came after this stop.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Low shoreline-wide view from a bare sandy island near ancient Karachi, curving sandbar and shallow water reflecting pale sky, two fourth-century BCE wooden galleys anchored offshore. Gentle distant surf. No buildings, palms, foreground characters or inset studies. Restrained horizon and large quiet areas of wet sand.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Low shoreline-wide view from a bare sandy island near ancient Karachi, curving sandbar and shallow water reflecting pale sky, two fourth-century BCE wooden galleys anchored offshore. Gentle distant surf. No buildings, palms, foreground characters or inset studies. Restrained horizon and large quiet areas of wet sand."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXI",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "haven-wind",
+      "stop": 2,
+      "place": "Alexander's Haven",
+      "title": "Thirty-three days in harbour",
+      "caption": "Nearchus named the sheltered anchorage Alexander's Haven. Strong winds kept the fleet there for thirty-three days, long enough to fortify the camp while the crews waited for conditions outside the harbour to improve.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide elevated coastal landscape of an ancient sheltered Karachi-area bay behind a low rocky island; many small wooden ships ride calmly inside, white surf and wind-driven sea outside the shelter. A very small shore camp enclosed by low rough stone wall, no fortress. No dominant people, no modern Karachi skyline or later harbour works.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Wide elevated coastal landscape of an ancient sheltered Karachi-area bay behind a low rocky island; many small wooden ships ride calmly inside, white surf and wind-driven sea outside the shelter. A very small shore camp enclosed by low rough stone wall, no fortress. No dominant people, no modern Karachi skyline or later harbour works."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXI",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "haven-shellfish",
+      "stop": 2,
+      "place": "Alexander's Haven",
+      "title": "Food at the water's edge",
+      "caption": "During the long wait, the crews collected shellfish along the shore. Arrian mentions mussels, oysters and unusually large razor-shells: a small part of coastal life that became an important source of food for the stranded fleet.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Intimate top-down still-life on a wet tidal rock: woven gathering basket containing realistic small mussels, irregular oysters and elongated razor shells, a plain clay bowl beside it, shallow seawater in rock pools. Shellfish study, absolutely no human figures, hands or weaponry. No precious pearls, no enormous fantasy shells, no text or separate insets.",
+      "traveller": false,
+      "composition": {
+        "focus": "objects",
+        "view": "Intimate top-down still-life on a wet tidal rock: woven gathering basket containing realistic small mussels, irregular oysters and elongated razor shells, a plain clay bowl beside it, shallow seawater in rock pools. Shellfish study, absolutely no human figures, hands or weaponry. No precious pearls, no enormous fantasy shells, no text or separate insets."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXI",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "cocala-grain",
+      "stop": 3,
+      "place": "Cocala",
+      "title": "Ten days of provisions",
+      "caption": "At Cocala, the fleet received grain collected under Alexander's orders. Arrian gives the supply as ten days' provisions. The crews also repaired damaged ships before continuing west along a shore with few dependable places to restock.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Side-on medium-wide shore scene, ordinary Macedonian sailors in worn short tunics passing woven grain sacks from a small supply pile into a boat grounded securely at the surf edge. Open stony Oritan beach and a few low tents, no monumental buildings. Show distinct complete human bodies and coherent hand-to-sack contact, no commander, no Alexander. Sea and waiting ships in distance.",
+      "traveller": false,
+      "composition": {
+        "focus": "work",
+        "view": "Side-on medium-wide shore scene, ordinary Macedonian sailors in worn short tunics passing woven grain sacks from a small supply pile into a boat grounded securely at the surf edge. Open stony Oritan beach and a few low tents, no monumental buildings. Show distinct complete human bodies and coherent hand-to-sack contact, no commander, no Alexander. Sea and waiting ships in distance."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXIII",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "tomerus-lagoon",
+      "stop": 4,
+      "place": "Tomerus estuary",
+      "title": "A contested landing",
+      "caption": "The lagoon at the Tomerus offered a place to bring the ships ashore. Local people resisted the landing; Nearchus sent troops against them before the fleet stayed to make repairs. The account records the cost of finding shelter on an inhabited coast.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Distant shore-level landscape of the Hingol estuary, calm lagoon separated from surf by a low sand spit, dry eroded Makran hills behind, a few modest reed shelters. Small ancient fleet approaching offshore and tiny separated groups of people on bank, no close battle, no gore, no exoticized inhabitants. Lagoon geography dominates, no foreground commander.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Distant shore-level landscape of the Hingol estuary, calm lagoon separated from surf by a low sand spit, dry eroded Makran hills behind, a few modest reed shelters. Small ancient fleet approaching offshore and tiny separated groups of people on bank, no close battle, no gore, no exoticized inhabitants. Lagoon geography dominates, no foreground commander."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXIV–XXV",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "malana-cliffs",
+      "stop": 5,
+      "place": "Cape Malana",
+      "title": "Rounding Malana",
+      "caption": "After the Tomerus, the fleet rounded Malana, the last headland on the Oritan coast in Arrian's account. Cliffs and projecting capes broke the shore into stretches that had to be judged from the water, one passage at a time.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide low sea-level view of towering stratified pale sandstone cliffs at Cape Malan on the Makran coast. A tiny fourth-century BCE oared ship rounds the foot of the promontory, hull on water, giving scale. Cliff strata, shadow and swell dominate the page. No foreground people or deck rail, no green Mediterranean town.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Wide low sea-level view of towering stratified pale sandstone cliffs at Cape Malan on the Makran coast. A tiny fourth-century BCE oared ship rounds the foot of the promontory, hull on water, giving scale. Cliff strata, shadow and swell dominate the page. No foreground people or deck rail, no green Mediterranean town."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXV",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "mosarna-pilot",
+      "stop": 6,
+      "place": "Mosarna",
+      "title": "A pilot who knew the coast",
+      "caption": "At Mosarna, Hydraces joined the fleet as a local pilot. Arrian says the voyage became easier after his arrival. Knowledge of anchorages, water and coastal conditions mattered as much as the ships or their crews.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Medium view aboard an ancient low wooden galley at anchor: experienced local Gedrosian pilot Hydraces stands beside the seated Greek admiral, looking towards a distant headland and indicating the coast with one relaxed arm. Local pilot dark hair and short beard, simple woven wrap and tunic, no modern turban costume. Broad open stern deck with one large side steering oar attached at the stern; no ship wheel, no compass, no parchment chart. Pilot is visual focus, natural separate arms.",
+      "traveller": true,
+      "composition": {
+        "focus": "people",
+        "view": "Medium view aboard an ancient low wooden galley at anchor: experienced local Gedrosian pilot Hydraces stands beside the seated Greek admiral, looking towards a distant headland and indicating the coast with one relaxed arm. Local pilot dark hair and short beard, simple woven wrap and tunic, no modern turban costume. Broad open stern deck with one large side steering oar attached at the stern; no ship wheel, no compass, no parchment chart. Pilot is visual focus, natural separate arms."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXVI–XXVII",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "gedrosia-fish",
+      "stop": 7,
+      "place": "Gedrosian coast",
+      "title": "Fish laid out to dry",
+      "caption": "Fishing supported many communities along the Gedrosian coast. Arrian describes large nets and fish dried in the sun. His broad label for these coastal people hides differences between settlements, some of which also had grain and cultivated land.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Close medium view of an ordinary coastal family working beside fish spread on woven mats over dry sand, a woman sorting fish, a man repairing a large fibre net. Modest woven clothing, ordinary natural human proportions, simple reed shelter in background, small paddle-powered fishing boat. Fish and net are central, no Greek visitor, no primitive caricature, no industrial drying rack.",
+      "traveller": false,
+      "composition": {
+        "focus": "daily-life",
+        "view": "Close medium view of an ordinary coastal family working beside fish spread on woven mats over dry sand, a woman sorting fish, a man repairing a large fibre net. Modest woven clothing, ordinary natural human proportions, simple reed shelter in background, small paddle-powered fishing boat. Fish and net are central, no Greek visitor, no primitive caricature, no industrial drying rack."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXVII–XXIX",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "gedrosia-whales",
+      "stop": 7,
+      "place": "Gedrosian coast",
+      "title": "Whales ahead of the ships",
+      "caption": "Arrian recounts the crews' alarm when they saw whales blowing at sea. Nearchus ordered the ships forward with shouting, trumpets and splashing oars. The animals moved away, leaving the fleet to continue along the coast.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Panoramic sea-level marine sketch off the Gedrosian coast: two realistic large baleen whales at respectful distance, only curved backs and small blows above the water, ancient galleys much farther behind them. No breaching monster, no attacking whale, no ship collision, no giant teeth. Ocean space and animal scale dominate, no foreground portrait; boats with coherent parallel oars and furled square sails.",
+      "traveller": false,
+      "composition": {
+        "focus": "animals",
+        "view": "Panoramic sea-level marine sketch off the Gedrosian coast: two realistic large baleen whales at respectful distance, only curved backs and small blows above the water, ancient galleys much farther behind them. No breaching monster, no attacking whale, no ship collision, no giant teeth. Ocean space and animal scale dominate, no foreground portrait; boats with coherent parallel oars and furled square sails."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXX",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "badis-fields",
+      "stop": 8,
+      "place": "Badis",
+      "title": "Cultivated ground again",
+      "caption": "On reaching Carmania, the fleet encountered a better-watered country. Arrian describes Badis as a settlement with cultivated trees and grain, a welcome change after the difficult supply stops along the Gedrosian coast.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide landscape looking inland from the shore near Cape Jask, modest ancient mudbrick settlement, small grain plots and scattered date palms supplied by a narrow water channel, dry mountain backdrop. Productive but arid coastal agriculture, not lush jungle. One tiny boat at water edge for scale, no foreground people, no later domes or minarets.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Wide landscape looking inland from the shore near Cape Jask, modest ancient mudbrick settlement, small grain plots and scattered date palms supplied by a narrow water channel, dry mountain backdrop. Productive but arid coastal agriculture, not lush jungle. One tiny boat at water edge for scale, no foreground people, no later domes or minarets."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXXII",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "strait-headland",
+      "stop": 8,
+      "place": "Badis",
+      "title": "Keeping to the Persian shore",
+      "caption": "Beyond Badis, the fleet sighted a headland on the Arabian side of the strait. Onesicritus proposed crossing towards it. Nearchus chose to follow the Persian coast, keeping to the mission of examining its harbours and settlements.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide open-water view in the Strait of Hormuz on the approach to Harmozeia: distant rugged Arabian Musandam headland across a broad expanse of hazy blue-grey sea, with two very small ancient wooden galleys following the nearer Persian coast. Mountain forms on horizon, no buildings, no foreground people, no map, no arrows. The distant coast is seen but not being landed upon.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Distant headland across open water"
+      },
+      "evidence": {
+        "basis": "account",
+        "passage": "Indica XXXII; passage after Badis, before Harmozeia",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "harmozeia-refit",
+      "stop": 9,
+      "place": "Harmozeia",
+      "title": "The fleet comes ashore",
+      "caption": "At the Anamis, the ships were drawn ashore for repairs. Nearchus left the fleet here while he went inland to find Alexander. The meeting did not end the voyage: he returned to take the ships through the Persian Gulf.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Medium-wide low side view of one ancient Greek transport hull hauled onto a gently sloping riverbank, securely supported on timber cradles. Two ordinary shipwrights crouch outside the hull inspecting planks with simple wooden tools; no cutting through structure, no modern sawmill. Calm Minab river-mouth setting, date palms distant. Hull is dominant, people secondary, no admiral or red-cloaked king.",
+      "traveller": false,
+      "composition": {
+        "focus": "work",
+        "view": "Medium-wide low side view of one ancient Greek transport hull hauled onto a gently sloping riverbank, securely supported on timber cradles. Two ordinary shipwrights crouch outside the hull inspecting planks with simple wooden tools; no cutting through structure, no modern sawmill. Calm Minab river-mouth setting, date palms distant. Hull is dominant, people secondary, no admiral or red-cloaked king."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXXIII–XXXVI",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "harmozeia-messengers",
+      "stop": 9,
+      "place": "Harmozeia",
+      "title": "Finding the army inland",
+      "caption": "Nearchus and a small party travelled inland from the harbour. Arrian says they were so worn by the voyage that the men sent to find them did not at first recognise them. Their news was that the fleet was safe.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Eye-level inland Carmanian dusty track: weary Nearchus and two unarmed sailors with travel-stained tunics meeting two Macedonian mounted messengers who have stopped their horses. Admiral on foot with natural stance, no grand ceremony or Alexander, warm arid foothills and sparse shrubs. Horses anatomically coherent with four legs each and no stirrups; people spatially separated, no hands merged into reins.",
+      "traveller": true,
+      "composition": {
+        "focus": "people",
+        "view": "Eye-level inland Carmanian dusty track: weary Nearchus and two unarmed sailors with travel-stained tunics meeting two Macedonian mounted messengers who have stopped their horses. Admiral on foot with natural stance, no grand ceremony or Alexander, warm arid foothills and sparse shrubs. Horses anatomically coherent with four legs each and no stirrups; people spatially separated, no hands merged into reins."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXXIV–XXXV",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "oaracta-island",
+      "stop": 10,
+      "place": "Oaracta",
+      "title": "An island and another pilot",
+      "caption": "Oaracta had fields, vines and date palms. Its ruler, Mazenes, offered to guide the fleet onward. Leaving the Strait of Hormuz did not remove the need for local knowledge: tides, islands and coastal channels still shaped the passage.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "High oblique landscape of ancient Qeshm island shoreline, pale eroded hills above small coastal fields and date groves, sheltered anchorage with a few tiny fourth-century BCE vessels. Long arid island recedes into haze; no Portuguese fortress, no modern town, no foreground person. Sketch atmospheric distances and varied earth layers.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "High oblique landscape of ancient Qeshm island shoreline, pale eroded hills above small coastal fields and date groves, sheltered anchorage with a few tiny fourth-century BCE vessels. Long arid island recedes into haze; no Portuguese fortress, no modern town, no foreground person. Sketch atmospheric distances and varied earth layers."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXXVII",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "persis-pearls",
+      "stop": 11,
+      "place": "Islands off Persis",
+      "title": "Pearls from the Gulf",
+      "caption": "Among the islands off Persis, Nearchus recorded a pearl fishery. For the people living here, the waters were a source of work and trade long before the Macedonian ships arrived. The sketch follows that everyday work at the shore.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Close still-life on a shaded woven mat at a Persian Gulf island shore: several realistic opened pearl-oyster shells, a few modest small irregular pearls, a plain little pottery dish and a fibre basket. One unadorned wooden paddle resting beside the mat, water softly beyond. No people or hands, no jewelry display, no huge spherical pearls, no modern diving apparatus or text.",
+      "traveller": false,
+      "composition": {
+        "focus": "objects",
+        "view": "Close still-life on a shaded woven mat at a Persian Gulf island shore: several realistic opened pearl-oyster shells, a few modest small irregular pearls, a plain little pottery dish and a fibre basket. One unadorned wooden paddle resting beside the mat, water softly beyond. No people or hands, no jewelry display, no huge spherical pearls, no modern diving apparatus or text."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXXVIII; contextual shore study",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "gogana-tide",
+      "stop": 12,
+      "place": "Gogana",
+      "title": "Waiting for enough water",
+      "caption": "At Gogana, the narrow entrance and shallows made anchoring difficult. A harbour could look close from offshore yet remain hard to enter. The fleet had to work with the tide rather than treat every river mouth as a safe landing.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Low viewpoint from a bare mudbank at a narrow Persian coastal river mouth near Kangan: shallow rippled water, exposed sand and mud shoals, two ancient wooden ships waiting in deeper water outside the entrance. Distant dry hills. Strong spatial distinction between channel water and exposed bank, no boats hovering or sitting on solid ground, no foreground people.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Low viewpoint from a bare mudbank at a narrow Persian coastal river mouth near Kangan: shallow rippled water, exposed sand and mud shoals, two ancient wooden ships waiting in deeper water outside the entrance. Distant dry hills. Strong spatial distinction between channel water and exposed bank, no boats hovering or sitting on solid ground, no foreground people."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXXVIII",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "mesambria-gardens",
+      "stop": 13,
+      "place": "Mesambria",
+      "title": "Gardens on the peninsula",
+      "caption": "At Mesambria, Arrian describes a peninsula with gardens and fruit trees. Such places broke up the long stretches of difficult shore. Cultivation depended on water reaching the land, while the fleet still had to find an anchorage nearby.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Shore-facing view through a modest ancient orchard on a low Persian coastal peninsula near Bushehr: date palms, a few leafy fruit trees, low mudbrick garden walls and earthen irrigation channel. Pale Gulf visible between trees and distant small boats. No foreground figure, no luxurious palace, no formal Islamic garden, no modern buildings.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Shore-facing view through a modest ancient orchard on a low Persian coastal peninsula near Bushehr: date palms, a few leafy fruit trees, low mudbrick garden walls and earthen irrigation channel. Pale Gulf visible between trees and distant small boats. No foreground figure, no luxurious palace, no formal Islamic garden, no modern buildings."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XXXIX",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "susian-stakes",
+      "stop": 14,
+      "place": "Susian shoals",
+      "title": "A channel marked by stakes",
+      "caption": "In the Susian shallows, the ships followed stakes marking a narrow passage. Arrian distinguishes this deep, sticky mud from firm sand: a grounded vessel could be difficult to move, even with poles or men trying to push it free.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "High stern-over-water perspective WITHOUT any foreground people: a single-file line of small ancient galleys in a narrow navigable water channel between exposed dark mudflats. Plain irregular wooden stakes stand on both sides marking the channel. All hulls visibly afloat in the central water, wide shallow estuary beyond, no modern buoys, no sails tangling, no rowers on mud.",
+      "traveller": false,
+      "composition": {
+        "focus": "travel",
+        "view": "High stern-over-water perspective WITHOUT any foreground people: a single-file line of small ancient galleys in a narrow navigable water channel between exposed dark mudflats. Plain irregular wooden stakes stand on both sides marking the channel. All hulls visibly afloat in the central water, wide shallow estuary beyond, no modern buoys, no sails tangling, no rowers on mud."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XLI",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "diridotis-incense",
+      "stop": 15,
+      "place": "Diridotis",
+      "title": "Cargoes from Arabia",
+      "caption": "Diridotis was a trading place for frankincense and other aromatics from Arabia. Here the fleet learned that Alexander was heading towards Susa. Nearchus turned back across the estuary to reach him by the Pasitigris.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Medium interior view inside a simple ancient mudbrick riverside storehouse, ordinary local merchant weighing small pale frankincense resin pieces on a balanced two-pan beam scale, woven sacks and clay jars, daylight through open door reveals a reed-lined estuary and wooden trading boat. Two complete local adult figures in plain woven garments, no Greek admiral, no coins in close-up or readable inscriptions. Coherent scale geometry and natural hands.",
+      "traveller": false,
+      "composition": {
+        "focus": "daily-life",
+        "view": "Medium interior view inside a simple ancient mudbrick riverside storehouse, ordinary local merchant weighing small pale frankincense resin pieces on a balanced two-pan beam scale, woven sacks and clay jars, daylight through open door reveals a reed-lined estuary and wooden trading boat. Two complete local adult figures in plain woven garments, no Greek admiral, no coins in close-up or readable inscriptions. Coherent scale geometry and natural hands."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XLI–XLII",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "pasitigris-river",
+      "stop": 16,
+      "place": "Mouth of the Pasitigris",
+      "title": "Up the Pasitigris",
+      "caption": "The fleet left the estuary and travelled up the Pasitigris through inhabited, cultivated country. Nearchus sent messengers ahead to locate Alexander. For the crews, the final approach was a river journey with fields and settlements on either bank.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Broad river-level view up the ancient lower Karun, reed margins, cultivated fields, modest mudbrick riverside settlement and scattered date palms; a small fleet of fourth-century BCE wooden vessels slowly rowing upstream. Water fills foreground, boats occupy middle distance, flat alluvial horizon. No protagonist, no modern bridge, no medieval city, no mountains dominating delta.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Broad river-level view up the ancient lower Karun, reed margins, cultivated fields, modest mudbrick riverside settlement and scattered date palms; a small fleet of fourth-century BCE wooden vessels slowly rowing upstream. Water fills foreground, boats occupy middle distance, flat alluvial horizon. No protagonist, no modern bridge, no medieval city, no mountains dominating delta."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XLII",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "pasitigris-bridge",
+      "stop": 17,
+      "place": "Bridge on the Pasitigris",
+      "title": "Ships and army meet",
+      "caption": "The fleet reached the bridge where Alexander intended to cross on his way to Susa. Ships moored by the crossing while the sea and land forces came together again. Arrian ends the voyage here, on the Pasitigris.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide elevated view of an ancient pontoon bridge across the Karun near Ahvaz: a simple wooden roadway supported by a row of closely spaced anchored boats, deck consistently above boat gunwales, small soldiers and pack animals walking ON the deck. Greek fleet moored clearly downstream to the side, not attempting to pass through the bridge. Riverbank tents tiny, no stone arches, no modern steel, no foreground commander. Spatially coherent single continuous bridge.",
+      "traveller": false,
+      "composition": {
+        "focus": "architecture",
+        "view": "Wide elevated view of an ancient pontoon bridge across the Karun near Ahvaz: a simple wooden roadway supported by a row of closely spaced anchored boats, deck consistently above boat gunwales, small soldiers and pack animals walking ON the deck. Greek fleet moored clearly downstream to the side, not attempting to pass through the bridge. Riverbank tents tiny, no stone arches, no modern steel, no foreground commander. Spatially coherent single continuous bridge."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XLII",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    },
+    {
+      "id": "pasitigris-honours",
+      "stop": 17,
+      "place": "Bridge on the Pasitigris",
+      "title": "Flowers for the returning sailors",
+      "caption": "Arrian describes sacrifices, games and celebrations when the fleet rejoined the army. Soldiers greeted Nearchus with flowers and ribbons, and Alexander awarded him a gold crown. Months of difficult sailing ended with the crews back among the wider army.",
+      "sources": [
+        "arrian-indica"
+      ],
+      "confidence": "medium",
+      "prompt": "Quiet close still-life on a rough wooden campaign stool beside a folded salt-worn linen cloak: a delicate ancient gold leaf wreath, a few fresh small flowers and simple cloth ribbons. Blurred tent edge and river light behind. No human figures, no severed body parts, no royal jeweled crown, no modern medals. Objects as modest material traces of the fleet's welcome, graphite detail and restrained pale gold wash.",
+      "traveller": false,
+      "composition": {
+        "focus": "objects",
+        "view": "Quiet close still-life on a rough wooden campaign stool beside a folded salt-worn linen cloak: a delicate ancient gold leaf wreath, a few fresh small flowers and simple cloth ribbons. Blurred tent edge and river light behind. No human figures, no severed body parts, no royal jeweled crown, no modern medals. Objects as modest material traces of the fleet's welcome, graphite detail and restrained pale gold wash."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Indica XLII",
+        "url": "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+      }
+    }
+  ]
+}

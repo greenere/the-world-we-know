@@ -1,0 +1,11 @@
+{
+  "subject": "journey/nearchus",
+  "scene": "gogana-tide",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-14",
+  "prompt": "Use case: historical-scene. Asset type: journey sketchbook card.\nOne landscape 3:2 page from a historical travel sketchbook. Loose visible graphite construction lines, quick sepia hatching, restrained uneven watercolour washes in ochre, grey-green and faded blue, irregular unfinished edges dissolving into lightly foxed cream paper. Observed and modest rather than cinematic or fantasy. One integrated scene, no border, no inset drawings, no legible text, labels, annotations or signature.\nDate and region: 324 BCE, Gogana.\nSubject and composition: Low viewpoint from a bare mudbank at a narrow Persian coastal river mouth near Kangan: shallow rippled water, exposed sand and mud shoals, two ancient wooden ships waiting in deeper water outside the entrance. Distant dry hills. Strong spatial distinction between channel water and exposed bank, no boats hovering or sitting on solid ground, no foreground people.\nWhen vessels appear: fourth-century BCE wooden oared ships with one simple mast and square sail, or sail furled; coherent curved hull, evenly aligned oars attached at gunwales, steering oars rather than wheels. No lateen sails, Viking dragon heads, modern rigging, engines or modern harbour works.\nDo not insert Alexander or a recurring admiral into this scene. Follow the stated framing: landscape and object pages must not become foreground portraits.\nMaintain anatomically sound hands, bodies and animals, physically consistent boat-water relationships, plausible ancient materials. Respect the specific viewpoint and main subject.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/55054/55054-h/55054-h.htm"
+  ]
+}
