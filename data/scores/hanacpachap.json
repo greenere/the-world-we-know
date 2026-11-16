@@ -1,0 +1,11 @@
+{
+ "id": "hanacpachap",
+ "name": "Hanacpachap cussicuinin",
+ "source": "perez-bocanegra",
+ "pages": "p. 708 (archive.org ritualformulario00prez)",
+ "about": "The processional hymn in Quechua to the Virgin printed by Juan Pérez Bocanegra in his Ritual formulario (Lima, 1631), the first polyphony printed in the Americas: its tiple (treble), read from the print in mensural notation (soprano C clef, B flat), a minim taken as a beat. Sapphic stanzas: three lines of eleven syllables and a short closing line.",
+ "meter": 4,
+ "pickup": 0,
+ "transpose": 0,
+ "notes": "D4:1.5 D4:0.5 F4:0.5 F4:0.5 G4:0.5 G4:0.5 A4:1 A4:1 | D5:1.5 D5:0.5 C5:0.5 C5:0.5 Bb4:0.5 Bb4:0.5 A4:1 A4:1 / | r:0.5 A4:0.25 A4:0.25 C5:1.5 Bb4:0.5 A4:0.5 A4:0.5 G4:1 F4:1 / | r:0.5 F4:0.25 F4:0.25 F4:1.5 F4:0.5 G4:0.5 A4:1 G4:0.5 A4:1 / | r:0.5 A4:0.25 A4:0.25 A4:1.5 F4:0.5 G4:0.5 G4:0.5 E4:1 D4:1 / | Bb4:1.5 A4:0.5 G4:1 F4:0.5 E4:0.5 F4:2 /"
+}

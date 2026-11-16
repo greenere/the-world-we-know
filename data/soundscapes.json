@@ -4,7 +4,7 @@
   {
    "id": "greek",
    "name": "The lyre and the aulos",
-   "summary": "Greek music of the lyre and the double reed-pipe, in the Dorian harmonia: the mode Greek writers thought steady and manly. Players and singers improvised on set patterns of notes; a few dozen fragments of notated melody survive.",
+   "summary": "Greek music, heard through two themes: Mesomedes' Prayer to Calliope and a lullaby from Smyrna. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the phorminx and aulos, the kithara and water organ, the chant of Byzantium over its ison, the lyra, laouto and santouri of the islands, the klarino, and the bouzouki with a film orchestra.",
    "scales": [
     {
      "cents": [
@@ -40,7 +40,376 @@
     "delphi"
    ],
    "source": "west-agm",
-   "confidence": "medium"
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "phorminx",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "aulos",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "tympanon",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "kithara",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "krotala",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "hydraulis",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "instrument": "organ",
+      "gain": 0.8
+     },
+     {
+      "id": "psaltes",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "lyra",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "laouto",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "santouri",
+      "sample": "yangqin",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "daouli",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "zurna",
+      "sample": "suona",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "klarino",
+      "sample": "clarinet",
+      "voice": "reed",
+      "role": "part"
+     },
+     {
+      "id": "violi",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "instrument": "violin"
+     },
+     {
+      "id": "bouzouki",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part",
+      "tremolo": true
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:0.5 Eb4:0.5 F#4:1 G4:1 F#4:0.5 Eb4:0.5 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "calliope-early",
+     "name": "Prayer to Calliope · Early kingdoms",
+     "about": "The Greek world's ceremonial theme in the archaic age: the phorminx, then the aulos, a drum at each phrase.",
+     "midi": "midi/calliope-early.mid",
+     "score": "calliope",
+     "beat": 0.72,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "calliope",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
+     "until": -500
+    },
+    {
+     "id": "calliope-classical",
+     "name": "Prayer to Calliope · Classical empires",
+     "about": "The Greek world's ceremonial theme in the classical and imperial age: the kithara, then the aulos, then the water organ, with krotala.",
+     "midi": "midi/calliope-classical.mid",
+     "score": "calliope",
+     "beat": 0.65,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "calliope",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "calliope-caravans",
+     "name": "Prayer to Calliope · Caravans and monsoons",
+     "about": "The Greek world's ceremonial theme in Byzantium: chanters over the ison, the lyra joining.",
+     "midi": "midi/calliope-caravans.mid",
+     "score": "calliope",
+     "beat": 0.7,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "calliope",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "calliope-crossings",
+     "name": "Prayer to Calliope · Ocean crossings",
+     "about": "The Greek world's ceremonial theme in the islands under the Ottomans: the santouri, then the lyra, then the zurna, laouto and daouli beneath.",
+     "midi": "midi/calliope-crossings.mid",
+     "score": "calliope",
+     "beat": 0.62,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "calliope",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "calliope-steam",
+     "name": "Prayer to Calliope · Steam and telegraph",
+     "about": "The Greek world's ceremonial theme in the nineteenth century: the klarino, then the violin, with santouri and laouto.",
+     "midi": "midi/calliope-steam.mid",
+     "score": "calliope",
+     "beat": 0.6,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "calliope",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "calliope-shared",
+     "name": "Prayer to Calliope · One shared map",
+     "about": "The Greek world's ceremonial theme for a film orchestra: the bouzouki, then strings, then horns with the klarino.",
+     "midi": "midi/calliope-shared.mid",
+     "score": "calliope",
+     "beat": 0.6,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "calliope",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
+     "from": 1900
+    },
+    {
+     "id": "lullaby-early",
+     "name": "The Smyrna Lullaby · Early kingdoms",
+     "about": "The Greek world's folk theme in the archaic age: the aulos, then the phorminx.",
+     "midi": "midi/lullaby-early.mid",
+     "score": "greek-lullaby",
+     "beat": 0.9,
+     "meter": 3,
+     "source": "bourgault-ducoudray",
+     "confidence": "medium",
+     "theme": "greek-lullaby",
+     "credit": "Transcribed for this atlas from Bourgault-Ducoudray's staff (data/scores/greek-lullaby.json).",
+     "until": -500
+    },
+    {
+     "id": "lullaby-classical",
+     "name": "The Smyrna Lullaby · Classical empires",
+     "about": "The Greek world's folk theme in the classical age: the kithara, then the aulos.",
+     "midi": "midi/lullaby-classical.mid",
+     "score": "greek-lullaby",
+     "beat": 0.85,
+     "meter": 3,
+     "source": "bourgault-ducoudray",
+     "confidence": "medium",
+     "theme": "greek-lullaby",
+     "credit": "Transcribed for this atlas from Bourgault-Ducoudray's staff (data/scores/greek-lullaby.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "lullaby-caravans",
+     "name": "The Smyrna Lullaby · Caravans and monsoons",
+     "about": "The Greek world's folk theme in Byzantium: the lyra, then a chanter, the laouto beneath.",
+     "midi": "midi/lullaby-caravans.mid",
+     "score": "greek-lullaby",
+     "beat": 0.82,
+     "meter": 3,
+     "source": "bourgault-ducoudray",
+     "confidence": "medium",
+     "theme": "greek-lullaby",
+     "credit": "Transcribed for this atlas from Bourgault-Ducoudray's staff (data/scores/greek-lullaby.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "lullaby-crossings",
+     "name": "The Smyrna Lullaby · Ocean crossings",
+     "about": "The Greek world's folk theme in the islands: the lyra, then the santouri, the laouto and daouli beneath.",
+     "midi": "midi/lullaby-crossings.mid",
+     "score": "greek-lullaby",
+     "beat": 0.78,
+     "meter": 3,
+     "source": "bourgault-ducoudray",
+     "confidence": "medium",
+     "theme": "greek-lullaby",
+     "credit": "Transcribed for this atlas from Bourgault-Ducoudray's staff (data/scores/greek-lullaby.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "lullaby-steam",
+     "name": "The Smyrna Lullaby · Steam and telegraph",
+     "about": "The Greek world's folk theme in the nineteenth century: the klarino, then the violin, with laouto and santouri.",
+     "midi": "midi/lullaby-steam.mid",
+     "score": "greek-lullaby",
+     "beat": 0.75,
+     "meter": 3,
+     "source": "bourgault-ducoudray",
+     "confidence": "medium",
+     "theme": "greek-lullaby",
+     "credit": "Transcribed for this atlas from Bourgault-Ducoudray's staff (data/scores/greek-lullaby.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "lullaby-shared",
+     "name": "The Smyrna Lullaby · One shared map",
+     "about": "The Greek world's folk theme for a film orchestra: the bouzouki, then strings, then the klarino over horns.",
+     "midi": "midi/lullaby-shared.mid",
+     "score": "greek-lullaby",
+     "beat": 0.72,
+     "meter": 3,
+     "source": "bourgault-ducoudray",
+     "confidence": "medium",
+     "theme": "greek-lullaby",
+     "credit": "Transcribed for this atlas from Bourgault-Ducoudray's staff (data/scores/greek-lullaby.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "calliope",
+     "name": "Prayer to Calliope",
+     "mood": "ceremonial",
+     "about": "Mesomedes of Crete's prayer to the Muse Calliope and to Apollo, written at Hadrian's court and copied with its notation in Byzantine manuscripts: the Greek world's ceremonial theme.",
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0)."
+    },
+    {
+     "id": "greek-lullaby",
+     "name": "The Smyrna Lullaby",
+     "mood": "folk",
+     "about": "A Greek lullaby noted in Smyrna in 1875 by Bourgault-Ducoudray, promising the child Alexandria in sugar, Cairo in rice and Constantinople to rule: the Greek world's folk theme.",
+     "source": "bourgault-ducoudray",
+     "confidence": "medium",
+     "credit": "Transcribed for this atlas from Bourgault-Ducoudray's staff (data/scores/greek-lullaby.json)."
+    }
+   ]
   },
   {
    "id": "rome",
@@ -443,20 +812,6 @@
      "theme": "seikilos",
      "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA).",
      "from": 1900
-    },
-    {
-     "id": "calliope",
-     "name": "Mesomedes: Prayer to Calliope",
-     "about": "By Mesomedes of Crete, court musician to the emperor Hadrian: a prayer to the Muse and to Apollo, copied with its notation in Byzantine manuscripts.",
-     "from": 120,
-     "beat": 0.6,
-     "meter": 2,
-     "source": "poehlmann-west",
-     "confidence": "high",
-     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
-     "midi": "midi/calliope.mid",
-     "score": "calliope",
-     "extra": true
     }
    ],
    "places": [
@@ -2750,7 +3105,7 @@
   {
    "id": "gamelan",
    "name": "Gamelan",
-   "summary": "Javanese music in slendro, a scale of five nearly equal steps that fits no Western tuning. Interlocking patterns on bronze keys and gong-chimes repeat in cycles, each closed by a stroke of the great gong.",
+   "summary": "The gamelan of Java and its neighbours, heard through two themes composed for this atlas in its styles, since its music was passed on by ear rather than written: a court ladrang in pelog and a children's song in slendro. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the Dong Son bronze drums and bamboo, the first bronze keys, the gamelan of Borobudur's age, the full court gamelan with its gongs marking each cycle, keroncong, and a film orchestra.",
    "scales": [
     {
      "cents": [
@@ -2775,19 +3130,407 @@
    "beat": 0.36,
    "leaps": 0.2,
    "ornament": 0,
-   "drone": 0,
+   "drone": 0.2,
    "gong": true,
    "places": [
     "trowulan",
     "yogyakarta"
    ],
    "source": "kunst-java",
-   "confidence": "low"
+   "confidence": "low",
+   "ensemble": {
+    "members": [
+     {
+      "id": "suling",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "angklung",
+      "sample": "marimba",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "nekara",
+      "voice": "gong",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "saron",
+      "sample": "vibraphone",
+      "voice": "metal",
+      "role": "part"
+     },
+     {
+      "id": "saron2",
+      "sample": "vibraphone",
+      "voice": "metal",
+      "role": "part",
+      "detune": 9,
+      "gain": 0.8
+     },
+     {
+      "id": "peking",
+      "sample": "glockenspiel",
+      "voice": "metal",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "bonang",
+      "voice": "metal",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "gender",
+      "sample": "vibraphone",
+      "voice": "metal",
+      "role": "part",
+      "gain": 0.6
+     },
+     {
+      "id": "gambang",
+      "sample": "marimba",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "kenong",
+      "voice": "metal",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "kempul",
+      "voice": "gong",
+      "role": "part",
+      "gain": 0.6
+     },
+     {
+      "id": "gong",
+      "voice": "gong",
+      "role": "part"
+     },
+     {
+      "id": "kethuk",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t"
+     },
+     {
+      "id": "kendang",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "rebab",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "sindhen",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "biola",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "keroncong",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part",
+      "tremolo": true
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:1 Eb4:1 F4:1 A4:1",
+     "A4:1 F4:1 Eb4:1 D4:1"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "gending-early",
+     "name": "Ladrang in Pelog · Early kingdoms",
+     "about": "The gamelan's ceremonial theme in the age of the Dong Son bronze drums: the bamboo flute over the drum's boom, bamboo rattles joining.",
+     "midi": "midi/gending-early.mid",
+     "score": "gending-pelog",
+     "beat": 1.0,
+     "meter": 32,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gending-pelog",
+     "credit": "Composed for this atlas (data/scores/gending-pelog.json).",
+     "until": -500
+    },
+    {
+     "id": "gending-classical",
+     "name": "Ladrang in Pelog · Classical empires",
+     "about": "The gamelan's ceremonial theme as bronze keys first came: the flute, then the keys, the bronze drum closing each cycle.",
+     "midi": "midi/gending-classical.mid",
+     "score": "gending-pelog",
+     "beat": 0.92,
+     "meter": 32,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gending-pelog",
+     "credit": "Composed for this atlas (data/scores/gending-pelog.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "gending-caravans",
+     "name": "Ladrang in Pelog · Caravans and monsoons",
+     "about": "The gamelan's ceremonial theme in the age of Borobudur: saron and gong, kenong and kendang, the flute joining.",
+     "midi": "midi/gending-caravans.mid",
+     "score": "gending-pelog",
+     "beat": 0.85,
+     "meter": 32,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gending-pelog",
+     "credit": "Composed for this atlas (data/scores/gending-pelog.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "gending-crossings",
+     "name": "Ladrang in Pelog · Ocean crossings",
+     "about": "The gamelan's ceremonial theme at a Javanese court: the full gamelan, saron pair shimmering, peking, bonang and gender, the suling and rebab over all.",
+     "midi": "midi/gending-crossings.mid",
+     "score": "gending-pelog",
+     "beat": 0.8,
+     "meter": 32,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gending-pelog",
+     "credit": "Composed for this atlas (data/scores/gending-pelog.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "gending-steam",
+     "name": "Ladrang in Pelog · Steam and telegraph",
+     "about": "The gamelan's ceremonial theme at the courts of the nineteenth century: the full gamelan with rebab, gambang and the sindhen singing.",
+     "midi": "midi/gending-steam.mid",
+     "score": "gending-pelog",
+     "beat": 0.78,
+     "meter": 32,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gending-pelog",
+     "credit": "Composed for this atlas (data/scores/gending-pelog.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "gending-shared",
+     "name": "Ladrang in Pelog · One shared map",
+     "about": "The gamelan's ceremonial theme for a film orchestra: the gamelan with strings, suling and sindhen.",
+     "midi": "midi/gending-shared.mid",
+     "score": "gending-pelog",
+     "beat": 0.75,
+     "meter": 32,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gending-pelog",
+     "credit": "Composed for this atlas (data/scores/gending-pelog.json).",
+     "from": 1900
+    },
+    {
+     "id": "dolanan-early",
+     "name": "Dolanan Song · Early kingdoms",
+     "about": "The gamelan's folk theme in the age of the bronze drums: the flute, then bamboo rattles, a drum keeping time.",
+     "midi": "midi/dolanan-early.mid",
+     "score": "dolanan",
+     "beat": 0.62,
+     "meter": 16,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "dolanan",
+     "credit": "Composed for this atlas (data/scores/dolanan.json).",
+     "until": -500
+    },
+    {
+     "id": "dolanan-classical",
+     "name": "Dolanan Song · Classical empires",
+     "about": "The gamelan's folk theme the flute, then bronze keys, the bronze drum closing each cycle.",
+     "midi": "midi/dolanan-classical.mid",
+     "score": "dolanan",
+     "beat": 0.58,
+     "meter": 16,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "dolanan",
+     "credit": "Composed for this atlas (data/scores/dolanan.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "dolanan-caravans",
+     "name": "Dolanan Song · Caravans and monsoons",
+     "about": "The gamelan's folk theme the flute over a small gamelan, the peking joining.",
+     "midi": "midi/dolanan-caravans.mid",
+     "score": "dolanan",
+     "beat": 0.56,
+     "meter": 16,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "dolanan",
+     "credit": "Composed for this atlas (data/scores/dolanan.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "dolanan-crossings",
+     "name": "Dolanan Song · Ocean crossings",
+     "about": "The gamelan's folk theme sung by a sindhen over the gamelan, the suling taking a verse, the gambang running beneath.",
+     "midi": "midi/dolanan-crossings.mid",
+     "score": "dolanan",
+     "beat": 0.54,
+     "meter": 16,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "dolanan",
+     "credit": "Composed for this atlas (data/scores/dolanan.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "dolanan-steam",
+     "name": "Dolanan Song · Steam and telegraph",
+     "about": "The gamelan's folk theme as keroncong, the Portuguese-descended street music of Java: violin, then strumming guitar, the flute joining.",
+     "midi": "midi/dolanan-steam.mid",
+     "score": "dolanan",
+     "beat": 0.52,
+     "meter": 16,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "dolanan",
+     "credit": "Composed for this atlas (data/scores/dolanan.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "dolanan-shared",
+     "name": "Dolanan Song · One shared map",
+     "about": "The gamelan's folk theme for a film orchestra: the sindhen, then the suling, then the strings over the gamelan.",
+     "midi": "midi/dolanan-shared.mid",
+     "score": "dolanan",
+     "beat": 0.5,
+     "meter": 16,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "dolanan",
+     "credit": "Composed for this atlas (data/scores/dolanan.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "gending-pelog",
+     "name": "Ladrang in Pelog",
+     "mood": "ceremonial",
+     "about": "A court piece in ladrang form and the pelog scale, composed for this atlas in the manner of Javanese gending: the gamelan's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/gending-pelog.json)."
+    },
+    {
+     "id": "dolanan",
+     "name": "Dolanan Song",
+     "mood": "folk",
+     "about": "A children's play song in slendro, composed for this atlas in the manner of the Javanese lagu dolanan: the gamelan's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/dolanan.json)."
+    }
+   ]
   },
   {
    "id": "andes",
    "name": "Panpipes of the Andes",
-   "summary": "Music of the Andes on cane panpipes and notched flutes, in a five-note scale without semitones. Large panpipe ensembles split the scale between two players, who sound alternate notes.",
+   "summary": "The music of the Andes, heard through two themes: Hanacpachap cussicuinin, the Quechua hymn printed in Lima in 1631, and a huayno. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: clay ocarinas and the conch, antara and siku panpipes, quena flutes and the great bombo, the voices, organ and harp of the colonial church, the harp, violin and charango, and a film orchestra.",
    "scales": [
     {
      "cents": [
@@ -2808,17 +3551,371 @@
    "beat": 0.58,
    "leaps": 0.3,
    "ornament": 0.05,
-   "drone": 0,
+   "drone": 0.25,
    "places": [
     "cuzco"
    ],
    "source": "turino-andes",
-   "confidence": "low"
+   "confidence": "low",
+   "ensemble": {
+    "members": [
+     {
+      "id": "pututu",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "antara",
+      "sample": "panpipe",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "ocarina",
+      "sample": "xun",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "tinya",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "quena",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "wankara",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "siku",
+      "sample": "panpipe",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "bombo",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.4
+     },
+     {
+      "id": "organ",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "arpa",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "charango",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part",
+      "tremolo": true
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:0.5 F4:0.5 G4:1 A4:1 G4:0.5 F4:0.5 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "hanac-early",
+     "name": "Hanacpachap · Early kingdoms",
+     "about": "The Andes' ceremonial theme in the age of Chavín: clay ocarinas, then antara panpipes, the conch's long call beneath.",
+     "midi": "midi/hanac-early.mid",
+     "score": "hanacpachap",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "perez-bocanegra",
+     "confidence": "medium",
+     "theme": "hanacpachap",
+     "credit": "Transcribed for this atlas from the 1631 print (data/scores/hanacpachap.json).",
+     "until": -500
+    },
+    {
+     "id": "hanac-classical",
+     "name": "Hanacpachap · Classical empires",
+     "about": "The Andes' ceremonial theme in the age of Nazca and Moche: antara panpipes, then the quena, a wankara drum.",
+     "midi": "midi/hanac-classical.mid",
+     "score": "hanacpachap",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "perez-bocanegra",
+     "confidence": "medium",
+     "theme": "hanacpachap",
+     "credit": "Transcribed for this atlas from the 1631 print (data/scores/hanacpachap.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "hanac-caravans",
+     "name": "Hanacpachap · Caravans and monsoons",
+     "about": "The Andes' ceremonial theme in the age of Tiwanaku and the Inca: siku panpipes, then the quena, the great bombo and the conch.",
+     "midi": "midi/hanac-caravans.mid",
+     "score": "hanacpachap",
+     "beat": 0.68,
+     "meter": 4,
+     "source": "perez-bocanegra",
+     "confidence": "medium",
+     "theme": "hanacpachap",
+     "credit": "Transcribed for this atlas from the 1631 print (data/scores/hanacpachap.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "hanac-crossings",
+     "name": "Hanacpachap · Ocean crossings",
+     "about": "The Andes' ceremonial theme as the colonial church sang it in 1631: voices over the organ, the harp and violin joining.",
+     "midi": "midi/hanac-crossings.mid",
+     "score": "hanacpachap",
+     "beat": 0.65,
+     "meter": 4,
+     "source": "perez-bocanegra",
+     "confidence": "medium",
+     "theme": "hanacpachap",
+     "credit": "Transcribed for this atlas from the 1631 print (data/scores/hanacpachap.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "hanac-steam",
+     "name": "Hanacpachap · Steam and telegraph",
+     "about": "The Andes' ceremonial theme in the nineteenth century: the Andean harp, then the violin, then the quena.",
+     "midi": "midi/hanac-steam.mid",
+     "score": "hanacpachap",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "perez-bocanegra",
+     "confidence": "medium",
+     "theme": "hanacpachap",
+     "credit": "Transcribed for this atlas from the 1631 print (data/scores/hanacpachap.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "hanac-shared",
+     "name": "Hanacpachap · One shared map",
+     "about": "The Andes' ceremonial theme for a film orchestra: the quena, then strings with the charango, then horns.",
+     "midi": "midi/hanac-shared.mid",
+     "score": "hanacpachap",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "perez-bocanegra",
+     "confidence": "medium",
+     "theme": "hanacpachap",
+     "credit": "Transcribed for this atlas from the 1631 print (data/scores/hanacpachap.json).",
+     "from": 1900
+    },
+    {
+     "id": "huayno-early",
+     "name": "Huayno · Early kingdoms",
+     "about": "The Andes' folk theme in the age of Chavín: antara panpipes, then the clay ocarina, a tinya drum.",
+     "midi": "midi/huayno-early.mid",
+     "score": "huayno",
+     "beat": 0.5,
+     "meter": 2,
+     "source": "freyre-condor",
+     "confidence": "medium",
+     "theme": "huayno",
+     "credit": "Transcribed for this atlas from Freyre's piano edition (data/scores/huayno.json).",
+     "until": -500
+    },
+    {
+     "id": "huayno-classical",
+     "name": "Huayno · Classical empires",
+     "about": "The Andes' folk theme in the age of Nazca and Moche: the quena, then the antara, the wankara drum.",
+     "midi": "midi/huayno-classical.mid",
+     "score": "huayno",
+     "beat": 0.46,
+     "meter": 2,
+     "source": "freyre-condor",
+     "confidence": "medium",
+     "theme": "huayno",
+     "credit": "Transcribed for this atlas from Freyre's piano edition (data/scores/huayno.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "huayno-caravans",
+     "name": "Huayno · Caravans and monsoons",
+     "about": "The Andes' folk theme in the age of the Inca: siku panpipes, then the quena, the bombo and tinya.",
+     "midi": "midi/huayno-caravans.mid",
+     "score": "huayno",
+     "beat": 0.44,
+     "meter": 2,
+     "source": "freyre-condor",
+     "confidence": "medium",
+     "theme": "huayno",
+     "credit": "Transcribed for this atlas from Freyre's piano edition (data/scores/huayno.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "huayno-crossings",
+     "name": "Huayno · Ocean crossings",
+     "about": "The Andes' folk theme in the colonial Andes: the charango, then the quena, then the harp, the violin joining.",
+     "midi": "midi/huayno-crossings.mid",
+     "score": "huayno",
+     "beat": 0.42,
+     "meter": 2,
+     "source": "freyre-condor",
+     "confidence": "medium",
+     "theme": "huayno",
+     "credit": "Transcribed for this atlas from Freyre's piano edition (data/scores/huayno.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "huayno-steam",
+     "name": "Huayno · Steam and telegraph",
+     "about": "The Andes' folk theme in the nineteenth century: the violin, then the harp, then the charango.",
+     "midi": "midi/huayno-steam.mid",
+     "score": "huayno",
+     "beat": 0.4,
+     "meter": 2,
+     "source": "freyre-condor",
+     "confidence": "medium",
+     "theme": "huayno",
+     "credit": "Transcribed for this atlas from Freyre's piano edition (data/scores/huayno.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "huayno-shared",
+     "name": "Huayno · One shared map",
+     "about": "The Andes' folk theme for a film orchestra: the quena, then the charango, then strings with horns.",
+     "midi": "midi/huayno-shared.mid",
+     "score": "huayno",
+     "beat": 0.4,
+     "meter": 2,
+     "source": "freyre-condor",
+     "confidence": "medium",
+     "theme": "huayno",
+     "credit": "Transcribed for this atlas from Freyre's piano edition (data/scores/huayno.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "hanacpachap",
+     "name": "Hanacpachap",
+     "mood": "ceremonial",
+     "about": "Hanacpachap cussicuinin, a processional hymn in Quechua printed in Lima in 1631, the first polyphony printed in the Americas: the Andes' ceremonial theme.",
+     "source": "perez-bocanegra",
+     "confidence": "medium",
+     "credit": "Transcribed for this atlas from the 1631 print (data/scores/hanacpachap.json)."
+    },
+    {
+     "id": "huayno",
+     "name": "Huayno",
+     "mood": "folk",
+     "about": "A huayno, the dance song of the Andes, from an early piano edition of El cóndor pasa arranged by C. Freyre: the Andes' folk theme.",
+     "source": "freyre-condor",
+     "confidence": "medium",
+     "credit": "Transcribed for this atlas from Freyre's piano edition (data/scores/huayno.json)."
+    }
+   ]
   },
   {
    "id": "mbira",
    "name": "Mbira",
-   "summary": "Shona music of the mbira: short cycles plucked by the thumbs and repeated, changing a note at a time, with a second line heard between the first. Tunings vary from one instrument to the next; this one divides the octave into seven roughly even steps.",
+   "summary": "The mbira music of the Shona and their neighbours, heard through two themes composed for this atlas in its styles, since it was passed on by ear rather than written: a ceremonial mbira cycle and a call-and-response song. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: voices, clapping and the kudu horn, the karimba, the interlocking mbira of Great Zimbabwe and the Mutapa court with hosho and ngoma, the xylophones of the south, and a modern band.",
    "scales": [
     {
      "cents": [
@@ -2845,13 +3942,348 @@
    "beat": 0.3,
    "leaps": 0.3,
    "ornament": 0,
-   "drone": 0,
+   "drone": 0.2,
    "places": [
     "great-zimbabwe",
     "mapungubwe"
    ],
    "source": "berliner-mbira",
-   "confidence": "low"
+   "confidence": "low",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "karimba",
+      "sample": "kalimba",
+      "voice": "tine",
+      "role": "part"
+     },
+     {
+      "id": "mbira",
+      "sample": "kalimba",
+      "voice": "tine",
+      "role": "part"
+     },
+     {
+      "id": "mbira2",
+      "sample": "kalimba",
+      "voice": "tine",
+      "role": "part",
+      "detune": 7,
+      "gain": 0.85
+     },
+     {
+      "id": "hosho",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "s"
+     },
+     {
+      "id": "clap",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "ngoma",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "kudu",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "marimba",
+      "sample": "marimba",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "guitar",
+      "sample": "guitar",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "A4:0.5 F#4:0.5 D4:0.5 B4:0.5 G4:0.5 D4:0.5"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "mbira-early",
+     "name": "Mbira Cycle · Early kingdoms",
+     "about": "The mbira's ceremonial theme before the mbira: voices sing the falling cycle, hands clap, the kudu horn calls.",
+     "midi": "midi/mbira-early.mid",
+     "score": "mbira-cycle",
+     "beat": 0.5,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "until": -500
+    },
+    {
+     "id": "mbira-classical",
+     "name": "Mbira Cycle · Classical empires",
+     "about": "The mbira's ceremonial theme on the karimba, the mbira's older, smaller cousin, voices joining.",
+     "midi": "midi/mbira-classical.mid",
+     "score": "mbira-cycle",
+     "beat": 0.46,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "mbira-caravans",
+     "name": "Mbira Cycle · Caravans and monsoons",
+     "about": "The mbira's ceremonial theme at Great Zimbabwe: the mbira, a second interlocking a pulse behind, hosho and ngoma, the kudu horn.",
+     "midi": "midi/mbira-caravans.mid",
+     "score": "mbira-cycle",
+     "beat": 0.42,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "mbira-crossings",
+     "name": "Mbira Cycle · Ocean crossings",
+     "about": "The mbira's ceremonial theme at the Mutapa court: two mbiras interlocking over the hosho, the drum, then voices.",
+     "midi": "midi/mbira-crossings.mid",
+     "score": "mbira-cycle",
+     "beat": 0.4,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "mbira-steam",
+     "name": "Mbira Cycle · Steam and telegraph",
+     "about": "The mbira's ceremonial theme two mbiras with the xylophones of the south, then voices.",
+     "midi": "midi/mbira-steam.mid",
+     "score": "mbira-cycle",
+     "beat": 0.4,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "mbira-shared",
+     "name": "Mbira Cycle · One shared map",
+     "about": "The mbira's ceremonial theme for a modern band and orchestra: mbira, marimba and guitar, voices over all.",
+     "midi": "midi/mbira-shared.mid",
+     "score": "mbira-cycle",
+     "beat": 0.38,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": 1900
+    },
+    {
+     "id": "song-early",
+     "name": "Call and Response · Early kingdoms",
+     "about": "The mbira's folk theme voices calling and answering over clapping, a drum joining.",
+     "midi": "midi/song-early.mid",
+     "score": "call-response",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "until": -500
+    },
+    {
+     "id": "song-classical",
+     "name": "Call and Response · Classical empires",
+     "about": "The mbira's folk theme voices, the karimba taking a verse, clapping and a drum.",
+     "midi": "midi/song-classical.mid",
+     "score": "call-response",
+     "beat": 0.58,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "song-caravans",
+     "name": "Call and Response · Caravans and monsoons",
+     "about": "The mbira's folk theme voices and the mbira, hosho and ngoma.",
+     "midi": "midi/song-caravans.mid",
+     "score": "call-response",
+     "beat": 0.55,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "song-crossings",
+     "name": "Call and Response · Ocean crossings",
+     "about": "The mbira's folk theme voices, then the xylophone, hosho, drum and clapping.",
+     "midi": "midi/song-crossings.mid",
+     "score": "call-response",
+     "beat": 0.52,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "song-steam",
+     "name": "Call and Response · Steam and telegraph",
+     "about": "The mbira's folk theme voices and two mbiras, the xylophone joining.",
+     "midi": "midi/song-steam.mid",
+     "score": "call-response",
+     "beat": 0.5,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "song-shared",
+     "name": "Call and Response · One shared map",
+     "about": "The mbira's folk theme voices and guitar over marimba and drums.",
+     "midi": "midi/song-shared.mid",
+     "score": "call-response",
+     "beat": 0.5,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "mbira-cycle",
+     "name": "Mbira Cycle",
+     "mood": "ceremonial",
+     "about": "A forty-eight-pulse cycle composed for this atlas in the manner of the Shona mbira dzavadzimu music played at ceremonies to call the ancestors: the mbira's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json)."
+    },
+    {
+     "id": "call-response",
+     "name": "Call and Response",
+     "mood": "folk",
+     "about": "A call-and-response song composed for this atlas in the manner of Southern African singing: the mbira's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/call-response.json)."
+    }
+   ]
   },
   {
    "id": "neutral",
@@ -2903,19 +4335,7 @@
   },
   {
    "vp": "greece",
-   "tradition": "greek",
-   "until": -146
-  },
-  {
-   "vp": "greece",
-   "tradition": "rome",
-   "from": -146,
-   "until": 330
-  },
-  {
-   "vp": "greece",
-   "tradition": "chant",
-   "from": 330
+   "tradition": "greek"
   },
   {
    "vp": "rome",

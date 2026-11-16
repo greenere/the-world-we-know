@@ -1,0 +1,10 @@
+{
+ "id": "gending-pelog",
+ "name": "A ladrang in pelog",
+ "source": "atlas-composed",
+ "about": "Composed for this atlas in the manner of a Javanese court gending: a balungan (the skeletal melody the saron plays) in pelog, here on D, E flat, F, A and B flat, laid out in ladrang form, eight gatra of four beats to each gongan, the kenong closing every eight beats and the great gong the thirty-second. Two gongan, the second rising to the high register. Gamelan tunings are not those of the piano; these are the nearest notes.",
+ "meter": 32,
+ "pickup": 0,
+ "transpose": 0,
+ "notes": "Eb4:1 D4:1 Eb4:1 Bb3:1 Eb4:1 D4:1 Eb4:1 Bb3:1 / F4:1 F4:1 A4:1 Bb4:1 A4:1 F4:1 Eb4:1 D4:1 / F4:1 A4:1 Bb4:1 A4:1 F4:1 Eb4:1 D4:1 Bb3:1 / D4:1 Eb4:1 F4:1 Eb4:1 A4:1 F4:1 Eb4:1 D4:1 / Bb4:1 D5:1 Eb5:1 D5:1 Bb4:1 A4:1 F4:1 A4:1 / Bb4:1 A4:1 F4:1 Eb4:1 F4:1 A4:1 Bb4:1 A4:1 / D4:2 F4:1 Eb4:1 D4:1 Bb3:1 A3:1 Bb3:1 / F4:1 A4:1 F4:1 Eb4:1 A4:1 F4:1 Eb4:1 D4:1 /"
+}

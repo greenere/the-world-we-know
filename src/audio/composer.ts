@@ -62,6 +62,9 @@ export interface Member {
   tremolo?: boolean;
   /** Octaves to move it by. */
   octave?: number;
+  /** Cents to tune it away from the others: two bronzes a few cents apart beat against each other, as a
+   * gamelan's paired instruments do (its ombak, the "wave"). */
+  detune?: number;
   gain?: number;
   /** An instrument on the Music shelf: this member joins once the viewpoint knows it. */
   instrument?: string;
@@ -265,7 +268,7 @@ export function createComposer(
     if (m.drum) return drum(m.drum, time, strength * (m.gain ?? 1));
     // The orchestra has no synthesised stand-in: until its samples arrive it waits.
     if (m.modern && (!orchestral || (m.sample && !samples.ready(m.sample)))) return;
-    const c = cents + 1200 * (m.octave ?? 0);
+    const c = cents + 1200 * (m.octave ?? 0) + (m.detune ?? 0);
     const hz = hzOf(c);
     const level = strength * (m.gain ?? 1);
     const p = seatOf(m) + (rand() - 0.5) * 0.08;

@@ -1,0 +1,11 @@
+{
+ "id": "greek-lullaby",
+ "name": "A lullaby from Smyrna",
+ "source": "bourgault-ducoudray",
+ "pages": "No. 1, p. 2 (archive.org BourgaultDucoudray30Melodies1890s)",
+ "about": "\"Sleep, my daughter, and I will give you Alexandria in sugar, Cairo in rice, and Constantinople to rule for three years\": a Greek lullaby Bourgault-Ducoudray noted in Smyrna from Mme Laffon in 1875, in what he calls the eastern chromatic scale (the augmented second between E flat and F sharp). Its opening, without the piano; the melisma in the fourth bar simplified. Notes as pitch:beats, quarter notes as beats.",
+ "meter": 3,
+ "pickup": 0.75,
+ "transpose": 0,
+ "notes": "C4:0.25 D4:0.25 Eb4:0.25 | G4:1 F#4:0.75 Eb4:0.25 Eb4:0.75 D4:0.25 | D4:2 r:0.25 C4:0.25 D4:0.25 Eb4:0.25 / | G4:1 F#4:0.75 Eb4:0.25 Eb4:0.75 D4:0.25 | D4:2 A4:0.25 Bb4:0.25 A4:0.125 G4:0.125 F#4:0.125 A4:0.125 / | G4:1 G4:0.25 G4:0.25 G4:0.25 G4:0.25 G4:2 / | F#4:0.5 Eb4:0.25 D4:0.25 F#4:0.25 Eb4:0.5 D4:0.25 F#4:0.25 Eb4:0.5 D4:0.25 | D4:2 r:0.25 C4:0.25 D4:0.25 Eb4:0.25 | G4:1 F#4:0.75 Eb4:0.25 Eb4:0.75 D4:0.25 | D4:3 /"
+}

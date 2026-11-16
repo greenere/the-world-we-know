@@ -1,0 +1,11 @@
+{
+ "id": "huayno",
+ "name": "A huayno (El cóndor pasa, arr. Freyre)",
+ "source": "freyre-condor",
+ "pages": "p. 1, Tempo di huayno (Wikimedia Commons, El cóndor pasa.pdf, Biblioteca Nacional del Perú)",
+ "about": "The huayno of an early piano edition of El cóndor pasa \"arr. de C. Freyre A.\" (Lima, Casa Editora de Música): the top line of its first phrase, played twice, the second time ending on the tonic. The famous slow melody of Robles' zarzuela is not in this edition. Notes as pitch:beats, quarter notes as beats.",
+ "meter": 2,
+ "pickup": 0.5,
+ "transpose": -7,
+ "notes": "E4:0.5 | A4:0.25 G#4:0.25 A4:0.25 B4:0.25 C5:0.25 B4:0.25 C5:0.25 D5:0.25 | E5:1.5 G5:0.5 | E5:1.5 D5:0.25 C5:0.25 | A4:1.5 r:1.5 / E4:0.5 | A4:0.25 G#4:0.25 A4:0.25 B4:0.25 C5:0.25 B4:0.25 C5:0.25 D5:0.25 | E5:1.5 G5:0.5 | E5:1.5 D5:0.25 C5:0.25 | A4:2 /"
+}

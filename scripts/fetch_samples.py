@@ -53,6 +53,15 @@ INSTRUMENTS = {
     "piano": {"patch": "acoustic_grand_piano", "low": 36, "high": 96, "held": False, "gain": 0.7},
     # India: the sitar, which also stands for the veena and, plucked low and slow, the tanpura's drone.
     "sitar": {"patch": "sitar", "low": 43, "high": 84, "held": False, "gain": 0.8},
+    # The Andes' panpipes (antara, siku) and the Greek klarino.
+    "panpipe": {"patch": "pan_flute", "low": 60, "high": 93, "held": True, "gain": 0.6},
+    "clarinet": {"patch": "clarinet", "low": 50, "high": 86, "held": True, "gain": 0.55},
+    # The gamelan's bronzes (the vibraphone for the saron and gender, the glockenspiel for the peking, the marimba
+    # for the wooden gambang) and the mbira (the kalimba is its cousin).
+    "vibraphone": {"patch": "vibraphone", "low": 53, "high": 89, "held": False, "gain": 0.6},
+    "glockenspiel": {"patch": "glockenspiel", "low": 72, "high": 105, "held": False, "gain": 0.45},
+    "marimba": {"patch": "marimba", "low": 45, "high": 96, "held": False, "gain": 0.7},
+    "kalimba": {"patch": "kalimba", "low": 48, "high": 96, "held": False, "gain": 0.8},
     # The atlas's own orchestra, which arranges every tradition's pieces for a modern ear (as a game's score
     # would): a string section for the harmony, cellos and basses beneath it, horns, and timpani and a great
     # drum for the swells. Not historical; the Historical setting leaves them out.

@@ -1084,15 +1084,204 @@ MAQAM = {
         "shared": {"lead": [("oud", 0), ("strings", 0), ("ney", 1)], "join": [(1, "oud", -1, 50), (2, "strings", 0, 60), (2, "horn", -1, 50)], "drums": [("darbuka", 48, "down", 0, 56), ("riq", 64, "beat", 1, 40)]},
     },
 }
+# The Greek world's two themes: Mesomedes' Prayer to Calliope (the ceremonial one) and a lullaby from Smyrna
+# (the folk one). From the phorminx and aulos of the archaic age, the kithara and water organ, the chant and
+# ison of Byzantium, the lyra, laouto and santouri of the islands, the klarino of the nineteenth century, to
+# the bouzouki and a film orchestra.
+GREEK = {
+    "calliope": {
+        "early": {"lead": [("phorminx", 0), ("aulos", 0), ("aulos", 0)], "join": [(1, "phorminx", -1, 52)], "drums": [("tympanon", 45, "start", 0, 54)]},
+        "classical": {"lead": [("kithara", 0), ("aulos", 0), ("hydraulis", 0)], "join": [(1, "kithara", -1, 54), (2, "aulos", 0, 50)], "drums": [("krotala", 76, "beat", 2, 44)]},
+        "caravans": {"lead": [("psaltes", 0), ("psaltes", 0), ("psaltes", 0)], "join": [(1, "psaltes", -1, 54), (2, "lyra", 0, 44)], "hold": ("psaltes", -1, 0)},
+        "crossings": {"lead": [("santouri", 0), ("lyra", 0), ("zurna", 0)], "join": [(1, "laouto", -1, 52), (2, "santouri", 0, 48)], "drums": [("daouli", 45, "down", 1, 60)]},
+        "steam": {"lead": [("klarino", 0), ("violi", 0), ("klarino", 0)], "join": [(1, "santouri", 0, 48), (1, "laouto", -1, 50), (2, "violi", 0, 50)], "drums": [("daouli", 45, "down", 0, 56)]},
+        "shared": {"lead": [("bouzouki", 0), ("strings", 0), ("horn", 0)], "join": [(1, "bouzouki", -1, 50), (2, "strings", 0, 58), (2, "klarino", 1, 46)]},
+    },
+    "lullaby": {
+        "early": {"lead": [("aulos", 0), ("phorminx", 0), ("aulos", 0)], "join": [(1, "phorminx", -1, 50)]},
+        "classical": {"lead": [("kithara", 0), ("aulos", 0), ("kithara", 0)], "join": [(1, "kithara", -1, 50), (2, "aulos", 0, 44)]},
+        "caravans": {"lead": [("lyra", 0), ("psaltes", 0), ("lyra", 0)], "join": [(1, "laouto", -1, 48)]},
+        "crossings": {"lead": [("lyra", 0), ("santouri", 0), ("lyra", 0)], "join": [(1, "laouto", -1, 50), (2, "santouri", 0, 46)], "drums": [("daouli", 48, "down", 2, 50)]},
+        "steam": {"lead": [("klarino", 0), ("violi", 0), ("klarino", 0)], "join": [(1, "laouto", -1, 50), (2, "santouri", 0, 46)]},
+        "shared": {"lead": [("bouzouki", 0), ("strings", 0), ("klarino", 0)], "join": [(1, "bouzouki", -1, 48), (2, "strings", 0, 56), (2, "horn", -1, 48)]},
+    },
+}
+
+# The Andes' two themes: Hanacpachap cussicuinin, the Quechua hymn printed in 1631 (the ceremonial one), and a
+# huayno (the folk one). From the conch and clay ocarinas of Chavín, the antara panpipes and quena flutes, the
+# siku and great bombo, the voices, organ and harp of the colonial church, the harp, violin and charango of the
+# nineteenth century, to a film orchestra.
+ANDES = {
+    "hanac": {
+        "early": {"lead": [("ocarina", 0), ("antara", 0), ("antara", 0)], "join": [(1, "ocarina", 0, 46)], "hold": ("pututu", -1, 2), "drums": [("tinya", 48, "start", 0, 54)]},
+        "classical": {"lead": [("antara", 0), ("quena", 1), ("antara", 0)], "join": [(1, "antara", 0, 46), (2, "quena", 1, 44)], "drums": [("wankara", 45, "down", 1, 58)]},
+        "caravans": {"lead": [("siku", 0), ("quena", 1), ("siku", 0)], "join": [(1, "quena", 1, 46)], "hold": ("pututu", -1, 2), "drums": [("bombo", 45, "down", 0, 60)]},
+        "crossings": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(0, "arpa", -1, 56), (1, "organ", -1, 52), (2, "violin", 0, 50)], "hold": ("organ", -1, 0)},
+        "steam": {"lead": [("arpa", 0), ("violin", 0), ("quena", 1)], "join": [(1, "arpa", -1, 50), (2, "violin", 0, 48)], "drums": [("bombo", 45, "down", 1, 52)]},
+        "shared": {"lead": [("quena", 1), ("strings", 0), ("horn", 0)], "join": [(1, "charango", 0, 46), (2, "strings", 0, 58), (2, "quena", 1, 46)], "drums": [("bombo", 45, "down", 1, 54)]},
+    },
+    "huayno": {
+        "early": {"lead": [("antara", 0), ("ocarina", 0), ("antara", 0)], "join": [(1, "antara", 0, 46)], "drums": [("tinya", 48, "down", 0, 56)]},
+        "classical": {"lead": [("quena", 1), ("antara", 0), ("quena", 1)], "join": [(1, "quena", 1, 44)], "drums": [("wankara", 45, "down", 0, 58)]},
+        "caravans": {"lead": [("siku", 0), ("quena", 1), ("siku", 0)], "join": [(2, "quena", 1, 44)], "drums": [("bombo", 45, "down", 0, 60), ("tinya", 60, "beat", 1, 40)]},
+        "crossings": {"lead": [("charango", 0), ("quena", 1), ("arpa", 0)], "join": [(1, "charango", 0, 48), (2, "violin", 0, 44)], "drums": [("bombo", 45, "down", 0, 56)]},
+        "steam": {"lead": [("violin", 0), ("arpa", 0), ("charango", 0)], "join": [(1, "arpa", -1, 50), (2, "quena", 1, 44)], "drums": [("bombo", 45, "down", 0, 56)]},
+        "shared": {"lead": [("quena", 1), ("charango", 0), ("strings", 0)], "join": [(1, "arpa", -1, 48), (2, "quena", 1, 46), (2, "horn", -1, 46)], "drums": [("bombo", 45, "down", 0, 54)]},
+    },
+}
+GREEK_BEAT = {"calliope": [0.72, 0.65, 0.7, 0.62, 0.6, 0.6], "lullaby": [0.9, 0.85, 0.82, 0.78, 0.75, 0.72]}
+ANDES_BEAT = {"hanac": [0.8, 0.72, 0.68, 0.65, 0.6, 0.6], "huayno": [0.5, 0.46, 0.44, 0.42, 0.4, 0.4]}
+
+# The gamelan of Java and its neighbours: a ladrang in pelog (the ceremonial theme) and a dolanan song in
+# slendro (the folk one), both composed for the atlas in those styles. The colotomic instruments mark the
+# cycle by where a beat falls in it: the great gong closes each gongan, the kenong each quarter of it, the
+# kempul and kethuk between; the saron pair (a few cents apart, so they shimmer) plays the core melody, the
+# peking doubles every beat, the bonang answers off the beat, the gender and gambang elaborate below and
+# above, the suling and rebab float over the top and the sindhen sings. From the Dong Son bronze drums and
+# bamboo of the early kingdoms to the full court gamelan, keroncong, and a film orchestra.
+
+def gamelan(spec, cycle):
+    """`spec`: lead: [(member, octave)] for each verse; layers: {member: from verse}; `cycle`: beats in a gongan."""
+    has = lambda name, rep: name in spec["layers"] and rep >= spec["layers"][name]
+
+    def play(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+        beat = dur / max(beats, 0.25) / 0.94
+        m, o = spec["lead"][rep]
+        T[m].note(at, dur, p + 12 * o, 80)
+        if has("saron", rep):
+            T["saron"].note(at, max(dur, beat), p, 72)
+            T["saron2"].note(at + 0.01, max(dur, beat), p, 58)
+        if has("peking", rep):
+            for k in range(max(1, int(round(beats * 2)))):
+                T["peking"].note(at + k * beat / 2, beat / 2, p + 12, 46 if k % 2 else 54)
+        if has("bonang", rep) and beats >= 0.99:
+            T["bonang"].note(at + beat / 2, beat / 2, p + 12, 50)
+        if has("gender", rep):
+            T["gender"].note(at, dur * 1.6, p - 12 if p - 12 >= 53 else p, 44)
+        if has("gambang", rep):
+            for k in range(max(1, int(round(beats * 4)))):
+                T["gambang"].note(at + k * beat / 4, beat / 4, p + (12 if k % 2 else 0), 40)
+        if has("rebab", rep):
+            T["rebab"].note(at, dur, p + 12, 48)
+        if has("sindhen", rep):
+            T["sindhen"].note(at, dur, p, 60)
+        if has("suling", rep) and start:
+            T["suling"].note(at + beat * 0.5, beat * 3, p + 12, 52)
+        # The colotomic part: where in the gongan this beat falls.
+        b = int(round(pos)) % cycle
+        q = cycle // 4
+        gong = "nekara" if "nekara" in spec["layers"] else "gong"
+        if has(gong, rep) and b == cycle - 1:
+            T[gong].note(at + dur * 0.9, 4.0, 38, 90)
+        if has("kenong", rep) and (b + 1) % q == 0:
+            T["kenong"].note(at, 1.5, p, 56)
+        if has("kempul", rep) and b % q == q // 2 - 1 and b != cycle - 1:
+            T["kempul"].note(at, 1.5, p - 12, 54)
+        if has("kethuk", rep) and b % 2 == 0:
+            T["kethuk"].note(at + beat / 2, 0.1, 60, 40)
+        if has("kendang", rep):
+            T["kendang"].note(at, 0.15, 48 if b % 4 == 0 else 60, 58 if b % 4 == 0 else 36)
+
+    return play
+
+
+GAMELAN = {
+    "gending": {
+        "early": {"lead": [("suling", 1), ("suling", 1), ("angklung", 0)], "layers": {"nekara": 0, "angklung": 1, "kendang": 2}},
+        "classical": {"lead": [("suling", 1), ("saron", 0), ("saron", 0)], "layers": {"nekara": 0, "saron": 1, "kendang": 1, "suling": 2}},
+        "caravans": {"lead": [("saron", 0), ("saron", 0), ("saron", 0)], "layers": {"saron": 0, "gong": 0, "kenong": 0, "kendang": 1, "kempul": 1, "suling": 2}},
+        "crossings": {"lead": [("saron", 0), ("saron", 0), ("saron", 0)], "layers": {"saron": 0, "gong": 0, "kenong": 0, "kempul": 0, "kethuk": 0, "kendang": 0, "peking": 1, "bonang": 1, "gender": 1, "suling": 2, "rebab": 2}},
+        "steam": {"lead": [("saron", 0), ("saron", 0), ("saron", 0)], "layers": {"saron": 0, "gong": 0, "kenong": 0, "kempul": 0, "kethuk": 0, "kendang": 0, "peking": 0, "bonang": 1, "gender": 1, "rebab": 1, "gambang": 2, "sindhen": 2}},
+        "shared": {"lead": [("saron", 0), ("strings", 0), ("saron", 0)], "layers": {"saron": 0, "gong": 0, "kenong": 0, "kempul": 0, "kethuk": 0, "kendang": 0, "peking": 1, "bonang": 1, "gender": 0, "suling": 1, "sindhen": 2, "rebab": 2}},
+    },
+    "dolanan": {
+        "early": {"lead": [("suling", 0), ("angklung", 0), ("suling", 0)], "layers": {"nekara": 0, "angklung": 1, "kendang": 1}},
+        "classical": {"lead": [("suling", 0), ("saron", 0), ("suling", 0)], "layers": {"nekara": 0, "saron": 1, "kendang": 0}},
+        "caravans": {"lead": [("suling", 0), ("saron", 0), ("suling", 0)], "layers": {"saron": 1, "gong": 0, "kenong": 0, "kendang": 0, "peking": 2}},
+        "crossings": {"lead": [("sindhen", 0), ("suling", 0), ("sindhen", 0)], "layers": {"saron": 0, "gong": 0, "kenong": 0, "kempul": 0, "kendang": 0, "peking": 1, "bonang": 1, "gambang": 2}},
+        "steam": {"lead": [("biola", 0), ("keroncong", 0), ("biola", 0)], "layers": {"keroncong": 1, "gong": 0, "kendang": 0, "suling": 2}},
+        "shared": {"lead": [("sindhen", 0), ("suling", 0), ("strings", 0)], "layers": {"saron": 0, "gong": 0, "kenong": 0, "kendang": 0, "peking": 1, "gambang": 1, "sindhen": 2}},
+    },
+}
+GAMELAN_MEMBERS = ["suling", "angklung", "nekara", "saron", "saron2", "peking", "bonang", "gender", "gambang", "kenong", "kempul", "gong", "kethuk", "kendang", "rebab", "sindhen", "biola", "keroncong", "strings"]
+GAMELAN_BEAT = {"gending": [1.0, 0.92, 0.85, 0.8, 0.78, 0.75], "dolanan": [0.62, 0.58, 0.56, 0.54, 0.52, 0.5]}
+
+
+# Mbira: a cycle in the manner of mbira dzavadzimu music (the ceremonial theme) and a call-and-response song
+# (the folk one), composed for the atlas. The second mbira interlocks a pulse behind the first; the hosho
+# shakes in threes; the ngoma drum marks the beat. From voices, clapping and the kudu horn, the karimba, the
+# mbira of Great Zimbabwe and the Mutapa court, the xylophones of the south, to a modern band and orchestra.
+
+def mbira(spec):
+    has = lambda name, rep: name in spec["layers"] and rep >= spec["layers"][name]
+
+    def play(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+        beat = dur / max(beats, 0.25) / 0.94
+        m, o = spec["lead"][rep]
+        T[m].note(at, dur, p + 12 * o, 80)
+        if has("mbira2", rep):
+            # Kutsinhira: the same falling line a pulse behind, the two weaving into one.
+            T["mbira2"].note(at + beat * 0.5, dur, p + (12 if spec.get("high2") else 0), 58)
+        if has("voices", rep) and m != "voices":
+            T["voices"].note(at, dur, p, 50)
+        pulses = max(1, int(round(beats * 2)))
+        for k in range(pulses):
+            t = at + k * beat / 2
+            n = int(round((pos * 2 + k))) % 3
+            if has("hosho", rep):
+                T["hosho"].note(t, 0.08, 70, 52 if n == 0 else 34)
+            if has("clap", rep) and n == 0:
+                T["clap"].note(t, 0.1, 76, 50)
+            if has("ngoma", rep) and n == 0:
+                T["ngoma"].note(t, 0.2, 45 if int(round(pos * 2 + k)) % 6 == 0 else 50, 60)
+        if has("kudu", rep) and start:
+            T["kudu"].note(at, beat * 3, p - 12, 50)
+        if has("marimba", rep):
+            T["marimba"].note(at, dur, p - 12, 54)
+        if has("guitar", rep):
+            T["guitar"].note(at + beat * 0.25, dur * 0.6, p, 46)
+
+    return play
+
+
+MBIRA = {
+    "cycle": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "layers": {"clap": 0, "kudu": 1, "hosho": 2}},
+        "classical": {"lead": [("karimba", 1), ("karimba", 1), ("voices", 0)], "layers": {"clap": 0, "hosho": 1, "voices": 2}},
+        "caravans": {"lead": [("mbira", 0), ("mbira", 0), ("mbira", 0)], "layers": {"hosho": 0, "mbira2": 1, "ngoma": 1, "kudu": 2}},
+        "crossings": {"lead": [("mbira", 0), ("mbira", 0), ("mbira", 0)], "layers": {"hosho": 0, "mbira2": 0, "ngoma": 1, "voices": 2}},
+        "steam": {"lead": [("mbira", 0), ("mbira", 0), ("voices", 0)], "layers": {"hosho": 0, "mbira2": 0, "ngoma": 0, "marimba": 1}},
+        "shared": {"lead": [("mbira", 0), ("guitar", 0), ("mbira", 0)], "layers": {"hosho": 0, "mbira2": 0, "ngoma": 0, "marimba": 1, "guitar": 1, "voices": 2}, "high2": True},
+    },
+    "song": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "layers": {"clap": 0, "ngoma": 1}},
+        "classical": {"lead": [("voices", 0), ("karimba", 1), ("voices", 0)], "layers": {"clap": 0, "ngoma": 1}},
+        "caravans": {"lead": [("voices", 0), ("mbira", 0), ("voices", 0)], "layers": {"hosho": 0, "ngoma": 0, "mbira2": 1}},
+        "crossings": {"lead": [("voices", 0), ("marimba", 0), ("voices", 0)], "layers": {"hosho": 0, "ngoma": 0, "clap": 1, "marimba": 2}},
+        "steam": {"lead": [("voices", 0), ("mbira", 0), ("voices", 0)], "layers": {"hosho": 0, "ngoma": 0, "mbira2": 1, "marimba": 2}},
+        "shared": {"lead": [("voices", 0), ("guitar", 0), ("voices", 0)], "layers": {"hosho": 0, "ngoma": 0, "marimba": 0, "guitar": 1, "clap": 2}},
+    },
+}
+MBIRA_MEMBERS = ["voices", "karimba", "mbira", "mbira2", "hosho", "clap", "ngoma", "kudu", "marimba", "guitar"]
+MBIRA_BEAT = {"cycle": [0.5, 0.46, 0.42, 0.4, 0.4, 0.38], "song": [0.62, 0.58, 0.55, 0.52, 0.5, 0.5]}
+
 EUROPE_BEAT = {"emmanuel": [0.95, 0.85, 0.82, 0.75, 0.7, 0.7], "greensleeves": [0.8, 0.72, 0.66, 0.6, 0.58, 0.56]}
 MAQAM_BEAT = {"hilali": [0.78, 0.7, 0.66, 0.6, 0.6, 0.58], "doos": [0.62, 0.56, 0.52, 0.5, 0.48, 0.46]}
 LATER_THEME = {}
-for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel", "greensleeves": "greensleeves"}), (MAQAM, MAQAM_BEAT, {"hilali": "hilali", "doos": "doos-ya-lellee"})):
+for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel", "greensleeves": "greensleeves"}), (MAQAM, MAQAM_BEAT, {"hilali": "hilali", "doos": "doos-ya-lellee"}), (GREEK, GREEK_BEAT, {"calliope": "calliope", "lullaby": "greek-lullaby"}), (ANDES, ANDES_BEAT, {"hanac": "hanacpachap", "huayno": "huayno"})):
     for th, eras in table.items():
         sc = json.loads((SCORES / f"{scores[th]}.json").read_text())
         for i, era in enumerate(ERA_KEYS):
             spec = eras[era]
             LATER_THEME[f"{th}-{era}"] = (scores[th], theme(f"{th}_{era}", members_of(spec), beats[th][i], LEVELS[era], arranged(spec), top=62, transpose=sc["transpose"], bars=1, taiko=era == "shared"))
+# Gamelan and mbira: the orchestra stays light (a gamelan carries its own harmony), and their own arrangers.
+for th, score, cycle in (("gending", "gending-pelog", 32), ("dolanan", "dolanan", 16)):
+    for i, era in enumerate(ERA_KEYS):
+        LATER_THEME[f"{th}-{era}"] = (score, theme(f"{th}_{era}", GAMELAN_MEMBERS, GAMELAN_BEAT[th][i], [min(x, 2) for x in LEVELS[era]], gamelan(GAMELAN[th][era], cycle), top=60, transpose=0))
+for th, score in (("mbira", "mbira-cycle"), ("song", "call-response")):
+    for i, era in enumerate(ERA_KEYS):
+        key = "cycle" if th == "mbira" else "song"
+        LATER_THEME[f"{th}-{era}"] = (score, theme(f"{th}_{era}", MBIRA_MEMBERS, MBIRA_BEAT[key][i], [min(x, 2.5) for x in LEVELS[era]], mbira(MBIRA[key][era]), top=60, transpose=0, bars=1))
 
 
 ROME_THEME = {
@@ -1187,7 +1376,6 @@ PIECES = {
     "madame-wang": madame_wang,
     "mama-hao-mingbai": mama_hao_mingbai,
     # The epitaph is a short, private song: strings and harp at most. Mesomedes wrote for Hadrian's court.
-    "calliope": roman([1, 2, 3]),
 }
 
 
