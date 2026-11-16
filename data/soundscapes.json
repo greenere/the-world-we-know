@@ -1716,6 +1716,380 @@
    ]
   },
   {
+   "id": "steppe",
+   "name": "Long song and horse-head fiddle",
+   "summary": "The music of the Mongolian steppe, heard through two themes composed for this atlas in its styles, since its songs were passed on by ear: a long song and a galloping short song. While the years run one carries on, and when time stands still they take turns. Each is played as its age would, over the throat singer's drone and its whistled overtone: voices and drum, the tovshuur lute, the morin khuur horse-head fiddle and limbe flute of the Mongol empire, the yatga zither and khuuchir fiddle, and a film orchestra.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      500,
+      700,
+      900
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "bow"
+    },
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "flute"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.8,
+   "leaps": 0.3,
+   "ornament": 0.2,
+   "glide": true,
+   "drone": 0.5,
+   "places": [
+    "karakorum",
+    "urga"
+   ],
+   "source": "pegg-mongolian",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "khoomei",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "sygyt",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part",
+      "gain": 0.6
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "hooves",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "tovshuur",
+      "sample": "shamisen",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "morin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "limbe",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "yatga",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "khuuchir",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:1 A4:2 G4:0.5 E4:0.5 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "urtyn-early",
+     "name": "Long Song · Early kingdoms",
+     "about": "The steppe's ceremonial theme in the age of the Scythians: voices alone over the throat singer's drone, a drum at the phrases.",
+     "midi": "midi/urtyn-early.mid",
+     "score": "urtyn-duu",
+     "beat": 1.0,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "urtyn-duu",
+     "credit": "Composed for this atlas (data/scores/urtyn-duu.json).",
+     "until": -500
+    },
+    {
+     "id": "urtyn-classical",
+     "name": "Long Song · Classical empires",
+     "about": "The steppe's ceremonial theme in the age of the Xiongnu and the Turks: the tovshuur lute, then voices, over the drone.",
+     "midi": "midi/urtyn-classical.mid",
+     "score": "urtyn-duu",
+     "beat": 0.95,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "urtyn-duu",
+     "credit": "Composed for this atlas (data/scores/urtyn-duu.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "urtyn-caravans",
+     "name": "Long Song · Caravans and monsoons",
+     "about": "The steppe's ceremonial theme in the Mongol empire: the morin khuur horse-head fiddle, then a singer, the limbe flute and tovshuur joining, the drone and its whistling overtone beneath.",
+     "midi": "midi/urtyn-caravans.mid",
+     "score": "urtyn-duu",
+     "beat": 0.9,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "urtyn-duu",
+     "credit": "Composed for this atlas (data/scores/urtyn-duu.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "urtyn-crossings",
+     "name": "Long Song · Ocean crossings",
+     "about": "The steppe's ceremonial theme in the age of the khanates: the morin khuur, then the limbe, then a singer, the yatga zither beneath.",
+     "midi": "midi/urtyn-crossings.mid",
+     "score": "urtyn-duu",
+     "beat": 0.85,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "urtyn-duu",
+     "credit": "Composed for this atlas (data/scores/urtyn-duu.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "urtyn-steam",
+     "name": "Long Song · Steam and telegraph",
+     "about": "The steppe's ceremonial theme a long-song singer over the yatga, the morin khuur and limbe answering, the khuuchir fiddle high above.",
+     "midi": "midi/urtyn-steam.mid",
+     "score": "urtyn-duu",
+     "beat": 0.82,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "urtyn-duu",
+     "credit": "Composed for this atlas (data/scores/urtyn-duu.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "urtyn-shared",
+     "name": "Long Song · One shared map",
+     "about": "The steppe's ceremonial theme for a film orchestra: the morin khuur, then strings, then horns, the singer and the drone over all.",
+     "midi": "midi/urtyn-shared.mid",
+     "score": "urtyn-duu",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "urtyn-duu",
+     "credit": "Composed for this atlas (data/scores/urtyn-duu.json).",
+     "from": 1900
+    },
+    {
+     "id": "gallop-early",
+     "name": "Gallop · Early kingdoms",
+     "about": "The steppe's folk theme the tovshuur lute, then a voice, hooves on the drum.",
+     "midi": "midi/gallop-early.mid",
+     "score": "gallop",
+     "beat": 0.5,
+     "meter": 2,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gallop",
+     "credit": "Composed for this atlas (data/scores/gallop.json).",
+     "until": -500
+    },
+    {
+     "id": "gallop-classical",
+     "name": "Gallop · Classical empires",
+     "about": "The steppe's folk theme the tovshuur, then the limbe, a drum and hooves.",
+     "midi": "midi/gallop-classical.mid",
+     "score": "gallop",
+     "beat": 0.46,
+     "meter": 2,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gallop",
+     "credit": "Composed for this atlas (data/scores/gallop.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "gallop-caravans",
+     "name": "Gallop · Caravans and monsoons",
+     "about": "The steppe's folk theme in the Mongol empire: the morin khuur galloping, then the limbe, the tovshuur beneath.",
+     "midi": "midi/gallop-caravans.mid",
+     "score": "gallop",
+     "beat": 0.44,
+     "meter": 2,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gallop",
+     "credit": "Composed for this atlas (data/scores/gallop.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "gallop-crossings",
+     "name": "Gallop · Ocean crossings",
+     "about": "The steppe's folk theme the morin khuur, then the khuuchir, the yatga and limbe joining.",
+     "midi": "midi/gallop-crossings.mid",
+     "score": "gallop",
+     "beat": 0.42,
+     "meter": 2,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gallop",
+     "credit": "Composed for this atlas (data/scores/gallop.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "gallop-steam",
+     "name": "Gallop · Steam and telegraph",
+     "about": "The steppe's folk theme the morin khuur, then the yatga, the limbe and khuuchir joining.",
+     "midi": "midi/gallop-steam.mid",
+     "score": "gallop",
+     "beat": 0.4,
+     "meter": 2,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gallop",
+     "credit": "Composed for this atlas (data/scores/gallop.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "gallop-shared",
+     "name": "Gallop · One shared map",
+     "about": "The steppe's folk theme for a film orchestra: the morin khuur galloping over strings and horns.",
+     "midi": "midi/gallop-shared.mid",
+     "score": "gallop",
+     "beat": 0.4,
+     "meter": 2,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "gallop",
+     "credit": "Composed for this atlas (data/scores/gallop.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "urtyn-duu",
+     "name": "Long Song",
+     "mood": "ceremonial",
+     "about": "A long song composed for this atlas in the manner of the Mongolian urtyn duu, sung at feasts and ceremonies: the steppe's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/urtyn-duu.json)."
+    },
+    {
+     "id": "gallop",
+     "name": "Gallop",
+     "mood": "folk",
+     "about": "A galloping short song composed for this atlas in the manner of the horse-head fiddle's horse tunes: the steppe's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/gallop.json)."
+    }
+   ]
+  },
+  {
    "id": "raga",
    "name": "Raga",
    "summary": "Indian music on the raga, heard through two themes from C. R. Day's book of 1891: a Pillari gita to Ganesha in raga Malahari, the first song a Carnatic student learns, and an old and popular song in raga Bilahari. While the years run one carries on, and when time stands still they take turns. Each is played as its age would, always over the tanpura: voices and veena, the temple's nadaswaram and tavil, the sitar, shehnai and sarangi of the courts, the violin and harmonium of the nineteenth century, and a film orchestra.",
@@ -3528,6 +3902,777 @@
    ]
   },
   {
+   "id": "mbira",
+   "name": "Mbira",
+   "summary": "The mbira music of the Shona and their neighbours, heard through two themes composed for this atlas in its styles, since it was passed on by ear rather than written: a ceremonial mbira cycle and a call-and-response song. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: voices, clapping and the kudu horn, the karimba, the interlocking mbira of Great Zimbabwe and the Mutapa court with hosho and ngoma, the xylophones of the south, and a modern band.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      170,
+      340,
+      510,
+      690,
+      860,
+      1030
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "tine",
+     "instrument": "mbira"
+    }
+   ],
+   "pattern": "ostinato",
+   "beat": 0.3,
+   "leaps": 0.3,
+   "ornament": 0,
+   "drone": 0.2,
+   "places": [
+    "great-zimbabwe",
+    "mapungubwe"
+   ],
+   "source": "berliner-mbira",
+   "confidence": "low",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "karimba",
+      "sample": "kalimba",
+      "voice": "tine",
+      "role": "part"
+     },
+     {
+      "id": "mbira",
+      "sample": "kalimba",
+      "voice": "tine",
+      "role": "part"
+     },
+     {
+      "id": "mbira2",
+      "sample": "kalimba",
+      "voice": "tine",
+      "role": "part",
+      "detune": 7,
+      "gain": 0.85
+     },
+     {
+      "id": "hosho",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "s"
+     },
+     {
+      "id": "clap",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "ngoma",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "kudu",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "marimba",
+      "sample": "marimba",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "guitar",
+      "sample": "guitar",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "A4:0.5 F#4:0.5 D4:0.5 B4:0.5 G4:0.5 D4:0.5"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "mbira-early",
+     "name": "Mbira Cycle · Early kingdoms",
+     "about": "The mbira's ceremonial theme before the mbira: voices sing the falling cycle, hands clap, the kudu horn calls.",
+     "midi": "midi/mbira-early.mid",
+     "score": "mbira-cycle",
+     "beat": 0.5,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "until": -500
+    },
+    {
+     "id": "mbira-classical",
+     "name": "Mbira Cycle · Classical empires",
+     "about": "The mbira's ceremonial theme on the karimba, the mbira's older, smaller cousin, voices joining.",
+     "midi": "midi/mbira-classical.mid",
+     "score": "mbira-cycle",
+     "beat": 0.46,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "mbira-caravans",
+     "name": "Mbira Cycle · Caravans and monsoons",
+     "about": "The mbira's ceremonial theme at Great Zimbabwe: the mbira, a second interlocking a pulse behind, hosho and ngoma, the kudu horn.",
+     "midi": "midi/mbira-caravans.mid",
+     "score": "mbira-cycle",
+     "beat": 0.42,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "mbira-crossings",
+     "name": "Mbira Cycle · Ocean crossings",
+     "about": "The mbira's ceremonial theme at the Mutapa court: two mbiras interlocking over the hosho, the drum, then voices.",
+     "midi": "midi/mbira-crossings.mid",
+     "score": "mbira-cycle",
+     "beat": 0.4,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "mbira-steam",
+     "name": "Mbira Cycle · Steam and telegraph",
+     "about": "The mbira's ceremonial theme two mbiras with the xylophones of the south, then voices.",
+     "midi": "midi/mbira-steam.mid",
+     "score": "mbira-cycle",
+     "beat": 0.4,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "mbira-shared",
+     "name": "Mbira Cycle · One shared map",
+     "about": "The mbira's ceremonial theme for a modern band and orchestra: mbira, marimba and guitar, voices over all.",
+     "midi": "midi/mbira-shared.mid",
+     "score": "mbira-cycle",
+     "beat": 0.38,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mbira-cycle",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
+     "from": 1900
+    },
+    {
+     "id": "song-early",
+     "name": "Call and Response · Early kingdoms",
+     "about": "The mbira's folk theme voices calling and answering over clapping, a drum joining.",
+     "midi": "midi/song-early.mid",
+     "score": "call-response",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "until": -500
+    },
+    {
+     "id": "song-classical",
+     "name": "Call and Response · Classical empires",
+     "about": "The mbira's folk theme voices, the karimba taking a verse, clapping and a drum.",
+     "midi": "midi/song-classical.mid",
+     "score": "call-response",
+     "beat": 0.58,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "song-caravans",
+     "name": "Call and Response · Caravans and monsoons",
+     "about": "The mbira's folk theme voices and the mbira, hosho and ngoma.",
+     "midi": "midi/song-caravans.mid",
+     "score": "call-response",
+     "beat": 0.55,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "song-crossings",
+     "name": "Call and Response · Ocean crossings",
+     "about": "The mbira's folk theme voices, then the xylophone, hosho, drum and clapping.",
+     "midi": "midi/song-crossings.mid",
+     "score": "call-response",
+     "beat": 0.52,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "song-steam",
+     "name": "Call and Response · Steam and telegraph",
+     "about": "The mbira's folk theme voices and two mbiras, the xylophone joining.",
+     "midi": "midi/song-steam.mid",
+     "score": "call-response",
+     "beat": 0.5,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "song-shared",
+     "name": "Call and Response · One shared map",
+     "about": "The mbira's folk theme voices and guitar over marimba and drums.",
+     "midi": "midi/song-shared.mid",
+     "score": "call-response",
+     "beat": 0.5,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "call-response",
+     "credit": "Composed for this atlas (data/scores/call-response.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "mbira-cycle",
+     "name": "Mbira Cycle",
+     "mood": "ceremonial",
+     "about": "A forty-eight-pulse cycle composed for this atlas in the manner of the Shona mbira dzavadzimu music played at ceremonies to call the ancestors: the mbira's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/mbira-cycle.json)."
+    },
+    {
+     "id": "call-response",
+     "name": "Call and Response",
+     "mood": "folk",
+     "about": "A call-and-response song composed for this atlas in the manner of Southern African singing: the mbira's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/call-response.json)."
+    }
+   ]
+  },
+  {
+   "id": "mexica",
+   "name": "Flower and song",
+   "summary": "The music of the Mexica and their forebears in central Mexico, heard through two themes composed for this atlas in its styles, since no melody of theirs survives (in xochitl in cuicatl, \"flower and song\", was their name for poetry): a temple song and a son. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: clay ocarinas and flutes, the huehuetl drum, the two-toned teponaztli, rattles and the conch; then the colonial son's vihuela, harp and violin, the jarana and guitarrón, and mariachi trumpets.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      300,
+      500,
+      700,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "flute"
+    },
+    {
+     "voice": "voice"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.7,
+   "leaps": 0.25,
+   "ornament": 0.1,
+   "drone": 0.2,
+   "places": [
+    "teotihuacan",
+    "tula",
+    "tenochtitlan"
+   ],
+   "source": "sahagun",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "ocarina",
+      "sample": "xun",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "tlapitzalli",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "atecocolli",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.75
+     },
+     {
+      "id": "huehuetl",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "teponaztli",
+      "sample": "marimba",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "ayacachtli",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "s"
+     },
+     {
+      "id": "ayotl",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "cantores",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.2
+     },
+     {
+      "id": "vihuela",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "arpa",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "jarana",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part",
+      "tremolo": true
+     },
+     {
+      "id": "guitarron",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "trompeta",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:1 F4:1 G4:1 A4:1 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "teo-early",
+     "name": "Temple Song · Early kingdoms",
+     "about": "The Mexica's ceremonial theme in the age of the Olmec: clay ocarinas over a turtle-shell drum and rattles, the conch beneath.",
+     "midi": "midi/teo-early.mid",
+     "score": "teocuicatl",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "teocuicatl",
+     "credit": "Composed for this atlas (data/scores/teocuicatl.json).",
+     "until": -500
+    },
+    {
+     "id": "teo-classical",
+     "name": "Temple Song · Classical empires",
+     "about": "The Mexica's ceremonial theme at Teotihuacan: clay flutes over the huehuetl drum and rattles, the conch calling.",
+     "midi": "midi/teo-classical.mid",
+     "score": "teocuicatl",
+     "beat": 0.75,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "teocuicatl",
+     "credit": "Composed for this atlas (data/scores/teocuicatl.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "teo-caravans",
+     "name": "Temple Song · Caravans and monsoons",
+     "about": "The Mexica's ceremonial theme in the Toltec age: flutes, then singers, the huehuetl and the two-toned teponaztli, the conch.",
+     "midi": "midi/teo-caravans.mid",
+     "score": "teocuicatl",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "teocuicatl",
+     "credit": "Composed for this atlas (data/scores/teocuicatl.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "teo-crossings",
+     "name": "Temple Song · Ocean crossings",
+     "about": "The Mexica's ceremonial theme at Tenochtitlan: singers over the huehuetl and teponaztli, flutes and ocarina joining, rattles and the conch.",
+     "midi": "midi/teo-crossings.mid",
+     "score": "teocuicatl",
+     "beat": 0.68,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "teocuicatl",
+     "credit": "Composed for this atlas (data/scores/teocuicatl.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "teo-steam",
+     "name": "Temple Song · Steam and telegraph",
+     "about": "The Mexica's ceremonial theme singers over the harp, the violin joining, the old drums still beating.",
+     "midi": "midi/teo-steam.mid",
+     "score": "teocuicatl",
+     "beat": 0.64,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "teocuicatl",
+     "credit": "Composed for this atlas (data/scores/teocuicatl.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "teo-shared",
+     "name": "Temple Song · One shared map",
+     "about": "The Mexica's ceremonial theme for a film orchestra: the clay flute, then strings and singers, then horns over the drums and conch.",
+     "midi": "midi/teo-shared.mid",
+     "score": "teocuicatl",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "teocuicatl",
+     "credit": "Composed for this atlas (data/scores/teocuicatl.json).",
+     "from": 1900
+    },
+    {
+     "id": "son-early",
+     "name": "Son · Early kingdoms",
+     "about": "The Mexica's folk theme clay ocarina and flute over rattles and a turtle-shell drum.",
+     "midi": "midi/son-early.mid",
+     "score": "son",
+     "beat": 0.5,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "son",
+     "credit": "Composed for this atlas (data/scores/son.json).",
+     "until": -500
+    },
+    {
+     "id": "son-classical",
+     "name": "Son · Classical empires",
+     "about": "The Mexica's folk theme flute and ocarina over the huehuetl and rattles.",
+     "midi": "midi/son-classical.mid",
+     "score": "son",
+     "beat": 0.46,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "son",
+     "credit": "Composed for this atlas (data/scores/son.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "son-caravans",
+     "name": "Son · Caravans and monsoons",
+     "about": "The Mexica's folk theme flutes over the huehuetl and teponaztli.",
+     "midi": "midi/son-caravans.mid",
+     "score": "son",
+     "beat": 0.44,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "son",
+     "credit": "Composed for this atlas (data/scores/son.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "son-crossings",
+     "name": "Son · Ocean crossings",
+     "about": "The Mexica's folk theme as a colonial son: the vihuela, then the violin, then the harp, the guitarrón beneath.",
+     "midi": "midi/son-crossings.mid",
+     "score": "son",
+     "beat": 0.42,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "son",
+     "credit": "Composed for this atlas (data/scores/son.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "son-steam",
+     "name": "Son · Steam and telegraph",
+     "about": "The Mexica's folk theme as a son jarocho: the harp, then the jarana, then the violin, the guitarrón beneath.",
+     "midi": "midi/son-steam.mid",
+     "score": "son",
+     "beat": 0.4,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "son",
+     "credit": "Composed for this atlas (data/scores/son.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "son-shared",
+     "name": "Son · One shared map",
+     "about": "The Mexica's folk theme as mariachi: trumpets, then violins, over jarana and guitarrón, strings joining.",
+     "midi": "midi/son-shared.mid",
+     "score": "son",
+     "beat": 0.38,
+     "meter": 3,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "son",
+     "credit": "Composed for this atlas (data/scores/son.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "teocuicatl",
+     "name": "Temple Song",
+     "mood": "ceremonial",
+     "about": "A song to the gods composed for this atlas in the manner of the teocuicatl Sahagún's informants describe, to drum and slit drum: the Mexica's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/teocuicatl.json)."
+    },
+    {
+     "id": "son",
+     "name": "Son",
+     "mood": "folk",
+     "about": "A son composed for this atlas in the manner of the Mexican country dance songs that grew after the conquest: the Mexica's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/son.json)."
+    }
+   ]
+  },
+  {
    "id": "andes",
    "name": "Panpipes of the Andes",
    "summary": "The music of the Andes, heard through two themes: Hanacpachap cussicuinin, the Quechua hymn printed in Lima in 1631, and a huayno. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: clay ocarinas and the conch, antara and siku panpipes, quena flutes and the great bombo, the voices, organ and harp of the colonial church, the harp, violin and charango, and a film orchestra.",
@@ -3913,379 +5058,6 @@
    ]
   },
   {
-   "id": "mbira",
-   "name": "Mbira",
-   "summary": "The mbira music of the Shona and their neighbours, heard through two themes composed for this atlas in its styles, since it was passed on by ear rather than written: a ceremonial mbira cycle and a call-and-response song. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: voices, clapping and the kudu horn, the karimba, the interlocking mbira of Great Zimbabwe and the Mutapa court with hosho and ngoma, the xylophones of the south, and a modern band.",
-   "scales": [
-    {
-     "cents": [
-      0,
-      170,
-      340,
-      510,
-      690,
-      860,
-      1030
-     ]
-    }
-   ],
-   "voices": [
-    {
-     "voice": "pluck"
-    },
-    {
-     "voice": "tine",
-     "instrument": "mbira"
-    }
-   ],
-   "pattern": "ostinato",
-   "beat": 0.3,
-   "leaps": 0.3,
-   "ornament": 0,
-   "drone": 0.2,
-   "places": [
-    "great-zimbabwe",
-    "mapungubwe"
-   ],
-   "source": "berliner-mbira",
-   "confidence": "low",
-   "ensemble": {
-    "members": [
-     {
-      "id": "voices",
-      "sample": "choir",
-      "voice": "voice",
-      "role": "part"
-     },
-     {
-      "id": "karimba",
-      "sample": "kalimba",
-      "voice": "tine",
-      "role": "part"
-     },
-     {
-      "id": "mbira",
-      "sample": "kalimba",
-      "voice": "tine",
-      "role": "part"
-     },
-     {
-      "id": "mbira2",
-      "sample": "kalimba",
-      "voice": "tine",
-      "role": "part",
-      "detune": 7,
-      "gain": 0.85
-     },
-     {
-      "id": "hosho",
-      "voice": "pluck",
-      "role": "part",
-      "drum": "s"
-     },
-     {
-      "id": "clap",
-      "voice": "pluck",
-      "role": "part",
-      "drum": "k"
-     },
-     {
-      "id": "ngoma",
-      "voice": "pluck",
-      "role": "part",
-      "drum": "D"
-     },
-     {
-      "id": "kudu",
-      "sample": "horn",
-      "voice": "pipe",
-      "role": "part",
-      "gain": 0.7
-     },
-     {
-      "id": "marimba",
-      "sample": "marimba",
-      "voice": "pluck",
-      "role": "part"
-     },
-     {
-      "id": "guitar",
-      "sample": "guitar",
-      "voice": "pluck",
-      "role": "part"
-     },
-     {
-      "id": "strings",
-      "sample": "strings",
-      "voice": "bow",
-      "role": "part",
-      "modern": true,
-      "swell": true,
-      "seat": 0.0,
-      "gain": 0.8
-     },
-     {
-      "id": "cello",
-      "sample": "cello",
-      "voice": "bow",
-      "role": "part",
-      "modern": true,
-      "swell": true,
-      "seat": 0.35,
-      "gain": 0.75
-     },
-     {
-      "id": "contrabass",
-      "sample": "contrabass",
-      "voice": "bow",
-      "role": "part",
-      "modern": true,
-      "swell": true,
-      "seat": 0.5,
-      "gain": 0.7
-     },
-     {
-      "id": "harp",
-      "sample": "harp",
-      "voice": "pluck",
-      "role": "part",
-      "modern": true,
-      "seat": -0.45,
-      "gain": 0.55
-     },
-     {
-      "id": "horn",
-      "sample": "horn",
-      "voice": "pipe",
-      "role": "part",
-      "modern": true,
-      "swell": true,
-      "seat": -0.25,
-      "gain": 0.7
-     },
-     {
-      "id": "timpani",
-      "sample": "timpani",
-      "voice": "pluck",
-      "role": "part",
-      "modern": true,
-      "seat": 0.15,
-      "gain": 0.8
-     },
-     {
-      "id": "taiko",
-      "sample": "taiko",
-      "voice": "pluck",
-      "role": "part",
-      "modern": true,
-      "seat": -0.1,
-      "gain": 0.8
-     }
-    ],
-    "motifs": [
-     "A4:0.5 F#4:0.5 D4:0.5 B4:0.5 G4:0.5 D4:0.5"
-    ]
-   },
-   "tunes": [
-    {
-     "id": "mbira-early",
-     "name": "Mbira Cycle · Early kingdoms",
-     "about": "The mbira's ceremonial theme before the mbira: voices sing the falling cycle, hands clap, the kudu horn calls.",
-     "midi": "midi/mbira-early.mid",
-     "score": "mbira-cycle",
-     "beat": 0.5,
-     "meter": 3,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "mbira-cycle",
-     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
-     "until": -500
-    },
-    {
-     "id": "mbira-classical",
-     "name": "Mbira Cycle · Classical empires",
-     "about": "The mbira's ceremonial theme on the karimba, the mbira's older, smaller cousin, voices joining.",
-     "midi": "midi/mbira-classical.mid",
-     "score": "mbira-cycle",
-     "beat": 0.46,
-     "meter": 3,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "mbira-cycle",
-     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
-     "from": -500,
-     "until": 500
-    },
-    {
-     "id": "mbira-caravans",
-     "name": "Mbira Cycle · Caravans and monsoons",
-     "about": "The mbira's ceremonial theme at Great Zimbabwe: the mbira, a second interlocking a pulse behind, hosho and ngoma, the kudu horn.",
-     "midi": "midi/mbira-caravans.mid",
-     "score": "mbira-cycle",
-     "beat": 0.42,
-     "meter": 3,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "mbira-cycle",
-     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
-     "from": 500,
-     "until": 1400
-    },
-    {
-     "id": "mbira-crossings",
-     "name": "Mbira Cycle · Ocean crossings",
-     "about": "The mbira's ceremonial theme at the Mutapa court: two mbiras interlocking over the hosho, the drum, then voices.",
-     "midi": "midi/mbira-crossings.mid",
-     "score": "mbira-cycle",
-     "beat": 0.4,
-     "meter": 3,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "mbira-cycle",
-     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
-     "from": 1400,
-     "until": 1800
-    },
-    {
-     "id": "mbira-steam",
-     "name": "Mbira Cycle · Steam and telegraph",
-     "about": "The mbira's ceremonial theme two mbiras with the xylophones of the south, then voices.",
-     "midi": "midi/mbira-steam.mid",
-     "score": "mbira-cycle",
-     "beat": 0.4,
-     "meter": 3,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "mbira-cycle",
-     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
-     "from": 1800,
-     "until": 1900
-    },
-    {
-     "id": "mbira-shared",
-     "name": "Mbira Cycle · One shared map",
-     "about": "The mbira's ceremonial theme for a modern band and orchestra: mbira, marimba and guitar, voices over all.",
-     "midi": "midi/mbira-shared.mid",
-     "score": "mbira-cycle",
-     "beat": 0.38,
-     "meter": 3,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "mbira-cycle",
-     "credit": "Composed for this atlas (data/scores/mbira-cycle.json).",
-     "from": 1900
-    },
-    {
-     "id": "song-early",
-     "name": "Call and Response · Early kingdoms",
-     "about": "The mbira's folk theme voices calling and answering over clapping, a drum joining.",
-     "midi": "midi/song-early.mid",
-     "score": "call-response",
-     "beat": 0.62,
-     "meter": 4,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "call-response",
-     "credit": "Composed for this atlas (data/scores/call-response.json).",
-     "until": -500
-    },
-    {
-     "id": "song-classical",
-     "name": "Call and Response · Classical empires",
-     "about": "The mbira's folk theme voices, the karimba taking a verse, clapping and a drum.",
-     "midi": "midi/song-classical.mid",
-     "score": "call-response",
-     "beat": 0.58,
-     "meter": 4,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "call-response",
-     "credit": "Composed for this atlas (data/scores/call-response.json).",
-     "from": -500,
-     "until": 500
-    },
-    {
-     "id": "song-caravans",
-     "name": "Call and Response · Caravans and monsoons",
-     "about": "The mbira's folk theme voices and the mbira, hosho and ngoma.",
-     "midi": "midi/song-caravans.mid",
-     "score": "call-response",
-     "beat": 0.55,
-     "meter": 4,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "call-response",
-     "credit": "Composed for this atlas (data/scores/call-response.json).",
-     "from": 500,
-     "until": 1400
-    },
-    {
-     "id": "song-crossings",
-     "name": "Call and Response · Ocean crossings",
-     "about": "The mbira's folk theme voices, then the xylophone, hosho, drum and clapping.",
-     "midi": "midi/song-crossings.mid",
-     "score": "call-response",
-     "beat": 0.52,
-     "meter": 4,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "call-response",
-     "credit": "Composed for this atlas (data/scores/call-response.json).",
-     "from": 1400,
-     "until": 1800
-    },
-    {
-     "id": "song-steam",
-     "name": "Call and Response · Steam and telegraph",
-     "about": "The mbira's folk theme voices and two mbiras, the xylophone joining.",
-     "midi": "midi/song-steam.mid",
-     "score": "call-response",
-     "beat": 0.5,
-     "meter": 4,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "call-response",
-     "credit": "Composed for this atlas (data/scores/call-response.json).",
-     "from": 1800,
-     "until": 1900
-    },
-    {
-     "id": "song-shared",
-     "name": "Call and Response · One shared map",
-     "about": "The mbira's folk theme voices and guitar over marimba and drums.",
-     "midi": "midi/song-shared.mid",
-     "score": "call-response",
-     "beat": 0.5,
-     "meter": 4,
-     "source": "atlas-composed",
-     "confidence": "low",
-     "theme": "call-response",
-     "credit": "Composed for this atlas (data/scores/call-response.json).",
-     "from": 1900
-    }
-   ],
-   "themes": [
-    {
-     "id": "mbira-cycle",
-     "name": "Mbira Cycle",
-     "mood": "ceremonial",
-     "about": "A forty-eight-pulse cycle composed for this atlas in the manner of the Shona mbira dzavadzimu music played at ceremonies to call the ancestors: the mbira's ceremonial theme.",
-     "source": "atlas-composed",
-     "confidence": "low",
-     "credit": "Composed for this atlas (data/scores/mbira-cycle.json)."
-    },
-    {
-     "id": "call-response",
-     "name": "Call and Response",
-     "mood": "folk",
-     "about": "A call-and-response song composed for this atlas in the manner of Southern African singing: the mbira's folk theme.",
-     "source": "atlas-composed",
-     "confidence": "low",
-     "credit": "Composed for this atlas (data/scores/call-response.json)."
-    }
-   ]
-  },
-  {
    "id": "neutral",
    "name": "The atlas's own",
    "summary": "A plucked string over a drone, in a mode that belongs to no one viewpoint: for peoples whose music this atlas does not yet try to evoke, and for the sea.",
@@ -4435,6 +5207,14 @@
   {
    "vp": "kongo",
    "tradition": "mbira"
+  },
+  {
+   "vp": "steppe",
+   "tradition": "steppe"
+  },
+  {
+   "vp": "mexica",
+   "tradition": "mexica"
   }
  ],
  "lands": [
@@ -4642,6 +5422,21 @@
     "congo"
    ],
    "vp": "kongo"
+  },
+  {
+   "regions": [
+    "mongolia",
+    "kazakh-steppe"
+   ],
+   "vp": "steppe"
+  },
+  {
+   "regions": [
+    "mexico-centre",
+    "mexico-south",
+    "mexico-west"
+   ],
+   "vp": "mexica"
   }
  ]
 }

@@ -1,0 +1,10 @@
+{
+ "id": "gallop",
+ "name": "A galloping song",
+ "source": "atlas-composed",
+ "meter": 2,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the Mongolian short songs and the horse-head fiddle's galloping tunes: a dotted, running rhythm like a horse's gait, on the same five notes (here D, E, G, A, B).",
+ "notes": "D5:0.75 B4:0.25 A4:0.5 B4:0.5 | D5:0.75 B4:0.25 A4:1 | G4:0.75 A4:0.25 B4:0.5 A4:0.5 | G4:0.5 E4:0.5 D4:1 / | E4:0.75 G4:0.25 A4:0.5 B4:0.5 | D5:0.75 E5:0.25 D5:1 | B4:0.75 A4:0.25 G4:0.5 E4:0.5 | G4:0.5 A4:0.5 D4:1 / | A4:0.75 B4:0.25 D5:0.5 E5:0.5 | D5:0.75 B4:0.25 A4:1 | B4:0.75 A4:0.25 G4:0.5 E4:0.5 | D4:2 /"
+}

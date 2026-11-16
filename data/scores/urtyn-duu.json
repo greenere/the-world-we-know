@@ -1,0 +1,10 @@
+{
+ "id": "urtyn-duu",
+ "name": "A long song",
+ "source": "atlas-composed",
+ "meter": 4,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the Mongolian urtyn duu, the long song: few words drawn out over long, ornamented notes that climb by leaps and fall back in turns, on a pentatonic scale (here D, E, G, A, B), sung over the steppe. The throat singer's drone and its whistling overtone are added beneath it.",
+ "notes": "D4:1 A4:3 B4:0.5 A4:0.5 G4:1 A4:2 / D5:2 E5:0.5 D5:0.5 B4:1 A4:1 B4:0.5 A4:0.5 G4:2 / E4:1 G4:1 A4:2 B4:0.5 D5:0.5 B4:0.5 A4:0.5 G4:1 E4:2 / G4:1 A4:0.5 G4:0.5 E4:1 D4:3 /"
+}

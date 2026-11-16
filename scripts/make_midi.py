@@ -479,6 +479,11 @@ def mama_hao_mingbai(score: dict) -> list[Track]:
 # it change. Every arrangement plays it three times with the same phrases, so the music can move from one
 # age's arrangement to the next at the end of a phrase and carry on with the following one.
 
+# Tunes too short to make a verse alone go round this many times in each verse (the same in every age, so
+# that a change of age still finds the matching phrase).
+PASSES = {"huayno": 3, "mbira-cycle": 3, "gallop": 3, "son": 2, "doos-ya-lellee": 2, "seikilos": 2, "call-response": 2, "dolanan": 2, "bilahari": 2, "calliope": 2}
+
+
 def theme(name: str, members: list[str], beat: float, levels: list[float], play, top: int = 66, taiko: bool = False, transpose: int = 2, bars: int = 0, bed=None):
     """`play(T, rep, at, dur, pitch, on_beat, phrase_start, beats, pos)` sounds one melody note (at `pos`
     beats into its bar) in time through `rep` (0, 1, 2); the orchestra plays beneath at `levels[rep]`."""
@@ -495,17 +500,21 @@ def theme(name: str, members: list[str], beat: float, levels: list[float], play,
             melody: list[tuple[float, float, int]] = []
             ends: list[float] = []
             start = True
-            for pitch, beats, end in notes:
-                at = t + b * beat
-                if pitch is not None:
-                    play(T, rep, at, beats * beat * 0.94, pitch, abs(b - round(b)) < 1e-6, start, beats, (b - pickup) % meter)
-                    melody.append((at, beats * beat, pitch))
-                    start = False
-                if end:
-                    mark.marker(at + beats * beat, "cadence")
-                    ends.append(at + beats * beat)
-                    start = True
-                b += beats
+            # A short tune goes round more than once in a verse, as players repeat it; each time after the
+            # first, the instruments of the neighbouring verse take it, so the repeat changes colour.
+            for k in range(PASSES.get(score.get("id", ""), 1)):
+                who = rep if k % 2 == 0 else (rep + 1 if rep < len(levels) - 1 else rep - 1)
+                for pitch, beats, end in notes:
+                    at = t + b * beat
+                    if pitch is not None:
+                        play(T, who, at, beats * beat * 0.94, pitch, abs(b - round(b)) < 1e-6, start, beats, (b - pickup) % meter)
+                        melody.append((at, beats * beat, pitch))
+                        start = False
+                    if end:
+                        mark.marker(at + beats * beat, "cadence")
+                        ends.append(at + beats * beat)
+                        start = True
+                    b += beats
             if bed:
                 bed(T, rep, t, b * beat, beat, meter)
             # The harmony changes every four beats, or (`bars`) with the bar lines, a few bars at a time.
@@ -1023,6 +1032,10 @@ def arranged(spec):
         if spec.get("hold") and rep >= spec["hold"][2] and down:
             hm, ho, _ = spec["hold"]
             T[hm].note(at, dur * 2, p + 12 * ho, 40)
+        # A fixed drone at each phrase's start: the throat singer's fundamental, the overtone whistling above.
+        for dm, pitch, frm, v in spec.get("drone", []):
+            if rep >= frm and start:
+                T[dm].note(at, dur * 10, pitch, v)
         for dm, pitch, when, frm, v in spec.get("drums", []):
             if rep < frm:
                 continue
@@ -1034,7 +1047,7 @@ def arranged(spec):
 
 def members_of(spec):
     out = [m for m, _ in spec["lead"]] + [j[1] for j in spec.get("join", [])]
-    out += [spec[k][0] for k in ("bass", "hold") if spec.get(k)] + [d[0] for d in spec.get("drums", [])]
+    out += [spec[k][0] for k in ("bass", "hold") if spec.get(k)] + [d[0] for d in spec.get("drums", [])] + [d[0] for d in spec.get("drone", [])]
     return list(dict.fromkeys(out))
 
 
@@ -1265,10 +1278,59 @@ MBIRA = {
 MBIRA_MEMBERS = ["voices", "karimba", "mbira", "mbira2", "hosho", "clap", "ngoma", "kudu", "marimba", "guitar"]
 MBIRA_BEAT = {"cycle": [0.5, 0.46, 0.42, 0.4, 0.4, 0.38], "song": [0.62, 0.58, 0.55, 0.52, 0.5, 0.5]}
 
+# The steppe's two themes, composed for the atlas: a long song (the ceremonial one) and a galloping short song
+# (the folk one), over the throat singer's drone (khöömei) and its whistled overtone (sygyt). From voices and
+# drone alone, the tovshuur lute, the morin khuur horse-head fiddle and limbe flute of the Mongol empire, the
+# yatga zither and khuuchir fiddle, to a film orchestra.
+KHOOMEI = [("khoomei", 50, 0, 46), ("sygyt", 86, 2, 30)]
+STEPPE = {
+    "urtyn": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "drone": KHOOMEI, "drums": [("drum", 45, "start", 1, 50)]},
+        "classical": {"lead": [("tovshuur", 0), ("voices", 0), ("voices", 0)], "join": [(1, "tovshuur", -1, 50)], "drone": KHOOMEI},
+        "caravans": {"lead": [("morin", 0), ("voices", 0), ("morin", 0)], "join": [(1, "limbe", 1, 46), (2, "tovshuur", -1, 48)], "drone": KHOOMEI, "drums": [("drum", 45, "start", 0, 54)]},
+        "crossings": {"lead": [("morin", 0), ("limbe", 1), ("voices", 0)], "join": [(1, "yatga", -1, 50), (2, "morin", 0, 48)], "drone": KHOOMEI},
+        "steam": {"lead": [("voices", 0), ("morin", 0), ("morin", 0)], "join": [(0, "yatga", -1, 46), (1, "limbe", 1, 44), (2, "khuuchir", 1, 40)], "drone": KHOOMEI},
+        "shared": {"lead": [("morin", 0), ("strings", 0), ("horn", 0)], "join": [(1, "limbe", 1, 46), (2, "morin", 0, 56), (2, "voices", 0, 50)], "drone": KHOOMEI},
+    },
+    "gallop": {
+        "early": {"lead": [("tovshuur", 0), ("voices", 0), ("tovshuur", 0)], "drums": [("drum", 48, "down", 0, 58), ("hooves", 72, "beat", 1, 40)]},
+        "classical": {"lead": [("tovshuur", 0), ("tovshuur", 0), ("limbe", 1)], "join": [(1, "tovshuur", -1, 48)], "drums": [("drum", 48, "down", 0, 58), ("hooves", 72, "beat", 0, 40)]},
+        "caravans": {"lead": [("morin", 0), ("limbe", 1), ("morin", 0)], "join": [(1, "tovshuur", -1, 50)], "drums": [("drum", 48, "down", 0, 60), ("hooves", 72, "beat", 1, 42)]},
+        "crossings": {"lead": [("morin", 0), ("khuuchir", 0), ("morin", 0)], "join": [(1, "yatga", -1, 48), (2, "limbe", 1, 44)], "drums": [("hooves", 72, "beat", 0, 42)]},
+        "steam": {"lead": [("morin", 0), ("yatga", 0), ("morin", 0)], "join": [(1, "limbe", 1, 44), (2, "khuuchir", 0, 44)], "drums": [("drum", 48, "down", 0, 54), ("hooves", 72, "beat", 1, 40)]},
+        "shared": {"lead": [("morin", 0), ("strings", 0), ("morin", 0)], "join": [(1, "yatga", -1, 48), (2, "strings", 0, 56), (2, "horn", -1, 46)], "drums": [("drum", 48, "down", 0, 58), ("hooves", 72, "beat", 0, 42)]},
+    },
+}
+
+# The Mexica's two themes, composed for the atlas: a temple song (the ceremonial one) and a son (the folk one).
+# From the Olmec clay ocarinas and turtle-shell drums, the flutes of Teotihuacan, the huehuetl drum, the
+# two-toned teponaztli slit drum, rattles and the conch of the Toltecs and the Mexica, to the colonial son's
+# vihuela, harp and violin, the jarana and guitarrón, and mariachi trumpets.
+MEXICA = {
+    "teo": {
+        "early": {"lead": [("ocarina", 0), ("ocarina", 0), ("tlapitzalli", 0)], "hold": ("atecocolli", -1, 1), "drums": [("ayotl", 76, "down", 0, 50), ("ayacachtli", 70, "beat", 1, 36)]},
+        "classical": {"lead": [("tlapitzalli", 0), ("ocarina", 0), ("tlapitzalli", 0)], "hold": ("atecocolli", -1, 2), "drums": [("huehuetl", 45, "down", 0, 60), ("ayacachtli", 70, "beat", 1, 36)]},
+        "caravans": {"lead": [("tlapitzalli", 0), ("cantores", 0), ("tlapitzalli", 0)], "join": [(1, "ocarina", 0, 44)], "hold": ("atecocolli", -1, 1), "drums": [("huehuetl", 45, "down", 0, 62), ("teponaztli", 50, "beat", 0, 54), ("teponaztli", 57, "start", 1, 60)]},
+        "crossings": {"lead": [("cantores", 0), ("tlapitzalli", 0), ("cantores", 0)], "join": [(1, "tlapitzalli", 0, 46), (2, "ocarina", 0, 44)], "hold": ("atecocolli", -1, 0), "drums": [("huehuetl", 45, "down", 0, 66), ("teponaztli", 50, "beat", 0, 56), ("teponaztli", 57, "start", 0, 62), ("ayacachtli", 70, "beat", 1, 40)]},
+        "steam": {"lead": [("cantores", 0), ("arpa", 0), ("cantores", 0)], "join": [(1, "arpa", -1, 50), (2, "violin", 0, 46)], "drums": [("huehuetl", 45, "down", 0, 54), ("teponaztli", 50, "beat", 1, 44)]},
+        "shared": {"lead": [("tlapitzalli", 0), ("strings", 0), ("horn", 0)], "join": [(1, "cantores", 0, 50), (2, "strings", 0, 58)], "hold": ("atecocolli", -1, 2), "drums": [("huehuetl", 45, "down", 0, 60), ("teponaztli", 50, "beat", 0, 50)]},
+    },
+    "son": {
+        "early": {"lead": [("ocarina", 0), ("tlapitzalli", 0), ("ocarina", 0)], "drums": [("ayacachtli", 70, "beat", 0, 40), ("ayotl", 76, "down", 0, 50)]},
+        "classical": {"lead": [("tlapitzalli", 0), ("ocarina", 0), ("tlapitzalli", 0)], "drums": [("huehuetl", 45, "down", 0, 52), ("ayacachtli", 70, "beat", 0, 40)]},
+        "caravans": {"lead": [("tlapitzalli", 0), ("tlapitzalli", 0), ("ocarina", 0)], "join": [(1, "ocarina", 0, 44)], "drums": [("huehuetl", 45, "down", 0, 54), ("teponaztli", 50, "beat", 1, 46)]},
+        "crossings": {"lead": [("vihuela", 0), ("violin", 0), ("arpa", 0)], "join": [(1, "vihuela", -1, 50), (2, "violin", 0, 46)], "bass": ("guitarron", -1, 1)},
+        "steam": {"lead": [("arpa", 0), ("jarana", 0), ("violin", 0)], "join": [(0, "jarana", -1, 48), (1, "arpa", -1, 50), (2, "violin", 0, 46)], "bass": ("guitarron", -1, 0)},
+        "shared": {"lead": [("trompeta", 0), ("violin", 0), ("trompeta", 0)], "join": [(0, "jarana", -1, 50), (1, "violin", 0, 52), (2, "strings", 0, 52)], "bass": ("guitarron", -1, 0)},
+    },
+}
+STEPPE_BEAT = {"urtyn": [1.0, 0.95, 0.9, 0.85, 0.82, 0.8], "gallop": [0.5, 0.46, 0.44, 0.42, 0.4, 0.4]}
+MEXICA_BEAT = {"teo": [0.8, 0.75, 0.72, 0.68, 0.64, 0.62], "son": [0.5, 0.46, 0.44, 0.42, 0.4, 0.38]}
+
 EUROPE_BEAT = {"emmanuel": [0.95, 0.85, 0.82, 0.75, 0.7, 0.7], "greensleeves": [0.8, 0.72, 0.66, 0.6, 0.58, 0.56]}
 MAQAM_BEAT = {"hilali": [0.78, 0.7, 0.66, 0.6, 0.6, 0.58], "doos": [0.62, 0.56, 0.52, 0.5, 0.48, 0.46]}
 LATER_THEME = {}
-for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel", "greensleeves": "greensleeves"}), (MAQAM, MAQAM_BEAT, {"hilali": "hilali", "doos": "doos-ya-lellee"}), (GREEK, GREEK_BEAT, {"calliope": "calliope", "lullaby": "greek-lullaby"}), (ANDES, ANDES_BEAT, {"hanac": "hanacpachap", "huayno": "huayno"})):
+for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel", "greensleeves": "greensleeves"}), (MAQAM, MAQAM_BEAT, {"hilali": "hilali", "doos": "doos-ya-lellee"}), (GREEK, GREEK_BEAT, {"calliope": "calliope", "lullaby": "greek-lullaby"}), (ANDES, ANDES_BEAT, {"hanac": "hanacpachap", "huayno": "huayno"}), (STEPPE, STEPPE_BEAT, {"urtyn": "urtyn-duu", "gallop": "gallop"}), (MEXICA, MEXICA_BEAT, {"teo": "teocuicatl", "son": "son"})):
     for th, eras in table.items():
         sc = json.loads((SCORES / f"{scores[th]}.json").read_text())
         for i, era in enumerate(ERA_KEYS):

@@ -1,0 +1,10 @@
+{
+ "id": "teocuicatl",
+ "name": "A temple song",
+ "source": "atlas-composed",
+ "meter": 4,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the songs to the gods (teocuicatl) that Sahagún's Nahua informants describe being sung to the huehuetl and teponaztli: short phrases repeated and raised, on five notes (here D, F, G, A, C), the conch sounding beneath. No melody of the Mexica survives; clay flutes give the nearest notes.",
+ "notes": "D4:1 D4:1 F4:1 G4:1 | A4:2 G4:1 F4:1 | D4:1 F4:1 G4:0.5 F4:0.5 D4:1 | C4:2 D4:2 / | A4:1 A4:1 C5:1 A4:1 | G4:2 A4:1 G4:1 | F4:1 G4:1 F4:0.5 D4:0.5 C4:1 | D4:4 / | F4:1 G4:1 A4:1 C5:1 | D5:2 C5:1 A4:1 | G4:1 A4:1 G4:0.5 F4:0.5 D4:1 | D4:4 /"
+}
