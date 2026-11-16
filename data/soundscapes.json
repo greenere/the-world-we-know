@@ -98,6 +98,64 @@
       "role": "accompany",
       "instrument": "organ",
       "gain": 0.8
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
      }
     ],
     "percussion": {
@@ -118,40 +176,40 @@
      "name": "The Seikilos epitaph",
      "about": "A short song carved on a grave column near Tralles in Asia Minor, words and notation together: \"While you live, shine.\"",
      "from": -100,
-     "notes": "A4:0.5 E5:1 E5:1.5 | C#5:0.5 D5:0.5 E5:0.5 D5:1.5 / | C#5:1 D5:0.5 E5:0.5 D5:0.5 C#5:0.5 | B4:0.5 A4:1 B4:0.5 G4:1 / | A4:0.5 C#5:0.5 E5:0.5 D5:0.5 C#5:0.5 D5:0.5 | C#5:0.5 A4:1 B4:0.5 G4:1 / | A4:0.5 C#5:0.5 B4:0.5 D5:0.5 E5:0.5 C#5:0.5 | A4:0.5 A4:1 A4:0.5 F#4:0.5 E4:2 /",
-     "transpose": -2,
      "beat": 0.7,
      "meter": 3,
      "source": "poehlmann-west",
      "confidence": "high",
-     "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA)."
+     "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA).",
+     "midi": "midi/seikilos.mid",
+     "score": "seikilos"
     },
     {
      "id": "calliope",
      "name": "Mesomedes: Prayer to Calliope",
      "about": "By Mesomedes of Crete, court musician to the emperor Hadrian: a prayer to the Muse and to Apollo, copied with its notation in Byzantine manuscripts.",
      "from": 120,
-     "notes": "A4:1 Bb4:0.5 C5:0.5 | Bb4:1 A4:0.5 G4:0.5 | A4:1 / G4:1 | C5:0.5 A4:0.5 A4:0.5 A4:0.5 | A4:1 A4:0.5 E4:0.5 | F4:1 G4:1 / | F4:1 G4:0.5 A4:0.5 | Bb4:1 C5:0.5 D5:0.5 | C5:1 / C5:1 | D5:1 F5:0.5 E5:0.5 / | D5:1 C5:0.5 Bb4:0.5 / | A4:1 C5:0.5 D5:0.5 / | C5:1 D5:0.5 E5:0.5 C5:0.5 D5:0.5 | G4:1 A4:0.5 A4:2 /",
-     "transpose": -7,
      "beat": 0.6,
      "meter": 2,
      "source": "poehlmann-west",
      "confidence": "high",
-     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0)."
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
+     "midi": "midi/calliope.mid",
+     "score": "calliope"
     },
     {
      "id": "helios",
      "name": "Mesomedes: Hymn to the Sun, the opening",
      "about": "The first sentence of Mesomedes' hymn to Helios, \"father of rosy-eyelidded Dawn\", who drives his chariot across the sky.",
      "from": 120,
-     "notes": "A4:0.5 A4:0.5 | A4:1 A4:0.5 D5:0.5 | A4:1 Bb4:0.5 A4:0.5 | G4:1.5 A4:1 / r:0.5 G4:0.5 C5:0.5 | C5:1 C5:0.5 C5:0.5 | D5:1 A4:0.5 G4:0.5 | C5:0.5 D5:1 C5:1 / r:0.5 C5:1 | D5:0.5 C5:0.5 D5:0.5 D5:0.5 | Bb4:1 C5:0.5 D5:0.5 | E5:1.5 E5:1 / r:0.5 C5:1 | E5:0.5 C5:0.5 E5:0.5 D5:0.5 | C5:1 D5:0.5 D5:0.5 | C5:1 E5:0.5 D5:1 / r:0.5 C5:0.5 D5:0.5 | E5:1 D5:0.5 C5:0.5 | D5:1 Bb4:0.5 G4:0.5 | A4:1 Bb4:0.5 Bb4:0.5 A4:1 /",
-     "transpose": -7,
      "beat": 0.58,
      "meter": 2,
      "pickup": 1,
      "source": "poehlmann-west",
      "confidence": "high",
-     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West."
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West.",
+     "midi": "midi/helios.mid",
+     "score": "helios"
     }
    ],
    "places": [
@@ -355,7 +413,7 @@
   {
    "id": "china",
    "name": "The five notes",
-   "summary": "Chinese music on the five notes gong, shang, jue, zhi and yu, heard differently in each age: the bells, stones and singers of the temple's ritual music, then the sheng, flutes and gong-chimes of court processions, the pipa and fiddle of teahouse songs, and the suona and gongs of the street bands. Between pieces the qin and the xiao improvise.",
+   "summary": "Chinese music on the five notes gong, shang, jue, zhi and yu, heard through two themes, the stately Guiding March of the court's processions and the song Mo Li Hua: while the years run one carries on, and when time stands still they take turns. Each is played as its age would: on the xun and bronze bells of the early kingdoms, the qin and xiao of the Han and Tang, the pipa of the Silk Road, the huqin of the teahouse, the suona of the street bands, and the erhu and yangqin of a modern orchestra. As the years pass the tune goes on and the players around it change. Between its verses the qin and the xiao improvise.",
    "scales": [
     {
      "cents": [
@@ -542,6 +600,87 @@
       "voice": "gong",
       "role": "part",
       "gain": 0.8
+     },
+     {
+      "id": "xun",
+      "sample": "xun",
+      "voice": "flute",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "yangqin",
+      "sample": "yangqin",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
      }
     ],
     "percussion": {
@@ -561,6 +700,196 @@
    },
    "tunes": [
     {
+     "id": "molihua-early",
+     "name": "Mo Li Hua · Early kingdoms",
+     "about": "China's theme as bronze and clay might have played it: the xun alone, then the se beneath it, then the bell-chime and stone-chime of the Zhou court.",
+     "midi": "midi/molihua-early.mid",
+     "beat": 0.9,
+     "score": "molihua",
+     "meter": 4,
+     "source": "barrow-travels",
+     "confidence": "medium",
+     "theme": "molihua",
+     "credit": "Barrow's melody as set on Wikimedia Commons (\"Jasmine barrow.svg\", public domain); arranged for this atlas.",
+     "until": -500
+    },
+    {
+     "id": "molihua-classical",
+     "name": "Mo Li Hua · Classical empires",
+     "about": "China's theme for the Han and the Tang: the scholar's qin, the xiao singing over it, then the court's se and bells.",
+     "midi": "midi/molihua-classical.mid",
+     "beat": 0.8,
+     "score": "molihua",
+     "meter": 4,
+     "source": "barrow-travels",
+     "confidence": "medium",
+     "theme": "molihua",
+     "credit": "Barrow's melody as set on Wikimedia Commons (\"Jasmine barrow.svg\", public domain); arranged for this atlas.",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "molihua-caravans",
+     "name": "Mo Li Hua · Caravans and monsoons",
+     "about": "China's theme in the age of the Silk Road: the pipa from Central Asia, trembling its long notes, with the di, the sheng's chords and a frame drum.",
+     "midi": "midi/molihua-caravans.mid",
+     "beat": 0.68,
+     "score": "molihua",
+     "meter": 4,
+     "source": "barrow-travels",
+     "confidence": "medium",
+     "theme": "molihua",
+     "credit": "Barrow's melody as set on Wikimedia Commons (\"Jasmine barrow.svg\", public domain); arranged for this atlas.",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "molihua-crossings",
+     "name": "Mo Li Hua · Ocean crossings",
+     "about": "China's theme in the Ming and Qing teahouse: huqin and pipa, the di joining, clapper and wood block keeping time.",
+     "midi": "midi/molihua-crossings.mid",
+     "beat": 0.6,
+     "score": "molihua",
+     "meter": 4,
+     "source": "barrow-travels",
+     "confidence": "medium",
+     "theme": "molihua",
+     "credit": "Barrow's melody as set on Wikimedia Commons (\"Jasmine barrow.svg\", public domain); arranged for this atlas.",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "molihua-steam",
+     "name": "Mo Li Hua · Steam and telegraph",
+     "about": "China's theme as a nineteenth-century street band played it at a wedding, much as Barrow heard the song: sheng, then the suona over it, drums, cymbals and gong.",
+     "midi": "midi/molihua-steam.mid",
+     "beat": 0.55,
+     "score": "molihua",
+     "meter": 4,
+     "source": "barrow-travels",
+     "confidence": "medium",
+     "theme": "molihua",
+     "credit": "Barrow's melody as set on Wikimedia Commons (\"Jasmine barrow.svg\", public domain); arranged for this atlas.",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "molihua-shared",
+     "name": "Mo Li Hua · One shared map",
+     "about": "China's theme for a modern Chinese orchestra: the erhu over the yangqin, the di joining, then everyone, strings, horns and timpani.",
+     "midi": "midi/molihua-shared.mid",
+     "beat": 0.55,
+     "score": "molihua",
+     "meter": 4,
+     "source": "barrow-travels",
+     "confidence": "medium",
+     "theme": "molihua",
+     "credit": "Barrow's melody as set on Wikimedia Commons (\"Jasmine barrow.svg\", public domain); arranged for this atlas.",
+     "from": 1900
+    },
+    {
+     "id": "march-early",
+     "name": "The Guiding March · Early kingdoms",
+     "about": "China's processional theme in bronze: the bell-chime gives the tune, the drum walks, the xun joins and the great bell opens each phrase.",
+     "midi": "midi/march-early.mid",
+     "beat": 0.85,
+     "score": "guiding-march",
+     "meter": 4,
+     "source": "van-aalst",
+     "confidence": "high",
+     "theme": "guiding-march",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/guiding-march.json); arranged for this atlas.",
+     "until": -500
+    },
+    {
+     "id": "march-classical",
+     "name": "The Guiding March · Classical empires",
+     "about": "China's processional theme at the Han and Tang court: the sheng's chords carrying it, the xiao above, then bells.",
+     "midi": "midi/march-classical.mid",
+     "beat": 0.8,
+     "score": "guiding-march",
+     "meter": 4,
+     "source": "van-aalst",
+     "confidence": "high",
+     "theme": "guiding-march",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/guiding-march.json); arranged for this atlas.",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "march-caravans",
+     "name": "The Guiding March · Caravans and monsoons",
+     "about": "China's processional theme for the band Van Aalst heard: double reeds and flutes, sheng, gong-chimes, drums and castanets.",
+     "midi": "midi/march-caravans.mid",
+     "beat": 0.76,
+     "score": "guiding-march",
+     "meter": 4,
+     "source": "van-aalst",
+     "confidence": "high",
+     "theme": "guiding-march",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/guiding-march.json); arranged for this atlas.",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "march-crossings",
+     "name": "The Guiding March · Ocean crossings",
+     "about": "China's processional theme at the Ming and Qing court: the same band, fuller, the gong-chimes on every beat.",
+     "midi": "midi/march-crossings.mid",
+     "beat": 0.72,
+     "score": "guiding-march",
+     "meter": 4,
+     "source": "van-aalst",
+     "confidence": "high",
+     "theme": "guiding-march",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/guiding-march.json); arranged for this atlas.",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "march-steam",
+     "name": "The Guiding March · Steam and telegraph",
+     "about": "China's processional theme as the nineteenth century heard it: suonas over the sheng, drums, cymbals and a gong at each phrase's end.",
+     "midi": "midi/march-steam.mid",
+     "beat": 0.7,
+     "score": "guiding-march",
+     "meter": 4,
+     "source": "van-aalst",
+     "confidence": "high",
+     "theme": "guiding-march",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/guiding-march.json); arranged for this atlas.",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "march-shared",
+     "name": "The Guiding March · One shared map",
+     "about": "China's processional theme as a modern orchestra's anthem: strings and di, then the horns, then everyone, with timpani and great drums.",
+     "midi": "midi/march-shared.mid",
+     "beat": 0.7,
+     "score": "guiding-march",
+     "meter": 4,
+     "source": "van-aalst",
+     "confidence": "high",
+     "theme": "guiding-march",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/guiding-march.json); arranged for this atlas.",
+     "from": 1900
+    },
+    {
+     "id": "guanju",
+     "name": "Guan Ju (The Ospreys)",
+     "until": -500,
+     "about": "The first ode of the Book of Songs, sung at the Zhou court: \"Guan guan cry the ospreys, on the islet in the river.\" One note to each syllable, as a hand wrote it above a 1768 printing of the Wei family's Ming court songs; played slowly on the xun, then sung over the se, then with bronze bells and stone chimes.",
+     "midi": "midi/guanju.mid",
+     "score": "guanju",
+     "beat": 1.6,
+     "meter": 4,
+     "source": "wei-shi-yuepu",
+     "confidence": "low",
+     "credit": "Transcribed for this atlas from the scan on Wikimedia Commons (\"Guanju of GISHI GAKUFU 1768.jpg\", Kato Toru, CC0); data/scores/guanju.json.",
+     "extra": true
+    },
+    {
      "id": "confucius-hymn",
      "name": "Sacrificial Hymn to Confucius",
      "about": "The hymn of the Confucian temple, in six stanzas, one note to each syllable, as fixed in 1743 and printed by Van Aalst in 1884, played as he describes: the bell-chime gives each note, the zithers answer, flutes, sheng and six singers take it up, and the stone-chime closes it. Its manner, though not this melody, is that of the ancient ritual music, yayue.",
@@ -571,21 +900,9 @@
      "source": "van-aalst",
      "confidence": "high",
      "credit": "Transcribed for this atlas from Van Aalst's staff and gongche notation (data/scores/confucius-hymn.json).",
-     "until": 500
-    },
-    {
-     "id": "guiding-march",
-     "name": "The Guiding March",
-     "from": 500,
-     "until": 1400,
-     "about": "The march played as the emperor walked to the Confucian temple, by sheng, flutes, double reeds, gong-chimes, drums and castanets: court music in procession.",
-     "midi": "midi/guiding-march.mid",
-     "score": "guiding-march",
-     "beat": 0.78,
-     "meter": 4,
-     "source": "van-aalst",
-     "confidence": "high",
-     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/guiding-march.json)."
+     "until": 500,
+     "from": -500,
+     "extra": true
     },
     {
      "id": "madame-wang",
@@ -599,17 +916,39 @@
      "meter": 2,
      "source": "van-aalst",
      "confidence": "high",
-     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/madame-wang.json)."
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/madame-wang.json).",
+     "extra": true
+    },
+    {
+     "id": "mama-hao-mingbai",
+     "name": "Ma-ma hao ming-pai (Oh Mamma, You Understand Me Well)",
+     "from": 1900,
+     "about": "An air Van Aalst found \"exceedingly popular in North China\" in the 1880s, set as a twentieth-century Chinese orchestra might: the erhu sings it over the yangqin and strings, the di takes it up, and the whole orchestra plays it home.",
+     "midi": "midi/mama-hao-mingbai.mid",
+     "score": "mama-hao-mingbai",
+     "beat": 0.5,
+     "meter": 2,
+     "source": "van-aalst",
+     "confidence": "high",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/mama-hao-mingbai.json).",
+     "extra": true
+    }
+   ],
+   "themes": [
+    {
+     "id": "guiding-march",
+     "name": "The Guiding March",
+     "mood": "ceremonial",
+     "about": "The court's processional, played as the emperor walked to the Confucian temple: China's ceremonial theme.",
+     "source": "van-aalst",
+     "confidence": "high",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/guiding-march.json)."
     },
     {
      "id": "molihua",
-     "name": "Mo Li Hua (Jasmine Flower)",
-     "from": 1800,
-     "about": "The Jiangnan song Barrow heard in the 1790s and printed in 1804, played as a street band of the nineteenth century would at a wedding: suona and sheng, drum, cymbals and gong.",
-     "midi": "midi/molihua.mid",
-     "score": "molihua",
-     "beat": 0.5,
-     "meter": 4,
+     "name": "Mo Li Hua",
+     "mood": "folk",
+     "about": "The Jiangnan song of the jasmine flower, which Barrow heard in the 1790s and printed in 1804: China's folk theme.",
      "source": "barrow-travels",
      "confidence": "medium",
      "credit": "Barrow's melody as set on Wikimedia Commons (\"Jasmine barrow.svg\", public domain)."

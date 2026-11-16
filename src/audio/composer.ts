@@ -39,6 +39,11 @@ export interface Tune {
   about?: string;
   /** Who made the transcription the notes are taken from, as its licence asks. */
   credit?: string;
+  /** One of a tradition's arrangements of its theme, one for each age: the music moves between them at
+   * the end of a phrase and carries on with the next phrase, rather than starting again. */
+  theme?: string;
+  /** Heard only when chosen in the settings, not as the timeline plays. */
+  extra?: boolean;
 }
 
 export interface Member {
@@ -60,6 +65,13 @@ export interface Member {
   gain?: number;
   /** An instrument on the Music shelf: this member joins once the viewpoint knows it. */
   instrument?: string;
+  /** One of the atlas's own orchestra, arranging the piece for a modern ear rather than playing it as it was
+   * played: always present, unless the reader asks for the Historical arrangement. */
+  modern?: boolean;
+  /** Where it sits, from -1 (left) to 1 (right); left to chance if not given. */
+  seat?: number;
+  /** Bowed or breathed in slowly and let go slowly (a string pad, a horn swell). */
+  swell?: boolean;
   from?: number;
   until?: number;
 }
@@ -205,29 +217,59 @@ export function createComposer(
   const out = ctx.createGain();
   out.connect(dest.dry);
   out.connect(dest.send);
+  // The players' own level: softer while time stands still, full while it runs. A change is heard at once,
+  // without stopping the piece.
+  const mix = ctx.createGain();
+  mix.gain.value = 0.6;
+  mix.connect(out);
   let pending: Event[] = [];
   let sectionEnd = start;
   let section = 0;
   let tuneIndex = 0;
   let nowPiece: string | null = null;
   let still = true;
+  let stillManner = true;
   let retiring = false;
   let own: Hearing | null = null;
   let lastMelody = '';
+  let orchestral = true;
+  /** The next piece comes in softly, growing over its first bars (after a change of era). */
+  let entering = false;
+  /** The theme the piece now playing belongs to, where it began (as if from its start), and where its
+   * phrases end; and the phrase to carry on from in the next age's arrangement. */
+  let nowTheme: string | null = null;
+  let nowStart = 0;
+  let nowBegan = 0;
+  let nowCadences: number[] = [];
+  let resumePhrase: number | null = null;
+  let nowMidi = false;
 
   const pick = <T>(xs: readonly T[]): T => xs[Math.floor(rand() * xs.length)];
-  const pan = () => (rand() - 0.5) * 0.6;
+  /** Each player keeps one seat, as on a stage: from its own `seat`, or one its name gives it. */
+  const seats = new Map<string, number>();
+  const seatOf = (m: Member) => {
+    if (m.seat !== undefined) return m.seat;
+    let s = seats.get(m.id);
+    if (s === undefined) {
+      let h = 7;
+      for (const ch of m.id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+      seats.set(m.id, (s = ((h % 1000) / 1000 - 0.5) * 0.9));
+    }
+    return s;
+  };
 
   /** Sound one note on a member of the ensemble: its samples once loaded, its synthesised voice until then. */
   const sound = (m: Member, cents: number, time: number, dur: number, strength: number) => {
     if (m.drum) return drum(m.drum, time, strength * (m.gain ?? 1));
+    // The orchestra has no synthesised stand-in: until its samples arrive it waits.
+    if (m.modern && (!orchestral || (m.sample && !samples.ready(m.sample)))) return;
     const c = cents + 1200 * (m.octave ?? 0);
     const hz = hzOf(c);
     const level = strength * (m.gain ?? 1);
-    const p = pan();
+    const p = seatOf(m) + (rand() - 0.5) * 0.08;
     const one = (t: number, s: number, d: number, damp = false) => {
-      if (m.sample && samples.play(m.sample, out, {hz, time: t, dur: d, strength: s, pan: p, damp})) return;
-      voices.play(m.voice, out, {hz, time: t, dur: d, strength: s, pan: p});
+      if (m.sample && samples.play(m.sample, mix, {hz, time: t, dur: d, strength: s, pan: p, damp, swell: m.swell})) return;
+      voices.play(m.voice, mix, {hz, time: t, dur: d, strength: s, pan: p});
     };
     if (m.tremolo && dur >= 0.45) {
       // The pipa's lun: a held note made of quick strokes.
@@ -240,7 +282,7 @@ export function createComposer(
 
   const drum = (kind: string, time: number, strength: number) => {
     const g = ctx.createGain();
-    g.connect(out);
+    g.connect(mix);
     const noise = () => {
       const src = ctx.createBufferSource();
       const len = Math.floor(ctx.sampleRate * 0.6);
@@ -438,24 +480,95 @@ export function createComposer(
 
   /** A MIDI piece: each track played by the member of its name, from the start or (standing still) only to
    * its first cadence, softly. */
-  const playMidi = (h: Hearing, piece: MidiPiece, t0: number, softly: boolean): number => {
-    const stop = softly ? piece.markers.find(m => m.text === 'cadence')?.time ?? piece.length : piece.length;
+  /** Play a MIDI piece from `t0`, from `from` seconds into it (the start of a phrase) to `to`; returns
+   * when it ends. */
+  const playMidi = (h: Hearing, piece: MidiPiece, t0: number, enter: boolean, from = 0, to = piece.length, arrive = 0): number => {
     const members = new Map((h.ensemble ?? []).map(m => [m.id, m]));
+    const begin = t0 - from;
     for (const tr of piece.tracks) {
       const m = members.get(tr.name);
       if (!m) continue;
       for (const n of tr.notes) {
-        if (n.time >= stop) break;
-        const time = t0 + n.time;
+        if (n.time < from - 0.02 || n.time >= to - 0.01) continue;
+        // Arriving from another age (until `arrive`): the drums wait for the next phrase, and the rest come
+        // in softly and grow.
+        const arriving = n.time < arrive - 0.01;
+        if (arriving && percussive(m)) continue;
+        const time = begin + n.time;
         const cents = (n.pitch - TONIC_MIDI) * 100 - 1200 * (m.octave ?? 0);
-        const s = (n.velocity / 127) * (softly ? 0.6 : 1);
+        const grow = arriving ? 0.25 + (0.75 * (n.time - from)) / Math.max(0.1, arrive - from) : 1;
+        const s = (n.velocity / 127) * grow * (enter ? Math.min(1, 0.35 + (0.65 * (n.time - from)) / 9) : 1);
         at(time, () => sound(m, cents, time, n.dur, s));
       }
     }
-    for (const mk of piece.markers) if (mk.time <= stop) at(t0 + mk.time, () => {}, true);
-    return t0 + stop + 1;
+    nowPlaying = {piece, h};
+    for (const mk of piece.markers) if (mk.time > from + 0.01 && mk.time <= to + 0.01) at(begin + mk.time, () => {}, true);
+    nowStart = begin;
+    nowBegan = t0;
+    nowCadences = piece.markers.filter(m => m.text === 'cadence').map(m => m.time);
+    return begin + to + (to >= piece.length ? 1 : 0.1);
   };
   let midiStep = 0;
+  /** The piece now playing and how it was heard, so its players can fade out under the next age's. */
+  let nowPlaying: {piece: MidiPiece; h: Hearing} | null = null;
+  /** The players leaving at a change of age, to play one more phrase as they fade. */
+  let leaving: {piece: MidiPiece; h: Hearing; phrase: number} | null = null;
+  const percussive = (m: Member) => !!m.drum || m.voice === 'gong' || m.voice === 'metal' || m.sample === 'timpani' || m.sample === 'taiko';
+
+  /**
+   * The old age's players, fading through the phrase `[a, b)` of their piece while the new age's come in: the
+   * phrase is fitted to the new players' `span` seconds from `t0`, so both play the tune together. Their
+   * drums have already stopped.
+   */
+  const fadeOut = (old: {piece: MidiPiece; h: Hearing}, a: number, b: number, t0: number, span: number) => {
+    const members = new Map((old.h.ensemble ?? []).map(m => [m.id, m]));
+    const ratio = span / Math.max(0.1, b - a);
+    for (const tr of old.piece.tracks) {
+      const m = members.get(tr.name);
+      if (!m || percussive(m)) continue;
+      for (const n of tr.notes) {
+        if (n.time < a - 0.02 || n.time >= b - 0.01) continue;
+        const x = (n.time - a) / Math.max(0.1, b - a);
+        const time = t0 + (n.time - a) * ratio;
+        const cents = (n.pitch - TONIC_MIDI) * 100 - 1200 * (m.octave ?? 0);
+        const s = (n.velocity / 127) * 0.85 * (1 - x) ** 1.3;
+        if (s < 0.03) continue;
+        pending.push({time, play: () => sound(m, cents, time, n.dur * ratio * (1 - 0.4 * x), s)});
+      }
+    }
+  };
+  /** For each theme, the verse to play next, each verse fuller than the one before: a theme plays on
+   * verse after verse while time runs, and a tradition's themes take turns while it stands still. */
+  const verses = new Map<string, number>();
+
+  /**
+   * The bridge between two eras' pieces, from `t0` where the old one closes: the orchestra holds an open D
+   * (the tonic every piece shares) and swells, the harp climbs in fifths and the timpani roll the new piece
+   * in; with the Historical arrangement, a held D on the ensemble's own instruments. Returns where the new
+   * piece begins.
+   */
+  const bridge = (h: Hearing, t0: number): number => {
+    const ms = new Map((h.ensemble ?? []).map(m => [m.id, m]));
+    const len = 4.2;
+    const play = (m: Member | undefined, cents: number, at: number, dur: number, s: number) => {
+      if (m) pending.push({time: at, play: () => sound(m, cents, at, dur, s)});
+    };
+    const strings = orchestral ? ms.get('strings') : undefined;
+    if (strings) {
+      for (const [c, s] of [[-1200, 0.42], [-500, 0.36], [0, 0.34], [700, 0.22]] as const) play(strings, c, t0 - 0.4, len + 1.6, s);
+      play(ms.get('cello'), -2400, t0 - 0.2, len + 1.2, 0.5);
+      play(ms.get('contrabass'), -3600, t0 + 0.6, len, 0.4);
+      [-1200, -500, 0, 700, 1200, 1900].forEach((c, i) => play(ms.get('harp'), c, t0 + 1.2 + i * 0.32, 2.4, 0.32 + i * 0.04));
+      const timp = ms.get('timpani');
+      for (let k = 0, n = 22; k < n; k++) play(timp, -2400, t0 + len - 2.4 + k * 0.11, 0.1, 0.12 + (0.38 * k) / n);
+      play(timp, -2400, t0 + len, 0.6, 0.6);
+    } else {
+      // The ensemble's own: whoever can hold a note holds the tonic, an octave apart.
+      const holders = (h.ensemble ?? []).filter(m => !m.modern && !m.drum && m.sample && m.role !== 'accent').slice(0, 2);
+      holders.forEach((m, i) => play(m, i ? 0 : -1200, t0 - 0.2 + i * 0.5, len - 0.6, 0.32));
+    }
+    return t0 + len;
+  };
 
   const plan = (h: Hearing, t0: number): number => {
     const tunes = h.tunes ?? [];
@@ -466,22 +579,59 @@ export function createComposer(
       const piece = midiPiece(samples, tune.midi);
       // Still loading (a few kilobytes): wait a moment rather than start something else.
       if (piece === undefined) return t0 + 0.4;
+      // And a moment for its instruments, so the first piece does not begin without them.
+      if (t0 - start < 5 && (h.ensemble ?? []).some(m => m.sample && !samples.ready(m.sample))) return t0 + 0.4;
       if (piece === null) {
         tuneIndex++;
         return t0 + 0.5;
       }
-      if (!h.moving) {
-        nowPiece = tune.id;
-        return playMidi(h, piece, t0, true) + 6 + rand() * 6;
-      }
+      const enter = entering;
+      entering = false;
       if (midiStep === 0) {
+        // Carrying on from another age's arrangement: begin at the phrase it had reached.
+        const cads = piece.markers.filter(m => m.text === 'cadence').map(m => m.time);
+        const stanzas = piece.markers.filter(m => m.text === 'stanza').map(m => m.time);
+        const resuming = resumePhrase !== null;
+        const k = resumePhrase ?? 0;
+        resumePhrase = null;
+        let from = k > 0 && k < cads.length ? cads[k - 1] : 0;
+        let to = piece.length;
+        if (tune.theme && stanzas.length) {
+          // A theme is played a verse at a time: its next verse, or the rest of the verse it had reached.
+          if (!resuming) {
+            const v = verses.get(tune.theme) ?? 0;
+            from = v > 0 ? stanzas[v - 1] : 0;
+          }
+          const vi = stanzas.findIndex(x => x > from + 0.01);
+          to = vi >= 0 ? stanzas[vi] : piece.length;
+          verses.set(tune.theme, (vi >= 0 ? vi + 1 : 0) % stanzas.length);
+        }
+        // A change of age: the new players' first phrase is a handover, the old ones fading through it.
+        let arrive = 0;
+        const old = leaving;
+        leaving = null;
+        if (resuming) {
+          const next = cads.find(c => c > from + 0.01) ?? to;
+          arrive = Math.min(next, to);
+          const oc = old ? old.piece.markers.filter(m => m.text === 'cadence').map(m => m.time) : [];
+          if (old && k > 0 && k < oc.length) fadeOut(old, oc[k - 1], oc[k], t0, arrive - from);
+        }
         midiStep = 1;
         nowPiece = tune.id;
-        return playMidi(h, piece, t0, false);
+        nowTheme = tune.theme ?? null;
+        nowMidi = true;
+        return playMidi(h, piece, t0, enter, from, to, arrive);
       }
       midiStep = 0;
-      tuneIndex++;
+      // While time runs, a theme keeps going, verse after verse, so the timeline has one voice; while it
+      // stands still, the tradition's themes take turns.
+      if (!tune.theme || !h.moving) tuneIndex++;
       nowPiece = null;
+      nowMidi = false;
+      // Between verses, a breath (longer while time stands still).
+      if (tune.theme) return t0 + (h.moving ? 0.3 : 3 + rand() * 3);
+      // Then a rest while time stands still, or the players improvising on its motifs while it runs.
+      if (!h.moving) return t0 + 5 + rand() * 5;
       return motifs.length ? interlude(h, motifs, t0, h.style.beat) + h.style.beat * 2 : t0 + 2;
     }
     if (!h.moving) {
@@ -540,6 +690,7 @@ export function createComposer(
     out,
     fill(until, heard) {
       if (!retiring || !own) own = heard;
+      orchestral = heard.orchestral ?? true;
       const h = retiring ? {...own, known: heard.known, moving: heard.moving} : heard;
       const now = ctx.currentTime;
       // A piece chosen to hear starts now, not at the next line's end.
@@ -551,20 +702,44 @@ export function createComposer(
         tuneIndex = 0;
         section = 0;
         midiStep = 0;
+        resumePhrase = null;
       }
       // The year has moved out of the piece's era: finish the line under way and take up the new era's music.
       if (!retiring && nowPiece && !(h.tunes ?? []).some(t => t.id === nowPiece)) {
-        const cut = pending.filter(e => e.time > now + 0.05).find(e => e.cadence);
+        // Each age's players have at least a phrase of their own (some seconds) before the next take over,
+        // however fast the years go by.
+        const cut = pending.filter(e => e.time > Math.max(now + 0.05, nowBegan + 6)).find(e => e.cadence);
         if (cut) pending = pending.filter(e => e.time <= cut.time);
-        sectionEnd = cut ? cut.time + 1.2 : Math.min(sectionEnd, now + 0.5);
+        const next = nowTheme ? (h.tunes ?? []).find(x => x.theme === nowTheme) : undefined;
+        if (cut && next) {
+          tuneIndex = (h.tunes ?? []).indexOf(next);
+          // The same theme in the next age's arrangement: at the end of this phrase the new players take up
+          // the following one, the melody unbroken.
+          resumePhrase = nowCadences.filter(c => c <= cut.time - nowStart + 0.01).length;
+          leaving = nowPlaying ? {...nowPlaying, phrase: resumePhrase} : null;
+          sectionEnd = cut.time;
+        } else {
+          // Not a gap and a fresh start: a bridge on the shared tonic, and the new piece coming in under it.
+          sectionEnd = bridge(h, cut ? cut.time : now + 0.3);
+          pending.sort((a, b) => a.time - b.time);
+          entering = true;
+          tuneIndex = 0;
+        }
         nowPiece = null;
-        tuneIndex = 0;
+        nowTheme = null;
+        nowMidi = false;
         section = 0;
         midiStep = 0;
       }
       // A change between running and standing still is heard at the next phrase's end, not after the piece.
       if (still !== !h.moving) {
         still = !h.moving;
+        mix.gain.setTargetAtTime(still ? 0.6 : 1, now, 0.8);
+      }
+      // A piece being played goes on whether time runs or stands; the improvised music changes its manner at
+      // the next phrase's end.
+      if (still !== stillManner && !nowMidi) {
+        stillManner = still;
         const cut = pending.filter(e => e.time > now + 0.05).find(e => e.cadence);
         if (cut) {
           pending = pending.filter(e => e.time <= cut.time);
@@ -589,5 +764,6 @@ export function createComposer(
     },
     done: () => retiring && pending.length === 0,
     piece: () => nowPiece,
+    busy: () => nowMidi && pending.some(e => e.time > ctx.currentTime + 1.5),
   };
 }

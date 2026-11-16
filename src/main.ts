@@ -170,7 +170,7 @@ class App {
     if (only) ens.tunes = (tradition.tunes ?? []).filter(x => x.id === only);
     // A piece chosen to hear plays as if time were running, so it is heard whole.
     const moving = s.playing || this.travelTarget !== null || !!only;
-    return {known: only ? Math.max(0.6, this.knownShare()) : this.knownShare(), moving, style, voices, ...ens, why};
+    return {known: only ? Math.max(0.6, this.knownShare()) : this.knownShare(), moving, style, voices, ...ens, year, why};
   }
   private knownKey = '';
   private known = 0;

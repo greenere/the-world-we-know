@@ -56,6 +56,10 @@ export interface Hearing {
   percussion?: Record<string, string>;
   /** A recording to play instead of composing (served from public/audio/). */
   recording?: string;
+  /** The year the music is for, which sets the drone's colour. */
+  year?: number;
+  /** Play the atlas's orchestra beneath the historical instruments (the Orchestral arrangement). */
+  orchestral?: boolean;
 }
 
 const TONIC = 293.66; // D above middle C
@@ -93,6 +97,8 @@ export interface Player {
   done(): boolean;
   /** The piece being played, if it has a name. */
   piece?(): string | null;
+  /** Playing a piece now (rather than resting or between verses). */
+  busy?(): boolean;
 }
 
 /** A recording, looped with a short crossfade at the seam. */
@@ -305,7 +311,21 @@ export interface Score {
 const HOLD = 2.5;
 /** The crossfade's time constant: about three times this to be done. */
 const FADE = 1.8;
-const DRONE = 0.13;
+const DRONE = 0.32;
+
+/** The drone's colour in each age (the eras of src/time.ts on the main timeline, early kingdoms on): its layers' levels, how
+ * bright it is, and how fast it breathes. */
+const DRONE_COLOURS: {layers: Partial<Record<'root' | 'fifth' | 'reed' | 'octave' | 'ninth' | 'air', number>>; cutoff: number; breath: number; air: number}[] = [
+  {layers: {root: 0.95, fifth: 0.22}, cutoff: 260, breath: 0.04, air: 1},
+  {layers: {root: 1, fifth: 0.32, octave: 0.05}, cutoff: 340, breath: 0.05, air: 0.7},
+  {layers: {root: 0.9, fifth: 0.3, reed: 0.22, octave: 0.08}, cutoff: 460, breath: 0.065, air: 1},
+  {layers: {root: 0.85, fifth: 0.32, reed: 0.04, octave: 0.3}, cutoff: 620, breath: 0.08, air: 1.1},
+  {layers: {root: 0.8, fifth: 0.3, octave: 0.32, ninth: 0.14}, cutoff: 820, breath: 0.1, air: 0.8},
+  {layers: {root: 0.75, fifth: 0.28, octave: 0.3, ninth: 0.14, air: 0.07}, cutoff: 1050, breath: 0.12, air: 0.6},
+];
+/** The air of each age, beneath the drone: soft enough to be felt more than heard. */
+const AIR = 0.05;
+const eraOf = (year: number) => (year < -500 ? 0 : year < 500 ? 1 : year < 1400 ? 2 : year < 1800 ? 3 : year < 1900 ? 4 : 5);
 
 export function createScore(ctx: BaseAudioContext, rand: () => number = Math.random): Score {
   const out = ctx.createGain();
@@ -318,43 +338,174 @@ export function createScore(ctx: BaseAudioContext, rand: () => number = Math.ran
   limiter.release.value = 0.25;
   limiter.connect(out);
   const dry = ctx.createGain();
-  dry.gain.value = 0.8;
+  dry.gain.value = 0.78;
   const send = ctx.createGain();
-  send.gain.value = 0.5;
+  send.gain.value = 0.55;
   const reverb = ctx.createConvolver();
   reverb.buffer = room(ctx, rand);
-  dry.connect(limiter);
-  send.connect(reverb).connect(limiter);
+  // Below the limiter, the low end is kept in its place: no rumble under the bass, and the drums' thump
+  // eased a little, so it does not press the limiter down on the tune.
+  const rumble = ctx.createBiquadFilter();
+  rumble.type = 'highpass';
+  rumble.frequency.value = 34;
+  rumble.Q.value = 0.6;
+  const low = ctx.createBiquadFilter();
+  low.type = 'lowshelf';
+  low.frequency.value = 110;
+  low.gain.value = -5;
+  rumble.connect(low).connect(limiter);
+  dry.connect(rumble);
+  send.connect(reverb).connect(rumble);
   const voices = new Voices(ctx, rand);
   const samples = new Samples(ctx);
 
-  // The drone: D and the fifth above it, each two strings a hair apart, breathing slowly. Every tradition
-  // shares it (at its own level), so it carries across a change.
+  // The drone: the tonic every tradition shares (at its own level), so it carries across a change. Its
+  // colour follows the age: a dark, bare fifth for the early kingdoms, bronze fifths for the classical
+  // empires, a reedy organum in the age of caravans, warmer octaves in the age of ocean crossings, a
+  // ninth's shimmer with steam, and a glassy air above it all in the shared modern world. Each tone is a
+  // soft, bowed-sounding wave that wanders a little in pitch and loudness at its own slow pace, set apart
+  // from the others across the room, so the whole is alive rather than held; between ages the layers
+  // cross over across several seconds. It sinks while a piece is playing and rises in the pauses.
   const droneTone = ctx.createBiquadFilter();
   droneTone.type = 'lowpass';
   droneTone.frequency.value = 320;
   droneTone.Q.value = 0.4;
   const droneGain = ctx.createGain();
   droneGain.gain.value = 0;
-  droneTone.connect(droneGain);
-  droneGain.connect(dry);
-  droneGain.connect(send);
+  const duck = ctx.createGain();
+  droneTone.connect(droneGain).connect(duck);
+  duck.connect(dry);
+  duck.connect(send);
   const breath = ctx.createOscillator();
   breath.frequency.value = 0.07;
   const breathDepth = ctx.createGain();
   breathDepth.gain.value = 0;
   breath.connect(breathDepth).connect(droneGain.gain);
   breath.start();
-  for (const [hz, cents, level] of [[146.83, -4, 0.5], [146.83, 5, 0.5], [220, -3, 0.3], [220, 4, 0.3], [73.42, 0, 0.5]] as const) {
+  const waves = {
+    // A bowed string's: every harmonic, falling away gently.
+    bowed: [1, 0.55, 0.36, 0.26, 0.19, 0.14, 0.1, 0.07, 0.05],
+    // A reed's: strong odd harmonics, nasal.
+    reed: [1, 0.35, 0.7, 0.25, 0.5, 0.18, 0.32, 0.1, 0.18],
+    // A flute's or a glass's: nearly pure.
+    flute: [1, 0.12, 0.04, 0.02],
+  };
+  const periodic = Object.fromEntries(
+    Object.entries(waves).map(([k, amps]) => [k, ctx.createPeriodicWave(new Float32Array([0, ...amps]), new Float32Array(amps.length + 1))]),
+  ) as Record<keyof typeof waves, PeriodicWave>;
+  /** A slow wobble on `param`, `depth` either side, at its own rate. */
+  const wander = (param: AudioParam, depth: number, rate: number) => {
     const o = ctx.createOscillator();
-    o.type = 'triangle';
-    o.frequency.value = hz;
-    o.detune.value = cents;
+    o.frequency.value = rate;
+    const g = ctx.createGain();
+    g.gain.value = depth;
+    o.connect(g).connect(param);
+    o.start(ctx.currentTime + rand() * 10);
+  };
+  const layer = (tones: [number, keyof typeof waves, number][], level: number) => {
     const g = ctx.createGain();
     g.gain.value = level;
-    o.connect(g).connect(droneTone);
-    o.start();
+    g.connect(droneTone);
+    for (const [hz, wave, pan] of tones) {
+      const o = ctx.createOscillator();
+      o.setPeriodicWave(periodic[wave]);
+      o.frequency.value = hz;
+      o.detune.value = (rand() - 0.5) * 8;
+      wander(o.detune, 2 + rand() * 4, 0.04 + rand() * 0.12);
+      const v = ctx.createGain();
+      v.gain.value = 0.4;
+      wander(v.gain, 0.12, 0.02 + rand() * 0.07);
+      const p = ctx.createStereoPanner();
+      p.pan.value = pan;
+      o.connect(v).connect(p).connect(g);
+      o.start();
+    }
+    return g;
+  };
+  const layers = {
+    root: layer([[73.42, 'bowed', 0], [146.83, 'bowed', -0.45], [146.83, 'bowed', 0.45]], 1),
+    fifth: layer([[110, 'bowed', 0.3], [220, 'bowed', -0.3], [220, 'bowed', 0.55]], 0.3),
+    reed: layer([[110, 'reed', -0.25], [146.83, 'reed', 0.25]], 0),
+    octave: layer([[293.66, 'flute', -0.5], [293.66, 'flute', 0.5]], 0),
+    ninth: layer([[329.63, 'flute', 0.35], [440, 'flute', -0.35]], 0),
+    air: layer([[880, 'flute', -0.6], [1174.66, 'flute', 0.6]], 0),
+  };
+
+  // Beneath the drone, the air of each age: wind over open land, a still warm room, the gusting wind of the
+  // caravan roads, the slow wash of the sea, a faint low hum of engines, and a high, bright air. Each is
+  // filtered noise, moving slowly; between ages one fades into the next.
+  const noise = ctx.createBuffer(2, ctx.sampleRate * 6, ctx.sampleRate);
+  for (let ch = 0; ch < 2; ch++) {
+    const d = noise.getChannelData(ch);
+    let b0 = 0, b1 = 0, b2 = 0;
+    for (let i = 0; i < d.length; i++) {
+      // Pink noise (Paul Kellet's filter): softer than white, like air.
+      const w = rand() * 2 - 1;
+      b0 = 0.99765 * b0 + w * 0.099046;
+      b1 = 0.963 * b1 + w * 0.2965164;
+      b2 = 0.57 * b2 + w * 1.0526913;
+      d[i] = (b0 + b1 + b2 + w * 0.1848) * 0.12;
+    }
   }
+  const ambience = ctx.createGain();
+  ambience.gain.value = 0;
+  ambience.connect(dry);
+  ambience.connect(send);
+  const air = (type: BiquadFilterType, hz: number, q: number, sweep: number, swell: number, rate: number) => {
+    const src = ctx.createBufferSource();
+    src.buffer = noise;
+    src.loop = true;
+    src.playbackRate.value = 0.9 + rand() * 0.2;
+    const f = ctx.createBiquadFilter();
+    f.type = type;
+    f.frequency.value = hz;
+    f.Q.value = q;
+    const g = ctx.createGain();
+    g.gain.value = 1 - swell;
+    // One slow motion moves both: louder as it brightens, like a gust or a wave.
+    const lfo = ctx.createOscillator();
+    lfo.frequency.value = rate;
+    const toF = ctx.createGain();
+    toF.gain.value = sweep;
+    const toG = ctx.createGain();
+    toG.gain.value = swell;
+    lfo.connect(toF).connect(f.frequency);
+    lfo.connect(toG).connect(g.gain);
+    lfo.start(ctx.currentTime + rand() * 5);
+    const out = ctx.createGain();
+    out.gain.value = 0;
+    src.connect(f).connect(g).connect(out).connect(ambience);
+    src.start();
+    return out;
+  };
+  const airs = [
+    air('bandpass', 520, 0.9, 260, 0.6, 0.06), // wind over open land
+    air('lowpass', 420, 0.5, 60, 0.2, 0.04), // still, warm air
+    air('bandpass', 700, 1.2, 420, 0.75, 0.09), // the caravan roads' gusting wind
+    air('lowpass', 900, 0.4, 500, 0.85, 0.085), // the sea, a wave every twelve seconds
+    air('lowpass', 150, 0.8, 30, 0.25, 0.3), // a low hum of engines
+    air('highpass', 3200, 0.5, 900, 0.5, 0.05), // a high, bright air
+  ];
+
+  let colourFor = -1;
+  let brightness = 320;
+  const colour = (era: number, t: number) => {
+    if (era === colourFor) return;
+    const first = colourFor < 0;
+    colourFor = era;
+    const c = DRONE_COLOURS[era];
+    const tau = first ? 0.05 : 2.5;
+    for (const [k, g] of Object.entries(layers)) g.gain.setTargetAtTime(c.layers[k as keyof typeof layers] ?? 0, t, tau);
+    airs.forEach((g, i) => g.gain.setTargetAtTime(i === era ? c.air : 0, t, tau * 1.5));
+    breath.frequency.setTargetAtTime(c.breath, t, tau);
+    brightness = c.cutoff;
+    if (!first) {
+      // A change of age: the drone swells under the handover between the players, then settles.
+      droneGain.gain.setTargetAtTime(DRONE * droneFor * 1.8, t + 0.3, 0.9);
+      droneGain.gain.setTargetAtTime(DRONE * droneFor, t + 4.5, 1.6);
+    }
+  };
+  let ducked = false;
 
   let current: Player | null = null;
   let retiring: Player[] = [];
@@ -367,6 +518,7 @@ export function createScore(ctx: BaseAudioContext, rand: () => number = Math.ran
     droneFor = level;
     droneGain.gain.setTargetAtTime(DRONE * level, t, FADE);
     breathDepth.gain.setTargetAtTime(DRONE * level * 0.3, t, FADE);
+    ambience.gain.setTargetAtTime(AIR * Math.max(0.3, level), t, FADE);
   };
 
   const begin = (id: string, t: number, fade: boolean, h: Hearing) => {
@@ -407,7 +559,15 @@ export function createScore(ctx: BaseAudioContext, rand: () => number = Math.ran
         }
       } else pending = null;
       setDrone(h.style.drone, t);
-      droneTone.frequency.setTargetAtTime(280 + 520 * Math.sqrt(h.known), t, 2);
+      if (h.year !== undefined) colour(eraOf(h.year), t);
+      droneTone.frequency.setTargetAtTime(brightness * (0.75 + 0.5 * Math.sqrt(h.known)), t, 2);
+      // Under a piece the drone steps back; in the pauses and the handovers it comes forward.
+      // (A player that cannot say keeps the drone where it always was, beneath it.)
+      const busy = current?.busy ? current.busy() : true;
+      if (busy !== ducked) {
+        ducked = busy;
+        duck.gain.setTargetAtTime(busy ? 0.4 : 1, t, busy ? 1.5 : 0.7);
+      }
       current!.fill(until, h);
       // The outgoing players finish their phrases in their own style.
       retiring = retiring.filter(p => !p.done());
@@ -422,16 +582,24 @@ export function createScore(ctx: BaseAudioContext, rand: () => number = Math.ran
 
 /** A small room: decaying noise, duller as it dies away. */
 function room(ctx: BaseAudioContext, rand: () => number): AudioBuffer {
+  // A hall: a moment's silence, a scatter of early reflections from near walls, then a long tail that
+  // darkens as it fades, each ear hearing a different one, so the players stand in a wide room.
   const sr = ctx.sampleRate;
-  const length = Math.floor(sr * 3.4);
+  const length = Math.floor(sr * 4.2);
+  const pre = Math.floor(sr * 0.018);
   const buffer = ctx.createBuffer(2, length, sr);
   for (let ch = 0; ch < 2; ch++) {
     const out = buffer.getChannelData(ch);
+    for (let k = 0; k < 9; k++) {
+      const at = pre + Math.floor(sr * (0.006 + rand() * 0.07));
+      out[at] += (rand() < 0.5 ? -1 : 1) * (0.5 - k * 0.04);
+    }
     let lp = 0;
-    for (let i = 0; i < length; i++) {
-      const x = i / length;
-      lp += (0.55 - 0.45 * x) * (rand() * 2 - 1 - lp);
-      out[i] = lp * (1 - x) ** 2.6;
+    for (let i = pre; i < length; i++) {
+      const x = (i - pre) / (length - pre);
+      lp += (0.5 - 0.42 * x) * (rand() * 2 - 1 - lp);
+      const swell = Math.min(1, (i - pre) / (sr * 0.06));
+      out[i] += lp * swell * Math.exp(-5.2 * x) * 0.9;
     }
   }
   return buffer;
@@ -439,6 +607,7 @@ function room(ctx: BaseAudioContext, rand: () => number): AudioBuffer {
 
 const KEY = 'music';
 const VOLUME_KEY = 'music-volume';
+const ARRANGEMENT_KEY = 'music-arrangement';
 
 /** What the page says about the music now: the tradition and why it is the one playing. */
 export interface NowPlaying {
@@ -452,6 +621,9 @@ export interface NowPlaying {
 export class Music {
   enabled = false;
   volume = 0.8;
+  /** The Orchestral arrangement (strings, harp, horns, timpani beneath the historical players), or only
+   * the instruments of the time. */
+  orchestral = true;
   /** A tradition the reader chose to hear, instead of the one the map calls for. */
   audition: string | null = null;
   /** And, within it, the one piece chosen to hear. */
@@ -470,6 +642,7 @@ export class Music {
       this.enabled = localStorage.getItem(KEY) === 'on';
       const v = Number(localStorage.getItem(VOLUME_KEY));
       if (localStorage.getItem(VOLUME_KEY) !== null && Number.isFinite(v)) this.volume = Math.max(0, Math.min(1, v));
+      this.orchestral = localStorage.getItem(ARRANGEMENT_KEY) !== 'historical';
     } catch {
       /* storage may be unavailable */
     }
@@ -522,6 +695,17 @@ export class Music {
     if (this.master && this.ctx) this.master.gain.setTargetAtTime(this.volume, this.ctx.currentTime, 0.08);
   }
 
+  /** Choose the Orchestral arrangement or the Historical one; it changes at once, mid-piece. */
+  setOrchestral(on: boolean) {
+    this.orchestral = on;
+    try {
+      localStorage.setItem(ARRANGEMENT_KEY, on ? 'orchestral' : 'historical');
+    } catch {
+      /* storage may be unavailable */
+    }
+    this.onChange?.();
+  }
+
   /** Hear one tradition, or one of its pieces (turning the music on), or go back to following the map with null. */
   listen(id: string | null, piece: string | null = null) {
     this.audition = id;
@@ -549,7 +733,7 @@ export class Music {
     clearInterval(this.timer);
     this.timer = window.setInterval(() => {
       const h = this.hear();
-      score!.fill(ctx.currentTime + 0.4, {...h, immediate: this.immediate || h.immediate});
+      score!.fill(ctx.currentTime + 0.4, {...h, immediate: this.immediate || h.immediate, orchestral: this.orchestral});
       this.immediate = false;
       const cur = score!.current();
       const shown = `${cur?.tradition}|${cur?.piece}|${h.why}`;

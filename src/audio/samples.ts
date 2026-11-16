@@ -23,6 +23,8 @@ export interface SampleNote {
   pan: number;
   /** Stop the string at the note's end (a tremolo's strokes), rather than let it ring. */
   damp?: boolean;
+  /** Bow or breathe it in slowly and let it go slowly: a pad, a swell, not a struck note. */
+  swell?: boolean;
 }
 
 export class Samples {
@@ -74,22 +76,48 @@ export class Samples {
     const midi = 69 + 12 * Math.log2(n.hz / 440);
     let k = 0;
     for (let i = 1; i < inst.notes.length; i++) if (Math.abs(inst.notes[i] - midi) < Math.abs(inst.notes[k] - midi)) k = i;
-    const src = ctx.createBufferSource();
-    src.buffer = inst.buffers[k];
-    src.playbackRate.value = 2 ** ((midi - inst.notes[k]) / 12);
-    const gain = ctx.createGain();
+    const buffer = inst.buffers[k];
+    const rate = 2 ** ((midi - inst.notes[k]) / 12);
     const level = inst.gain * n.strength;
     const t = n.time;
-    gain.gain.setValueAtTime(0, t);
-    gain.gain.linearRampToValueAtTime(level, t + 0.006);
-    // A held instrument stops with the note; a plucked one rings on, damped a little after.
-    const end = inst.held || n.damp ? t + Math.max(0.08, n.dur) : t + Math.max(0.6, n.dur) + 1.2;
-    gain.gain.setTargetAtTime(0, end, inst.held || n.damp ? 0.06 : 0.35);
     const pan = ctx.createStereoPanner();
     pan.pan.value = n.pan;
-    src.connect(gain).connect(pan).connect(dest);
-    src.start(t);
-    src.stop(end + 1.5);
+    pan.connect(dest);
+    // A held instrument stops with the note; a plucked one rings on, damped a little after.
+    const held = inst.held || n.damp;
+    const end = held ? t + Math.max(0.08, n.dur) : t + Math.max(0.6, n.dur) + 1.2;
+    const release = held ? (n.swell ? 0.5 : 0.06) : 0.35;
+    // A recorded note lasts about three seconds; a longer held note is carried on by fresh copies of its
+    // sustain, each faded in over the last, so a string chord can be held for a whole line.
+    const usable = buffer.duration / rate - 0.35;
+    const attack = n.swell ? Math.min(1.2, Math.max(0.15, n.dur * 0.35)) : 0.006;
+    let at = t;
+    let offset = 0;
+    let first = true;
+    while (at < end) {
+      const src = ctx.createBufferSource();
+      src.buffer = buffer;
+      src.playbackRate.value = rate;
+      const gain = ctx.createGain();
+      const fadeIn = first ? attack : 0.5;
+      gain.gain.setValueAtTime(0, at);
+      gain.gain.linearRampToValueAtTime(level, at + fadeIn);
+      const segEnd = held ? Math.min(end, at + usable - offset / rate) : end;
+      const last = !held || segEnd >= end - 1e-3;
+      if (last) gain.gain.setTargetAtTime(0, end, release);
+      else {
+        gain.gain.setValueAtTime(level, segEnd - 0.5);
+        gain.gain.linearRampToValueAtTime(0, segEnd);
+      }
+      src.connect(gain).connect(pan);
+      src.start(at, offset);
+      src.stop(last ? end + release * 6 + 0.2 : segEnd + 0.02);
+      if (last) break;
+      // The next copy starts in the sustain, past the bow's or breath's attack, as this one fades.
+      first = false;
+      at = segEnd - 0.5;
+      offset = 0.4;
+    }
     return true;
   }
 

@@ -1,0 +1,12 @@
+{
+ "id": "helios",
+ "name": "Mesomedes: Hymn to the Sun, the opening",
+ "source": "poehlmann-west",
+ "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West.",
+ "about": "The first sentence of Mesomedes' hymn to Helios, \"father of rosy-eyelidded Dawn\", who drives his chariot across the sky.",
+ "transpose": -7,
+ "beat": 0.58,
+ "meter": 2,
+ "pickup": 1,
+ "notes": "A4:0.5 A4:0.5 | A4:1 A4:0.5 D5:0.5 | A4:1 Bb4:0.5 A4:0.5 | G4:1.5 A4:1 / r:0.5 G4:0.5 C5:0.5 | C5:1 C5:0.5 C5:0.5 | D5:1 A4:0.5 G4:0.5 | C5:0.5 D5:1 C5:1 / r:0.5 C5:1 | D5:0.5 C5:0.5 D5:0.5 D5:0.5 | Bb4:1 C5:0.5 D5:0.5 | E5:1.5 E5:1 / r:0.5 C5:1 | E5:0.5 C5:0.5 E5:0.5 D5:0.5 | C5:1 D5:0.5 D5:0.5 | C5:1 E5:0.5 D5:1 / r:0.5 C5:0.5 D5:0.5 | E5:1 D5:0.5 C5:0.5 | D5:1 Bb4:0.5 G4:0.5 | A4:1 Bb4:0.5 Bb4:0.5 A4:1 /"
+}

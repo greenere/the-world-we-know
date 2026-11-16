@@ -40,6 +40,19 @@ INSTRUMENTS = {
     "sheng": {"patch": "reed_organ", "low": 55, "high": 84, "held": True, "gain": 0.4},
     # The suona, the "shrieking clarionet" of weddings and funerals: the shehnai is its cousin in the set.
     "suona": {"patch": "shanai", "low": 58, "high": 88, "held": True, "gain": 0.5},
+    # The xun, the clay vessel flute of the Shang and Zhou (the ocarina is its kin), and the yangqin, the
+    # hammered dulcimer that came to China in the Ming and is everywhere in its twentieth-century music.
+    "xun": {"patch": "ocarina", "low": 55, "high": 81, "held": True, "gain": 0.6},
+    "yangqin": {"patch": "dulcimer", "low": 48, "high": 88, "held": False, "gain": 0.7},
+    # The atlas's own orchestra, which arranges every tradition's pieces for a modern ear (as a game's score
+    # would): a string section for the harmony, cellos and basses beneath it, horns, and timpani and a great
+    # drum for the swells. Not historical; the Historical setting leaves them out.
+    "strings": {"patch": "string_ensemble_1", "low": 40, "high": 84, "held": True, "gain": 0.55},
+    "cello": {"patch": "cello", "low": 36, "high": 69, "held": True, "gain": 0.6},
+    "contrabass": {"patch": "contrabass", "low": 28, "high": 52, "held": True, "gain": 0.7},
+    "horn": {"patch": "french_horn", "low": 41, "high": 77, "held": True, "gain": 0.45},
+    "timpani": {"patch": "timpani", "low": 38, "high": 56, "held": False, "gain": 0.8},
+    "taiko": {"patch": "taiko_drum", "low": 36, "high": 48, "held": False, "gain": 0.8},
 }
 
 

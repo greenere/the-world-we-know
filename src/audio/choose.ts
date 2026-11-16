@@ -47,6 +47,8 @@ export interface Tradition {
   ensemble?: Ensemble;
   /** Its pieces, with the years they belong to. */
   tunes?: Tune[];
+  /** Its themes, each arranged for every age (the tunes with that `theme`): one ceremonial, one folk. */
+  themes?: {id: string; name: string; mood: 'ceremonial' | 'folk'; about?: string; source?: string; confidence?: string; credit?: string}[];
   /** Recordings to play instead of composing, when there are some (not yet used). */
   recordings?: {file: string; name: string; source: string; license: string; from?: number; until?: number}[];
 }
@@ -108,7 +110,7 @@ export function ensembleFor(t: Tradition, data: AppData, vp: VpId | null, year: 
   if (!t.ensemble) return {};
   return {
     ensemble: t.ensemble.members.filter(m => within(m, year) && knows(data, m.instrument, vp, year)),
-    tunes: (t.tunes ?? []).filter(x => within(x, year)),
+    tunes: (t.tunes ?? []).filter(x => !x.extra && within(x, year)),
     motifs: t.ensemble.motifs,
     percussion: t.ensemble.percussion,
   };

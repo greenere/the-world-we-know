@@ -1,0 +1,12 @@
+{
+ "id": "calliope",
+ "name": "Mesomedes: Prayer to Calliope",
+ "source": "poehlmann-west",
+ "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
+ "about": "By Mesomedes of Crete, court musician to the emperor Hadrian: a prayer to the Muse and to Apollo, copied with its notation in Byzantine manuscripts.",
+ "transpose": -7,
+ "beat": 0.6,
+ "meter": 2,
+ "pickup": 0,
+ "notes": "A4:1 Bb4:0.5 C5:0.5 | Bb4:1 A4:0.5 G4:0.5 | A4:1 / G4:1 | C5:0.5 A4:0.5 A4:0.5 A4:0.5 | A4:1 A4:0.5 E4:0.5 | F4:1 G4:1 / | F4:1 G4:0.5 A4:0.5 | Bb4:1 C5:0.5 D5:0.5 | C5:1 / C5:1 | D5:1 F5:0.5 E5:0.5 / | D5:1 C5:0.5 Bb4:0.5 / | A4:1 C5:0.5 D5:0.5 / | C5:1 D5:0.5 E5:0.5 C5:0.5 D5:0.5 | G4:1 A4:0.5 A4:2 /"
+}

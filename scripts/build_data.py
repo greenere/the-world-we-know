@@ -1413,7 +1413,8 @@ def load_translations(journeys, regions_by_id, inventions, vp_ids, viewpoints, c
     tz = sz.pop("_tunes", {})
     straditions = json.loads((DATA / "soundscapes.json").read_text(encoding="utf-8"))["traditions"]
     sids = {x["id"] for x in straditions}
-    tids = {tu["id"] for x in straditions for tu in x.get("tunes", [])}
+    # Pieces, and the themes whose arrangements they are (a theme has a name and a sentence too).
+    tids = {tu["id"] for x in straditions for tu in x.get("tunes", [])} | {th["id"] for x in straditions for th in x.get("themes", [])}
     for k in sz:
         if k not in sids:
             fail(f"i18n/zh/soundscapes.json: unknown tradition {k!r}")
