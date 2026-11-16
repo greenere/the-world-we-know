@@ -610,6 +610,10 @@ function room(ctx: BaseAudioContext, rand: () => number): AudioBuffer {
 const KEY = 'music';
 const VOLUME_KEY = 'music-volume';
 const ARRANGEMENT_KEY = 'music-arrangement';
+const MOOD_KEY = 'music-mood';
+
+/** Which of a tradition's two themes to play: as time and the reader's choices decide, or always one mood. */
+export type Mood = 'auto' | 'ceremonial' | 'folk';
 
 /** What the page says about the music now: the tradition and why it is the one playing. */
 export interface NowPlaying {
@@ -626,6 +630,10 @@ export class Music {
   /** The Orchestral arrangement (strings, harp, horns, timpani beneath the historical players), or only
    * the instruments of the time. */
   orchestral = true;
+  /** Auto (one theme carries on while time runs, they take turns while it stands still), or one mood always. */
+  mood: Mood = 'auto';
+  /** Under Auto, the theme the reader last chose to hear for a tradition, which the map then keeps to. */
+  private chosen = new Map<string, string>();
   /** A tradition the reader chose to hear, instead of the one the map calls for. */
   audition: string | null = null;
   /** And, within it, the one piece chosen to hear. */
@@ -645,6 +653,8 @@ export class Music {
       const v = Number(localStorage.getItem(VOLUME_KEY));
       if (localStorage.getItem(VOLUME_KEY) !== null && Number.isFinite(v)) this.volume = Math.max(0, Math.min(1, v));
       this.orchestral = localStorage.getItem(ARRANGEMENT_KEY) !== 'historical';
+      const mood = localStorage.getItem(MOOD_KEY);
+      if (mood === 'ceremonial' || mood === 'folk') this.mood = mood;
     } catch {
       /* storage may be unavailable */
     }
@@ -695,6 +705,7 @@ export class Music {
       /* storage may be unavailable */
     }
     if (this.master && this.ctx) this.master.gain.setTargetAtTime(this.volume, this.ctx.currentTime, 0.08);
+    this.onChange?.();
   }
 
   /** Choose the Orchestral arrangement or the Historical one; it changes at once, mid-piece. */
@@ -706,6 +717,41 @@ export class Music {
       /* storage may be unavailable */
     }
     this.onChange?.();
+  }
+
+  /** Keep to one mood everywhere, or let time decide; changes at the end of the phrase under way. */
+  setMood(mood: Mood) {
+    this.mood = mood;
+    if (mood !== 'auto') this.chosen.clear();
+    try {
+      localStorage.setItem(MOOD_KEY, mood);
+    } catch {
+      /* storage may be unavailable */
+    }
+    this.onChange?.();
+  }
+
+  /** Remember a theme the reader chose to hear (under Auto, the map then keeps to it for that tradition). */
+  choose(tradition: string, theme: string) {
+    if (this.chosen.get(tradition) === theme) return;
+    this.chosen.set(tradition, theme);
+    this.onChange?.();
+  }
+
+  /** The reader's pick for a tradition, if one is being followed. */
+  chosenFor(tradition: string): string | undefined {
+    return this.mood === 'auto' ? this.chosen.get(tradition) : undefined;
+  }
+
+  /** Forget the pick for a tradition: back to Auto. */
+  unchoose(tradition: string) {
+    if (this.chosen.delete(tradition)) this.onChange?.();
+  }
+
+  /** The theme to keep to for a tradition with these themes, if any. */
+  themeFor(tradition: string, themes: {id: string; mood: string}[] | undefined): string | undefined {
+    if (this.mood !== 'auto') return themes?.find(x => x.mood === this.mood)?.id;
+    return this.chosen.get(tradition);
   }
 
   /** Hear one tradition, or one of its pieces (turning the music on), or go back to following the map with null. */

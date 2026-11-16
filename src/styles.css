@@ -3993,7 +3993,24 @@ kbd {
   flex-wrap: wrap;
   align-items: center;
   gap: 12px 28px;
-  margin: 18px 0 8px;
+  margin: 18px 0 12px;
+}
+
+.settings > .sound-volume {
+  display: flex;
+  margin: 0 0 6px;
+}
+
+.settings > .sound-volume .volume {
+  flex: 1;
+  max-width: 360px;
+}
+
+.sound-controls-note {
+  margin: 0 0 12px !important;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink-3);
 }
 
 .sound-switch,
@@ -4331,12 +4348,6 @@ kbd {
   font-size: 12.5px;
 }
 
-/* On phones the note's quick switch gives way: the settings hold it. */
-@media (max-width: 760px) {
-  .tool-music {
-    display: none;
-  }
-}
 
 .sound-pieces {
   margin: 2px 0 10px;
@@ -4404,4 +4415,59 @@ kbd {
   margin-top: 14px;
   padding-top: 10px;
   border-top: 1px solid var(--rule);
+}
+
+/* Auto, Ceremonial, Folk: a segmented switch. */
+.mood-switch {
+  display: inline-flex;
+  border: 1px solid var(--rule-2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.mood-option {
+  padding: 3px 11px 4px;
+  font-size: 13px;
+  color: var(--ink-2);
+  border-left: 1px solid var(--rule-2);
+}
+
+.mood-option:first-child {
+  border-left: 0;
+}
+
+.mood-option:hover {
+  background: color-mix(in srgb, #6e3e5c 6%, transparent);
+}
+
+.mood-option.on {
+  color: var(--paper);
+  background: #6e3e5c;
+}
+
+.sound-mood-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sound-mood-label {
+  font-size: 15px;
+}
+
+.pick-note {
+  font-size: 13px;
+  color: #6e3e5c;
+}
+
+.pick-clear {
+  margin-left: 4px;
+  padding: 0 5px;
+  border-radius: 50%;
+  color: var(--ink-3);
+}
+
+.pick-clear:hover {
+  color: #6e3e5c;
+  background: color-mix(in srgb, #6e3e5c 10%, transparent);
 }

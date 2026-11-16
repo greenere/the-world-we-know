@@ -146,7 +146,7 @@ class App {
       if (tune) {
         only = tune.id;
         // A theme chosen to hear becomes the one the map plays for this tradition, until another is chosen.
-        if (tune.theme) this.preferTheme.set(tradition.id, tune.theme);
+        if (tune.theme) this.music.choose(tradition.id, tune.theme);
         year = tune.from ?? (tune.until !== undefined ? tune.until - 1 : s.year);
       }
     } else if (geo) {
@@ -172,10 +172,8 @@ class App {
     if (only) ens.tunes = (tradition.tunes ?? []).filter(x => x.id === only);
     // A piece chosen to hear plays as if time were running, so it is heard whole.
     const moving = s.playing || this.travelTarget !== null || !!only;
-    return {known: only ? Math.max(0.6, this.knownShare()) : this.knownShare(), moving, style, voices, ...ens, year, prefer: this.preferTheme.get(tradition.id), why};
+    return {known: only ? Math.max(0.6, this.knownShare()) : this.knownShare(), moving, style, voices, ...ens, year, prefer: only ? undefined : this.music.themeFor(tradition.id, tradition.themes), why};
   }
-  /** For each tradition, the theme last chosen to hear in the settings: the one the map then keeps playing. */
-  private preferTheme = new Map<string, string>();
   private knownKey = '';
   private known = 0;
 

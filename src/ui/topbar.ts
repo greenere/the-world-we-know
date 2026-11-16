@@ -8,6 +8,7 @@ import {ALL_VPS} from '../types';
 import {h, setIcon} from './dom';
 import {icons, livingIcons, sealSvg} from './icons';
 import {REPO_URL} from './correction';
+import type {Music} from '../audio/music';
 
 /** The viewpoints always in the bar; the others are a tap away in the picker, and join the bar while chosen. */
 const FEATURED: VpId[] = ['europe', 'china', 'humanity'];
@@ -72,7 +73,7 @@ export class TopBar {
     private data: AppData,
     private store: Store,
     private onLang: () => void,
-    private music: {enabled: boolean; toggle(): boolean},
+    private music: Music,
   ) {
     const chips = ALL_VPS.map(id => {
       const vp = data.vp[id];
@@ -164,7 +165,9 @@ export class TopBar {
       'aria-label': t('Toggle globe view'),
       onclick: () => store.set({globe: !store.state.globe}),
     });
-    this.musicBtn = h('button.tool.tool-music', {type: 'button', onclick: () => this.toggleMusic()});
+    // The music's button opens its settings (on or off, how loud, which themes, every tradition); its icon
+    // says whether the music is playing. The M key turns it on and off.
+    this.musicBtn = h('button.tool', {type: 'button', onclick: () => this.togglePanel('settings')});
     this.showMusic();
     this.note = h('div.cartouche-note.panel');
     const about = h('button.tool', {type: 'button', title: t('About this atlas'), 'aria-label': t('About'), onclick: () => this.togglePanel('about'), html: icons.info});
@@ -173,7 +176,6 @@ export class TopBar {
       h('button.tool', {type: 'button', title: t('Search  /'), 'aria-label': t('Search'), onclick: () => store.set({search: true}), html: icons.search}),
       this.globeBtn,
       this.musicBtn,
-      h('button.tool', {type: 'button', title: t('Settings and music'), 'aria-label': t('Settings'), onclick: () => this.togglePanel('settings'), html: icons.settings}),
       h(
         'button.tool.tool-lang',
         {type: 'button', title: getLang() === 'zh' ? 'English' : '中文', 'aria-label': getLang() === 'zh' ? 'Switch to English' : '切换到中文', onclick: () => this.onLang()},
@@ -276,13 +278,12 @@ export class TopBar {
     this.music.toggle();
   }
 
-  /** Show whether the music is on (it can be turned on or off from the settings too). */
+  /** Show whether the music is on. */
   showMusic() {
     const on = this.music.enabled;
     setIcon(this.musicBtn, on ? icons.music : icons.musicOff);
-    this.musicBtn.title = on ? t('Turn the music off  M') : t('Turn the music on  M');
-    this.musicBtn.setAttribute('aria-label', t('Music'));
-    this.musicBtn.setAttribute('aria-pressed', String(on));
+    this.musicBtn.title = on ? t('Music settings (playing)  M') : t('Music settings (off)  M');
+    this.musicBtn.setAttribute('aria-label', t('Music settings'));
   }
 
   private togglePanel(p: 'journeys' | 'discoveries' | 'about' | 'settings') {

@@ -725,12 +725,14 @@ export function createComposer(
         resumePhrase = null;
       }
       // The year has moved out of the piece's era: finish the line under way and take up the new era's music.
-      if (!retiring && nowPiece && !(h.tunes ?? []).some(t => t.id === nowPiece)) {
+      // So is a change of mood (the reader chose the other theme): the new one is bridged in at the phrase's end.
+      const moodChange = !!h.prefer && !!nowTheme && h.prefer !== nowTheme && (h.tunes ?? []).some(t => t.theme === h.prefer);
+      if (!retiring && nowPiece && (moodChange || !(h.tunes ?? []).some(t => t.id === nowPiece))) {
         // Each age's players have at least a phrase of their own (some seconds) before the next take over,
         // however fast the years go by.
         const cut = pending.filter(e => e.time > Math.max(now + 0.05, nowBegan + 6)).find(e => e.cadence);
         if (cut) pending = pending.filter(e => e.time <= cut.time);
-        const next = nowTheme ? (h.tunes ?? []).find(x => x.theme === nowTheme) : undefined;
+        const next = nowTheme && !moodChange ? (h.tunes ?? []).find(x => x.theme === nowTheme) : undefined;
         if (cut && next) {
           tuneIndex = (h.tunes ?? []).indexOf(next);
           themeNow = next.theme ?? null;

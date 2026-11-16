@@ -9,6 +9,7 @@ import {ERAS, formatRange, formatYear, PRESENT} from '../time';
 import type {State, Store} from '../state';
 import type {VpId} from '../types';
 import {h} from './dom';
+import {moodNote, moodSwitch, pickNote} from './music-controls';
 import {icons, livingIcons, naturalIcons} from './icons';
 
 /** What each voice is called in the list of traditions. */
@@ -188,6 +189,8 @@ export class Settings {
   el: HTMLElement;
   private switchBtn: HTMLButtonElement;
   private orchestraBtn: HTMLButtonElement;
+  private mood: {el: HTMLElement; refresh(): void};
+  private moodNoteEl: HTMLElement;
   private arrangedEls: HTMLElement[] = [];
   private volume: HTMLInputElement;
   private nowEl: HTMLElement;
@@ -216,6 +219,8 @@ export class Settings {
       oninput: (e: Event) => music.setVolume(Number((e.target as HTMLInputElement).value)),
     });
     this.nowEl = h('p.sound-now');
+    this.mood = moodSwitch(music);
+    this.moodNoteEl = h('p.sound-controls-note');
     const sc = data.soundscapes;
     this.el = h(
       'div.modal-overlay',
@@ -230,12 +235,20 @@ export class Settings {
           'p.modal-lede',
           t('The music is made in your browser as you listen. It follows the viewpoint and the year, and when you follow a journey, the land the traveller is passing through. Each tradition is evoked from its scales, instruments and manner of playing; none is a reconstruction of what was heard.'),
         ),
-        h('div.sound-controls', h('label.sound-switch', this.switchBtn, h('span', t('Music'))), h('label.sound-volume', h('span', t('Volume')), this.volume)),
+        // The switches and the themes in one row, the volume in its own, and a line on what the themes do.
         h(
-          'div.sound-arrangement',
-          h('label.sound-switch', this.orchestraBtn, h('span', t('Orchestral arrangement'))),
-          h('p.sound-arrangement-note', t('Strings, harp, horns and timpani beneath the instruments of the time, as a game\'s score sets a folk tune: for the feeling of a place and an age, not its exact sound. Turn it off to hear only the historical instruments.')),
+          'div.sound-controls',
+          h('label.sound-switch', this.switchBtn, h('span', t('Music'))),
+          h(
+            'label.sound-switch',
+            {title: t('Strings, harp, horns and timpani beneath the instruments of the time, as a game\'s score sets a folk tune: for the feeling of a place and an age, not its exact sound. Turn it off to hear only the historical instruments.')},
+            this.orchestraBtn,
+            h('span', t('Orchestral arrangement')),
+          ),
+          h('div.sound-mood-row', h('span.sound-mood-label', t('Themes')), this.mood.el),
         ),
+        h('label.sound-volume', h('span', t('Volume')), this.volume),
+        this.moodNoteEl,
         this.nowEl,
         h('h3.card-h', t('The traditions')),
         h('ul.sound-list', sc.traditions.map(x => this.row(x))),
@@ -434,13 +447,16 @@ export class Settings {
     this.switchBtn.setAttribute('aria-checked', String(m.enabled));
     this.switchBtn.classList.toggle('on', m.enabled);
     this.volume.disabled = !m.enabled;
+    if (document.activeElement !== this.volume) this.volume.value = String(m.volume);
     this.orchestraBtn.setAttribute('aria-checked', String(m.orchestral));
     this.orchestraBtn.classList.toggle('on', m.orchestral);
     for (const el of this.arrangedEls) el.hidden = !m.orchestral;
+    this.mood.refresh();
+    this.moodNoteEl.textContent = moodNote(m);
     const now = m.now();
     const playing = now ? this.data.soundscapes.traditions.find(x => x.id === now.tradition) : undefined;
     if (!now || !playing) {
-      this.nowEl.replaceChildren(t('The music is off. Turn it on here, with the note in the top bar, or with the M key.'));
+      this.nowEl.replaceChildren(t('The music is off. Turn it on here, or with the M key.'));
     } else {
       this.nowEl.replaceChildren(
         h('span.sound-now-label', t('Now playing')),
@@ -450,6 +466,8 @@ export class Settings {
         h('span.sound-why', ` · ${now.why}`),
         ...(m.audition ? [h('button.linkish.sound-follow', {type: 'button', onclick: () => m.listen(null)}, t('Follow the map again'))] : []),
       );
+      const pick = m.audition ? null : pickNote(this.data, m);
+      if (pick) this.nowEl.append(' ', pick);
     }
     this.markEras();
     for (const [id, r] of this.rows) {
@@ -475,12 +493,16 @@ export class Settings {
    * describe that arrangement beneath it.
    */
   private markEras() {
-    const now = this.music.now();
+    const m = this.music;
+    const now = m.now();
     const year = this.store.state.year;
     const within = (u: Tune, y: number) => (u.from ?? -Infinity) <= y && y < (u.until ?? Infinity);
     for (const [id, d] of this.details) {
       const playing = now?.tradition === id ? d.tunes.find(u => u.id === now.piece) : undefined;
-      const tu = playing ?? d.tunes.find(u => within(u, year)) ?? d.tunes[0];
+      // Not playing: the arrangement the map would play now, in the theme the reader keeps to (if any).
+      const themes = this.data.soundscapes.traditions.find(x => x.id === id)?.themes;
+      const keep = m.themeFor(id, themes);
+      const tu = playing ?? d.tunes.find(u => within(u, year) && (!keep || u.theme === keep)) ?? d.tunes.find(u => within(u, year)) ?? d.tunes[0];
       for (const c of d.cols) for (const cell of c.cells) cell.classList.toggle('here', within(tu, c.at));
       d.show(tu);
     }
