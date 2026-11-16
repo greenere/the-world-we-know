@@ -1,0 +1,40 @@
+{
+ "id": "confucius-hymn",
+ "name": "Sacrificial Hymn to Confucius",
+ "source": "van-aalst",
+ "pages": "pp. 27-31 (archive.org chinesemusic00vana, leaves n38-n42)",
+ "about": "The hymn sung at the Confucian temple, as fixed by decree in 1743 and printed by J. A. van Aalst in 1884: six stanzas of eight four-syllable lines, one note to each syllable. Each syllable is written as character, gongche pitch name, and the note on Van Aalst's staff (the gongche gives the pitch, the staff its octave).",
+ "performance": "Van Aalst, p. 33: the large bell sounds the first note of each verse; the bell-chime gives one sound at each word and guides the voices; after it the zithers give their note, followed by all the other instruments, and the stone-chime is struck last 'to receive the sound and transmit it' to the next note. At the end of a verse a drum is beaten three times and answered by another drum. When the hymn is finished the tiger-box is struck once and scraped. Here a verse is taken as a stanza for the drums and as a line for the large bell.",
+ "stanzas": [
+  {"title": "迎神 Receiving the Spirit", "lines": [
+   "大工A4 哉合C5 孔四D5 子乙E5", "先工A4 覺尺G4 先乙E5 知四D5",
+   "與合C5 天四D5 地尺G4 參乙E5", "萬工A4 世尺G4 之乙E5 師乙E5",
+   "祥乙E5 徵尺G4 麟合C5 紱四D5", "韻合C5 答尺G4 金四D5 絲尺G4",
+   "日合C5 月四D5 既工A4 揭乙E5", "乾合C5 坤四D5 清合C5 怡工A4"]},
+  {"title": "初獻 First presentation", "lines": [
+   "予工A4 懷合C5 明四D5 德乙E5", "玉尺G5 振合C5 金工A5 聲尺G5",
+   "生四D5 民合C5 未尺G5 有乙E5", "展合C5 也四D5 大乙E5 成四D5",
+   "俎乙E5 豆合C5 千工A5 古乙E5", "春四D5 秋四D5 上尺G5 丁四D5",
+   "清工A4 酒尺G4 既合C5 載工A4", "其合C5 香四D5 始合C5 升工A4"]},
+  {"title": "亞獻 Second presentation", "lines": [
+   "式工A4 禮合C5 莫四D5 愆乙E5", "升尺G5 堂乙E5 再合C5 獻乙E5",
+   "響尺G5 協乙E5 鼗合C5 鏞四D5", "誠乙E5 孚尺G5 罍乙E5 獻工A5",
+   "肅乙E5 肅乙E5 雍四D5 雍四D5", "譽合C5 髦工A5 斯尺G5 彥工A5",
+   "禮尺G5 陶乙E5 樂合C5 淑四D5", "相乙E5 觀四D5 而合C5 善工A4"]},
+  {"title": "終獻 Last presentation", "lines": [
+   "自工A4 古合C5 在四D5 昔乙E5", "先尺G5 民乙E5 有合C5 作四D5",
+   "皮乙E5 弁乙E5 祭合C5 菜工A5", "於尺G5 論乙E5 思四D5 樂合C5",
+   "惟乙E5 天尺G5 牖工A5 民乙E5", "惟合C5 聖尺G5 時合C5 若四D5",
+   "彝乙E5 倫乙E5 攸尺G5 敘工A5", "至尺G5 今乙E5 木合C5 鐸工A5"]},
+  {"title": "徹饌 Removing the offerings", "lines": [
+   "先工A4 師合C5 有四D5 言乙E5", "祭仜A5 則尺G5 受仜A5 福乙E5",
+   "四合C5 海仜A5 黌乙E5 宮尺G5", "疇合C5 敢四D5 不合C5 肅仜A5",
+   "禮乙E5 成尺G5 告仜A5 徹乙E5", "毋乙E5 疏四D5 毋合C5 瀆仜A5",
+   "樂乙E5 所尺G5 自合C5 生仜A5", "中乙E5 原四D5 有合C5 菽工A4"]},
+  {"title": "送神 Escorting the Spirit back", "lines": [
+   "鳧工A4 繹合C5 峨四D5 峨乙E5", "洙尺G5 泗仜A5 洋合C5 洋四D5",
+   "景尺G5 行乙E5 行乙E5 止尺G5", "流合C5 澤四D5 無乙E5 疆四D5",
+   "聿乙E5 昭尺G5 祀合C5 事仜A5", "祀仜A5 事尺G5 孔合C5 明四D5",
+   "化仜A5 我乙E5 蒸仜A5 民尺G5", "育合C5 我四D5 膠合C5 庠工A4"]}
+ ]
+}

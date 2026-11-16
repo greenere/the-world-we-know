@@ -9,6 +9,7 @@
  * The ensemble grows with the known world: one player where little is known, all of them where much is.
  */
 
+import {type MidiPiece, parseMidi} from './midi';
 import type {Hearing, Player} from './music';
 import type {Samples} from './samples';
 import {type VoiceName, Voices} from './voices';
@@ -17,7 +18,10 @@ import {type VoiceName, Voices} from './voices';
 export interface Tune {
   id: string;
   name: string;
-  notes: string;
+  /** Its notes, in the notation below; or else `midi`. */
+  notes?: string;
+  /** A MIDI file under public/audio/ whose tracks are named for the ensemble's members who play them. */
+  midi?: string;
   /** Semitones to move it so its final or tonic falls on the shared tonic, D. */
   transpose?: number;
   /** Seconds per beat (a quarter note). */
@@ -43,8 +47,12 @@ export interface Member {
   sample?: string;
   /** The synthesised voice of the same family, until then (or for good). */
   voice: VoiceName;
-  /** `melody` takes the tune, `accompany` shadows it, `accent` marks the phrases (bells). */
-  role: 'melody' | 'accompany' | 'both' | 'accent';
+  /** `melody` takes the tune, `accompany` shadows it, `accent` marks the phrases (bells); a `part` plays only
+   * its own track in a MIDI piece. */
+  role: 'melody' | 'accompany' | 'both' | 'accent' | 'part';
+  /** A drum rather than a pitched instrument: D low, B a deeper drum, t rim, k clapper, b wood block,
+   * c cymbal, s a scraper. */
+  drum?: string;
   /** Plucked notes held by trembling the string, as on the pipa. */
   tremolo?: boolean;
   /** Octaves to move it by. */
@@ -161,6 +169,30 @@ function skeleton(notes: Note[], pickup: number): Note[] {
   return out;
 }
 
+/** MIDI pieces, loaded once and shared by every player. */
+const midiPieces = new Map<string, MidiPiece | null>();
+const midiLoading = new Set<string>();
+
+function midiPiece(samples: Samples, path: string): MidiPiece | null | undefined {
+  if (midiPieces.has(path)) return midiPieces.get(path);
+  if (!midiLoading.has(path)) {
+    midiLoading.add(path);
+    void samples.file(path).then(b => {
+      try {
+        midiPieces.set(path, b ? parseMidi(b) : null);
+      } catch {
+        midiPieces.set(path, null);
+      }
+    });
+  }
+  return undefined;
+}
+
+/** Start loading a tradition's MIDI pieces, so the first is ready when it is wanted. */
+export function preloadMidi(samples: Samples, tunes: Tune[] | undefined) {
+  for (const t of tunes ?? []) if (t.midi) midiPiece(samples, t.midi);
+}
+
 export function createComposer(
   ctx: BaseAudioContext,
   dest: {dry: AudioNode; send: AudioNode},
@@ -177,7 +209,7 @@ export function createComposer(
   let sectionEnd = start;
   let section = 0;
   let tuneIndex = 0;
-  let piece: string | null = null;
+  let nowPiece: string | null = null;
   let still = true;
   let retiring = false;
   let own: Hearing | null = null;
@@ -188,6 +220,7 @@ export function createComposer(
 
   /** Sound one note on a member of the ensemble: its samples once loaded, its synthesised voice until then. */
   const sound = (m: Member, cents: number, time: number, dur: number, strength: number) => {
+    if (m.drum) return drum(m.drum, time, strength * (m.gain ?? 1));
     const c = cents + 1200 * (m.octave ?? 0);
     const hz = hzOf(c);
     const level = strength * (m.gain ?? 1);
@@ -221,15 +254,39 @@ export function createComposer(
       to.setValueAtTime(peak, time);
       to.setTargetAtTime(0, time + 0.003, tau);
     };
-    if (kind === 'D') {
-      // A frame drum's low stroke: a falling thump.
+    if (kind === 'D' || kind === 'B') {
+      // A drum's low stroke: a falling thump; B is a great barrel drum, deeper and longer.
+      const big = kind === 'B';
       const o = ctx.createOscillator();
-      o.frequency.setValueAtTime(110, time);
-      o.frequency.exponentialRampToValueAtTime(58, time + 0.18);
+      o.frequency.setValueAtTime(big ? 80 : 110, time);
+      o.frequency.exponentialRampToValueAtTime(big ? 38 : 58, time + (big ? 0.4 : 0.18));
       o.connect(g);
-      decay(g.gain, 0.55 * strength, 0.09);
+      decay(g.gain, (big ? 0.75 : 0.55) * strength, big ? 0.28 : 0.09);
       o.start(time);
-      o.stop(time + 0.6);
+      o.stop(time + (big ? 1.6 : 0.6));
+    } else if (kind === 's') {
+      // A scraper: a stick drawn along a row of wooden teeth (the tiger-box's back).
+      for (let k = 0; k < 18; k++) {
+        const tt = time + 0.25 + k * 0.055;
+        const o = ctx.createOscillator();
+        o.frequency.value = 700 + 40 * (k % 3);
+        const og = ctx.createGain();
+        og.gain.setValueAtTime(0.12 * strength, tt);
+        og.gain.setTargetAtTime(0, tt, 0.01);
+        o.connect(og).connect(g);
+        o.start(tt);
+        o.stop(tt + 0.06);
+      }
+      // And the one stroke on its head before.
+      const o = ctx.createOscillator();
+      o.frequency.value = 520;
+      const og = ctx.createGain();
+      og.gain.setValueAtTime(0.25 * strength, time);
+      og.gain.setTargetAtTime(0, time, 0.03);
+      o.connect(og).connect(g);
+      o.start(time);
+      o.stop(time + 0.2);
+      g.gain.value = 1;
     } else if (kind === 'b') {
       // A wood block: two hollow partials, gone at once.
       for (const [f, l] of [[880, 1], [1330, 0.5]] as const) {
@@ -296,7 +353,7 @@ export function createComposer(
 
   /** The members playing now: as many as the known world allows, the melody players first. */
   const players = (h: Hearing) => {
-    const all = h.ensemble ?? [];
+    const all = (h.ensemble ?? []).filter(m => m.role !== 'part');
     const n = Math.max(1, Math.round(1 + h.known * 1.6 * (all.length - 1)));
     return all.slice(0, n);
   };
@@ -305,7 +362,7 @@ export function createComposer(
 
   /** A statement of a piece: solo, or the ensemble with variation. */
   const statement = (h: Hearing, tune: Tune, t0: number, ensemble: boolean, v: number): number => {
-    const notes = parseNotes(tune.notes, tune.transpose);
+    const notes = parseNotes(tune.notes ?? '', tune.transpose);
     const ladder = ladderOf(notes, h.style.scale);
     const ms = players(h);
     const mel = melodists(ms);
@@ -379,9 +436,54 @@ export function createComposer(
     return t;
   };
 
+  /** A MIDI piece: each track played by the member of its name, from the start or (standing still) only to
+   * its first cadence, softly. */
+  const playMidi = (h: Hearing, piece: MidiPiece, t0: number, softly: boolean): number => {
+    const stop = softly ? piece.markers.find(m => m.text === 'cadence')?.time ?? piece.length : piece.length;
+    const members = new Map((h.ensemble ?? []).map(m => [m.id, m]));
+    for (const tr of piece.tracks) {
+      const m = members.get(tr.name);
+      if (!m) continue;
+      for (const n of tr.notes) {
+        if (n.time >= stop) break;
+        const time = t0 + n.time;
+        const cents = (n.pitch - TONIC_MIDI) * 100 - 1200 * (m.octave ?? 0);
+        const s = (n.velocity / 127) * (softly ? 0.6 : 1);
+        at(time, () => sound(m, cents, time, n.dur, s));
+      }
+    }
+    for (const mk of piece.markers) if (mk.time <= stop) at(t0 + mk.time, () => {}, true);
+    return t0 + stop + 1;
+  };
+  let midiStep = 0;
+
   const plan = (h: Hearing, t0: number): number => {
     const tunes = h.tunes ?? [];
     const motifs = (h.motifs ?? []).map(m => parseNotes(m, 0));
+    const tune = tunes.length ? tunes[tuneIndex % tunes.length] : undefined;
+    if (tune?.midi) {
+      // A MIDI piece is played whole, then the players improvise before the next piece.
+      const piece = midiPiece(samples, tune.midi);
+      // Still loading (a few kilobytes): wait a moment rather than start something else.
+      if (piece === undefined) return t0 + 0.4;
+      if (piece === null) {
+        tuneIndex++;
+        return t0 + 0.5;
+      }
+      if (!h.moving) {
+        nowPiece = tune.id;
+        return playMidi(h, piece, t0, true) + 6 + rand() * 6;
+      }
+      if (midiStep === 0) {
+        midiStep = 1;
+        nowPiece = tune.id;
+        return playMidi(h, piece, t0, false);
+      }
+      midiStep = 0;
+      tuneIndex++;
+      nowPiece = null;
+      return motifs.length ? interlude(h, motifs, t0, h.style.beat) + h.style.beat * 2 : t0 + 2;
+    }
     if (!h.moving) {
       // Time stands still: one phrase on one instrument, softly, then quiet.
       const lead = melodists(players(h))[0];
@@ -390,15 +492,15 @@ export function createComposer(
       let beat = h.style.beat;
       if (tunes.length && rand() < 0.6) {
         const tune = tunes[tuneIndex % tunes.length];
-        const notes = parseNotes(tune.notes, tune.transpose);
+        const notes = parseNotes(tune.notes ?? '', tune.transpose);
         const stop = notes.findIndex(n => n.end);
         phrase = notes.slice(0, stop + 1);
         beat = tune.beat * 1.15;
-        piece = tune.id;
+        nowPiece = tune.id;
       } else if (motifs.length) {
         phrase = pick(motifs).map(n => ({...n}));
         phrase[phrase.length - 1].end = true;
-        piece = null;
+        nowPiece = null;
       }
       const end = line(phrase, lead, t0, beat, 0.55);
       return end + 6 + rand() * 6;
@@ -406,8 +508,8 @@ export function createComposer(
     // Moving: a piece stated, then varied by the ensemble, then improvised on, then varied again.
     if (tunes.length) {
       const tune = tunes[tuneIndex % tunes.length];
-      piece = tune.id;
-      const notes = parseNotes(tune.notes, tune.transpose);
+      nowPiece = tune.id;
+      const notes = parseNotes(tune.notes ?? '', tune.transpose);
       const step = section % 4;
       section++;
       if (step === 3) tuneIndex++;
@@ -428,7 +530,7 @@ export function createComposer(
       }
       return statement(h, tune, t0, true, 0.7) + tune.beat * 2;
     }
-    piece = null;
+    nowPiece = null;
     section++;
     return interlude(h, motifs, t0, h.style.beat) + h.style.beat * (1 + rand() * 2);
   };
@@ -440,6 +542,26 @@ export function createComposer(
       if (!retiring || !own) own = heard;
       const h = retiring ? {...own, known: heard.known, moving: heard.moving} : heard;
       const now = ctx.currentTime;
+      // A piece chosen to hear starts now, not at the next line's end.
+      const chosen = heard.immediate && h.tunes?.length === 1 ? h.tunes[0].id : null;
+      if (!retiring && chosen && nowPiece !== chosen) {
+        pending = pending.filter(e => e.time <= now + 0.05);
+        sectionEnd = now + 0.4;
+        nowPiece = null;
+        tuneIndex = 0;
+        section = 0;
+        midiStep = 0;
+      }
+      // The year has moved out of the piece's era: finish the line under way and take up the new era's music.
+      if (!retiring && nowPiece && !(h.tunes ?? []).some(t => t.id === nowPiece)) {
+        const cut = pending.filter(e => e.time > now + 0.05).find(e => e.cadence);
+        if (cut) pending = pending.filter(e => e.time <= cut.time);
+        sectionEnd = cut ? cut.time + 1.2 : Math.min(sectionEnd, now + 0.5);
+        nowPiece = null;
+        tuneIndex = 0;
+        section = 0;
+        midiStep = 0;
+      }
       // A change between running and standing still is heard at the next phrase's end, not after the piece.
       if (still !== !h.moving) {
         still = !h.moving;
@@ -466,6 +588,6 @@ export function createComposer(
       if (cut) pending = pending.filter(e => e.time <= cut.time);
     },
     done: () => retiring && pending.length === 0,
-    piece: () => piece,
+    piece: () => nowPiece,
   };
 }

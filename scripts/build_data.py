@@ -1613,9 +1613,9 @@ def load_living(sources, viewpoints, journey_ids):
     return out
 
 
-SOUND_VOICES = ("pluck", "lute", "bow", "flute", "reed", "pipe", "voice", "bell", "metal", "tine", "keys")
+SOUND_VOICES = ("pluck", "lute", "bow", "flute", "reed", "pipe", "voice", "bell", "stone", "metal", "tine", "keys", "gong")
 SOUND_PATTERNS = ("wander", "alap", "ostinato")
-SOUND_ROLES = ("melody", "accompany", "both", "accent")
+SOUND_ROLES = ("melody", "accompany", "both", "accent", "part")
 NOTE_RE = re.compile(r"^([A-G][#b]?-?\d|r):[\d.]+/?$")
 
 
@@ -1676,13 +1676,18 @@ def load_soundscapes(sources, vp_ids, regions_by_id, music_ids, city_ids) -> dic
         tune_ids = set()
         for tune in x.get("tunes", []):
             w = f"{where} tune {tune.get('id')!r}"
-            for key in ("id", "name", "notes", "beat", "meter", "source", "confidence"):
+            for key in ("id", "name", "beat", "meter", "source", "confidence"):
                 if key not in tune:
                     fail(f"{w}: missing {key}")
+            if ("notes" in tune) == ("midi" in tune):
+                fail(f"{w}: needs its notes or a midi file, not both")
+            if "midi" in tune and not (ROOT / "public" / "audio" / tune["midi"]).exists():
+                fail(f"{w}: no file public/audio/{tune['midi']} (run scripts/make_midi.py)")
             if tune.get("id") in tune_ids:
                 fail(f"{w}: duplicate id")
             tune_ids.add(tune.get("id"))
-            check_notes(w, tune.get("notes", ""))
+            if "notes" in tune:
+                check_notes(w, tune["notes"])
             check_ref(w, tune.get("source"), tune.get("confidence"), sources)
         for r in x.get("recordings", []):
             for key in ("file", "name", "source", "license"):

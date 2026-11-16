@@ -115,6 +115,7 @@ The map is drawn with [MapLibre GL](https://maplibre.org/) and [deck.gl](https:/
 | `landmark-paths.json` | Courses of walls, canals and canyons, and the ages of those rebuilt over time |
 | `inventions.json` | Instruments and ideas: when, where, who, what they changed, and the city they were made in |
 | `soundscapes.json` | The music: its traditions (scale, voices, manner, the instruments on the Music shelf it is played on), which one each viewpoint hears in which years, and whose music is heard in each land. A composed tradition also has an ensemble of sampled instruments and its surviving pieces, in a plain `pitch:beats` notation with sources |
+| `scores/` | Transcriptions of the music's pieces (Van Aalst's temple hymn, march and songs, Barrow's Mo Li Hua), turned into MIDI files by `scripts/make_midi.py` |
 | `music.json` | Instruments and ways of keeping music: origin and dated arrivals, in the same form as `living.json` |
 | `living.json` | Plants and animals: origin, which viewpoints knew them from the start, and dated arrivals and encounters |
 | `names.csv` | What each viewpoint called each place, and when |

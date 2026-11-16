@@ -11,6 +11,7 @@ the notes between. Writes public/audio/samples.json, which the app reads to know
 import json
 import sys
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -32,11 +33,32 @@ INSTRUMENTS = {
     "shamisen": {"patch": "shamisen", "low": 50, "high": 86, "held": False, "gain": 0.8},
     "shakuhachi": {"patch": "shakuhachi", "low": 60, "high": 93, "held": True, "gain": 0.75},
     "fiddle": {"patch": "fiddle", "low": 55, "high": 88, "held": True, "gain": 0.6},
+    # The Confucian temple: the six singers (a choir sings "ah"), the di flute, and the sheng mouth organ
+    # (the reed organ is its nearest relative in the set: free reeds, steady and bright).
+    "choir": {"patch": "choir_aahs", "low": 45, "high": 76, "held": True, "gain": 0.7},
+    "dizi": {"patch": "flute", "low": 60, "high": 93, "held": True, "gain": 0.55},
+    "sheng": {"patch": "reed_organ", "low": 55, "high": 84, "held": True, "gain": 0.4},
+    # The suona, the "shrieking clarionet" of weddings and funerals: the shehnai is its cousin in the set.
+    "suona": {"patch": "shanai", "low": 58, "high": 88, "held": True, "gain": 0.5},
 }
 
 
 def name(midi: int) -> str:
     return f"{NAMES[midi % 12]}{midi // 12 - 1}"
+
+
+def fetch(url: str, tries: int = 6) -> bytes:
+    """Download, waiting and trying again when the host is busy."""
+    for k in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; sample-fetch/0.1)"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code < 500 or k == tries - 1:
+                raise
+            time.sleep(2 * (k + 1))
+    raise RuntimeError(url)
 
 
 def main() -> int:
@@ -56,9 +78,7 @@ def main() -> int:
             if path.exists() and path.stat().st_size > 0:
                 continue
             url = f"{BASE}/{spec['patch']}-mp3/{name(m)}.mp3"
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; sample-fetch/0.1)"})
-            with urllib.request.urlopen(req, timeout=30) as r:
-                data = r.read()
+            data = fetch(url)
             if not data.startswith((b"ID3", b"\xff\xfb", b"\xff\xf3", b"\xff\xf2")):
                 print(f"  ! {url} is not an mp3", file=sys.stderr)
                 return 1

@@ -9,7 +9,7 @@
  * notes move; while it stands still they thin to a note now and then.
  */
 
-import {createComposer, type Member, type Tune} from './composer';
+import {createComposer, type Member, preloadMidi, type Tune} from './composer';
 import {Samples} from './samples';
 import {SUSTAINED, type VoiceName, Voices} from './voices';
 
@@ -383,6 +383,7 @@ export function createScore(ctx: BaseAudioContext, rand: () => number = Math.ran
     else if (h.ensemble?.length) {
       // Load its instruments; until they arrive each plays its synthesised voice.
       for (const m of h.ensemble) if (m.sample) void samples.load(m.sample);
+      preloadMidi(samples, h.tunes);
       current = createComposer(ctx, {dry, send}, voices, samples, id, at, rand);
     } else current = createPlayer(ctx, {dry, send}, voices, id, at, rand);
     current.out.gain.value = fade ? 0 : 1;
@@ -453,6 +454,8 @@ export class Music {
   volume = 0.8;
   /** A tradition the reader chose to hear, instead of the one the map calls for. */
   audition: string | null = null;
+  /** And, within it, the one piece chosen to hear. */
+  auditionPiece: string | null = null;
   /** Told when the music turns on or off, or another tradition begins. */
   onChange: (() => void) | null = null;
   private ctx: AudioContext | null = null;
@@ -519,9 +522,10 @@ export class Music {
     if (this.master && this.ctx) this.master.gain.setTargetAtTime(this.volume, this.ctx.currentTime, 0.08);
   }
 
-  /** Hear one tradition (turning the music on), or go back to following the map with null. */
-  listen(id: string | null) {
+  /** Hear one tradition, or one of its pieces (turning the music on), or go back to following the map with null. */
+  listen(id: string | null, piece: string | null = null) {
     this.audition = id;
+    this.auditionPiece = id ? piece : null;
     this.immediate = true;
     if (id && !this.enabled) this.toggle(true);
     else this.onChange?.();

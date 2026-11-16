@@ -20,11 +20,15 @@ const VOICE_NAMES: Record<VoiceName, string> = {
   pipe: 'organ',
   voice: 'voice',
   bell: 'bronze bells',
+  stone: 'stone chimes',
   metal: 'bronze keys and gong',
   tine: 'iron tines',
   keys: 'keyboard',
   gong: 'gong',
 };
+
+const PLAY = '<svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M3 1.8v8.4L10 6z" fill="currentColor"/></svg>';
+const STOP = '<svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><rect x="2.5" y="2.5" width="7" height="7" rx="1" fill="currentColor"/></svg>';
 
 /** What the members of a composed tradition's ensemble are called. */
 const MEMBER_NAMES: Record<string, string> = {
@@ -36,6 +40,23 @@ const MEMBER_NAMES: Record<string, string> = {
   pipa: 'pipa',
   huqin: 'huqin',
   bianzhong: 'bronze bells',
+  bells: 'bronze bells',
+  se: 'se',
+  dizi: 'di',
+  sheng: 'sheng',
+  voices: 'singers',
+  bianqing: 'stone chimes',
+  tezhong: 'great bell',
+  drum: 'drums',
+  drum2: 'drums',
+  yu: 'tiger-box',
+  guanzi: 'guanzi',
+  yunluo: 'gong-chimes',
+  clapper: 'clappers',
+  woodblock: 'wood block',
+  suona: 'suona',
+  cymbals: 'cymbals',
+  gong: 'gong',
 };
 
 /**
@@ -48,7 +69,7 @@ export class Settings {
   private volume: HTMLInputElement;
   private nowEl: HTMLElement;
   private rows = new Map<string, {li: HTMLElement; listen: HTMLButtonElement}>();
-  private pieceRows = new Map<string, HTMLElement>();
+  private pieceRows = new Map<string, {li: HTMLElement; play: HTMLButtonElement; tradition: string}>();
 
   constructor(
     private data: AppData,
@@ -96,12 +117,12 @@ export class Settings {
   private row(x: Tradition): HTMLElement {
     const sc = this.data.soundscapes;
     const name = tx.soundscape(x.id, 'name', x.name);
-    const listen = h('button.sound-listen', {type: 'button', onclick: () => this.music.listen(this.music.audition === x.id ? null : x.id)}, t('Listen'));
+    const listen = h('button.sound-listen', {type: 'button', onclick: () => this.music.listen(this.music.audition === x.id && !this.music.auditionPiece ? null : x.id)}, t('Listen'));
     // Who hears it, in the order the list names them.
     const vps = [...new Set(sc.viewpoints.filter(r => r.tradition === x.id).map(r => r.vp))] as VpId[];
     const heard = vps.length ? vps.map(v => tx.viewpoint(v, 'name', this.data.vp[v].name)).join(t(', ')) : t('Everyone else, and the sea');
     const played = x.ensemble
-      ? x.ensemble.members.map(m => t(MEMBER_NAMES[m.id] ?? m.id)).join(t(', '))
+      ? [...new Set(x.ensemble.members.map(m => t(MEMBER_NAMES[m.id] ?? m.id)))].join(t(', '))
       : [...new Set(x.voices.map(v => v.voice))].map(v => t(VOICE_NAMES[v])).join(t(', '));
     const s = this.store.state;
     const instruments = instrumentsOf(x).filter(id => this.data.livingById.has(id));
@@ -135,14 +156,27 @@ export class Settings {
         ? h(
             'ul.sound-pieces',
             x.tunes.map(tu => {
+              const name = tx.tune(tu.id, 'name', tu.name);
+              const play = h('button.sound-play', {
+                type: 'button',
+                'aria-label': t('Play {name}', {name}),
+                title: t('Play {name}', {name}),
+                onclick: () => this.music.listen(this.music.auditionPiece === tu.id ? null : x.id, this.music.auditionPiece === tu.id ? null : tu.id),
+                html: PLAY,
+              });
               const li = h(
                 'li',
-                h('strong', tx.tune(tu.id, 'name', tu.name)),
-                tu.from !== undefined ? h('span.sound-piece-when', ` · ${t('from {year}', {year: formatYear(tu.from)})}`) : null,
+                play,
+                h('strong', name),
+                tu.from !== undefined
+                  ? h('span.sound-piece-when', ` · ${t('from {year}', {year: formatYear(tu.from)})}`)
+                  : tu.until !== undefined
+                    ? h('span.sound-piece-when', ` · ${t('until {year}', {year: formatYear(tu.until)})}`)
+                    : null,
                 tu.about ? h('span.sound-piece-about', ` ${tx.tune(tu.id, 'about', tu.about)}`) : null,
                 h('span.sound-piece-src', ` ${t('Notes:')} ${this.data.sources[tu.source ?? '']?.citation ?? tu.source}${tu.credit ? `. ${tu.credit}` : ''}`),
               );
-              this.pieceRows.set(tu.id, li);
+              this.pieceRows.set(tu.id, {li, play, tradition: x.id});
               return li;
             }),
           )
@@ -185,10 +219,19 @@ export class Settings {
     for (const [id, r] of this.rows) {
       const on = !!now && now.tradition === id;
       r.li.classList.toggle('playing', on);
-      r.listen.textContent = m.audition === id ? t('Stop') : on ? t('Playing') : t('Listen');
-      r.listen.classList.toggle('active', m.audition === id);
+      const chosen = m.audition === id && !m.auditionPiece;
+      r.listen.textContent = chosen ? t('Stop') : on ? t('Playing') : t('Listen');
+      r.listen.classList.toggle('active', chosen);
     }
-    for (const [id, li] of this.pieceRows) li.classList.toggle('playing', !!now && now.piece === id);
+    for (const [id, r] of this.pieceRows) {
+      const chosen = m.audition === r.tradition && m.auditionPiece === id;
+      r.li.classList.toggle('playing', !!now && now.tradition === r.tradition && now.piece === id);
+      r.play.classList.toggle('active', chosen);
+      r.play.innerHTML = chosen ? STOP : PLAY;
+      const name = r.li.querySelector('strong')?.textContent ?? id;
+      r.play.title = chosen ? t('Stop') : t('Play {name}', {name});
+      r.play.setAttribute('aria-label', r.play.title);
+    }
   }
 
   update(s: State) {

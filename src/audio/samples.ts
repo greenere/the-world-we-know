@@ -93,6 +93,15 @@ export class Samples {
     return true;
   }
 
+  /** Fetch a file served beside the samples (a MIDI piece), or null. */
+  async file(path: string): Promise<ArrayBuffer | null> {
+    try {
+      return await this.fetcher(audioUrl(path));
+    } catch {
+      return null;
+    }
+  }
+
   /** Decode a whole recording (for traditions heard from a recording rather than composed). */
   async recording(path: string): Promise<AudioBuffer | null> {
     try {

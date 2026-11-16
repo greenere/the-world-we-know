@@ -1,5 +1,5 @@
 {
- "_about": "The atlas's music. Each tradition is a way of playing, built in the browser from its scale, voices and manner: an evocation, not a reconstruction. `voices` names who plays it; a voice tied to an `instrument` on the Music shelf (data/music.json) joins only once the viewpoint knows that instrument. `viewpoints` says which tradition a viewpoint hears in which years; `lands` says whose music is heard in a region, for a traveller passing through it. Scales are in cents above the shared tonic, D. A tradition with an `ensemble` is composed: its `tunes` (notes as pitch:beats, / after a phrase, moved by `transpose` semitones onto D) are stated, varied and improvised on by sampled instruments (public/audio, from scripts/fetch_samples.py); one with `recordings` plays those instead.",
+ "_about": "The atlas's music. Each tradition is a way of playing, built in the browser from its scale, voices and manner: an evocation, not a reconstruction. `voices` names who plays it; a voice tied to an `instrument` on the Music shelf (data/music.json) joins only once the viewpoint knows that instrument. `viewpoints` says which tradition a viewpoint hears in which years; `lands` says whose music is heard in a region, for a traveller passing through it. Scales are in cents above the shared tonic, D. A tradition with an `ensemble` is composed: its `tunes` (notes as pitch:beats, / after a phrase, moved by `transpose` semitones onto D) are stated, varied and improvised on by sampled instruments (public/audio, from scripts/fetch_samples.py); one with `recordings` plays those instead. Pieces in data/scores/ are turned into MIDI by scripts/make_midi.py; a MIDI track plays on the ensemble member of its name (role `part` for members heard only there).",
  "traditions": [
   {
    "id": "greek",
@@ -355,7 +355,7 @@
   {
    "id": "china",
    "name": "The five notes",
-   "summary": "Chinese music on the five notes gong, shang, jue, zhi and yu, tuned by fifths: the seven-stringed qin of scholars, the end-blown xiao, the bronze bells of the early courts, and later the pipa from the west and the fiddle from the north. Before the oldest tune here, the players improvise on idiomatic phrases written for this atlas.",
+   "summary": "Chinese music on the five notes gong, shang, jue, zhi and yu, heard differently in each age: the bells, stones and singers of the temple's ritual music, then the sheng, flutes and gong-chimes of court processions, the pipa and fiddle of teahouse songs, and the suona and gongs of the street bands. Between pieces the qin and the xiao improvise.",
    "scales": [
     {
      "cents": [
@@ -393,7 +393,7 @@
    "leaps": 0.25,
    "ornament": 0.12,
    "glide": true,
-   "drone": 0.45,
+   "drone": 0.2,
    "places": [
     "changan",
     "luoyang",
@@ -434,11 +434,114 @@
       "gain": 0.85
      },
      {
-      "id": "bianzhong",
+      "id": "bells",
       "voice": "bell",
       "role": "accent",
       "instrument": "zeng-bells",
       "until": 220
+     },
+     {
+      "id": "bianzhong",
+      "voice": "bell",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "se",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "dizi",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "sheng",
+      "sample": "sheng",
+      "voice": "reed",
+      "role": "part"
+     },
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "bianqing",
+      "voice": "stone",
+      "role": "part"
+     },
+     {
+      "id": "tezhong",
+      "voice": "bell",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "drum": "D",
+      "role": "part"
+     },
+     {
+      "id": "drum2",
+      "voice": "pluck",
+      "drum": "B",
+      "role": "part"
+     },
+     {
+      "id": "yu",
+      "voice": "pluck",
+      "drum": "s",
+      "role": "part"
+     },
+     {
+      "id": "guanzi",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "yunluo",
+      "voice": "metal",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "clapper",
+      "voice": "pluck",
+      "drum": "k",
+      "role": "part"
+     },
+     {
+      "id": "woodblock",
+      "voice": "pluck",
+      "drum": "b",
+      "role": "part"
+     },
+     {
+      "id": "suona",
+      "sample": "suona",
+      "voice": "reed",
+      "role": "part"
+     },
+     {
+      "id": "cymbals",
+      "voice": "pluck",
+      "drum": "c",
+      "role": "part"
+     },
+     {
+      "id": "gong",
+      "voice": "gong",
+      "role": "part",
+      "gain": 0.8
      }
     ],
     "percussion": {
@@ -458,13 +561,54 @@
    },
    "tunes": [
     {
+     "id": "confucius-hymn",
+     "name": "Sacrificial Hymn to Confucius",
+     "about": "The hymn of the Confucian temple, in six stanzas, one note to each syllable, as fixed in 1743 and printed by Van Aalst in 1884, played as he describes: the bell-chime gives each note, the zithers answer, flutes, sheng and six singers take it up, and the stone-chime closes it. Its manner, though not this melody, is that of the ancient ritual music, yayue.",
+     "midi": "midi/confucius-hymn.mid",
+     "score": "confucius-hymn",
+     "beat": 2.6,
+     "meter": 4,
+     "source": "van-aalst",
+     "confidence": "high",
+     "credit": "Transcribed for this atlas from Van Aalst's staff and gongche notation (data/scores/confucius-hymn.json).",
+     "until": 500
+    },
+    {
+     "id": "guiding-march",
+     "name": "The Guiding March",
+     "from": 500,
+     "until": 1400,
+     "about": "The march played as the emperor walked to the Confucian temple, by sheng, flutes, double reeds, gong-chimes, drums and castanets: court music in procession.",
+     "midi": "midi/guiding-march.mid",
+     "score": "guiding-march",
+     "beat": 0.78,
+     "meter": 4,
+     "source": "van-aalst",
+     "confidence": "high",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/guiding-march.json)."
+    },
+    {
+     "id": "madame-wang",
+     "name": "Madame Wang",
+     "from": 1400,
+     "until": 1800,
+     "about": "A popular song of Peking: a lovesick girl fends off her neighbour's remedies, verse after verse. Played as in a teahouse, on pipa, huqin and di, with clapper and wood block.",
+     "midi": "midi/madame-wang.mid",
+     "score": "madame-wang",
+     "beat": 0.46,
+     "meter": 2,
+     "source": "van-aalst",
+     "confidence": "high",
+     "credit": "Transcribed for this atlas from Van Aalst's staff (data/scores/madame-wang.json)."
+    },
+    {
      "id": "molihua",
      "name": "Mo Li Hua (Jasmine Flower)",
-     "about": "A song of the lower Yangzi, sung by the 1790s, when John Barrow heard it with the Macartney embassy and printed it in his Travels in China (1804): the first Chinese melody many in Europe heard.",
-     "from": 1700,
-     "notes": "E4:1 E4:0.5 G4:0.5 A4:0.5 C5:0.5 C5:0.5 A4:0.5 | G4:1 G4:0.5 A4:0.5 G4:1 / r:1 | E4:1 E4:0.5 G4:0.5 A4:0.5 C5:0.5 C5:0.5 A4:0.5 | G4:1 G4:0.5 A4:0.5 G4:1 / r:1 | G4:1 G4:1 G4:1 E4:0.5 G4:0.5 | A4:1 A4:1 G4:2 / | E4:1 D4:0.5 E4:0.5 G4:1 E4:0.5 D4:0.5 | C4:1 C4:0.5 D4:0.5 C4:2 / | E4:0.5 D4:0.5 C4:0.5 E4:0.5 D4:1.5 E4:0.5 | G4:1 A4:0.5 C5:0.5 G4:2 / | D4:1 E4:0.5 G4:0.5 D4:0.5 E4:0.5 C4:0.5 A3:0.5 | G3:2 A3:1 C4:1 | D4:1.5 E4:0.5 C4:0.5 D4:0.5 C4:0.5 A3:0.5 | G3:2 /",
-     "transpose": 2,
-     "beat": 0.55,
+     "from": 1800,
+     "about": "The Jiangnan song Barrow heard in the 1790s and printed in 1804, played as a street band of the nineteenth century would at a wedding: suona and sheng, drum, cymbals and gong.",
+     "midi": "midi/molihua.mid",
+     "score": "molihua",
+     "beat": 0.5,
      "meter": 4,
      "source": "barrow-travels",
      "confidence": "medium",

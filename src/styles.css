@@ -4156,7 +4156,36 @@ kbd {
 }
 
 .sound-pieces li {
-  margin: 4px 0;
+  position: relative;
+  margin: 6px 0;
+  padding-left: 30px;
+}
+
+/* Each piece's own play button, in the margin beside its name. */
+.sound-play {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid var(--rule-2);
+  color: var(--ink-2);
+  padding-left: 1px;
+}
+
+.sound-play:hover,
+.sound-play.active {
+  color: #6e3e5c;
+  border-color: #6e3e5c;
+  background: color-mix(in srgb, #6e3e5c 8%, transparent);
+}
+
+.sound-play.active {
+  padding-left: 0;
 }
 
 .sound-pieces strong {

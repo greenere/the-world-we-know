@@ -4,7 +4,7 @@
  * a keyboard. None is a copy of a real instrument; each is the family it belongs to, drawn in a few strokes.
  */
 
-export type VoiceName = 'pluck' | 'lute' | 'bow' | 'flute' | 'reed' | 'pipe' | 'voice' | 'bell' | 'metal' | 'tine' | 'keys' | 'gong';
+export type VoiceName = 'pluck' | 'lute' | 'bow' | 'flute' | 'reed' | 'pipe' | 'voice' | 'bell' | 'stone' | 'metal' | 'tine' | 'keys' | 'gong';
 
 /** Voices that hold a note, and so can slide into it from the one before. */
 export const SUSTAINED: ReadonlySet<VoiceName> = new Set(['bow', 'flute', 'reed', 'pipe', 'voice']);
@@ -32,6 +32,7 @@ const LEVEL: Record<VoiceName, number> = {
   pipe: 0.18,
   voice: 0.72,
   bell: 0.13,
+  stone: 0.2,
   metal: 0.19,
   tine: 0.21,
   keys: 0.2,
@@ -41,6 +42,8 @@ const LEVEL: Record<VoiceName, number> = {
 /** Partials of the struck voices: [ratio to the fundamental, level, seconds to die away]. */
 const PARTIALS: Partial<Record<VoiceName, [number, number, number][]>> = {
   bell: [[0.5, 0.35, 4.5], [1, 1, 3.4], [1.19, 0.5, 2.4], [1.5, 0.3, 1.8], [2, 0.28, 1.4], [2.74, 0.18, 0.9], [3.76, 0.1, 0.5]],
+  // A stone chime: a dry, glassy ring that is gone in a moment.
+  stone: [[1, 1, 1.1], [2.92, 0.4, 0.45], [5.21, 0.16, 0.18]],
   metal: [[1, 1, 2.4], [2.76, 0.32, 0.8], [5.4, 0.12, 0.35]],
   tine: [[1, 1, 1.7], [4.95, 0.22, 0.3], [8.6, 0.07, 0.1]],
   gong: [[1, 1, 7], [1.47, 0.38, 4.5], [2.09, 0.28, 3.2], [2.56, 0.16, 2.2], [3.24, 0.08, 1.4]],
@@ -74,6 +77,7 @@ export class Voices {
       case 'keys':
         return this.keys(pan, n, level);
       case 'bell':
+      case 'stone':
       case 'metal':
       case 'tine':
       case 'gong':

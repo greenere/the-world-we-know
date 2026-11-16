@@ -135,10 +135,18 @@ class App {
     let tradition: Tradition;
     let vp: VpId | null = s.vps[0];
     let why: string;
+    let year = s.year;
+    let only: string | null = null;
     if (this.music.audition) {
       tradition = sc.traditions.find(x => x.id === this.music.audition) ?? fallbackOf(sc);
       vp = homeOf(sc, tradition.id);
       why = t('Chosen in the settings');
+      // One piece chosen: heard as in its own age, whatever year the map shows.
+      const tune = this.music.auditionPiece ? tradition.tunes?.find(x => x.id === this.music.auditionPiece) : undefined;
+      if (tune) {
+        only = tune.id;
+        year = tune.from ?? (tune.until !== undefined ? tune.until - 1 : s.year);
+      }
     } else if (geo) {
       const key = `${geo.journey.id}|${s.progress.toFixed(2)}`;
       if (key !== this.travellerKey) {
@@ -157,8 +165,12 @@ class App {
       tradition = traditionFor(sc, s.vps[0], s.year);
       why = t('{vp} in {year}', {vp: tx.viewpoint(s.vps[0], 'name', this.data.vp[s.vps[0]].name), year: formatYear(Math.round(s.year))});
     }
-    const {style, voices} = styleFor(tradition, this.data, vp, s.year);
-    return {known: this.knownShare(), moving: s.playing || this.travelTarget !== null, style, voices, ...ensembleFor(tradition, this.data, vp, s.year), why};
+    const {style, voices} = styleFor(tradition, this.data, vp, year);
+    const ens = ensembleFor(tradition, this.data, vp, year);
+    if (only) ens.tunes = (tradition.tunes ?? []).filter(x => x.id === only);
+    // A piece chosen to hear plays as if time were running, so it is heard whole.
+    const moving = s.playing || this.travelTarget !== null || !!only;
+    return {known: only ? Math.max(0.6, this.knownShare()) : this.knownShare(), moving, style, voices, ...ens, why};
   }
   private knownKey = '';
   private known = 0;
