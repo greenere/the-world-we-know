@@ -242,6 +242,8 @@ export function createComposer(
   let nowBegan = 0;
   let nowCadences: number[] = [];
   let resumePhrase: number | null = null;
+  /** The theme playing, or next to play: kept while time runs, turned while it stands still. */
+  let themeNow: string | null = null;
   let nowMidi = false;
 
   const pick = <T>(xs: readonly T[]): T => xs[Math.floor(rand() * xs.length)];
@@ -573,7 +575,17 @@ export function createComposer(
   const plan = (h: Hearing, t0: number): number => {
     const tunes = h.tunes ?? [];
     const motifs = (h.motifs ?? []).map(m => parseNotes(m, 0));
-    const tune = tunes.length ? tunes[tuneIndex % tunes.length] : undefined;
+    let tune = tunes.length ? tunes[tuneIndex % tunes.length] : undefined;
+    const has = (th: string | null | undefined) => !!th && tunes.some(x => x.theme === th);
+    if (midiStep === 1) {
+      // Finishing the verse under way.
+      tune = tunes.find(x => x.id === nowPiece) ?? tune;
+    } else if (tunes.some(x => x.theme)) {
+      // Which theme: the one carried across a change of age; else the one the reader chose to hear; else the
+      // one playing (kept while time runs, turned while it stands still).
+      const want = resumePhrase !== null && has(themeNow) ? themeNow : has(h.prefer) ? h.prefer : has(themeNow) ? themeNow : null;
+      if (want) tune = tunes.find(x => x.theme === want);
+    }
     if (tune?.midi) {
       // A MIDI piece is played whole, then the players improvise before the next piece.
       const piece = midiPiece(samples, tune.midi);
@@ -619,13 +631,18 @@ export function createComposer(
         midiStep = 1;
         nowPiece = tune.id;
         nowTheme = tune.theme ?? null;
+        themeNow = tune.theme ?? null;
         nowMidi = true;
         return playMidi(h, piece, t0, enter, from, to, arrive);
       }
       midiStep = 0;
       // While time runs, a theme keeps going, verse after verse, so the timeline has one voice; while it
       // stands still, the tradition's themes take turns.
-      if (!tune.theme || !h.moving) tuneIndex++;
+      if (!tune.theme) tuneIndex++;
+      else if (!h.moving) {
+        const themes = [...new Set(tunes.filter(x => x.theme).map(x => x.theme as string))];
+        themeNow = themes[(themes.indexOf(tune.theme) + 1) % themes.length];
+      }
       nowPiece = null;
       nowMidi = false;
       // Between verses, a breath (longer while time stands still).
@@ -713,6 +730,7 @@ export function createComposer(
         const next = nowTheme ? (h.tunes ?? []).find(x => x.theme === nowTheme) : undefined;
         if (cut && next) {
           tuneIndex = (h.tunes ?? []).indexOf(next);
+          themeNow = next.theme ?? null;
           // The same theme in the next age's arrangement: at the end of this phrase the new players take up
           // the following one, the melody unbroken.
           resumePhrase = nowCadences.filter(c => c <= cut.time - nowStart + 0.01).length;

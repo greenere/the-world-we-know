@@ -1,0 +1,11 @@
+{
+ "id": "hilali",
+ "name": "A chant of the Hilali epic",
+ "source": "lane-egyptians",
+ "pages": "p. 392 (1860 edition; archive.org bub_gb_WaEBAAAAQAAJ)",
+ "about": "\"A few notes of the commencement of a chant\" of a Sha'er, one of the poets of Cairo who recited the romance of Abu Zayd and the Banu Hilal from memory, playing a few notes on the one-stringed poet's viol after each verse: the viol's prelude, two lines of verse (\"Ma-kalatu Khadra...\"), and the prelude again. Notes as pitch:beats, quarter notes as beats.",
+ "meter": 4,
+ "pickup": 1,
+ "transpose": -5,
+ "notes": "G4:0.5 A4:0.5 | Bb4:1.5 C5:0.5 Bb4:0.25 C5:0.25 Bb4:0.25 A4:0.25 G4:0.5 A4:0.5 | Bb4:0.75 A4:0.25 G4:1 r:1 / G4:0.5 G4:0.5 | C5:1.5 D5:0.5 Bb4:0.75 A4:0.25 G4:0.75 A4:0.25 | Bb4:1.5 C5:0.5 A4:1.5 G4:0.5 / | Bb4:1.5 A4:0.5 G4:1 r:0.5 G4:0.5 | C5:0.75 Bb4:0.25 C5:1 Bb4:0.5 A4:0.5 G4:0.5 A4:0.5 | Bb4:1 C5:0.5 A4:0.5 Bb4:2 / G4:0.5 A4:0.5 | Bb4:1.5 C5:0.5 Bb4:0.25 C5:0.25 Bb4:0.25 A4:0.25 G4:0.5 A4:0.5 | Bb4:0.75 A4:0.25 G4:2 /"
+}

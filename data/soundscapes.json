@@ -44,8 +44,8 @@
   },
   {
    "id": "rome",
-   "name": "Imperial Rome",
-   "summary": "Music of the Roman world: Greek in its theory and much of its repertoire, played on the kithara and the double-piped tibia, with the water organ in the arena and frame drums, cymbals and the foot-clapper keeping time. A handful of its pieces survive in Greek notation, and these are among them.",
+   "name": "Rome and Italy",
+   "summary": "The music of the Roman world, heard through two themes from Rome's own surviving songs: the stately Hymn to the Sun that Mesomedes wrote for Hadrian's court, and the Seikilos song, \"while you live, shine\". While the years run one carries on, and when time stands still they take turns. Each is played as Italy's age would: the lyre and aulos before Rome, the kithara, tibia, water organ and cornu of the empire, the chant and organ of the medieval church, the lutes, viols and harpsichord of the Renaissance, the opera house's strings, mandolin and trumpet, and a modern film orchestra.",
    "scales": [
     {
      "cents": [
@@ -98,6 +98,103 @@
       "role": "accompany",
       "instrument": "organ",
       "gain": 0.8
+     },
+     {
+      "id": "cornu",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "tympanum",
+      "voice": "pluck",
+      "drum": "D",
+      "role": "part"
+     },
+     {
+      "id": "crotala",
+      "voice": "pluck",
+      "drum": "k",
+      "role": "part"
+     },
+     {
+      "id": "cantores",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "organum",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "campane",
+      "voice": "bell",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "vielle",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "flauto",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "liuto",
+      "sample": "guitar",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "viola",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "cembalo",
+      "sample": "harpsichord",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "oboe",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "mandolino",
+      "sample": "guitar",
+      "voice": "pluck",
+      "role": "part",
+      "tremolo": true
+     },
+     {
+      "id": "tromba",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "pianoforte",
+      "sample": "piano",
+      "voice": "pluck",
+      "role": "part"
      },
      {
       "id": "strings",
@@ -172,17 +269,180 @@
    },
    "tunes": [
     {
-     "id": "seikilos",
-     "name": "The Seikilos epitaph",
-     "about": "A short song carved on a grave column near Tralles in Asia Minor, words and notation together: \"While you live, shine.\"",
-     "from": -100,
+     "id": "sol-early",
+     "name": "Hymn to the Sun · Early kingdoms",
+     "about": "Rome's ceremonial theme before Rome: the lyre and the aulos of the Etruscans and the Greek colonies, a frame drum walking beneath.",
+     "midi": "midi/sol-early.mid",
+     "score": "helios",
+     "beat": 0.75,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "helios",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West.",
+     "until": -500
+    },
+    {
+     "id": "sol-classical",
+     "name": "Hymn to the Sun · Classical empires",
+     "about": "Rome's ceremonial theme at Hadrian's court, for which Mesomedes wrote it: the kithara, then the tibia over the water organ, then the bronze cornu.",
+     "midi": "midi/sol-classical.mid",
+     "score": "helios",
+     "beat": 0.62,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "helios",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West.",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "sol-caravans",
+     "name": "Hymn to the Sun · Caravans and monsoons",
+     "about": "Rome's ceremonial theme in the medieval church: singers in plain chant, then in organum a fifth apart, then with the organ and bells.",
+     "midi": "midi/sol-caravans.mid",
+     "score": "helios",
+     "beat": 0.7,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "helios",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West.",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "sol-crossings",
+     "name": "Hymn to the Sun · Ocean crossings",
+     "about": "Rome's ceremonial theme at a baroque court: the recorder over the harpsichord and the viol, then the trumpet.",
+     "midi": "midi/sol-crossings.mid",
+     "score": "helios",
+     "beat": 0.6,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "helios",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West.",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "sol-steam",
+     "name": "Hymn to the Sun · Steam and telegraph",
+     "about": "Rome's ceremonial theme in the opera house: the oboe over the harp, then the strings, then the trumpet leading.",
+     "midi": "midi/sol-steam.mid",
+     "score": "helios",
+     "beat": 0.62,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "helios",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West.",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "sol-shared",
+     "name": "Hymn to the Sun · One shared map",
+     "about": "Rome's ceremonial theme for a film orchestra: the piano alone, then strings and horns, then everyone.",
+     "midi": "midi/sol-shared.mid",
+     "score": "helios",
+     "beat": 0.62,
+     "meter": 2,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "helios",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West.",
+     "from": 1900
+    },
+    {
+     "id": "seikilos-early",
+     "name": "The Seikilos Song · Early kingdoms",
+     "about": "Rome's folk theme before Rome: the lyre alone, then the aulos, then both.",
+     "midi": "midi/seikilos-early.mid",
+     "score": "seikilos",
+     "beat": 0.8,
+     "meter": 3,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "seikilos",
+     "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "seikilos-classical",
+     "name": "The Seikilos Song · Classical empires",
+     "about": "Rome's folk theme in a Roman house: the kithara, then the tibia with the kithara beneath and clappers.",
+     "midi": "midi/seikilos-classical.mid",
+     "score": "seikilos",
      "beat": 0.7,
      "meter": 3,
      "source": "poehlmann-west",
      "confidence": "high",
+     "theme": "seikilos",
      "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA).",
-     "midi": "midi/seikilos.mid",
-     "score": "seikilos"
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "seikilos-caravans",
+     "name": "The Seikilos Song · Caravans and monsoons",
+     "about": "Rome's folk theme as a jongleur's song: the vielle, then the recorder, then the lute and tabor.",
+     "midi": "midi/seikilos-caravans.mid",
+     "score": "seikilos",
+     "beat": 0.66,
+     "meter": 3,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "seikilos",
+     "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "seikilos-crossings",
+     "name": "The Seikilos Song · Ocean crossings",
+     "about": "Rome's folk theme in the Renaissance: the lute, then the recorder over it, then viol and harpsichord.",
+     "midi": "midi/seikilos-crossings.mid",
+     "score": "seikilos",
+     "beat": 0.62,
+     "meter": 3,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "seikilos",
+     "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "seikilos-steam",
+     "name": "The Seikilos Song · Steam and telegraph",
+     "about": "Rome's folk theme on a Neapolitan evening: the mandolin trembling the tune, the oboe answering, strings beneath.",
+     "midi": "midi/seikilos-steam.mid",
+     "score": "seikilos",
+     "beat": 0.6,
+     "meter": 3,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "seikilos",
+     "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "seikilos-shared",
+     "name": "The Seikilos Song · One shared map",
+     "about": "Rome's folk theme for a film orchestra: the piano, then strings, then horns and oboe.",
+     "midi": "midi/seikilos-shared.mid",
+     "score": "seikilos",
+     "beat": 0.6,
+     "meter": 3,
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "theme": "seikilos",
+     "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA).",
+     "from": 1900
     },
     {
      "id": "calliope",
@@ -195,21 +455,8 @@
      "confidence": "high",
      "credit": "Transcription on Wikimedia Commons (\"Mesomedes Kalliopeia sopha.png\", Kanjuzi, CC BY-SA 4.0).",
      "midi": "midi/calliope.mid",
-     "score": "calliope"
-    },
-    {
-     "id": "helios",
-     "name": "Mesomedes: Hymn to the Sun, the opening",
-     "about": "The first sentence of Mesomedes' hymn to Helios, \"father of rosy-eyelidded Dawn\", who drives his chariot across the sky.",
-     "from": 120,
-     "beat": 0.58,
-     "meter": 2,
-     "pickup": 1,
-     "source": "poehlmann-west",
-     "confidence": "high",
-     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West.",
-     "midi": "midi/helios.mid",
-     "score": "helios"
+     "score": "calliope",
+     "extra": true
     }
    ],
    "places": [
@@ -217,12 +464,32 @@
     "alexandria"
    ],
    "source": "west-agm",
-   "confidence": "medium"
+   "confidence": "medium",
+   "themes": [
+    {
+     "id": "helios",
+     "name": "Hymn to the Sun",
+     "mood": "ceremonial",
+     "about": "Mesomedes' hymn to Helios, written for Hadrian's court in the second century and copied with its notation in Byzantine manuscripts: Rome's ceremonial theme.",
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "credit": "Transcription on Wikimedia Commons (\"Mesomedes Hymn to the Sun.png\", Kanjuzi, CC BY-SA 4.0), after Pöhlmann and West."
+    },
+    {
+     "id": "seikilos",
+     "name": "The Seikilos Song",
+     "mood": "folk",
+     "about": "The song carved on Seikilos' grave column near Tralles, words and notes together, \"while you live, shine\": the oldest complete song known, and Rome's folk theme.",
+     "source": "poehlmann-west",
+     "confidence": "high",
+     "credit": "Transcription from the Wikipedia article \"Seikilos epitaph\" (CC BY-SA)."
+    }
+   ]
   },
   {
    "id": "chant",
-   "name": "Chant",
-   "summary": "The plain, single line sung in churches and monasteries, Latin in the west and Greek in Constantinople, moving mostly by step within one of eight modes. Here in the first mode, on D. The organ joins it once the Franks have one.",
+   "name": "Chant and consort",
+   "summary": "Europe's music, heard through two themes: the processional chant Veni Emmanuel and the ballad Greensleeves. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the lurs and lyres of the bronze north, the harps and crwths of the Celts, the chant and organ of the medieval church, the lutes, recorders and viols of the Renaissance, the Victorian organ and parlour piano, and a film orchestra.",
    "scales": [
     {
      "cents": [
@@ -247,42 +514,7 @@
     {
      "voice": "bow",
      "instrument": "bowed-strings"
-    }
-   ],
-   "pattern": "wander",
-   "beat": 0.78,
-   "leaps": 0.06,
-   "ornament": 0,
-   "drone": 0.9,
-   "places": [
-    "rome",
-    "constantinople",
-    "paris"
-   ],
-   "also": [
-    "staff-notation"
-   ],
-   "source": "hiley-chant",
-   "confidence": "medium"
-  },
-  {
-   "id": "consort",
-   "name": "Strings and keyboards",
-   "summary": "European music after about 1600, in major and minor keys: violins, lutes and keyboards playing in parts, tuned more and more to twelve equal semitones.",
-   "scales": [
-    {
-     "cents": [
-      0,
-      200,
-      400,
-      500,
-      700,
-      900,
-      1100
-     ]
-    }
-   ],
-   "voices": [
+    },
     {
      "voice": "lute",
      "instrument": "oud"
@@ -294,30 +526,429 @@
     {
      "voice": "keys",
      "instrument": "piano"
-    },
-    {
-     "voice": "pipe",
-     "instrument": "organ"
     }
    ],
    "pattern": "wander",
-   "beat": 0.55,
-   "leaps": 0.35,
-   "ornament": 0.08,
-   "drone": 0.35,
+   "beat": 0.78,
+   "leaps": 0.06,
+   "ornament": 0,
+   "drone": 0.9,
    "places": [
+    "rome",
+    "constantinople",
+    "paris",
     "venice",
     "florence",
     "vienna",
     "london"
    ],
-   "source": "taruskin-ohwm",
-   "confidence": "medium"
+   "also": [
+    "staff-notation"
+   ],
+   "source": "hiley-chant",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "lur",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "lyre",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "pipe",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "cruit",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "crwth",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "carnyx",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "organ",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "instrument": "organ",
+      "gain": 0.8
+     },
+     {
+      "id": "bells",
+      "voice": "bell",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "vielle",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "recorder",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "tabor",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t"
+     },
+     {
+      "id": "lute",
+      "sample": "guitar",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "viol",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "virginals",
+      "sample": "harpsichord",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "piano",
+      "sample": "piano",
+      "voice": "pluck",
+      "role": "part",
+      "instrument": "piano"
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "instrument": "violin"
+     },
+     {
+      "id": "oboe",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:1 F4:1 G4:1 A4:2",
+     "A4:1 G4:1 F4:1 E4:1 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "emmanuel-early",
+     "name": "Veni Emmanuel · Early kingdoms",
+     "about": "Europe's ceremonial theme in the bronze north: the lur's long call over a lyre, a drum at each phrase.",
+     "midi": "midi/emmanuel-early.mid",
+     "score": "veni-emmanuel",
+     "beat": 0.95,
+     "meter": 4,
+     "source": "veni-score",
+     "confidence": "high",
+     "theme": "veni-emmanuel",
+     "credit": "From the score in the English Wikipedia article \"O Come, O Come, Emmanuel\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "emmanuel-classical",
+     "name": "Veni Emmanuel · Classical empires",
+     "about": "Europe's ceremonial theme among the Celts: the harp, then the crwth, the carnyx joining.",
+     "midi": "midi/emmanuel-classical.mid",
+     "score": "veni-emmanuel",
+     "beat": 0.85,
+     "meter": 4,
+     "source": "veni-score",
+     "confidence": "high",
+     "theme": "veni-emmanuel",
+     "credit": "From the score in the English Wikipedia article \"O Come, O Come, Emmanuel\" (CC BY-SA).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "emmanuel-caravans",
+     "name": "Veni Emmanuel · Caravans and monsoons",
+     "about": "Europe's ceremonial theme in the medieval church: plain chant, then in parallel fifths with the organ, a bell at each phrase.",
+     "midi": "midi/emmanuel-caravans.mid",
+     "score": "veni-emmanuel",
+     "beat": 0.82,
+     "meter": 4,
+     "source": "veni-score",
+     "confidence": "high",
+     "theme": "veni-emmanuel",
+     "credit": "From the score in the English Wikipedia article \"O Come, O Come, Emmanuel\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "emmanuel-crossings",
+     "name": "Veni Emmanuel · Ocean crossings",
+     "about": "Europe's ceremonial theme in the Renaissance: voices and viols over the organ.",
+     "midi": "midi/emmanuel-crossings.mid",
+     "score": "veni-emmanuel",
+     "beat": 0.75,
+     "meter": 4,
+     "source": "veni-score",
+     "confidence": "high",
+     "theme": "veni-emmanuel",
+     "credit": "From the score in the English Wikipedia article \"O Come, O Come, Emmanuel\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "emmanuel-steam",
+     "name": "Veni Emmanuel · Steam and telegraph",
+     "about": "Europe's ceremonial theme as Victorian churches sang it: the organ, then the choir, strings joining.",
+     "midi": "midi/emmanuel-steam.mid",
+     "score": "veni-emmanuel",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "veni-score",
+     "confidence": "high",
+     "theme": "veni-emmanuel",
+     "credit": "From the score in the English Wikipedia article \"O Come, O Come, Emmanuel\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "emmanuel-shared",
+     "name": "Veni Emmanuel · One shared map",
+     "about": "Europe's ceremonial theme for a film orchestra: choir, then strings, then horns, with timpani.",
+     "midi": "midi/emmanuel-shared.mid",
+     "score": "veni-emmanuel",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "veni-score",
+     "confidence": "high",
+     "theme": "veni-emmanuel",
+     "credit": "From the score in the English Wikipedia article \"O Come, O Come, Emmanuel\" (CC BY-SA).",
+     "from": 1900
+    },
+    {
+     "id": "greensleeves-early",
+     "name": "Greensleeves · Early kingdoms",
+     "about": "Europe's folk theme in the bronze north: a lyre, then a bone pipe over it, a drum joining.",
+     "midi": "midi/greensleeves-early.mid",
+     "score": "greensleeves",
+     "beat": 0.8,
+     "meter": 3,
+     "source": "greensleeves-score",
+     "confidence": "high",
+     "theme": "greensleeves",
+     "credit": "From the score in the French Wikipedia article \"Greensleeves\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "greensleeves-classical",
+     "name": "Greensleeves · Classical empires",
+     "about": "Europe's folk theme among the Celts: the harp, then the pipe, then the crwth.",
+     "midi": "midi/greensleeves-classical.mid",
+     "score": "greensleeves",
+     "beat": 0.72,
+     "meter": 3,
+     "source": "greensleeves-score",
+     "confidence": "high",
+     "theme": "greensleeves",
+     "credit": "From the score in the French Wikipedia article \"Greensleeves\" (CC BY-SA).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "greensleeves-caravans",
+     "name": "Greensleeves · Caravans and monsoons",
+     "about": "Europe's folk theme as a minstrel's song: the vielle, then the recorder, the lute and tabor joining.",
+     "midi": "midi/greensleeves-caravans.mid",
+     "score": "greensleeves",
+     "beat": 0.66,
+     "meter": 3,
+     "source": "greensleeves-score",
+     "confidence": "high",
+     "theme": "greensleeves",
+     "credit": "From the score in the French Wikipedia article \"Greensleeves\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "greensleeves-crossings",
+     "name": "Greensleeves · Ocean crossings",
+     "about": "Europe's folk theme at a Tudor house: the lute, then the recorder, then the viol, the virginals beneath.",
+     "midi": "midi/greensleeves-crossings.mid",
+     "score": "greensleeves",
+     "beat": 0.6,
+     "meter": 3,
+     "source": "greensleeves-score",
+     "confidence": "high",
+     "theme": "greensleeves",
+     "credit": "From the score in the French Wikipedia article \"Greensleeves\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "greensleeves-steam",
+     "name": "Greensleeves · Steam and telegraph",
+     "about": "Europe's folk theme in a Victorian parlour: the piano, then the violin, an oboe joining.",
+     "midi": "midi/greensleeves-steam.mid",
+     "score": "greensleeves",
+     "beat": 0.58,
+     "meter": 3,
+     "source": "greensleeves-score",
+     "confidence": "high",
+     "theme": "greensleeves",
+     "credit": "From the score in the French Wikipedia article \"Greensleeves\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "greensleeves-shared",
+     "name": "Greensleeves · One shared map",
+     "about": "Europe's folk theme for a film orchestra: the piano, then the strings, then the oboe over horns.",
+     "midi": "midi/greensleeves-shared.mid",
+     "score": "greensleeves",
+     "beat": 0.56,
+     "meter": 3,
+     "source": "greensleeves-score",
+     "confidence": "high",
+     "theme": "greensleeves",
+     "credit": "From the score in the French Wikipedia article \"Greensleeves\" (CC BY-SA).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "veni-emmanuel",
+     "name": "Veni Emmanuel",
+     "mood": "ceremonial",
+     "about": "The processional chant found in a fifteenth-century French Franciscan manuscript and sung since 1851 to the Advent hymn \"O come, O come, Emmanuel\": Europe's ceremonial theme.",
+     "source": "veni-score",
+     "confidence": "high",
+     "credit": "From the score in the English Wikipedia article \"O Come, O Come, Emmanuel\" (CC BY-SA)."
+    },
+    {
+     "id": "greensleeves",
+     "name": "Greensleeves",
+     "mood": "folk",
+     "about": "The English ballad of the 1580s, \"Alas, my love, you do me wrong\": Europe's folk theme.",
+     "source": "greensleeves-score",
+     "confidence": "high",
+     "credit": "From the score in the French Wikipedia article \"Greensleeves\" (CC BY-SA)."
+    }
+   ]
   },
   {
    "id": "maqam",
    "name": "Maqam",
-   "summary": "The modes of Arabic, Persian and Turkish music, some with steps between a semitone and a tone. Here maqam Bayati, whose second step lies about three-quarters of a tone above the tonic. A melody explores the mode a few notes at a time, ornamented and sliding between them.",
+   "summary": "The modes of Arabic, Persian and Turkish music, heard through two themes Edward Lane noted in Cairo in the 1830s: the chant of a poet of the Hilali epic, and the popular song Doos ya lellee. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the lyre and reed pipe of Mesopotamia, the barbat, chang and ney of the Sasanian court, the oud, qanun and ney of the golden age, the Ottoman mehter, Cairo's takht with its violin, and a film orchestra. Lane wrote the neutral steps of the maqam as plain notes, and so they are played here.",
    "scales": [
     {
      "cents": [
@@ -361,12 +992,378 @@
     "isfahan"
    ],
    "source": "touma-arabs",
-   "confidence": "medium"
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "lyre",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "zummara",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "daf",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "barbat",
+      "sample": "guitar",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "chang",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "ney",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "oud",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part",
+      "instrument": "oud"
+     },
+     {
+      "id": "qanun",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "riq",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t"
+     },
+     {
+      "id": "darbuka",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "zurna",
+      "sample": "suona",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "davul",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "zil",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "c"
+     },
+     {
+      "id": "kemenche",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "instrument": "violin"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:0.5 E4:0.5 F4:1 G4:1 F4:0.5 E4:0.5 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "hilali-early",
+     "name": "The Hilali Epic · Early kingdoms",
+     "about": "The maqam world's ceremonial theme in ancient Mesopotamia: the lyre, then the reed pipe, a frame drum beneath.",
+     "midi": "midi/hilali-early.mid",
+     "score": "hilali",
+     "beat": 0.78,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "hilali",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/hilali.json).",
+     "until": -500
+    },
+    {
+     "id": "hilali-classical",
+     "name": "The Hilali Epic · Classical empires",
+     "about": "The maqam world's ceremonial theme at the Sasanian court: the barbat lute, then the ney, the chang harp joining.",
+     "midi": "midi/hilali-classical.mid",
+     "score": "hilali",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "hilali",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/hilali.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "hilali-caravans",
+     "name": "The Hilali Epic · Caravans and monsoons",
+     "about": "The maqam world's ceremonial theme in the Abbasid and Andalusian golden age: the oud, then the ney, the qanun beneath, darbuka and riq.",
+     "midi": "midi/hilali-caravans.mid",
+     "score": "hilali",
+     "beat": 0.66,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "hilali",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/hilali.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "hilali-crossings",
+     "name": "The Hilali Epic · Ocean crossings",
+     "about": "The maqam world's ceremonial theme for the Ottoman mehter: zurnas over the great davul and the zils.",
+     "midi": "midi/hilali-crossings.mid",
+     "score": "hilali",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "hilali",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/hilali.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "hilali-steam",
+     "name": "The Hilali Epic · Steam and telegraph",
+     "about": "The maqam world's ceremonial theme for a Cairo takht: the oud, then the violin, with qanun, ney and riq.",
+     "midi": "midi/hilali-steam.mid",
+     "score": "hilali",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "hilali",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/hilali.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "hilali-shared",
+     "name": "The Hilali Epic · One shared map",
+     "about": "The maqam world's ceremonial theme for a film orchestra: the oud, then strings with the ney, then horns.",
+     "midi": "midi/hilali-shared.mid",
+     "score": "hilali",
+     "beat": 0.58,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "hilali",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/hilali.json).",
+     "from": 1900
+    },
+    {
+     "id": "doos-early",
+     "name": "Doos ya Lellee · Early kingdoms",
+     "about": "The maqam world's folk theme in ancient Mesopotamia: the reed pipe, the lyre joining, a frame drum.",
+     "midi": "midi/doos-early.mid",
+     "score": "doos-ya-lellee",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "doos-ya-lellee",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/doos-ya-lellee.json).",
+     "until": -500
+    },
+    {
+     "id": "doos-classical",
+     "name": "Doos ya Lellee · Classical empires",
+     "about": "The maqam world's folk theme at the Sasanian court: the ney, then the barbat, a frame drum.",
+     "midi": "midi/doos-classical.mid",
+     "score": "doos-ya-lellee",
+     "beat": 0.56,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "doos-ya-lellee",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/doos-ya-lellee.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "doos-caravans",
+     "name": "Doos ya Lellee · Caravans and monsoons",
+     "about": "The maqam world's folk theme in the golden age: the oud, then the qanun, then the ney, darbuka and riq.",
+     "midi": "midi/doos-caravans.mid",
+     "score": "doos-ya-lellee",
+     "beat": 0.52,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "doos-ya-lellee",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/doos-ya-lellee.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "doos-crossings",
+     "name": "Doos ya Lellee · Ocean crossings",
+     "about": "The maqam world's folk theme in an Ottoman coffee house: the kemenche, then the ney, the oud beneath.",
+     "midi": "midi/doos-crossings.mid",
+     "score": "doos-ya-lellee",
+     "beat": 0.5,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "doos-ya-lellee",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/doos-ya-lellee.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "doos-steam",
+     "name": "Doos ya Lellee · Steam and telegraph",
+     "about": "The maqam world's folk theme for a Cairo takht: the violin, then the qanun, the oud beneath, riq and darbuka.",
+     "midi": "midi/doos-steam.mid",
+     "score": "doos-ya-lellee",
+     "beat": 0.48,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "doos-ya-lellee",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/doos-ya-lellee.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "doos-shared",
+     "name": "Doos ya Lellee · One shared map",
+     "about": "The maqam world's folk theme for a film orchestra: the oud, then strings, then the ney over horns.",
+     "midi": "midi/doos-shared.mid",
+     "score": "doos-ya-lellee",
+     "beat": 0.46,
+     "meter": 4,
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "theme": "doos-ya-lellee",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/doos-ya-lellee.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "hilali",
+     "name": "The Hilali Epic",
+     "mood": "ceremonial",
+     "about": "The chant of a Sha'er, one of Cairo's poets who recited the romance of Abu Zayd and the Banu Hilal from memory with the one-stringed poet's viol, as Edward Lane noted it in the 1830s: the maqam world's ceremonial theme.",
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/hilali.json)."
+    },
+    {
+     "id": "doos-ya-lellee",
+     "name": "Doos ya Lellee",
+     "mood": "folk",
+     "about": "\"Tread! O my joy!\": a popular song of Cairo in maqam Rast, noted by Lane \"without any of the embellishments\": the maqam world's folk theme.",
+     "source": "lane-egyptians",
+     "confidence": "medium",
+     "credit": "Transcribed for this atlas from Lane's staff (data/scores/doos-ya-lellee.json)."
+    }
+   ]
   },
   {
    "id": "raga",
    "name": "Raga",
-   "summary": "Indian music over an unchanging drone of the tonic and fifth, Sa and Pa. A raga is more than a scale: it has its own turns of phrase, notes to dwell on and a time of day. Here raga Bhairav, sung at dawn, opened slowly as in an alap, without a beat.",
+   "summary": "Indian music on the raga, heard through two themes from C. R. Day's book of 1891: a Pillari gita to Ganesha in raga Malahari, the first song a Carnatic student learns, and an old and popular song in raga Bilahari. While the years run one carries on, and when time stands still they take turns. Each is played as its age would, always over the tanpura: voices and veena, the temple's nadaswaram and tavil, the sitar, shehnai and sarangi of the courts, the violin and harmonium of the nineteenth century, and a film orchestra.",
    "scales": [
     {
      "cents": [
@@ -408,7 +1405,376 @@
     "thanjavur"
    ],
    "source": "bor-raga",
-   "confidence": "medium"
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "veena",
+      "sample": "sitar",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "venu",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "mridangam",
+      "voice": "pluck",
+      "drum": "D",
+      "role": "part"
+     },
+     {
+      "id": "nadaswaram",
+      "sample": "suona",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "sruti",
+      "sample": "sheng",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "tavil",
+      "voice": "pluck",
+      "drum": "B",
+      "role": "part"
+     },
+     {
+      "id": "sitar",
+      "sample": "sitar",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "shehnai",
+      "sample": "suona",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "sarangi",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "tabla",
+      "voice": "pluck",
+      "drum": "t",
+      "role": "part"
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "instrument": "violin"
+     },
+     {
+      "id": "harmonium",
+      "sample": "sheng",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "bansuri",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "tanpura",
+      "sample": "sitar",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.6
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:0.5 E4:0.5 F#4:0.5 A4:0.5 B4:1 A4:1",
+     "A4:0.5 G4:0.5 F#4:0.5 E4:0.5 D4:1"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "gita-early",
+     "name": "Sri Gananatha · Early kingdoms",
+     "about": "India's ceremonial theme as Vedic voices might have chanted it, over the tanpura, the veena joining, then the drum.",
+     "midi": "midi/gita-early.mid",
+     "score": "malahari-gita",
+     "beat": 0.62,
+     "meter": 3,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "malahari-gita",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/malahari-gita.json).",
+     "until": -500
+    },
+    {
+     "id": "gita-classical",
+     "name": "Sri Gananatha · Classical empires",
+     "about": "India's ceremonial theme for the veena of the classical age, the venu flute joining, the mridangam keeping time.",
+     "midi": "midi/gita-classical.mid",
+     "score": "malahari-gita",
+     "beat": 0.52,
+     "meter": 3,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "malahari-gita",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/malahari-gita.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "gita-caravans",
+     "name": "Sri Gananatha · Caravans and monsoons",
+     "about": "India's ceremonial theme in the temple: the nadaswaram over its drone reed, the tavil beating.",
+     "midi": "midi/gita-caravans.mid",
+     "score": "malahari-gita",
+     "beat": 0.5,
+     "meter": 3,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "malahari-gita",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/malahari-gita.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "gita-crossings",
+     "name": "Sri Gananatha · Ocean crossings",
+     "about": "India's ceremonial theme at a court: the sitar, then the shehnai, then the sarangi with the sitar, the tabla beneath.",
+     "midi": "midi/gita-crossings.mid",
+     "score": "malahari-gita",
+     "beat": 0.48,
+     "meter": 3,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "malahari-gita",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/malahari-gita.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "gita-steam",
+     "name": "Sri Gananatha · Steam and telegraph",
+     "about": "India's ceremonial theme for the violin that Carnatic music took up about 1800, with harmonium and mridangam.",
+     "midi": "midi/gita-steam.mid",
+     "score": "malahari-gita",
+     "beat": 0.46,
+     "meter": 3,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "malahari-gita",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/malahari-gita.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "gita-shared",
+     "name": "Sri Gananatha · One shared map",
+     "about": "India's ceremonial theme for a film orchestra: the sitar, then the bansuri over strings, then everyone, the tabla beneath.",
+     "midi": "midi/gita-shared.mid",
+     "score": "malahari-gita",
+     "beat": 0.46,
+     "meter": 3,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "malahari-gita",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/malahari-gita.json).",
+     "from": 1900
+    },
+    {
+     "id": "bilahari-early",
+     "name": "The Bilahari Song · Early kingdoms",
+     "about": "India's folk theme as Vedic voices might have chanted it, over the tanpura, the veena joining, then the drum.",
+     "midi": "midi/bilahari-early.mid",
+     "score": "bilahari",
+     "beat": 0.9,
+     "meter": 4,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "bilahari",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/bilahari.json); read from a small print.",
+     "until": -500
+    },
+    {
+     "id": "bilahari-classical",
+     "name": "The Bilahari Song · Classical empires",
+     "about": "India's folk theme for the veena of the classical age, the venu flute joining, the mridangam keeping time.",
+     "midi": "midi/bilahari-classical.mid",
+     "score": "bilahari",
+     "beat": 0.78,
+     "meter": 4,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "bilahari",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/bilahari.json); read from a small print.",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "bilahari-caravans",
+     "name": "The Bilahari Song · Caravans and monsoons",
+     "about": "India's folk theme in the temple: the nadaswaram over its drone reed, the tavil beating.",
+     "midi": "midi/bilahari-caravans.mid",
+     "score": "bilahari",
+     "beat": 0.74,
+     "meter": 4,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "bilahari",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/bilahari.json); read from a small print.",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "bilahari-crossings",
+     "name": "The Bilahari Song · Ocean crossings",
+     "about": "India's folk theme at a court: the sitar, then the shehnai, then the sarangi with the sitar, the tabla beneath.",
+     "midi": "midi/bilahari-crossings.mid",
+     "score": "bilahari",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "bilahari",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/bilahari.json); read from a small print.",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "bilahari-steam",
+     "name": "The Bilahari Song · Steam and telegraph",
+     "about": "India's folk theme for the violin that Carnatic music took up about 1800, with harmonium and mridangam.",
+     "midi": "midi/bilahari-steam.mid",
+     "score": "bilahari",
+     "beat": 0.68,
+     "meter": 4,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "bilahari",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/bilahari.json); read from a small print.",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "bilahari-shared",
+     "name": "The Bilahari Song · One shared map",
+     "about": "India's folk theme for a film orchestra: the sitar, then the bansuri over strings, then everyone, the tabla beneath.",
+     "midi": "midi/bilahari-shared.mid",
+     "score": "bilahari",
+     "beat": 0.66,
+     "meter": 4,
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "theme": "bilahari",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/bilahari.json); read from a small print.",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "malahari-gita",
+     "name": "Sri Gananatha",
+     "mood": "ceremonial",
+     "about": "A Pillari gita in raga Malahari, a hymn to Ganesha attributed to Purandara Dasa (sixteenth century) and the first song every student of Carnatic music learns, as C. R. Day printed it in 1891: India's ceremonial theme.",
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/malahari-gita.json)."
+    },
+    {
+     "id": "bilahari",
+     "name": "The Bilahari Song",
+     "mood": "folk",
+     "about": "A svarajati in raga Bilahari that Day called one of the most popular airs in Southern India, its words varying from place to place and its tune believed to be very old: India's folk theme.",
+     "source": "day-southern-india",
+     "confidence": "medium",
+     "credit": "Transcribed for this atlas from Day's staff (data/scores/bilahari.json)."
+    }
+   ]
   },
   {
    "id": "china",
@@ -958,7 +2324,7 @@
   {
    "id": "japan",
    "name": "Yō and in",
-   "summary": "Japanese music on five-note scales: the yō scale, without semitones, of court and folk song, and from the seventeenth century the in scale of the koto and shamisen, with two. Bamboo flute, the biwa (Japan's pipa) and the koto.",
+   "summary": "Japanese music on the yō and in scales, heard through two themes: Taki's solemn Kōjō no Tsuki, \"the moon over the ruined castle\", and the folk song Sakura. While the years run one carries on, and when time stands still they take turns. Each is played as Japan's age would: clay flutes and the wagon zither, the gagaku of the Heian court with its shō, hichiriki and ryūteki, the koto, shakuhachi and shamisen of Edo, Meiji's harmonium and school choirs, and a film orchestra.",
    "scales": [
     {
      "cents": [
@@ -1004,7 +2370,382 @@
     "edo"
    ],
    "source": "malm-japan",
-   "confidence": "medium"
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "tsuchibue",
+      "sample": "xun",
+      "voice": "flute",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "wagon",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "kagurabue",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "hichiriki",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "ryuteki",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "sho",
+      "sample": "sheng",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "gakuso",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "biwa",
+      "sample": "shamisen",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "kakko",
+      "voice": "pluck",
+      "drum": "t",
+      "role": "part"
+     },
+     {
+      "id": "odaiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "shakuhachi",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "koto",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "shamisen",
+      "sample": "shamisen",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "harmonium",
+      "sample": "sheng",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "rappa",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "A4:1 B4:1 C5:1 B4:1 A4:2",
+     "E4:1 F4:1 A4:1 B4:1 A4:2",
+     "B4:1 A4:0.5 F4:0.5 E4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "kojo-early",
+     "name": "Kōjō no Tsuki · Early kingdoms",
+     "about": "Japan's ceremonial theme before the court: the clay flute alone, then the wagon zither beneath, a great drum at each phrase.",
+     "midi": "midi/kojo-early.mid",
+     "score": "kojo-no-tsuki",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "kojo-score",
+     "confidence": "high",
+     "theme": "kojo-no-tsuki",
+     "credit": "Rentarō Taki's melody (1901) from the score on Wikimedia Commons (\"Kojo no tsuki re mineur.svg\", Cdang, CC0).",
+     "until": -500
+    },
+    {
+     "id": "kojo-classical",
+     "name": "Kōjō no Tsuki · Classical empires",
+     "about": "Japan's ceremonial theme in the age of the great tombs and the first court: the wagon, then the kagura flute over it, then the drum.",
+     "midi": "midi/kojo-classical.mid",
+     "score": "kojo-no-tsuki",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "kojo-score",
+     "confidence": "high",
+     "theme": "kojo-no-tsuki",
+     "credit": "Rentarō Taki's melody (1901) from the score on Wikimedia Commons (\"Kojo no tsuki re mineur.svg\", Cdang, CC0).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "kojo-caravans",
+     "name": "Kōjō no Tsuki · Caravans and monsoons",
+     "about": "Japan's ceremonial theme at the Heian court as gagaku: the hichiriki and ryūteki on the tune, the shō's clusters, gakuso, biwa, kakko and taiko.",
+     "midi": "midi/kojo-caravans.mid",
+     "score": "kojo-no-tsuki",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "kojo-score",
+     "confidence": "high",
+     "theme": "kojo-no-tsuki",
+     "credit": "Rentarō Taki's melody (1901) from the score on Wikimedia Commons (\"Kojo no tsuki re mineur.svg\", Cdang, CC0).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "kojo-crossings",
+     "name": "Kōjō no Tsuki · Ocean crossings",
+     "about": "Japan's ceremonial theme in Edo: the shakuhachi, then the koto leading, then with the shamisen.",
+     "midi": "midi/kojo-crossings.mid",
+     "score": "kojo-no-tsuki",
+     "beat": 0.66,
+     "meter": 4,
+     "source": "kojo-score",
+     "confidence": "high",
+     "theme": "kojo-no-tsuki",
+     "credit": "Rentarō Taki's melody (1901) from the score on Wikimedia Commons (\"Kojo no tsuki re mineur.svg\", Cdang, CC0).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "kojo-steam",
+     "name": "Kōjō no Tsuki · Steam and telegraph",
+     "about": "Japan's ceremonial theme in Meiji Japan: a school song at the harmonium, then the choir, then a band's trumpet.",
+     "midi": "midi/kojo-steam.mid",
+     "score": "kojo-no-tsuki",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "kojo-score",
+     "confidence": "high",
+     "theme": "kojo-no-tsuki",
+     "credit": "Rentarō Taki's melody (1901) from the score on Wikimedia Commons (\"Kojo no tsuki re mineur.svg\", Cdang, CC0).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "kojo-shared",
+     "name": "Kōjō no Tsuki · One shared map",
+     "about": "Japan's ceremonial theme for a film orchestra: the koto, then the shakuhachi over strings, then everyone, with horns and great drums.",
+     "midi": "midi/kojo-shared.mid",
+     "score": "kojo-no-tsuki",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "kojo-score",
+     "confidence": "high",
+     "theme": "kojo-no-tsuki",
+     "credit": "Rentarō Taki's melody (1901) from the score on Wikimedia Commons (\"Kojo no tsuki re mineur.svg\", Cdang, CC0).",
+     "from": 1900
+    },
+    {
+     "id": "sakura-early",
+     "name": "Sakura · Early kingdoms",
+     "about": "Japan's folk theme before the court: the clay flute alone, then the wagon zither beneath, a great drum at each phrase.",
+     "midi": "midi/sakura-early.mid",
+     "score": "sakura",
+     "beat": 0.75,
+     "meter": 4,
+     "source": "sakura-score",
+     "confidence": "high",
+     "theme": "sakura",
+     "credit": "From the score on Wikimedia Commons (\"Sakura.song.png\", Sakurambo, CC BY 2.5).",
+     "until": -500
+    },
+    {
+     "id": "sakura-classical",
+     "name": "Sakura · Classical empires",
+     "about": "Japan's folk theme in the age of the great tombs and the first court: the wagon, then the kagura flute over it, then the drum.",
+     "midi": "midi/sakura-classical.mid",
+     "score": "sakura",
+     "beat": 0.68,
+     "meter": 4,
+     "source": "sakura-score",
+     "confidence": "high",
+     "theme": "sakura",
+     "credit": "From the score on Wikimedia Commons (\"Sakura.song.png\", Sakurambo, CC BY 2.5).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "sakura-caravans",
+     "name": "Sakura · Caravans and monsoons",
+     "about": "Japan's folk theme at the Heian court as gagaku: the hichiriki and ryūteki on the tune, the shō's clusters, gakuso, biwa, kakko and taiko.",
+     "midi": "midi/sakura-caravans.mid",
+     "score": "sakura",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "sakura-score",
+     "confidence": "high",
+     "theme": "sakura",
+     "credit": "From the score on Wikimedia Commons (\"Sakura.song.png\", Sakurambo, CC BY 2.5).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "sakura-crossings",
+     "name": "Sakura · Ocean crossings",
+     "about": "Japan's folk theme in Edo: the shakuhachi, then the koto leading, then with the shamisen.",
+     "midi": "midi/sakura-crossings.mid",
+     "score": "sakura",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "sakura-score",
+     "confidence": "high",
+     "theme": "sakura",
+     "credit": "From the score on Wikimedia Commons (\"Sakura.song.png\", Sakurambo, CC BY 2.5).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "sakura-steam",
+     "name": "Sakura · Steam and telegraph",
+     "about": "Japan's folk theme in Meiji Japan: a school song at the harmonium, then the choir, then a band's trumpet.",
+     "midi": "midi/sakura-steam.mid",
+     "score": "sakura",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "sakura-score",
+     "confidence": "high",
+     "theme": "sakura",
+     "credit": "From the score on Wikimedia Commons (\"Sakura.song.png\", Sakurambo, CC BY 2.5).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "sakura-shared",
+     "name": "Sakura · One shared map",
+     "about": "Japan's folk theme for a film orchestra: the koto, then the shakuhachi over strings, then everyone, with horns and great drums.",
+     "midi": "midi/sakura-shared.mid",
+     "score": "sakura",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "sakura-score",
+     "confidence": "high",
+     "theme": "sakura",
+     "credit": "From the score on Wikimedia Commons (\"Sakura.song.png\", Sakurambo, CC BY 2.5).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "kojo-no-tsuki",
+     "name": "Kōjō no Tsuki",
+     "mood": "ceremonial",
+     "about": "\"The Moon over the Ruined Castle\": Rentarō Taki's setting (1901) of Bansui Doi's poem on the passing of glory, sung in every Japanese school since: Japan's ceremonial theme.",
+     "source": "kojo-score",
+     "confidence": "high",
+     "credit": "From the score on Wikimedia Commons (\"Kojo no tsuki re mineur.svg\", Cdang, CC0)."
+    },
+    {
+     "id": "sakura",
+     "name": "Sakura",
+     "mood": "folk",
+     "about": "The song of the cherry blossom, a koto piece for beginners in the Edo period and a school song since Meiji: Japan's folk theme.",
+     "source": "sakura-score",
+     "confidence": "high",
+     "credit": "From the score on Wikimedia Commons (\"Sakura.song.png\", Sakurambo, CC BY 2.5)."
+    }
+   ]
   },
   {
    "id": "gamelan",
@@ -1158,13 +2899,7 @@
   {
    "vp": "europe",
    "tradition": "chant",
-   "from": 500,
-   "until": 1600
-  },
-  {
-   "vp": "europe",
-   "tradition": "consort",
-   "from": 1600
+   "from": 500
   },
   {
    "vp": "greece",
@@ -1184,13 +2919,7 @@
   },
   {
    "vp": "rome",
-   "tradition": "rome",
-   "until": 400
-  },
-  {
-   "vp": "rome",
-   "tradition": "chant",
-   "from": 400
+   "tradition": "rome"
   },
   {
    "vp": "egypt",
@@ -1211,69 +2940,27 @@
   },
   {
    "vp": "iberia",
-   "tradition": "chant",
-   "from": 500,
-   "until": 1600
-  },
-  {
-   "vp": "iberia",
-   "tradition": "consort",
-   "from": 1600
+   "tradition": "chant"
   },
   {
    "vp": "france",
-   "tradition": "chant",
-   "from": 500,
-   "until": 1600
-  },
-  {
-   "vp": "france",
-   "tradition": "consort",
-   "from": 1600
+   "tradition": "chant"
   },
   {
    "vp": "britain",
-   "tradition": "chant",
-   "from": 600,
-   "until": 1600
-  },
-  {
-   "vp": "britain",
-   "tradition": "consort",
-   "from": 1600
+   "tradition": "chant"
   },
   {
    "vp": "germany",
-   "tradition": "chant",
-   "from": 750,
-   "until": 1600
-  },
-  {
-   "vp": "germany",
-   "tradition": "consort",
-   "from": 1600
+   "tradition": "chant"
   },
   {
    "vp": "norse",
-   "tradition": "chant",
-   "from": 1050,
-   "until": 1600
-  },
-  {
-   "vp": "norse",
-   "tradition": "consort",
-   "from": 1600
+   "tradition": "chant"
   },
   {
    "vp": "russia",
-   "tradition": "chant",
-   "from": 990,
-   "until": 1700
-  },
-  {
-   "vp": "russia",
-   "tradition": "consort",
-   "from": 1700
+   "tradition": "chant"
   },
   {
    "vp": "islam",
@@ -1311,8 +2998,7 @@
   },
   {
    "vp": "japan",
-   "tradition": "japan",
-   "from": 600
+   "tradition": "japan"
   },
   {
    "vp": "nusantara",
@@ -1359,8 +3045,7 @@
     "italy",
     "sicily"
    ],
-   "vp": "rome",
-   "until": 1000
+   "vp": "rome"
   },
   {
    "regions": [

@@ -1,0 +1,11 @@
+{
+ "id": "doos-ya-lellee",
+ "name": "Doos ya lellee",
+ "source": "lane-egyptians",
+ "pages": "p. 368 (1860 edition; archive.org bub_gb_WaEBAAAAQAAJ)",
+ "about": "\"Tread! O my joy!\": the first of the popular songs of Cairo that Lane noted \"in accordance with the manner in which they are commonly sung, without any of the embellishments\", its refrain sung three times; in maqam Rast on C, the quarter-tones written as plain notes. Notes as pitch:beats, quarter notes as beats.",
+ "meter": 4,
+ "pickup": 1,
+ "transpose": -10,
+ "notes": "D5:0.75 E5:0.25 | C5:1 C5:1 F5:1 F5:1 | D5:0.75 F5:0.25 D5:0.75 C5:0.25 / D5:0.75 E5:0.25 | C5:1 C5:1 F5:1 F5:1 | D5:0.75 F5:0.25 D5:0.75 C5:0.25 / D5:0.75 E5:0.25 | C5:1 C5:1 G5:1 G5:0.5 F5:0.5 | A5:0.5 G5:0.5 F5:0.5 E5:0.5 D5:0.5 C5:0.5 D5:0.75 E5:0.25 | F5:1 E5:1 D5:0.5 C5:0.5 D5:0.5 E5:0.5 | D5:1.5 E5:0.5 C5:1 r:1 /"
+}

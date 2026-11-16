@@ -1,0 +1,10 @@
+{
+ "id": "sakura",
+ "name": "Sakura (さくら)",
+ "source": "sakura-score",
+ "pages": "Wikimedia Commons, \"Sakura.song.png\" (CC BY 2.5)",
+ "about": "The traditional song of the cherry blossom, first printed as a koto piece for beginners in the Edo period and in the Meiji school songbooks. Notes as pitch:beats, quarter notes as beats, / after a phrase. Its scale is the in (miyako-bushi) mode on E.",
+ "meter": 4,
+ "transpose": -2,
+ "notes": "A4:1 A4:1 B4:2 | A4:1 A4:1 B4:2 / | A4:1 B4:1 C5:1 B4:1 | A4:1 B4:0.5 A4:0.5 F4:2 / | E4:1 C4:1 E4:1 F4:1 | E4:1 E4:0.5 C4:0.5 B3:2 / | A4:1 B4:1 C5:1 B4:1 | A4:1 B4:0.5 A4:0.5 F4:2 / | E4:1 C4:1 E4:1 F4:1 | E4:1 E4:0.5 C4:0.5 B3:2 / | A4:1 A4:1 B4:2 | A4:1 A4:1 B4:2 / | E4:1 F4:1 B4:0.5 A4:0.5 F4:1 | E4:2 r:2 /"
+}

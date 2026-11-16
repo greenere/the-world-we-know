@@ -56,6 +56,8 @@ export interface Hearing {
   percussion?: Record<string, string>;
   /** A recording to play instead of composing (served from public/audio/). */
   recording?: string;
+  /** The theme to keep to while time runs (one the reader chose to hear). */
+  prefer?: string;
   /** The year the music is for, which sets the drone's colour. */
   year?: number;
   /** Play the atlas's orchestra beneath the historical instruments (the Orchestral arrangement). */

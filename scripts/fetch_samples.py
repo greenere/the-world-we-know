@@ -44,6 +44,15 @@ INSTRUMENTS = {
     # hammered dulcimer that came to China in the Ming and is everywhere in its twentieth-century music.
     "xun": {"patch": "ocarina", "low": 55, "high": 81, "held": True, "gain": 0.6},
     "yangqin": {"patch": "dulcimer", "low": 48, "high": 88, "held": False, "gain": 0.7},
+    # Italy through the ages: the lute (the nylon guitar is its nearest kin, and plucked fast it is the
+    # mandolin too), the harpsichord of the baroque continuo, the trumpet of the opera and the band, and the
+    # piano of the twentieth century.
+    "guitar": {"patch": "acoustic_guitar_nylon", "low": 40, "high": 84, "held": False, "gain": 0.8},
+    "harpsichord": {"patch": "harpsichord", "low": 41, "high": 86, "held": False, "gain": 0.6},
+    "trumpet": {"patch": "trumpet", "low": 55, "high": 82, "held": True, "gain": 0.45},
+    "piano": {"patch": "acoustic_grand_piano", "low": 36, "high": 96, "held": False, "gain": 0.7},
+    # India: the sitar, which also stands for the veena and, plucked low and slow, the tanpura's drone.
+    "sitar": {"patch": "sitar", "low": 43, "high": 84, "held": False, "gain": 0.8},
     # The atlas's own orchestra, which arranges every tradition's pieces for a modern ear (as a game's score
     # would): a string section for the harmony, cellos and basses beneath it, horns, and timpani and a great
     # drum for the swells. Not historical; the Historical setting leaves them out.

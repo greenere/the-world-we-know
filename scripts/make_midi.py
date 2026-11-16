@@ -479,7 +479,7 @@ def mama_hao_mingbai(score: dict) -> list[Track]:
 # it change. Every arrangement plays it three times with the same phrases, so the music can move from one
 # age's arrangement to the next at the end of a phrase and carry on with the following one.
 
-def theme(name: str, members: list[str], beat: float, levels: list[float], play, top: int = 66, taiko: bool = False, transpose: int = 2):
+def theme(name: str, members: list[str], beat: float, levels: list[float], play, top: int = 66, taiko: bool = False, transpose: int = 2, bars: int = 0, bed=None):
     """`play(T, rep, at, dur, pitch, on_beat, phrase_start, beats, pos)` sounds one melody note (at `pos`
     beats into its bar) in time through `rep` (0, 1, 2); the orchestra plays beneath at `levels[rep]`."""
 
@@ -488,6 +488,7 @@ def theme(name: str, members: list[str], beat: float, levels: list[float], play,
         mark = T[members[0]]
         notes = parse_notes(score["notes"], transpose)
         meter = score.get("meter", 4)
+        pickup = score.get("pickup", 0)
         t = 0.6
         for rep, level in enumerate(levels):
             b = 0.0
@@ -497,7 +498,7 @@ def theme(name: str, members: list[str], beat: float, levels: list[float], play,
             for pitch, beats, end in notes:
                 at = t + b * beat
                 if pitch is not None:
-                    play(T, rep, at, beats * beat * 0.94, pitch, abs(b - round(b)) < 1e-6, start, beats, b % meter)
+                    play(T, rep, at, beats * beat * 0.94, pitch, abs(b - round(b)) < 1e-6, start, beats, (b - pickup) % meter)
                     melody.append((at, beats * beat, pitch))
                     start = False
                 if end:
@@ -505,7 +506,11 @@ def theme(name: str, members: list[str], beat: float, levels: list[float], play,
                     ends.append(at + beats * beat)
                     start = True
                 b += beats
-            orchestra(T, melody, windows_of(t, b * beat, 4 * beat, ends, lambda _: level), beat=beat, top=top, taiko=taiko and rep == 2, swell_in=t if level >= 3.5 else 0)
+            if bed:
+                bed(T, rep, t, b * beat, beat, meter)
+            # The harmony changes every four beats, or (`bars`) with the bar lines, a few bars at a time.
+            wins = bars_of(t, b * beat, beat, meter * bars, pickup, ends, level) if bars else windows_of(t, b * beat, 4 * beat, ends, lambda _: level)
+            orchestra(T, melody, wins, beat=beat, top=top, taiko=taiko and rep == 2, swell_in=t if level >= 3.5 else 0)
             t += b * beat + beat * 2
             mark.marker(t, "stanza")
         return list(T.values())
@@ -686,6 +691,426 @@ def _m_shared(T, rep, at, dur, p, on_beat, start, beats, pos=0):
         T["timpani"].note(at, 0.4, 38 if p % 12 in (2, 9) else 45, 60 + 8 * rep)
 
 
+# Rome's two themes through the ages of Italy: Mesomedes' Hymn to the Sun, written for Hadrian's court (the
+# ceremonial one), and the Seikilos epitaph, a song carved on a grave, "while you live, shine" (the folk one).
+# From the lyre and aulos of the Etruscans to the chant of the medieval church, the lutes and viols of the
+# Renaissance, the opera house and the film orchestra. A historical instrument always has the tune.
+
+def _down(pos):
+    return abs(pos) < 1e-6
+
+
+def _sol_early(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["kithara"].note(at, dur, p, 84 if rep == 0 else 60)
+    if rep >= 1:
+        T["tibia"].note(at, dur, p, 74)
+    if rep >= 1 and _down(pos):
+        T["tympanum"].note(at, 0.3, 48, 60 + 8 * rep)
+
+
+def _sol_classical(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # The emperor's hymn: the kithara, then the tibia over the water organ, then the bronze cornu.
+    lead = ["kithara", "tibia", "cornu"][rep]
+    T[lead].note(at, dur, p, 82)
+    if rep >= 1 and _down(pos):
+        T["hydraulis"].note(at, dur * 1.8, p - 12, 48)
+    if rep == 2:
+        T["tibia"].note(at, dur, p + 12, 52)
+        if _down(pos):
+            T["tympanum"].note(at, 0.3, 48, 78)
+        elif on_beat:
+            T["crotala"].note(at, 0.15, 76, 56)
+
+
+def _sol_caravans(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # The medieval church: singers in plain chant, then in organum (a fifth below), then with the organ and
+    # bells.
+    T["cantores"].note(at, dur, p, 80)
+    if rep >= 1:
+        T["cantores"].note(at, dur, p - 7, 60)
+    if rep == 2:
+        T["organum"].note(at, dur, p - 12, 46)
+        if start:
+            T["campane"].note(at, 2.5, p + 12, 56)
+
+
+def _sol_crossings(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # A baroque court: the recorder over the harpsichord's continuo and the viol, then the trumpet.
+    T["flauto" if rep < 2 else "tromba"].note(at, dur, p + 12 if rep < 2 else p, 76)
+    if on_beat:
+        T["cembalo"].note(at, 0.4, p - 12, 56)
+    if rep >= 1 and _down(pos):
+        T["viola"].note(at, dur * 1.8, p - 24, 58)
+
+
+def _sol_steam(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # The opera house: the oboe sings it over the harp, then the strings join, then the trumpet leads.
+    T["oboe" if rep < 2 else "tromba"].note(at, dur, p + 12 if rep < 2 else p, 80)
+    if rep >= 1:
+        T["strings"].note(at, dur, p, 52)
+    if on_beat:
+        T["harp"].note(at, 0.6, p - 12, 50)
+
+
+def _sol_shared(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # A film orchestra: the piano alone, then the strings and horns, then everyone.
+    T["pianoforte"].note(at, dur, p + 12, 74 if rep == 0 else 60)
+    if _down(pos):
+        T["pianoforte"].note(at, dur * 1.5, p - 12, 50)
+    if rep >= 1:
+        T["strings"].note(at, dur, p, 60)
+    if rep == 2:
+        T["horn"].note(at, dur, p, 74)
+        T["tromba"].note(at, dur, p + 12, 52)
+
+
+def _seik_early(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["tibia" if rep == 1 else "kithara"].note(at, dur, p, 82)
+    if rep == 2:
+        T["tibia"].note(at, dur, p, 54)
+    if rep >= 1 and _down(pos):
+        T["kithara"].note(at, dur, p - 12, 50)
+
+
+def _seik_classical(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["kithara" if rep == 0 else "tibia"].note(at, dur, p, 82)
+    if rep >= 1 and on_beat:
+        T["kithara"].note(at + 0.02, dur, p - 12, 56)
+    if rep == 2 and _down(pos):
+        T["crotala"].note(at, 0.15, 76, 50)
+
+
+def _seik_caravans(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # A jongleur's song: the vielle, then the recorder over it, then the lute and the tabor.
+    T["vielle" if rep != 1 else "flauto"].note(at, dur, p + (12 if rep == 1 else 0), 78)
+    if rep >= 1 and on_beat:
+        T["vielle" if rep == 1 else "liuto"].note(at, dur, p - 12, 50)
+    if rep == 2 and _down(pos):
+        T["tympanum"].note(at, 0.25, 50, 56)
+
+
+def _seik_crossings(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["liuto" if rep == 0 else "flauto"].note(at, dur, p + (12 if rep else 0), 80)
+    if rep >= 1 and on_beat:
+        T["liuto"].note(at, 0.5, p - 12, 56)
+    if rep == 2 and _down(pos):
+        T["viola"].note(at, dur * 1.5, p - 24, 52)
+        T["cembalo"].note(at, 0.4, p, 44)
+
+
+def _seik_steam(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # A Neapolitan evening: the mandolin trembling the tune, then the oboe answering, the strings beneath.
+    T["mandolino"].note(at, dur, p + 12, 84 if rep != 1 else 62)
+    if rep >= 1:
+        T["oboe"].note(at, dur, p, 66 if rep == 1 else 52)
+    if rep == 2:
+        T["strings"].note(at, dur, p, 50)
+
+
+def _seik_shared(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["pianoforte"].note(at, dur, p + 12, 74 if rep == 0 else 58)
+    if on_beat:
+        T["pianoforte"].note(at, beats * 0.4, p - 12, 44)
+    if rep >= 1:
+        T["strings"].note(at, dur, p, 58 if rep == 1 else 66)
+    if rep == 2:
+        T["horn"].note(at, dur, p - 12, 60)
+        T["oboe"].note(at, dur, p + 12, 50)
+
+
+# Japan's two themes through its ages: Kōjō no Tsuki, Taki's solemn song of a moon over a ruined castle
+# (the ceremonial one), and Sakura (the folk one). From clay flutes and the wagon zither, to gagaku's shō,
+# hichiriki and ryūteki at the Heian court, the koto, shakuhachi and shamisen of Edo, the harmonium and
+# school choirs of Meiji, and a film orchestra with koto and shakuhachi.
+
+def _sho(T, at, dur, p, v=40):
+    # The shō's cluster (aitake): the note with its fourth and fifth above, held.
+    for i in (0, 5, 7):
+        T["sho"].note(at, dur, p + i, v)
+
+
+def _j_early(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["tsuchibue"].note(at, dur, p, 70 if rep != 1 else 52)
+    if rep >= 1 and _down(pos):
+        T["wagon"].note(at, dur * 1.5, p - 12, 60)
+    if start:
+        T["odaiko"].note(at, 0.5, 41, 50 + 8 * rep)
+
+
+def _j_classical(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["wagon" if rep == 0 else "kagurabue"].note(at, dur, p + (12 if rep else 0), 82 if rep == 0 else 70)
+    if rep >= 1 and on_beat:
+        T["wagon"].note(at, 0.6, p - 12, 56)
+    if rep == 2 and _down(pos):
+        T["odaiko"].note(at, 0.5, 41, 64)
+
+
+def _j_caravans(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # The Heian court's gagaku: hichiriki and ryūteki on the tune, the shō's clusters, gakuso and biwa
+    # marking the beats, kakko and taiko.
+    T["hichiriki"].note(at, dur, p, 76)
+    if rep >= 1:
+        T["ryuteki"].note(at, dur, p + 12, 56)
+    if _down(pos):
+        _sho(T, at, dur * 2, p, 34 + 6 * rep)
+        if rep >= 1:
+            T["gakuso"].note(at, 0.6, p - 12, 56)
+            T["biwa"].note(at + 0.05, 0.4, p - 12, 50)
+    if start:
+        T["odaiko"].note(at, 0.6, 41, 66)
+    elif on_beat and rep == 2:
+        T["kakko"].note(at, 0.1, 76, 46)
+
+
+def _j_crossings(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # Edo's sankyoku: the shakuhachi, then the koto leading, then with the shamisen.
+    if rep == 0:
+        T["shakuhachi"].note(at, dur, p + 12, 74)
+    else:
+        T["koto"].note(at, dur, p, 82)
+        T["shakuhachi"].note(at, dur, p + 12, 50)
+    if rep == 2 and on_beat:
+        T["shamisen"].note(at + 0.02, 0.4, p, 56)
+
+
+def _j_steam(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # Meiji: a school song at the harmonium, the choir singing it, then a band's trumpet.
+    T["harmonium"].note(at, dur, p, 52)
+    if _down(pos):
+        T["harmonium"].note(at, dur, p - 12 if p - 12 >= 55 else p - 5, 40)
+    if rep >= 1:
+        T["voices"].note(at, dur, p, 74)
+    if rep == 2:
+        T["rappa"].note(at, dur, p, 58)
+
+
+def _j_shared(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["koto" if rep != 1 else "shakuhachi"].note(at, dur, p + (12 if rep == 1 else 0), 80 if rep != 1 else 72)
+    if rep >= 1:
+        T["strings"].note(at, dur, p, 54 if rep == 1 else 62)
+    if rep == 2:
+        T["shakuhachi"].note(at, dur, p + 12, 52)
+        T["horn"].note(at, dur, p - 12, 56)
+
+
+JAPAN_MEMBERS = {
+    "early": ["tsuchibue", "wagon", "odaiko"],
+    "classical": ["wagon", "kagurabue", "odaiko"],
+    "caravans": ["hichiriki", "ryuteki", "sho", "gakuso", "biwa", "kakko", "odaiko"],
+    "crossings": ["shakuhachi", "koto", "shamisen"],
+    "steam": ["harmonium", "voices", "rappa"],
+    "shared": ["koto", "shakuhachi", "strings", "horn"],
+}
+JAPAN_PLAY = {"early": _j_early, "classical": _j_classical, "caravans": _j_caravans, "crossings": _j_crossings, "steam": _j_steam, "shared": _j_shared}
+
+
+# India's two themes: a Pillari gita in raga Malahari, a hymn to Ganesha and the first song every student of
+# Carnatic music learns (the ceremonial one), and an old and popular svarajati in Bilahari (the folk one).
+# From voices chanting over the veena, to the temple's nadaswaram and tavil, the sitar, shehnai and sarangi of
+# the courts, the violin and harmonium of the nineteenth century, and a film orchestra. A tanpura sounds
+# beneath them all.
+
+def _tanpura(T, rep, start, length, beat, meter):
+    """The tanpura: pa, sa, sa and the low sa, plucked evenly through each cycle of two seconds or so."""
+    step = max(0.45, min(0.75, beat * meter / 4))
+    t, k = start, 0
+    while t < start + length - 0.1:
+        T["tanpura"].note(t, step * 3, [57, 62, 62, 50][k % 4], 44 if k % 4 else 50)
+        t += step
+        k += 1
+
+
+def _i_early(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # The voices chant it; the veena joins, then the drum.
+    T["voices"].note(at, dur, p, 76)
+    if rep >= 1 and on_beat:
+        T["veena"].note(at, 0.6, p - 12, 54)
+    if rep == 2 and _down(pos):
+        T["mridangam"].note(at, 0.2, 50, 56)
+
+
+def _i_classical(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["veena" if rep != 1 else "venu"].note(at, dur, p + (12 if rep == 1 else 0), 82 if rep != 1 else 70)
+    if rep >= 1 and on_beat:
+        T["veena"].note(at, 0.5, p - 12, 50)
+    if rep == 2:
+        T["venu"].note(at, dur, p + 12, 50)
+    if on_beat and rep >= 1:
+        T["mridangam"].note(at, 0.15, 50 if _down(pos) else 62, 60 if _down(pos) else 40)
+
+
+def _i_caravans(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # The temple: nadaswaram over its drone reed (the sruti), the tavil beating.
+    T["nadaswaram"].note(at, dur, p + 12, 80 if rep else 66)
+    if _down(pos):
+        T["sruti"].note(at, dur * 2, 62, 34)
+    if on_beat:
+        T["tavil"].note(at, 0.2, 48 if _down(pos) else 60, 64 if _down(pos) else 42)
+    if rep == 2:
+        T["veena"].note(at, dur, p, 50)
+
+
+def _i_crossings(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # A court: the sitar, then the shehnai, then the sarangi with the sitar; the tabla.
+    lead = ["sitar", "shehnai", "sarangi"][rep]
+    T[lead].note(at, dur, p + (12 if lead == "shehnai" else 0), 82)
+    if rep == 2:
+        T["sitar"].note(at, dur, p - 12, 50)
+    if on_beat:
+        T["tabla"].note(at, 0.12, 50 if _down(pos) else 64, 62 if _down(pos) else 40)
+
+
+def _i_steam(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    # The violin that Carnatic music took up about 1800, with the harmonium and the mridangam.
+    T["violin" if rep != 1 else "harmonium"].note(at, dur, p + (12 if rep != 1 else 0), 80 if rep != 1 else 66)
+    if rep >= 1 and _down(pos):
+        T["harmonium"].note(at, dur * 1.5, p - 12 if p - 12 >= 55 else p - 5, 40)
+    if on_beat:
+        T["mridangam"].note(at, 0.15, 50 if _down(pos) else 62, 58 if _down(pos) else 38)
+
+
+def _i_shared(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+    T["sitar" if rep == 0 else "bansuri"].note(at, dur, p + (12 if rep else 0), 80 if rep == 0 else 72)
+    if rep >= 1:
+        T["strings"].note(at, dur, p, 52 if rep == 1 else 62)
+    if rep == 2:
+        T["sitar"].note(at, dur, p - 12, 50)
+    if on_beat:
+        T["tabla"].note(at, 0.12, 50 if _down(pos) else 64, 60 if _down(pos) else 40)
+
+
+INDIA_MEMBERS = {
+    "early": ["voices", "veena", "mridangam", "tanpura"],
+    "classical": ["veena", "venu", "mridangam", "tanpura"],
+    "caravans": ["nadaswaram", "sruti", "tavil", "veena", "tanpura"],
+    "crossings": ["sitar", "shehnai", "sarangi", "tabla", "tanpura"],
+    "steam": ["violin", "harmonium", "mridangam", "tanpura"],
+    "shared": ["sitar", "bansuri", "strings", "tabla", "tanpura"],
+}
+INDIA_PLAY = {"early": _i_early, "classical": _i_classical, "caravans": _i_caravans, "crossings": _i_crossings, "steam": _i_steam, "shared": _i_shared}
+LEVELS = {"early": [0, 1, 1], "classical": [1, 1, 2], "caravans": [1, 2, 2], "crossings": [1, 2, 2.5], "steam": [2, 2, 3], "shared": [2, 3, 4]}
+ERA_KEYS = ["early", "classical", "caravans", "crossings", "steam", "shared"]
+JAPAN_BEAT = {"kojo": [0.8, 0.72, 0.72, 0.66, 0.62, 0.62], "sakura": [0.75, 0.68, 0.7, 0.62, 0.6, 0.6]}
+INDIA_BEAT = {"gita": [0.62, 0.52, 0.5, 0.48, 0.46, 0.46], "bilahari": [0.9, 0.78, 0.74, 0.72, 0.68, 0.66]}
+
+ASIA_THEME = {}
+for th, score in (("kojo", "kojo-no-tsuki"), ("sakura", "sakura")):
+    for i, era in enumerate(ERA_KEYS):
+        ASIA_THEME[f"{th}-{era}"] = (score, theme(f"{th}_{era}", JAPAN_MEMBERS[era], JAPAN_BEAT[th][i], LEVELS[era], JAPAN_PLAY[era], top=62, transpose=json.loads((SCORES / f"{score}.json").read_text())["transpose"], bars=1, taiko=era == "shared"))
+for th, score in (("gita", "malahari-gita"), ("bilahari", "bilahari")):
+    for i, era in enumerate(ERA_KEYS):
+        ASIA_THEME[f"{th}-{era}"] = (score, theme(f"{th}_{era}", INDIA_MEMBERS[era], INDIA_BEAT[th][i], [min(x, 3) for x in LEVELS[era]], INDIA_PLAY[era], top=60, transpose=2, bars=1, bed=_tanpura))
+
+
+# A table-driven arrangement, for the traditions added later: for each era, who leads each verse, who joins
+# (from which verse), who plays the bass on the downbeats, who holds the bar's first note, and the drums.
+
+def arranged(spec):
+    """`spec`: lead: [(member, octave)] for verses 1-3; join: [(from verse, member, octave, velocity)];
+    bass: (member, octave, from verse); hold: (member, octave, from verse); drums: [(member, pitch, "down" |
+    "beat" | "start", from verse, velocity)]."""
+
+    def play(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+        m, o = spec["lead"][rep]
+        T[m].note(at, dur, p + 12 * o, 82)
+        for frm, jm, jo, v in spec.get("join", []):
+            if rep >= frm and jm != m:
+                T[jm].note(at + 0.015, dur, p + 12 * jo, v)
+        down = abs(pos) < 1e-6
+        if spec.get("bass") and rep >= spec["bass"][2] and down:
+            bm, bo, _ = spec["bass"]
+            T[bm].note(at, max(dur, 0.6), p + 12 * bo, 58)
+        if spec.get("hold") and rep >= spec["hold"][2] and down:
+            hm, ho, _ = spec["hold"]
+            T[hm].note(at, dur * 2, p + 12 * ho, 40)
+        for dm, pitch, when, frm, v in spec.get("drums", []):
+            if rep < frm:
+                continue
+            if (when == "down" and down) or (when == "start" and start) or (when == "beat" and on_beat and not down):
+                T[dm].note(at, 0.2, pitch, v)
+
+    return play
+
+
+def members_of(spec):
+    out = [m for m, _ in spec["lead"]] + [j[1] for j in spec.get("join", [])]
+    out += [spec[k][0] for k in ("bass", "hold") if spec.get(k)] + [d[0] for d in spec.get("drums", [])]
+    return list(dict.fromkeys(out))
+
+
+# Europe's two themes: the processional chant Veni, veni Emmanuel (the ceremonial one) and Greensleeves (the
+# folk one). From the bronze lurs and lyres of the north, the harps and crwths of the Celts, through the chant
+# and organ of the medieval church, the lutes, recorders and viols of the Renaissance, the Victorian organ and
+# parlour, to a film orchestra.
+EUROPE = {
+    "emmanuel": {
+        "early": {"lead": [("lur", 0), ("lur", 0), ("lur", 0)], "join": [(1, "lyre", 0, 56)], "drums": [("drum", 45, "start", 0, 60)], "hold": ("lur", -1, 2)},
+        "classical": {"lead": [("cruit", 0), ("crwth", 0), ("crwth", 0)], "join": [(1, "cruit", -1, 54), (2, "carnyx", 0, 46)], "drums": [("drum", 45, "down", 1, 56)]},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "voices", -1, 56), (2, "organ", -1, 44)], "hold": ("organ", -1, 1), "drums": [("bells", 74, "start", 2, 50)]},
+        "crossings": {"lead": [("voices", 0), ("viol", 0), ("voices", 0)], "join": [(1, "organ", -1, 44), (2, "viol", -1, 50)], "bass": ("viol", -1, 1)},
+        "steam": {"lead": [("organ", 0), ("voices", 0), ("voices", 0)], "join": [(1, "organ", -1, 46), (2, "strings", 0, 54)], "bass": ("organ", -1, 0)},
+        "shared": {"lead": [("voices", 0), ("strings", 0), ("horn", 0)], "join": [(1, "voices", -1, 56), (2, "strings", 1, 56), (2, "voices", 0, 60)], "drums": [("timpani", 38, "start", 2, 66)]},
+    },
+    "greensleeves": {
+        "early": {"lead": [("lyre", 0), ("pipe", 1), ("pipe", 1)], "join": [(1, "lyre", -1, 52)], "drums": [("drum", 48, "down", 2, 52)]},
+        "classical": {"lead": [("cruit", 0), ("pipe", 1), ("crwth", 0)], "join": [(1, "cruit", -1, 52), (2, "pipe", 1, 48)], "drums": [("drum", 48, "down", 1, 50)]},
+        "caravans": {"lead": [("vielle", 0), ("recorder", 1), ("vielle", 0)], "join": [(1, "lute", -1, 48), (2, "vielle", 0, 46)], "drums": [("tabor", 62, "down", 1, 54)]},
+        "crossings": {"lead": [("lute", 0), ("recorder", 1), ("viol", 0)], "join": [(1, "lute", -1, 54), (2, "virginals", 0, 44)], "bass": ("viol", -1, 1)},
+        "steam": {"lead": [("piano", 0), ("violin", 0), ("violin", 0)], "join": [(1, "piano", -1, 50), (2, "oboe", 1, 46)], "bass": ("piano", -2, 0)},
+        "shared": {"lead": [("piano", 0), ("strings", 0), ("oboe", 1)], "join": [(1, "piano", -1, 48), (2, "strings", 0, 60), (2, "horn", -1, 52)]},
+    },
+}
+
+# The maqam world's two themes, both noted by Edward Lane in Cairo in the 1830s: the chant of a poet of the
+# Hilali epic (the ceremonial one) and the popular song "Doos ya lellee" (the folk one). From the lyre and
+# reed pipe of Mesopotamia, the barbat, chang and ney of the Sasanian court, the oud, qanun and ney of the
+# Abbasid and Andalusian golden age, the mehter's zurnas and drums, Cairo's takht with its violin, to a film
+# orchestra.
+MAQAM = {
+    "hilali": {
+        "early": {"lead": [("lyre", 0), ("zummara", 0), ("zummara", 0)], "join": [(1, "lyre", -1, 54)], "drums": [("daf", 48, "down", 1, 58)]},
+        "classical": {"lead": [("barbat", 0), ("ney", 1), ("ney", 1)], "join": [(1, "barbat", -1, 54), (2, "chang", 0, 46)], "drums": [("daf", 48, "down", 1, 58), ("daf", 60, "beat", 2, 40)]},
+        "caravans": {"lead": [("oud", 0), ("ney", 1), ("oud", 0)], "join": [(1, "qanun", 0, 50), (2, "ney", 1, 50)], "drums": [("darbuka", 48, "down", 0, 60), ("riq", 64, "beat", 1, 42)]},
+        "crossings": {"lead": [("zurna", 1), ("zurna", 1), ("zurna", 1)], "join": [(1, "zurna", 0, 56)], "drums": [("davul", 45, "down", 0, 74), ("davul", 45, "beat", 1, 52), ("zil", 80, "beat", 2, 44)]},
+        "steam": {"lead": [("oud", 0), ("violin", 0), ("violin", 0)], "join": [(1, "qanun", 0, 50), (2, "ney", 1, 50), (2, "oud", -1, 50)], "drums": [("riq", 64, "beat", 0, 44), ("darbuka", 48, "down", 0, 58)]},
+        "shared": {"lead": [("oud", 0), ("strings", 0), ("horn", 0)], "join": [(1, "ney", 1, 52), (2, "strings", 0, 60), (2, "oud", -1, 50)], "drums": [("darbuka", 48, "down", 1, 56)]},
+    },
+    "doos": {
+        "early": {"lead": [("zummara", 0), ("zummara", 0), ("lyre", 0)], "join": [(1, "lyre", -1, 52), (2, "zummara", 0, 56)], "drums": [("daf", 48, "down", 0, 56)]},
+        "classical": {"lead": [("ney", 1), ("barbat", 0), ("ney", 1)], "join": [(1, "ney", 1, 48), (2, "barbat", -1, 52)], "drums": [("daf", 48, "down", 0, 56), ("daf", 60, "beat", 1, 38)]},
+        "caravans": {"lead": [("oud", 0), ("qanun", 0), ("ney", 1)], "join": [(1, "oud", -1, 52), (2, "qanun", 0, 48)], "drums": [("darbuka", 48, "down", 0, 60), ("riq", 64, "beat", 0, 42)]},
+        "crossings": {"lead": [("kemenche", 0), ("ney", 1), ("kemenche", 0)], "join": [(1, "oud", -1, 52), (2, "ney", 1, 48)], "drums": [("darbuka", 48, "down", 0, 58), ("riq", 64, "beat", 1, 40)]},
+        "steam": {"lead": [("violin", 0), ("qanun", 0), ("violin", 0)], "join": [(1, "oud", -1, 52), (2, "qanun", 0, 48)], "drums": [("riq", 64, "beat", 0, 44), ("darbuka", 48, "down", 0, 58)]},
+        "shared": {"lead": [("oud", 0), ("strings", 0), ("ney", 1)], "join": [(1, "oud", -1, 50), (2, "strings", 0, 60), (2, "horn", -1, 50)], "drums": [("darbuka", 48, "down", 0, 56), ("riq", 64, "beat", 1, 40)]},
+    },
+}
+EUROPE_BEAT = {"emmanuel": [0.95, 0.85, 0.82, 0.75, 0.7, 0.7], "greensleeves": [0.8, 0.72, 0.66, 0.6, 0.58, 0.56]}
+MAQAM_BEAT = {"hilali": [0.78, 0.7, 0.66, 0.6, 0.6, 0.58], "doos": [0.62, 0.56, 0.52, 0.5, 0.48, 0.46]}
+LATER_THEME = {}
+for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel", "greensleeves": "greensleeves"}), (MAQAM, MAQAM_BEAT, {"hilali": "hilali", "doos": "doos-ya-lellee"})):
+    for th, eras in table.items():
+        sc = json.loads((SCORES / f"{scores[th]}.json").read_text())
+        for i, era in enumerate(ERA_KEYS):
+            spec = eras[era]
+            LATER_THEME[f"{th}-{era}"] = (scores[th], theme(f"{th}_{era}", members_of(spec), beats[th][i], LEVELS[era], arranged(spec), top=62, transpose=sc["transpose"], bars=1, taiko=era == "shared"))
+
+
+ROME_THEME = {
+    "sol-early": ("helios", theme("sol_early", ["kithara", "tibia", "tympanum"], 0.75, [0, 1, 1], _sol_early, top=60, transpose=-7, bars=2)),
+    "sol-classical": ("helios", theme("sol_classical", ["kithara", "tibia", "cornu", "hydraulis", "tympanum", "crotala"], 0.62, [1, 2, 3], _sol_classical, top=62, transpose=-7, bars=2)),
+    "sol-caravans": ("helios", theme("sol_caravans", ["cantores", "organum", "campane"], 0.7, [1, 1, 2], _sol_caravans, top=60, transpose=-7, bars=2)),
+    "sol-crossings": ("helios", theme("sol_crossings", ["flauto", "tromba", "cembalo", "viola"], 0.6, [1, 2, 3], _sol_crossings, top=62, transpose=-7, bars=2)),
+    "sol-steam": ("helios", theme("sol_steam", ["oboe", "tromba", "strings", "harp"], 0.62, [2, 3, 3.5], _sol_steam, top=64, transpose=-7, bars=2)),
+    "sol-shared": ("helios", theme("sol_shared", ["pianoforte", "strings", "horn", "tromba"], 0.62, [2, 3, 4], _sol_shared, top=64, transpose=-7, bars=2, taiko=True)),
+    "seikilos-early": ("seikilos", theme("seikilos_early", ["kithara", "tibia"], 0.8, [0, 1, 1], _seik_early, top=62, transpose=-2, bars=1)),
+    "seikilos-classical": ("seikilos", theme("seikilos_classical", ["kithara", "tibia", "crotala"], 0.7, [1, 1, 2], _seik_classical, top=64, transpose=-2, bars=1)),
+    "seikilos-caravans": ("seikilos", theme("seikilos_caravans", ["vielle", "flauto", "liuto", "tympanum"], 0.66, [1, 1, 2], _seik_caravans, top=64, transpose=-2, bars=1)),
+    "seikilos-crossings": ("seikilos", theme("seikilos_crossings", ["liuto", "flauto", "viola", "cembalo"], 0.62, [1, 2, 2], _seik_crossings, top=64, transpose=-2, bars=1)),
+    "seikilos-steam": ("seikilos", theme("seikilos_steam", ["mandolino", "oboe", "strings"], 0.6, [2, 2, 3], _seik_steam, top=66, transpose=-2, bars=1)),
+    "seikilos-shared": ("seikilos", theme("seikilos_shared", ["pianoforte", "strings", "horn", "oboe"], 0.6, [2, 3, 4], _seik_shared, top=66, transpose=-2, bars=1)),
+}
+
+
 THEME = {
     "molihua-early": ("molihua", theme("molihua_early", ["xun", "se", "bianzhong", "bianqing", "tezhong", "drum"], 0.9, [0, 1, 1], _early, top=62)),
     "molihua-classical": ("molihua", theme("molihua_classical", ["qin", "xiao", "se", "bianzhong"], 0.8, [1, 1, 2], _classical, top=64)),
@@ -762,15 +1187,13 @@ PIECES = {
     "madame-wang": madame_wang,
     "mama-hao-mingbai": mama_hao_mingbai,
     # The epitaph is a short, private song: strings and harp at most. Mesomedes wrote for Hadrian's court.
-    "seikilos": roman([1, 2, 2]),
     "calliope": roman([1, 2, 3]),
-    "helios": roman([1, 2, 3.5]),
 }
 
 
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
-    jobs = {**{n: (n, a) for n, a in PIECES.items()}, **THEME}
+    jobs = {**{n: (n, a) for n, a in PIECES.items()}, **THEME, **ROME_THEME, **ASIA_THEME, **LATER_THEME}
     for name, (source, arrange) in jobs.items():
         score = json.loads((SCORES / f"{source}.json").read_text(encoding="utf-8"))
         size = write(OUT / f"{name}.mid", arrange(score))
