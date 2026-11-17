@@ -1301,6 +1301,2096 @@
    ]
   },
   {
+   "id": "iberia",
+   "name": "Cantiga and guitar",
+   "summary": "The music of Iberia, heard through two of its own tunes carried through every age: Cantiga 100, \"Santa Maria, strela do dia\", from the songbook of Alfonso X, and the villancico \"Ríu, ríu, chíu\" printed in 1556. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the lyre and pipe of Tartessos and Roman Hispania, the oud, rebec, psaltery and darbuka that the Cantigas' pictures show, the chirimía and vihuela of the Golden Age, and guitar, bandurria and castanets.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      900,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "bow"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.7,
+   "leaps": 0.1,
+   "ornament": 0.05,
+   "drone": 0.5,
+   "places": [
+    "toledo",
+    "seville",
+    "cordoba",
+    "granada",
+    "lisbon",
+    "madrid"
+   ],
+   "source": "cantiga-100-score",
+   "confidence": "high",
+   "ensemble": {
+    "members": [
+     {
+      "id": "lyre",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "tibia",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "cymbals",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "c"
+     },
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "oud",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "rebec",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "psaltery",
+      "sample": "yangqin",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "darbuka",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "pandero",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t"
+     },
+     {
+      "id": "chirimia",
+      "sample": "suona",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 1.4
+     },
+     {
+      "id": "vihuela",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "organ",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "recorder",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "guitar",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "bandurria",
+      "sample": "banjo",
+      "voice": "lute",
+      "role": "part",
+      "tremolo": true
+     },
+     {
+      "id": "castanets",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "A4:1 G4:0.5 F4:0.5 E4:1 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "cantiga-early",
+     "name": "Santa Maria, Strela do Dia · Early kingdoms",
+     "about": "Iberia's ceremonial theme in the age of Tartessos: the lyre, then a reed pipe, a drum beneath.",
+     "midi": "midi/cantiga-early.mid",
+     "score": "cantiga-100",
+     "beat": 0.55,
+     "meter": 2,
+     "source": "cantiga-100-score",
+     "confidence": "high",
+     "theme": "cantiga-100",
+     "credit": "From the score by Antonio M. Romero Dorado on Wikimedia Commons (CC BY-SA 2.5).",
+     "until": -500
+    },
+    {
+     "id": "cantiga-classical",
+     "name": "Santa Maria, Strela do Dia · Classical empires",
+     "about": "Iberia's ceremonial theme in Roman Hispania: the tibia, then the lyre, cymbals joining.",
+     "midi": "midi/cantiga-classical.mid",
+     "score": "cantiga-100",
+     "beat": 0.52,
+     "meter": 2,
+     "source": "cantiga-100-score",
+     "confidence": "high",
+     "theme": "cantiga-100",
+     "credit": "From the score by Antonio M. Romero Dorado on Wikimedia Commons (CC BY-SA 2.5).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "cantiga-caravans",
+     "name": "Santa Maria, Strela do Dia · Caravans and monsoons",
+     "about": "Iberia's ceremonial theme at the court of Alfonso X, as the Cantigas' own pictures show: voices, then the oud, then the rebec, the psaltery, darbuka and tambourine.",
+     "midi": "midi/cantiga-caravans.mid",
+     "score": "cantiga-100",
+     "beat": 0.5,
+     "meter": 2,
+     "source": "cantiga-100-score",
+     "confidence": "high",
+     "theme": "cantiga-100",
+     "credit": "From the score by Antonio M. Romero Dorado on Wikimedia Commons (CC BY-SA 2.5).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "cantiga-crossings",
+     "name": "Santa Maria, Strela do Dia · Ocean crossings",
+     "about": "Iberia's ceremonial theme in the Golden Age: voices, then the chirimía shawm, then the vihuela, the organ beneath.",
+     "midi": "midi/cantiga-crossings.mid",
+     "score": "cantiga-100",
+     "beat": 0.48,
+     "meter": 2,
+     "source": "cantiga-100-score",
+     "confidence": "high",
+     "theme": "cantiga-100",
+     "credit": "From the score by Antonio M. Romero Dorado on Wikimedia Commons (CC BY-SA 2.5).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "cantiga-steam",
+     "name": "Santa Maria, Strela do Dia · Steam and telegraph",
+     "about": "Iberia's ceremonial theme on the guitar: the guitar, then the bandurria, castanets keeping time.",
+     "midi": "midi/cantiga-steam.mid",
+     "score": "cantiga-100",
+     "beat": 0.46,
+     "meter": 2,
+     "source": "cantiga-100-score",
+     "confidence": "high",
+     "theme": "cantiga-100",
+     "credit": "From the score by Antonio M. Romero Dorado on Wikimedia Commons (CC BY-SA 2.5).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "cantiga-shared",
+     "name": "Santa Maria, Strela do Dia · One shared map",
+     "about": "Iberia's ceremonial theme for a film orchestra: the guitar, then strings, then horns, the bandurria joining.",
+     "midi": "midi/cantiga-shared.mid",
+     "score": "cantiga-100",
+     "beat": 0.45,
+     "meter": 2,
+     "source": "cantiga-100-score",
+     "confidence": "high",
+     "theme": "cantiga-100",
+     "credit": "From the score by Antonio M. Romero Dorado on Wikimedia Commons (CC BY-SA 2.5).",
+     "from": 1900
+    },
+    {
+     "id": "riu-early",
+     "name": "Ríu, Ríu, Chíu · Early kingdoms",
+     "about": "Iberia's folk theme in the age of Tartessos: a reed pipe, then the lyre, over a drum.",
+     "midi": "midi/riu-early.mid",
+     "score": "riu-riu-chiu",
+     "beat": 0.5,
+     "meter": 4,
+     "source": "riu-midi",
+     "confidence": "high",
+     "theme": "riu-riu-chiu",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "until": -500
+    },
+    {
+     "id": "riu-classical",
+     "name": "Ríu, Ríu, Chíu · Classical empires",
+     "about": "Iberia's folk theme in Roman Hispania: the lyre, then the tibia, a drum and cymbals.",
+     "midi": "midi/riu-classical.mid",
+     "score": "riu-riu-chiu",
+     "beat": 0.48,
+     "meter": 4,
+     "source": "riu-midi",
+     "confidence": "high",
+     "theme": "riu-riu-chiu",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "riu-caravans",
+     "name": "Ríu, Ríu, Chíu · Caravans and monsoons",
+     "about": "Iberia's folk theme in al-Andalus and the Christian kingdoms: the recorder, then the oud, then the rebec, over darbuka and tambourine.",
+     "midi": "midi/riu-caravans.mid",
+     "score": "riu-riu-chiu",
+     "beat": 0.46,
+     "meter": 4,
+     "source": "riu-midi",
+     "confidence": "high",
+     "theme": "riu-riu-chiu",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "riu-crossings",
+     "name": "Ríu, Ríu, Chíu · Ocean crossings",
+     "about": "Iberia's folk theme as the Cancionero de Upsala printed it in 1556: voices, then the vihuela, then voices again, a tambourine beneath.",
+     "midi": "midi/riu-crossings.mid",
+     "score": "riu-riu-chiu",
+     "beat": 0.45,
+     "meter": 4,
+     "source": "riu-midi",
+     "confidence": "high",
+     "theme": "riu-riu-chiu",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "riu-steam",
+     "name": "Ríu, Ríu, Chíu · Steam and telegraph",
+     "about": "Iberia's folk theme on guitar and bandurria, with castanets.",
+     "midi": "midi/riu-steam.mid",
+     "score": "riu-riu-chiu",
+     "beat": 0.44,
+     "meter": 4,
+     "source": "riu-midi",
+     "confidence": "high",
+     "theme": "riu-riu-chiu",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "riu-shared",
+     "name": "Ríu, Ríu, Chíu · One shared map",
+     "about": "Iberia's folk theme for a film orchestra: the guitar, then strings, then the bandurria, horns beneath.",
+     "midi": "midi/riu-shared.mid",
+     "score": "riu-riu-chiu",
+     "beat": 0.42,
+     "meter": 4,
+     "source": "riu-midi",
+     "confidence": "high",
+     "theme": "riu-riu-chiu",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "cantiga-100",
+     "name": "Santa Maria, Strela do Dia",
+     "mood": "ceremonial",
+     "about": "Cantiga de Santa Maria no. 100, a song of praise from the collection made at the court of Alfonso X in the thirteenth century: Iberia's ceremonial theme.",
+     "source": "cantiga-100-score",
+     "confidence": "high",
+     "credit": "From the score by Antonio M. Romero Dorado on Wikimedia Commons (CC BY-SA 2.5)."
+    },
+    {
+     "id": "riu-riu-chiu",
+     "name": "Ríu, Ríu, Chíu",
+     "mood": "folk",
+     "about": "The villancico printed in the Cancionero de Upsala (Venice, 1556): Iberia's folk theme.",
+     "source": "riu-midi",
+     "confidence": "high",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0)."
+    }
+   ]
+  },
+  {
+   "id": "france",
+   "name": "Chanson and musette",
+   "summary": "The music of France, heard through two of its own tunes carried through every age: \"L'homme armé\", the fifteenth-century song of the armed man on which dozens of masses were built, and the folk song \"À la claire fontaine\". While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the Gauls' carnyx and lyre, the tibia and water organ of Roman Gaul, the cathedral choirs and the trouvères' vielle and harp, the trumpets, oboes and musette of Louis XIV, the Romantic organ, and the accordion of the bal-musette.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      900,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "bow"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.7,
+   "leaps": 0.1,
+   "ornament": 0.05,
+   "drone": 0.5,
+   "places": [
+    "paris",
+    "lyon",
+    "avignon"
+   ],
+   "source": "homme-arme-score",
+   "confidence": "high",
+   "ensemble": {
+    "members": [
+     {
+      "id": "carnyx",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "lyre",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "tibia",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "hydraulis",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "vielle",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "organ",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "bells",
+      "voice": "bell",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "trompette",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "hautbois",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "clavecin",
+      "sample": "harpsichord",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "timbales",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "tambourin",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t"
+     },
+     {
+      "id": "flute",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "harpe",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "musette",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "accordion",
+      "sample": "accordion",
+      "voice": "pipe",
+      "role": "part"
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "guitare",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "G4:2 G4:1 C5:2 G4:3"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "armed-early",
+     "name": "L'Homme Armé · Early kingdoms",
+     "about": "France's ceremonial theme among the Gauls: the carnyx war trumpet, then the lyre, a drum beneath.",
+     "midi": "midi/armed-early.mid",
+     "score": "lhomme-arme",
+     "beat": 0.48,
+     "meter": 3,
+     "source": "homme-arme-score",
+     "confidence": "high",
+     "theme": "lhomme-arme",
+     "credit": "From the score in the English Wikipedia article \"L'homme armé\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "armed-classical",
+     "name": "L'Homme Armé · Classical empires",
+     "about": "France's ceremonial theme in Roman Gaul: the tibia, then the lyre, then the water organ.",
+     "midi": "midi/armed-classical.mid",
+     "score": "lhomme-arme",
+     "beat": 0.45,
+     "meter": 3,
+     "source": "homme-arme-score",
+     "confidence": "high",
+     "theme": "lhomme-arme",
+     "credit": "From the score in the English Wikipedia article \"L'homme armé\" (CC BY-SA).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "armed-caravans",
+     "name": "L'Homme Armé · Caravans and monsoons",
+     "about": "France's ceremonial theme as the cathedral choirs sang it in their masses: voices, then the vielle, then voices over the organ, bells ringing.",
+     "midi": "midi/armed-caravans.mid",
+     "score": "lhomme-arme",
+     "beat": 0.45,
+     "meter": 3,
+     "source": "homme-arme-score",
+     "confidence": "high",
+     "theme": "lhomme-arme",
+     "credit": "From the score in the English Wikipedia article \"L'homme armé\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "armed-crossings",
+     "name": "L'Homme Armé · Ocean crossings",
+     "about": "France's ceremonial theme at the court of Louis XIV: trumpets, then oboes, the harpsichord beneath, kettledrums and tambourin.",
+     "midi": "midi/armed-crossings.mid",
+     "score": "lhomme-arme",
+     "beat": 0.42,
+     "meter": 3,
+     "source": "homme-arme-score",
+     "confidence": "high",
+     "theme": "lhomme-arme",
+     "credit": "From the score in the English Wikipedia article \"L'homme armé\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "armed-steam",
+     "name": "L'Homme Armé · Steam and telegraph",
+     "about": "France's ceremonial theme on a great Romantic organ: the organ, then voices, then trumpets.",
+     "midi": "midi/armed-steam.mid",
+     "score": "lhomme-arme",
+     "beat": 0.42,
+     "meter": 3,
+     "source": "homme-arme-score",
+     "confidence": "high",
+     "theme": "lhomme-arme",
+     "credit": "From the score in the English Wikipedia article \"L'homme armé\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "armed-shared",
+     "name": "L'Homme Armé · One shared map",
+     "about": "France's ceremonial theme for a film orchestra: trumpets, then strings, then horns, the oboe joining.",
+     "midi": "midi/armed-shared.mid",
+     "score": "lhomme-arme",
+     "beat": 0.4,
+     "meter": 3,
+     "source": "homme-arme-score",
+     "confidence": "high",
+     "theme": "lhomme-arme",
+     "credit": "From the score in the English Wikipedia article \"L'homme armé\" (CC BY-SA).",
+     "from": 1900
+    },
+    {
+     "id": "fontaine-early",
+     "name": "À la Claire Fontaine · Early kingdoms",
+     "about": "France's folk theme among the Gauls: the lyre, then a pipe, a drum joining.",
+     "midi": "midi/fontaine-early.mid",
+     "score": "claire-fontaine",
+     "beat": 0.62,
+     "meter": 2,
+     "source": "fontaine-score",
+     "confidence": "high",
+     "theme": "claire-fontaine",
+     "credit": "From the score in the French Wikipedia article \"À la claire fontaine\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "fontaine-classical",
+     "name": "À la Claire Fontaine · Classical empires",
+     "about": "France's folk theme in Roman Gaul: the tibia, then the lyre.",
+     "midi": "midi/fontaine-classical.mid",
+     "score": "claire-fontaine",
+     "beat": 0.6,
+     "meter": 2,
+     "source": "fontaine-score",
+     "confidence": "high",
+     "theme": "claire-fontaine",
+     "credit": "From the score in the French Wikipedia article \"À la claire fontaine\" (CC BY-SA).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "fontaine-caravans",
+     "name": "À la Claire Fontaine · Caravans and monsoons",
+     "about": "France's folk theme as the trouvères played it: the vielle, then the flute, then the harp, a tambourin joining.",
+     "midi": "midi/fontaine-caravans.mid",
+     "score": "claire-fontaine",
+     "beat": 0.58,
+     "meter": 2,
+     "source": "fontaine-score",
+     "confidence": "high",
+     "theme": "claire-fontaine",
+     "credit": "From the score in the French Wikipedia article \"À la claire fontaine\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "fontaine-crossings",
+     "name": "À la Claire Fontaine · Ocean crossings",
+     "about": "France's folk theme on the musette, the court's bagpipe, its drone beneath, the vielle answering.",
+     "midi": "midi/fontaine-crossings.mid",
+     "score": "claire-fontaine",
+     "beat": 0.56,
+     "meter": 2,
+     "source": "fontaine-score",
+     "confidence": "high",
+     "theme": "claire-fontaine",
+     "credit": "From the score in the French Wikipedia article \"À la claire fontaine\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "fontaine-steam",
+     "name": "À la Claire Fontaine · Steam and telegraph",
+     "about": "France's folk theme as a bal-musette: the accordion, then the violin, the guitar beneath.",
+     "midi": "midi/fontaine-steam.mid",
+     "score": "claire-fontaine",
+     "beat": 0.55,
+     "meter": 2,
+     "source": "fontaine-score",
+     "confidence": "high",
+     "theme": "claire-fontaine",
+     "credit": "From the score in the French Wikipedia article \"À la claire fontaine\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "fontaine-shared",
+     "name": "À la Claire Fontaine · One shared map",
+     "about": "France's folk theme for a film orchestra: the accordion, then strings, then the harp, the guitar beneath.",
+     "midi": "midi/fontaine-shared.mid",
+     "score": "claire-fontaine",
+     "beat": 0.54,
+     "meter": 2,
+     "source": "fontaine-score",
+     "confidence": "high",
+     "theme": "claire-fontaine",
+     "credit": "From the score in the French Wikipedia article \"À la claire fontaine\" (CC BY-SA).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "lhomme-arme",
+     "name": "L'Homme Armé",
+     "mood": "ceremonial",
+     "about": "The fifteenth-century song of the armed man, which more than forty composers took as the ground of a mass: France's ceremonial theme.",
+     "source": "homme-arme-score",
+     "confidence": "high",
+     "credit": "From the score in the English Wikipedia article \"L'homme armé\" (CC BY-SA)."
+    },
+    {
+     "id": "claire-fontaine",
+     "name": "À la Claire Fontaine",
+     "mood": "folk",
+     "about": "The French folk song of the clear fountain, sung since the seventeenth century in France and New France: France's folk theme.",
+     "source": "fontaine-score",
+     "confidence": "high",
+     "credit": "From the score in the French Wikipedia article \"À la claire fontaine\" (CC BY-SA)."
+    }
+   ]
+  },
+  {
+   "id": "germany",
+   "name": "Chorale and Lied",
+   "summary": "The music of the German lands, heard through two of their own tunes carried through every age: the hymn \"Es ist ein Ros entsprungen\" in Michael Praetorius's setting, and \"Innsbruck, ich muss dich lassen\", set by Heinrich Isaac about 1490. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: bronze lurs and the lyre, the monasteries' voices, organ and bells and the minnesingers' fiddle and harp, the trombones, viols, recorders and lute of the Reformation, and the organ, clarinet, zither and piano of the Romantics.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      900,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "bow"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.7,
+   "leaps": 0.1,
+   "ornament": 0.05,
+   "drone": 0.5,
+   "places": [
+    "aachen",
+    "cologne",
+    "nuremberg",
+    "lubeck",
+    "vienna"
+   ],
+   "source": "ros-score",
+   "confidence": "high",
+   "ensemble": {
+    "members": [
+     {
+      "id": "lur",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "lyre",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "organ",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "fiedel",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "bells",
+      "voice": "bell",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "posaune",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.75
+     },
+     {
+      "id": "recorder",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "viol",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "pipe",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "harfe",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "lute",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "clarinet",
+      "sample": "clarinet",
+      "voice": "reed",
+      "role": "part"
+     },
+     {
+      "id": "zither",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "piano",
+      "sample": "piano",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "oboe",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "C5:2 A4:2 G4:2 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "ros-early",
+     "name": "Es Ist ein Ros Entsprungen · Early kingdoms",
+     "about": "Germany's ceremonial theme in the bronze north: lurs, a drum at each phrase.",
+     "midi": "midi/ros-early.mid",
+     "score": "es-ist-ein-ros",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "ros-score",
+     "confidence": "high",
+     "theme": "es-ist-ein-ros",
+     "credit": "From the score in the English Wikipedia article \"Es ist ein Ros entsprungen\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "ros-classical",
+     "name": "Es Ist ein Ros Entsprungen · Classical empires",
+     "about": "Germany's ceremonial theme among the Germanic tribes: the lyre, then the lur.",
+     "midi": "midi/ros-classical.mid",
+     "score": "es-ist-ein-ros",
+     "beat": 0.75,
+     "meter": 4,
+     "source": "ros-score",
+     "confidence": "high",
+     "theme": "es-ist-ein-ros",
+     "credit": "From the score in the English Wikipedia article \"Es ist ein Ros entsprungen\" (CC BY-SA).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "ros-caravans",
+     "name": "Es Ist ein Ros Entsprungen · Caravans and monsoons",
+     "about": "Germany's ceremonial theme in the monasteries of the Empire: voices, then voices over the organ, then the fiddle, bells ringing.",
+     "midi": "midi/ros-caravans.mid",
+     "score": "es-ist-ein-ros",
+     "beat": 0.75,
+     "meter": 4,
+     "source": "ros-score",
+     "confidence": "high",
+     "theme": "es-ist-ein-ros",
+     "credit": "From the score in the English Wikipedia article \"Es ist ein Ros entsprungen\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "ros-crossings",
+     "name": "Es Ist ein Ros Entsprungen · Ocean crossings",
+     "about": "Germany's ceremonial theme as Praetorius set it in 1609: voices, then trombones, then voices, the organ and viol beneath.",
+     "midi": "midi/ros-crossings.mid",
+     "score": "es-ist-ein-ros",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "ros-score",
+     "confidence": "high",
+     "theme": "es-ist-ein-ros",
+     "credit": "From the score in the English Wikipedia article \"Es ist ein Ros entsprungen\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "ros-steam",
+     "name": "Es Ist ein Ros Entsprungen · Steam and telegraph",
+     "about": "Germany's ceremonial theme on the church organ: the organ, then the choir, trombones beneath, bells ringing.",
+     "midi": "midi/ros-steam.mid",
+     "score": "es-ist-ein-ros",
+     "beat": 0.68,
+     "meter": 4,
+     "source": "ros-score",
+     "confidence": "high",
+     "theme": "es-ist-ein-ros",
+     "credit": "From the score in the English Wikipedia article \"Es ist ein Ros entsprungen\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "ros-shared",
+     "name": "Es Ist ein Ros Entsprungen · One shared map",
+     "about": "Germany's ceremonial theme for a film orchestra: voices, then strings, then horns, the organ beneath.",
+     "midi": "midi/ros-shared.mid",
+     "score": "es-ist-ein-ros",
+     "beat": 0.66,
+     "meter": 4,
+     "source": "ros-score",
+     "confidence": "high",
+     "theme": "es-ist-ein-ros",
+     "credit": "From the score in the English Wikipedia article \"Es ist ein Ros entsprungen\" (CC BY-SA).",
+     "from": 1900
+    },
+    {
+     "id": "innsbruck-early",
+     "name": "Innsbruck, Ich Muss Dich Lassen · Early kingdoms",
+     "about": "Germany's folk theme in the bronze north: a pipe, then the lyre.",
+     "midi": "midi/innsbruck-early.mid",
+     "score": "innsbruck",
+     "beat": 0.75,
+     "meter": 4,
+     "source": "innsbruck-score",
+     "confidence": "high",
+     "theme": "innsbruck",
+     "credit": "From the score in the English Wikipedia article \"Innsbruck, ich muss dich lassen\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "innsbruck-classical",
+     "name": "Innsbruck, Ich Muss Dich Lassen · Classical empires",
+     "about": "Germany's folk theme among the Germanic tribes: the lyre, then a pipe, a drum joining.",
+     "midi": "midi/innsbruck-classical.mid",
+     "score": "innsbruck",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "innsbruck-score",
+     "confidence": "high",
+     "theme": "innsbruck",
+     "credit": "From the score in the English Wikipedia article \"Innsbruck, ich muss dich lassen\" (CC BY-SA).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "innsbruck-caravans",
+     "name": "Innsbruck, Ich Muss Dich Lassen · Caravans and monsoons",
+     "about": "Germany's folk theme as the minnesingers played: the fiddle, then a pipe, then the harp.",
+     "midi": "midi/innsbruck-caravans.mid",
+     "score": "innsbruck",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "innsbruck-score",
+     "confidence": "high",
+     "theme": "innsbruck",
+     "credit": "From the score in the English Wikipedia article \"Innsbruck, ich muss dich lassen\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "innsbruck-crossings",
+     "name": "Innsbruck, Ich Muss Dich Lassen · Ocean crossings",
+     "about": "Germany's folk theme in Isaac's age: the recorder, then the lute, then the viol.",
+     "midi": "midi/innsbruck-crossings.mid",
+     "score": "innsbruck",
+     "beat": 0.66,
+     "meter": 4,
+     "source": "innsbruck-score",
+     "confidence": "high",
+     "theme": "innsbruck",
+     "credit": "From the score in the English Wikipedia article \"Innsbruck, ich muss dich lassen\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "innsbruck-steam",
+     "name": "Innsbruck, Ich Muss Dich Lassen · Steam and telegraph",
+     "about": "Germany's folk theme in the age of the Lied: the clarinet, then the zither, then the violin, the piano beneath.",
+     "midi": "midi/innsbruck-steam.mid",
+     "score": "innsbruck",
+     "beat": 0.64,
+     "meter": 4,
+     "source": "innsbruck-score",
+     "confidence": "high",
+     "theme": "innsbruck",
+     "credit": "From the score in the English Wikipedia article \"Innsbruck, ich muss dich lassen\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "innsbruck-shared",
+     "name": "Innsbruck, Ich Muss Dich Lassen · One shared map",
+     "about": "Germany's folk theme for a film orchestra: the oboe, then strings, then horns, the piano beneath.",
+     "midi": "midi/innsbruck-shared.mid",
+     "score": "innsbruck",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "innsbruck-score",
+     "confidence": "high",
+     "theme": "innsbruck",
+     "credit": "From the score in the English Wikipedia article \"Innsbruck, ich muss dich lassen\" (CC BY-SA).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "es-ist-ein-ros",
+     "name": "Es Ist ein Ros Entsprungen",
+     "mood": "ceremonial",
+     "about": "The Christmas hymn printed in Speyer in 1599, in Michael Praetorius's setting of 1609: Germany's ceremonial theme.",
+     "source": "ros-score",
+     "confidence": "high",
+     "credit": "From the score in the English Wikipedia article \"Es ist ein Ros entsprungen\" (CC BY-SA)."
+    },
+    {
+     "id": "innsbruck",
+     "name": "Innsbruck, Ich Muss Dich Lassen",
+     "mood": "folk",
+     "about": "The farewell song set by Heinrich Isaac about 1490: Germany's folk theme.",
+     "source": "innsbruck-score",
+     "confidence": "high",
+     "credit": "From the score in the English Wikipedia article \"Innsbruck, ich muss dich lassen\" (CC BY-SA)."
+    }
+   ]
+  },
+  {
+   "id": "norse",
+   "name": "Lur and fiddle",
+   "summary": "The music of the Norse lands, heard through two of their own tunes carried through every age: \"Kong Christian stod ved højen mast\", the royal anthem of Denmark-Norway, and the Swedish folk song \"Ack Värmeland, du sköna\". While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the paired bronze lurs, the lyre, goat horn and drum of the Viking age, the trumpets and kettledrums of the Danish-Norwegian court, the nyckelharpa, langeleik and Hardanger fiddle of the farms, and the voices and organ of the national songs.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      900,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "bow"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.7,
+   "leaps": 0.1,
+   "ornament": 0.05,
+   "drone": 0.5,
+   "places": [
+    "uppsala",
+    "trondheim",
+    "bergen",
+    "stockholm",
+    "birka",
+    "hedeby"
+   ],
+   "source": "christian-score",
+   "confidence": "high",
+   "ensemble": {
+    "members": [
+     {
+      "id": "lur",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "lyre",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part"
+     },
+     {
+      "id": "bukkehorn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "trompet",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "organ",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "pauker",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "hardingfele",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "seljefloyte",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "nyckelharpa",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "langeleik",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "accordion",
+      "sample": "accordion",
+      "voice": "pipe",
+      "role": "part"
+     },
+     {
+      "id": "piano",
+      "sample": "piano",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "A3:1 D4:2 F4:1 A4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "christian-early",
+     "name": "Kong Christian · Early kingdoms",
+     "about": "The Norse lands' ceremonial theme in the bronze north: a pair of lurs, a drum at each phrase.",
+     "midi": "midi/christian-early.mid",
+     "score": "kong-christian",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "christian-score",
+     "confidence": "high",
+     "theme": "kong-christian",
+     "credit": "From the score in the English Wikipedia article \"Kong Christian stod ved højen mast\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "christian-classical",
+     "name": "Kong Christian · Classical empires",
+     "about": "The Norse lands' ceremonial theme in the Iron Age: the lur, then the lyre.",
+     "midi": "midi/christian-classical.mid",
+     "score": "kong-christian",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "christian-score",
+     "confidence": "high",
+     "theme": "kong-christian",
+     "credit": "From the score in the English Wikipedia article \"Kong Christian stod ved højen mast\" (CC BY-SA).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "christian-caravans",
+     "name": "Kong Christian · Caravans and monsoons",
+     "about": "The Norse lands' ceremonial theme in the Viking age: voices, then the goat horn, then the lyre, a drum beneath.",
+     "midi": "midi/christian-caravans.mid",
+     "score": "kong-christian",
+     "beat": 0.58,
+     "meter": 4,
+     "source": "christian-score",
+     "confidence": "high",
+     "theme": "kong-christian",
+     "credit": "From the score in the English Wikipedia article \"Kong Christian stod ved højen mast\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "christian-crossings",
+     "name": "Kong Christian · Ocean crossings",
+     "about": "The Norse lands' ceremonial theme at the Danish-Norwegian court and in its fleet: trumpets, then voices, kettledrums beneath.",
+     "midi": "midi/christian-crossings.mid",
+     "score": "kong-christian",
+     "beat": 0.56,
+     "meter": 4,
+     "source": "christian-score",
+     "confidence": "high",
+     "theme": "kong-christian",
+     "credit": "From the score in the English Wikipedia article \"Kong Christian stod ved højen mast\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "christian-steam",
+     "name": "Kong Christian · Steam and telegraph",
+     "about": "The Norse lands' ceremonial theme in the age of the national songs: voices, then trumpets, then voices, the organ beneath.",
+     "midi": "midi/christian-steam.mid",
+     "score": "kong-christian",
+     "beat": 0.55,
+     "meter": 4,
+     "source": "christian-score",
+     "confidence": "high",
+     "theme": "kong-christian",
+     "credit": "From the score in the English Wikipedia article \"Kong Christian stod ved højen mast\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "christian-shared",
+     "name": "Kong Christian · One shared map",
+     "about": "The Norse lands' ceremonial theme for a film orchestra: trumpets, then strings, then horns, the Hardanger fiddle high above.",
+     "midi": "midi/christian-shared.mid",
+     "score": "kong-christian",
+     "beat": 0.54,
+     "meter": 4,
+     "source": "christian-score",
+     "confidence": "high",
+     "theme": "kong-christian",
+     "credit": "From the score in the English Wikipedia article \"Kong Christian stod ved højen mast\" (CC BY-SA).",
+     "from": 1900
+    },
+    {
+     "id": "varmeland-early",
+     "name": "Ack Värmeland · Early kingdoms",
+     "about": "The Norse lands' folk theme in the bronze north: a willow flute, then the lyre.",
+     "midi": "midi/varmeland-early.mid",
+     "score": "ack-varmeland",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "varmeland-score",
+     "confidence": "high",
+     "theme": "ack-varmeland",
+     "credit": "From the score in the English Wikipedia article \"Ack Värmeland, du sköna\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "varmeland-classical",
+     "name": "Ack Värmeland · Classical empires",
+     "about": "The Norse lands' folk theme in the Iron Age: the lyre, then the willow flute.",
+     "midi": "midi/varmeland-classical.mid",
+     "score": "ack-varmeland",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "varmeland-score",
+     "confidence": "high",
+     "theme": "ack-varmeland",
+     "credit": "From the score in the English Wikipedia article \"Ack Värmeland, du sköna\" (CC BY-SA).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "varmeland-caravans",
+     "name": "Ack Värmeland · Caravans and monsoons",
+     "about": "The Norse lands' folk theme in the Viking age: the lyre, then a voice, the willow flute joining.",
+     "midi": "midi/varmeland-caravans.mid",
+     "score": "ack-varmeland",
+     "beat": 0.58,
+     "meter": 4,
+     "source": "varmeland-score",
+     "confidence": "high",
+     "theme": "ack-varmeland",
+     "credit": "From the score in the English Wikipedia article \"Ack Värmeland, du sköna\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "varmeland-crossings",
+     "name": "Ack Värmeland · Ocean crossings",
+     "about": "The Norse lands' folk theme in the age of the farm fiddlers: the nyckelharpa, then the langeleik zither, its drone beneath.",
+     "midi": "midi/varmeland-crossings.mid",
+     "score": "ack-varmeland",
+     "beat": 0.56,
+     "meter": 4,
+     "source": "varmeland-score",
+     "confidence": "high",
+     "theme": "ack-varmeland",
+     "credit": "From the score in the English Wikipedia article \"Ack Värmeland, du sköna\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "varmeland-steam",
+     "name": "Ack Värmeland · Steam and telegraph",
+     "about": "The Norse lands' folk theme as the fiddlers of Värmland and Hardanger played it: the Hardanger fiddle over its ringing strings, then the accordion.",
+     "midi": "midi/varmeland-steam.mid",
+     "score": "ack-varmeland",
+     "beat": 0.55,
+     "meter": 4,
+     "source": "varmeland-score",
+     "confidence": "high",
+     "theme": "ack-varmeland",
+     "credit": "From the score in the English Wikipedia article \"Ack Värmeland, du sköna\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "varmeland-shared",
+     "name": "Ack Värmeland · One shared map",
+     "about": "The Norse lands' folk theme for a film orchestra: the Hardanger fiddle, then strings, then voices, horns beneath.",
+     "midi": "midi/varmeland-shared.mid",
+     "score": "ack-varmeland",
+     "beat": 0.54,
+     "meter": 4,
+     "source": "varmeland-score",
+     "confidence": "high",
+     "theme": "ack-varmeland",
+     "credit": "From the score in the English Wikipedia article \"Ack Värmeland, du sköna\" (CC BY-SA).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "kong-christian",
+     "name": "Kong Christian",
+     "mood": "ceremonial",
+     "about": "The royal anthem of Denmark and Denmark-Norway, sung to Johannes Ewald's words of 1779: the Norse lands' ceremonial theme.",
+     "source": "christian-score",
+     "confidence": "high",
+     "credit": "From the score in the English Wikipedia article \"Kong Christian stod ved højen mast\" (CC BY-SA)."
+    },
+    {
+     "id": "ack-varmeland",
+     "name": "Ack Värmeland",
+     "mood": "folk",
+     "about": "The Swedish folk song of Värmland, printed by Anders Fryxell in the 1820s: the Norse lands' folk theme.",
+     "source": "varmeland-score",
+     "confidence": "high",
+     "credit": "From the score in the English Wikipedia article \"Ack Värmeland, du sköna\" (CC BY-SA)."
+    }
+   ]
+  },
+  {
+   "id": "russia",
+   "name": "Bells and balalaika",
+   "summary": "The music of Russia, heard through two of its own tunes carried through every age: \"God Save the Tsar!\", the anthem Alexei Lvov wrote in 1833, and \"Ej, uchnem!\", the song of the Volga barge haulers. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the Scythians' voices, horn and drum, the gusli and svirel of the early Slavs, the chant and bells of Kiev, Novgorod and Muscovy, the rozhok horn and gudok fiddle, and the Imperial choir and brass, the balalaika and the bayan.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      900,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "bow"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.7,
+   "leaps": 0.1,
+   "ornament": 0.05,
+   "drone": 0.5,
+   "places": [
+    "novgorod",
+    "moscow",
+    "vladimir",
+    "st-petersburg",
+    "kazan"
+   ],
+   "source": "tsar-score",
+   "confidence": "high",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.3
+     },
+     {
+      "id": "rog",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "gusli",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "rozhok",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "gudok",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "gain": 0.85
+     },
+     {
+      "id": "bells",
+      "voice": "bell",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "truba",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "litavry",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "balalaika",
+      "sample": "banjo",
+      "voice": "lute",
+      "role": "part",
+      "tremolo": true
+     },
+     {
+      "id": "bayan",
+      "sample": "accordion",
+      "voice": "pipe",
+      "role": "part"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "A4:2 F4:1 D4:3"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "tsar-early",
+     "name": "God Save the Tsar · Early kingdoms",
+     "about": "Russia's ceremonial theme in the age of the Scythians: voices, a horn and a drum.",
+     "midi": "midi/tsar-early.mid",
+     "score": "god-save-the-tsar",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "tsar-score",
+     "confidence": "high",
+     "theme": "god-save-the-tsar",
+     "credit": "From the score in the English Wikipedia article \"God Save the Tsar!\" (CC BY-SA).",
+     "until": -500
+    },
+    {
+     "id": "tsar-classical",
+     "name": "God Save the Tsar · Classical empires",
+     "about": "Russia's ceremonial theme among the early Slavs: the gusli, then voices.",
+     "midi": "midi/tsar-classical.mid",
+     "score": "god-save-the-tsar",
+     "beat": 0.76,
+     "meter": 4,
+     "source": "tsar-score",
+     "confidence": "high",
+     "theme": "god-save-the-tsar",
+     "credit": "From the score in the English Wikipedia article \"God Save the Tsar!\" (CC BY-SA).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "tsar-caravans",
+     "name": "God Save the Tsar · Caravans and monsoons",
+     "about": "Russia's ceremonial theme in Kiev and Novgorod: voices in the manner of znamenny chant, the bells ringing.",
+     "midi": "midi/tsar-caravans.mid",
+     "score": "god-save-the-tsar",
+     "beat": 0.75,
+     "meter": 4,
+     "source": "tsar-score",
+     "confidence": "high",
+     "theme": "god-save-the-tsar",
+     "credit": "From the score in the English Wikipedia article \"God Save the Tsar!\" (CC BY-SA).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "tsar-crossings",
+     "name": "God Save the Tsar · Ocean crossings",
+     "about": "Russia's ceremonial theme in Muscovy: voices over the bells, the rozhok horn joining.",
+     "midi": "midi/tsar-crossings.mid",
+     "score": "god-save-the-tsar",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "tsar-score",
+     "confidence": "high",
+     "theme": "god-save-the-tsar",
+     "credit": "From the score in the English Wikipedia article \"God Save the Tsar!\" (CC BY-SA).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "tsar-steam",
+     "name": "God Save the Tsar · Steam and telegraph",
+     "about": "Russia's ceremonial theme as Lvov wrote it for the Tsar in 1833: voices, then brass, kettledrums and bells.",
+     "midi": "midi/tsar-steam.mid",
+     "score": "god-save-the-tsar",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "tsar-score",
+     "confidence": "high",
+     "theme": "god-save-the-tsar",
+     "credit": "From the score in the English Wikipedia article \"God Save the Tsar!\" (CC BY-SA).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "tsar-shared",
+     "name": "God Save the Tsar · One shared map",
+     "about": "Russia's ceremonial theme for a film orchestra: voices, then strings, then horns, the bells and kettledrums.",
+     "midi": "midi/tsar-shared.mid",
+     "score": "god-save-the-tsar",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "tsar-score",
+     "confidence": "high",
+     "theme": "god-save-the-tsar",
+     "credit": "From the score in the English Wikipedia article \"God Save the Tsar!\" (CC BY-SA).",
+     "from": 1900
+    },
+    {
+     "id": "uchnem-early",
+     "name": "Ej, Uchnem! · Early kingdoms",
+     "about": "Russia's folk theme in the age of the Scythians: low voices over a drum.",
+     "midi": "midi/uchnem-early.mid",
+     "score": "ej-uchnem",
+     "beat": 0.75,
+     "meter": 4,
+     "source": "uchnem-midi",
+     "confidence": "high",
+     "theme": "ej-uchnem",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "until": -500
+    },
+    {
+     "id": "uchnem-classical",
+     "name": "Ej, Uchnem! · Classical empires",
+     "about": "Russia's folk theme among the early Slavs: voices, then the gusli.",
+     "midi": "midi/uchnem-classical.mid",
+     "score": "ej-uchnem",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "uchnem-midi",
+     "confidence": "high",
+     "theme": "ej-uchnem",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "uchnem-caravans",
+     "name": "Ej, Uchnem! · Caravans and monsoons",
+     "about": "Russia's folk theme in Kievan Rus: the gudok fiddle, then voices, the gusli joining.",
+     "midi": "midi/uchnem-caravans.mid",
+     "score": "ej-uchnem",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "uchnem-midi",
+     "confidence": "high",
+     "theme": "ej-uchnem",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "uchnem-crossings",
+     "name": "Ej, Uchnem! · Ocean crossings",
+     "about": "Russia's folk theme in Muscovy: voices, then the rozhok horn, the gusli beneath.",
+     "midi": "midi/uchnem-crossings.mid",
+     "score": "ej-uchnem",
+     "beat": 0.68,
+     "meter": 4,
+     "source": "uchnem-midi",
+     "confidence": "high",
+     "theme": "ej-uchnem",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "uchnem-steam",
+     "name": "Ej, Uchnem! · Steam and telegraph",
+     "about": "Russia's folk theme as the barge haulers sang it on the Volga and Balakirev printed it in 1866: the balalaika, then voices, then the bayan.",
+     "midi": "midi/uchnem-steam.mid",
+     "score": "ej-uchnem",
+     "beat": 0.66,
+     "meter": 4,
+     "source": "uchnem-midi",
+     "confidence": "high",
+     "theme": "ej-uchnem",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "uchnem-shared",
+     "name": "Ej, Uchnem! · One shared map",
+     "about": "Russia's folk theme for a film orchestra: low voices, then strings, then horns, balalaika and bayan.",
+     "midi": "midi/uchnem-shared.mid",
+     "score": "ej-uchnem",
+     "beat": 0.65,
+     "meter": 4,
+     "source": "uchnem-midi",
+     "confidence": "high",
+     "theme": "ej-uchnem",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "god-save-the-tsar",
+     "name": "God Save the Tsar",
+     "mood": "ceremonial",
+     "about": "The anthem of the Russian Empire, composed by Alexei Lvov in 1833: Russia's ceremonial theme.",
+     "source": "tsar-score",
+     "confidence": "high",
+     "credit": "From the score in the English Wikipedia article \"God Save the Tsar!\" (CC BY-SA)."
+    },
+    {
+     "id": "ej-uchnem",
+     "name": "Ej, Uchnem!",
+     "mood": "folk",
+     "about": "The song of the Volga barge haulers, first printed by Mily Balakirev in 1866: Russia's folk theme.",
+     "source": "uchnem-midi",
+     "confidence": "high",
+     "credit": "From the setting by Peter Gerloff on Wikimedia Commons (CC0)."
+    }
+   ]
+  },
+  {
    "id": "maqam",
    "name": "Maqam",
    "summary": "The modes of Arabic, Persian and Turkish music, heard through two themes Edward Lane noted in Cairo in the 1830s: the chant of a poet of the Hilali epic, and the popular song Doos ya lellee. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the lyre and reed pipe of Mesopotamia, the barbat, chang and ney of the Sasanian court, the oud, qanun and ney of the golden age, the Ottoman mehter, Cairo's takht with its violin, and a film orchestra. Lane wrote the neutral steps of the maqam as plain notes, and so they are played here.",
@@ -6713,11 +8803,11 @@
   },
   {
    "vp": "iberia",
-   "tradition": "chant"
+   "tradition": "iberia"
   },
   {
    "vp": "france",
-   "tradition": "chant"
+   "tradition": "france"
   },
   {
    "vp": "britain",
@@ -6725,15 +8815,15 @@
   },
   {
    "vp": "germany",
-   "tradition": "chant"
+   "tradition": "germany"
   },
   {
    "vp": "norse",
-   "tradition": "chant"
+   "tradition": "norse"
   },
   {
    "vp": "russia",
-   "tradition": "chant"
+   "tradition": "russia"
   },
   {
    "vp": "islam",

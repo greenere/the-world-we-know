@@ -1,0 +1,11 @@
+{
+ "id": "claire-fontaine",
+ "name": "À la claire fontaine",
+ "source": "fontaine-score",
+ "pages": "French Wikipedia, \"À la claire fontaine\" (score)",
+ "meter": 2,
+ "pickup": 0,
+ "transpose": -3,
+ "about": "The French folk song sung since the seventeenth century, in France and in New France, in 2/4; quarter notes as beats. Moved down a minor third onto D.",
+ "notes": "F4:1 F4:0.5 A4:0.5 | A4:0.5 G4:0.5 A4:0.5 G4:0.5 / F4:1 F4:0.5 A4:0.5 | A4:0.5 G4:0.5 A4:1 / A4:1 A4:0.5 G4:0.5 | F4:0.5 A4:0.5 C5:0.5 A4:0.5 / C5:1 C5:0.5 A4:0.5 | F4:0.5 A4:0.5 G4:1 / F4:1 F4:0.5 A4:0.5 | A4:0.5 G4:0.25 F4:0.25 A4:0.5 F4:0.5 / A4:1 A4:0.5 G4:0.25 F4:0.25 | A4:0.5 G4:0.5 F4:1 /"
+}

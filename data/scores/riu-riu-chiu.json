@@ -1,0 +1,11 @@
+{
+ "id": "riu-riu-chiu",
+ "name": "Ríu, ríu, chíu",
+ "source": "riu-midi",
+ "pages": "Wikimedia Commons, \"Ríu Ríu Chíu.mid\" (setting by Peter Gerloff, CC0)",
+ "meter": 4,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "The villancico printed in the Cancionero de Upsala (Venice, 1556), in D minor: the setting's lower and upper voices each sing their three phrases, here one after the other; quarter notes as beats.",
+ "notes": "A4:0.5 A4:0.5 G4:0.5 A4:0.5 F4:1 E4:0.5 D4:1 E4:0.5 F4:0.5 G4:0.5 A4:1 A4:1 / A4:0.5 A4:0.5 G4:0.5 A4:0.5 Bb4:1 A4:0.5 G4:0.5 F4:0.5 F4:0.5 E4:0.5 F4:0.5 D4:1 D4:1 / A4:0.5 A4:0.5 G4:0.5 A4:0.5 F4:1 E4:0.5 F4:1 F4:0.5 E4:0.5 E4:0.5 D4:1 D4:1 / A4:0.5 A4:0.5 G4:0.5 A4:0.5 Bb4:1 C5:0.5 A4:1 A4:0.5 G4:0.5 G4:0.5 F4:1 F4:1 / A4:0.5 A4:0.5 G4:0.5 A4:0.5 F4:1 E4:0.5 D4:1 D4:0.5 C4:0.5 C4:0.5 D4:1 D4:1 / A4:0.5 A4:0.5 G4:0.5 A4:0.5 Bb4:1 G4:0.5 F4:1 F4:0.5 G4:0.5 G4:0.5 D4:1 D4:1 /"
+}

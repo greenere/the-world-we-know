@@ -482,7 +482,7 @@ def mama_hao_mingbai(score: dict) -> list[Track]:
 
 # Tunes too short to make a verse alone go round this many times in each verse (the same in every age, so
 # that a change of age still finds the matching phrase).
-PASSES = {"huayno": 3, "mbira-cycle": 3, "gallop": 3, "son": 2, "doos-ya-lellee": 2, "seikilos": 2, "call-response": 2, "dolanan": 2, "bilahari": 2, "calliope": 2, "lamban": 2}
+PASSES = {"huayno": 3, "mbira-cycle": 3, "gallop": 3, "son": 2, "doos-ya-lellee": 2, "seikilos": 2, "call-response": 2, "dolanan": 2, "bilahari": 2, "calliope": 2, "lamban": 2, "riu-riu-chiu": 2, "claire-fontaine": 3}
 
 
 def theme(name: str, members: list[str], beat: float, levels: list[float], play, top: int = 66, taiko: bool = False, transpose: int = 2, bars: int = 0, bed=None):
@@ -1462,6 +1462,120 @@ SWAHILI = {
         "shared": {"lead": [("accordion", 0), ("violin", 0), ("voices", 0)], "join": [(0, "oud", -1, 44), (1, "qanun", 0, 40), (2, "strings", 0, 52)], "drums": DUMBAK + [KAYAMBA4]},
     },
 }
+# Europe's own countries, each with two real tunes through every age, in place of the shared chant and
+# Greensleeves. Iberia: Cantiga 100 of Alfonso X (ceremonial) and the villancico Ríu, ríu, chíu (folk); from
+# the lyre and pipe of Tartessos and Roman Hispania, the oud, rebec, psaltery and darbuka the Cantigas' own
+# pictures show, the chirimía and vihuela of the Golden Age, to guitar, bandurria and castanets.
+IBERIA = {
+    "cantiga": {
+        "early": {"lead": [("lyre", 0), ("tibia", 0), ("tibia", 0)], "join": [(1, "lyre", -1, 50)], "drums": [("drum", 45, [0], 0, 54)]},
+        "classical": {"lead": [("tibia", 0), ("lyre", 0), ("tibia", 0)], "join": [(1, "lyre", -1, 48), (2, "lyre", 0, 44)], "drums": [("drum", 45, [0], 0, 52), ("cymbals", 80, [1], 1, 30)]},
+        "caravans": {"lead": [("voices", 0), ("oud", 0), ("rebec", 0)], "join": [(1, "psaltery", 0, 44), (2, "oud", -1, 46)], "drums": [("darbuka", 48, [0, 1.5], 0, 54), ("pandero", 64, [1], 0, 40)]},
+        "crossings": {"lead": [("voices", 0), ("chirimia", 0), ("vihuela", 0)], "join": [(0, "vihuela", -1, 48), (1, "organ", -1, 44), (2, "recorder", 1, 40)], "drums": [("pandero", 64, [0, 1], 1, 36)]},
+        "steam": {"lead": [("guitar", 0), ("bandurria", 0), ("guitar", 0)], "join": [(1, "guitar", -1, 46), (2, "bandurria", 0, 42)], "drums": [("castanets", 76, [0, 0.5, 1], 0, 36)]},
+        "shared": {"lead": [("guitar", 0), ("strings", 0), ("horn", 0)], "join": [(1, "guitar", -1, 44), (2, "strings", 0, 56), (2, "bandurria", 0, 40)], "drums": [("castanets", 76, [0, 0.5, 1], 1, 32)]},
+    },
+    "riu": {
+        "early": {"lead": [("tibia", 0), ("lyre", 0), ("tibia", 0)], "join": [(1, "lyre", -1, 46)], "drums": [("drum", 45, [0, 2], 0, 54)]},
+        "classical": {"lead": [("lyre", 0), ("tibia", 0), ("lyre", 0)], "join": [(1, "lyre", -1, 46)], "drums": [("drum", 45, [0, 2], 0, 52), ("cymbals", 80, [2], 1, 30)]},
+        "caravans": {"lead": [("recorder", 0), ("oud", 0), ("rebec", 0)], "join": [(1, "psaltery", 0, 42), (2, "oud", -1, 46)], "drums": [("darbuka", 48, [0, 1.5, 2], 0, 54), ("pandero", 64, [1, 3], 0, 40)]},
+        "crossings": {"lead": [("voices", 0), ("vihuela", 0), ("voices", 0)], "join": [(0, "vihuela", -1, 48), (1, "voices", -1, 44), (2, "recorder", 1, 40)], "drums": [("pandero", 64, [0, 1, 2, 3], 0, 34)]},
+        "steam": {"lead": [("guitar", 0), ("bandurria", 0), ("guitar", 0)], "join": [(1, "guitar", -1, 46), (2, "bandurria", 0, 40)], "drums": [("castanets", 76, [0, 0.5, 1, 2, 2.5, 3], 0, 34)]},
+        "shared": {"lead": [("guitar", 0), ("strings", 0), ("bandurria", 0)], "join": [(1, "guitar", -1, 44), (2, "strings", 0, 54), (2, "horn", -1, 42)], "drums": [("castanets", 76, [0, 0.5, 1, 2, 2.5, 3], 1, 32)]},
+    },
+}
+# France: L'homme armé (ceremonial) and À la claire fontaine (folk); from the Gauls' carnyx, the tibia and
+# water organ of Roman Gaul, the cathedral choirs and the trouvères' vielle and harp, the trumpets, oboes and
+# harpsichord of Louis XIV and the musette, the Romantic organ and the bal-musette's accordion.
+FRANCE = {
+    "armed": {
+        "early": {"lead": [("carnyx", 0), ("lyre", 0), ("carnyx", 0)], "join": [(1, "lyre", -1, 46), (2, "lyre", -1, 44)], "drums": [("drum", 45, [0], 0, 58)]},
+        "classical": {"lead": [("tibia", 0), ("lyre", 0), ("hydraulis", 0)], "join": [(1, "lyre", -1, 46), (2, "tibia", 0, 44)], "drums": [("drum", 45, [0], 1, 52)]},
+        "caravans": {"lead": [("voices", 0), ("vielle", 0), ("voices", 0)], "join": [(1, "voices", -1, 46), (2, "organ", -1, 44)], "drums": [("bells", 74, "start", 2, 46)]},
+        "crossings": {"lead": [("trompette", 0), ("hautbois", 0), ("trompette", 0)], "join": [(0, "clavecin", -1, 44), (2, "hautbois", 0, 42)], "drums": [("timbales", 45, [0], 0, 60), ("tambourin", 62, [1, 2], 1, 40)]},
+        "steam": {"lead": [("organ", 0), ("voices", 0), ("organ", 0)], "join": [(1, "organ", -1, 46), (2, "trompette", 0, 42)], "bass": ("organ", -1, 0)},
+        "shared": {"lead": [("trompette", 0), ("strings", 0), ("horn", 0)], "join": [(1, "hautbois", 0, 44), (2, "strings", 0, 58)], "drums": [("timbales", 45, [0], 1, 56)]},
+    },
+    "fontaine": {
+        "early": {"lead": [("lyre", 0), ("flute", 1), ("lyre", 0)], "join": [(1, "lyre", -1, 44)], "drums": [("drum", 45, [0], 1, 50)]},
+        "classical": {"lead": [("tibia", 0), ("lyre", 0), ("tibia", 0)], "join": [(1, "lyre", -1, 46), (2, "lyre", -1, 44)]},
+        "caravans": {"lead": [("vielle", 0), ("flute", 1), ("harpe", 0)], "join": [(1, "harpe", -1, 44), (2, "vielle", 0, 40)], "drums": [("tambourin", 62, [0, 1], 1, 34)]},
+        "crossings": {"lead": [("musette", 0), ("vielle", 0), ("musette", 0)], "join": [(1, "vielle", -1, 44)], "drone": [("musette", 62, 0, 30)], "drums": [("tambourin", 62, [0, 1], 0, 34)]},
+        "steam": {"lead": [("accordion", 0), ("violin", 0), ("accordion", 0)], "join": [(0, "guitare", -1, 46), (2, "violin", 0, 40)], "drums": [("guitare", 50, [1], 0, 36)]},
+        "shared": {"lead": [("accordion", 0), ("strings", 0), ("harpe", 0)], "join": [(0, "guitare", -1, 44), (1, "accordion", 0, 40), (2, "strings", 0, 54)]},
+    },
+}
+# Germany: Es ist ein Ros entsprungen (ceremonial) and Innsbruck, ich muss dich lassen (folk); from the
+# bronze lurs and the lyre of the Germanic tribes, the monasteries' voices, organ and bells and the
+# minnesingers' fiddle and harp, Praetorius's voices, trombones and viols and Isaac's recorder and lute, the
+# Romantic organ, clarinet, zither and piano.
+GERMANY = {
+    "ros": {
+        "early": {"lead": [("lur", 0), ("lur", 0), ("lur", 0)], "join": [(1, "lur", -1, 44)], "drums": [("drum", 45, "start", 0, 56)]},
+        "classical": {"lead": [("lyre", 0), ("lur", 0), ("lyre", 0)], "join": [(1, "lyre", -1, 46), (2, "lur", -1, 42)], "drums": [("drum", 45, [0], 0, 52)]},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("fiedel", 0)], "join": [(1, "organ", -1, 44), (2, "voices", -1, 46)], "drums": [("bells", 74, "start", 2, 44)]},
+        "crossings": {"lead": [("voices", 0), ("posaune", 0), ("voices", 0)], "join": [(0, "organ", -1, 46), (1, "voices", -1, 46), (2, "recorder", 1, 38)], "bass": ("viol", -1, 1)},
+        "steam": {"lead": [("organ", 0), ("voices", 0), ("voices", 0)], "join": [(1, "organ", -1, 46), (2, "posaune", -1, 44)], "bass": ("organ", -1, 0), "drums": [("bells", 74, "start", 1, 40)]},
+        "shared": {"lead": [("voices", 0), ("strings", 0), ("horn", 0)], "join": [(0, "organ", -1, 44), (2, "strings", 0, 58), (2, "voices", 0, 52)], "drums": [("bells", 74, "start", 1, 38)]},
+    },
+    "innsbruck": {
+        "early": {"lead": [("pipe", 1), ("lyre", 0), ("pipe", 1)], "join": [(1, "lyre", -1, 44)]},
+        "classical": {"lead": [("lyre", 0), ("pipe", 1), ("lyre", 0)], "join": [(1, "lyre", -1, 46)], "drums": [("drum", 45, [0], 1, 50)]},
+        "caravans": {"lead": [("fiedel", 0), ("pipe", 1), ("harfe", 0)], "join": [(1, "harfe", -1, 44), (2, "fiedel", 0, 40)]},
+        "crossings": {"lead": [("recorder", 1), ("lute", 0), ("viol", 0)], "join": [(0, "lute", -1, 46), (2, "recorder", 1, 38)], "bass": ("viol", -1, 0)},
+        "steam": {"lead": [("clarinet", 0), ("zither", 0), ("violin", 0)], "join": [(0, "piano", -1, 44), (2, "zither", 0, 40)], "bass": ("piano", -2, 0)},
+        "shared": {"lead": [("oboe", 0), ("strings", 0), ("horn", 0)], "join": [(0, "piano", -1, 40), (1, "oboe", 0, 40), (2, "strings", 0, 56)]},
+    },
+}
+# The Norse lands: Kong Christian stod ved højen mast (ceremonial) and Ack Värmeland, du sköna (folk); from
+# the paired bronze lurs, the lyre, goat horn and drum of the Viking age, the trumpets and kettledrums of the
+# Danish-Norwegian court, the nyckelharpa, langeleik and Hardanger fiddle of the farms, to an orchestra.
+NORSE = {
+    "christian": {
+        "early": {"lead": [("lur", 0), ("lur", 0), ("lur", 0)], "join": [(1, "lur", -1, 46)], "drums": [("drum", 45, "start", 0, 56)]},
+        "classical": {"lead": [("lur", 0), ("lyre", 0), ("lur", 0)], "join": [(1, "lyre", -1, 46), (2, "lyre", -1, 44)], "drums": [("drum", 45, [0], 0, 54)]},
+        "caravans": {"lead": [("voices", 0), ("bukkehorn", 0), ("lyre", 0)], "join": [(0, "lyre", -1, 46), (1, "voices", -1, 44)], "drums": [("drum", 45, [0, 2], 0, 56)]},
+        "crossings": {"lead": [("trompet", 0), ("trompet", 0), ("voices", 0)], "join": [(1, "trompet", -1, 46), (2, "organ", -1, 44)], "drums": [("pauker", 45, [0, 2], 0, 60)]},
+        "steam": {"lead": [("voices", 0), ("trompet", 0), ("voices", 0)], "join": [(0, "organ", -1, 44), (1, "voices", -1, 46), (2, "trompet", 0, 42)], "drums": [("pauker", 45, [0], 0, 56)]},
+        "shared": {"lead": [("trompet", 0), ("strings", 0), ("horn", 0)], "join": [(1, "voices", 0, 46), (2, "strings", 0, 58), (2, "hardingfele", 1, 38)], "drums": [("pauker", 45, [0], 0, 56)]},
+    },
+    "varmeland": {
+        "early": {"lead": [("seljefloyte", 1), ("lyre", 0), ("seljefloyte", 1)], "join": [(1, "lyre", -1, 44)]},
+        "classical": {"lead": [("lyre", 0), ("seljefloyte", 1), ("lyre", 0)], "join": [(1, "lyre", -1, 44)]},
+        "caravans": {"lead": [("lyre", 0), ("voices", 0), ("lyre", 0)], "join": [(1, "lyre", -1, 44), (2, "seljefloyte", 1, 38)], "drums": [("drum", 45, [0], 1, 46)]},
+        "crossings": {"lead": [("nyckelharpa", 0), ("langeleik", 0), ("nyckelharpa", 0)], "join": [(0, "langeleik", -1, 44)], "drone": [("langeleik", 50, 0, 34)]},
+        "steam": {"lead": [("hardingfele", 0), ("accordion", 0), ("hardingfele", 0)], "join": [(1, "hardingfele", 0, 40), (2, "accordion", 0, 38)], "drone": [("hardingfele", 62, 0, 28)]},
+        "shared": {"lead": [("hardingfele", 0), ("strings", 0), ("voices", 0)], "join": [(0, "piano", -1, 40), (2, "strings", 0, 56), (2, "horn", -1, 42)]},
+    },
+}
+# Russia: God Save the Tsar! (ceremonial) and Ej, uchnem!, the Volga boatmen's song (folk); from the voices,
+# horn and drum of the Scythians, the gusli and svirel of the early Slavs, znamenny chant and the bells of
+# Kiev, Novgorod and Muscovy, the rozhok horn and gudok fiddle, to the Imperial choir and brass, the
+# balalaika and the bayan.
+RUSSIA = {
+    "tsar": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "rog", -1, 44)], "drums": [("drum", 45, [0], 0, 54)]},
+        "classical": {"lead": [("gusli", 0), ("voices", 0), ("gusli", 0)], "join": [(1, "gusli", -1, 44), (2, "voices", 0, 48)], "drums": [("drum", 45, [0], 1, 50)]},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "voices", -1, 48)], "drums": [("bells", 74, "start", 0, 46), ("bells", 62, [0], 2, 38)]},
+        "crossings": {"lead": [("voices", 0), ("voices", 0), ("rozhok", 0)], "join": [(0, "voices", -1, 48), (1, "gusli", 0, 40)], "drums": [("bells", 74, "start", 0, 46), ("bells", 62, [0], 1, 38)]},
+        "steam": {"lead": [("voices", 0), ("truba", 0), ("voices", 0)], "join": [(0, "voices", -1, 50), (1, "truba", -1, 44), (2, "truba", 0, 42)], "drums": [("litavry", 45, [0, 2], 1, 56), ("bells", 74, "start", 2, 40)]},
+        "shared": {"lead": [("voices", 0), ("strings", 0), ("horn", 0)], "join": [(0, "voices", -1, 50), (2, "strings", 0, 58), (2, "truba", 0, 42)], "drums": [("litavry", 45, [0], 0, 54), ("bells", 74, "start", 1, 40)]},
+    },
+    "uchnem": {
+        "early": {"lead": [("voices", -1), ("voices", -1), ("voices", -1)], "drums": [("drum", 45, [0], 0, 54)]},
+        "classical": {"lead": [("voices", -1), ("gusli", 0), ("voices", -1)], "join": [(1, "voices", -1, 44), (2, "gusli", 0, 40)], "drums": [("drum", 45, [0], 0, 52)]},
+        "caravans": {"lead": [("gudok", 0), ("voices", -1), ("gudok", 0)], "join": [(1, "gusli", 0, 40), (2, "voices", -1, 46)], "drums": [("drum", 45, [0], 0, 52)]},
+        "crossings": {"lead": [("voices", -1), ("rozhok", 0), ("voices", -1)], "join": [(0, "gusli", 0, 40), (1, "voices", -1, 46)], "drums": [("drum", 45, [0], 0, 54)]},
+        "steam": {"lead": [("balalaika", 0), ("voices", -1), ("bayan", 0)], "join": [(0, "bayan", -1, 44), (1, "balalaika", 0, 42), (2, "voices", -1, 46)]},
+        "shared": {"lead": [("voices", -1), ("strings", 0), ("horn", -1)], "join": [(0, "balalaika", 0, 40), (1, "voices", -1, 48), (2, "strings", 0, 54), (2, "bayan", 0, 40)], "drums": [("litavry", 45, [0], 1, 52)]},
+    },
+}
+IBERIA_BEAT = {"cantiga": [0.55, 0.52, 0.5, 0.48, 0.46, 0.45], "riu": [0.5, 0.48, 0.46, 0.45, 0.44, 0.42]}
+FRANCE_BEAT = {"armed": [0.48, 0.45, 0.45, 0.42, 0.42, 0.4], "fontaine": [0.62, 0.6, 0.58, 0.56, 0.55, 0.54]}
+GERMANY_BEAT = {"ros": [0.8, 0.75, 0.75, 0.7, 0.68, 0.66], "innsbruck": [0.75, 0.72, 0.7, 0.66, 0.64, 0.62]}
+NORSE_BEAT = {"christian": [0.62, 0.6, 0.58, 0.56, 0.55, 0.54], "varmeland": [0.62, 0.6, 0.58, 0.56, 0.55, 0.54]}
+RUSSIA_BEAT = {"tsar": [0.8, 0.76, 0.75, 0.72, 0.7, 0.7], "uchnem": [0.75, 0.72, 0.7, 0.68, 0.66, 0.65]}
+
 MAYA_BEAT = {"tun": [0.8, 0.76, 0.72, 0.7, 0.66, 0.64], "son": [0.34, 0.32, 0.31, 0.3, 0.29, 0.28]}
 ETHIOPIA_BEAT = {"zema": [0.85, 0.8, 0.8, 0.76, 0.72, 0.7], "tizita": [0.34, 0.32, 0.31, 0.3, 0.29, 0.28]}
 GRIOT_BEAT = {"fasa": [0.66, 0.62, 0.6, 0.58, 0.56, 0.55], "lamban": [0.22, 0.21, 0.2, 0.2, 0.19, 0.19]}
@@ -1472,7 +1586,10 @@ MAQAM_BEAT = {"hilali": [0.78, 0.7, 0.66, 0.6, 0.6, 0.58], "doos": [0.62, 0.56, 
 LATER_THEME = {}
 for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel", "greensleeves": "greensleeves"}), (MAQAM, MAQAM_BEAT, {"hilali": "hilali", "doos": "doos-ya-lellee"}), (GREEK, GREEK_BEAT, {"calliope": "calliope", "lullaby": "greek-lullaby"}), (ANDES, ANDES_BEAT, {"hanac": "hanacpachap", "huayno": "huayno"}), (STEPPE, STEPPE_BEAT, {"urtyn": "urtyn-duu", "gallop": "gallop"}), (MEXICA, MEXICA_BEAT, {"teo": "teocuicatl", "son": "son"}),
                               (MAYA, MAYA_BEAT, {"tun": "xajoj-tun", "son": "maya-son"}), (ETHIOPIA, ETHIOPIA_BEAT, {"zema": "zema", "tizita": "tizita"}),
-                              (GRIOT, GRIOT_BEAT, {"fasa": "fasa", "lamban": "lamban"}), (SWAHILI, SWAHILI_BEAT, {"maulidi": "maulidi", "taarab": "taarab"})):
+                              (GRIOT, GRIOT_BEAT, {"fasa": "fasa", "lamban": "lamban"}), (SWAHILI, SWAHILI_BEAT, {"maulidi": "maulidi", "taarab": "taarab"}),
+                              (IBERIA, IBERIA_BEAT, {"cantiga": "cantiga-100", "riu": "riu-riu-chiu"}), (FRANCE, FRANCE_BEAT, {"armed": "lhomme-arme", "fontaine": "claire-fontaine"}),
+                              (GERMANY, GERMANY_BEAT, {"ros": "es-ist-ein-ros", "innsbruck": "innsbruck"}), (NORSE, NORSE_BEAT, {"christian": "kong-christian", "varmeland": "ack-varmeland"}),
+                              (RUSSIA, RUSSIA_BEAT, {"tsar": "god-save-the-tsar", "uchnem": "ej-uchnem"})):
     # A key is the theme's tune prefix; the Maya's son is "mayason" so its files don't meet the Mexica's.
     for th, eras in table.items():
         sc = json.loads((SCORES / f"{scores[th]}.json").read_text())

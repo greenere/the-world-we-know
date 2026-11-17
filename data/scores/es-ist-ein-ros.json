@@ -1,0 +1,11 @@
+{
+ "id": "es-ist-ein-ros",
+ "name": "Es ist ein Ros entsprungen",
+ "source": "ros-score",
+ "pages": "English Wikipedia, \"Es ist ein Ros entsprungen\" (Praetorius's setting)",
+ "meter": 4,
+ "pickup": 2,
+ "transpose": -3,
+ "about": "The German Christmas hymn printed in Speyer in 1599, the soprano of Michael Praetorius's setting of 1609: its first part twice, then the second. Moved down a minor third onto D.",
+ "notes": "C5:2 | C5:1 C5:1 D5:1 C5:1 | C5:2 A4:2 | Bb4:2 A4:1 G4:2 F4:2 E4:1 | F4:2 / C5:2 | C5:1 C5:1 D5:1 C5:1 | C5:2 A4:2 | Bb4:2 A4:1 G4:2 F4:2 E4:1 | F4:3 / A4:1 | G4:1 E4:1 F4:1 D4:1 | C4:3 / C5:1 | C5:1 C5:1 D5:1 C5:1 | C5:2 A4:2 | Bb4:2 A4:1 G4:2 F4:2 E4:1 | F4:4 /"
+}
