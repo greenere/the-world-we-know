@@ -529,5 +529,1136 @@
     "note": "Béla Bartók and Zoltán Kodály set out with a phonograph to record the songs of villages."
    }
   ]
+ },
+ {
+  "id": "flute",
+  "kind": "music",
+  "name": "The flute",
+  "origin": {
+   "year": "-42000..-35000",
+   "place": "Geißenklösterle and Hohle Fels, in the Swabian Jura",
+   "lat": 48.4,
+   "lon": 9.77,
+   "culture": "Aurignacian hunters"
+  },
+  "summary": "Hunters in the caves of the Swabian Jura carve flutes from the wing bones of griffon vultures and swans and from mammoth ivory, with finger holes along them: the oldest instruments yet found. After them, flutes of bone, cane and bamboo, blown across the end or the side, turn up wherever people lived.",
+  "source": "conard-flutes",
+  "confidence": "high",
+  "spread": [
+   {
+    "year": "-7000..-5700",
+    "place": "Jiahu",
+    "lat": 33.6,
+    "lon": 113.67,
+    "vp": "china",
+    "confidence": "high",
+    "source": "zhang-jiahu",
+    "note": "Flutes of crane bone with seven holes are buried with the dead. Some can still play a scale."
+   },
+   {
+    "year": "-2500..-2300",
+    "place": "Saqqara",
+    "lat": 29.87,
+    "lon": 31.22,
+    "vp": "egypt",
+    "confidence": "medium",
+    "note": "Tomb reliefs of the Old Kingdom show a player holding a long end-blown flute aslant, as the ney is still held."
+   },
+   {
+    "year": "-100..100",
+    "place": "Sanchi",
+    "lat": 23.48,
+    "lon": 77.74,
+    "vp": "india",
+    "confidence": "medium",
+    "note": "The gateways of the stupa at Sanchi show musicians playing a flute held sideways, the venu of Krishna's legends."
+   },
+   {
+    "year": 756,
+    "place": "Nara",
+    "lat": 34.69,
+    "lon": 135.84,
+    "vp": "japan",
+    "from": "Jiahu",
+    "confidence": "high",
+    "note": "End-blown flutes from Tang China, ancestors of the shakuhachi, are among the treasures given to Tōdai-ji; the Shōsōin keeps them still."
+   }
+  ]
+ },
+ {
+  "id": "vessel-flute",
+  "kind": "music",
+  "name": "The vessel flute",
+  "origin": {
+   "year": "-5000..-4000",
+   "place": "Banpo",
+   "lat": 34.27,
+   "lon": 109.05,
+   "culture": "Yangshao villagers"
+  },
+  "summary": "At Banpo, potters make small egg-shaped whistles of clay with a hole to blow across: the first xun. Later ones gain finger holes and play a scale. Vessel flutes of clay were made again, quite apart, in the Americas.",
+  "source": "thrasher-chinese",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "-1200..-400",
+    "place": "Tlatilco",
+    "lat": 19.49,
+    "lon": -99.23,
+    "vp": "mexica",
+    "confidence": "low",
+    "note": "Potters of the Valley of Mexico make clay whistles and vessel flutes, many in the shape of animals; they are found across Mesoamerica for two thousand years."
+   },
+   {
+    "year": "-300..300",
+    "place": "Northern Kyushu",
+    "lat": 33.3,
+    "lon": 130.4,
+    "vp": "japan",
+    "confidence": "medium",
+    "note": "Clay vessel flutes with a few holes, the tsuchibue, are found at Yayoi sites in western Japan."
+   },
+   {
+    "year": 1853,
+    "place": "Budrio",
+    "lat": 44.54,
+    "lon": 11.53,
+    "vp": "rome",
+    "confidence": "high",
+    "note": "Giuseppe Donati of Budrio makes the clay whistle with ten holes and calls it the ocarina, the 'little goose'."
+   }
+  ]
+ },
+ {
+  "id": "panpipes",
+  "kind": "music",
+  "name": "The panpipes",
+  "origin": {
+   "year": "-200..300",
+   "place": "Cahuachi, in the Nazca valley",
+   "lat": -14.82,
+   "lon": -75.12,
+   "culture": "The Nazca"
+  },
+  "summary": "At Cahuachi the Nazca break and bury panpipes of fired clay, the antara, each pipe closed at its foot and the set tuned with care. Panpipes of cane are surely older, and were made apart in Greece, China and the Pacific, but cane rarely survives.",
+  "source": "montagu-origins",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "-600..-400",
+    "place": "Arcadia",
+    "lat": 37.5,
+    "lon": 22.3,
+    "vp": "greece",
+    "confidence": "medium",
+    "note": "Greeks tell how Pan cut reeds of unequal length to make the syrinx, the shepherd's pipe of Arcadia."
+   },
+   {
+    "year": "1400..1532",
+    "place": "Cusco",
+    "lat": -13.53,
+    "lon": -71.97,
+    "vp": "inca",
+    "confidence": "low",
+    "note": "The siku, its pipes split between two players who answer each other note by note, is played in the Inca lands and the villages of the altiplano."
+   }
+  ]
+ },
+ {
+  "id": "lyre",
+  "kind": "music",
+  "name": "The lyre",
+  "origin": {
+   "year": "-2600..-2450",
+   "place": "Ur",
+   "lat": 30.96,
+   "lon": 46.1,
+   "culture": "Sumerians of Ur"
+  },
+  "summary": "In the royal graves of Ur, Leonard Woolley finds lyres of wood inlaid with shell and lapis lazuli, a golden bull's head at the sound box, buried with the women who played them. The strings run down from a yoke held up by two arms.",
+  "source": "woolley-ur",
+  "confidence": "high",
+  "spread": [
+   {
+    "year": "-1400",
+    "place": "Ugarit",
+    "lat": 35.6,
+    "lon": 35.78,
+    "confidence": "medium",
+    "note": "The Hurrian hymns found at Ugarit are written for a lyre of nine strings, named in Babylonian."
+   },
+   {
+    "year": "-750..-500",
+    "place": "Athens",
+    "lat": 37.97,
+    "lon": 23.73,
+    "vp": "greece",
+    "from": "Ugarit",
+    "confidence": "high",
+    "note": "Greek singers accompany epic on the phorminx; the larger kithara becomes the instrument of contests and of Apollo."
+   },
+   {
+    "year": 580,
+    "place": "Trossingen",
+    "lat": 48.07,
+    "lon": 8.63,
+    "vp": "germany",
+    "confidence": "high",
+    "note": "A six-stringed lyre of maple, carved with warriors, is buried at Trossingen; its wood survives whole. Lyres like it accompany the songs of the Germanic peoples."
+   },
+   {
+    "year": "1400..1700",
+    "place": "The Ethiopian highlands",
+    "lat": 12.0,
+    "lon": 38.5,
+    "vp": "ethiopia",
+    "confidence": "low",
+    "note": "The krar is played for song and the begena, a great lyre with buzzing strings, for prayer; tradition says the begena came with Menelik I from Jerusalem."
+   }
+  ]
+ },
+ {
+  "id": "harp",
+  "kind": "music",
+  "name": "The harp",
+  "origin": {
+   "year": "-2500..-2300",
+   "place": "Saqqara",
+   "lat": 29.87,
+   "lon": 31.22,
+   "culture": "Egyptians of the Old Kingdom"
+  },
+  "summary": "Reliefs in the tombs of the Old Kingdom show bow harps, their strings stretched from a curved neck to a sound box held against the player's shoulder. Under the New Kingdom, blind harpers sing at banquets of how short life is.",
+  "source": "montagu-origins",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "-700..-640",
+    "place": "Nineveh",
+    "lat": 36.36,
+    "lon": 43.15,
+    "vp": "persia",
+    "confidence": "medium",
+    "note": "Palace reliefs show players of the angular harp marching with the army and playing at the king's feast; the chang of the Persian poets descends from it."
+   },
+   {
+    "year": "750..900",
+    "place": "Pictland",
+    "lat": 56.8,
+    "lon": -3.5,
+    "vp": "britain",
+    "confidence": "medium",
+    "note": "Carved stones in Pictland show the first harps with a forepillar, the frame harp of Europe; in Ireland and Scotland it becomes the harp of the poets."
+   },
+   {
+    "year": "1530..1600",
+    "place": "Lima",
+    "lat": -12.05,
+    "lon": -77.04,
+    "vp": "inca",
+    "confidence": "medium",
+    "note": "Spanish priests bring the diatonic harp to Peru for the church; it becomes the Andean harp, played in the villages to this day."
+   }
+  ]
+ },
+ {
+  "id": "shawm",
+  "kind": "music",
+  "name": "The shawm",
+  "origin": {
+   "year": "-2600..-2450",
+   "place": "Ur",
+   "lat": 30.96,
+   "lon": 46.1,
+   "culture": "Sumerians of Ur"
+  },
+  "summary": "A pair of silver pipes from the royal graves of Ur, played together, are the oldest double pipes known; they were probably sounded through reeds. The double reed, two blades of cane beating against each other, gives the shawms their loud, bright voice, for the open air, the army and the temple.",
+  "source": "baines-woodwind",
+  "confidence": "low",
+  "spread": [
+   {
+    "year": "-600..-400",
+    "place": "Athens",
+    "lat": 37.97,
+    "lon": 23.73,
+    "vp": "greece",
+    "confidence": "high",
+    "note": "The aulos, two reed pipes played at once, accompanies tragedy, sacrifice and the drinking party."
+   },
+   {
+    "year": "800..1000",
+    "place": "Baghdad",
+    "lat": 33.31,
+    "lon": 44.36,
+    "vp": "islam",
+    "from": "Athens",
+    "confidence": "medium",
+    "note": "The surnay, a conical pipe with a double reed and a flaring bell, sounds with the drums of the army and the palace band."
+   },
+   {
+    "year": 1560,
+    "place": "Zhejiang",
+    "lat": 29.9,
+    "lon": 121.5,
+    "vp": "china",
+    "from": "Baghdad",
+    "confidence": "medium",
+    "note": "The general Qi Jiguang lists the suona among the signal instruments of his army. It becomes the shrill voice of Chinese weddings and funerals."
+   },
+   {
+    "year": "1523..1560",
+    "place": "Mexico City",
+    "lat": 19.43,
+    "lon": -99.13,
+    "vp": "mexica",
+    "confidence": "medium",
+    "note": "Spanish friars train Nahua players in the chirimía and sackbut for the church; by mid-century every large town has its band."
+   }
+  ]
+ },
+ {
+  "id": "horn",
+  "kind": "music",
+  "name": "Horns and trumpets",
+  "origin": {
+   "year": "-16000",
+   "place": "Marsoulas",
+   "lat": 43.1,
+   "lon": 0.98,
+   "culture": "Magdalenian hunters"
+  },
+  "summary": "A great conch shell from the Atlantic, its tip broken off to make a mouthpiece and painted inside with red dots, is left in the cave of Marsoulas; blown again in 2021, it still sounds. Shells, animal horns and tubes of wood or bronze, all sounded by buzzing lips, follow everywhere.",
+  "source": "fritz-marsoulas",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "-900..-500",
+    "place": "Chavín de Huántar",
+    "lat": -9.59,
+    "lon": -77.18,
+    "vp": "inca",
+    "confidence": "high",
+    "note": "Twenty carved conch trumpets lie in a gallery of the temple at Chavín, where they were blown in its dark passages."
+   },
+   {
+    "year": "-1323",
+    "place": "Thebes",
+    "lat": 25.74,
+    "lon": 32.6,
+    "vp": "egypt",
+    "confidence": "high",
+    "note": "Two trumpets, one of silver and one of bronze, are buried with Tutankhamun; played on the radio in 1939, they still sound."
+   },
+   {
+    "year": "-1000..-700",
+    "place": "Brudevælte, on Zealand",
+    "lat": 55.85,
+    "lon": 12.3,
+    "vp": "norse",
+    "confidence": "high",
+    "note": "Long bronze horns, the lurs, curving like a mammoth's tusk, are cast in matched pairs and offered in the bogs of Denmark and Sweden."
+   },
+   {
+    "year": "-200..50",
+    "place": "Tintignac",
+    "lat": 45.36,
+    "lon": 1.73,
+    "vp": "france",
+    "confidence": "high",
+    "note": "Gaulish warriors blow the carnyx, a tall bronze trumpet ending in a boar's head; several were found buried together at Tintignac in 2004."
+   },
+   {
+    "year": "1600..1700",
+    "place": "Pate",
+    "lat": -2.1,
+    "lon": 41.0,
+    "vp": "swahili",
+    "confidence": "medium",
+    "note": "Pate's siwa, a side-blown horn of carved ivory nearly two metres long, sounds at weddings and the rites of its rulers."
+   },
+   {
+    "year": 1818,
+    "place": "Berlin",
+    "lat": 52.52,
+    "lon": 13.4,
+    "vp": "germany",
+    "confidence": "high",
+    "note": "Heinrich Stölzel and Friedrich Blühmel patent the valve, letting horns and trumpets play every note of the scale. The brass band and the orchestra's horns follow."
+   }
+  ]
+ },
+ {
+  "id": "frame-drum",
+  "kind": "music",
+  "name": "The frame drum",
+  "origin": {
+   "year": "-2000..-1600",
+   "place": "Mesopotamia",
+   "lat": 32.5,
+   "lon": 45.0,
+   "culture": "Babylonians"
+  },
+  "summary": "Clay plaques from the cities of Mesopotamia show women holding a round drum, a skin stretched over a shallow frame and played with the fingers; it belongs to the goddess and her temple. Jingles set in the frame make it the tambourine.",
+  "source": "montagu-origins",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "-500..-300",
+    "place": "Athens",
+    "lat": 37.97,
+    "lon": 23.73,
+    "vp": "greece",
+    "confidence": "medium",
+    "note": "The tympanon is the drum of the worshippers of Dionysus and of Cybele, the mother of the gods."
+   },
+   {
+    "year": "610..650",
+    "place": "Medina",
+    "lat": 24.47,
+    "lon": 39.61,
+    "vp": "arabia",
+    "confidence": "medium",
+    "note": "The daf is played at weddings in Medina, and the jurists allow it there when they allow almost no other instrument."
+   },
+   {
+    "year": "1270..1284",
+    "place": "Seville",
+    "lat": 37.39,
+    "lon": -5.99,
+    "vp": "iberia",
+    "from": "Medina",
+    "confidence": "medium",
+    "note": "The miniatures of the Cantigas de Santa Maria show the square adufe and the round tambourine among the court's instruments, played by Andalusi musicians."
+   }
+  ]
+ },
+ {
+  "id": "drum",
+  "kind": "music",
+  "name": "The drum",
+  "origin": {
+   "year": "-2300..-1900",
+   "place": "Taosi",
+   "lat": 35.88,
+   "lon": 111.5,
+   "culture": "The people of Taosi"
+  },
+  "summary": "In the great graves at Taosi lie drums made of hollowed logs that were once covered with alligator skin, set beside stone chimes: among the oldest drums found. Skins stretched over clay, wood and gourd were surely beaten far earlier, everywhere.",
+  "source": "montagu-origins",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "-200..200",
+    "place": "Ujjain",
+    "lat": 23.18,
+    "lon": 75.78,
+    "vp": "india",
+    "confidence": "medium",
+    "note": "The Natyashastra describes the drums of the theatre and how their heads are tuned with a paste; the mridangam and tabla descend from them."
+   },
+   {
+    "year": "500..600",
+    "place": "Gunma",
+    "lat": 36.39,
+    "lon": 139.06,
+    "vp": "japan",
+    "confidence": "medium",
+    "note": "A clay haniwa figure from a tomb in Gunma shows a man beating a drum hung at his waist."
+   },
+   {
+    "year": 1352,
+    "place": "Niani",
+    "lat": 11.38,
+    "lon": -8.38,
+    "vp": "sahel",
+    "confidence": "medium",
+    "note": "Ibn Battuta, at the court of Mali, describes the drums and trumpets that sound before the sultan, and the griot Dugha singing his praises."
+   },
+   {
+    "year": "1400..1521",
+    "place": "Tenochtitlan",
+    "lat": 19.43,
+    "lon": -99.13,
+    "vp": "mexica",
+    "confidence": "medium",
+    "note": "The huehuetl, an upright drum of carved wood covered with jaguar skin, calls the people to the festivals of Tenochtitlan."
+   }
+  ]
+ },
+ {
+  "id": "kettledrum",
+  "kind": "music",
+  "name": "The kettledrum",
+  "origin": {
+   "year": "600..900",
+   "place": "Persia and the Arab lands",
+   "lat": 33.31,
+   "lon": 44.36,
+   "culture": "Persian and Arab musicians"
+  },
+  "summary": "A skin drawn over a bowl of copper or clay gives a drum with a true pitch. Small pairs, the naqqara, sound with the shawms in the bands of the caliphs; great ones ride on camels and horses before armies.",
+  "source": "blades-percussion",
+  "confidence": "low",
+  "spread": [
+   {
+    "year": 1250,
+    "place": "Mansourah",
+    "lat": 31.04,
+    "lon": 31.38,
+    "vp": "france",
+    "confidence": "medium",
+    "note": "Joinville, with Louis IX in Egypt, hears the kettledrums and trumpets of the Mamluks; nakers soon appear in European bands."
+   },
+   {
+    "year": 1457,
+    "place": "Tours",
+    "lat": 47.39,
+    "lon": 0.69,
+    "vp": "france",
+    "from": "Mansourah",
+    "confidence": "medium",
+    "note": "An embassy from King Ladislaus of Hungary astonishes the French court with great kettledrums carried on horseback."
+   }
+  ]
+ },
+ {
+  "id": "slit-drum",
+  "kind": "music",
+  "name": "The slit drum",
+  "origin": {
+   "year": "900..1200",
+   "place": "Mesoamerica",
+   "lat": 19.5,
+   "lon": -97.0,
+   "culture": "Toltec and Maya musicians"
+  },
+  "summary": "A log hollowed out through a slot cut in its top, leaving two tongues that sound two notes when struck with rubber-tipped sticks: the Nahua teponaztli and the Maya tun. Slit drums were made independently in Africa, Southeast Asia and the Pacific.",
+  "source": "montagu-origins",
+  "confidence": "low",
+  "spread": [
+   {
+    "year": "1400..1521",
+    "place": "Tenochtitlan",
+    "lat": 19.43,
+    "lon": -99.13,
+    "vp": "mexica",
+    "confidence": "medium",
+    "note": "The teponaztli, carved as a crouching jaguar or a man, sounds beside the huehuetl at the festivals of Tenochtitlan."
+   },
+   {
+    "year": "1625",
+    "place": "Rabinal",
+    "lat": 15.1,
+    "lon": -90.46,
+    "vp": "maya",
+    "from": "Tenochtitlan",
+    "confidence": "low",
+    "note": "The K'iche' of Rabinal dance the Rabinal Achí to the tun and long trumpets; priests try to ban it, but it is danced still."
+   }
+  ]
+ },
+ {
+  "id": "rattle",
+  "kind": "music",
+  "name": "Rattles and clappers",
+  "origin": {
+   "year": "-3100..-2700",
+   "place": "Abydos",
+   "lat": 26.18,
+   "lon": 31.92,
+   "culture": "Early Egyptians"
+  },
+  "summary": "Pairs of ivory clappers, carved as hands, are buried with the early kings' followers at Abydos. Rattles of gourd, clay and seed, clappers of wood and bone, and bells of iron beaten to a rhythm are older than any record, and found everywhere.",
+  "source": "montagu-origins",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "-500..-400",
+    "place": "Athens",
+    "lat": 37.97,
+    "lon": 23.73,
+    "vp": "greece",
+    "confidence": "medium",
+    "note": "Dancers on Greek vases click krotala, hinged clappers held in each hand."
+   },
+   {
+    "year": "1400..1521",
+    "place": "Tenochtitlan",
+    "lat": 19.43,
+    "lon": -99.13,
+    "vp": "mexica",
+    "confidence": "medium",
+    "note": "Gourd rattles on handles, ayacachtli, shaken by dancers and priests, are among the instruments Sahagún's informants describe."
+   },
+   {
+    "year": "1600..1700",
+    "place": "Andalusia",
+    "lat": 37.4,
+    "lon": -5.0,
+    "vp": "iberia",
+    "confidence": "low",
+    "note": "Castanets, a pair of hollowed shells of wood tied to the thumb, keep time for the dances of Spain."
+   }
+  ]
+ },
+ {
+  "id": "cymbals",
+  "kind": "music",
+  "name": "Cymbals",
+  "origin": {
+   "year": "-900..-700",
+   "place": "Nimrud",
+   "lat": 36.1,
+   "lon": 43.33,
+   "culture": "Assyrians"
+  },
+  "summary": "Palace reliefs of Assyria show musicians clashing pairs of bronze discs, and others striking cone-shaped cymbals downward. Cymbals pass with armies and cults across Asia and into Europe.",
+  "source": "blades-percussion",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "350..550",
+    "place": "Dunhuang",
+    "lat": 40.04,
+    "lon": 94.8,
+    "vp": "china",
+    "confidence": "medium",
+    "note": "Cymbals reach China with the music of Central Asia and the Buddhist monasteries; they ring in the paintings of the Dunhuang caves."
+   },
+   {
+    "year": 1623,
+    "place": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "vp": "turks",
+    "confidence": "medium",
+    "note": "Avedis Zildjian, an Armenian metalworker in Constantinople, finds an alloy for the cymbals of the Janissary bands; his family makes them still."
+   }
+  ]
+ },
+ {
+  "id": "sistrum",
+  "kind": "music",
+  "name": "The sistrum",
+  "origin": {
+   "year": "-2500..-2300",
+   "place": "Memphis",
+   "lat": 29.85,
+   "lon": 31.25,
+   "culture": "Egyptians of the Old Kingdom"
+  },
+  "summary": "Priestesses of Hathor shake the sistrum, a handle bearing a loop of metal threaded with rods and jingles, to soothe and please the goddess.",
+  "source": "montagu-origins",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "1..79",
+    "place": "Pompeii",
+    "lat": 40.75,
+    "lon": 14.49,
+    "vp": "rome",
+    "confidence": "high",
+    "note": "The worship of Isis carries the sistrum to Italy; sistra are found in the temple of Isis at Pompeii."
+   },
+   {
+    "year": "400..600",
+    "place": "Aksum",
+    "lat": 14.13,
+    "lon": 38.72,
+    "vp": "ethiopia",
+    "confidence": "low",
+    "note": "In the Ethiopian church the tsenatsel, a sistrum, keeps time for the chant, as it still does."
+   }
+  ]
+ },
+ {
+  "id": "bell",
+  "kind": "music",
+  "name": "The bell",
+  "origin": {
+   "year": "-1300..-1050",
+   "place": "Anyang",
+   "lat": 36.1,
+   "lon": 114.35,
+   "culture": "Bronze casters of the Shang"
+  },
+  "summary": "The bronze casters of the Shang make nao, bells without clappers held mouth upward and struck from outside; under the Zhou they hang in tuned sets. Bells with clappers, cast or forged, ring later across Asia and Europe.",
+  "source": "montagu-origins",
+  "confidence": "high",
+  "spread": [
+   {
+    "year": 698,
+    "place": "Kyoto",
+    "lat": 35.02,
+    "lon": 135.72,
+    "vp": "japan",
+    "confidence": "high",
+    "note": "A great temple bell, struck from outside with a swinging beam, is cast in 698; it hangs at Myōshin-ji in Kyoto."
+   },
+   {
+    "year": "400..431",
+    "place": "Nola",
+    "lat": 40.93,
+    "lon": 14.53,
+    "vp": "rome",
+    "confidence": "low",
+    "note": "Bells call monks and congregations to prayer; the Latin campana is said to come from Campania, where Paulinus was bishop of Nola."
+   },
+   {
+    "year": "1000..1100",
+    "place": "Novgorod",
+    "lat": 58.52,
+    "lon": 31.27,
+    "vp": "russia",
+    "from": "Nola",
+    "confidence": "medium",
+    "note": "Bells come to Rus with Christianity; rung in changes, their zvon becomes the sound of its towns."
+   }
+  ]
+ },
+ {
+  "id": "gong",
+  "kind": "music",
+  "name": "The gong and the bronze drum",
+  "origin": {
+   "year": "-500..1",
+   "place": "Đông Sơn",
+   "lat": 19.82,
+   "lon": 105.77,
+   "culture": "The Đông Sơn"
+  },
+  "summary": "Smiths of the Red River and Ma valleys cast great bronze drums, their faces ringed with birds, boats and dancers around a star; they are struck at feasts and buried with chiefs. Flat gongs and bossed gongs follow across Southeast Asia.",
+  "source": "montagu-origins",
+  "confidence": "high",
+  "spread": [
+   {
+    "year": "1..300",
+    "place": "Pejeng, on Bali",
+    "lat": -8.52,
+    "lon": 115.3,
+    "vp": "nusantara",
+    "confidence": "medium",
+    "note": "Bronze drums travel across the islands; the Moon of Pejeng in Bali, the largest ever cast in one piece, is kept in a temple still."
+   },
+   {
+    "year": "500..600",
+    "place": "Jiankang",
+    "lat": 32.06,
+    "lon": 118.78,
+    "vp": "china",
+    "confidence": "low",
+    "note": "The flat bronze gong of the southern peoples is recorded in China and joins its bands; in time it marks the beats of opera and procession."
+   }
+  ]
+ },
+ {
+  "id": "zither",
+  "kind": "music",
+  "name": "The zither",
+  "origin": {
+   "year": "-1000..-500",
+   "place": "Luoyang",
+   "lat": 34.62,
+   "lon": 112.45,
+   "culture": "Musicians of the Zhou court"
+  },
+  "summary": "The qin and the larger se, long boards strung lengthwise, are played at the Zhou court; the Book of Songs names them together as a sign of harmony. Zithers were made apart in many places: the qanun of the Arab world, the psaltery of Europe, the gusli of the Slavs.",
+  "source": "thrasher-chinese",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "700..756",
+    "place": "Nara",
+    "lat": 34.69,
+    "lon": 135.84,
+    "vp": "japan",
+    "confidence": "medium",
+    "note": "The thirteen-string zheng comes to the Nara court with Tang music and becomes the koto of gagaku."
+   },
+   {
+    "year": "900..950",
+    "place": "Baghdad",
+    "lat": 33.31,
+    "lon": 44.36,
+    "vp": "islam",
+    "confidence": "medium",
+    "note": "Al-Farabi describes the qanun, a trapezoid zither plucked with picks on the fingers."
+   },
+   {
+    "year": "1270..1284",
+    "place": "Seville",
+    "lat": 37.39,
+    "lon": -5.99,
+    "vp": "iberia",
+    "from": "Baghdad",
+    "confidence": "medium",
+    "note": "The Cantigas miniatures show the psaltery, the qanun's European cousin, among the instruments of Alfonso X's court."
+   },
+   {
+    "year": "1050..1250",
+    "place": "Novgorod",
+    "lat": 58.52,
+    "lon": 31.27,
+    "vp": "russia",
+    "confidence": "high",
+    "note": "Wooden gusli are found in the excavations at Novgorod, the instrument of the singers of the byliny."
+   }
+  ]
+ },
+ {
+  "id": "dulcimer",
+  "kind": "music",
+  "name": "The hammered dulcimer",
+  "origin": {
+   "year": "1300..1500",
+   "place": "Persia",
+   "lat": 32.65,
+   "lon": 51.67,
+   "culture": "Persian musicians"
+  },
+  "summary": "Strings stretched over a trapezoid box and struck with light hammers: the santur of Persia. Its relatives spread east and west: the santouri of Greece, the cimbalom of Hungary and the yangqin of China.",
+  "source": "montagu-origins",
+  "confidence": "low",
+  "spread": [
+   {
+    "year": "1600..1700",
+    "place": "Guangzhou",
+    "lat": 23.13,
+    "lon": 113.26,
+    "vp": "china",
+    "confidence": "medium",
+    "note": "The yangqin, the 'foreign zither', reaches China by sea through Guangdong and spreads through its folk and theatre bands."
+   },
+   {
+    "year": "1700..1800",
+    "place": "Smyrna",
+    "lat": 38.42,
+    "lon": 27.14,
+    "vp": "greece",
+    "confidence": "low",
+    "note": "The santouri is played by the Greeks of Smyrna and the Aegean islands."
+   }
+  ]
+ },
+ {
+  "id": "long-lute",
+  "kind": "music",
+  "name": "The long-necked lute",
+  "origin": {
+   "year": "-2300..-2100",
+   "place": "Akkad",
+   "lat": 33.1,
+   "lon": 44.1,
+   "culture": "Akkadians"
+  },
+  "summary": "Cylinder seals of the Akkadian age show a lute with a small body and a long neck, played with a plectrum: the oldest lutes known. Their descendants, with two or three strings and frets, run from the steppe to India.",
+  "source": "montagu-origins",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "-1500..-1300",
+    "place": "Thebes",
+    "lat": 25.7,
+    "lon": 32.64,
+    "vp": "egypt",
+    "confidence": "medium",
+    "note": "Long-necked lutes appear in the banquet paintings of New Kingdom tombs, played by women."
+   },
+   {
+    "year": "1560..1570",
+    "place": "Sakai",
+    "lat": 34.57,
+    "lon": 135.47,
+    "vp": "japan",
+    "confidence": "medium",
+    "note": "The sanshin of Ryukyu, itself from the Chinese sanxian, reaches the port of Sakai; covered in cat skin and played with a large plectrum, it becomes the shamisen."
+   },
+   {
+    "year": "1700..1800",
+    "place": "Delhi",
+    "lat": 28.65,
+    "lon": 77.23,
+    "vp": "india",
+    "confidence": "medium",
+    "note": "The sitar takes shape in Mughal Delhi from Persian and Indian lutes; strings beneath its frets ring in sympathy with the melody."
+   },
+   {
+    "year": "1680..1700",
+    "place": "Moscow",
+    "lat": 55.75,
+    "lon": 37.62,
+    "vp": "russia",
+    "confidence": "medium",
+    "note": "The balalaika first appears in Russian records; Vasily Andreyev makes it a concert instrument in the 1880s."
+   }
+  ]
+ },
+ {
+  "id": "guitar",
+  "kind": "music",
+  "name": "The guitar",
+  "origin": {
+   "year": "1450..1500",
+   "place": "Valencia",
+   "lat": 39.47,
+   "lon": -0.38,
+   "culture": "Spanish makers"
+  },
+  "summary": "The vihuela, shaped like a guitar and strung like a lute, is the noble instrument of Spain; its small sister with four courses, the guitar, belongs to everyone. Carried overseas, it breeds a family of its own.",
+  "source": "montagu-origins",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "1550..1650",
+    "place": "Mexico City",
+    "lat": 19.43,
+    "lon": -99.13,
+    "vp": "mexica",
+    "confidence": "medium",
+    "note": "Vihuelas and guitars come with the Spaniards; in New Spain they breed the jarana, the guitarrón and the other instruments of the son."
+   },
+   {
+    "year": "1650..1700",
+    "place": "Batavia",
+    "lat": -6.13,
+    "lon": 106.81,
+    "vp": "nusantara",
+    "confidence": "medium",
+    "note": "Portuguese-speaking freed slaves at Tugu, near Batavia, play small guitars; their music becomes keroncong."
+   },
+   {
+    "year": "1700..1800",
+    "place": "Potosí",
+    "lat": -19.59,
+    "lon": -65.75,
+    "vp": "inca",
+    "from": "Mexico City",
+    "confidence": "medium",
+    "note": "Andean makers build the charango, a small guitar whose back was often the shell of an armadillo."
+   }
+  ]
+ },
+ {
+  "id": "kora",
+  "kind": "music",
+  "name": "The kora and ngoni",
+  "origin": {
+   "year": "1200..1400",
+   "place": "The Mali empire",
+   "lat": 11.38,
+   "lon": -8.38,
+   "culture": "The griots of Mali"
+  },
+  "summary": "The griots of the Mali empire play the ngoni, a lute with a skin-covered wooden body, and the bolon, a great bow harp of war. The kora, a harp-lute of twenty-one strings over a calabash, takes shape later in Kaabu.",
+  "source": "charry-mande",
+  "confidence": "low",
+  "spread": [
+   {
+    "year": "1700..1800",
+    "place": "Kansala, in Kaabu",
+    "lat": 12.3,
+    "lon": -15.0,
+    "vp": "sahel",
+    "confidence": "low",
+    "note": "In Kaabu, near the Gambia, griots play the kora; their tradition gives it to Jali Mady Wuleng."
+   },
+   {
+    "year": 1687,
+    "place": "Jamaica",
+    "lat": 18.1,
+    "lon": -77.3,
+    "confidence": "high",
+    "note": "Enslaved Africans in Jamaica build lutes of gourd and skin like the ngoni; Hans Sloane draws them. They become the banjo."
+   }
+  ]
+ },
+ {
+  "id": "xylophone",
+  "kind": "music",
+  "name": "The xylophone",
+  "origin": {
+   "year": "1200..1300",
+   "place": "Niagassola",
+   "lat": 12.33,
+   "lon": -9.1,
+   "culture": "The Mande"
+  },
+  "summary": "The Sosso Bala, a balafon said to have belonged to Sumanguru, king of Sosso, and won by Sunjata's griot, is kept by the Kouyaté family at Niagassola. Bars of wood laid over gourds that ring beneath them are older still, in Africa and Southeast Asia.",
+  "source": "charry-mande",
+  "confidence": "low",
+  "spread": [
+   {
+    "year": 1352,
+    "place": "Niani",
+    "lat": 11.38,
+    "lon": -8.38,
+    "vp": "sahel",
+    "confidence": "medium",
+    "note": "Ibn Battuta sees the griot Dugha play before the sultan of Mali an instrument of reeds with small calabashes beneath."
+   },
+   {
+    "year": 1680,
+    "place": "Santiago de los Caballeros",
+    "lat": 14.56,
+    "lon": -90.73,
+    "vp": "maya",
+    "confidence": "medium",
+    "note": "The marimba, brought by enslaved Africans, is first recorded in Guatemala, played at a cathedral feast; Maya players make it their own."
+   },
+   {
+    "year": 1927,
+    "place": "Chicago",
+    "lat": 41.88,
+    "lon": -87.63,
+    "confidence": "medium",
+    "note": "Bars of metal over tubes whose fans make the notes waver: the vibraphone, a xylophone of the jazz age."
+   }
+  ]
+ },
+ {
+  "id": "free-reed",
+  "kind": "music",
+  "name": "The free reed",
+  "origin": {
+   "year": "-1000..-433",
+   "place": "Suizhou",
+   "lat": 31.69,
+   "lon": 113.38,
+   "culture": "Musicians of the Zhou"
+  },
+  "summary": "Bamboo pipes set in a gourd, each sounding through a thin tongue of reed that swings freely in a slot: the sheng, which plays chords. Sheng lie in the tomb of Marquis Yi of Zeng. Two thousand years later, the free reed makes the harmonium and the accordion.",
+  "source": "thrasher-chinese",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": "700..756",
+    "place": "Nara",
+    "lat": 34.69,
+    "lon": 135.84,
+    "vp": "japan",
+    "confidence": "high",
+    "note": "The shō comes to Japan with Tang court music, and holds its clusters of notes in gagaku still."
+   },
+   {
+    "year": 1777,
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "vp": "france",
+    "confidence": "medium",
+    "note": "The Jesuit Jean-Joseph-Marie Amiot sends a sheng from Beijing to Paris; Europeans learn the free reed from it."
+   },
+   {
+    "year": 1829,
+    "place": "Vienna",
+    "lat": 48.21,
+    "lon": 16.37,
+    "vp": "germany",
+    "from": "Paris",
+    "confidence": "high",
+    "note": "Cyrill Demian patents the accordion, its free reeds blown by bellows."
+   },
+   {
+    "year": 1875,
+    "place": "Calcutta",
+    "lat": 22.57,
+    "lon": 88.36,
+    "vp": "india",
+    "from": "Paris",
+    "confidence": "medium",
+    "note": "Dwarkanath Ghose of Calcutta builds a harmonium to be played sitting on the floor; it soon accompanies song across the subcontinent."
+   },
+   {
+    "year": 1907,
+    "place": "St Petersburg",
+    "lat": 59.94,
+    "lon": 30.31,
+    "vp": "russia",
+    "from": "Vienna",
+    "confidence": "medium",
+    "note": "Pyotr Sterligov builds the bayan, a chromatic button accordion, for the player Yakov Orlansky-Titarenko."
+   }
+  ]
+ },
+ {
+  "id": "clarinet",
+  "kind": "music",
+  "name": "The clarinet and saxophone",
+  "origin": {
+   "year": "1690..1710",
+   "place": "Nuremberg",
+   "lat": 49.45,
+   "lon": 11.08,
+   "culture": "Johann Christoph Denner"
+  },
+  "summary": "Johann Christoph Denner of Nuremberg adds a speaker key to the chalumeau, a pipe sounded by a single reed beating on its mouthpiece: the clarinet. Single-reed pipes, like Egypt's double zummara, are far older.",
+  "source": "baines-woodwind",
+  "confidence": "medium",
+  "spread": [
+   {
+    "year": 1846,
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "vp": "france",
+    "confidence": "high",
+    "note": "Adolphe Sax patents the saxophone, a body of brass with a clarinet's reed."
+   },
+   {
+    "year": "1830..1880",
+    "place": "Ioannina",
+    "lat": 39.67,
+    "lon": 20.85,
+    "vp": "greece",
+    "confidence": "low",
+    "note": "The clarinet comes to Greece with military bands and becomes the klarino, the lead voice of the village bands of Epirus."
+   },
+   {
+    "year": 1924,
+    "place": "Addis Ababa",
+    "lat": 9.03,
+    "lon": 38.74,
+    "vp": "ethiopia",
+    "from": "Paris",
+    "confidence": "medium",
+    "note": "Ras Tafari brings forty Armenian orphans, the Arba Lijoch, from Jerusalem as his brass band; Ethiopia's horn and saxophone bands follow, and later Ethio-jazz."
+   }
+  ]
+ },
+ {
+  "id": "harpsichord",
+  "kind": "music",
+  "name": "The harpsichord",
+  "origin": {
+   "year": 1397,
+   "place": "Padua",
+   "lat": 45.41,
+   "lon": 11.88,
+   "culture": "Hermann Poll of Vienna"
+  },
+  "summary": "A law student at Padua writes that Hermann Poll of Vienna has invented the clavicembalum: strings plucked by quills worked from a keyboard. The harpsichord and the small virginals become the keyboards of the Renaissance and the Baroque.",
+  "source": "montagu-origins",
+  "confidence": "high",
+  "spread": [
+   {
+    "year": "1579..1650",
+    "place": "Antwerp",
+    "lat": 51.22,
+    "lon": 4.4,
+    "vp": "germany",
+    "confidence": "high",
+    "note": "The Ruckers family of Antwerp build harpsichords and virginals prized across Europe."
+   },
+   {
+    "year": "1650..1700",
+    "place": "Versailles",
+    "lat": 48.8,
+    "lon": 2.12,
+    "vp": "france",
+    "from": "Antwerp",
+    "confidence": "medium",
+    "note": "At the court of Louis XIV the clavecin plays the continuo beneath Lully's operas and dances."
+   }
+  ]
  }
 ]

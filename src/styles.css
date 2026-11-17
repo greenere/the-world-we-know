@@ -1508,6 +1508,32 @@ kbd {
   line-height: 1.5;
 }
 
+/* An instrument family's card: which of the atlas's traditions play it, and on what. */
+.shelf-heard {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.shelf-heard li {
+  display: flex;
+  gap: 10px;
+  padding: 3px 0;
+  border-bottom: 1px dotted color-mix(in srgb, currentColor 18%, transparent);
+}
+
+.shelf-heard-tradition {
+  flex: 0 0 38%;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.shelf-heard-names {
+  flex: 1;
+}
+
 .card-story::first-letter {
   float: left;
   font-family: var(--font-display);

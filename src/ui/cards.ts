@@ -8,6 +8,7 @@ import type {Book, City, Depiction, DepictionKind, Invention, Journey, Living, N
 import {ALL_VPS, CONFIDENCE_NAMES, HUMANITY_LEVEL_NAMES, LEVEL_NAMES} from '../types';
 import {isZh, t, tx} from '../i18n';
 import {h} from './dom';
+import {MEMBER_NAMES} from './member-names';
 import {icons, inventionIcons, kindIcons, livingIcons, naturalIcons} from './icons';
 
 /** What a plant, an animal or a piece of music is called on its card and in search. */
@@ -812,6 +813,23 @@ export class Cards {
       ),
       h('p.card-story', tx.living(x.id, 'summary', x.summary)),
     ];
+    // An instrument family: the atlas's own music that plays it, and on what.
+    if (x.kind === 'music') {
+      const heard = this.data.soundscapes.traditions
+        .map(tr => ({tr, names: [...new Set((tr.ensemble?.members ?? []).filter(m => m.shelf === x.id && !m.modern).map(m => t(MEMBER_NAMES[m.id] ?? m.id)))]}))
+        .filter(r => r.names.length);
+      const modern = this.data.soundscapes.traditions.some(tr => tr.ensemble?.members.some(m => m.shelf === x.id && m.modern));
+      if (heard.length || modern) {
+        out.push(
+          h('h3.card-h', t("In the atlas's music")),
+          h(
+            'ul.shelf-heard',
+            ...heard.map(({tr, names}) => h('li', h('span.shelf-heard-tradition', tx.soundscape(tr.id, 'name', tr.name)), h('span.shelf-heard-names', names.join(t(', '))))),
+            modern ? h('li', h('span.shelf-heard-tradition', t('The orchestra beneath')), h('span.shelf-heard-names', t('in every tradition, unless the music is set to historical'))) : null,
+          ),
+        );
+      }
+    }
     // When this viewpoint knew it. Not said of music: who had heard of an instrument, and when, is rarely known.
     if (x.kind !== 'music') {
       out.push(h(

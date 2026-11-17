@@ -1,0 +1,10 @@
+{
+ "id": "turku",
+ "name": "A türkü",
+ "source": "atlas-composed",
+ "meter": 9,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the Turkish türkü, the folk song of Anatolia and Rumelia, in the limping nine of the karşılama dance (2+2+2+3) and the hüseyni mode (D, E, F, G, A, B, C); eighth notes as beats.",
+ "notes": "A4:2 B4:2 C5:2 B4:3 | A4:2 G4:2 F4:2 E4:3 | F4:2 G4:2 A4:2 G4:1 F4:2 | E4:6 D4:3 / D4:2 E4:2 F4:2 G4:3 | A4:2 B4:2 A4:2 G4:3 | F4:2 E4:2 F4:2 G4:3 | A4:9 / D5:2 C5:2 B4:2 A4:3 | B4:2 C5:2 B4:2 A4:3 | G4:2 A4:2 B4:2 A4:1 G4:2 | A4:6 E4:3 / F4:2 G4:2 A4:2 B4:3 | A4:2 G4:2 F4:2 E4:3 | F4:2 E4:2 D4:2 E4:1 F4:2 | D4:9 /"
+}

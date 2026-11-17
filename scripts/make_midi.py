@@ -1570,6 +1570,81 @@ RUSSIA = {
         "shared": {"lead": [("voices", -1), ("strings", 0), ("horn", -1)], "join": [(0, "balalaika", 0, 40), (1, "voices", -1, 48), (2, "strings", 0, 54), (2, "bayan", 0, 40)], "drums": [("litavry", 45, [0], 1, 52)]},
     },
 }
+# Egypt, Persia and the Turks, each with two themes composed for the atlas through every age. Egypt: a hymn in
+# hijaz (ceremonial) and a Ṣaʿīdī song of the Nile (folk); from the harp, double pipe, sistrum and clappers of
+# the pharaohs, the lyre, aulos and water organ of Alexandria, Coptic chant with cymbals and triangle, the
+# zikr's ney and daf, the mizmar and tabl of Upper Egypt, Cairo's takht, to the great Cairo orchestra.
+SAIDI = [("tabl", 45, [0, 1.5, 2], 0, 58), ("tabl2", 60, [0.5, 3], 0, 42)]
+RIQ = ("riq", 64, [0, 1, 1.5, 2, 3], 0, 38)
+EGYPT = {
+    "hymn": {
+        "early": {"lead": [("benet", 0), ("voices", 0), ("benet", 0)], "join": [(1, "benet", -1, 46), (2, "memet", 0, 40)], "drums": [("sistrum", 80, [1, 3], 0, 42), ("clappers", 76, [0, 2], 1, 34)]},
+        "classical": {"lead": [("lyre", 0), ("aulos", 0), ("hydraulis", 0)], "join": [(1, "lyre", -1, 46), (2, "aulos", 0, 42)], "drums": [("sistrum", 80, [1, 3], 0, 40), ("tympanon", 45, [0], 1, 50)]},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "voices", -1, 46)], "drums": [("cymbals", 80, [0, 2], 0, 34), ("triangle", 84, [1, 3], 1, 30)]},
+        "crossings": {"lead": [("ney", 0), ("voices", 0), ("ney", 0)], "join": [(1, "ney", 0, 38), (2, "voices", -1, 44)], "drums": [("daf", 45, [0, 2, 2.5], 0, 54)]},
+        "steam": {"lead": [("oud", 0), ("violin", 0), ("qanun", 0)], "join": [(0, "qanun", 0, 40), (1, "oud", -1, 44), (2, "ney", 0, 40)], "drums": [RIQ]},
+        "shared": {"lead": [("violin", 0), ("strings", 0), ("voices", 0)], "join": [(0, "oud", -1, 42), (1, "qanun", 0, 40), (2, "strings", 0, 56), (2, "accordion", 0, 36)], "drums": [RIQ]},
+    },
+    "nile": {
+        "early": {"lead": [("memet", 0), ("benet", 0), ("memet", 0)], "join": [(1, "benet", -1, 44)], "drums": [("drum", 45, [0, 1.5, 2], 0, 52), ("clappers", 76, [0.5, 3], 0, 38)]},
+        "classical": {"lead": [("aulos", 0), ("lyre", 0), ("aulos", 0)], "join": [(1, "lyre", -1, 44)], "drums": [("tympanon", 45, [0, 1.5, 2], 0, 50), ("clappers", 76, [0.5, 3], 1, 34)]},
+        "caravans": {"lead": [("ney", 0), ("oud", 0), ("ney", 0)], "join": [(1, "oud", -1, 44)], "drums": SAIDI},
+        "crossings": {"lead": [("mizmar", 0), ("mizmar", 0), ("voices", 0)], "join": [(1, "mizmar", -1, 44)], "drums": SAIDI},
+        "steam": {"lead": [("violin", 0), ("oud", 0), ("mizmar", 0)], "join": [(0, "oud", -1, 44), (1, "qanun", 0, 40)], "drums": SAIDI + [RIQ]},
+        "shared": {"lead": [("accordion", 0), ("violin", 0), ("mizmar", 0)], "join": [(0, "oud", -1, 42), (1, "strings", 0, 50), (2, "strings", 0, 54)], "drums": SAIDI},
+    },
+}
+# Persia: a song of the drum house in chahārgāh (ceremonial) and a shesh-o-hasht dance in Esfahān (folk); from
+# the Elamite and Achaemenid harp and long trumpet, Barbad's barbat and the ney of the Sasanian court, the
+# naqqāra-khāna's sorna, karnāy and kettledrums, the kamancheh, santur and tar of Safavid Isfahan, the Qajar
+# court's European trumpets, to an orchestra.
+NAQQ = [("naqqareh", 45, [0, 2, 2.5], 0, 56), ("dohol", 45, [0], 1, 54)]
+SHESH = [("tombak", 60, [0, 2, 3, 5], 0, 46), ("daf", 45, [0, 3], 1, 48)]
+PERSIA = {
+    "royal": {
+        "early": {"lead": [("chang", 0), ("karnay", 0), ("chang", 0)], "join": [(1, "chang", -1, 46)], "drums": [("dohol", 45, [0], 0, 56)]},
+        "classical": {"lead": [("barbat", 0), ("ney", 0), ("chang", 0)], "join": [(1, "barbat", -1, 46), (2, "ney", 0, 40)], "drums": [("tombak", 60, [0, 1.5, 2, 3], 1, 40)]},
+        "caravans": {"lead": [("sorna", 0), ("sorna", 0), ("ney", 0)], "join": [(1, "sorna", -1, 44)], "drone": [("karnay", 50, 0, 44)], "drums": NAQQ},
+        "crossings": {"lead": [("kamancheh", 0), ("sorna", 0), ("tar", 0)], "join": [(0, "santur", 0, 40), (2, "kamancheh", 0, 40)], "drone": [("karnay", 50, 1, 40)], "drums": NAQQ},
+        "steam": {"lead": [("trumpet", 0), ("tar", 0), ("trumpet", 0)], "join": [(0, "santur", 0, 40), (1, "kamancheh", 0, 40), (2, "trumpet", -1, 40)], "drums": NAQQ},
+        "shared": {"lead": [("kamancheh", 0), ("strings", 0), ("horn", 0)], "join": [(0, "santur", 0, 40), (2, "strings", 0, 56)], "drone": [("karnay", 50, 2, 40)], "drums": [("dohol", 45, [0], 0, 54)]},
+    },
+    "shesh": {
+        "early": {"lead": [("ney", 0), ("chang", 0), ("ney", 0)], "join": [(1, "chang", -1, 44)], "drums": [("daf", 45, [0, 3], 0, 50)]},
+        "classical": {"lead": [("barbat", 0), ("ney", 0), ("barbat", 0)], "join": [(1, "barbat", -1, 44)], "drums": [("tombak", 60, [0, 2, 3, 5], 0, 44)]},
+        "caravans": {"lead": [("ney", 0), ("kamancheh", 0), ("barbat", 0)], "join": [(1, "barbat", -1, 44), (2, "ney", 0, 38)], "drums": SHESH},
+        "crossings": {"lead": [("tar", 0), ("kamancheh", 0), ("santur", 0)], "join": [(0, "santur", 0, 38), (1, "tar", -1, 42)], "drums": SHESH},
+        "steam": {"lead": [("santur", 0), ("tar", 0), ("kamancheh", 0)], "join": [(0, "tar", -1, 42), (2, "santur", 0, 38)], "drums": SHESH},
+        "shared": {"lead": [("kamancheh", 0), ("santur", 0), ("strings", 0)], "join": [(0, "tar", -1, 42), (2, "ney", 0, 38)], "drums": SHESH},
+    },
+}
+# The Turks: a mehter march in rast (ceremonial) and a türkü in nine (folk); from the kopuz and drums of the
+# Altai and the Göktürks, the Seljuks' zurna and the Mevlevi ney and kudüm, the Ottoman mehter of zurnas,
+# trumpets, kös, davul, nakkare and zils, the bağlama, kaval and kemençe of the villages, the clarinets of
+# the nineteenth century, to an orchestra.
+MEHTER = [("kos", 45, [0], 0, 48), ("davul", 45, [0, 2, 2.5], 0, 42), ("nakkare", 60, [1, 3], 0, 36), ("zil", 80, [0, 2], 1, 30)]
+KARS = [("darbuka", 48, [0, 6], 0, 56), ("darbuka2", 64, [2, 4, 7], 0, 40)]
+TURKS = {
+    "mehter": {
+        "early": {"lead": [("voices", 0), ("kopuz", 0), ("voices", 0)], "join": [(1, "kopuz", -1, 44)], "drums": [("drum", 45, [0, 2], 0, 54)]},
+        "classical": {"lead": [("kopuz", 0), ("borgu", 0), ("kopuz", 0)], "join": [(1, "kopuz", -1, 44)], "drums": [("kos", 45, [0], 0, 58), ("drum", 45, [2], 1, 48)]},
+        "caravans": {"lead": [("zurna", 0), ("ney", 0), ("zurna", 0)], "join": [(1, "zurna", -1, 42)], "drums": [("kudum", 48, [0, 1.5, 2], 0, 52), ("kos", 45, [0], 1, 56)]},
+        "crossings": {"lead": [("zurna", 0), ("zurna", 0), ("boru", 0)], "join": [(1, "zurna", -1, 48), (2, "zurna", 0, 46)], "drums": MEHTER},
+        "steam": {"lead": [("boru", 0), ("clarinet", 0), ("boru", 0)], "join": [(0, "clarinet", -1, 42), (2, "zurna", 0, 40)], "drums": [("davul", 45, [0, 2], 0, 56), ("zil", 80, [1, 3], 0, 36)]},
+        "shared": {"lead": [("zurna", 0), ("strings", 0), ("horn", 0)], "join": [(0, "boru", 0, 40), (2, "strings", 0, 56)], "drums": MEHTER},
+    },
+    "turku": {
+        "early": {"lead": [("kopuz", 0), ("voices", 0), ("kopuz", 0)], "drums": [("drum", 45, [0, 6], 0, 50)]},
+        "classical": {"lead": [("kopuz", 0), ("kaval", 0), ("kopuz", 0)], "join": [(1, "kopuz", -1, 42)], "drums": [("drum", 45, [0, 6], 0, 50), ("kasik", 76, [2, 4, 7], 1, 34)]},
+        "caravans": {"lead": [("kaval", 0), ("saz", 0), ("kaval", 0)], "join": [(1, "saz", -1, 42)], "drums": KARS},
+        "crossings": {"lead": [("saz", 0), ("kemence", 0), ("saz", 0)], "join": [(1, "saz", -1, 42)], "drums": KARS + [("kasik", 76, [2, 4, 7], 1, 32)]},
+        "steam": {"lead": [("clarinet", 0), ("kanun", 0), ("violin", 0)], "join": [(0, "saz", -1, 42), (2, "clarinet", 0, 38)], "drums": KARS},
+        "shared": {"lead": [("clarinet", 0), ("saz", 0), ("strings", 0)], "join": [(0, "kanun", 0, 38), (1, "saz", -1, 42), (2, "violin", 0, 44)], "drums": KARS + [("kasik", 76, [2, 4, 7], 1, 30)]},
+    },
+}
+EGYPT_BEAT = {"hymn": [0.8, 0.76, 0.75, 0.72, 0.7, 0.68], "nile": [0.46, 0.45, 0.44, 0.43, 0.42, 0.42]}
+PERSIA_BEAT = {"royal": [0.8, 0.76, 0.74, 0.72, 0.7, 0.68], "shesh": [0.34, 0.32, 0.31, 0.3, 0.29, 0.28]}
+TURKS_BEAT = {"mehter": [0.6, 0.58, 0.56, 0.55, 0.54, 0.54], "turku": [0.22, 0.21, 0.21, 0.2, 0.2, 0.2]}
 IBERIA_BEAT = {"cantiga": [0.55, 0.52, 0.5, 0.48, 0.46, 0.45], "riu": [0.5, 0.48, 0.46, 0.45, 0.44, 0.42]}
 FRANCE_BEAT = {"armed": [0.48, 0.45, 0.45, 0.42, 0.42, 0.4], "fontaine": [0.62, 0.6, 0.58, 0.56, 0.55, 0.54]}
 GERMANY_BEAT = {"ros": [0.8, 0.75, 0.75, 0.7, 0.68, 0.66], "innsbruck": [0.75, 0.72, 0.7, 0.66, 0.64, 0.62]}
@@ -1589,7 +1664,9 @@ for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel",
                               (GRIOT, GRIOT_BEAT, {"fasa": "fasa", "lamban": "lamban"}), (SWAHILI, SWAHILI_BEAT, {"maulidi": "maulidi", "taarab": "taarab"}),
                               (IBERIA, IBERIA_BEAT, {"cantiga": "cantiga-100", "riu": "riu-riu-chiu"}), (FRANCE, FRANCE_BEAT, {"armed": "lhomme-arme", "fontaine": "claire-fontaine"}),
                               (GERMANY, GERMANY_BEAT, {"ros": "es-ist-ein-ros", "innsbruck": "innsbruck"}), (NORSE, NORSE_BEAT, {"christian": "kong-christian", "varmeland": "ack-varmeland"}),
-                              (RUSSIA, RUSSIA_BEAT, {"tsar": "god-save-the-tsar", "uchnem": "ej-uchnem"})):
+                              (RUSSIA, RUSSIA_BEAT, {"tsar": "god-save-the-tsar", "uchnem": "ej-uchnem"}),
+                              (EGYPT, EGYPT_BEAT, {"hymn": "egypt-hymn", "nile": "nile-song"}), (PERSIA, PERSIA_BEAT, {"royal": "naqqareh-khaneh", "shesh": "shesh-o-hasht"}),
+                              (TURKS, TURKS_BEAT, {"mehter": "mehter-march", "turku": "turku"})):
     # A key is the theme's tune prefix; the Maya's son is "mayason" so its files don't meet the Mexica's.
     for th, eras in table.items():
         sc = json.loads((SCORES / f"{scores[th]}.json").read_text())

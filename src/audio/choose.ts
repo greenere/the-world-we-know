@@ -142,6 +142,7 @@ export function styleFor(t: Tradition, data: AppData, vp: VpId | null, year: num
 
 /** The instruments on the Music shelf that belong to a tradition: those its voices are played on, and the rest. */
 export function instrumentsOf(t: Tradition): string[] {
-  const used = [...t.voices.map(v => v.instrument), ...(t.ensemble?.members ?? []).map(m => m.instrument)];
+  const members = (t.ensemble?.members ?? []).filter(m => !m.modern);
+  const used = [...t.voices.map(v => v.instrument), ...members.map(m => m.instrument), ...members.map(m => m.shelf)];
   return [...new Set([...used.filter((x): x is string => !!x), ...(t.also ?? [])])];
 }

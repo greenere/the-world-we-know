@@ -68,6 +68,8 @@ export interface Member {
   gain?: number;
   /** An instrument on the Music shelf: this member joins once the viewpoint knows it. */
   instrument?: string;
+  /** The family on the Music shelf this member's instrument belongs to; it only names it there. */
+  shelf?: string;
   /** One of the atlas's own orchestra, arranging the piece for a modern ear rather than playing it as it was
    * played: always present, unless the reader asks for the Historical arrangement. */
   modern?: boolean;

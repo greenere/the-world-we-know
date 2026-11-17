@@ -47,32 +47,37 @@
       "id": "phorminx",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "lyre"
      },
      {
       "id": "aulos",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "tympanon",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "frame-drum"
      },
      {
       "id": "kithara",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "lyre"
      },
      {
       "id": "krotala",
       "voice": "pluck",
       "role": "part",
-      "drum": "k"
+      "drum": "k",
+      "shelf": "rattle"
      },
      {
       "id": "hydraulis",
@@ -80,7 +85,8 @@
       "voice": "pipe",
       "role": "part",
       "instrument": "organ",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "psaltes",
@@ -93,52 +99,60 @@
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "bowed-strings"
      },
      {
       "id": "laouto",
       "sample": "guitar",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "oud"
      },
      {
       "id": "santouri",
       "sample": "yangqin",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "dulcimer"
      },
      {
       "id": "daouli",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "drum"
      },
      {
       "id": "zurna",
       "sample": "suona",
       "voice": "reed",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "shawm"
      },
      {
       "id": "klarino",
       "sample": "clarinet",
       "voice": "reed",
-      "role": "part"
+      "role": "part",
+      "shelf": "clarinet"
      },
      {
       "id": "violi",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "instrument": "violin"
+      "instrument": "violin",
+      "shelf": "violin"
      },
      {
       "id": "bouzouki",
       "sample": "guitar",
       "voice": "lute",
       "role": "part",
-      "tremolo": true
+      "tremolo": true,
+      "shelf": "long-lute"
      },
      {
       "id": "strings",
@@ -148,7 +162,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -158,7 +173,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -168,7 +184,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -177,7 +194,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -187,7 +205,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -196,7 +215,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -205,7 +225,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -451,14 +472,16 @@
       "id": "kithara",
       "sample": "harp",
       "voice": "pluck",
-      "role": "both"
+      "role": "both",
+      "shelf": "lyre"
      },
      {
       "id": "tibia",
       "sample": "oboe",
       "voice": "reed",
       "role": "melody",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "shawm"
      },
      {
       "id": "hydraulis",
@@ -466,26 +489,30 @@
       "voice": "pipe",
       "role": "accompany",
       "instrument": "organ",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "cornu",
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "tympanum",
       "voice": "pluck",
       "drum": "D",
-      "role": "part"
+      "role": "part",
+      "shelf": "frame-drum"
      },
      {
       "id": "crotala",
       "voice": "pluck",
       "drum": "k",
-      "role": "part"
+      "role": "part",
+      "shelf": "rattle"
      },
      {
       "id": "cantores",
@@ -498,72 +525,83 @@
       "sample": "organ",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "campane",
       "voice": "bell",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "bell"
      },
      {
       "id": "vielle",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "flauto",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "liuto",
       "sample": "guitar",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "oud"
      },
      {
       "id": "viola",
       "sample": "cello",
       "voice": "bow",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cembalo",
       "sample": "harpsichord",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "harpsichord"
      },
      {
       "id": "oboe",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "mandolino",
       "sample": "guitar",
       "voice": "pluck",
       "role": "part",
-      "tremolo": true
+      "tremolo": true,
+      "shelf": "guitar"
      },
      {
       "id": "tromba",
       "sample": "trumpet",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "horn"
      },
      {
       "id": "pianoforte",
       "sample": "piano",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "piano"
      },
      {
       "id": "strings",
@@ -573,7 +611,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -583,7 +622,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -593,7 +633,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -602,7 +643,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -612,7 +654,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -621,7 +664,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      }
     ],
     "percussion": {
@@ -909,45 +953,52 @@
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "lyre",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "lyre"
      },
      {
       "id": "drum",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "pipe",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "cruit",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "harp"
      },
      {
       "id": "crwth",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "carnyx",
       "sample": "trumpet",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "voices",
@@ -961,72 +1012,83 @@
       "voice": "pipe",
       "role": "part",
       "instrument": "organ",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "bells",
       "voice": "bell",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "bell"
      },
      {
       "id": "vielle",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "recorder",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "tabor",
       "voice": "pluck",
       "role": "part",
-      "drum": "t"
+      "drum": "t",
+      "shelf": "drum"
      },
      {
       "id": "lute",
       "sample": "guitar",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "oud"
      },
      {
       "id": "viol",
       "sample": "cello",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "virginals",
       "sample": "harpsichord",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "harpsichord"
      },
      {
       "id": "piano",
       "sample": "piano",
       "voice": "pluck",
       "role": "part",
-      "instrument": "piano"
+      "instrument": "piano",
+      "shelf": "piano"
      },
      {
       "id": "violin",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "instrument": "violin"
+      "instrument": "violin",
+      "shelf": "violin"
      },
      {
       "id": "oboe",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "strings",
@@ -1036,7 +1098,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -1046,7 +1109,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -1056,7 +1120,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -1065,7 +1130,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -1075,7 +1141,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -1084,7 +1151,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -1093,7 +1161,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -1349,26 +1418,30 @@
       "id": "lyre",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "lyre"
      },
      {
       "id": "tibia",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "drum",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "cymbals",
       "voice": "pluck",
       "role": "part",
-      "drum": "c"
+      "drum": "c",
+      "shelf": "cymbals"
      },
      {
       "id": "voices",
@@ -1380,78 +1453,90 @@
       "id": "oud",
       "sample": "guitar",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "oud"
      },
      {
       "id": "rebec",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "psaltery",
       "sample": "yangqin",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "zither"
      },
      {
       "id": "darbuka",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "pandero",
       "voice": "pluck",
       "role": "part",
-      "drum": "t"
+      "drum": "t",
+      "shelf": "frame-drum"
      },
      {
       "id": "chirimia",
       "sample": "suona",
       "voice": "pipe",
       "role": "part",
-      "gain": 1.4
+      "gain": 1.4,
+      "shelf": "shawm"
      },
      {
       "id": "vihuela",
       "sample": "guitar",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "guitar"
      },
      {
       "id": "organ",
       "sample": "organ",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "recorder",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "guitar",
       "sample": "guitar",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "guitar"
      },
      {
       "id": "bandurria",
       "sample": "banjo",
       "voice": "lute",
       "role": "part",
-      "tremolo": true
+      "tremolo": true,
+      "shelf": "guitar"
      },
      {
       "id": "castanets",
       "voice": "pluck",
       "role": "part",
-      "drum": "k"
+      "drum": "k",
+      "shelf": "rattle"
      },
      {
       "id": "strings",
@@ -1461,7 +1546,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -1471,7 +1557,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -1481,7 +1568,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -1490,7 +1578,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -1500,7 +1589,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -1509,7 +1599,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -1518,7 +1609,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -1771,33 +1863,38 @@
       "sample": "trumpet",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "lyre",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "lyre"
      },
      {
       "id": "drum",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "tibia",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "hydraulis",
       "sample": "organ",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "voices",
@@ -1810,89 +1907,103 @@
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "organ",
       "sample": "organ",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "bells",
       "voice": "bell",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "bell"
      },
      {
       "id": "trompette",
       "sample": "trumpet",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "hautbois",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "clavecin",
       "sample": "harpsichord",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "harpsichord"
      },
      {
       "id": "timbales",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "kettledrum"
      },
      {
       "id": "tambourin",
       "voice": "pluck",
       "role": "part",
-      "drum": "t"
+      "drum": "t",
+      "shelf": "drum"
      },
      {
       "id": "flute",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "harpe",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "harp"
      },
      {
       "id": "musette",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "shawm"
      },
      {
       "id": "accordion",
       "sample": "accordion",
       "voice": "pipe",
-      "role": "part"
+      "role": "part",
+      "shelf": "free-reed"
      },
      {
       "id": "violin",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "violin"
      },
      {
       "id": "guitare",
       "sample": "guitar",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "guitar"
      },
      {
       "id": "strings",
@@ -1902,7 +2013,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -1912,7 +2024,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -1922,7 +2035,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -1931,7 +2045,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -1941,7 +2056,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -1950,7 +2066,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -1959,7 +2076,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -2214,19 +2332,22 @@
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "drum",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "lyre",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "lyre"
      },
      {
       "id": "voices",
@@ -2239,91 +2360,105 @@
       "sample": "organ",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "fiedel",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "bells",
       "voice": "bell",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "bell"
      },
      {
       "id": "posaune",
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "horn"
      },
      {
       "id": "recorder",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "viol",
       "sample": "cello",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "pipe",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "harfe",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "harp"
      },
      {
       "id": "lute",
       "sample": "guitar",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "oud"
      },
      {
       "id": "clarinet",
       "sample": "clarinet",
       "voice": "reed",
-      "role": "part"
+      "role": "part",
+      "shelf": "clarinet"
      },
      {
       "id": "zither",
       "sample": "koto",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "zither"
      },
      {
       "id": "piano",
       "sample": "piano",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "piano"
      },
      {
       "id": "violin",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "violin"
      },
      {
       "id": "oboe",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "strings",
@@ -2333,7 +2468,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -2343,7 +2479,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -2353,7 +2490,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -2362,7 +2500,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -2372,7 +2511,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -2381,7 +2521,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -2390,7 +2531,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -2646,19 +2788,22 @@
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "drum",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "lyre",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "lyre"
      },
      {
       "id": "voices",
@@ -2671,66 +2816,76 @@
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "trompet",
       "sample": "trumpet",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "organ",
       "sample": "organ",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "pauker",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "kettledrum"
      },
      {
       "id": "hardingfele",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "violin"
      },
      {
       "id": "seljefloyte",
       "sample": "shakuhachi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "nyckelharpa",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "langeleik",
       "sample": "koto",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "zither"
      },
      {
       "id": "accordion",
       "sample": "accordion",
       "voice": "pipe",
-      "role": "part"
+      "role": "part",
+      "shelf": "free-reed"
      },
      {
       "id": "piano",
       "sample": "piano",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "piano"
      },
      {
       "id": "strings",
@@ -2740,7 +2895,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -2750,7 +2906,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -2760,7 +2917,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -2769,7 +2927,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -2779,7 +2938,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -2788,7 +2948,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -2797,7 +2958,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -3059,65 +3221,75 @@
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "drum",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "gusli",
       "sample": "koto",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "zither"
      },
      {
       "id": "rozhok",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "horn"
      },
      {
       "id": "gudok",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "bells",
       "voice": "bell",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "bell"
      },
      {
       "id": "truba",
       "sample": "trumpet",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "litavry",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "kettledrum"
      },
      {
       "id": "balalaika",
       "sample": "banjo",
       "voice": "lute",
       "role": "part",
-      "tremolo": true
+      "tremolo": true,
+      "shelf": "long-lute"
      },
      {
       "id": "bayan",
       "sample": "accordion",
       "voice": "pipe",
-      "role": "part"
+      "role": "part",
+      "shelf": "free-reed"
      },
      {
       "id": "strings",
@@ -3127,7 +3299,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -3137,7 +3310,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -3147,7 +3321,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -3156,7 +3331,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -3166,7 +3342,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -3175,7 +3352,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -3184,7 +3362,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -3391,6 +3570,487 @@
    ]
   },
   {
+   "id": "egypt",
+   "name": "Harp and mizmar",
+   "summary": "The music of Egypt, heard through two themes composed for this atlas in its styles, carried through every age from the pharaohs to Cairo's great orchestras: a hymn in maqam hijaz and a song of the Nile in the ṣaʿīdī rhythm of Upper Egypt. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the harp, double pipe, sistrum and clappers of the temples, the lyre, aulos and water organ of Alexandria, Coptic chant with cymbals and triangle, the ney and daf of the Sufi zikr, the mizmar and tabl of the villages, and Cairo's takht of oud, qanun, violin and riq.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      100,
+      400,
+      500,
+      700,
+      800,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "reed"
+    },
+    {
+     "voice": "lute"
+    },
+    {
+     "voice": "flute"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.65,
+   "leaps": 0.15,
+   "ornament": 0.3,
+   "glide": true,
+   "drone": 0.6,
+   "places": [
+    "memphis",
+    "thebes",
+    "alexandria",
+    "cairo",
+    "fustat"
+   ],
+   "source": "manniche-egypt",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.2
+     },
+     {
+      "id": "benet",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "shelf": "harp"
+     },
+     {
+      "id": "memet",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85,
+      "shelf": "clarinet"
+     },
+     {
+      "id": "sistrum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "j",
+      "shelf": "sistrum"
+     },
+     {
+      "id": "clappers",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k",
+      "shelf": "rattle"
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "drum"
+     },
+     {
+      "id": "lyre",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "shelf": "lyre"
+     },
+     {
+      "id": "aulos",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85,
+      "shelf": "shawm"
+     },
+     {
+      "id": "hydraulis",
+      "sample": "organ",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8,
+      "shelf": "organ"
+     },
+     {
+      "id": "tympanon",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "frame-drum"
+     },
+     {
+      "id": "cymbals",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "c",
+      "shelf": "cymbals"
+     },
+     {
+      "id": "triangle",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "g",
+      "shelf": "bell"
+     },
+     {
+      "id": "ney",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part",
+      "shelf": "flute"
+     },
+     {
+      "id": "daf",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "frame-drum"
+     },
+     {
+      "id": "oud",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part",
+      "shelf": "oud"
+     },
+     {
+      "id": "qanun",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part",
+      "shelf": "zither"
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "shelf": "violin"
+     },
+     {
+      "id": "riq",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t",
+      "shelf": "frame-drum"
+     },
+     {
+      "id": "mizmar",
+      "sample": "suona",
+      "voice": "reed",
+      "role": "part",
+      "gain": 1.2,
+      "shelf": "shawm"
+     },
+     {
+      "id": "tabl",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B",
+      "shelf": "drum"
+     },
+     {
+      "id": "tabl2",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t",
+      "shelf": "drum"
+     },
+     {
+      "id": "accordion",
+      "sample": "accordion",
+      "voice": "pipe",
+      "role": "part",
+      "shelf": "free-reed"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8,
+      "shelf": "violin"
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75,
+      "shelf": "violin"
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7,
+      "shelf": "violin"
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55,
+      "shelf": "harp"
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7,
+      "shelf": "horn"
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8,
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8,
+      "shelf": "drum"
+     }
+    ],
+    "motifs": [
+     "D4:1 Eb4:1 F#4:2 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "hymn-early",
+     "name": "Temple Hymn · Early kingdoms",
+     "about": "Egypt's ceremonial theme in the age of the pharaohs: the harp, then voices, then the harp again, the sistrum and clappers of the temple.",
+     "midi": "midi/hymn-early.mid",
+     "score": "egypt-hymn",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "egypt-hymn",
+     "credit": "Composed for this atlas (data/scores/egypt-hymn.json).",
+     "until": -500
+    },
+    {
+     "id": "hymn-classical",
+     "name": "Temple Hymn · Classical empires",
+     "about": "Egypt's ceremonial theme in Ptolemaic and Roman Alexandria: the lyre, then the aulos, then the water organ, the sistrum of Isis.",
+     "midi": "midi/hymn-classical.mid",
+     "score": "egypt-hymn",
+     "beat": 0.76,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "egypt-hymn",
+     "credit": "Composed for this atlas (data/scores/egypt-hymn.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "hymn-caravans",
+     "name": "Temple Hymn · Caravans and monsoons",
+     "about": "Egypt's ceremonial theme as the Coptic church sings it: voices over cymbals and triangle.",
+     "midi": "midi/hymn-caravans.mid",
+     "score": "egypt-hymn",
+     "beat": 0.75,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "egypt-hymn",
+     "credit": "Composed for this atlas (data/scores/egypt-hymn.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "hymn-crossings",
+     "name": "Temple Hymn · Ocean crossings",
+     "about": "Egypt's ceremonial theme as a Sufi zikr in Mamluk Cairo: the ney, then voices, over the daf.",
+     "midi": "midi/hymn-crossings.mid",
+     "score": "egypt-hymn",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "egypt-hymn",
+     "credit": "Composed for this atlas (data/scores/egypt-hymn.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "hymn-steam",
+     "name": "Temple Hymn · Steam and telegraph",
+     "about": "Egypt's ceremonial theme for Cairo's takht: the oud, then the violin, then the qanun, the riq keeping time.",
+     "midi": "midi/hymn-steam.mid",
+     "score": "egypt-hymn",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "egypt-hymn",
+     "credit": "Composed for this atlas (data/scores/egypt-hymn.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "hymn-shared",
+     "name": "Temple Hymn · One shared map",
+     "about": "Egypt's ceremonial theme for a great Cairo orchestra: violins, then strings, then voices, with oud, qanun and accordion.",
+     "midi": "midi/hymn-shared.mid",
+     "score": "egypt-hymn",
+     "beat": 0.68,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "egypt-hymn",
+     "credit": "Composed for this atlas (data/scores/egypt-hymn.json).",
+     "from": 1900
+    },
+    {
+     "id": "nile-early",
+     "name": "Song of the Nile · Early kingdoms",
+     "about": "Egypt's folk theme in the age of the pharaohs: the double pipe, then the harp, over drum and clappers.",
+     "midi": "midi/nile-early.mid",
+     "score": "nile-song",
+     "beat": 0.46,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nile-song",
+     "credit": "Composed for this atlas (data/scores/nile-song.json).",
+     "until": -500
+    },
+    {
+     "id": "nile-classical",
+     "name": "Song of the Nile · Classical empires",
+     "about": "Egypt's folk theme in Ptolemaic and Roman Egypt: the aulos, then the lyre, over the tympanon.",
+     "midi": "midi/nile-classical.mid",
+     "score": "nile-song",
+     "beat": 0.45,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nile-song",
+     "credit": "Composed for this atlas (data/scores/nile-song.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "nile-caravans",
+     "name": "Song of the Nile · Caravans and monsoons",
+     "about": "Egypt's folk theme in Fatimid and Mamluk Egypt: the ney, then the oud, over the tabl's ṣaʿīdī rhythm.",
+     "midi": "midi/nile-caravans.mid",
+     "score": "nile-song",
+     "beat": 0.44,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nile-song",
+     "credit": "Composed for this atlas (data/scores/nile-song.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "nile-crossings",
+     "name": "Song of the Nile · Ocean crossings",
+     "about": "Egypt's folk theme in Upper Egypt: the mizmar shawms, then voices, over the tabl.",
+     "midi": "midi/nile-crossings.mid",
+     "score": "nile-song",
+     "beat": 0.43,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nile-song",
+     "credit": "Composed for this atlas (data/scores/nile-song.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "nile-steam",
+     "name": "Song of the Nile · Steam and telegraph",
+     "about": "Egypt's folk theme in Khedival Egypt: the violin, then the oud, then the mizmar, the qanun and riq joining.",
+     "midi": "midi/nile-steam.mid",
+     "score": "nile-song",
+     "beat": 0.42,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nile-song",
+     "credit": "Composed for this atlas (data/scores/nile-song.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "nile-shared",
+     "name": "Song of the Nile · One shared map",
+     "about": "Egypt's folk theme for a Cairo orchestra: the accordion, then violins, then the mizmar, strings beneath.",
+     "midi": "midi/nile-shared.mid",
+     "score": "nile-song",
+     "beat": 0.42,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nile-song",
+     "credit": "Composed for this atlas (data/scores/nile-song.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "egypt-hymn",
+     "name": "Temple Hymn",
+     "mood": "ceremonial",
+     "about": "A hymn composed for this atlas in maqam hijaz, in the manner of the slow chants of Egypt's sanctuaries: Egypt's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/egypt-hymn.json)."
+    },
+    {
+     "id": "nile-song",
+     "name": "Song of the Nile",
+     "mood": "folk",
+     "about": "A song composed for this atlas in the manner of Upper Egypt's mizmar tunes over the ṣaʿīdī rhythm: Egypt's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/nile-song.json)."
+    }
+   ]
+  },
+  {
    "id": "maqam",
    "name": "Maqam",
    "summary": "The modes of Arabic, Persian and Turkish music, heard through two themes Edward Lane noted in Cairo in the 1830s: the chant of a poet of the Hilali epic, and the popular song Doos ya lellee. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the lyre and reed pipe of Mesopotamia, the barbat, chang and ney of the Sasanian court, the oud, qanun and ney of the golden age, the Ottoman mehter, Cairo's takht with its violin, and a film orchestra. Lane wrote the neutral steps of the maqam as plain notes, and so they are played here.",
@@ -3444,95 +4104,110 @@
       "id": "lyre",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "lyre"
      },
      {
       "id": "zummara",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "clarinet"
      },
      {
       "id": "daf",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "frame-drum"
      },
      {
       "id": "barbat",
       "sample": "guitar",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "pipa"
      },
      {
       "id": "chang",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "harp"
      },
      {
       "id": "ney",
       "sample": "shakuhachi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "oud",
       "sample": "guitar",
       "voice": "lute",
       "role": "part",
-      "instrument": "oud"
+      "instrument": "oud",
+      "shelf": "oud"
      },
      {
       "id": "qanun",
       "sample": "koto",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "zither"
      },
      {
       "id": "riq",
       "voice": "pluck",
       "role": "part",
-      "drum": "t"
+      "drum": "t",
+      "shelf": "frame-drum"
      },
      {
       "id": "darbuka",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "zurna",
       "sample": "suona",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "davul",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "drum"
      },
      {
       "id": "zil",
       "voice": "pluck",
       "role": "part",
-      "drum": "c"
+      "drum": "c",
+      "shelf": "cymbals"
      },
      {
       "id": "kemenche",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "bowed-strings"
      },
      {
       "id": "violin",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "instrument": "violin"
+      "instrument": "violin",
+      "shelf": "violin"
      },
      {
       "id": "strings",
@@ -3542,7 +4217,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -3552,7 +4228,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -3562,7 +4239,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -3571,7 +4249,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -3581,7 +4260,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -3590,7 +4270,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -3599,7 +4280,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -3806,6 +4488,900 @@
    ]
   },
   {
+   "id": "persia",
+   "name": "Drum house and santur",
+   "summary": "The music of Persia, heard through two themes composed for this atlas in its styles: a song of the naqqāra-khāna, the drum house over palace and shrine gates, in dastgāh chahārgāh, and a shesh-o-hasht dance in the Esfahān mode. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the harp and long trumpet of the Achaemenids, Barbad's barbat and the ney of the Sasanian court, the sornas, karnāy and kettledrums of the drum house, the kamancheh, santur and tar of Safavid Isfahan, and the trumpets of the Qajar court.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      100,
+      400,
+      500,
+      700,
+      800,
+      1100
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "reed"
+    },
+    {
+     "voice": "lute"
+    },
+    {
+     "voice": "flute"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.65,
+   "leaps": 0.15,
+   "ornament": 0.3,
+   "glide": true,
+   "drone": 0.6,
+   "places": [
+    "persepolis",
+    "pasargadae",
+    "ctesiphon",
+    "isfahan",
+    "tabriz",
+    "herat",
+    "bukhara",
+    "shiraz"
+   ],
+   "source": "zonis-persian",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "chang",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "shelf": "harp"
+     },
+     {
+      "id": "karnay",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8,
+      "shelf": "horn"
+     },
+     {
+      "id": "dohol",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B",
+      "shelf": "drum"
+     },
+     {
+      "id": "barbat",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part",
+      "shelf": "pipa"
+     },
+     {
+      "id": "ney",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part",
+      "shelf": "flute"
+     },
+     {
+      "id": "tombak",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "h",
+      "shelf": "drum"
+     },
+     {
+      "id": "sorna",
+      "sample": "suona",
+      "voice": "reed",
+      "role": "part",
+      "gain": 1.2,
+      "shelf": "shawm"
+     },
+     {
+      "id": "naqqareh",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "kamancheh",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "shelf": "bowed-strings"
+     },
+     {
+      "id": "santur",
+      "sample": "yangqin",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.85,
+      "shelf": "dulcimer"
+     },
+     {
+      "id": "tar",
+      "sample": "sitar",
+      "voice": "lute",
+      "role": "part",
+      "shelf": "long-lute"
+     },
+     {
+      "id": "trumpet",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8,
+      "shelf": "horn"
+     },
+     {
+      "id": "daf",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "frame-drum"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8,
+      "shelf": "violin"
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75,
+      "shelf": "violin"
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7,
+      "shelf": "violin"
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55,
+      "shelf": "harp"
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7,
+      "shelf": "horn"
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8,
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8,
+      "shelf": "drum"
+     }
+    ],
+    "motifs": [
+     "D4:1 Eb4:1 F#4:1 G4:1 A4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "royal-early",
+     "name": "The Drum House · Early kingdoms",
+     "about": "Persia's ceremonial theme in Elam and the Achaemenid court: the angular harp, then the long trumpet, a drum beneath.",
+     "midi": "midi/royal-early.mid",
+     "score": "naqqareh-khaneh",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "naqqareh-khaneh",
+     "credit": "Composed for this atlas (data/scores/naqqareh-khaneh.json).",
+     "until": -500
+    },
+    {
+     "id": "royal-classical",
+     "name": "The Drum House · Classical empires",
+     "about": "Persia's ceremonial theme at the Sasanian court of Barbad: the barbat, then the ney, then the harp, the tombak joining.",
+     "midi": "midi/royal-classical.mid",
+     "score": "naqqareh-khaneh",
+     "beat": 0.76,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "naqqareh-khaneh",
+     "credit": "Composed for this atlas (data/scores/naqqareh-khaneh.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "royal-caravans",
+     "name": "The Drum House · Caravans and monsoons",
+     "about": "Persia's ceremonial theme in the drum house over a palace gate: sornas over the kettledrums, the karnāy's long note beneath.",
+     "midi": "midi/royal-caravans.mid",
+     "score": "naqqareh-khaneh",
+     "beat": 0.74,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "naqqareh-khaneh",
+     "credit": "Composed for this atlas (data/scores/naqqareh-khaneh.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "royal-crossings",
+     "name": "The Drum House · Ocean crossings",
+     "about": "Persia's ceremonial theme in Safavid Isfahan: the kamancheh, then the sorna, then the tar, the santur joining, the drum house beneath.",
+     "midi": "midi/royal-crossings.mid",
+     "score": "naqqareh-khaneh",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "naqqareh-khaneh",
+     "credit": "Composed for this atlas (data/scores/naqqareh-khaneh.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "royal-steam",
+     "name": "The Drum House · Steam and telegraph",
+     "about": "Persia's ceremonial theme at the Qajar court, which hired a French bandmaster: trumpets, then the tar, the santur and kamancheh joining.",
+     "midi": "midi/royal-steam.mid",
+     "score": "naqqareh-khaneh",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "naqqareh-khaneh",
+     "credit": "Composed for this atlas (data/scores/naqqareh-khaneh.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "royal-shared",
+     "name": "The Drum House · One shared map",
+     "about": "Persia's ceremonial theme for a film orchestra: the kamancheh, then strings, then horns, the santur and karnāy.",
+     "midi": "midi/royal-shared.mid",
+     "score": "naqqareh-khaneh",
+     "beat": 0.68,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "naqqareh-khaneh",
+     "credit": "Composed for this atlas (data/scores/naqqareh-khaneh.json).",
+     "from": 1900
+    },
+    {
+     "id": "shesh-early",
+     "name": "Shesh-o-Hasht · Early kingdoms",
+     "about": "Persia's folk theme in the age of the Medes: the ney, then the harp, over the daf.",
+     "midi": "midi/shesh-early.mid",
+     "score": "shesh-o-hasht",
+     "beat": 0.34,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shesh-o-hasht",
+     "credit": "Composed for this atlas (data/scores/shesh-o-hasht.json).",
+     "until": -500
+    },
+    {
+     "id": "shesh-classical",
+     "name": "Shesh-o-Hasht · Classical empires",
+     "about": "Persia's folk theme in Parthian and Sasanian Persia: the barbat, then the ney, over the tombak.",
+     "midi": "midi/shesh-classical.mid",
+     "score": "shesh-o-hasht",
+     "beat": 0.32,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shesh-o-hasht",
+     "credit": "Composed for this atlas (data/scores/shesh-o-hasht.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "shesh-caravans",
+     "name": "Shesh-o-Hasht · Caravans and monsoons",
+     "about": "Persia's folk theme in the age of Rumi and Hafez: the ney, then the kamancheh, then the barbat, over tombak and daf.",
+     "midi": "midi/shesh-caravans.mid",
+     "score": "shesh-o-hasht",
+     "beat": 0.31,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shesh-o-hasht",
+     "credit": "Composed for this atlas (data/scores/shesh-o-hasht.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "shesh-crossings",
+     "name": "Shesh-o-Hasht · Ocean crossings",
+     "about": "Persia's folk theme in Safavid Isfahan: the tar, then the kamancheh, then the santur.",
+     "midi": "midi/shesh-crossings.mid",
+     "score": "shesh-o-hasht",
+     "beat": 0.3,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shesh-o-hasht",
+     "credit": "Composed for this atlas (data/scores/shesh-o-hasht.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "shesh-steam",
+     "name": "Shesh-o-Hasht · Steam and telegraph",
+     "about": "Persia's folk theme in Qajar Tehran: the santur, then the tar, then the kamancheh, over the tombak.",
+     "midi": "midi/shesh-steam.mid",
+     "score": "shesh-o-hasht",
+     "beat": 0.29,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shesh-o-hasht",
+     "credit": "Composed for this atlas (data/scores/shesh-o-hasht.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "shesh-shared",
+     "name": "Shesh-o-Hasht · One shared map",
+     "about": "Persia's folk theme for a film orchestra: the kamancheh, then the santur, then strings, over tombak and daf.",
+     "midi": "midi/shesh-shared.mid",
+     "score": "shesh-o-hasht",
+     "beat": 0.28,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shesh-o-hasht",
+     "credit": "Composed for this atlas (data/scores/shesh-o-hasht.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "naqqareh-khaneh",
+     "name": "The Drum House",
+     "mood": "ceremonial",
+     "about": "A song composed for this atlas in dastgāh chahārgāh, in the manner of the naqqāra-khāna's music at palace and shrine gates: Persia's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/naqqareh-khaneh.json)."
+    },
+    {
+     "id": "shesh-o-hasht",
+     "name": "Shesh-o-Hasht",
+     "mood": "folk",
+     "about": "A dance composed for this atlas in the manner of the Persian six-eight songs, in the Esfahān mode: Persia's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/shesh-o-hasht.json)."
+    }
+   ]
+  },
+  {
+   "id": "turks",
+   "name": "Mehter and bağlama",
+   "summary": "The music of the Turks, from the Altai to the Ottoman lands, heard through two themes composed for this atlas in its styles: a march of the mehter, the Janissary band, in maqam rast, and a türkü in the limping nine of the karşılama dance. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the kopuz and drums of the steppe, the zurna and the Mevlevi ney and kudüm of Seljuk Konya, the mehter's zurnas, trumpets, kettledrums and cymbals, the bağlama, kaval and kemençe of the villages, and the clarinet bands of Thrace.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      400,
+      500,
+      700,
+      900,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "reed"
+    },
+    {
+     "voice": "lute"
+    },
+    {
+     "voice": "flute"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.65,
+   "leaps": 0.15,
+   "ornament": 0.3,
+   "glide": true,
+   "drone": 0.6,
+   "places": [
+    "konya",
+    "bursa",
+    "edirne",
+    "constantinople"
+   ],
+   "source": "feldman-ottoman",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.2
+     },
+     {
+      "id": "kopuz",
+      "sample": "shamisen",
+      "voice": "lute",
+      "role": "part",
+      "shelf": "long-lute"
+     },
+     {
+      "id": "drum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "drum"
+     },
+     {
+      "id": "borgu",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7,
+      "shelf": "horn"
+     },
+     {
+      "id": "zurna",
+      "sample": "suona",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.6,
+      "shelf": "shawm"
+     },
+     {
+      "id": "ney",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part",
+      "shelf": "flute"
+     },
+     {
+      "id": "kudum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "kos",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B",
+      "shelf": "kettledrum",
+      "gain": 0.65
+     },
+     {
+      "id": "davul",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "drum"
+     },
+     {
+      "id": "nakkare",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t",
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "zil",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "c",
+      "shelf": "cymbals"
+     },
+     {
+      "id": "boru",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8,
+      "shelf": "horn"
+     },
+     {
+      "id": "saz",
+      "sample": "sitar",
+      "voice": "lute",
+      "role": "part",
+      "shelf": "long-lute"
+     },
+     {
+      "id": "kaval",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part",
+      "shelf": "flute"
+     },
+     {
+      "id": "kemence",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "shelf": "bowed-strings"
+     },
+     {
+      "id": "clarinet",
+      "sample": "clarinet",
+      "voice": "reed",
+      "role": "part",
+      "shelf": "clarinet"
+     },
+     {
+      "id": "kanun",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part",
+      "shelf": "zither"
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "shelf": "violin"
+     },
+     {
+      "id": "darbuka",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "drum"
+     },
+     {
+      "id": "darbuka2",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t",
+      "shelf": "drum"
+     },
+     {
+      "id": "kasik",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k",
+      "shelf": "rattle"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8,
+      "shelf": "violin"
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75,
+      "shelf": "violin"
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7,
+      "shelf": "violin"
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55,
+      "shelf": "harp"
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7,
+      "shelf": "horn"
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8,
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8,
+      "shelf": "drum"
+     }
+    ],
+    "motifs": [
+     "D4:1 F#4:1 A4:2 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "mehter-early",
+     "name": "Mehter March · Early kingdoms",
+     "about": "The Turks' ceremonial theme in the Altai: voices, then the kopuz lute, a drum beneath.",
+     "midi": "midi/mehter-early.mid",
+     "score": "mehter-march",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mehter-march",
+     "credit": "Composed for this atlas (data/scores/mehter-march.json).",
+     "until": -500
+    },
+    {
+     "id": "mehter-classical",
+     "name": "Mehter March · Classical empires",
+     "about": "The Turks' ceremonial theme under the Göktürk khagans: the kopuz, then the horn, the great drum beneath.",
+     "midi": "midi/mehter-classical.mid",
+     "score": "mehter-march",
+     "beat": 0.58,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mehter-march",
+     "credit": "Composed for this atlas (data/scores/mehter-march.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "mehter-caravans",
+     "name": "Mehter March · Caravans and monsoons",
+     "about": "The Turks' ceremonial theme in Seljuk Konya: the zurna, then the Mevlevi ney, the kudüm and kös beneath.",
+     "midi": "midi/mehter-caravans.mid",
+     "score": "mehter-march",
+     "beat": 0.56,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mehter-march",
+     "credit": "Composed for this atlas (data/scores/mehter-march.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "mehter-crossings",
+     "name": "Mehter March · Ocean crossings",
+     "about": "The Turks' ceremonial theme as the mehter played before the sultan's army: zurnas, then trumpets, over kös, davul, nakkare and zils.",
+     "midi": "midi/mehter-crossings.mid",
+     "score": "mehter-march",
+     "beat": 0.55,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mehter-march",
+     "credit": "Composed for this atlas (data/scores/mehter-march.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "mehter-steam",
+     "name": "Mehter March · Steam and telegraph",
+     "about": "The Turks' ceremonial theme for the new Ottoman band that Giuseppe Donizetti trained: trumpets, then clarinets, drum and cymbals beneath.",
+     "midi": "midi/mehter-steam.mid",
+     "score": "mehter-march",
+     "beat": 0.54,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mehter-march",
+     "credit": "Composed for this atlas (data/scores/mehter-march.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "mehter-shared",
+     "name": "Mehter March · One shared map",
+     "about": "The Turks' ceremonial theme for a film orchestra: the zurna, then strings, then horns, over the mehter's drums.",
+     "midi": "midi/mehter-shared.mid",
+     "score": "mehter-march",
+     "beat": 0.54,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "mehter-march",
+     "credit": "Composed for this atlas (data/scores/mehter-march.json).",
+     "from": 1900
+    },
+    {
+     "id": "turku-early",
+     "name": "Türkü · Early kingdoms",
+     "about": "The Turks' folk theme in the Altai: the kopuz, then voices, a drum beneath.",
+     "midi": "midi/turku-early.mid",
+     "score": "turku",
+     "beat": 0.22,
+     "meter": 9,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "turku",
+     "credit": "Composed for this atlas (data/scores/turku.json).",
+     "until": -500
+    },
+    {
+     "id": "turku-classical",
+     "name": "Türkü · Classical empires",
+     "about": "The Turks' folk theme on the steppe: the kopuz, then the kaval flute, spoons joining.",
+     "midi": "midi/turku-classical.mid",
+     "score": "turku",
+     "beat": 0.21,
+     "meter": 9,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "turku",
+     "credit": "Composed for this atlas (data/scores/turku.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "turku-caravans",
+     "name": "Türkü · Caravans and monsoons",
+     "about": "The Turks' folk theme in Anatolia: the kaval, then the bağlama, over the darbuka.",
+     "midi": "midi/turku-caravans.mid",
+     "score": "turku",
+     "beat": 0.21,
+     "meter": 9,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "turku",
+     "credit": "Composed for this atlas (data/scores/turku.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "turku-crossings",
+     "name": "Türkü · Ocean crossings",
+     "about": "The Turks' folk theme in Ottoman villages: the bağlama, then the kemençe, over darbuka and spoons.",
+     "midi": "midi/turku-crossings.mid",
+     "score": "turku",
+     "beat": 0.2,
+     "meter": 9,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "turku",
+     "credit": "Composed for this atlas (data/scores/turku.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "turku-steam",
+     "name": "Türkü · Steam and telegraph",
+     "about": "The Turks' folk theme as the clarinet bands of Thrace played it: the clarinet, then the kanun, then the violin.",
+     "midi": "midi/turku-steam.mid",
+     "score": "turku",
+     "beat": 0.2,
+     "meter": 9,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "turku",
+     "credit": "Composed for this atlas (data/scores/turku.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "turku-shared",
+     "name": "Türkü · One shared map",
+     "about": "The Turks' folk theme for a film orchestra: the clarinet, then the bağlama, then strings, over darbuka and spoons.",
+     "midi": "midi/turku-shared.mid",
+     "score": "turku",
+     "beat": 0.2,
+     "meter": 9,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "turku",
+     "credit": "Composed for this atlas (data/scores/turku.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "mehter-march",
+     "name": "Mehter March",
+     "mood": "ceremonial",
+     "about": "A march composed for this atlas in the manner of the Ottoman mehter, in maqam rast: the Turks' ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/mehter-march.json)."
+    },
+    {
+     "id": "turku",
+     "name": "Türkü",
+     "mood": "folk",
+     "about": "A folk song composed for this atlas in the manner of the Anatolian türkü, in the nine of the karşılama dance: the Turks' folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/turku.json)."
+    }
+   ]
+  },
+  {
    "id": "steppe",
    "name": "Long song and horse-head fiddle",
    "summary": "The music of the Mongolian steppe, heard through two themes composed for this atlas in its styles, since its songs were passed on by ear: a long song and a galloping short song. While the years run one carries on, and when time stands still they take turns. Each is played as its age would, over the throat singer's drone and its whistled overtone: voices and drum, the tovshuur lute, the morin khuur horse-head fiddle and limbe flute of the Mongol empire, the yatga zither and khuuchir fiddle, and a film orchestra.",
@@ -3869,7 +5445,8 @@
       "id": "drum",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "hooves",
@@ -3881,32 +5458,37 @@
       "id": "tovshuur",
       "sample": "shamisen",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "long-lute"
      },
      {
       "id": "morin",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "bowed-strings"
      },
      {
       "id": "limbe",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "yatga",
       "sample": "koto",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "zither"
      },
      {
       "id": "khuuchir",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "bowed-strings"
      },
      {
       "id": "strings",
@@ -3916,7 +5498,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -3926,7 +5509,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -3936,7 +5520,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -3945,7 +5530,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -3955,7 +5541,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -3964,7 +5551,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -3973,7 +5561,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -4237,91 +5826,105 @@
       "id": "veena",
       "sample": "sitar",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "long-lute"
      },
      {
       "id": "venu",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "mridangam",
       "voice": "pluck",
       "drum": "D",
-      "role": "part"
+      "role": "part",
+      "shelf": "drum"
      },
      {
       "id": "nadaswaram",
       "sample": "suona",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "sruti",
       "sample": "sheng",
       "voice": "reed",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "free-reed"
      },
      {
       "id": "tavil",
       "voice": "pluck",
       "drum": "B",
-      "role": "part"
+      "role": "part",
+      "shelf": "drum"
      },
      {
       "id": "sitar",
       "sample": "sitar",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "long-lute"
      },
      {
       "id": "shehnai",
       "sample": "suona",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "sarangi",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "bowed-strings"
      },
      {
       "id": "tabla",
       "voice": "pluck",
       "drum": "t",
-      "role": "part"
+      "role": "part",
+      "shelf": "drum"
      },
      {
       "id": "violin",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "instrument": "violin"
+      "instrument": "violin",
+      "shelf": "violin"
      },
      {
       "id": "harmonium",
       "sample": "sheng",
       "voice": "reed",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "free-reed"
      },
      {
       "id": "bansuri",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "tanpura",
       "sample": "sitar",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.6
+      "gain": 0.6,
+      "shelf": "long-lute"
      },
      {
       "id": "strings",
@@ -4331,7 +5934,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -4341,7 +5945,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -4351,7 +5956,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -4360,7 +5966,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -4370,7 +5977,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -4379,7 +5987,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -4388,7 +5997,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -4651,14 +6261,16 @@
       "sample": "koto",
       "voice": "pluck",
       "role": "both",
-      "gain": 0.95
+      "gain": 0.95,
+      "shelf": "zither"
      },
      {
       "id": "xiao",
       "sample": "shakuhachi",
       "voice": "flute",
       "role": "melody",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "flute"
      },
      {
       "id": "pipa",
@@ -4666,7 +6278,8 @@
       "voice": "lute",
       "role": "both",
       "tremolo": true,
-      "instrument": "pipa"
+      "instrument": "pipa",
+      "shelf": "pipa"
      },
      {
       "id": "huqin",
@@ -4674,39 +6287,45 @@
       "voice": "bow",
       "role": "melody",
       "instrument": "bowed-strings",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "bowed-strings"
      },
      {
       "id": "bells",
       "voice": "bell",
       "role": "accent",
       "instrument": "zeng-bells",
-      "until": 220
+      "until": 220,
+      "shelf": "bell"
      },
      {
       "id": "bianzhong",
       "voice": "bell",
       "role": "part",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "zeng-bells"
      },
      {
       "id": "se",
       "sample": "koto",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "zither"
      },
      {
       "id": "dizi",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "sheng",
       "sample": "sheng",
       "voice": "reed",
-      "role": "part"
+      "role": "part",
+      "shelf": "free-reed"
      },
      {
       "id": "voices",
@@ -4717,88 +6336,102 @@
      {
       "id": "bianqing",
       "voice": "stone",
-      "role": "part"
+      "role": "part",
+      "shelf": "zeng-bells"
      },
      {
       "id": "tezhong",
       "voice": "bell",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "bell"
      },
      {
       "id": "drum",
       "voice": "pluck",
       "drum": "D",
-      "role": "part"
+      "role": "part",
+      "shelf": "drum"
      },
      {
       "id": "drum2",
       "voice": "pluck",
       "drum": "B",
-      "role": "part"
+      "role": "part",
+      "shelf": "drum"
      },
      {
       "id": "yu",
       "voice": "pluck",
       "drum": "s",
-      "role": "part"
+      "role": "part",
+      "shelf": "rattle"
      },
      {
       "id": "guanzi",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "shawm"
      },
      {
       "id": "yunluo",
       "voice": "metal",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "gong"
      },
      {
       "id": "clapper",
       "voice": "pluck",
       "drum": "k",
-      "role": "part"
+      "role": "part",
+      "shelf": "rattle"
      },
      {
       "id": "woodblock",
       "voice": "pluck",
       "drum": "b",
-      "role": "part"
+      "role": "part",
+      "shelf": "slit-drum"
      },
      {
       "id": "suona",
       "sample": "suona",
       "voice": "reed",
-      "role": "part"
+      "role": "part",
+      "shelf": "shawm"
      },
      {
       "id": "cymbals",
       "voice": "pluck",
       "drum": "c",
-      "role": "part"
+      "role": "part",
+      "shelf": "cymbals"
      },
      {
       "id": "gong",
       "voice": "gong",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "gong"
      },
      {
       "id": "xun",
       "sample": "xun",
       "voice": "flute",
       "role": "part",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "vessel-flute"
      },
      {
       "id": "yangqin",
       "sample": "yangqin",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "dulcimer"
      },
      {
       "id": "strings",
@@ -4808,7 +6441,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -4818,7 +6452,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -4828,7 +6463,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -4837,7 +6473,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -4847,7 +6484,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -4856,7 +6494,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -4865,7 +6504,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "percussion": {
@@ -5197,88 +6837,102 @@
       "sample": "xun",
       "voice": "flute",
       "role": "part",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "vessel-flute"
      },
      {
       "id": "wagon",
       "sample": "koto",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "zither"
      },
      {
       "id": "kagurabue",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "hichiriki",
       "sample": "oboe",
       "voice": "reed",
       "role": "part",
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "shawm"
      },
      {
       "id": "ryuteki",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "sho",
       "sample": "sheng",
       "voice": "reed",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "free-reed"
      },
      {
       "id": "gakuso",
       "sample": "koto",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "zither"
      },
      {
       "id": "biwa",
       "sample": "shamisen",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "pipa"
      },
      {
       "id": "kakko",
       "voice": "pluck",
       "drum": "t",
-      "role": "part"
+      "role": "part",
+      "shelf": "drum"
      },
      {
       "id": "odaiko",
       "sample": "taiko",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "drum"
      },
      {
       "id": "shakuhachi",
       "sample": "shakuhachi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "koto",
       "sample": "koto",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "zither"
      },
      {
       "id": "shamisen",
       "sample": "shamisen",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "long-lute"
      },
      {
       "id": "harmonium",
       "sample": "sheng",
       "voice": "reed",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "free-reed"
      },
      {
       "id": "voices",
@@ -5291,7 +6945,8 @@
       "sample": "trumpet",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "strings",
@@ -5301,7 +6956,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -5311,7 +6967,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -5321,7 +6978,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -5330,7 +6988,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -5340,7 +6999,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -5349,7 +7009,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -5358,7 +7019,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -5608,26 +7270,30 @@
       "id": "suling",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "angklung",
       "sample": "marimba",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "gamelan"
      },
      {
       "id": "nekara",
       "voice": "gong",
       "role": "part",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "gong"
      },
      {
       "id": "saron",
       "sample": "vibraphone",
       "voice": "metal",
-      "role": "part"
+      "role": "part",
+      "shelf": "gamelan"
      },
      {
       "id": "saron2",
@@ -5635,70 +7301,81 @@
       "voice": "metal",
       "role": "part",
       "detune": 9,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "gamelan"
      },
      {
       "id": "peking",
       "sample": "glockenspiel",
       "voice": "metal",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "gamelan"
      },
      {
       "id": "bonang",
       "voice": "metal",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "gamelan"
      },
      {
       "id": "gender",
       "sample": "vibraphone",
       "voice": "metal",
       "role": "part",
-      "gain": 0.6
+      "gain": 0.6,
+      "shelf": "gamelan"
      },
      {
       "id": "gambang",
       "sample": "marimba",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "gamelan"
      },
      {
       "id": "kenong",
       "voice": "metal",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "gamelan"
      },
      {
       "id": "kempul",
       "voice": "gong",
       "role": "part",
-      "gain": 0.6
+      "gain": 0.6,
+      "shelf": "gamelan"
      },
      {
       "id": "gong",
       "voice": "gong",
-      "role": "part"
+      "role": "part",
+      "shelf": "gamelan"
      },
      {
       "id": "kethuk",
       "voice": "pluck",
       "role": "part",
-      "drum": "t"
+      "drum": "t",
+      "shelf": "gamelan"
      },
      {
       "id": "kendang",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "rebab",
       "sample": "fiddle",
       "voice": "bow",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "bowed-strings"
      },
      {
       "id": "sindhen",
@@ -5710,14 +7387,16 @@
       "id": "biola",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "violin"
      },
      {
       "id": "keroncong",
       "sample": "guitar",
       "voice": "lute",
       "role": "part",
-      "tremolo": true
+      "tremolo": true,
+      "shelf": "guitar"
      },
      {
       "id": "strings",
@@ -5727,7 +7406,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -5737,7 +7417,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -5747,7 +7428,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -5756,7 +7438,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -5766,7 +7449,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -5775,7 +7459,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -5784,7 +7469,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -6042,56 +7728,65 @@
       "id": "kora",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "kora"
      },
      {
       "id": "balafon",
       "sample": "marimba",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "xylophone"
      },
      {
       "id": "ngoni",
       "sample": "banjo",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "kora"
      },
      {
       "id": "bolon",
       "sample": "guitar",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "kora"
      },
      {
       "id": "tama",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "dundun",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "drum"
      },
      {
       "id": "djembe",
       "voice": "pluck",
       "role": "part",
-      "drum": "h"
+      "drum": "h",
+      "shelf": "drum"
      },
      {
       "id": "bell",
       "voice": "pluck",
       "role": "part",
-      "drum": "g"
+      "drum": "g",
+      "shelf": "rattle"
      },
      {
       "id": "shaker",
       "voice": "pluck",
       "role": "part",
-      "drum": "r"
+      "drum": "r",
+      "shelf": "rattle"
      },
      {
       "id": "clap",
@@ -6103,7 +7798,8 @@
       "id": "guitar",
       "sample": "guitar",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "guitar"
      },
      {
       "id": "strings",
@@ -6113,7 +7809,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -6123,7 +7820,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -6133,7 +7831,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -6142,7 +7841,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -6152,7 +7852,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -6161,7 +7862,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -6170,7 +7872,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -6428,44 +8131,51 @@
       "id": "krar",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "lyre"
      },
      {
       "id": "begena",
       "sample": "sitar",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "lyre"
      },
      {
       "id": "masenqo",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "bowed-strings"
      },
      {
       "id": "washint",
       "sample": "shakuhachi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "kebero",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "atamo",
       "voice": "pluck",
       "role": "part",
-      "drum": "h"
+      "drum": "h",
+      "shelf": "drum"
      },
      {
       "id": "tsenatsel",
       "voice": "pluck",
       "role": "part",
-      "drum": "j"
+      "drum": "j",
+      "shelf": "sistrum"
      },
      {
       "id": "clap",
@@ -6477,33 +8187,38 @@
       "id": "sax",
       "sample": "sax",
       "voice": "pipe",
-      "role": "part"
+      "role": "part",
+      "shelf": "clarinet"
      },
      {
       "id": "vibes",
       "sample": "vibraphone",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "xylophone"
      },
      {
       "id": "piano",
       "sample": "piano",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "piano"
      },
      {
       "id": "trumpet",
       "sample": "trumpet",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "hat",
       "voice": "pluck",
       "role": "part",
-      "drum": "c"
+      "drum": "c",
+      "shelf": "cymbals"
      },
      {
       "id": "strings",
@@ -6513,7 +8228,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -6523,7 +8239,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -6533,7 +8250,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -6542,7 +8260,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -6552,7 +8271,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -6561,7 +8281,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -6570,7 +8291,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -6829,87 +8551,101 @@
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "siwa",
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "zumari",
       "sample": "suona",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "shawm"
      },
      {
       "id": "oud",
       "sample": "guitar",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "oud"
      },
      {
       "id": "qanun",
       "sample": "koto",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "zither"
      },
      {
       "id": "violin",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "violin"
      },
      {
       "id": "accordion",
       "sample": "accordion",
       "voice": "pipe",
-      "role": "part"
+      "role": "part",
+      "shelf": "free-reed"
      },
      {
       "id": "ngoma",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "tari",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "frame-drum"
      },
      {
       "id": "tari2",
       "voice": "pluck",
       "role": "part",
-      "drum": "t"
+      "drum": "t",
+      "shelf": "frame-drum"
      },
      {
       "id": "msondo",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "drum"
      },
      {
       "id": "kayamba",
       "voice": "pluck",
       "role": "part",
-      "drum": "r"
+      "drum": "r",
+      "shelf": "rattle"
      },
      {
       "id": "dumbak",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "dumbak2",
       "voice": "pluck",
       "role": "part",
-      "drum": "t"
+      "drum": "t",
+      "shelf": "drum"
      },
      {
       "id": "clap",
@@ -6925,7 +8661,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -6935,7 +8672,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -6945,7 +8683,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -6954,7 +8693,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -6964,7 +8704,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -6973,7 +8714,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -6982,7 +8724,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -7237,13 +8980,15 @@
       "id": "karimba",
       "sample": "kalimba",
       "voice": "tine",
-      "role": "part"
+      "role": "part",
+      "shelf": "mbira"
      },
      {
       "id": "mbira",
       "sample": "kalimba",
       "voice": "tine",
-      "role": "part"
+      "role": "part",
+      "shelf": "mbira"
      },
      {
       "id": "mbira2",
@@ -7251,13 +8996,15 @@
       "voice": "tine",
       "role": "part",
       "detune": 7,
-      "gain": 0.85
+      "gain": 0.85,
+      "shelf": "mbira"
      },
      {
       "id": "hosho",
       "voice": "pluck",
       "role": "part",
-      "drum": "s"
+      "drum": "s",
+      "shelf": "rattle"
      },
      {
       "id": "clap",
@@ -7269,26 +9016,30 @@
       "id": "ngoma",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "kudu",
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "marimba",
       "sample": "marimba",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "xylophone"
      },
      {
       "id": "guitar",
       "sample": "guitar",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "guitar"
      },
      {
       "id": "strings",
@@ -7298,7 +9049,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -7308,7 +9060,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -7318,7 +9071,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -7327,7 +9081,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -7337,7 +9092,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -7346,7 +9102,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -7355,7 +9112,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -7602,45 +9360,52 @@
       "id": "ocarina",
       "sample": "xun",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "vessel-flute"
      },
      {
       "id": "tlapitzalli",
       "sample": "dizi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "atecocolli",
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "horn"
      },
      {
       "id": "huehuetl",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "drum"
      },
      {
       "id": "teponaztli",
       "sample": "marimba",
       "voice": "pluck",
       "role": "part",
-      "gain": 0.9
+      "gain": 0.9,
+      "shelf": "slit-drum"
      },
      {
       "id": "ayacachtli",
       "voice": "pluck",
       "role": "part",
-      "drum": "s"
+      "drum": "s",
+      "shelf": "rattle"
      },
      {
       "id": "ayotl",
       "voice": "pluck",
       "role": "part",
-      "drum": "k"
+      "drum": "k",
+      "shelf": "drum"
      },
      {
       "id": "cantores",
@@ -7653,40 +9418,46 @@
       "id": "vihuela",
       "sample": "guitar",
       "voice": "lute",
-      "role": "part"
+      "role": "part",
+      "shelf": "guitar"
      },
      {
       "id": "arpa",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "harp"
      },
      {
       "id": "violin",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "violin"
      },
      {
       "id": "jarana",
       "sample": "guitar",
       "voice": "lute",
       "role": "part",
-      "tremolo": true
+      "tremolo": true,
+      "shelf": "guitar"
      },
      {
       "id": "guitarron",
       "sample": "cello",
       "voice": "bow",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "guitar"
      },
      {
       "id": "trompeta",
       "sample": "trumpet",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "horn"
      },
      {
       "id": "strings",
@@ -7696,7 +9467,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -7706,7 +9478,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -7716,7 +9489,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -7725,7 +9499,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -7735,7 +9510,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -7744,7 +9520,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -7753,7 +9530,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -8011,66 +9789,76 @@
       "sample": "xun",
       "voice": "flute",
       "role": "part",
-      "gain": 1.2
+      "gain": 1.2,
+      "shelf": "vessel-flute"
      },
      {
       "id": "chul",
       "sample": "dizi",
       "voice": "flute",
       "role": "part",
-      "gain": 1.3
+      "gain": 1.3,
+      "shelf": "flute"
      },
      {
       "id": "trumpets",
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "hub",
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "kayum",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "turtle",
       "voice": "pluck",
       "role": "part",
-      "drum": "k"
+      "drum": "k",
+      "shelf": "drum"
      },
      {
       "id": "rattles",
       "voice": "pluck",
       "role": "part",
-      "drum": "r"
+      "drum": "r",
+      "shelf": "rattle"
      },
      {
       "id": "tun",
       "sample": "marimba",
       "voice": "pluck",
       "role": "part",
-      "gain": 1.4
+      "gain": 1.4,
+      "shelf": "slit-drum"
      },
      {
       "id": "chirimia",
       "sample": "suona",
       "voice": "pipe",
       "role": "part",
-      "gain": 2.0
+      "gain": 2.0,
+      "shelf": "shawm"
      },
      {
       "id": "marimba",
       "sample": "marimba",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "xylophone"
      },
      {
       "id": "strings",
@@ -8080,7 +9868,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -8090,7 +9879,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -8100,7 +9890,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -8109,7 +9900,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -8119,7 +9911,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -8128,7 +9921,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -8137,7 +9931,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -8380,49 +10175,57 @@
       "sample": "horn",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "antara",
       "sample": "panpipe",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "panpipes"
      },
      {
       "id": "ocarina",
       "sample": "xun",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "vessel-flute"
      },
      {
       "id": "tinya",
       "voice": "pluck",
       "role": "part",
-      "drum": "D"
+      "drum": "D",
+      "shelf": "drum"
      },
      {
       "id": "quena",
       "sample": "shakuhachi",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "flute"
      },
      {
       "id": "wankara",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "drum"
      },
      {
       "id": "siku",
       "sample": "panpipe",
       "voice": "flute",
-      "role": "part"
+      "role": "part",
+      "shelf": "panpipes"
      },
      {
       "id": "bombo",
       "voice": "pluck",
       "role": "part",
-      "drum": "B"
+      "drum": "B",
+      "shelf": "drum"
      },
      {
       "id": "voices",
@@ -8436,26 +10239,30 @@
       "sample": "organ",
       "voice": "pipe",
       "role": "part",
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "organ"
      },
      {
       "id": "arpa",
       "sample": "harp",
       "voice": "pluck",
-      "role": "part"
+      "role": "part",
+      "shelf": "harp"
      },
      {
       "id": "violin",
       "sample": "fiddle",
       "voice": "bow",
-      "role": "part"
+      "role": "part",
+      "shelf": "violin"
      },
      {
       "id": "charango",
       "sample": "guitar",
       "voice": "lute",
       "role": "part",
-      "tremolo": true
+      "tremolo": true,
+      "shelf": "guitar"
      },
      {
       "id": "strings",
@@ -8465,7 +10272,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.0,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "violin"
      },
      {
       "id": "cello",
@@ -8475,7 +10283,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.35,
-      "gain": 0.75
+      "gain": 0.75,
+      "shelf": "violin"
      },
      {
       "id": "contrabass",
@@ -8485,7 +10294,8 @@
       "modern": true,
       "swell": true,
       "seat": 0.5,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "violin"
      },
      {
       "id": "harp",
@@ -8494,7 +10304,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.45,
-      "gain": 0.55
+      "gain": 0.55,
+      "shelf": "harp"
      },
      {
       "id": "horn",
@@ -8504,7 +10315,8 @@
       "modern": true,
       "swell": true,
       "seat": -0.25,
-      "gain": 0.7
+      "gain": 0.7,
+      "shelf": "horn"
      },
      {
       "id": "timpani",
@@ -8513,7 +10325,8 @@
       "role": "part",
       "modern": true,
       "seat": 0.15,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "kettledrum"
      },
      {
       "id": "taiko",
@@ -8522,7 +10335,8 @@
       "role": "part",
       "modern": true,
       "seat": -0.1,
-      "gain": 0.8
+      "gain": 0.8,
+      "shelf": "drum"
      }
     ],
     "motifs": [
@@ -8785,23 +10599,6 @@
    "tradition": "rome"
   },
   {
-   "vp": "egypt",
-   "tradition": "greek",
-   "from": -332,
-   "until": -30
-  },
-  {
-   "vp": "egypt",
-   "tradition": "rome",
-   "from": -30,
-   "until": 641
-  },
-  {
-   "vp": "egypt",
-   "tradition": "maqam",
-   "from": 641
-  },
-  {
    "vp": "iberia",
    "tradition": "iberia"
   },
@@ -8834,18 +10631,9 @@
    "tradition": "maqam"
   },
   {
-   "vp": "persia",
-   "tradition": "maqam"
-  },
-  {
    "vp": "maghreb",
    "tradition": "maqam",
    "from": 700
-  },
-  {
-   "vp": "turks",
-   "tradition": "maqam",
-   "from": 950
   },
   {
    "vp": "india",
@@ -8902,6 +10690,18 @@
   {
    "vp": "maya",
    "tradition": "maya"
+  },
+  {
+   "vp": "egypt",
+   "tradition": "egypt"
+  },
+  {
+   "vp": "persia",
+   "tradition": "persia"
+  },
+  {
+   "vp": "turks",
+   "tradition": "turks"
   }
  ],
  "lands": [

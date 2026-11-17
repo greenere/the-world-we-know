@@ -1,0 +1,10 @@
+{
+ "id": "mehter-march",
+ "name": "A mehter march",
+ "source": "atlas-composed",
+ "meter": 4,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the marches of the mehter, the Ottoman military band of zurnas, trumpets, kettledrums, drums and cymbals that played before the sultan's army: a striding tune in maqam rast, here without its quarter tones (D, E, F sharp, G, A, B, C).",
+ "notes": "D4:1 F#4:1 A4:1 A4:1 | B4:0.5 A4:0.5 G4:1 F#4:2 | G4:1 A4:1 B4:1 C5:1 | A4:4 / D5:1 C5:1 B4:1 A4:1 | B4:0.5 A4:0.5 G4:1 A4:2 | G4:1 F#4:1 E4:1 F#4:1 | G4:4 / A4:1 A4:1 B4:1 C5:1 | D5:2 C5:1 B4:1 | A4:1 B4:0.5 A4:0.5 G4:1 F#4:1 | E4:4 / F#4:1 G4:1 A4:1 B4:1 | A4:0.5 G4:0.5 F#4:1 E4:2 | G4:1 F#4:0.5 G4:0.5 F#4:1 E4:1 | D4:4 /"
+}

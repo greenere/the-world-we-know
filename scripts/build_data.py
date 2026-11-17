@@ -1617,6 +1617,7 @@ def load_living(sources, viewpoints, journey_ids):
 SOUND_VOICES = ("pluck", "lute", "bow", "flute", "reed", "pipe", "voice", "bell", "stone", "metal", "tine", "keys", "gong")
 SOUND_PATTERNS = ("wander", "alap", "ostinato")
 SOUND_ROLES = ("melody", "accompany", "both", "accent", "part")
+NOT_INSTRUMENTS = {"voices", "cantores", "psaltes", "khoomei", "sygyt", "sindhen", "clap", "hooves"}
 NOTE_RE = re.compile(r"^([A-G][#b]?-?\d|r):[\d.]+/?$")
 
 
@@ -1672,6 +1673,14 @@ def load_soundscapes(sources, vp_ids, regions_by_id, music_ids, city_ids) -> dic
                     fail(f"{w}: no sample {mem['sample']!r} in public/audio/samples.json (run scripts/fetch_samples.py)")
                 if mem.get("instrument") and mem["instrument"] not in music_ids:
                     fail(f"{w}: {mem['instrument']!r} is not on the Music shelf")
+                # Every instrument the music plays has its family on the Music shelf (`shelf`, which only
+                # names it there: unlike `instrument`, it never keeps a member from playing). Voices, clapping
+                # and hoofbeats are not instruments.
+                if mem.get("shelf"):
+                    if mem["shelf"] not in music_ids:
+                        fail(f"{w}: shelf {mem['shelf']!r} is not on the Music shelf")
+                elif mem.get("id") not in NOT_INSTRUMENTS:
+                    fail(f"{w}: needs `shelf`, its instrument's family on the Music shelf (data/music.json)")
             for i, m in enumerate(ens.get("motifs", [])):
                 check_notes(f"{where} motif {i}", m)
         tune_ids = set()
