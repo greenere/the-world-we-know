@@ -1,0 +1,10 @@
+{
+ "id": "taarab",
+ "name": "A taarab song",
+ "source": "atlas-composed",
+ "meter": 4,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of taarab, the sung poetry of Zanzibar and Mombasa that met Egyptian music at the sultan's court in the 1870s: a melody in maqam rast (here without its quarter tones: D, E, F sharp, G, A, B, C) over the dumbak's lilt.",
+ "notes": "A4:1 B4:0.5 A4:0.5 G4:1 F#4:1 | G4:0.5 A4:0.5 G4:1 F#4:1 E4:1 | F#4:1 G4:0.5 F#4:0.5 E4:1 D4:1 | E4:4 / D4:1 E4:0.5 F#4:0.5 G4:1 A4:1 | B4:1 C5:0.5 B4:0.5 A4:2 | G4:1 A4:0.5 G4:0.5 F#4:1 E4:1 | F#4:4 / A4:1 D5:1 C5:1 B4:1 | A4:0.5 B4:0.5 A4:1 G4:2 | F#4:1 G4:0.5 A4:0.5 B4:1 A4:1 | G4:4 / F#4:1 G4:0.5 F#4:0.5 E4:1 D4:1 | C4:1 D4:0.5 E4:0.5 F#4:1 E4:1 | D4:1 E4:1 F#4:1 E4:1 | D4:4 /"
+}

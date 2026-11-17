@@ -56,7 +56,7 @@ export interface Member {
    * its own track in a MIDI piece. */
   role: 'melody' | 'accompany' | 'both' | 'accent' | 'part';
   /** A drum rather than a pitched instrument: D low, B a deeper drum, t rim, k clapper, b wood block,
-   * c cymbal, s a scraper. */
+   * c cymbal, s a scraper, g an iron bell, h a hand drum, r a rattle, j a sistrum. */
   drum?: string;
   /** Plucked notes held by trembling the string, as on the pipa. */
   tremolo?: boolean;
@@ -346,6 +346,56 @@ export function createComposer(
         o.stop(time + 0.2);
       }
       decay(g.gain, 0.16 * strength, 0.025);
+    } else if (kind === 'g') {
+      // An iron bell (the Mande and Ewe bell, the agogo): bright, out-of-tune partials that ring briefly.
+      for (const [f, l] of [[1180, 1], [2950, 0.45], [4430, 0.2]] as const) {
+        const o = ctx.createOscillator();
+        o.frequency.value = f;
+        const og = ctx.createGain();
+        og.gain.value = l;
+        o.connect(og).connect(g);
+        o.start(time);
+        o.stop(time + 0.5);
+      }
+      decay(g.gain, 0.09 * strength, 0.07);
+    } else if (kind === 'h') {
+      // A hand drum's open tone (djembe, atamo): a short falling note and the slap of the palm.
+      const o = ctx.createOscillator();
+      o.frequency.setValueAtTime(240, time);
+      o.frequency.exponentialRampToValueAtTime(170, time + 0.08);
+      o.connect(g);
+      o.start(time);
+      o.stop(time + 0.4);
+      const n = noise();
+      const f = ctx.createBiquadFilter();
+      f.type = 'bandpass';
+      f.frequency.value = 1400;
+      f.Q.value = 0.9;
+      const ng = ctx.createGain();
+      ng.gain.setValueAtTime(0.5, time);
+      ng.gain.setTargetAtTime(0, time, 0.012);
+      n.connect(f).connect(ng).connect(g);
+      n.start(time);
+      n.stop(time + 0.2);
+      decay(g.gain, 0.4 * strength, 0.06);
+    } else if (kind === 'r' || kind === 'j') {
+      // r: a rattle or shaker (kayamba, shekere), seeds thrown against the walls; j: a sistrum (tsenatsel),
+      // its metal discs shaken on their rods, a few quick jingles.
+      const jingle = kind === 'j';
+      const n = noise();
+      const f = ctx.createBiquadFilter();
+      f.type = jingle ? 'bandpass' : 'highpass';
+      f.frequency.value = jingle ? 6800 : 4200;
+      f.Q.value = jingle ? 4 : 0.7;
+      n.connect(f).connect(g);
+      g.gain.setValueAtTime(0, time);
+      for (let k = 0; k < (jingle ? 4 : 1); k++) {
+        const tt = time + k * 0.045;
+        g.gain.linearRampToValueAtTime((jingle ? 0.22 : 0.14) * strength * (1 - k * 0.2), tt + 0.008);
+        g.gain.setTargetAtTime(0, tt + 0.01, jingle ? 0.02 : 0.035);
+      }
+      n.start(time);
+      n.stop(time + 0.4);
     } else {
       // t: the rim of the drum; k: a clapper; c: a small cymbal.
       const n = noise();

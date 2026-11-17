@@ -156,7 +156,7 @@ def orchestra(T: dict[str, Track], melody: list[tuple[float, float, int]], windo
             # The harp rolls the chord up through two octaves, one note to each half beat.
             notes = sorted({nearest(pc, 55 + 4 * i, 48, 76) for i, pc in enumerate(pcs)})
             notes += [n + 12 for n in notes if n + 12 <= 84]
-            step = beat / 2 if beat < 1.2 else beat / 3
+            step = max(0.18, beat / 2 if beat < 1.2 else beat / 3)
             t, i = a, 0
             while t < b - 0.01 and i < 16:
                 T["harp"].note(t, step * 2, notes[i % len(notes)], round(58 * v))
@@ -172,8 +172,9 @@ def orchestra(T: dict[str, Track], melody: list[tuple[float, float, int]], windo
             for j in range(n):
                 T["timpani"].note(b - n * 0.11 + j * 0.11, 0.1, nearest(tonic, 40, 38, 50), round(22 + 50 * j / n))
         if level >= 3 and taiko:
+            every = max(2, round(0.8 / beat))
             for j in range(int(span / beat + 1e-6)):
-                if j % 2 == 0:
+                if j % every == 0:
                     T["taiko"].note(a + j * beat, 0.4, 41, 70 if j == 0 else 52)
         history.append(root)
     if swell_in:
@@ -481,7 +482,7 @@ def mama_hao_mingbai(score: dict) -> list[Track]:
 
 # Tunes too short to make a verse alone go round this many times in each verse (the same in every age, so
 # that a change of age still finds the matching phrase).
-PASSES = {"huayno": 3, "mbira-cycle": 3, "gallop": 3, "son": 2, "doos-ya-lellee": 2, "seikilos": 2, "call-response": 2, "dolanan": 2, "bilahari": 2, "calliope": 2}
+PASSES = {"huayno": 3, "mbira-cycle": 3, "gallop": 3, "son": 2, "doos-ya-lellee": 2, "seikilos": 2, "call-response": 2, "dolanan": 2, "bilahari": 2, "calliope": 2, "lamban": 2}
 
 
 def theme(name: str, members: list[str], beat: float, levels: list[float], play, top: int = 66, taiko: bool = False, transpose: int = 2, bars: int = 0, bed=None):
@@ -1014,10 +1015,19 @@ for th, score in (("gita", "malahari-gita"), ("bilahari", "bilahari")):
 # A table-driven arrangement, for the traditions added later: for each era, who leads each verse, who joins
 # (from which verse), who plays the bass on the downbeats, who holds the bar's first note, and the drums.
 
-def arranged(spec):
+def arranged(spec, meter: int = 4, scale: set[int] | None = None):
     """`spec`: lead: [(member, octave)] for verses 1-3; join: [(from verse, member, octave, velocity)];
     bass: (member, octave, from verse); hold: (member, octave, from verse); drums: [(member, pitch, "down" |
-    "beat" | "start", from verse, velocity)]."""
+    "beat" | "start" | [beats into the bar], from verse, velocity)]; pulse: [(member, from verse, velocity,
+    step in beats, [semitones from the tune's note, in turn])], an ostinato under the tune (the kora's
+    kumbengo); thirds: (member, from verse, velocity), the tune doubled a third below in its own scale (the
+    marimba's two players)."""
+
+    def third_below(p: int) -> int:
+        if not scale:
+            return p - 3
+        steps = [q for q in range(p - 1, p - 6, -1) if q % 12 in scale]
+        return steps[1] if len(steps) > 1 else p - 3
 
     def play(T, rep, at, dur, p, on_beat, start, beats, pos=0):
         m, o = spec["lead"][rep]
@@ -1025,6 +1035,17 @@ def arranged(spec):
         for frm, jm, jo, v in spec.get("join", []):
             if rep >= frm and jm != m:
                 T[jm].note(at + 0.015, dur, p + 12 * jo, v)
+        beat = dur / max(beats, 0.125) / 0.94
+        if spec.get("thirds") and rep >= spec["thirds"][1]:
+            tm, _, tv = spec["thirds"]
+            T[tm].note(at + 0.01, dur, third_below(p + 12 * o), tv)
+        for pm, frm, v, step, offsets in spec.get("pulse", []):
+            if rep < frm:
+                continue
+            k0 = int(round(pos / step))
+            for k in range(max(1, int(round(beats / step)))):
+                off = offsets[(k0 + k) % len(offsets)]
+                T[pm].note(at + k * step * beat, step * beat * 0.9, p + off, v - (0 if (k0 + k) % 2 == 0 else 8))
         down = abs(pos) < 1e-6
         if spec.get("bass") and rep >= spec["bass"][2] and down:
             bm, bo, _ = spec["bass"]
@@ -1039,7 +1060,13 @@ def arranged(spec):
         for dm, pitch, when, frm, v in spec.get("drums", []):
             if rep < frm:
                 continue
-            if (when == "down" and down) or (when == "start" and start) or (when == "beat" and on_beat and not down):
+            if isinstance(when, list):
+                # A rhythm laid out in the bar: every stroke that falls within this note.
+                for x in when:
+                    for y in (x, x + meter):
+                        if pos - 1e-6 <= y < pos + beats - 1e-6:
+                            T[dm].note(at + (y - pos) * beat, 0.2, pitch, v if abs(x) > 1e-6 else min(127, v + 10))
+            elif (when == "down" and down) or (when == "start" and start) or (when == "beat" and on_beat and not down):
                 T[dm].note(at, 0.2, pitch, v)
 
     return play
@@ -1047,7 +1074,7 @@ def arranged(spec):
 
 def members_of(spec):
     out = [m for m, _ in spec["lead"]] + [j[1] for j in spec.get("join", [])]
-    out += [spec[k][0] for k in ("bass", "hold") if spec.get(k)] + [d[0] for d in spec.get("drums", [])] + [d[0] for d in spec.get("drone", [])]
+    out += [spec[k][0] for k in ("bass", "hold", "thirds") if spec.get(k)] + [d[0] for d in spec.get("drums", [])] + [d[0] for d in spec.get("drone", [])] + [d[0] for d in spec.get("pulse", [])]
     return list(dict.fromkeys(out))
 
 
@@ -1327,15 +1354,133 @@ MEXICA = {
 STEPPE_BEAT = {"urtyn": [1.0, 0.95, 0.9, 0.85, 0.82, 0.8], "gallop": [0.5, 0.46, 0.44, 0.42, 0.4, 0.4]}
 MEXICA_BEAT = {"teo": [0.8, 0.75, 0.72, 0.68, 0.64, 0.62], "son": [0.5, 0.46, 0.44, 0.42, 0.4, 0.38]}
 
-EUROPE_BEAT = {"emmanuel": [0.95, 0.85, 0.82, 0.75, 0.7, 0.7], "greensleeves": [0.8, 0.72, 0.66, 0.6, 0.58, 0.56]}
+# The Maya's two themes, composed for the atlas: a dance of the tun and trumpets (the ceremonial one, in the
+# manner of the Rabinal Achí, the dance-drama the K'iche' still perform to the slit drum and trumpets) and a son
+# for marimba (the folk one). From clay ocarinas, turtle shells and the conch, the long trumpets, drums and
+# rattles of the Bonampak murals, the tun slit drum of the Postclassic, the chirimía shawm and tun of the
+# colonial cofradías, to the marimba of the nineteenth century and the double marimba with an orchestra.
+TUN = [("tun", 50, [0, 2], 0, 62), ("tun", 57, [1, 1.5, 3], 0, 50)]
+RATTLES4 = ("rattles", 70, [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5], 1, 30)
+MAYA = {
+    "tun": {
+        "early": {"lead": [("ocarina", 0), ("ocarina", 0), ("ocarina", 0)], "drone": [("hub", 50, 1, 44)], "drums": [("turtle", 76, [1, 3], 0, 46), RATTLES4]},
+        "classical": {"lead": [("ocarina", 0), ("trumpets", 0), ("trumpets", 0)], "join": [(2, "ocarina", 1, 40)], "drone": [("hub", 50, 0, 44)], "drums": [("kayum", 45, [0, 2], 0, 58), ("turtle", 76, [1, 3], 0, 44), RATTLES4]},
+        "caravans": {"lead": [("chul", 0), ("voices", 0), ("trumpets", 0)], "join": [(1, "chul", 0, 44)], "drone": [("hub", 50, 1, 44)], "drums": TUN + [RATTLES4]},
+        "crossings": {"lead": [("chirimia", 0), ("chirimia", 0), ("voices", 0)], "join": [(1, "voices", -1, 48), (2, "chirimia", 0, 44)], "drums": TUN + [("kayum", 45, [0], 1, 54)]},
+        "steam": {"lead": [("marimba", 0), ("chirimia", 0), ("marimba", 0)], "join": [(1, "marimba", 0, 50)], "bass": ("marimba", -1, 0), "drums": TUN},
+        "shared": {"lead": [("marimba", 0), ("strings", 0), ("horn", 0)], "join": [(1, "chirimia", 0, 42), (2, "marimba", 0, 56)], "bass": ("marimba", -1, 0), "drone": [("hub", 50, 2, 40)], "drums": [(d, p, w, 1, v) for d, p, w, _, v in TUN]},
+    },
+    "son": {
+        "early": {"lead": [("ocarina", 0), ("chul", 0), ("ocarina", 0)], "drums": [("rattles", 70, [0, 2, 3, 5], 0, 34), ("turtle", 76, [0, 3], 1, 44)]},
+        "classical": {"lead": [("chul", 0), ("ocarina", 0), ("chul", 0)], "drums": [("kayum", 45, [0, 3], 0, 52), ("rattles", 70, [0, 2, 3, 5], 0, 32)]},
+        "caravans": {"lead": [("chul", 0), ("voices", 0), ("chul", 0)], "join": [(1, "ocarina", 0, 42)], "drums": [("tun", 50, [0], 0, 58), ("tun", 57, [3, 5], 0, 48), ("rattles", 70, [0, 2, 3, 5], 1, 32)]},
+        "crossings": {"lead": [("chirimia", 0), ("chul", 0), ("chirimia", 0)], "drums": [("tun", 50, [0], 0, 58), ("tun", 57, [3, 5], 0, 48), ("kayum", 45, [0, 3], 1, 50)]},
+        "steam": {"lead": [("marimba", 0), ("marimba", 0), ("marimba", 0)], "thirds": ("marimba", 0, 52), "bass": ("marimba", -1, 0), "join": [(2, "chirimia", 0, 40)]},
+        "shared": {"lead": [("marimba", 0), ("marimba", 0), ("strings", 0)], "thirds": ("marimba", 0, 50), "bass": ("marimba", -1, 0), "join": [(1, "marimba", 1, 44), (2, "horn", -1, 44)], "drums": [("rattles", 70, [0, 2, 3, 5], 1, 30)]},
+    },
+}
+
+# Ethiopia's two themes, composed for the atlas: a chant of the church in the manner of the zema of St Yared
+# (the ceremonial one, in the ambassel mode), sung by the debtera to the kebero drum and the tsenatsel sistrum,
+# and a song of longing in the tizita mode (the folk one), in the 6/8 lilt of the highlands. From voices and
+# drum, the krar lyre and washint flute of Aksum, the begena's buzzing low lyre and the masenqo fiddle of the
+# Christian kingdom and Gondar, the azmari minstrels, to Addis Ababa's Ethio-jazz of vibraphone and saxophone.
+KEBERO4 = [("kebero", 45, [0, 2], 0, 60), ("atamo", 60, [1.5, 3], 1, 44)]
+SISTRUM = ("tsenatsel", 80, [1, 3], 1, 44)
+SIX = [("kebero", 45, [0, 3], 0, 58), ("atamo", 60, [2, 4, 5], 0, 44)]
+ETHIOPIA = {
+    "zema": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "krar", -1, 46)], "drums": [("kebero", 45, [0], 0, 56), ("clap", 76, [1, 3], 1, 38)]},
+        "classical": {"lead": [("krar", 0), ("voices", 0), ("washint", 0)], "join": [(1, "krar", -1, 48), (2, "voices", 0, 50)], "drums": [("kebero", 45, [0, 2], 0, 56)]},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "begena", -1, 54), (2, "voices", -1, 46)], "drums": KEBERO4 + [SISTRUM]},
+        "crossings": {"lead": [("voices", 0), ("masenqo", 0), ("voices", 0)], "join": [(0, "begena", -1, 52), (1, "voices", -1, 46), (2, "washint", 0, 42)], "drums": KEBERO4 + [SISTRUM]},
+        "steam": {"lead": [("masenqo", 0), ("voices", 0), ("krar", 0)], "join": [(0, "begena", -1, 50), (1, "krar", -1, 46), (2, "masenqo", 0, 44)], "drums": KEBERO4 + [SISTRUM]},
+        "shared": {"lead": [("voices", 0), ("strings", 0), ("horn", 0)], "join": [(0, "begena", -1, 50), (2, "voices", 0, 54)], "drums": KEBERO4 + [SISTRUM]},
+    },
+    "tizita": {
+        "early": {"lead": [("voices", 0), ("washint", 0), ("voices", 0)], "drums": [("kebero", 45, [0, 3], 0, 54), ("clap", 76, [2, 5], 1, 38)]},
+        "classical": {"lead": [("krar", 0), ("washint", 0), ("krar", 0)], "join": [(1, "krar", -1, 46)], "drums": SIX},
+        "caravans": {"lead": [("washint", 0), ("krar", 0), ("washint", 0)], "join": [(1, "masenqo", 0, 40), (2, "krar", -1, 46)], "drums": SIX},
+        "crossings": {"lead": [("masenqo", 0), ("washint", 0), ("masenqo", 0)], "join": [(1, "krar", -1, 48), (2, "krar", -1, 46)], "drums": SIX},
+        "steam": {"lead": [("masenqo", 0), ("krar", 0), ("voices", 0)], "join": [(0, "krar", -1, 48), (2, "masenqo", 0, 46)], "drums": SIX + [("clap", 76, [2, 5], 2, 36)]},
+        "shared": {"lead": [("sax", 0), ("vibes", 0), ("sax", 0)], "join": [(1, "sax", -1, 42), (2, "vibes", 1, 40), (2, "trumpet", 0, 38)], "bass": ("piano", -2, 0), "drums": [("kebero", 45, [0, 3], 0, 56), ("atamo", 60, [2, 5], 0, 40), ("hat", 84, [0, 1, 2, 3, 4, 5], 1, 22)]},
+    },
+}
+
+# West Africa's two themes, composed for the atlas in the manner of the Mande griots (jeliw): a praise song
+# (fasa) in the kora's sauta tuning (the ceremonial one) and a dance for the drums in 12/8 (the folk one). From
+# voices, clapping and the bolon bass harp, the ngoni lute of the Niger towns, the balafon of the Mali empire
+# (the Sosso Bala, kept since the thirteenth century), the kora of Kaabu with its running ostinato, to the
+# guitar bands of the twentieth century and an orchestra.
+KUMBENGO = ("kora", 0, 44, 0.5, [-12, -5, -12, -7])
+BELL12 = ("bell", 84, [0, 2, 4, 5, 7, 9, 11], 1, 40)
+DJEMBE = ("djembe", 60, [0, 2, 3, 6, 8, 9], 0, 50)
+DUNDUN = ("dundun", 45, [0, 7], 1, 56)
+SHAKER12 = ("shaker", 70, list(range(12)), 2, 24)
+GRIOT = {
+    "fasa": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "bolon", -1, 50)], "drums": [("tama", 50, [0, 1.5, 2.5], 0, 50), ("clap", 76, [1, 3], 1, 38)]},
+        "classical": {"lead": [("ngoni", 0), ("voices", 0), ("ngoni", 0)], "join": [(1, "ngoni", -1, 46)], "bass": ("bolon", -1, 2), "drums": [("tama", 50, [0, 1.5, 2.5], 0, 50), ("shaker", 70, [0.5, 1.5, 2.5, 3.5], 1, 28)]},
+        "caravans": {"lead": [("balafon", 0), ("voices", 0), ("balafon", 0)], "join": [(1, "balafon", -1, 48), (2, "ngoni", 0, 42)], "drums": [("dundun", 45, [0, 2.5], 0, 56), ("tama", 50, [1.5], 0, 46), ("shaker", 70, [0.5, 1.5, 2.5, 3.5], 1, 28)]},
+        "crossings": {"lead": [("kora", 0), ("voices", 0), ("kora", 0)], "pulse": [KUMBENGO], "join": [(2, "balafon", 0, 42)], "drums": [("tama", 50, [0, 1.5, 2.5], 1, 46)]},
+        "steam": {"lead": [("kora", 0), ("voices", 0), ("kora", 0)], "pulse": [KUMBENGO], "join": [(1, "balafon", -1, 44), (2, "ngoni", 0, 42)], "bass": ("bolon", -1, 0), "drums": [("tama", 50, [0, 1.5, 2.5], 0, 46), ("dundun", 45, [0], 1, 50)]},
+        "shared": {"lead": [("kora", 0), ("strings", 0), ("voices", 0)], "pulse": [KUMBENGO], "join": [(2, "horn", -1, 46)], "bass": ("bolon", -1, 0), "drums": [("tama", 50, [0, 1.5, 2.5], 1, 44)]},
+    },
+    "lamban": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "drums": [DJEMBE, ("clap", 76, [0, 3, 6, 9], 1, 40), SHAKER12]},
+        "classical": {"lead": [("ngoni", 0), ("voices", 0), ("ngoni", 0)], "drums": [DJEMBE, DUNDUN, SHAKER12]},
+        "caravans": {"lead": [("balafon", 0), ("voices", 0), ("balafon", 0)], "join": [(2, "ngoni", 0, 42)], "drums": [DJEMBE, DUNDUN, BELL12, SHAKER12]},
+        "crossings": {"lead": [("balafon", 0), ("kora", 0), ("balafon", 0)], "join": [(1, "balafon", -1, 46)], "drums": [DJEMBE, DUNDUN, BELL12, SHAKER12]},
+        "steam": {"lead": [("kora", 0), ("balafon", 0), ("ngoni", 0)], "join": [(1, "kora", -1, 42), (2, "balafon", -1, 44)], "drums": [DJEMBE, DUNDUN, BELL12, SHAKER12]},
+        "shared": {"lead": [("guitar", 0), ("balafon", 0), ("strings", 0)], "join": [(1, "guitar", -1, 44), (2, "balafon", 1, 40)], "bass": ("bolon", -1, 0), "drums": [DJEMBE, DUNDUN, BELL12, SHAKER12]},
+    },
+}
+
+# The Swahili coast's two themes, composed for the atlas: a hymn in the manner of the Maulidi sung at Lamu to
+# the tari frame drums (the ceremonial one, in maqam kurd), with the great siwa horn sounding at its phrases,
+# and a taarab song (the folk one, in maqam rast without its quarter tones). From voices, ngoma drums, the
+# kayamba rattle and the horn, the zumari shawm of the Arabian trade, the oud of the Shirazi towns, the siwa of
+# Pate, to Zanzibar's taarab orchestra of oud, qanun, violin and accordion.
+TARI = [("tari", 45, [0, 2], 0, 56), ("tari2", 60, [1, 1.5, 3], 0, 40)]
+KAYAMBA4 = ("kayamba", 70, [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5], 1, 26)
+DUMBAK = [("dumbak", 48, [0, 1.5], 0, 56), ("dumbak2", 64, [1, 2, 3, 3.5], 0, 40)]
+SWAHILI = {
+    "maulidi": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "drone": [("pembe", 50, 1, 42)], "drums": [("ngoma", 45, [0, 2], 0, 54), KAYAMBA4]},
+        "classical": {"lead": [("voices", 0), ("zumari", 0), ("voices", 0)], "join": [(1, "voices", -1, 46)], "drums": [("ngoma", 45, [0, 2], 0, 54), KAYAMBA4]},
+        "caravans": {"lead": [("voices", 0), ("oud", 0), ("voices", 0)], "join": [(1, "zumari", 0, 40), (2, "oud", -1, 46)], "drums": TARI},
+        "crossings": {"lead": [("voices", 0), ("zumari", 0), ("voices", 0)], "drone": [("siwa", 50, 0, 50)], "join": [(1, "oud", -1, 46), (2, "zumari", 0, 40)], "drums": TARI + [("msondo", 45, [0], 1, 56)]},
+        "steam": {"lead": [("voices", 0), ("violin", 0), ("qanun", 0)], "join": [(0, "oud", -1, 46), (1, "qanun", 0, 40), (2, "violin", 0, 44)], "drums": TARI},
+        "shared": {"lead": [("voices", 0), ("strings", 0), ("horn", 0)], "join": [(0, "oud", -1, 44), (1, "qanun", 0, 40), (2, "voices", 0, 52)], "drone": [("siwa", 50, 1, 46)], "drums": TARI + [("msondo", 45, [0], 2, 54)]},
+    },
+    "taarab": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "drums": [("ngoma", 45, [0, 1.5, 2], 0, 54), KAYAMBA4, ("clap", 76, [1, 3], 1, 36)]},
+        "classical": {"lead": [("zumari", 0), ("voices", 0), ("zumari", 0)], "drums": [("ngoma", 45, [0, 1.5, 2], 0, 54), KAYAMBA4]},
+        "caravans": {"lead": [("oud", 0), ("zumari", 0), ("oud", 0)], "join": [(1, "oud", -1, 46)], "drums": DUMBAK + [KAYAMBA4]},
+        "crossings": {"lead": [("oud", 0), ("voices", 0), ("zumari", 0)], "join": [(1, "oud", -1, 46), (2, "oud", -1, 44)], "drums": DUMBAK + [("msondo", 45, [0], 1, 50), KAYAMBA4]},
+        "steam": {"lead": [("violin", 0), ("qanun", 0), ("voices", 0)], "join": [(0, "oud", -1, 46), (1, "violin", 0, 44), (2, "qanun", 0, 40)], "drums": DUMBAK},
+        "shared": {"lead": [("accordion", 0), ("violin", 0), ("voices", 0)], "join": [(0, "oud", -1, 44), (1, "qanun", 0, 40), (2, "strings", 0, 52)], "drums": DUMBAK + [KAYAMBA4]},
+    },
+}
+MAYA_BEAT = {"tun": [0.8, 0.76, 0.72, 0.7, 0.66, 0.64], "son": [0.34, 0.32, 0.31, 0.3, 0.29, 0.28]}
+ETHIOPIA_BEAT = {"zema": [0.85, 0.8, 0.8, 0.76, 0.72, 0.7], "tizita": [0.34, 0.32, 0.31, 0.3, 0.29, 0.28]}
+GRIOT_BEAT = {"fasa": [0.66, 0.62, 0.6, 0.58, 0.56, 0.55], "lamban": [0.22, 0.21, 0.2, 0.2, 0.19, 0.19]}
+SWAHILI_BEAT = {"maulidi": [0.78, 0.74, 0.72, 0.7, 0.68, 0.66], "taarab": [0.5, 0.47, 0.46, 0.45, 0.44, 0.42]}
+
+EUROPE_BEAT = {"emmanuel":[0.95, 0.85, 0.82, 0.75, 0.7, 0.7], "greensleeves": [0.8, 0.72, 0.66, 0.6, 0.58, 0.56]}
 MAQAM_BEAT = {"hilali": [0.78, 0.7, 0.66, 0.6, 0.6, 0.58], "doos": [0.62, 0.56, 0.52, 0.5, 0.48, 0.46]}
 LATER_THEME = {}
-for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel", "greensleeves": "greensleeves"}), (MAQAM, MAQAM_BEAT, {"hilali": "hilali", "doos": "doos-ya-lellee"}), (GREEK, GREEK_BEAT, {"calliope": "calliope", "lullaby": "greek-lullaby"}), (ANDES, ANDES_BEAT, {"hanac": "hanacpachap", "huayno": "huayno"}), (STEPPE, STEPPE_BEAT, {"urtyn": "urtyn-duu", "gallop": "gallop"}), (MEXICA, MEXICA_BEAT, {"teo": "teocuicatl", "son": "son"})):
+for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel", "greensleeves": "greensleeves"}), (MAQAM, MAQAM_BEAT, {"hilali": "hilali", "doos": "doos-ya-lellee"}), (GREEK, GREEK_BEAT, {"calliope": "calliope", "lullaby": "greek-lullaby"}), (ANDES, ANDES_BEAT, {"hanac": "hanacpachap", "huayno": "huayno"}), (STEPPE, STEPPE_BEAT, {"urtyn": "urtyn-duu", "gallop": "gallop"}), (MEXICA, MEXICA_BEAT, {"teo": "teocuicatl", "son": "son"}),
+                              (MAYA, MAYA_BEAT, {"tun": "xajoj-tun", "son": "maya-son"}), (ETHIOPIA, ETHIOPIA_BEAT, {"zema": "zema", "tizita": "tizita"}),
+                              (GRIOT, GRIOT_BEAT, {"fasa": "fasa", "lamban": "lamban"}), (SWAHILI, SWAHILI_BEAT, {"maulidi": "maulidi", "taarab": "taarab"})):
+    # A key is the theme's tune prefix; the Maya's son is "mayason" so its files don't meet the Mexica's.
     for th, eras in table.items():
         sc = json.loads((SCORES / f"{scores[th]}.json").read_text())
+        key = "mayason" if scores[th] == "maya-son" else th
+        scale = {p % 12 for p, _, _ in parse_notes(sc["notes"], sc["transpose"]) if p is not None}
         for i, era in enumerate(ERA_KEYS):
             spec = eras[era]
-            LATER_THEME[f"{th}-{era}"] = (scores[th], theme(f"{th}_{era}", members_of(spec), beats[th][i], LEVELS[era], arranged(spec), top=62, transpose=sc["transpose"], bars=1, taiko=era == "shared"))
+            LATER_THEME[f"{key}-{era}"] = (scores[th], theme(f"{key}_{era}", members_of(spec), beats[th][i], LEVELS[era], arranged(spec, sc.get("meter", 4), scale), top=62, transpose=sc["transpose"], bars=1, taiko=era == "shared"))
 # Gamelan and mbira: the orchestra stays light (a gamelan carries its own harmony), and their own arrangers.
 for th, score, cycle in (("gending", "gending-pelog", 32), ("dolanan", "dolanan", 16)):
     for i, era in enumerate(ERA_KEYS):

@@ -62,6 +62,11 @@ INSTRUMENTS = {
     "glockenspiel": {"patch": "glockenspiel", "low": 72, "high": 105, "held": False, "gain": 0.45},
     "marimba": {"patch": "marimba", "low": 45, "high": 96, "held": False, "gain": 0.7},
     "kalimba": {"patch": "kalimba", "low": 48, "high": 96, "held": False, "gain": 0.8},
+    # Africa's lutes and the twentieth century's bands: the banjo, the ngoni's descendant, for the ngoni; the
+    # accordion of Zanzibar's taarab orchestras; and the alto saxophone of Addis Ababa's Ethio-jazz.
+    "banjo": {"patch": "banjo", "low": 48, "high": 84, "held": False, "gain": 0.7},
+    "accordion": {"patch": "accordion", "low": 53, "high": 84, "held": True, "gain": 0.45},
+    "sax": {"patch": "alto_sax", "low": 49, "high": 80, "held": True, "gain": 0.5},
     # The atlas's own orchestra, which arranges every tradition's pieces for a modern ear (as a game's score
     # would): a string section for the harmony, cellos and basses beneath it, horns, and timpani and a great
     # drum for the swells. Not historical; the Historical setting leaves them out.

@@ -1953,7 +1953,7 @@
     {
      "id": "urtyn-steam",
      "name": "Long Song · Steam and telegraph",
-     "about": "The steppe's ceremonial theme a long-song singer over the yatga, the morin khuur and limbe answering, the khuuchir fiddle high above.",
+     "about": "The steppe's ceremonial theme: a long-song singer over the yatga, the morin khuur and limbe answering, the khuuchir fiddle high above.",
      "midi": "midi/urtyn-steam.mid",
      "score": "urtyn-duu",
      "beat": 0.82,
@@ -1982,7 +1982,7 @@
     {
      "id": "gallop-early",
      "name": "Gallop · Early kingdoms",
-     "about": "The steppe's folk theme the tovshuur lute, then a voice, hooves on the drum.",
+     "about": "The steppe's folk theme: the tovshuur lute, then a voice, hooves on the drum.",
      "midi": "midi/gallop-early.mid",
      "score": "gallop",
      "beat": 0.5,
@@ -1996,7 +1996,7 @@
     {
      "id": "gallop-classical",
      "name": "Gallop · Classical empires",
-     "about": "The steppe's folk theme the tovshuur, then the limbe, a drum and hooves.",
+     "about": "The steppe's folk theme: the tovshuur, then the limbe, a drum and hooves.",
      "midi": "midi/gallop-classical.mid",
      "score": "gallop",
      "beat": 0.46,
@@ -2026,7 +2026,7 @@
     {
      "id": "gallop-crossings",
      "name": "Gallop · Ocean crossings",
-     "about": "The steppe's folk theme the morin khuur, then the khuuchir, the yatga and limbe joining.",
+     "about": "The steppe's folk theme: the morin khuur, then the khuuchir, the yatga and limbe joining.",
      "midi": "midi/gallop-crossings.mid",
      "score": "gallop",
      "beat": 0.42,
@@ -2041,7 +2041,7 @@
     {
      "id": "gallop-steam",
      "name": "Gallop · Steam and telegraph",
-     "about": "The steppe's folk theme the morin khuur, then the yatga, the limbe and khuuchir joining.",
+     "about": "The steppe's folk theme: the morin khuur, then the yatga, the limbe and khuuchir joining.",
      "midi": "midi/gallop-steam.mid",
      "score": "gallop",
      "beat": 0.4,
@@ -3808,7 +3808,7 @@
     {
      "id": "dolanan-classical",
      "name": "Dolanan Song · Classical empires",
-     "about": "The gamelan's folk theme the flute, then bronze keys, the bronze drum closing each cycle.",
+     "about": "The gamelan's folk theme: the flute, then bronze keys, the bronze drum closing each cycle.",
      "midi": "midi/dolanan-classical.mid",
      "score": "dolanan",
      "beat": 0.58,
@@ -3823,7 +3823,7 @@
     {
      "id": "dolanan-caravans",
      "name": "Dolanan Song · Caravans and monsoons",
-     "about": "The gamelan's folk theme the flute over a small gamelan, the peking joining.",
+     "about": "The gamelan's folk theme: the flute over a small gamelan, the peking joining.",
      "midi": "midi/dolanan-caravans.mid",
      "score": "dolanan",
      "beat": 0.56,
@@ -3898,6 +3898,1203 @@
      "source": "atlas-composed",
      "confidence": "low",
      "credit": "Composed for this atlas (data/scores/dolanan.json)."
+    }
+   ]
+  },
+  {
+   "id": "griot",
+   "name": "Kora and balafon",
+   "summary": "The music of West Africa's savanna and Sahel, heard through two themes composed for this atlas in the manner of the Mande griots (jeliw), the hereditary musicians who keep the histories of Ghana, Mali and Songhay: a praise song and a dance for the drums. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: voices, clapping and the bolon bass harp, the ngoni lute, the balafon of the Mali empire, the kora with its running ostinato, the djembe, dundun and iron bell, and the guitar bands of the twentieth century.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      400,
+      600,
+      700,
+      900,
+      1100
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "pluck"
+    },
+    {
+     "voice": "voice"
+    }
+   ],
+   "pattern": "ostinato",
+   "beat": 0.3,
+   "leaps": 0.2,
+   "ornament": 0.1,
+   "drone": 0.2,
+   "places": [
+    "koumbi-saleh",
+    "djenne",
+    "timbuktu",
+    "gao"
+   ],
+   "source": "charry-mande",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.2
+     },
+     {
+      "id": "kora",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "balafon",
+      "sample": "marimba",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "ngoni",
+      "sample": "banjo",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "bolon",
+      "sample": "guitar",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "tama",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "dundun",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "djembe",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "h"
+     },
+     {
+      "id": "bell",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "g"
+     },
+     {
+      "id": "shaker",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "r"
+     },
+     {
+      "id": "clap",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "guitar",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "A4:1 F#4:1 E4:1 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "fasa-early",
+     "name": "Praise Song · Early kingdoms",
+     "about": "West Africa's ceremonial theme at Dhar Tichitt: voices over the talking drum, the bolon bass harp and clapping joining.",
+     "midi": "midi/fasa-early.mid",
+     "score": "fasa",
+     "beat": 0.66,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "fasa",
+     "credit": "Composed for this atlas (data/scores/fasa.json).",
+     "until": -500
+    },
+    {
+     "id": "fasa-classical",
+     "name": "Praise Song · Classical empires",
+     "about": "West Africa's ceremonial theme at Jenné-jeno: the ngoni lute, then voices, over the talking drum and shaker.",
+     "midi": "midi/fasa-classical.mid",
+     "score": "fasa",
+     "beat": 0.62,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "fasa",
+     "credit": "Composed for this atlas (data/scores/fasa.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "fasa-caravans",
+     "name": "Praise Song · Caravans and monsoons",
+     "about": "West Africa's ceremonial theme in the Mali empire: the balafon, as on the Sosso Bala, then voices, over the dundun and talking drum.",
+     "midi": "midi/fasa-caravans.mid",
+     "score": "fasa",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "fasa",
+     "credit": "Composed for this atlas (data/scores/fasa.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "fasa-crossings",
+     "name": "Praise Song · Ocean crossings",
+     "about": "West Africa's ceremonial theme in Kaabu and Songhay: the kora with its running ostinato, then voices, the balafon joining.",
+     "midi": "midi/fasa-crossings.mid",
+     "score": "fasa",
+     "beat": 0.58,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "fasa",
+     "credit": "Composed for this atlas (data/scores/fasa.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "fasa-steam",
+     "name": "Praise Song · Steam and telegraph",
+     "about": "West Africa's ceremonial theme in the age of the Segou and Futa kingdoms: the kora, then voices, the balafon and ngoni joining, the bolon beneath.",
+     "midi": "midi/fasa-steam.mid",
+     "score": "fasa",
+     "beat": 0.56,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "fasa",
+     "credit": "Composed for this atlas (data/scores/fasa.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "fasa-shared",
+     "name": "Praise Song · One shared map",
+     "about": "West Africa's ceremonial theme for a film orchestra: the kora, then strings, then voices and horns.",
+     "midi": "midi/fasa-shared.mid",
+     "score": "fasa",
+     "beat": 0.55,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "fasa",
+     "credit": "Composed for this atlas (data/scores/fasa.json).",
+     "from": 1900
+    },
+    {
+     "id": "lamban-early",
+     "name": "Drum Dance · Early kingdoms",
+     "about": "West Africa's folk theme in the age of Dhar Tichitt: voices over the djembe, clapping and shakers.",
+     "midi": "midi/lamban-early.mid",
+     "score": "lamban",
+     "beat": 0.22,
+     "meter": 12,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "lamban",
+     "credit": "Composed for this atlas (data/scores/lamban.json).",
+     "until": -500
+    },
+    {
+     "id": "lamban-classical",
+     "name": "Drum Dance · Classical empires",
+     "about": "West Africa's folk theme at Jenné-jeno: the ngoni, then voices, over djembe and dundun.",
+     "midi": "midi/lamban-classical.mid",
+     "score": "lamban",
+     "beat": 0.21,
+     "meter": 12,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "lamban",
+     "credit": "Composed for this atlas (data/scores/lamban.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "lamban-caravans",
+     "name": "Drum Dance · Caravans and monsoons",
+     "about": "West Africa's folk theme in the Mali empire: the balafon, then voices, the iron bell keeping the pattern.",
+     "midi": "midi/lamban-caravans.mid",
+     "score": "lamban",
+     "beat": 0.2,
+     "meter": 12,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "lamban",
+     "credit": "Composed for this atlas (data/scores/lamban.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "lamban-crossings",
+     "name": "Drum Dance · Ocean crossings",
+     "about": "West Africa's folk theme in Kaabu and Songhay: the balafon, then the kora, over the full drums.",
+     "midi": "midi/lamban-crossings.mid",
+     "score": "lamban",
+     "beat": 0.2,
+     "meter": 12,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "lamban",
+     "credit": "Composed for this atlas (data/scores/lamban.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "lamban-steam",
+     "name": "Drum Dance · Steam and telegraph",
+     "about": "West Africa's folk theme in the age of the Segou and Futa kingdoms: the kora, then the balafon, then the ngoni, over the drums and bell.",
+     "midi": "midi/lamban-steam.mid",
+     "score": "lamban",
+     "beat": 0.19,
+     "meter": 12,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "lamban",
+     "credit": "Composed for this atlas (data/scores/lamban.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "lamban-shared",
+     "name": "Drum Dance · One shared map",
+     "about": "West Africa's folk theme for a guitar band and an orchestra: the guitar, then the balafon, then strings, over the drums.",
+     "midi": "midi/lamban-shared.mid",
+     "score": "lamban",
+     "beat": 0.19,
+     "meter": 12,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "lamban",
+     "credit": "Composed for this atlas (data/scores/lamban.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "fasa",
+     "name": "Praise Song",
+     "mood": "ceremonial",
+     "about": "A praise song composed for this atlas in the manner of the griots' fasa, sung over the kora: West Africa's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/fasa.json)."
+    },
+    {
+     "id": "lamban",
+     "name": "Drum Dance",
+     "mood": "folk",
+     "about": "A dance composed for this atlas in the manner of the Mande dances for djembe, dundun and bell, in twelve pulses: West Africa's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/lamban.json)."
+    }
+   ]
+  },
+  {
+   "id": "ethiopia",
+   "name": "Zema and krar",
+   "summary": "The music of the Ethiopian highlands, heard through two themes composed for this atlas in its styles: a chant of the church in the manner of the zema credited to St Yared, and a song of longing in the tizita mode. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: voices and drum, the krar lyre and washint flute of Aksum, the begena's buzzing lyre, the masenqo fiddle, the kebero drum and the sistrum of the church, the azmari minstrels, and the Ethio-jazz of Addis Ababa.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      100,
+      500,
+      700,
+      800
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "bow"
+    },
+    {
+     "voice": "flute"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.75,
+   "leaps": 0.15,
+   "ornament": 0.25,
+   "glide": true,
+   "drone": 0.4,
+   "places": [
+    "aksum",
+    "lalibela",
+    "gondar"
+   ],
+   "source": "shelemay-ethiopian-chant",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.2
+     },
+     {
+      "id": "krar",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "begena",
+      "sample": "sitar",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "masenqo",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "washint",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part"
+     },
+     {
+      "id": "kebero",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "atamo",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "h"
+     },
+     {
+      "id": "tsenatsel",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "j"
+     },
+     {
+      "id": "clap",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "sax",
+      "sample": "sax",
+      "voice": "pipe",
+      "role": "part"
+     },
+     {
+      "id": "vibes",
+      "sample": "vibraphone",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "piano",
+      "sample": "piano",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "trumpet",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "hat",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "c"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:1 Eb4:1 G4:2 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "zema-early",
+     "name": "Zema · Early kingdoms",
+     "about": "Ethiopia's ceremonial theme in the age of D'mt: voices over a drum, the krar joining, hands clapping.",
+     "midi": "midi/zema-early.mid",
+     "score": "zema",
+     "beat": 0.85,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "zema",
+     "credit": "Composed for this atlas (data/scores/zema.json).",
+     "until": -500
+    },
+    {
+     "id": "zema-classical",
+     "name": "Zema · Classical empires",
+     "about": "Ethiopia's ceremonial theme at Aksum: the krar lyre, then voices, then the washint flute, over the kebero drum.",
+     "midi": "midi/zema-classical.mid",
+     "score": "zema",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "zema",
+     "credit": "Composed for this atlas (data/scores/zema.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "zema-caravans",
+     "name": "Zema · Caravans and monsoons",
+     "about": "Ethiopia's ceremonial theme as the debtera sing St Yared's chant at Lalibela: voices over the begena's buzzing lyre, the kebero and the sistrum.",
+     "midi": "midi/zema-caravans.mid",
+     "score": "zema",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "zema",
+     "credit": "Composed for this atlas (data/scores/zema.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "zema-crossings",
+     "name": "Zema · Ocean crossings",
+     "about": "Ethiopia's ceremonial theme at Gondar: voices, then the masenqo fiddle, over the begena, the kebero and the sistrum.",
+     "midi": "midi/zema-crossings.mid",
+     "score": "zema",
+     "beat": 0.76,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "zema",
+     "credit": "Composed for this atlas (data/scores/zema.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "zema-steam",
+     "name": "Zema · Steam and telegraph",
+     "about": "Ethiopia's ceremonial theme in Menelik's age: the masenqo, then voices, then the krar, over the begena and drums.",
+     "midi": "midi/zema-steam.mid",
+     "score": "zema",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "zema",
+     "credit": "Composed for this atlas (data/scores/zema.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "zema-shared",
+     "name": "Zema · One shared map",
+     "about": "Ethiopia's ceremonial theme for a film orchestra: voices, then strings, then horns, the begena, kebero and sistrum beneath.",
+     "midi": "midi/zema-shared.mid",
+     "score": "zema",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "zema",
+     "credit": "Composed for this atlas (data/scores/zema.json).",
+     "from": 1900
+    },
+    {
+     "id": "tizita-early",
+     "name": "Tizita · Early kingdoms",
+     "about": "Ethiopia's folk theme in the age of D'mt: voices and the washint flute over drum and clapping.",
+     "midi": "midi/tizita-early.mid",
+     "score": "tizita",
+     "beat": 0.34,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "tizita",
+     "credit": "Composed for this atlas (data/scores/tizita.json).",
+     "until": -500
+    },
+    {
+     "id": "tizita-classical",
+     "name": "Tizita · Classical empires",
+     "about": "Ethiopia's folk theme at Aksum: the krar, then the washint, over the kebero and the atamo hand drum.",
+     "midi": "midi/tizita-classical.mid",
+     "score": "tizita",
+     "beat": 0.32,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "tizita",
+     "credit": "Composed for this atlas (data/scores/tizita.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "tizita-caravans",
+     "name": "Tizita · Caravans and monsoons",
+     "about": "Ethiopia's folk theme in the Christian kingdom: the washint, then the krar, the masenqo joining.",
+     "midi": "midi/tizita-caravans.mid",
+     "score": "tizita",
+     "beat": 0.31,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "tizita",
+     "credit": "Composed for this atlas (data/scores/tizita.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "tizita-crossings",
+     "name": "Tizita · Ocean crossings",
+     "about": "Ethiopia's folk theme at Gondar: the masenqo, then the washint, the krar beneath.",
+     "midi": "midi/tizita-crossings.mid",
+     "score": "tizita",
+     "beat": 0.3,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "tizita",
+     "credit": "Composed for this atlas (data/scores/tizita.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "tizita-steam",
+     "name": "Tizita · Steam and telegraph",
+     "about": "Ethiopia's folk theme as the azmari minstrels played it: the masenqo, then the krar, then a singer.",
+     "midi": "midi/tizita-steam.mid",
+     "score": "tizita",
+     "beat": 0.29,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "tizita",
+     "credit": "Composed for this atlas (data/scores/tizita.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "tizita-shared",
+     "name": "Tizita · One shared map",
+     "about": "Ethiopia's folk theme as Ethio-jazz in Addis Ababa: the saxophone, then the vibraphone, the trumpet joining, over piano and drums.",
+     "midi": "midi/tizita-shared.mid",
+     "score": "tizita",
+     "beat": 0.28,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "tizita",
+     "credit": "Composed for this atlas (data/scores/tizita.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "zema",
+     "name": "Zema",
+     "mood": "ceremonial",
+     "about": "A chant composed for this atlas in the manner of the Ethiopian church's zema, in the ambassel mode: Ethiopia's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/zema.json)."
+    },
+    {
+     "id": "tizita",
+     "name": "Tizita",
+     "mood": "folk",
+     "about": "A song of longing composed for this atlas in the tizita mode: Ethiopia's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/tizita.json)."
+    }
+   ]
+  },
+  {
+   "id": "swahili",
+   "name": "Taarab and siwa",
+   "summary": "The music of the Swahili coast, where Africa met the monsoon trade of Arabia, Persia and India, heard through two themes composed for this atlas in its styles: a hymn in the manner of Lamu's Maulidi, and a taarab song. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: voices, ngoma drums and the kayamba rattle, the zumari shawm, the oud of the Shirazi towns, the tari frame drums and the great siwa horn of Pate, and Zanzibar's taarab orchestra of oud, qanun, violin and accordion.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      100,
+      300,
+      500,
+      700,
+      800,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "lute"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.6,
+   "leaps": 0.15,
+   "ornament": 0.3,
+   "glide": true,
+   "drone": 0.4,
+   "places": [
+    "kilwa",
+    "mombasa",
+    "lamu",
+    "zanzibar"
+   ],
+   "source": "askew-swahili",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.2
+     },
+     {
+      "id": "pembe",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "siwa",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "zumari",
+      "sample": "suona",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8
+     },
+     {
+      "id": "oud",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part"
+     },
+     {
+      "id": "qanun",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "violin",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part"
+     },
+     {
+      "id": "accordion",
+      "sample": "accordion",
+      "voice": "pipe",
+      "role": "part"
+     },
+     {
+      "id": "ngoma",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "tari",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "tari2",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t"
+     },
+     {
+      "id": "msondo",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "B"
+     },
+     {
+      "id": "kayamba",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "r"
+     },
+     {
+      "id": "dumbak",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "dumbak2",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t"
+     },
+     {
+      "id": "clap",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "D4:1 F4:1 G4:1 A4:1 D4:2"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "maulidi-early",
+     "name": "Maulidi · Early kingdoms",
+     "about": "The Swahili coast's ceremonial theme in the age of Azania: voices over the ngoma and the kayamba rattle, a horn calling.",
+     "midi": "midi/maulidi-early.mid",
+     "score": "maulidi",
+     "beat": 0.78,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maulidi",
+     "credit": "Composed for this atlas (data/scores/maulidi.json).",
+     "until": -500
+    },
+    {
+     "id": "maulidi-classical",
+     "name": "Maulidi · Classical empires",
+     "about": "The Swahili coast's ceremonial theme in the age of the Periplus: voices, then the zumari shawm, over drums and rattle.",
+     "midi": "midi/maulidi-classical.mid",
+     "score": "maulidi",
+     "beat": 0.74,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maulidi",
+     "credit": "Composed for this atlas (data/scores/maulidi.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "maulidi-caravans",
+     "name": "Maulidi · Caravans and monsoons",
+     "about": "The Swahili coast's ceremonial theme at Kilwa and Shanga: voices, then the oud, over the tari frame drums.",
+     "midi": "midi/maulidi-caravans.mid",
+     "score": "maulidi",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maulidi",
+     "credit": "Composed for this atlas (data/scores/maulidi.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "maulidi-crossings",
+     "name": "Maulidi · Ocean crossings",
+     "about": "The Swahili coast's ceremonial theme at Pate and Lamu: voices, then the zumari, over the tari and msondo drums, the great siwa horn sounding.",
+     "midi": "midi/maulidi-crossings.mid",
+     "score": "maulidi",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maulidi",
+     "credit": "Composed for this atlas (data/scores/maulidi.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "maulidi-steam",
+     "name": "Maulidi · Steam and telegraph",
+     "about": "The Swahili coast's ceremonial theme in Zanzibar: voices, then the violin, then the qanun, the oud beneath.",
+     "midi": "midi/maulidi-steam.mid",
+     "score": "maulidi",
+     "beat": 0.68,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maulidi",
+     "credit": "Composed for this atlas (data/scores/maulidi.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "maulidi-shared",
+     "name": "Maulidi · One shared map",
+     "about": "The Swahili coast's ceremonial theme for a film orchestra: voices, then strings, then horns, the siwa, oud and qanun.",
+     "midi": "midi/maulidi-shared.mid",
+     "score": "maulidi",
+     "beat": 0.66,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maulidi",
+     "credit": "Composed for this atlas (data/scores/maulidi.json).",
+     "from": 1900
+    },
+    {
+     "id": "taarab-early",
+     "name": "Taarab · Early kingdoms",
+     "about": "The Swahili coast's folk theme in the age of Azania: voices over the ngoma, rattle and clapping.",
+     "midi": "midi/taarab-early.mid",
+     "score": "taarab",
+     "beat": 0.5,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "taarab",
+     "credit": "Composed for this atlas (data/scores/taarab.json).",
+     "until": -500
+    },
+    {
+     "id": "taarab-classical",
+     "name": "Taarab · Classical empires",
+     "about": "The Swahili coast's folk theme in the age of the Periplus: the zumari, then voices, over drums and rattle.",
+     "midi": "midi/taarab-classical.mid",
+     "score": "taarab",
+     "beat": 0.47,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "taarab",
+     "credit": "Composed for this atlas (data/scores/taarab.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "taarab-caravans",
+     "name": "Taarab · Caravans and monsoons",
+     "about": "The Swahili coast's folk theme at Kilwa: the oud, then the zumari, over the dumbak and the kayamba.",
+     "midi": "midi/taarab-caravans.mid",
+     "score": "taarab",
+     "beat": 0.46,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "taarab",
+     "credit": "Composed for this atlas (data/scores/taarab.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "taarab-crossings",
+     "name": "Taarab · Ocean crossings",
+     "about": "The Swahili coast's folk theme at Mombasa and Pate: the oud, then voices, then the zumari, over the drums.",
+     "midi": "midi/taarab-crossings.mid",
+     "score": "taarab",
+     "beat": 0.45,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "taarab",
+     "credit": "Composed for this atlas (data/scores/taarab.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "taarab-steam",
+     "name": "Taarab · Steam and telegraph",
+     "about": "The Swahili coast's folk theme as taarab at the sultan's court in Zanzibar: the violin, then the qanun, then a singer, the oud beneath.",
+     "midi": "midi/taarab-steam.mid",
+     "score": "taarab",
+     "beat": 0.44,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "taarab",
+     "credit": "Composed for this atlas (data/scores/taarab.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "taarab-shared",
+     "name": "Taarab · One shared map",
+     "about": "The Swahili coast's folk theme as a taarab orchestra: the accordion, then the violin, then a singer, over oud, qanun and strings.",
+     "midi": "midi/taarab-shared.mid",
+     "score": "taarab",
+     "beat": 0.42,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "taarab",
+     "credit": "Composed for this atlas (data/scores/taarab.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "maulidi",
+     "name": "Maulidi",
+     "mood": "ceremonial",
+     "about": "A hymn composed for this atlas in the manner of those sung to the tari drums at the Maulidi of Lamu, the siwa horn sounding: the Swahili coast's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/maulidi.json)."
+    },
+    {
+     "id": "taarab",
+     "name": "Taarab",
+     "mood": "folk",
+     "about": "A song composed for this atlas in the manner of Zanzibar's taarab: the Swahili coast's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/taarab.json)."
     }
    ]
   },
@@ -4138,7 +5335,7 @@
     {
      "id": "mbira-steam",
      "name": "Mbira Cycle · Steam and telegraph",
-     "about": "The mbira's ceremonial theme two mbiras with the xylophones of the south, then voices.",
+     "about": "The mbira's ceremonial theme: two mbiras with the xylophones of the south, then voices.",
      "midi": "midi/mbira-steam.mid",
      "score": "mbira-cycle",
      "beat": 0.4,
@@ -4167,7 +5364,7 @@
     {
      "id": "song-early",
      "name": "Call and Response · Early kingdoms",
-     "about": "The mbira's folk theme voices calling and answering over clapping, a drum joining.",
+     "about": "The mbira's folk theme: voices calling and answering over clapping, a drum joining.",
      "midi": "midi/song-early.mid",
      "score": "call-response",
      "beat": 0.62,
@@ -4181,7 +5378,7 @@
     {
      "id": "song-classical",
      "name": "Call and Response · Classical empires",
-     "about": "The mbira's folk theme voices, the karimba taking a verse, clapping and a drum.",
+     "about": "The mbira's folk theme: voices, the karimba taking a verse, clapping and a drum.",
      "midi": "midi/song-classical.mid",
      "score": "call-response",
      "beat": 0.58,
@@ -4196,7 +5393,7 @@
     {
      "id": "song-caravans",
      "name": "Call and Response · Caravans and monsoons",
-     "about": "The mbira's folk theme voices and the mbira, hosho and ngoma.",
+     "about": "The mbira's folk theme: voices and the mbira, hosho and ngoma.",
      "midi": "midi/song-caravans.mid",
      "score": "call-response",
      "beat": 0.55,
@@ -4211,7 +5408,7 @@
     {
      "id": "song-crossings",
      "name": "Call and Response · Ocean crossings",
-     "about": "The mbira's folk theme voices, then the xylophone, hosho, drum and clapping.",
+     "about": "The mbira's folk theme: voices, then the xylophone, hosho, drum and clapping.",
      "midi": "midi/song-crossings.mid",
      "score": "call-response",
      "beat": 0.52,
@@ -4226,7 +5423,7 @@
     {
      "id": "song-steam",
      "name": "Call and Response · Steam and telegraph",
-     "about": "The mbira's folk theme voices and two mbiras, the xylophone joining.",
+     "about": "The mbira's folk theme: voices and two mbiras, the xylophone joining.",
      "midi": "midi/song-steam.mid",
      "score": "call-response",
      "beat": 0.5,
@@ -4241,7 +5438,7 @@
     {
      "id": "song-shared",
      "name": "Call and Response · One shared map",
-     "about": "The mbira's folk theme voices and guitar over marimba and drums.",
+     "about": "The mbira's folk theme: voices and guitar over marimba and drums.",
      "midi": "midi/song-shared.mid",
      "score": "call-response",
      "beat": 0.5,
@@ -4536,7 +5733,7 @@
     {
      "id": "teo-steam",
      "name": "Temple Song · Steam and telegraph",
-     "about": "The Mexica's ceremonial theme singers over the harp, the violin joining, the old drums still beating.",
+     "about": "The Mexica's ceremonial theme: singers over the harp, the violin joining, the old drums still beating.",
      "midi": "midi/teo-steam.mid",
      "score": "teocuicatl",
      "beat": 0.64,
@@ -4565,7 +5762,7 @@
     {
      "id": "son-early",
      "name": "Son · Early kingdoms",
-     "about": "The Mexica's folk theme clay ocarina and flute over rattles and a turtle-shell drum.",
+     "about": "The Mexica's folk theme: clay ocarina and flute over rattles and a turtle-shell drum.",
      "midi": "midi/son-early.mid",
      "score": "son",
      "beat": 0.5,
@@ -4579,7 +5776,7 @@
     {
      "id": "son-classical",
      "name": "Son · Classical empires",
-     "about": "The Mexica's folk theme flute and ocarina over the huehuetl and rattles.",
+     "about": "The Mexica's folk theme: flute and ocarina over the huehuetl and rattles.",
      "midi": "midi/son-classical.mid",
      "score": "son",
      "beat": 0.46,
@@ -4594,7 +5791,7 @@
     {
      "id": "son-caravans",
      "name": "Son · Caravans and monsoons",
-     "about": "The Mexica's folk theme flutes over the huehuetl and teponaztli.",
+     "about": "The Mexica's folk theme: flutes over the huehuetl and teponaztli.",
      "midi": "midi/son-caravans.mid",
      "score": "son",
      "beat": 0.44,
@@ -4669,6 +5866,390 @@
      "source": "atlas-composed",
      "confidence": "low",
      "credit": "Composed for this atlas (data/scores/son.json)."
+    }
+   ]
+  },
+  {
+   "id": "maya",
+   "name": "Tun and marimba",
+   "summary": "The music of the Maya, heard through two themes composed for this atlas in its styles, since no melody of the ancient cities survives: a dance of the tun and trumpets, in the manner of the Rabinal Achí, and a son for marimba. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: clay ocarinas, turtle shells, rattles and the conch; the long trumpets and drums of the Bonampak murals; the two-toned tun slit drum; the chirimía of the colonial cofradías; and the marimba, the highlands' own.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "flute"
+    },
+    {
+     "voice": "voice"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.7,
+   "leaps": 0.25,
+   "ornament": 0.1,
+   "drone": 0.2,
+   "places": [
+    "tikal",
+    "palenque",
+    "copan",
+    "chichen-itza",
+    "mayapan"
+   ],
+   "source": "tedlock-rabinal",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.4
+     },
+     {
+      "id": "ocarina",
+      "sample": "xun",
+      "voice": "flute",
+      "role": "part",
+      "gain": 1.2
+     },
+     {
+      "id": "chul",
+      "sample": "dizi",
+      "voice": "flute",
+      "role": "part",
+      "gain": 1.3
+     },
+     {
+      "id": "trumpets",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "hub",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.7
+     },
+     {
+      "id": "kayum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "turtle",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "rattles",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "r"
+     },
+     {
+      "id": "tun",
+      "sample": "marimba",
+      "voice": "pluck",
+      "role": "part",
+      "gain": 1.4
+     },
+     {
+      "id": "chirimia",
+      "sample": "suona",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 2.0
+     },
+     {
+      "id": "marimba",
+      "sample": "marimba",
+      "voice": "pluck",
+      "role": "part"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8
+     }
+    ],
+    "motifs": [
+     "A4:2 G4:1 F4:1 D4:4"
+    ]
+   },
+   "tunes": [
+    {
+     "id": "tun-early",
+     "name": "Dance of the Tun · Early kingdoms",
+     "about": "The Maya's ceremonial theme in the Preclassic, at Cuello and El Mirador: clay ocarinas over turtle shells and rattles, the conch calling.",
+     "midi": "midi/tun-early.mid",
+     "score": "xajoj-tun",
+     "beat": 0.8,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "xajoj-tun",
+     "credit": "Composed for this atlas (data/scores/xajoj-tun.json).",
+     "until": -500
+    },
+    {
+     "id": "tun-classical",
+     "name": "Dance of the Tun · Classical empires",
+     "about": "The Maya's ceremonial theme at Tikal and Bonampak: the ocarina, then the long trumpets of the murals, over drums, turtle shells and rattles.",
+     "midi": "midi/tun-classical.mid",
+     "score": "xajoj-tun",
+     "beat": 0.76,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "xajoj-tun",
+     "credit": "Composed for this atlas (data/scores/xajoj-tun.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "tun-caravans",
+     "name": "Dance of the Tun · Caravans and monsoons",
+     "about": "The Maya's ceremonial theme at Chichén Itzá and Mayapán: the flute, then singers, then trumpets, over the two-toned tun.",
+     "midi": "midi/tun-caravans.mid",
+     "score": "xajoj-tun",
+     "beat": 0.72,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "xajoj-tun",
+     "credit": "Composed for this atlas (data/scores/xajoj-tun.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "tun-crossings",
+     "name": "Dance of the Tun · Ocean crossings",
+     "about": "The Maya's ceremonial theme as the cofradías played it after the conquest, as in the Rabinal Achí: the chirimía shawm over the tun, singers joining.",
+     "midi": "midi/tun-crossings.mid",
+     "score": "xajoj-tun",
+     "beat": 0.7,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "xajoj-tun",
+     "credit": "Composed for this atlas (data/scores/xajoj-tun.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "tun-steam",
+     "name": "Dance of the Tun · Steam and telegraph",
+     "about": "The Maya's ceremonial theme in the age of the marimba: the marimba, then the chirimía, over the tun, the marimba's bass beneath.",
+     "midi": "midi/tun-steam.mid",
+     "score": "xajoj-tun",
+     "beat": 0.66,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "xajoj-tun",
+     "credit": "Composed for this atlas (data/scores/xajoj-tun.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "tun-shared",
+     "name": "Dance of the Tun · One shared map",
+     "about": "The Maya's ceremonial theme for a double marimba and a film orchestra: the marimba, then strings, then horns, the chirimía and the tun.",
+     "midi": "midi/tun-shared.mid",
+     "score": "xajoj-tun",
+     "beat": 0.64,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "xajoj-tun",
+     "credit": "Composed for this atlas (data/scores/xajoj-tun.json).",
+     "from": 1900
+    },
+    {
+     "id": "mayason-early",
+     "name": "Marimba Son · Early kingdoms",
+     "about": "The Maya's folk theme in the Preclassic: the clay ocarina and flute over rattles and turtle shell.",
+     "midi": "midi/mayason-early.mid",
+     "score": "maya-son",
+     "beat": 0.34,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maya-son",
+     "credit": "Composed for this atlas (data/scores/maya-son.json).",
+     "until": -500
+    },
+    {
+     "id": "mayason-classical",
+     "name": "Marimba Son · Classical empires",
+     "about": "The Maya's folk theme in the Classic cities: the flute and ocarina over drum and rattles.",
+     "midi": "midi/mayason-classical.mid",
+     "score": "maya-son",
+     "beat": 0.32,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maya-son",
+     "credit": "Composed for this atlas (data/scores/maya-son.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "mayason-caravans",
+     "name": "Marimba Son · Caravans and monsoons",
+     "about": "The Maya's folk theme in the Postclassic: the flute, then singers, over the tun.",
+     "midi": "midi/mayason-caravans.mid",
+     "score": "maya-son",
+     "beat": 0.31,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maya-son",
+     "credit": "Composed for this atlas (data/scores/maya-son.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "mayason-crossings",
+     "name": "Marimba Son · Ocean crossings",
+     "about": "The Maya's folk theme after the conquest: the chirimía and the flute over the tun and drum.",
+     "midi": "midi/mayason-crossings.mid",
+     "score": "maya-son",
+     "beat": 0.3,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maya-son",
+     "credit": "Composed for this atlas (data/scores/maya-son.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "mayason-steam",
+     "name": "Marimba Son · Steam and telegraph",
+     "about": "The Maya's folk theme on the marimba: two players at one keyboard, the second a third below, a third on the bass.",
+     "midi": "midi/mayason-steam.mid",
+     "score": "maya-son",
+     "beat": 0.29,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maya-son",
+     "credit": "Composed for this atlas (data/scores/maya-son.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "mayason-shared",
+     "name": "Marimba Son · One shared map",
+     "about": "The Maya's folk theme for the double marimba and a film orchestra: the marimba in thirds, then strings and horns.",
+     "midi": "midi/mayason-shared.mid",
+     "score": "maya-son",
+     "beat": 0.28,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "maya-son",
+     "credit": "Composed for this atlas (data/scores/maya-son.json).",
+     "from": 1900
+    }
+   ],
+   "themes": [
+    {
+     "id": "xajoj-tun",
+     "name": "Dance of the Tun",
+     "mood": "ceremonial",
+     "about": "A dance composed for this atlas in the manner of the Maya dance-dramas to the tun slit drum and trumpets, as the Rabinal Achí is still danced: the Maya's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/xajoj-tun.json)."
+    },
+    {
+     "id": "maya-son",
+     "name": "Marimba Son",
+     "mood": "folk",
+     "about": "A son composed for this atlas in the manner of the highland marimba's sones, in a swaying 6/8: the Maya's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/maya-son.json)."
     }
    ]
   },
@@ -5215,6 +6796,22 @@
   {
    "vp": "mexica",
    "tradition": "mexica"
+  },
+  {
+   "vp": "sahel",
+   "tradition": "griot"
+  },
+  {
+   "vp": "ethiopia",
+   "tradition": "ethiopia"
+  },
+  {
+   "vp": "swahili",
+   "tradition": "swahili"
+  },
+  {
+   "vp": "maya",
+   "tradition": "maya"
   }
  ],
  "lands": [
@@ -5437,6 +7034,34 @@
     "mexico-west"
    ],
    "vp": "mexica"
+  },
+  {
+   "regions": [
+    "bilad-al-sudan",
+    "central-sahel",
+    "senegambia",
+    "guinea-coast"
+   ],
+   "vp": "sahel"
+  },
+  {
+   "regions": [
+    "ethiopia"
+   ],
+   "vp": "ethiopia"
+  },
+  {
+   "regions": [
+    "east-africa-coast"
+   ],
+   "vp": "swahili"
+  },
+  {
+   "regions": [
+    "maya",
+    "central-america"
+   ],
+   "vp": "maya"
   }
  ]
 }

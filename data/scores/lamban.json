@@ -1,0 +1,10 @@
+{
+ "id": "lamban",
+ "name": "A dance for the drums",
+ "source": "atlas-composed",
+ "meter": 12,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the Mande dances for djembe, dundun and bell, counted in twelve pulses: a pentatonic tune for voices, balafon or kora that leans across the beat while the bell keeps its pattern.",
+ "notes": "A4:3 B4:2 A4:1 F#4:3 E4:3 | D4:2 E4:1 F#4:3 A4:6 / B4:3 D5:2 B4:1 A4:3 F#4:3 | E4:2 F#4:1 E4:3 D4:6 / F#4:2 A4:1 B4:3 D5:2 B4:1 A4:3 | B4:2 A4:1 F#4:3 E4:6 / A4:3 B4:2 A4:1 F#4:3 E4:3 | D4:2 E4:1 F#4:2 E4:1 D4:6 /"
+}

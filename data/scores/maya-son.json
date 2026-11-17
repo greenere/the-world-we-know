@@ -1,0 +1,10 @@
+{
+ "id": "maya-son",
+ "name": "A son for marimba",
+ "source": "atlas-composed",
+ "meter": 6,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the sones of the Guatemalan highlands, played on the marimba by two or three players at one keyboard: a tune in 6/8 that swings between two and three, the second player shadowing it a third below.",
+ "notes": "A4:2 F#4:1 A4:2 D5:1 | C#5:2 B4:1 A4:3 | G4:2 B4:1 A4:2 G4:1 | F#4:3 E4:3 / A4:2 F#4:1 A4:2 D5:1 | E5:2 D5:1 C#5:2 B4:1 | A4:2 G4:1 F#4:2 E4:1 | D4:6 / F#4:1 G4:1 A4:1 B4:2 A4:1 | G4:2 E4:1 C#4:3 | E4:1 F#4:1 G4:1 A4:2 G4:1 | F#4:3 A4:3 / D5:2 C#5:1 B4:2 A4:1 | G4:2 F#4:1 E4:2 C#4:1 | D4:2 E4:1 F#4:2 E4:1 | D4:6 /"
+}

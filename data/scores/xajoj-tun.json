@@ -1,0 +1,10 @@
+{
+ "id": "xajoj-tun",
+ "name": "A dance of the tun",
+ "source": "atlas-composed",
+ "meter": 4,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the Maya dance-dramas performed to the tun, the two-toned slit drum, and long trumpets, as the K'iche' of Rabinal still dance the Rabinal Achí: a slow, falling melody in a minor mode (D, E, F, G, A, C) over the drum's steady pattern.",
+ "notes": "A4:2 C5:1 A4:1 | G4:1 A4:1 F4:2 | E4:1 F4:1 G4:1 E4:1 | D4:4 / D5:2 C5:1 A4:1 | C5:1 D5:1 A4:2 | G4:1 A4:1 C5:1 A4:1 | G4:4 / F4:1 G4:1 A4:1 C5:1 | D5:2 C5:1 A4:1 | G4:1 F4:1 E4:1 F4:1 | G4:2 A4:2 / A4:2 G4:1 F4:1 | E4:1 F4:1 D4:2 | C4:1 D4:1 E4:1 F4:1 | D4:4 /"
+}
