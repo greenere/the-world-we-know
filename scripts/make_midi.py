@@ -1614,24 +1614,23 @@ EGYPT = {
 # the Elamite and Achaemenid harp and long trumpet, Barbad's barbat and the ney of the Sasanian court, the
 # naqqāra-khāna's sorna, karnāy and kettledrums, the kamancheh, santur and tar of Safavid Isfahan, the Qajar
 # court's European trumpets, to an orchestra.
-NAQQ = [("naqqareh", 45, [0, 2, 2.5], 0, 56), ("dohol", 45, [0], 1, 54)]
-SHESH = [("tombak", 60, [0, 2, 3, 5], 0, 46), ("daf", 45, [0, 3], 1, 48)]
+# No drums: the melody instruments carry Persia's themes on their own.
 PERSIA = {
     "royal": {
-        "early": {"lead": [("chang", 0), ("karnay", 0), ("chang", 0)], "join": [(1, "chang", -1, 46)], "drums": [("dohol", 45, [0], 0, 56)]},
-        "classical": {"lead": [("barbat", 0), ("ney", 0), ("chang", 0)], "join": [(1, "barbat", -1, 46), (2, "ney", 0, 40)], "drums": [("tombak", 60, [0, 1.5, 2, 3], 1, 40)]},
-        "caravans": {"lead": [("sorna", 0), ("sorna", 0), ("ney", 0)], "join": [(1, "sorna", -1, 44)], "drone": [("karnay", 50, 0, 44)], "drums": NAQQ},
-        "crossings": {"lead": [("kamancheh", 0), ("sorna", 0), ("tar", 0)], "join": [(0, "santur", 0, 40), (2, "kamancheh", 0, 40)], "drone": [("karnay", 50, 1, 40)], "drums": NAQQ},
-        "steam": {"lead": [("trumpet", 0), ("tar", 0), ("trumpet", 0)], "join": [(0, "santur", 0, 40), (1, "kamancheh", 0, 40), (2, "trumpet", -1, 40)], "drums": NAQQ},
-        "shared": {"lead": [("kamancheh", 0), ("strings", 0), ("horn", 0)], "join": [(0, "santur", 0, 40), (2, "strings", 0, 56)], "drone": [("karnay", 50, 2, 40)], "drums": [("dohol", 45, [0], 0, 54)]},
+        "early": {"lead": [("chang", 0), ("karnay", 0), ("chang", 0)], "join": [(1, "chang", -1, 46)]},
+        "classical": {"lead": [("barbat", 0), ("ney", 0), ("chang", 0)], "join": [(1, "barbat", -1, 46), (2, "ney", 0, 40)]},
+        "caravans": {"lead": [("sorna", 0), ("sorna", 0), ("ney", 0)], "join": [(1, "sorna", -1, 44)], "drone": [("karnay", 50, 0, 44)]},
+        "crossings": {"lead": [("kamancheh", 0), ("sorna", 0), ("tar", 0)], "join": [(0, "santur", 0, 40), (2, "kamancheh", 0, 40)], "drone": [("karnay", 50, 1, 40)]},
+        "steam": {"lead": [("trumpet", 0), ("tar", 0), ("trumpet", 0)], "join": [(0, "santur", 0, 40), (1, "kamancheh", 0, 40), (2, "trumpet", -1, 40)]},
+        "shared": {"lead": [("kamancheh", 0), ("strings", 0), ("horn", 0)], "join": [(0, "santur", 0, 40), (2, "strings", 0, 56)], "drone": [("karnay", 50, 2, 40)]},
     },
     "shesh": {
-        "early": {"lead": [("ney", 0), ("chang", 0), ("ney", 0)], "join": [(1, "chang", -1, 44)], "drums": [("daf", 45, [0, 3], 0, 50)]},
-        "classical": {"lead": [("barbat", 0), ("ney", 0), ("barbat", 0)], "join": [(1, "barbat", -1, 44)], "drums": [("tombak", 60, [0, 2, 3, 5], 0, 44)]},
-        "caravans": {"lead": [("ney", 0), ("kamancheh", 0), ("barbat", 0)], "join": [(1, "barbat", -1, 44), (2, "ney", 0, 38)], "drums": SHESH},
-        "crossings": {"lead": [("tar", 0), ("kamancheh", 0), ("santur", 0)], "join": [(0, "santur", 0, 38), (1, "tar", -1, 42)], "drums": SHESH},
-        "steam": {"lead": [("santur", 0), ("tar", 0), ("kamancheh", 0)], "join": [(0, "tar", -1, 42), (2, "santur", 0, 38)], "drums": SHESH},
-        "shared": {"lead": [("kamancheh", 0), ("santur", 0), ("strings", 0)], "join": [(0, "tar", -1, 42), (2, "ney", 0, 38)], "drums": SHESH},
+        "early": {"lead": [("ney", 0), ("chang", 0), ("ney", 0)], "join": [(1, "chang", -1, 44)]},
+        "classical": {"lead": [("barbat", 0), ("ney", 0), ("barbat", 0)], "join": [(1, "barbat", -1, 44)]},
+        "caravans": {"lead": [("ney", 0), ("kamancheh", 0), ("barbat", 0)], "join": [(1, "barbat", -1, 44), (2, "ney", 0, 38)]},
+        "crossings": {"lead": [("tar", 0), ("kamancheh", 0), ("santur", 0)], "join": [(0, "santur", 0, 38), (1, "tar", -1, 42)]},
+        "steam": {"lead": [("santur", 0), ("tar", 0), ("kamancheh", 0)], "join": [(0, "tar", -1, 42), (2, "santur", 0, 38)]},
+        "shared": {"lead": [("kamancheh", 0), ("santur", 0), ("strings", 0)], "join": [(0, "tar", -1, 42), (2, "ney", 0, 38)]},
     },
 }
 # The Turks: a mehter march in rast (ceremonial) and a türkü in nine (folk); from the kopuz and drums of the
@@ -1799,7 +1798,7 @@ for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel",
         scale = {p % 12 for p, _, _ in parse_notes(sc["notes"], sc["transpose"]) if p is not None}
         for i, era in enumerate(ERA_KEYS):
             spec = eras[era]
-            LATER_THEME[f"{key}-{era}"] = (scores[th], theme(f"{key}_{era}", members_of(spec), beats[th][i], LEVELS[era], arranged(spec, sc.get("meter", 4), scale), top=62, transpose=sc["transpose"], bars=1, taiko=era == "shared"))
+            LATER_THEME[f"{key}-{era}"] = (scores[th], theme(f"{key}_{era}", members_of(spec), beats[th][i], LEVELS[era], arranged(spec, sc.get("meter", 4), scale), top=62, transpose=sc["transpose"], bars=1, taiko=era == "shared" and table is not PERSIA))
 # Gamelan and mbira: the orchestra stays light (a gamelan carries its own harmony), and their own arrangers.
 for th, score, cycle in (("gending", "gending-pelog", 32), ("dolanan", "dolanan", 16)):
     for i, era in enumerate(ERA_KEYS):
