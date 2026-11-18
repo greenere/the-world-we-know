@@ -482,7 +482,7 @@ def mama_hao_mingbai(score: dict) -> list[Track]:
 
 # Tunes too short to make a verse alone go round this many times in each verse (the same in every age, so
 # that a change of age still finds the matching phrase).
-PASSES = {"huayno": 3, "mbira-cycle": 3, "gallop": 3, "son": 2, "doos-ya-lellee": 2, "seikilos": 2, "call-response": 2, "dolanan": 2, "bilahari": 2, "calliope": 2, "lamban": 2, "riu-riu-chiu": 2, "claire-fontaine": 3}
+PASSES = {"huayno": 3, "mbira-cycle": 3, "gallop": 3, "son": 2, "doos-ya-lellee": 2, "seikilos": 2, "call-response": 2, "dolanan": 2, "bilahari": 2, "calliope": 2, "lamban": 2, "riu-riu-chiu": 2, "claire-fontaine": 3, "stomp-dance": 2, "katajjaq": 2, "shuffle-dance": 2, "ahidus": 2}
 
 
 def theme(name: str, members: list[str], beat: float, levels: list[float], play, top: int = 66, taiko: bool = False, transpose: int = 2, bars: int = 0, bed=None):
@@ -1018,7 +1018,8 @@ for th, score in (("gita", "malahari-gita"), ("bilahari", "bilahari")):
 def arranged(spec, meter: int = 4, scale: set[int] | None = None):
     """`spec`: lead: [(member, octave)] for verses 1-3; join: [(from verse, member, octave, velocity)];
     bass: (member, octave, from verse); hold: (member, octave, from verse); drums: [(member, pitch, "down" |
-    "beat" | "start" | [beats into the bar], from verse, velocity)]; pulse: [(member, from verse, velocity,
+    "beat" | "start" | "roll" | [beats into the bar], from verse, velocity)]; respond: [(member, octave,
+    velocity)], who sings every second phrase, the chorus answering the leader; pulse: [(member, from verse, velocity,
     step in beats, [semitones from the tune's note, in turn])], an ostinato under the tune (the kora's
     kumbengo); thirds: (member, from verse, velocity), the tune doubled a third below in its own scale (the
     marimba's two players)."""
@@ -1029,11 +1030,21 @@ def arranged(spec, meter: int = 4, scale: set[int] | None = None):
         steps = [q for q in range(p - 1, p - 6, -1) if q % 12 in scale]
         return steps[1] if len(steps) > 1 else p - 3
 
+    phrase = [0]
+
     def play(T, rep, at, dur, p, on_beat, start, beats, pos=0):
+        if start:
+            phrase[0] += 1
         m, o = spec["lead"][rep]
-        T[m].note(at, dur, p + 12 * o, 82)
+        # Call and answer: every second phrase is the chorus's answer, sung by `respond` instead of the leader.
+        answer = spec.get("respond") and phrase[0] % 2 == 0
+        if answer:
+            for rm, ro, rv in spec["respond"]:
+                T[rm].note(at, dur, p + 12 * ro, rv)
+        else:
+            T[m].note(at, dur, p + 12 * o, 82)
         for frm, jm, jo, v in spec.get("join", []):
-            if rep >= frm and jm != m:
+            if rep >= frm and jm != m and not answer:
                 T[jm].note(at + 0.015, dur, p + 12 * jo, v)
         beat = dur / max(beats, 0.125) / 0.94
         if spec.get("thirds") and rep >= spec["thirds"][1]:
@@ -1066,6 +1077,11 @@ def arranged(spec, meter: int = 4, scale: set[int] | None = None):
                     for y in (x, x + meter):
                         if pos - 1e-6 <= y < pos + beats - 1e-6:
                             T[dm].note(at + (y - pos) * beat, 0.2, pitch, v if abs(x) > 1e-6 else min(127, v + 10))
+            elif when == "roll":
+                # A tremolo as each song begins (the Haudenosaunee rattles' roll before the beat sets in).
+                if start and phrase[0] % 4 == 1:
+                    for k in range(int(beats / 0.125)):
+                        T[dm].note(at + k * 0.125 * beat, 0.08, pitch, v - 6 + (k % 2) * 6)
             elif (when == "down" and down) or (when == "start" and start) or (when == "beat" and on_beat and not down):
                 T[dm].note(at, 0.2, pitch, v)
 
@@ -1073,7 +1089,7 @@ def arranged(spec, meter: int = 4, scale: set[int] | None = None):
 
 
 def members_of(spec):
-    out = [m for m, _ in spec["lead"]] + [j[1] for j in spec.get("join", [])]
+    out = [m for m, _ in spec["lead"]] + [j[1] for j in spec.get("join", [])] + [r[0] for r in spec.get("respond", [])]
     out += [spec[k][0] for k in ("bass", "hold", "thirds") if spec.get(k)] + [d[0] for d in spec.get("drums", [])] + [d[0] for d in spec.get("drone", [])] + [d[0] for d in spec.get("pulse", [])]
     return list(dict.fromkeys(out))
 
@@ -1642,6 +1658,109 @@ TURKS = {
         "shared": {"lead": [("clarinet", 0), ("saz", 0), ("strings", 0)], "join": [(0, "kanun", 0, 38), (1, "saz", -1, 42), (2, "violin", 0, 44)], "drums": KARS + [("kasik", 76, [2, 4, 7], 1, 30)]},
     },
 }
+# The Inuit's two themes, composed for the atlas: a drum-dance song (the ceremonial one), sung to the qilaut,
+# the wide frame drum struck on its rim, in a limping five-beat bar; and a game song (the folk one), a quick
+# tune with two women's katajjaq, the throat game, pulsing beneath. From voices and drum, through the Moravian
+# missions' hymns and brass in Labrador, to the whalers' fiddle and accordion and a film orchestra.
+QILAUT5 = ("qilaut", 45, [0, 3], 0, 60)
+KATAJJAQ = ("katajjaq", 0, 50, 0.5, [-12, -7, -12, -5])
+INUIT = {
+    "qilaut": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "voices", -1, 46)], "drums": [QILAUT5]},
+        "classical": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "voices", -1, 48)], "drums": [QILAUT5, ("qilaut", 45, [1.5, 4], 2, 44)]},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "voices", -1, 50)], "pulse": [("katajjaq", 2, 46, 0.5, [-12, -7])], "drums": [QILAUT5, ("qilaut", 45, [1.5, 4], 1, 44)]},
+        "crossings": {"lead": [("voices", 0), ("harmonium", 0), ("voices", 0)], "join": [(1, "voices", -1, 50)], "hold": ("harmonium", -1, 1), "drums": [QILAUT5]},
+        "steam": {"lead": [("voices", 0), ("brass", 0), ("voices", 0)], "join": [(1, "voices", -1, 48), (2, "brass", -1, 42)], "hold": ("harmonium", -1, 0), "drums": [QILAUT5]},
+        "shared": {"lead": [("voices", 0), ("strings", 0), ("horn", 0)], "join": [(1, "voices", -1, 46), (2, "voices", 0, 52)], "drums": [QILAUT5, ("qilaut", 45, [1.5, 4], 1, 42)]},
+    },
+    "katajjaq": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "pulse": [KATAJJAQ]},
+        "classical": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "pulse": [KATAJJAQ], "drums": [("qilaut", 45, [0], 1, 50)]},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(2, "voices", -1, 44)], "pulse": [KATAJJAQ], "drums": [("qilaut", 45, [0, 2], 1, 50)]},
+        "crossings": {"lead": [("voices", 0), ("voices", 0), ("harmonium", 0)], "pulse": [KATAJJAQ], "drums": [("qilaut", 45, [0, 2], 0, 50)]},
+        "steam": {"lead": [("fiddle", 0), ("accordion", 0), ("fiddle", 0)], "join": [(2, "accordion", 0, 44)], "bass": ("accordion", -1, 0), "drums": [("stomp", 45, [0, 1, 2, 3], 0, 40)]},
+        "shared": {"lead": [("accordion", 0), ("fiddle", 0), ("strings", 0)], "join": [(1, "accordion", 0, 44), (2, "fiddle", 0, 48)], "bass": ("accordion", -1, 0), "pulse": [("katajjaq", 2, 44, 0.5, [-12, -7])], "drums": [("stomp", 45, [0, 2], 0, 40)]},
+    },
+}
+
+# The Mississippian world's two themes, composed for the atlas in the manner of the Southeast's music, which
+# its peoples (Muscogee, Cherokee, Choctaw, Chickasaw) carried on: a stomp dance of the Green Corn ceremony
+# (the ceremonial one), where there is no drum, only a leader's call, the men's answer and the women's
+# turtle-shell leg shakers; and a courting song for the river-cane flute (the folk one), a solo. From voices
+# and rattles at Poverty Point, the Hopewell's copper panpipes, the cane flute and the deep water drum of the
+# Southeast, to the fiddles of the nineteenth century.
+SHAKERS = [("shakers", 70, [0, 1, 2, 3], 0, 48), ("shakers", 70, [0.5, 1.5, 2.5, 3.5], 0, 30)]
+MEN = [("men", -1, 78)]
+MISSISSIPPIAN = {
+    "stomp": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "respond": MEN, "drums": SHAKERS},
+        "classical": {"lead": [("voices", 0), ("panpipes", 0), ("voices", 0)], "respond": MEN, "drums": SHAKERS},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "respond": MEN, "join": [(2, "caneflute", 1, 38)], "drums": SHAKERS},
+        "crossings": {"lead": [("voices", 0), ("caneflute", 0), ("voices", 0)], "respond": MEN, "drums": SHAKERS},
+        "steam": {"lead": [("voices", 0), ("fiddle", 0), ("voices", 0)], "respond": MEN, "drums": SHAKERS},
+        "shared": {"lead": [("voices", 0), ("strings", 0), ("horn", 0)], "respond": MEN, "join": [(2, "voices", 0, 50)], "drums": SHAKERS},
+    },
+    "cane": {
+        "early": {"lead": [("caneflute", 0), ("voices", 0), ("caneflute", 0)]},
+        "classical": {"lead": [("panpipes", 0), ("caneflute", 0), ("panpipes", 0)], "join": [(2, "caneflute", 0, 38)]},
+        "caravans": {"lead": [("caneflute", 0), ("caneflute", 0), ("voices", 0)], "drums": [("waterdrum", 45, [0], 1, 40)]},
+        "crossings": {"lead": [("caneflute", 0), ("voices", 0), ("caneflute", 0)], "drums": [("waterdrum", 45, [0], 1, 40)]},
+        "steam": {"lead": [("fiddle", 0), ("caneflute", 0), ("fiddle", 0)], "join": [(2, "caneflute", 0, 36)]},
+        "shared": {"lead": [("caneflute", 0), ("strings", 0), ("caneflute", 0)], "join": [(2, "strings", -1, 44)]},
+    },
+}
+
+# The Haudenosaunee's two themes, composed for the atlas in the manner of the longhouse: the Great Feather
+# Dance of the Thanksgiving ceremonies (the ceremonial one), sung by two singers striking turtle-shell rattles
+# on their bench, each song opening with the rattles' tremolo, and no drum; and the women's shuffle dance, a
+# social dance (the folk one), driven by the small, high water drum and the cow-horn rattle. From voices and
+# rattles, the cedar flute, the water drum, to the fiddles of the Mohawk communities and a film orchestra.
+TURTLE = [("turtlerattle", 70, "roll", 0, 52), ("turtlerattle", 70, [0, 1, 2, 3], 0, 56)]
+HD_DRUM = [("waterdrum", 50, [0, 1, 2, 3], 0, 60), ("rattles", 70, [0, 1, 2, 3], 0, 42)]
+HAUDENOSAUNEE = {
+    "feather": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "voices", -1, 52)], "drums": TURTLE},
+        "classical": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(0, "voices", -1, 52)], "drums": TURTLE},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(0, "voices", -1, 54)], "drums": TURTLE},
+        "crossings": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(0, "voices", -1, 54)], "drums": TURTLE},
+        "steam": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(0, "voices", -1, 54), (2, "voices", 1, 40)], "drums": TURTLE},
+        "shared": {"lead": [("voices", 0), ("strings", 0), ("horn", 0)], "join": [(0, "voices", -1, 52), (2, "voices", 0, 54)], "drums": TURTLE},
+    },
+    "shuffle": {
+        "early": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "voices", -1, 46)], "drums": [("rattles", 70, [0, 1, 2, 3], 0, 44)]},
+        "classical": {"lead": [("flute", 0), ("voices", 0), ("flute", 0)], "drums": [("rattles", 70, [0, 1, 2, 3], 0, 44), ("waterdrum", 50, [0, 2], 1, 56)]},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("voices", 0)], "join": [(1, "voices", -1, 50)], "drums": HD_DRUM},
+        "crossings": {"lead": [("voices", 0), ("flute", 0), ("voices", 0)], "join": [(0, "voices", -1, 48)], "drums": HD_DRUM},
+        "steam": {"lead": [("fiddle", 0), ("voices", 0), ("fiddle", 0)], "join": [(1, "fiddle", -1, 42)], "drums": HD_DRUM},
+        "shared": {"lead": [("voices", 0), ("strings", 0), ("fiddle", 0)], "join": [(1, "voices", -1, 48), (2, "voices", 0, 50)], "drums": HD_DRUM},
+    },
+}
+
+# The Maghreb's two themes, composed for the atlas: a nūba of the Andalusi tradition (the ceremonial one),
+# in the slow six of the basīṭ, and an ahidus of the Amazigh Middle Atlas (the folk one), a pentatonic call
+# and answer over the bendir. From the lyres, pipes and frame drums of Carthage, the water organ of Roman
+# Africa, the oud, ney, rbab and tar of the Islamic cities, the ghaita and qraqeb of the countryside and the
+# brotherhoods, the violin held on the knee in the Andalusi orchestras, to a film orchestra.
+TAR6 = [("tar", 64, [0, 2, 3, 4, 5], 0, 38), ("darbuka", 48, [0, 3], 0, 54)]
+BENDIR = [("bendir", 45, [0, 3, 4], 0, 58), ("clap", 76, [1.5, 4.5], 1, 40)]
+MAGHREB = {
+    "nuba": {
+        "early": {"lead": [("kinnor", 0), ("pipes", 0), ("kinnor", 0)], "join": [(2, "pipes", 0, 40)], "drums": [("tof", 45, [0, 3], 0, 54)]},
+        "classical": {"lead": [("kinnor", 0), ("pipes", 0), ("hydraulis", 0)], "join": [(1, "kinnor", -1, 44)], "hold": ("hydraulis", -1, 2), "drums": [("tof", 45, [0, 3], 0, 54), ("cymbals", 80, [0], 2, 30)]},
+        "caravans": {"lead": [("oud", 0), ("ney", 0), ("rbab", 0)], "join": [(1, "oud", -1, 46), (2, "ney", 0, 40)], "drums": TAR6},
+        "crossings": {"lead": [("rbab", 0), ("voices", 0), ("oud", 0)], "join": [(0, "oud", -1, 46), (1, "rbab", 0, 44)], "drums": TAR6},
+        "steam": {"lead": [("kamanja", 0), ("voices", 0), ("kamanja", 0)], "join": [(0, "oud", -1, 46), (1, "kamanja", 0, 44), (2, "qanun", 0, 40)], "drums": TAR6},
+        "shared": {"lead": [("kamanja", 0), ("strings", 0), ("horn", 0)], "join": [(0, "oud", -1, 44), (2, "kamanja", 0, 46)], "drums": TAR6},
+    },
+    "ahidus": {
+        "early": {"lead": [("voices", 0), ("pipes", 0), ("voices", 0)], "join": [(1, "voices", -1, 46)], "drums": [("tof", 45, [0, 3, 4], 0, 56), ("clap", 76, [1.5, 4.5], 1, 40)]},
+        "classical": {"lead": [("pipes", 0), ("voices", 0), ("pipes", 0)], "join": [(1, "voices", -1, 46)], "drums": [("tof", 45, [0, 3, 4], 0, 56), ("clap", 76, [1.5, 4.5], 1, 40)]},
+        "caravans": {"lead": [("voices", 0), ("voices", 0), ("ghaita", 0)], "join": [(1, "voices", -1, 50)], "drums": BENDIR},
+        "crossings": {"lead": [("ghaita", 0), ("voices", 0), ("ghaita", 0)], "join": [(1, "voices", -1, 50)], "drums": BENDIR + [("qraqeb", 80, [0, 1, 1.5, 3, 4, 4.5], 1, 30)]},
+        "steam": {"lead": [("loutar", 0), ("ghaita", 0), ("voices", 0)], "join": [(0, "loutar", -1, 42), (2, "voices", -1, 46)], "drums": BENDIR},
+        "shared": {"lead": [("ghaita", 0), ("strings", 0), ("loutar", 0)], "join": [(0, "loutar", -1, 40), (2, "voices", 0, 48)], "drums": BENDIR},
+    },
+}
 EGYPT_BEAT = {"hymn": [0.8, 0.76, 0.75, 0.72, 0.7, 0.68], "nile": [0.46, 0.45, 0.44, 0.43, 0.42, 0.42]}
 PERSIA_BEAT = {"royal": [0.8, 0.76, 0.74, 0.72, 0.7, 0.68], "shesh": [0.34, 0.32, 0.31, 0.3, 0.29, 0.28]}
 TURKS_BEAT = {"mehter": [0.6, 0.58, 0.56, 0.55, 0.54, 0.54], "turku": [0.22, 0.21, 0.21, 0.2, 0.2, 0.2]}
@@ -1649,6 +1768,10 @@ IBERIA_BEAT = {"cantiga": [0.55, 0.52, 0.5, 0.48, 0.46, 0.45], "riu": [0.5, 0.48
 FRANCE_BEAT = {"armed": [0.48, 0.45, 0.45, 0.42, 0.42, 0.4], "fontaine": [0.62, 0.6, 0.58, 0.56, 0.55, 0.54]}
 GERMANY_BEAT = {"ros": [0.8, 0.75, 0.75, 0.7, 0.68, 0.66], "innsbruck": [0.75, 0.72, 0.7, 0.66, 0.64, 0.62]}
 NORSE_BEAT = {"christian": [0.62, 0.6, 0.58, 0.56, 0.55, 0.54], "varmeland": [0.62, 0.6, 0.58, 0.56, 0.55, 0.54]}
+INUIT_BEAT = {"qilaut": [0.46, 0.44, 0.42, 0.42, 0.4, 0.4], "katajjaq": [0.3, 0.29, 0.28, 0.27, 0.26, 0.26]}
+MISSISSIPPIAN_BEAT = {"stomp": [0.5, 0.48, 0.47, 0.46, 0.45, 0.45], "cane": [0.6, 0.58, 0.56, 0.55, 0.54, 0.52]}
+HAUDENOSAUNEE_BEAT = {"feather": [0.34, 0.33, 0.32, 0.31, 0.3, 0.3], "shuffle": [0.38, 0.37, 0.36, 0.35, 0.34, 0.34]}
+MAGHREB_BEAT = {"nuba": [0.46, 0.44, 0.42, 0.42, 0.4, 0.4], "ahidus": [0.28, 0.27, 0.26, 0.26, 0.25, 0.25]}
 RUSSIA_BEAT = {"tsar": [0.8, 0.76, 0.75, 0.72, 0.7, 0.7], "uchnem": [0.75, 0.72, 0.7, 0.68, 0.66, 0.65]}
 
 MAYA_BEAT = {"tun": [0.8, 0.76, 0.72, 0.7, 0.66, 0.64], "son": [0.34, 0.32, 0.31, 0.3, 0.29, 0.28]}
@@ -1666,7 +1789,9 @@ for table, beats, scores in ((EUROPE, EUROPE_BEAT, {"emmanuel": "veni-emmanuel",
                               (GERMANY, GERMANY_BEAT, {"ros": "es-ist-ein-ros", "innsbruck": "innsbruck"}), (NORSE, NORSE_BEAT, {"christian": "kong-christian", "varmeland": "ack-varmeland"}),
                               (RUSSIA, RUSSIA_BEAT, {"tsar": "god-save-the-tsar", "uchnem": "ej-uchnem"}),
                               (EGYPT, EGYPT_BEAT, {"hymn": "egypt-hymn", "nile": "nile-song"}), (PERSIA, PERSIA_BEAT, {"royal": "naqqareh-khaneh", "shesh": "shesh-o-hasht"}),
-                              (TURKS, TURKS_BEAT, {"mehter": "mehter-march", "turku": "turku"})):
+                              (TURKS, TURKS_BEAT, {"mehter": "mehter-march", "turku": "turku"}),
+                              (INUIT, INUIT_BEAT, {"qilaut": "qilaut-song", "katajjaq": "katajjaq"}), (MISSISSIPPIAN, MISSISSIPPIAN_BEAT, {"stomp": "stomp-dance", "cane": "cane-flute"}),
+                              (HAUDENOSAUNEE, HAUDENOSAUNEE_BEAT, {"feather": "feather-dance", "shuffle": "shuffle-dance"}), (MAGHREB, MAGHREB_BEAT, {"nuba": "nuba", "ahidus": "ahidus"})):
     # A key is the theme's tune prefix; the Maya's son is "mayason" so its files don't meet the Mexica's.
     for th, eras in table.items():
         sc = json.loads((SCORES / f"{scores[th]}.json").read_text())

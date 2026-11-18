@@ -380,6 +380,61 @@ export function createComposer(
       n.start(time);
       n.stop(time + 0.2);
       decay(g.gain, 0.4 * strength, 0.06);
+    } else if (kind === 'w' || kind === 'W') {
+      // A water drum: a small kettle partly filled with water, a wet hide drawn tight over it, struck with a
+      // stick. A round, hollow, pitched note with no slap: w is the small Haudenosaunee drum, high and quick;
+      // W the larger drum of the Southeast, lower and longer.
+      const small = kind === 'w';
+      const f0 = small ? 330 : 175;
+      for (const [ratio, level, tau] of [[1, 1, small ? 0.07 : 0.11], [1.59, 0.28, 0.035], [2.14, 0.1, 0.02]] as const) {
+        const o = ctx.createOscillator();
+        o.frequency.setValueAtTime(f0 * ratio * 1.04, time);
+        o.frequency.exponentialRampToValueAtTime(f0 * ratio, time + 0.05);
+        const og = ctx.createGain();
+        og.gain.setValueAtTime(0, time);
+        og.gain.linearRampToValueAtTime(level * 0.24 * strength, time + 0.004);
+        og.gain.setTargetAtTime(0, time + 0.006, tau);
+        o.connect(og).connect(g);
+        o.start(time);
+        o.stop(time + 0.6);
+      }
+      // The stick on the wet hide: a soft, dull touch, low-passed.
+      const n = noise();
+      const f = ctx.createBiquadFilter();
+      f.type = 'lowpass';
+      f.frequency.value = small ? 1200 : 800;
+      const ng = ctx.createGain();
+      ng.gain.setValueAtTime(0.07 * strength, time);
+      ng.gain.setTargetAtTime(0, time, 0.006);
+      n.connect(f).connect(ng).connect(g);
+      n.start(time);
+      n.stop(time + 0.1);
+    } else if (kind === 'T') {
+      // A turtle-shell rattle struck down on the singers' bench: a hollow knock of shell on wood, then the
+      // cherry pits inside, rattling a moment longer than a seed shaker's.
+      const k = noise();
+      const kf = ctx.createBiquadFilter();
+      kf.type = 'bandpass';
+      kf.frequency.value = 850;
+      kf.Q.value = 2.5;
+      const kg = ctx.createGain();
+      kg.gain.setValueAtTime(0.19 * strength, time);
+      kg.gain.setTargetAtTime(0, time, 0.012);
+      k.connect(kf).connect(kg).connect(g);
+      k.start(time);
+      k.stop(time + 0.15);
+      const n = noise();
+      const f = ctx.createBiquadFilter();
+      f.type = 'bandpass';
+      f.frequency.value = 3600;
+      f.Q.value = 0.8;
+      const ng = ctx.createGain();
+      ng.gain.setValueAtTime(0, time);
+      ng.gain.linearRampToValueAtTime(0.09 * strength, time + 0.01);
+      ng.gain.setTargetAtTime(0, time + 0.015, 0.06);
+      n.connect(f).connect(ng).connect(g);
+      n.start(time);
+      n.stop(time + 0.5);
     } else if (kind === 'r' || kind === 'j') {
       // r: a rattle or shaker (kayamba, shekere), seeds thrown against the walls; j: a sistrum (tsenatsel),
       // its metal discs shaken on their rods, a few quick jingles.

@@ -1,0 +1,10 @@
+{
+ "id": "feather-dance",
+ "name": "A feather dance",
+ "source": "atlas-composed",
+ "meter": 4,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the Great Feather Dance of the longhouse, sung by two singers with turtle-shell rattles: a vigorous pentatonic song that falls by steps, in the even beat the dancers stamp.",
+ "notes": "B4:1 B4:1 D5:1 B4:1 | A4:1 G4:1 A4:2 | B4:1 A4:1 G4:1 E4:1 | G4:2 G4:2 / D5:1 E5:1 D5:1 B4:1 | D5:1 B4:1 A4:2 | B4:1 A4:1 G4:1 A4:1 | B4:2 B4:2 / E5:1 D5:1 B4:1 D5:1 | B4:1 A4:1 B4:2 | A4:1 G4:1 A4:1 G4:1 | E4:2 G4:2 / B4:1 A4:1 G4:1 E4:1 | G4:1 A4:1 G4:2 | E4:1 D4:1 E4:1 G4:1 | E4:4 /"
+}

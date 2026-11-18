@@ -1617,7 +1617,7 @@ def load_living(sources, viewpoints, journey_ids):
 SOUND_VOICES = ("pluck", "lute", "bow", "flute", "reed", "pipe", "voice", "bell", "stone", "metal", "tine", "keys", "gong")
 SOUND_PATTERNS = ("wander", "alap", "ostinato")
 SOUND_ROLES = ("melody", "accompany", "both", "accent", "part")
-NOT_INSTRUMENTS = {"voices", "cantores", "psaltes", "khoomei", "sygyt", "sindhen", "clap", "hooves"}
+NOT_INSTRUMENTS = {"voices", "cantores", "psaltes", "khoomei", "sygyt", "sindhen", "clap", "hooves", "katajjaq", "stomp", "men"}
 NOTE_RE = re.compile(r"^([A-G][#b]?-?\d|r):[\d.]+/?$")
 
 

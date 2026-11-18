@@ -4051,6 +4051,456 @@
    ]
   },
   {
+   "id": "maghreb",
+   "name": "Oud and bendir",
+   "summary": "The music of the Maghreb, heard through two themes composed for this atlas in its styles, carried through every age from Carthage to the conservatories of Fez and Algiers: a nūba of the Andalusi tradition and an ahidus of the Amazigh Middle Atlas. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the lyre, double pipe and frame drum of Carthage, the water organ of Roman Africa, the oud, ney, rbab and tar of the Islamic cities and the exiles from al-Andalus, the ghaita and qraqeb of the countryside and the brotherhoods, the loutar, the violin held upright on the knee, and a film orchestra.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      800,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "lute"
+    },
+    {
+     "voice": "flute"
+    },
+    {
+     "voice": "reed"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.6,
+   "leaps": 0.2,
+   "ornament": 0.15,
+   "drone": 0.4,
+   "places": [
+    "carthage",
+    "kairouan",
+    "fez",
+    "tlemcen",
+    "marrakesh"
+   ],
+   "source": "reynolds-andalus",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.2
+     },
+     {
+      "id": "kinnor",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "shelf": "lyre"
+     },
+     {
+      "id": "pipes",
+      "sample": "oboe",
+      "voice": "reed",
+      "role": "part",
+      "gain": 0.85,
+      "shelf": "shawm"
+     },
+     {
+      "id": "tof",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "frame-drum"
+     },
+     {
+      "id": "hydraulis",
+      "sample": "organ",
+      "voice": "keys",
+      "role": "part",
+      "gain": 0.8,
+      "shelf": "organ"
+     },
+     {
+      "id": "cymbals",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "c",
+      "shelf": "cymbals"
+     },
+     {
+      "id": "oud",
+      "sample": "guitar",
+      "voice": "lute",
+      "role": "part",
+      "shelf": "oud"
+     },
+     {
+      "id": "ney",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part",
+      "shelf": "flute"
+     },
+     {
+      "id": "rbab",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "shelf": "bowed-strings"
+     },
+     {
+      "id": "tar",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "t",
+      "shelf": "frame-drum"
+     },
+     {
+      "id": "darbuka",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "h",
+      "shelf": "drum"
+     },
+     {
+      "id": "kamanja",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "shelf": "violin"
+     },
+     {
+      "id": "qanun",
+      "sample": "koto",
+      "voice": "pluck",
+      "role": "part",
+      "shelf": "zither"
+     },
+     {
+      "id": "ghaita",
+      "sample": "suona",
+      "voice": "reed",
+      "role": "part",
+      "gain": 1.2,
+      "shelf": "shawm"
+     },
+     {
+      "id": "bendir",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "frame-drum"
+     },
+     {
+      "id": "clap",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "k"
+     },
+     {
+      "id": "qraqeb",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "j",
+      "shelf": "cymbals"
+     },
+     {
+      "id": "loutar",
+      "sample": "shamisen",
+      "voice": "lute",
+      "role": "part",
+      "shelf": "long-lute"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8,
+      "shelf": "violin"
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75,
+      "shelf": "violin"
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7,
+      "shelf": "violin"
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55,
+      "shelf": "harp"
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7,
+      "shelf": "horn"
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8,
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8,
+      "shelf": "drum"
+     }
+    ],
+    "motifs": [
+     "D4:1 F4:1 G4:1 A4:2"
+    ]
+   },
+   "themes": [
+    {
+     "id": "nuba",
+     "name": "Nūba",
+     "mood": "ceremonial",
+     "about": "A movement composed for this atlas in the manner of the Andalusi nūba of Fez, Tlemcen and Tunis: the Maghreb's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/nuba.json)."
+    },
+    {
+     "id": "ahidus",
+     "name": "Ahidus",
+     "mood": "folk",
+     "about": "A song composed for this atlas in the manner of the ahidus of the Middle Atlas, a ring dance over the bendir: the Maghreb's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/ahidus.json)."
+    }
+   ],
+   "tunes": [
+    {
+     "id": "nuba-early",
+     "name": "Nūba · Early kingdoms",
+     "about": "The Maghreb's ceremonial theme at Carthage: the lyre, then the double pipe, over the tof frame drum.",
+     "midi": "midi/nuba-early.mid",
+     "score": "nuba",
+     "beat": 0.46,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nuba",
+     "credit": "Composed for this atlas (data/scores/nuba.json).",
+     "until": -500
+    },
+    {
+     "id": "nuba-classical",
+     "name": "Nūba · Classical empires",
+     "about": "The Maghreb's ceremonial theme in Punic and Roman Africa: the lyre, the double pipe, then the water organ, cymbals at the close.",
+     "midi": "midi/nuba-classical.mid",
+     "score": "nuba",
+     "beat": 0.44,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nuba",
+     "credit": "Composed for this atlas (data/scores/nuba.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "nuba-caravans",
+     "name": "Nūba · Caravans and monsoons",
+     "about": "The Maghreb's ceremonial theme at Kairouan, Fez and Tlemcen: the oud, the ney, then the rbab, over tar and darbuka.",
+     "midi": "midi/nuba-caravans.mid",
+     "score": "nuba",
+     "beat": 0.42,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nuba",
+     "credit": "Composed for this atlas (data/scores/nuba.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "nuba-crossings",
+     "name": "Nūba · Ocean crossings",
+     "about": "The Maghreb's ceremonial theme as the exiles of al-Andalus settle in Fez, Tetouan and Tunis: the rbab, then a singer, then the oud.",
+     "midi": "midi/nuba-crossings.mid",
+     "score": "nuba",
+     "beat": 0.42,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nuba",
+     "credit": "Composed for this atlas (data/scores/nuba.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "nuba-steam",
+     "name": "Nūba · Steam and telegraph",
+     "about": "The Maghreb's ceremonial theme in the Andalusi orchestras of the nineteenth century: the kamanja held on the knee, then a singer, the oud and qanun beneath.",
+     "midi": "midi/nuba-steam.mid",
+     "score": "nuba",
+     "beat": 0.4,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nuba",
+     "credit": "Composed for this atlas (data/scores/nuba.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "nuba-shared",
+     "name": "Nūba · One shared map",
+     "about": "The Maghreb's ceremonial theme for the kamanja and a film orchestra: the kamanja, then strings, then horns, over tar and darbuka.",
+     "midi": "midi/nuba-shared.mid",
+     "score": "nuba",
+     "beat": 0.4,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "nuba",
+     "credit": "Composed for this atlas (data/scores/nuba.json).",
+     "from": 1900
+    },
+    {
+     "id": "ahidus-early",
+     "name": "Ahidus · Early kingdoms",
+     "about": "The Maghreb's folk theme among the ancient Libyans: singers, then the pipe, over the frame drum and hand-claps.",
+     "midi": "midi/ahidus-early.mid",
+     "score": "ahidus",
+     "beat": 0.28,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "ahidus",
+     "credit": "Composed for this atlas (data/scores/ahidus.json).",
+     "until": -500
+    },
+    {
+     "id": "ahidus-classical",
+     "name": "Ahidus · Classical empires",
+     "about": "The Maghreb's folk theme in the Numidian kingdoms: the pipe, then singers, then the pipe again.",
+     "midi": "midi/ahidus-classical.mid",
+     "score": "ahidus",
+     "beat": 0.27,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "ahidus",
+     "credit": "Composed for this atlas (data/scores/ahidus.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "ahidus-caravans",
+     "name": "Ahidus · Caravans and monsoons",
+     "about": "The Maghreb's folk theme in the Atlas villages: singers in a ring, then the ghaita, over the bendir and hand-claps.",
+     "midi": "midi/ahidus-caravans.mid",
+     "score": "ahidus",
+     "beat": 0.26,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "ahidus",
+     "credit": "Composed for this atlas (data/scores/ahidus.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "ahidus-crossings",
+     "name": "Ahidus · Ocean crossings",
+     "about": "The Maghreb's folk theme: the ghaita, singers answering, the qraqeb of the brotherhoods joining.",
+     "midi": "midi/ahidus-crossings.mid",
+     "score": "ahidus",
+     "beat": 0.26,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "ahidus",
+     "credit": "Composed for this atlas (data/scores/ahidus.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "ahidus-steam",
+     "name": "Ahidus · Steam and telegraph",
+     "about": "The Maghreb's folk theme: the loutar, then the ghaita, then singers, over the bendir.",
+     "midi": "midi/ahidus-steam.mid",
+     "score": "ahidus",
+     "beat": 0.25,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "ahidus",
+     "credit": "Composed for this atlas (data/scores/ahidus.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "ahidus-shared",
+     "name": "Ahidus · One shared map",
+     "about": "The Maghreb's folk theme for the ghaita, strings and the loutar, over the bendir and hand-claps.",
+     "midi": "midi/ahidus-shared.mid",
+     "score": "ahidus",
+     "beat": 0.25,
+     "meter": 6,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "ahidus",
+     "credit": "Composed for this atlas (data/scores/ahidus.json).",
+     "from": 1900
+    }
+   ]
+  },
+  {
    "id": "maqam",
    "name": "Maqam",
    "summary": "The modes of Arabic, Persian and Turkish music, heard through two themes Edward Lane noted in Cairo in the 1830s: the chant of a poet of the Hilali epic, and the popular song Doos ya lellee. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: the lyre and reed pipe of Mesopotamia, the barbat, chang and ney of the Sasanian court, the oud, qanun and ney of the golden age, the Ottoman mehter, Cairo's takht with its violin, and a film orchestra. Lane wrote the neutral steps of the maqam as plain notes, and so they are played here.",
@@ -10543,6 +10993,1087 @@
    ]
   },
   {
+   "id": "mississippian",
+   "name": "Shell shakers and water drum",
+   "summary": "The music of the Mississippian world and the peoples before and after it in the Southeast, heard through two themes composed for this atlas in the styles its descendants, the Muscogee, Cherokee, Choctaw and Chickasaw, still keep: a stomp dance of the Green Corn ceremony, with no drum, only a leader's call, the men's answer and the women's turtle-shell leg shakers, and a courting song for the river-cane flute. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: voices and shakers at Poverty Point, the copper panpipes of the Hopewell, the cane flute and the deep water drum of the Southeast, the fiddles of the nineteenth century, and a film orchestra.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      300,
+      500,
+      700,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "flute"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.6,
+   "leaps": 0.2,
+   "ornament": 0.15,
+   "drone": 0.4,
+   "places": [
+    "poverty-point",
+    "cahokia"
+   ],
+   "source": "hudson-southeastern",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.3
+     },
+     {
+      "id": "men",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.4
+     },
+     {
+      "id": "panpipes",
+      "sample": "panpipe",
+      "voice": "flute",
+      "role": "part",
+      "shelf": "panpipes"
+     },
+     {
+      "id": "caneflute",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part",
+      "shelf": "flute"
+     },
+     {
+      "id": "waterdrum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "W",
+      "shelf": "drum"
+     },
+     {
+      "id": "shakers",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "r",
+      "shelf": "rattle"
+     },
+     {
+      "id": "fiddle",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "shelf": "violin"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8,
+      "shelf": "violin"
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75,
+      "shelf": "violin"
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7,
+      "shelf": "violin"
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55,
+      "shelf": "harp"
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7,
+      "shelf": "horn"
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8,
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8,
+      "shelf": "drum"
+     }
+    ],
+    "motifs": [
+     "B4:1 A4:1 G4:1 E4:2"
+    ]
+   },
+   "themes": [
+    {
+     "id": "stomp-dance",
+     "name": "Green Corn Stomp Dance",
+     "mood": "ceremonial",
+     "about": "A dance composed for this atlas in the manner of the Southeastern stomp dance around the Green Corn fire, a leader's call and the men's answer over the women's shell shakers: the Mississippian world's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/stomp-dance.json)."
+    },
+    {
+     "id": "cane-flute",
+     "name": "River-Cane Flute Song",
+     "mood": "folk",
+     "about": "A song composed for this atlas in the manner of the Southeastern courting songs for the river-cane flute: the Mississippian world's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/cane-flute.json)."
+    }
+   ],
+   "tunes": [
+    {
+     "id": "stomp-early",
+     "name": "Green Corn Stomp Dance · Early kingdoms",
+     "about": "The Mississippian world's ceremonial theme at Poverty Point: a leader's call and the men's answer, over the women's shell shakers.",
+     "midi": "midi/stomp-early.mid",
+     "score": "stomp-dance",
+     "beat": 0.44,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "stomp-dance",
+     "credit": "Composed for this atlas (data/scores/stomp-dance.json).",
+     "until": -500
+    },
+    {
+     "id": "stomp-classical",
+     "name": "Green Corn Stomp Dance · Classical empires",
+     "about": "The Mississippian world's ceremonial theme among the Hopewell: the call and answer, copper panpipes taking the leader's part, over the shell shakers.",
+     "midi": "midi/stomp-classical.mid",
+     "score": "stomp-dance",
+     "beat": 0.42,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "stomp-dance",
+     "credit": "Composed for this atlas (data/scores/stomp-dance.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "stomp-caravans",
+     "name": "Green Corn Stomp Dance · Caravans and monsoons",
+     "about": "The Mississippian world's ceremonial theme at Cahokia: the leader and the men answering, over the shell shakers, the cane flute joining high above.",
+     "midi": "midi/stomp-caravans.mid",
+     "score": "stomp-dance",
+     "beat": 0.4,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "stomp-dance",
+     "credit": "Composed for this atlas (data/scores/stomp-dance.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "stomp-crossings",
+     "name": "Green Corn Stomp Dance · Ocean crossings",
+     "about": "The Mississippian world's ceremonial theme as the chiefdoms give way to the Muscogee and Cherokee towns: the leader, then the cane flute, the men answering.",
+     "midi": "midi/stomp-crossings.mid",
+     "score": "stomp-dance",
+     "beat": 0.4,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "stomp-dance",
+     "credit": "Composed for this atlas (data/scores/stomp-dance.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "stomp-steam",
+     "name": "Green Corn Stomp Dance · Steam and telegraph",
+     "about": "The Mississippian world's ceremonial theme in the Indian Territory: the leader, then a fiddle, the men answering and the shakers keeping time.",
+     "midi": "midi/stomp-steam.mid",
+     "score": "stomp-dance",
+     "beat": 0.38,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "stomp-dance",
+     "credit": "Composed for this atlas (data/scores/stomp-dance.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "stomp-shared",
+     "name": "Green Corn Stomp Dance · One shared map",
+     "about": "The Mississippian world's ceremonial theme for singers and a film orchestra: the leader's call taken by strings, then horns, the men still answering.",
+     "midi": "midi/stomp-shared.mid",
+     "score": "stomp-dance",
+     "beat": 0.38,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "stomp-dance",
+     "credit": "Composed for this atlas (data/scores/stomp-dance.json).",
+     "from": 1900
+    },
+    {
+     "id": "cane-early",
+     "name": "River-Cane Flute Song · Early kingdoms",
+     "about": "The Mississippian world's folk theme at Poverty Point: the cane flute alone, then a voice.",
+     "midi": "midi/cane-early.mid",
+     "score": "cane-flute",
+     "beat": 0.6,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "cane-flute",
+     "credit": "Composed for this atlas (data/scores/cane-flute.json).",
+     "until": -500
+    },
+    {
+     "id": "cane-classical",
+     "name": "River-Cane Flute Song · Classical empires",
+     "about": "The Mississippian world's folk theme among the Hopewell: copper panpipes, then the cane flute.",
+     "midi": "midi/cane-classical.mid",
+     "score": "cane-flute",
+     "beat": 0.58,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "cane-flute",
+     "credit": "Composed for this atlas (data/scores/cane-flute.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "cane-caravans",
+     "name": "River-Cane Flute Song · Caravans and monsoons",
+     "about": "The Mississippian world's folk theme at Cahokia: the cane flute, then a voice, the deep water drum marking the bars.",
+     "midi": "midi/cane-caravans.mid",
+     "score": "cane-flute",
+     "beat": 0.56,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "cane-flute",
+     "credit": "Composed for this atlas (data/scores/cane-flute.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "cane-crossings",
+     "name": "River-Cane Flute Song · Ocean crossings",
+     "about": "The Mississippian world's folk theme in the towns of the Southeast: the cane flute, a voice, the flute again, over the water drum.",
+     "midi": "midi/cane-crossings.mid",
+     "score": "cane-flute",
+     "beat": 0.55,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "cane-flute",
+     "credit": "Composed for this atlas (data/scores/cane-flute.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "cane-steam",
+     "name": "River-Cane Flute Song · Steam and telegraph",
+     "about": "The Mississippian world's folk theme in the nineteenth century: a fiddle, then the cane flute, then the fiddle again.",
+     "midi": "midi/cane-steam.mid",
+     "score": "cane-flute",
+     "beat": 0.54,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "cane-flute",
+     "credit": "Composed for this atlas (data/scores/cane-flute.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "cane-shared",
+     "name": "River-Cane Flute Song · One shared map",
+     "about": "The Mississippian world's folk theme for the cane flute and strings.",
+     "midi": "midi/cane-shared.mid",
+     "score": "cane-flute",
+     "beat": 0.52,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "cane-flute",
+     "credit": "Composed for this atlas (data/scores/cane-flute.json).",
+     "from": 1900
+    }
+   ]
+  },
+  {
+   "id": "haudenosaunee",
+   "name": "Water drum and turtle rattle",
+   "summary": "The music of the Haudenosaunee and the peoples before them around the Finger Lakes, heard through two themes composed for this atlas in the styles of the longhouse: a Great Feather Dance of the Thanksgiving ceremonies, sung by two singers striking turtle-shell rattles on their bench, and a women's shuffle dance, the first of the social dances, over the small water drum and the cow-horn rattle. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: voices and rattles, the cedar flute, the water drum, the fiddles of the Mohawk communities, and a film orchestra.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      300,
+      500,
+      700,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    },
+    {
+     "voice": "flute"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.6,
+   "leaps": 0.2,
+   "ornament": 0.15,
+   "drone": 0.4,
+   "places": [],
+   "source": "kurath-iroquois",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.1
+     },
+     {
+      "id": "flute",
+      "sample": "shakuhachi",
+      "voice": "flute",
+      "role": "part",
+      "shelf": "flute"
+     },
+     {
+      "id": "waterdrum",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "w",
+      "shelf": "drum"
+     },
+     {
+      "id": "turtlerattle",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "T",
+      "shelf": "rattle"
+     },
+     {
+      "id": "rattles",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "r",
+      "shelf": "rattle"
+     },
+     {
+      "id": "fiddle",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "shelf": "violin"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8,
+      "shelf": "violin"
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75,
+      "shelf": "violin"
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7,
+      "shelf": "violin"
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55,
+      "shelf": "harp"
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7,
+      "shelf": "horn"
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8,
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8,
+      "shelf": "drum"
+     }
+    ],
+    "motifs": [
+     "B4:1 A4:1 G4:1 E4:2"
+    ]
+   },
+   "themes": [
+    {
+     "id": "feather-dance",
+     "name": "Great Feather Dance",
+     "mood": "ceremonial",
+     "about": "A dance composed for this atlas in the manner of the Great Feather Dance of the longhouse, sung by two singers striking turtle rattles on their bench: the Haudenosaunee's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/feather-dance.json)."
+    },
+    {
+     "id": "shuffle-dance",
+     "name": "Women's Shuffle Dance",
+     "mood": "folk",
+     "about": "A song composed for this atlas in the manner of the women's shuffle dance, the first of the longhouse's social dances: the Haudenosaunee's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/shuffle-dance.json)."
+    }
+   ],
+   "tunes": [
+    {
+     "id": "feather-early",
+     "name": "Great Feather Dance · Early kingdoms",
+     "about": "The Haudenosaunee's ceremonial theme in the woodlands of the Archaic: a singer and the turtle rattle, struck on the bench, a second voice joining.",
+     "midi": "midi/feather-early.mid",
+     "score": "feather-dance",
+     "beat": 0.34,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "feather-dance",
+     "credit": "Composed for this atlas (data/scores/feather-dance.json).",
+     "until": -500
+    },
+    {
+     "id": "feather-classical",
+     "name": "Great Feather Dance · Classical empires",
+     "about": "The Haudenosaunee's ceremonial theme among the first villages: two singers striking turtle rattles, the song opening with their tremolo.",
+     "midi": "midi/feather-classical.mid",
+     "score": "feather-dance",
+     "beat": 0.33,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "feather-dance",
+     "credit": "Composed for this atlas (data/scores/feather-dance.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "feather-caravans",
+     "name": "Great Feather Dance · Caravans and monsoons",
+     "about": "The Haudenosaunee's ceremonial theme as the Five Nations make the Great Law of Peace: two singers and their turtle rattles.",
+     "midi": "midi/feather-caravans.mid",
+     "score": "feather-dance",
+     "beat": 0.32,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "feather-dance",
+     "credit": "Composed for this atlas (data/scores/feather-dance.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "feather-crossings",
+     "name": "Great Feather Dance · Ocean crossings",
+     "about": "The Haudenosaunee's ceremonial theme in the centuries of the fur trade, unchanged in the longhouse: two singers and their turtle rattles.",
+     "midi": "midi/feather-crossings.mid",
+     "score": "feather-dance",
+     "beat": 0.31,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "feather-dance",
+     "credit": "Composed for this atlas (data/scores/feather-dance.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "feather-steam",
+     "name": "Great Feather Dance · Steam and telegraph",
+     "about": "The Haudenosaunee's ceremonial theme in the reserve years: the singers and turtle rattles, more voices joining.",
+     "midi": "midi/feather-steam.mid",
+     "score": "feather-dance",
+     "beat": 0.3,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "feather-dance",
+     "credit": "Composed for this atlas (data/scores/feather-dance.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "feather-shared",
+     "name": "Great Feather Dance · One shared map",
+     "about": "The Haudenosaunee's ceremonial theme for singers and a film orchestra: voices, then strings, then horns, over the turtle rattles.",
+     "midi": "midi/feather-shared.mid",
+     "score": "feather-dance",
+     "beat": 0.3,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "feather-dance",
+     "credit": "Composed for this atlas (data/scores/feather-dance.json).",
+     "from": 1900
+    },
+    {
+     "id": "shuffle-early",
+     "name": "Women's Shuffle Dance · Early kingdoms",
+     "about": "The Haudenosaunee's folk theme in the woodlands of the Archaic: singers over a bark rattle.",
+     "midi": "midi/shuffle-early.mid",
+     "score": "shuffle-dance",
+     "beat": 0.38,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shuffle-dance",
+     "credit": "Composed for this atlas (data/scores/shuffle-dance.json).",
+     "until": -500
+    },
+    {
+     "id": "shuffle-classical",
+     "name": "Women's Shuffle Dance · Classical empires",
+     "about": "The Haudenosaunee's folk theme among the first villages: the cedar flute, then singers, the water drum joining.",
+     "midi": "midi/shuffle-classical.mid",
+     "score": "shuffle-dance",
+     "beat": 0.37,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shuffle-dance",
+     "credit": "Composed for this atlas (data/scores/shuffle-dance.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "shuffle-caravans",
+     "name": "Women's Shuffle Dance · Caravans and monsoons",
+     "about": "The Haudenosaunee's folk theme in the longhouse towns: singers over the quick beat of the water drum and the rattle.",
+     "midi": "midi/shuffle-caravans.mid",
+     "score": "shuffle-dance",
+     "beat": 0.36,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shuffle-dance",
+     "credit": "Composed for this atlas (data/scores/shuffle-dance.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "shuffle-crossings",
+     "name": "Women's Shuffle Dance · Ocean crossings",
+     "about": "The Haudenosaunee's folk theme in the centuries of the fur trade: singers, then the cedar flute, over the water drum and cow-horn rattle.",
+     "midi": "midi/shuffle-crossings.mid",
+     "score": "shuffle-dance",
+     "beat": 0.35,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shuffle-dance",
+     "credit": "Composed for this atlas (data/scores/shuffle-dance.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "shuffle-steam",
+     "name": "Women's Shuffle Dance · Steam and telegraph",
+     "about": "The Haudenosaunee's folk theme in the Mohawk communities: a fiddle, then singers, over the water drum.",
+     "midi": "midi/shuffle-steam.mid",
+     "score": "shuffle-dance",
+     "beat": 0.34,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shuffle-dance",
+     "credit": "Composed for this atlas (data/scores/shuffle-dance.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "shuffle-shared",
+     "name": "Women's Shuffle Dance · One shared map",
+     "about": "The Haudenosaunee's folk theme for singers, strings and fiddle, over the water drum and horn rattle.",
+     "midi": "midi/shuffle-shared.mid",
+     "score": "shuffle-dance",
+     "beat": 0.34,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "shuffle-dance",
+     "credit": "Composed for this atlas (data/scores/shuffle-dance.json).",
+     "from": 1900
+    }
+   ]
+  },
+  {
+   "id": "inuit",
+   "name": "Drum and throat song",
+   "summary": "The music of the Inuit and the peoples of the Arctic before them, heard through two themes composed for this atlas in their styles, since none of their old songs can be dated: a drum-dance song to the qilaut, the wide frame drum struck on its rim, and a game song with the katajjaq, the women's throat game, pulsing beneath. While the years run one carries on, and when time stands still they take turns. Each is played as its age would: voices and the drum through the long Arctic millennia, the hymns and harmoniums of the Moravian missions in Labrador and Greenland and their brass bands, the fiddles and accordions the whalers brought north, and a film orchestra.",
+   "scales": [
+    {
+     "cents": [
+      0,
+      200,
+      500,
+      700,
+      1000
+     ]
+    }
+   ],
+   "voices": [
+    {
+     "voice": "voice"
+    }
+   ],
+   "pattern": "wander",
+   "beat": 0.6,
+   "leaps": 0.2,
+   "ornament": 0.15,
+   "drone": 0.4,
+   "places": [],
+   "source": "cavanagh-netsilik",
+   "confidence": "medium",
+   "ensemble": {
+    "members": [
+     {
+      "id": "voices",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 1.3
+     },
+     {
+      "id": "katajjaq",
+      "sample": "choir",
+      "voice": "voice",
+      "role": "part",
+      "gain": 0.9
+     },
+     {
+      "id": "qilaut",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D",
+      "shelf": "frame-drum"
+     },
+     {
+      "id": "harmonium",
+      "sample": "organ",
+      "voice": "keys",
+      "role": "part",
+      "gain": 0.8,
+      "shelf": "organ"
+     },
+     {
+      "id": "brass",
+      "sample": "trumpet",
+      "voice": "pipe",
+      "role": "part",
+      "gain": 0.8,
+      "shelf": "horn"
+     },
+     {
+      "id": "fiddle",
+      "sample": "fiddle",
+      "voice": "bow",
+      "role": "part",
+      "shelf": "violin"
+     },
+     {
+      "id": "accordion",
+      "sample": "accordion",
+      "voice": "reed",
+      "role": "part",
+      "shelf": "free-reed"
+     },
+     {
+      "id": "stomp",
+      "voice": "pluck",
+      "role": "part",
+      "drum": "D"
+     },
+     {
+      "id": "strings",
+      "sample": "strings",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.0,
+      "gain": 0.8,
+      "shelf": "violin"
+     },
+     {
+      "id": "cello",
+      "sample": "cello",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.35,
+      "gain": 0.75,
+      "shelf": "violin"
+     },
+     {
+      "id": "contrabass",
+      "sample": "contrabass",
+      "voice": "bow",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": 0.5,
+      "gain": 0.7,
+      "shelf": "violin"
+     },
+     {
+      "id": "harp",
+      "sample": "harp",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.45,
+      "gain": 0.55,
+      "shelf": "harp"
+     },
+     {
+      "id": "horn",
+      "sample": "horn",
+      "voice": "pipe",
+      "role": "part",
+      "modern": true,
+      "swell": true,
+      "seat": -0.25,
+      "gain": 0.7,
+      "shelf": "horn"
+     },
+     {
+      "id": "timpani",
+      "sample": "timpani",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": 0.15,
+      "gain": 0.8,
+      "shelf": "kettledrum"
+     },
+     {
+      "id": "taiko",
+      "sample": "taiko",
+      "voice": "pluck",
+      "role": "part",
+      "modern": true,
+      "seat": -0.1,
+      "gain": 0.8,
+      "shelf": "drum"
+     }
+    ],
+    "motifs": [
+     "A4:2 G4:1 E4:1 D4:4"
+    ]
+   },
+   "themes": [
+    {
+     "id": "qilaut-song",
+     "name": "Drum-Dance Song",
+     "mood": "ceremonial",
+     "about": "A song composed for this atlas in the manner of the Inuit drum-dance songs, sung while a dancer strikes the qilaut: the Inuit's ceremonial theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/qilaut-song.json)."
+    },
+    {
+     "id": "katajjaq",
+     "name": "Game Song",
+     "mood": "folk",
+     "about": "A song composed for this atlas in the manner of Inuit game songs, with the katajjaq throat game pulsing beneath: the Inuit's folk theme.",
+     "source": "atlas-composed",
+     "confidence": "low",
+     "credit": "Composed for this atlas (data/scores/katajjaq.json)."
+    }
+   ],
+   "tunes": [
+    {
+     "id": "qilaut-early",
+     "name": "Drum-Dance Song · Early kingdoms",
+     "about": "The Inuit's ceremonial theme among the first peoples of the Arctic: singers, then a second voice below, to the qilaut.",
+     "midi": "midi/qilaut-early.mid",
+     "score": "qilaut-song",
+     "beat": 0.46,
+     "meter": 5,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "qilaut-song",
+     "credit": "Composed for this atlas (data/scores/qilaut-song.json).",
+     "until": -500
+    },
+    {
+     "id": "qilaut-classical",
+     "name": "Drum-Dance Song · Classical empires",
+     "about": "The Inuit's ceremonial theme in the Dorset age: singers over the qilaut, its beat doubling in the last verse.",
+     "midi": "midi/qilaut-classical.mid",
+     "score": "qilaut-song",
+     "beat": 0.44,
+     "meter": 5,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "qilaut-song",
+     "credit": "Composed for this atlas (data/scores/qilaut-song.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "qilaut-caravans",
+     "name": "Drum-Dance Song · Caravans and monsoons",
+     "about": "The Inuit's ceremonial theme as the Thule people cross the Arctic from Alaska to Greenland: singers and the drum, the throat game joining.",
+     "midi": "midi/qilaut-caravans.mid",
+     "score": "qilaut-song",
+     "beat": 0.42,
+     "meter": 5,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "qilaut-song",
+     "credit": "Composed for this atlas (data/scores/qilaut-song.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "qilaut-crossings",
+     "name": "Drum-Dance Song · Ocean crossings",
+     "about": "The Inuit's ceremonial theme as the Moravian missions come to Labrador and Greenland: singers, then the harmonium, over the drum.",
+     "midi": "midi/qilaut-crossings.mid",
+     "score": "qilaut-song",
+     "beat": 0.42,
+     "meter": 5,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "qilaut-song",
+     "credit": "Composed for this atlas (data/scores/qilaut-song.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "qilaut-steam",
+     "name": "Drum-Dance Song · Steam and telegraph",
+     "about": "The Inuit's ceremonial theme with the mission brass bands: singers, then a cornet, the harmonium beneath, the drum still beating.",
+     "midi": "midi/qilaut-steam.mid",
+     "score": "qilaut-song",
+     "beat": 0.4,
+     "meter": 5,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "qilaut-song",
+     "credit": "Composed for this atlas (data/scores/qilaut-song.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "qilaut-shared",
+     "name": "Drum-Dance Song · One shared map",
+     "about": "The Inuit's ceremonial theme for singers and a film orchestra: voices, then strings, then horns, over the qilaut.",
+     "midi": "midi/qilaut-shared.mid",
+     "score": "qilaut-song",
+     "beat": 0.4,
+     "meter": 5,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "qilaut-song",
+     "credit": "Composed for this atlas (data/scores/qilaut-song.json).",
+     "from": 1900
+    },
+    {
+     "id": "katajjaq-early",
+     "name": "Game Song · Early kingdoms",
+     "about": "The Inuit's folk theme among the first peoples of the Arctic: a singer over the katajjaq's pulsing breath.",
+     "midi": "midi/katajjaq-early.mid",
+     "score": "katajjaq",
+     "beat": 0.3,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "katajjaq",
+     "credit": "Composed for this atlas (data/scores/katajjaq.json).",
+     "until": -500
+    },
+    {
+     "id": "katajjaq-classical",
+     "name": "Game Song · Classical empires",
+     "about": "The Inuit's folk theme in the Dorset age: the game song and the throat game, the drum joining.",
+     "midi": "midi/katajjaq-classical.mid",
+     "score": "katajjaq",
+     "beat": 0.29,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "katajjaq",
+     "credit": "Composed for this atlas (data/scores/katajjaq.json).",
+     "from": -500,
+     "until": 500
+    },
+    {
+     "id": "katajjaq-caravans",
+     "name": "Game Song · Caravans and monsoons",
+     "about": "The Inuit's folk theme in the Thule age: singers and the throat game, the drum beneath.",
+     "midi": "midi/katajjaq-caravans.mid",
+     "score": "katajjaq",
+     "beat": 0.28,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "katajjaq",
+     "credit": "Composed for this atlas (data/scores/katajjaq.json).",
+     "from": 500,
+     "until": 1400
+    },
+    {
+     "id": "katajjaq-crossings",
+     "name": "Game Song · Ocean crossings",
+     "about": "The Inuit's folk theme in the mission years: singers and the throat game, then the harmonium.",
+     "midi": "midi/katajjaq-crossings.mid",
+     "score": "katajjaq",
+     "beat": 0.27,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "katajjaq",
+     "credit": "Composed for this atlas (data/scores/katajjaq.json).",
+     "from": 1400,
+     "until": 1800
+    },
+    {
+     "id": "katajjaq-steam",
+     "name": "Game Song · Steam and telegraph",
+     "about": "The Inuit's folk theme as the whalers' fiddle and accordion come north: a dance for fiddle and accordion, feet stamping.",
+     "midi": "midi/katajjaq-steam.mid",
+     "score": "katajjaq",
+     "beat": 0.26,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "katajjaq",
+     "credit": "Composed for this atlas (data/scores/katajjaq.json).",
+     "from": 1800,
+     "until": 1900
+    },
+    {
+     "id": "katajjaq-shared",
+     "name": "Game Song · One shared map",
+     "about": "The Inuit's folk theme for accordion, fiddle and strings, the throat game returning beneath.",
+     "midi": "midi/katajjaq-shared.mid",
+     "score": "katajjaq",
+     "beat": 0.26,
+     "meter": 4,
+     "source": "atlas-composed",
+     "confidence": "low",
+     "theme": "katajjaq",
+     "credit": "Composed for this atlas (data/scores/katajjaq.json).",
+     "from": 1900
+    }
+   ]
+  },
+  {
    "id": "neutral",
    "name": "The atlas's own",
    "summary": "A plucked string over a drone, in a mode that belongs to no one viewpoint: for peoples whose music this atlas does not yet try to evoke, and for the sea.",
@@ -10631,11 +12162,6 @@
    "tradition": "maqam"
   },
   {
-   "vp": "maghreb",
-   "tradition": "maqam",
-   "from": 700
-  },
-  {
    "vp": "india",
    "tradition": "raga"
   },
@@ -10696,12 +12222,28 @@
    "tradition": "egypt"
   },
   {
+   "vp": "maghreb",
+   "tradition": "maghreb"
+  },
+  {
    "vp": "persia",
    "tradition": "persia"
   },
   {
    "vp": "turks",
    "tradition": "turks"
+  },
+  {
+   "vp": "mississippian",
+   "tradition": "mississippian"
+  },
+  {
+   "vp": "haudenosaunee",
+   "tradition": "haudenosaunee"
+  },
+  {
+   "vp": "inuit",
+   "tradition": "inuit"
   }
  ],
  "lands": [
@@ -10952,6 +12494,33 @@
     "central-america"
    ],
    "vp": "maya"
+  },
+  {
+   "regions": [
+    "mississippi",
+    "woodlands-southeast",
+    "ohio-valley"
+   ],
+   "vp": "mississippian"
+  },
+  {
+   "regions": [
+    "woodlands-northeast",
+    "great-lakes"
+   ],
+   "vp": "haudenosaunee"
+  },
+  {
+   "regions": [
+    "arctic-canada",
+    "alaska-arctic",
+    "greenland",
+    "greenland-northwest",
+    "greenland-north",
+    "greenland-northeast",
+    "greenland-southeast"
+   ],
+   "vp": "inuit"
   }
  ]
 }

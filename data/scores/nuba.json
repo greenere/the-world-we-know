@@ -1,0 +1,10 @@
+{
+ "id": "nuba",
+ "name": "A nūba of al-Andalus",
+ "source": "atlas-composed",
+ "meter": 6,
+ "pickup": 0,
+ "transpose": 0,
+ "about": "Composed for this atlas in the manner of the Andalusi nūba of Fez, Tlemcen and Tunis, the suites brought from Córdoba and Granada: a measured melody in a minor mode, in the slow six of the basīṭ movement.",
+ "notes": "D4:2 F4:1 G4:2 A4:1 | Bb4:2 A4:1 G4:3 | A4:1 G4:1 F4:1 G4:2 E4:1 | D4:6 / A4:2 Bb4:1 C5:2 D5:1 | C5:2 Bb4:1 A4:3 | G4:1 A4:1 Bb4:1 A4:2 G4:1 | A4:6 / D5:2 C5:1 Bb4:2 A4:1 | G4:2 A4:1 Bb4:2 G4:1 | A4:1 G4:1 F4:1 E4:2 F4:1 | G4:3 A4:3 / A4:2 G4:1 F4:2 E4:1 | F4:1 G4:1 A4:1 G4:2 F4:1 | E4:1 F4:1 E4:1 D4:2 C#4:1 | D4:6 /"
+}
