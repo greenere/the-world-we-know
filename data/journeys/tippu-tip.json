@@ -1,0 +1,30 @@
+{
+  "id": "tippu-tip",
+  "name": "Tippu Tip across Africa",
+  "traveler": "Hamed bin Muhammed el-Murjebi, called Tippu Tip",
+  "years": "1870–1890",
+  "kind": "merchant",
+  "viewpoint": "swahili",
+  "summary": "A Zanzibari trader in ivory and slaves builds a state on the upper Congo. He escorts Stanley down the Lualaba in 1876, and in 1887 goes to the Congo the other way, round the Cape and up the river, as the Free State's governor at Stanley Falls. His caravans make him one of very few people of his time to cross Africa in both directions.",
+  "source": "tippu-tip",
+  "confidence": "medium",
+  "stops": [
+    {"year": 1870, "place": "Zanzibar", "lat": -6.16, "lon": 39.19, "note": "He sets out with a large caravan for the interior.", "city": "zanzibar"},
+    {"year": 1870, "place": "Bagamoyo", "lat": -6.44, "lon": 38.9, "note": "The mainland port where the caravan road begins.", "by": "sea"},
+    {"year": 1870, "place": "Tabora", "lat": -5.02, "lon": 32.8, "note": "The Arab and Swahili trading town of Unyanyembe.", "by": "land"},
+    {"year": 1871, "place": "Ujiji", "lat": -4.91, "lon": 29.68, "note": "Across Lake Tanganyika into the Congo basin.", "by": "land"},
+    {"year": 1874, "place": "Kasongo", "lat": -4.45, "lon": 26.66, "note": "His capital in Manyema, ruling a wide country by force.", "by": "land"},
+    {"year": 1876, "place": "Nyangwe", "lat": -4.22, "lon": 26.18, "note": "He agrees to escort Stanley down the Lualaba.", "by": "land", "date": "October 1876"},
+    {"year": 1882, "place": "Zanzibar", "lat": -6.16, "lon": 39.19, "note": "Back on the coast after twelve years, rich in ivory.", "city": "zanzibar", "by": "land"},
+    {"year": 1887, "place": "Cape Town", "lat": -33.92, "lon": 18.42, "note": "He sails with Stanley's expedition round Africa.", "city": "cape-town", "by": "sea"},
+    {"year": 1887, "place": "Banana", "lat": -6.01, "lon": 12.4, "note": "The mouth of the Congo.", "by": "sea"},
+    {"year": 1887, "place": "Stanley Falls", "lat": 0.52, "lon": 25.2, "note": "Up the river to take office as the Congo Free State's governor.", "by": "river"},
+    {"year": 1890, "place": "Zanzibar", "lat": -6.16, "lon": 39.19, "note": "Overland back to the coast, his Congo state soon to fall.", "city": "zanzibar", "by": "land"}
+  ],
+  "informs": [
+    {"region": "congo-east", "level": 4, "homeKnows": 1882, "confidence": "medium", "note": "Manyema and the Lualaba"},
+    {"region": "congo", "level": 3, "homeKnows": 1890, "confidence": "medium"},
+    {"region": "congo-west", "level": 3, "homeKnows": 1890, "confidence": "medium", "note": "The river from the sea"},
+    {"region": "cape", "level": 3, "homeKnows": 1890, "confidence": "medium"}
+  ]
+}

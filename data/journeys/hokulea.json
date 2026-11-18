@@ -1,0 +1,19 @@
+{
+  "id": "hokulea",
+  "name": "Hōkūleʻa sails to Tahiti",
+  "traveler": "The crew of the Hōkūleʻa, navigated by Mau Piailug",
+  "years": "1976",
+  "kind": "group voyage",
+  "viewpoint": "polynesia",
+  "summary": "A double-hulled voyaging canoe sails 4,000 kilometres from Hawaiʻi to Tahiti with no instruments, steered by the stars, swells and birds by a master navigator from Satawal in Micronesia. It answers those who said Polynesians could only have reached their islands by drifting, and starts a revival of voyaging across the Pacific.",
+  "source": "finney",
+  "confidence": "high",
+  "lifts": false,
+  "stops": [
+    {"year": 1976, "place": "Honolua Bay", "lat": 20.98, "lon": -156.64, "note": "The canoe leaves Maui on 1 May.", "date": "1 May 1976"},
+    {"year": 1976, "place": "The doldrums", "lat": 5.0, "lon": -150.0, "note": "Through the calms near the equator, where the stars are the only guide.", "by": "sea", "confidence": "medium"},
+    {"year": 1976, "place": "Mataiva", "lat": -14.88, "lon": -148.7, "note": "Terns lead them to the first atoll of the Tuamotus.", "by": "sea"},
+    {"year": 1976, "place": "Papeete", "lat": -17.53, "lon": -149.57, "note": "Seventeen thousand people meet the canoe on 4 June.", "city": "papeete", "by": "sea", "date": "4 June 1976"}
+  ],
+  "informs": []
+}

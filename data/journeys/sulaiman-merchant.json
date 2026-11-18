@@ -1,0 +1,31 @@
+{
+  "id": "sulaiman-merchant",
+  "name": "The merchants' route to China",
+  "traveler": "Sulaiman the merchant and the Gulf traders of the Accounts of China and India",
+  "years": "c. 851",
+  "kind": "merchant",
+  "viewpoint": "persia",
+  "summary": "An anonymous book of 851 sets down what merchants from Siraf knew of the sea road to China: a month to Quilon, a month to the Strait of Malacca, a month more to Khanfu (Guangzhou), where a Muslim judge settles disputes among the foreign traders. It is the oldest Arabic account of China, and of tea.",
+  "source": "akhbar-sin",
+  "confidence": "medium",
+  "stops": [
+    {"year": 850, "place": "Siraf", "lat": 27.67, "lon": 52.34, "note": "The great port of the Gulf, where cargoes are loaded for China.", "city": "siraf"},
+    {"year": 850, "place": "Muscat", "lat": 23.59, "lon": 58.41, "note": "The ships take on water before the open sea.", "city": "muscat", "by": "sea"},
+    {"year": 850, "place": "Kulam Mali", "lat": 8.88, "lon": 76.6, "note": "A month's sail to Quilon on the Malabar coast, where Chinese ships pay a toll.", "by": "sea"},
+    {"waypoint": true, "lat": 7.6, "lon": 77.4},
+    {"waypoint": true, "lat": 5.7, "lon": 80.6},
+    {"year": 850, "place": "Lanjabalus", "lat": 8.0, "lon": 93.5, "note": "The Nicobar Islands, where islanders row out to trade ambergris for iron.", "by": "sea"},
+    {"year": 851, "place": "Kalah", "lat": 5.9, "lon": 100.3, "note": "Kalah Bar on the Malay coast, a market for tin.", "by": "sea"},
+    {"waypoint": true, "lat": 3.4, "lon": 100.4},
+    {"waypoint": true, "lat": 1.2, "lon": 103.8},
+    {"waypoint": true, "lat": 2.8, "lon": 104.4},
+    {"year": 851, "place": "Sanf", "lat": 13.8, "lon": 109.25, "note": "Champa, for aloeswood.", "by": "sea"},
+    {"year": 851, "place": "Khanfu", "lat": 23.13, "lon": 113.26, "note": "Guangzhou, where the emperor's officials take a third of the cargo, and tea is drunk with hot water.", "city": "guangzhou", "by": "sea"}
+  ],
+  "informs": [
+    {"region": "lingnan", "level": 3, "homeKnows": 851, "confidence": "medium", "note": "Khanfu and its foreign quarter"},
+    {"region": "malay-peninsula", "level": 3, "homeKnows": 851, "confidence": "medium"},
+    {"region": "south-china-sea", "level": 3, "homeKnows": 851, "confidence": "medium"},
+    {"region": "bay-of-bengal", "level": 3, "homeKnows": 851, "confidence": "medium"}
+  ]
+}

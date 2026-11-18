@@ -1,0 +1,27 @@
+{
+  "id": "ricci",
+  "name": "Matteo Ricci's road to Beijing",
+  "traveler": "Matteo Ricci, Jesuit",
+  "years": "1578–1610",
+  "kind": "traveler",
+  "viewpoint": "rome",
+  "summary": "An Italian Jesuit learns Chinese, dresses first as a Buddhist monk and then as a Confucian scholar, and works his way north for eighteen years until the Wanli emperor lets him stay in Beijing. His world map shows China the continents; his journals, published after his death, show Europe Ming China from within.",
+  "source": "trigault-ricci",
+  "confidence": "high",
+  "stops": [
+    {"year": 1578, "place": "Lisbon", "lat": 38.71, "lon": -9.14, "note": "He sails for the Indies in March.", "city": "lisbon"},
+    {"year": 1578, "place": "Goa", "lat": 15.5, "lon": 73.83, "note": "Four years teaching and studying in Portuguese India.", "city": "goa", "by": "sea"},
+    {"year": 1582, "place": "Macau", "lat": 22.2, "lon": 113.55, "note": "He begins to learn Chinese.", "city": "macau", "by": "sea"},
+    {"year": 1583, "place": "Zhaoqing", "lat": 23.05, "lon": 112.47, "note": "The first Jesuit house inside China. A first world map is printed here.", "by": "river"},
+    {"year": 1589, "place": "Shaozhou", "lat": 24.8, "lon": 113.6, "note": "Expelled from Zhaoqing, he moves north and puts on the robes of a scholar.", "by": "river"},
+    {"year": 1595, "place": "Nanchang", "lat": 28.68, "lon": 115.86, "note": "He writes On Friendship in Chinese.", "by": "land"},
+    {"year": 1599, "place": "Nanjing", "lat": 32.06, "lon": 118.8, "note": "He meets Xu Guangqi, who will become his closest Chinese collaborator.", "city": "nanjing", "by": "river", "confidence": "medium"},
+    {"year": 1601, "place": "Beijing", "lat": 39.9, "lon": 116.4, "note": "He presents clocks to the Wanli emperor and is allowed to live in the capital until his death in 1610.", "city": "beijing", "by": "river", "date": "24 January 1601"}
+  ],
+  "informs": [
+    {"region": "china-south", "level": 4, "homeKnows": 1615, "confidence": "high", "note": "Ricci and Trigault's account"},
+    {"region": "china-north", "level": 4, "homeKnows": 1615, "confidence": "high"},
+    {"region": "jiangnan", "level": 4, "homeKnows": 1615, "confidence": "high"},
+    {"region": "central-plain", "level": 4, "homeKnows": 1615, "confidence": "high"}
+  ]
+}

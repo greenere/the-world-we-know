@@ -1,0 +1,25 @@
+{
+  "id": "tahtawi",
+  "name": "Rifa'a al-Tahtawi in Paris",
+  "traveler": "Rifa'a al-Tahtawi, imam of the Egyptian student mission",
+  "years": "1826–1831",
+  "kind": "traveler",
+  "viewpoint": "egypt",
+  "summary": "Muhammad Ali sends forty-four young Egyptians to study in France, with a young Azhar scholar as their imam. Tahtawi learns French, reads Montesquieu and Rousseau, watches the July Revolution of 1830, and comes home to write the first Arabic description of a modern European country.",
+  "source": "tahtawi",
+  "confidence": "high",
+  "stops": [
+    {"year": 1826, "place": "Cairo", "lat": 30.05, "lon": 31.25, "note": "The student mission leaves the capital.", "city": "cairo"},
+    {"year": 1826, "place": "Alexandria", "lat": 31.2, "lon": 29.92, "note": "They board the French ship La Truite.", "city": "alexandria", "by": "river", "date": "13 April 1826"},
+    {"year": 1826, "place": "Marseille", "lat": 43.3, "lon": 5.37, "note": "Quarantine, then his first sight of a French city.", "by": "sea"},
+    {"year": 1826, "place": "Paris", "lat": 48.86, "lon": 2.35, "note": "Five years of study. He describes the city's streets, newspapers, theatres and the charter that limits the king.", "city": "paris", "by": "land"},
+    {"year": 1830, "place": "Paris", "lat": 48.86, "lon": 2.35, "note": "He watches the July Revolution drive out Charles X.", "city": "paris", "date": "July 1830"},
+    {"year": 1831, "place": "Marseille", "lat": 43.3, "lon": 5.37, "note": "South to take ship for home.", "by": "land"},
+    {"year": 1831, "place": "Alexandria", "lat": 31.2, "lon": 29.92, "note": "Home, to found a school of translation.", "city": "alexandria", "by": "sea"},
+    {"year": 1831, "place": "Cairo", "lat": 30.05, "lon": 31.25, "note": "His book appears in 1834.", "city": "cairo", "by": "river"}
+  ],
+  "informs": [
+    {"region": "gaul", "level": 4, "homeKnows": 1834, "confidence": "high", "note": "Paris described in Arabic"},
+    {"region": "med-west", "level": 3, "homeKnows": 1834, "confidence": "high"}
+  ]
+}

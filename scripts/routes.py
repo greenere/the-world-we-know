@@ -38,10 +38,13 @@ from shapely.ops import unary_union
 RES = 4
 ETOPO_URL = "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO5/TOPO/ETOPO5/ETOPO5.DAT"
 # Bump VERSION when the routing changes (it keys the route cache); GRID_VERSION only when the grid does.
-VERSION = "routes-10"
+VERSION = "routes-11"
 GRID_VERSION = "routes-4"
 
 ARCTIC_ICE_LAT = 69.0  # sea north of this is pack ice for routing (the Bering Strait, at 66°, stays open)
+# …except where the Gulf Stream keeps it open all year: the Norwegian coast, the North Cape and the
+# southern Barents Sea to the mouth of the White Sea.
+ICE_FREE = (-30.0, 50.0, 72.5)  # west and east longitude, and the latitude it stays open to
 SEA_KINDS = {"sailor", "fleet", "merchant route", "group voyage", "deep dive"}
 DIRECT_KINDS = {"spaceflight", "mountaineering"}
 MODES = ("sea", "land", "river", "direct")
@@ -303,7 +306,9 @@ class Router:
         if mode == "sea":
             # The Arctic pack: no ship got through the Northwest or Northeast passage before 1878–1906, and
             # none of these voyages tried, so the high Arctic is as closed as land.
-            ice = self.lat > ARCTIC_ICE_LAT
+            w, e, top = ICE_FREE
+            open_north = (self.lon > w) & (self.lon < e) & (self.lat < top)
+            ice = (self.lat > ARCTIC_ICE_LAT) & ~open_north
             cost = np.where(land | ice, 2000.0, np.where(self.shore, 1.3, 1.0))
         else:
             altitude = 1 + np.maximum(0, self.elev - 1800) / 1000 * 0.6

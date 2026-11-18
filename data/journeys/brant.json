@@ -1,0 +1,28 @@
+{
+  "id": "brant",
+  "name": "Joseph Brant in London",
+  "traveler": "Thayendanegea (Joseph Brant), Mohawk war leader",
+  "years": "1775–1776",
+  "kind": "envoy",
+  "viewpoint": "haudenosaunee",
+  "summary": "As the American Revolution begins, a Mohawk leader sails to London to ask whether the Crown will protect Mohawk lands. He meets George III, is painted by Romney and sits for Boswell, and returns to bring most of the Six Nations into the war on the British side.",
+  "source": "kelsay-brant",
+  "confidence": "high",
+  "stops": [
+    {"year": 1775, "place": "Montreal", "lat": 45.5, "lon": -73.57, "note": "With the Indian superintendent Guy Johnson, after the rebels take the Mohawk valley.", "city": "montreal"},
+    {"year": 1775, "place": "Quebec", "lat": 46.81, "lon": -71.21, "note": "Down the St Lawrence.", "city": "quebec", "by": "river"},
+    {"waypoint": true, "lat": 49.9, "lon": -5.6},
+    {"waypoint": true, "lat": 50.5, "lon": 0.5},
+    {"waypoint": true, "lat": 51.45, "lon": 1.4},
+    {"year": 1775, "place": "London", "lat": 51.51, "lon": -0.13, "note": "Received at court; he lodges at the Swan with Two Necks and is painted by George Romney.", "city": "london", "by": "sea", "date": "December 1775"},
+    {"waypoint": true, "lat": 51.45, "lon": 1.4},
+    {"waypoint": true, "lat": 50.5, "lon": 0.5},
+    {"waypoint": true, "lat": 49.9, "lon": -5.6},
+    {"year": 1776, "place": "New York", "lat": 40.7, "lon": -74.0, "note": "Back with General Howe's army on Staten Island.", "city": "new-york", "by": "sea", "date": "July 1776"},
+    {"year": 1776, "place": "Oquaga", "lat": 42.05, "lon": -75.65, "note": "Through the rebel lines to the Mohawk and Oneida towns, to raise them for the king.", "by": "land"}
+  ],
+  "informs": [
+    {"region": "britain", "level": 3, "homeKnows": 1776, "confidence": "high", "note": "London and the king"},
+    {"region": "north-atlantic-west", "level": 3, "homeKnows": 1776, "confidence": "medium"}
+  ]
+}

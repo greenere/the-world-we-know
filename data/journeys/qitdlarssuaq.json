@@ -1,0 +1,23 @@
+{
+  "id": "qitdlarssuaq",
+  "name": "Qitdlarssuaq's migration",
+  "traveler": "Qitdlarssuaq and about forty Inuit of Baffin Island",
+  "years": "1858–1863",
+  "kind": "group voyage",
+  "viewpoint": "inuit",
+  "summary": "A shaman leads a band of Baffin Island Inuit north by sledge across Lancaster Sound and Ellesmere Island to Greenland, guided by a vision and by reports from a British ship of people living there. The Polar Inuit they find had lost the kayak and the bow; the newcomers bring them back.",
+  "source": "mary-rousseliere",
+  "confidence": "medium",
+  "lifts": false,
+  "stops": [
+    {"year": 1858, "place": "Cumberland Sound", "lat": 65.9, "lon": -66.6, "note": "After a killing feud, Qitdlarssuaq and his people leave the south of Baffin Island.", "confidence": "low"},
+    {"year": 1859, "place": "Pond Inlet", "lat": 72.7, "lon": -77.96, "note": "North along Baffin Island, where they hear from whalers of people across the sea.", "by": "land"},
+    {"year": 1860, "place": "Devon Island", "lat": 74.6, "lon": -82.0, "note": "Across Lancaster Sound on the ice.", "by": "direct"},
+    {"year": 1862, "place": "Ellesmere Island", "lat": 78.5, "lon": -75.0, "note": "Two winters on the way; some turn back.", "by": "direct"},
+    {"year": 1863, "place": "Etah", "lat": 78.32, "lon": -72.63, "note": "Across Smith Sound to the Polar Inuit, who learn again to build kayaks and hunt with the bow.", "by": "direct"}
+  ],
+  "informs": [
+    {"region": "sverdrup-islands", "level": 2, "homeKnows": 1863, "confidence": "low"},
+    {"region": "greenland-northwest", "level": 4, "homeKnows": 1863, "confidence": "medium", "note": "The two peoples meet"}
+  ]
+}

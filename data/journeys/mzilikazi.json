@@ -1,0 +1,23 @@
+{
+  "id": "mzilikazi",
+  "name": "Mzilikazi's march north",
+  "traveler": "Mzilikazi and the Ndebele",
+  "years": "1821–1840",
+  "kind": "military",
+  "viewpoint": "zimbabwe",
+  "summary": "A commander who defies Shaka leads his followers out of Zululand. Over twenty years the Ndebele move across the highveld, conquering and absorbing other peoples, until wars with the Griqua, the Zulu and the Voortrekkers drive them north across the Limpopo to found a kingdom in what is now western Zimbabwe.",
+  "source": "rasmussen-mzilikazi",
+  "confidence": "medium",
+  "lifts": false,
+  "stops": [
+    {"year": 1821, "place": "Zululand", "lat": -27.7, "lon": 31.6, "note": "Mzilikazi keeps cattle taken in a raid and breaks with Shaka."},
+    {"year": 1823, "place": "The Olifants river", "lat": -25.4, "lon": 29.4, "note": "Onto the highveld, where he settles at ekuPumuleni.", "by": "land"},
+    {"year": 1827, "place": "Mhlahlandlela", "lat": -25.65, "lon": 28.2, "note": "His capital on the Apies river, near where Pretoria will stand.", "by": "land"},
+    {"year": 1832, "place": "Mosega", "lat": -25.55, "lon": 26.1, "note": "West, away from Zulu raids.", "by": "land"},
+    {"year": 1838, "place": "The Limpopo", "lat": -22.2, "lon": 28.9, "note": "Defeated by the Voortrekkers in 1837, the Ndebele cross the river in two columns.", "by": "land"},
+    {"year": 1840, "place": "Matabeleland", "lat": -20.15, "lon": 28.58, "note": "The two columns reunite and found a new kingdom, with its capital near later Bulawayo.", "by": "land"}
+  ],
+  "informs": [
+    {"region": "southern-africa", "level": 4, "homeKnows": 1840, "confidence": "medium", "note": "The highveld crossed and ruled"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "nasir-khusraw",
+  "name": "Nasir Khusraw's seven-year journey",
+  "traveler": "Nasir Khusraw, a tax official of Merv",
+  "years": "1046–1052",
+  "kind": "pilgrim",
+  "viewpoint": "persia",
+  "summary": "After a dream tells him to give up wine, a Persian civil servant sets out for Mecca and is gone seven years. He describes Jerusalem before the Crusades, Fatimid Cairo at its richest, and the Qarmatian republic of al-Hasa in eastern Arabia, then returns by way of Basra and Isfahan.",
+  "source": "nasir-khusraw",
+  "confidence": "high",
+  "stops": [
+    {"year": 1046, "place": "Merv", "lat": 37.66, "lon": 62.19, "note": "He resigns his post and sets out, with his brother and a slave.", "city": "merv"},
+    {"year": 1046, "place": "Nishapur", "lat": 36.21, "lon": 58.8, "note": "West through Khorasan.", "city": "nishapur", "by": "land"},
+    {"year": 1046, "place": "Tabriz", "lat": 38.08, "lon": 46.29, "note": "He meets the poet Qatran and explains the hard words in his verses.", "city": "tabriz", "by": "land"},
+    {"year": 1046, "place": "Amid", "lat": 37.91, "lon": 40.23, "note": "Its black basalt walls, which he measures.", "by": "land"},
+    {"year": 1047, "place": "Aleppo", "lat": 36.2, "lon": 37.16, "note": "Into Syria, where tolls are paid on goods from Byzantium, Egypt and Iraq.", "city": "aleppo", "by": "land"},
+    {"year": 1047, "place": "Tripoli", "lat": 34.43, "lon": 35.84, "note": "Down the coast through Tripoli, Beirut and Acre.", "by": "land"},
+    {"year": 1047, "place": "Jerusalem", "lat": 31.78, "lon": 35.23, "note": "He describes the Dome of the Rock and the city fifty years before the Crusaders take it.", "city": "jerusalem", "by": "land"},
+    {"year": 1047, "place": "Mecca", "lat": 21.42, "lon": 39.83, "note": "The first of four pilgrimages.", "city": "mecca", "by": "land"},
+    {"year": 1047, "place": "Cairo", "lat": 30.05, "lon": 31.26, "note": "Three years in the Fatimid capital: twenty thousand shops, the caliph's palaces and the opening of the canal at the Nile flood.", "city": "cairo", "by": "land", "date": "August 1047"},
+    {"year": 1050, "place": "Aswan", "lat": 24.09, "lon": 32.9, "note": "Up the Nile to the edge of Nubia.", "by": "river"},
+    {"year": 1050, "place": "Aydhab", "lat": 22.33, "lon": 36.49, "note": "Across the desert to the Red Sea port.", "by": "land"},
+    {"year": 1050, "place": "Mecca", "lat": 21.42, "lon": 39.83, "note": "His last pilgrimage, then east across Arabia.", "city": "mecca", "by": "sea"},
+    {"year": 1051, "place": "Lahsa", "lat": 25.38, "lon": 49.59, "note": "The Qarmatian state of al-Hasa, ruled by a council, where no one pays taxes and loans carry no interest.", "by": "land"},
+    {"year": 1051, "place": "Basra", "lat": 30.51, "lon": 47.81, "note": "He arrives in rags and is turned out of the bathhouse; a fresh suit wins him a welcome.", "city": "basra", "by": "land"},
+    {"year": 1052, "place": "Isfahan", "lat": 32.65, "lon": 51.67, "note": "The finest city he has seen in Persian lands.", "city": "isfahan", "by": "land"},
+    {"year": 1052, "place": "Balkh", "lat": 36.76, "lon": 66.9, "note": "Home, seven years after leaving.", "city": "balkh", "by": "land"}
+  ],
+  "informs": [
+    {"region": "egypt", "level": 4, "homeKnows": 1052, "confidence": "high", "note": "Fatimid Cairo from three years inside it"},
+    {"region": "arabia-interior", "level": 3, "homeKnows": 1052, "confidence": "high", "note": "The Qarmatians of al-Hasa"},
+    {"region": "levant", "level": 4, "homeKnows": 1052, "confidence": "high"},
+    {"region": "upper-nile", "level": 2, "homeKnows": 1052, "confidence": "medium"},
+    {"region": "red-sea", "level": 3, "homeKnows": 1052, "confidence": "high"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "hijra-abyssinia",
+  "name": "The migration to Abyssinia",
+  "traveler": "Ja'far ibn Abi Talib and the first Muslims to leave Mecca",
+  "years": "615–628",
+  "kind": "traveler",
+  "viewpoint": "arabia",
+  "summary": "Persecuted in Mecca, a small group of the Prophet's followers cross the Red Sea to the Christian kingdom of Aksum. The Negus hears them recite the chapter of Mary and refuses to hand them back. Some return within a few years; the last come home to Medina in 628.",
+  "source": "ibn-ishaq",
+  "confidence": "medium",
+  "stops": [
+    {"year": 615, "place": "Mecca", "lat": 21.42, "lon": 39.83, "note": "About a dozen men and women leave in secret; a larger party follows.", "city": "mecca"},
+    {"year": 615, "place": "Shu'ayba", "lat": 20.85, "lon": 39.4, "note": "Two merchant ships take them for half a dinar each.", "by": "land"},
+    {"year": 615, "place": "Adulis", "lat": 15.27, "lon": 39.66, "note": "Across the Red Sea to Aksum's port.", "city": "adulis", "by": "sea", "confidence": "low"},
+    {"year": 615, "place": "Aksum", "lat": 14.13, "lon": 38.72, "note": "The Negus refuses the Quraysh envoys who ask for them back, and gives them his protection.", "city": "aksum", "by": "land"},
+    {"year": 628, "place": "Adulis", "lat": 15.27, "lon": 39.66, "note": "Thirteen years later, the last of them sail home.", "city": "adulis", "by": "land", "confidence": "low"},
+    {"year": 628, "place": "Al-Jar", "lat": 23.67, "lon": 38.55, "note": "Medina's port on the Red Sea.", "by": "sea", "confidence": "low"},
+    {"year": 628, "place": "Medina", "lat": 24.47, "lon": 39.61, "note": "Ja'far reaches the Prophet as Khaybar falls.", "city": "medina", "by": "land"}
+  ],
+  "informs": [
+    {"region": "ethiopia", "level": 4, "homeKnows": 617, "confidence": "medium", "note": "Aksum and its Christian king, from the first to return"},
+    {"region": "horn", "level": 2, "homeKnows": 617, "confidence": "low"}
+  ]
+}

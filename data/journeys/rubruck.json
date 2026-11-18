@@ -1,0 +1,35 @@
+{
+  "id": "rubruck",
+  "name": "William of Rubruck's mission to the Mongols",
+  "traveler": "Friar William of Rubruck, with letters from Louis IX",
+  "years": "1253–1255",
+  "kind": "envoy",
+  "viewpoint": "france",
+  "summary": "A Flemish friar carries a letter from the king of France to the Mongols. He crosses the steppe to the court of the Great Khan Möngke at Karakorum, where he debates Buddhists and Muslims before the khan, and writes the most exact account of the Mongols any European brought home: Cathay is the land of the Seres, and the Caspian is a lake, not a gulf of the ocean.",
+  "source": "carpini-rubruck",
+  "confidence": "high",
+  "stops": [
+    {"year": 1253, "place": "Constantinople", "lat": 41.01, "lon": 28.98, "note": "He sets out in May with another friar, an interpreter and a slave boy.", "city": "constantinople"},
+    {"year": 1253, "place": "Soldaia", "lat": 44.85, "lon": 34.97, "note": "Across the Black Sea to the Crimea, and onto ox-carts.", "by": "sea"},
+    {"year": 1253, "place": "Batu's camp", "lat": 48.5, "lon": 45.0, "note": "Batu, who rules the western steppe, sends him on to the Great Khan.", "by": "land", "confidence": "medium"},
+    {"year": 1253, "place": "Talas", "lat": 42.9, "lon": 71.37, "note": "East for months across the steppe, in winter cold.", "city": "taraz", "by": "land"},
+    {"year": 1253, "place": "Qayaliq", "lat": 45.1, "lon": 80.2, "note": "A Muslim town with Nestorian Christians and Buddhist temples.", "by": "land", "confidence": "medium"},
+    {"year": 1253, "place": "Möngke's camp", "lat": 47.0, "lon": 102.8, "note": "The Great Khan receives him at his winter camp.", "by": "land", "date": "27 December 1253", "confidence": "medium"},
+    {"year": 1254, "place": "Karakorum", "lat": 47.2, "lon": 102.82, "note": "He describes the city, its silver fountain-tree, and a debate of faiths before the khan.", "city": "karakorum", "by": "land"},
+    {"waypoint": true, "lat": 47.3, "lon": 88.0},
+    {"waypoint": true, "lat": 46.6, "lon": 75.0},
+    {"waypoint": true, "lat": 47.5, "lon": 62.0},
+    {"year": 1254, "place": "Batu's camp", "lat": 48.5, "lon": 45.0, "note": "Back west with a letter from Möngke to Louis.", "by": "land", "confidence": "medium"},
+    {"year": 1254, "place": "Derbent", "lat": 42.06, "lon": 48.29, "note": "South through the Iron Gate of the Caucasus.", "city": "derbent", "by": "land"},
+    {"year": 1255, "place": "Konya", "lat": 37.87, "lon": 32.48, "note": "Across Armenia to the Seljuk sultan.", "city": "konya", "by": "land"},
+    {"year": 1255, "place": "Ayas", "lat": 36.77, "lon": 35.79, "note": "Through Cilicia to the Armenian port.", "by": "land"},
+    {"year": 1255, "place": "Tripoli", "lat": 34.43, "lon": 35.84, "note": "By sea; his superiors keep him in Acre and he writes his report to the king.", "by": "sea", "date": "August 1255"}
+  ],
+  "informs": [
+    {"region": "mongolia", "level": 3, "homeKnows": 1256, "confidence": "high", "note": "Karakorum and the Great Khan's court"},
+    {"region": "kazakh-steppe", "level": 3, "homeKnows": 1256, "confidence": "high"},
+    {"region": "caspian", "level": 3, "homeKnows": 1256, "confidence": "high", "note": "A lake, not a gulf of the ocean"},
+    {"region": "lower-volga", "level": 3, "homeKnows": 1256, "confidence": "high"},
+    {"region": "zhetysu", "level": 3, "homeKnows": 1256, "confidence": "medium"}
+  ]
+}
