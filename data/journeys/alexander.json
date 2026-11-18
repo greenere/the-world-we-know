@@ -29,8 +29,9 @@
     {"waypoint": true, "lat": 29.5, "lon": 71.0},
     {"year": -325, "place": "Patala", "lat": 25.4, "lon": 68.4, "note": "The Indus delta; first sight of the Ocean's tides."},
     {"year": -325, "place": "Gedrosian desert", "lat": 25.8, "lon": 62.5, "note": "A disastrous march through the desert; thousands die."},
-    {"year": -325, "place": "Carmania", "lat": 27.5, "lon": 57.8, "note": "Out of the desert; Nearchus, sailing from the Indus, finds Alexander here.", "confidence": "medium"},
-    {"year": -324, "place": "Susa", "lat": 32.19, "lon": 48.26, "note": "Mass weddings of Macedonians and Persians.", "city": "susa"},
+    {"year": -325, "place": "Carmania", "lat": 27.5, "lon": 57.8, "note": "Out of the desert; Nearchus, sailing from the Indus, finds Alexander here.", "confidence": "medium", "date": "December -325"},
+    {"year": -324, "place": "Bridge on the Pasitigris", "lat": 31.3, "lon": 48.67, "note": "Nearchus' fleet comes up the river to meet the army on its way to Susa.", "date": "February -324"},
+    {"year": -324, "place": "Susa", "lat": 32.19, "lon": 48.26, "note": "Mass weddings of Macedonians and Persians.", "city": "susa", "date": "March -324"},
     {"year": -323, "place": "Babylon", "lat": 32.54, "lon": 44.42, "note": "Alexander dies, aged 32, planning a voyage around Arabia.", "city": "babylon"}
   ],
   "informs": [

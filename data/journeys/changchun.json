@@ -15,8 +15,10 @@
     {"year": 1221, "place": "Mongolian plateau", "lat": 47.9, "lon": 106.9, "note": "Across the Mongolian heartland."},
     {"year": 1221, "place": "Altai mountains", "lat": 47.0, "lon": 90.0, "note": "Over the Altai."},
     {"year": 1221, "place": "Beshbalik", "lat": 44.1, "lon": 89.1, "note": "The Uyghur city in Dzungaria."},
-    {"year": 1221, "place": "Samarkand", "lat": 39.65, "lon": 66.96, "note": "He winters in the city the Mongols have just taken.", "city": "samarkand"},
-    {"year": 1222, "place": "Hindu Kush", "lat": 35.0, "lon": 69.2, "note": "He meets the khan at his camp: there are ways to protect life, but no elixir."},
+    {"year": 1221, "place": "Samarkand", "lat": 39.65, "lon": 66.96, "note": "He winters in the city the Mongols have just taken.", "city": "samarkand", "date": "December 1221"},
+    {"year": 1222, "place": "Hindu Kush", "lat": 35.0, "lon": 69.2, "note": "He meets the khan at his camp: there are ways to protect life, but no elixir.", "date": "May 1222"},
+    {"year": 1222, "place": "Samarkand", "lat": 39.65, "lon": 66.96, "note": "Back with the khan's army, he lectures him on the Dao through the autumn.", "city": "samarkand", "date": "November 1222", "by": "land"},
+    {"year": 1223, "place": "Sayram", "lat": 42.3, "lon": 69.77, "note": "He takes his leave of the khan and turns for home.", "date": "April 1223", "by": "land", "confidence": "medium"},
     {"year": 1224, "place": "Yanjing", "lat": 39.9, "lon": 116.4, "note": "Home, with the khan's protection for his order.", "city": "beijing"}
   ],
   "informs": [

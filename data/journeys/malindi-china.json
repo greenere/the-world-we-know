@@ -10,17 +10,17 @@
   "confidence": "medium",
   "stops": [
     {"year": 1414, "place": "Malindi", "lat": -3.22, "lon": 40.12, "note": "The king of Malindi sends envoys, with a giraffe, to the emperor of China."},
-    {"year": 1414, "place": "Calicut", "lat": 11.25, "lon": 75.78, "note": "Across the monsoon sea to the pepper port of the Malabar coast, where Zheng He's fleet calls on its way home.", "by": "sea"},
-    {"year": 1415, "place": "Malacca", "lat": 2.19, "lon": 102.25, "note": "Through the straits with the Ming ships.", "by": "sea"},
+    {"year": 1415, "place": "Calicut", "lat": 11.25, "lon": 75.78, "note": "Across the monsoon sea to the pepper port of the Malabar coast, where Zheng He's fleet calls on its way home.", "by": "sea", "date": "February 1415"},
+    {"year": 1415, "place": "Malacca", "lat": 2.19, "lon": 102.25, "note": "Through the straits with the Ming ships.", "by": "sea", "date": "April 1415"},
     {"waypoint": true, "lat": 10.5, "lon": 109.6},
     {"waypoint": true, "lat": 21.2, "lon": 114.6},
     {"waypoint": true, "lat": 24.6, "lon": 119.4},
-    {"year": 1415, "place": "Liujiagang", "lat": 31.6, "lon": 121.2, "note": "Up the China coast to the fleet's base at the mouth of the Yangtze.", "by": "sea"},
-    {"year": 1415, "place": "Nanjing", "lat": 32.06, "lon": 118.78, "note": "The giraffe is received at the palace gate as a qilin; poems and paintings celebrate it.", "by": "river"},
-    {"year": 1417, "place": "Changle, Fujian", "lat": 25.96, "lon": 119.52, "note": "Zheng He's fifth voyage gathers here to wait for the north-east monsoon, the envoys aboard.", "by": "sea"},
-    {"year": 1417, "place": "Malacca", "lat": 2.19, "lon": 102.25, "note": "South through the South China Sea.", "by": "sea"},
-    {"year": 1418, "place": "Calicut", "lat": 11.25, "lon": 75.78, "note": "The fleet divides; a squadron sails on for Arabia and Africa.", "by": "sea"},
-    {"year": 1418, "place": "Malindi", "lat": -3.22, "lon": 40.12, "note": "Home with Chinese silk and porcelain, and news of the Ming.", "by": "sea"}
+    {"year": 1415, "place": "Liujiagang", "lat": 31.6, "lon": 121.2, "note": "Up the China coast to the fleet's base at the mouth of the Yangtze.", "by": "sea", "date": "July 1415"},
+    {"year": 1415, "place": "Nanjing", "lat": 32.06, "lon": 118.78, "note": "The giraffe is received at the palace gate as a qilin; poems and paintings celebrate it.", "by": "river", "date": "November 1415"},
+    {"year": 1417, "place": "Changle, Fujian", "lat": 25.96, "lon": 119.52, "note": "Zheng He's fifth voyage gathers here to wait for the north-east monsoon, the envoys aboard.", "by": "sea", "date": "October 1417"},
+    {"year": 1417, "place": "Malacca", "lat": 2.19, "lon": 102.25, "note": "South through the South China Sea.", "by": "sea", "date": "December 1417"},
+    {"year": 1418, "place": "Calicut", "lat": 11.25, "lon": 75.78, "note": "The fleet divides; a squadron sails on for Arabia and Africa.", "by": "sea", "date": "January 1418"},
+    {"year": 1418, "place": "Malindi", "lat": -3.22, "lon": 40.12, "note": "Home with Chinese silk and porcelain, and news of the Ming.", "by": "sea", "date": "July 1418"}
   ],
   "informs": [
     {"region": "china-south", "level": 3, "homeKnows": 1418, "confidence": "medium", "note": "A giraffe for the Yongle emperor"},

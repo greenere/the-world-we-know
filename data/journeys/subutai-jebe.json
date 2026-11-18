@@ -18,7 +18,7 @@
     {"year": 1222, "place": "Derbent", "lat": 42.06, "lon": 48.29, "note": "Through the Caspian Gates into the steppe.", "city": "derbent"},
     {"year": 1223, "place": "Kalka River", "lat": 47.5, "lon": 37.6, "note": "The Rus princes and Cumans are routed.", "date": "31 May 1223"},
     {"year": 1223, "place": "Bulghar", "lat": 54.98, "lon": 49.04, "note": "Turned back by the Volga Bulghars.", "city": "bulghar"},
-    {"year": 1224, "place": "Mongolia", "lat": 47.9, "lon": 106.9, "note": "They rejoin Genghis Khan with knowledge of the West."}
+    {"year": 1224, "place": "Black Irtysh", "lat": 47.9, "lon": 85.5, "note": "They rejoin Genghis Khan on his way home, bringing knowledge of the West.", "date": "July 1224", "confidence": "low"}
   ],
   "informs": [
     {"region": "pontic-steppe", "level": 2, "homeKnows": 1227, "confidence": "medium"},

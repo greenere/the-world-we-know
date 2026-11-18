@@ -15,7 +15,8 @@
     {"year": 74, "place": "Khotan", "lat": 37.1, "lon": 79.93, "note": "Khotan joins the Han.", "city": "khotan"},
     {"year": 78, "place": "Kashgar", "lat": 39.47, "lon": 75.99, "note": "His base for the next twenty years.", "city": "kashgar"},
     {"year": 91, "place": "Kucha", "lat": 41.72, "lon": 82.96, "note": "Ban Chao becomes Protector General of the Western Regions, and in 97 sends Gan Ying west from here.", "city": "kucha"},
-    {"year": 102, "place": "Luoyang", "lat": 34.62, "lon": 112.45, "note": "Ban Chao returns home at seventy and dies a month later.", "city": "luoyang"}
+    {"year": 102, "place": "Kucha", "lat": 41.72, "lon": 82.96, "note": "After thirty years in the west, he is allowed to come home.", "date": "March 102"},
+    {"year": 102, "place": "Luoyang", "lat": 34.62, "lon": 112.45, "note": "Ban Chao returns home at seventy and dies a month later.", "city": "luoyang", "date": "September 102"}
   ],
   "informs": [
     {"region": "tarim", "level": 4, "homeKnows": 102, "confidence": "high"}

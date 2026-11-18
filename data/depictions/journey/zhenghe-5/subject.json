@@ -16,7 +16,7 @@
     },
     {
       "id": "calicut",
-      "stop": 2,
+      "stop": 3,
       "place": "Calicut",
       "title": "Weighing pepper at Calicut",
       "caption": "At Calicut, Ma Huan writes, the price of goods was agreed by striking hands before the king's officials and Chinese factors; pepper was weighed by the bahar and counted on fingers and toes without an abacus, 'without the slightest error'.",
@@ -29,7 +29,7 @@
     },
     {
       "id": "hormuz",
-      "stop": 3,
+      "stop": 4,
       "place": "Hormuz",
       "title": "The market at Hormuz",
       "caption": "Hormuz, 'where merchants from every land gather', had no fresh water or crops of its own but grew rich on trade: pearls from the Gulf, horses from Persia and Arabia, carpets, rubies and lapis lazuli. Ma Huan admired its stone houses and its people's honesty in trade.",
@@ -42,7 +42,7 @@
     },
     {
       "id": "aden",
-      "stop": 4,
+      "stop": 5,
       "place": "Aden",
       "title": "Gifts from the king of Aden",
       "caption": "The king of Aden received the emperor's envoys with ceremony and sent back his own: 'giraffes, lions, zebras, ostriches and white pigeons', in Ma Huan's list. To Ming eyes the giraffe was a qilin, the gentle beast that appears only under a virtuous ruler.",
@@ -55,7 +55,7 @@
     },
     {
       "id": "malindi",
-      "stop": 6,
+      "stop": 7,
       "place": "Malindi",
       "title": "Malindi's envoys come aboard",
       "caption": "Malindi's envoys had brought a giraffe to Nanjing in 1415; the fifth fleet took them home and returned with more. At the Swahili towns of the coast, coral-stone houses stood above beaches of outrigger canoes, and the Chinese bought ambergris, ivory and rhinoceros horn.",
@@ -69,7 +69,7 @@
     },
     {
       "id": "qilin",
-      "stop": 7,
+      "stop": 8,
       "place": "Nanjing",
       "title": "The qilin at court",
       "caption": "The giraffes were received at Nanjing as qilin, proof of heaven's favour. Shen Du of the Hanlin Academy wrote an ode and painted one; his picture survives. The emperor, wary of flattery, told his officials not to offer congratulations.",

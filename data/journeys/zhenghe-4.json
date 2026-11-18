@@ -18,7 +18,10 @@
     {"year": 1414, "place": "Hormuz", "lat": 27.1, "lon": 56.45, "note": "The great market at the mouth of the Gulf: pearls, horses and every good of the West.", "city": "hormuz"},
     {"year": 1414, "place": "Bengal", "lat": 22.3, "lon": 91.8, "note": "A squadron reaches Bengal, whose king sends a giraffe to the emperor.", "from": "Semudera"},
     {"year": 1414, "place": "Maldives", "lat": 4.17, "lon": 73.51, "note": "Liushan, the 'Weak Water' islands.", "from": "Calicut"},
-    {"year": 1415, "place": "Nanjing", "lat": 32.06, "lon": 118.78, "note": "Home with envoys from nineteen countries.", "city": "nanjing"}
+    {"year": 1415, "place": "Calicut", "lat": 11.25, "lon": 75.78, "note": "Homeward through Calicut.", "date": "February 1415"},
+    {"year": 1415, "place": "Malacca", "lat": 2.19, "lon": 102.25, "note": "The fleet gathers at the depot at Malacca.", "date": "April 1415"},
+    {"year": 1415, "place": "Liujiagang", "lat": 31.6, "lon": 121.2, "note": "Back at the fleet's base at the mouth of the Yangtze.", "date": "July 1415"},
+    {"year": 1415, "place": "Nanjing", "lat": 32.06, "lon": 118.78, "note": "Home with envoys from nineteen countries.", "city": "nanjing", "date": "August 1415"}
   ],
   "informs": [
     {"region": "persian-gulf", "level": 4, "homeKnows": 1415, "confidence": "high"},

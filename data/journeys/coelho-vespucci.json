@@ -9,8 +9,8 @@
   "source": "vespucci",
   "confidence": "high",
   "stops": [
-    {"year": 1501, "place": "Lisbon", "lat": 38.7, "lon": -9.14, "note": "Three caravels sail in May."},
-    {"year": 1501, "place": "Bezeguiche", "lat": 14.67, "lon": -17.43, "note": "They meet Cabral's fleet coming home from India.", "by": "sea"},
+    {"year": 1501, "place": "Lisbon", "lat": 38.7, "lon": -9.14, "note": "Three caravels sail in May.", "date": "May 1501"},
+    {"year": 1501, "place": "Bezeguiche", "lat": 14.67, "lon": -17.43, "note": "They meet Cabral's fleet coming home from India.", "by": "sea", "date": "June 1501"},
     {"year": 1501, "place": "Cape São Roque", "lat": -5.48, "lon": -35.26, "note": "Landfall at the north-eastern shoulder of Brazil.", "by": "sea"},
     {"year": 1501, "date": "1 November 1501", "place": "All Saints' Bay", "lat": -12.97, "lon": -38.51, "note": "Named for the day they enter it, 1 November.", "by": "sea"},
     {"year": 1501, "place": "Cabo Frio", "lat": -22.88, "lon": -42.02, "note": "Where the coast turns west.", "by": "sea"},

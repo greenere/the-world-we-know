@@ -18,7 +18,8 @@
     {"year": 1500, "place": "Malindi", "lat": -3.22, "lon": 40.12, "note": "Pilots for the crossing to India.", "by": "sea"},
     {"year": 1500, "place": "Calicut", "lat": 11.25, "lon": 75.78, "note": "A factory is attacked; Cabral bombards the city in reply.", "by": "sea"},
     {"year": 1501, "place": "Cochin", "lat": 9.97, "lon": 76.27, "note": "A friendlier king, and full cargoes of pepper.", "by": "sea"},
-    {"year": 1501, "place": "Lisbon", "lat": 38.7, "lon": -9.14, "note": "Home with half his fleet and a fortune in spice.", "by": "sea"}
+    {"year": 1501, "place": "Bezeguiche", "lat": 14.67, "lon": -17.43, "note": "Homeward, he meets three caravels outward bound for Brazil, Amerigo Vespucci aboard.", "date": "June 1501", "by": "sea"},
+    {"year": 1501, "place": "Lisbon", "lat": 38.7, "lon": -9.14, "note": "Home with half his fleet and a fortune in spice.", "by": "sea", "date": "July 1501"}
   ],
   "informs": [
     {"region": "brazil-coast", "level": 2, "homeKnows": 1500, "confidence": "high", "note": "Brazil sighted and claimed"}

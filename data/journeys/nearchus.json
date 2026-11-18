@@ -10,6 +10,7 @@
   "summary": "Nearchus leads Alexander's fleet from the Indus along the Makran coast, through the Strait of Hormuz and around the Persian side of the Gulf. Local pilots help the ships find their way between difficult supply stops. After reaching Diridotis, the fleet turns back and ascends the Pasitigris to rejoin the army. Arrian's Indica preserves an account based on Nearchus's lost narrative; ancient harbours and river mouths are mapped approximately.",
   "source": "arrian-indica",
   "confidence": "medium",
+  "by": "sea",
   "stops": [
     {"year": -325, "place": "Patala", "lat": 25.4, "lon": 68.4, "note": "The fleet prepares in the Indus delta before descending towards the sea."},
     {"waypoint": true, "lat": 25.25, "lon": 68.3},
@@ -39,7 +40,7 @@
     {"waypoint": true, "lat": 25.6, "lon": 57.7},
     {"waypoint": true, "lat": 26.05, "lon": 57.25},
     {"waypoint": true, "lat": 26.55, "lon": 57.0},
-    {"year": -325, "place": "Harmozeia", "lat": 27.12, "lon": 57.02, "note": "The fleet refits by the Anamis, near the Minab river. Nearchus goes inland to meet Alexander, then returns to command.", "by": "sea"},
+    {"year": -325, "place": "Harmozeia", "lat": 27.12, "lon": 57.02, "note": "The fleet refits by the Anamis, near the Minab river. Nearchus goes inland to meet Alexander, then returns to command.", "by": "sea", "date": "December -325"},
     {"waypoint": true, "lat": 27.02, "lon": 56.65},
     {"year": -324, "place": "Oaracta", "lat": 26.94, "lon": 56.2, "note": "At the island usually identified with Qeshm, the local ruler Mazenes volunteers to pilot the remaining voyage.", "by": "sea"},
     {"waypoint": true, "lat": 26.6, "lon": 56.0},
@@ -69,12 +70,11 @@
     {"waypoint": true, "lat": 30.45, "lon": 48.35},
     {"waypoint": true, "lat": 30.8, "lon": 48.45},
     {"waypoint": true, "lat": 31.05, "lon": 48.6},
-    {"year": -324, "place": "Bridge on the Pasitigris", "lat": 31.3, "lon": 48.67, "note": "The fleet meets Alexander at his river crossing on the way to Susa. The reunited forces celebrate, and Nearchus receives a gold crown.", "by": "river"}
+    {"year": -324, "place": "Bridge on the Pasitigris", "lat": 31.3, "lon": 48.67, "note": "The fleet meets Alexander at his river crossing on the way to Susa. The reunited forces celebrate, and Nearchus receives a gold crown.", "by": "river", "date": "February -324"}
   ],
   "informs": [
     {"region": "arabian-sea", "level": 3, "homeKnows": -324, "confidence": "high", "note": "Nearchus's coastal voyage, preserved in Arrian's Indica"},
     {"region": "persian-gulf", "level": 3, "homeKnows": -324, "confidence": "high"},
     {"region": "oman", "level": 1, "homeKnows": -324, "confidence": "medium"}
-  ],
-  "by": "sea"
+  ]
 }

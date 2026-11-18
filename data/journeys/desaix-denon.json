@@ -20,8 +20,8 @@
     {"year": 1799, "place": "Esna", "lat": 25.29, "lon": 32.55, "note": "Further south, toward the cataract."},
     {"year": 1799, "place": "Aswan", "lat": 24.09, "lon": 32.9, "note": "The first cataract."},
     {"year": 1799, "place": "Philae", "lat": 24.03, "lon": 32.88, "note": "The southern limit; Denon draws the island temples.", "date": "February 1799"},
-    {"year": 1799, "place": "Cairo", "lat": 30.04, "lon": 31.24, "note": "Denon brings back his sketches and sails for France with Bonaparte in August.", "city": "cairo"}
+    {"year": 1799, "place": "Cairo", "lat": 30.04, "lon": 31.24, "note": "Back in Cairo with his sketches.", "city": "cairo", "date": "July 1799"},
+    {"year": 1799, "place": "Alexandria", "lat": 31.2, "lon": 29.92, "note": "He sails for France with Bonaparte.", "city": "alexandria", "date": "23 August 1799", "by": "land"}
   ],
-  "informs": [
-  ]
+  "informs": []
 }

@@ -17,8 +17,8 @@
     {"year": 1241, "place": "Kraków", "lat": 50.06, "lon": 19.94, "note": "The city is burned.", "city": "krakow", "date": "March 1241"},
     {"year": 1241, "place": "Wrocław", "lat": 51.11, "lon": 17.03, "note": "They pass the city by."},
     {"year": 1241, "place": "Legnica", "lat": 51.21, "lon": 16.16, "note": "Henry the Pious is killed and his army destroyed.", "city": "legnica", "date": "9 April 1241"},
-    {"year": 1241, "place": "Moravia", "lat": 49.59, "lon": 17.25, "note": "South through Moravia, burning as they go."},
-    {"year": 1241, "place": "Hungary", "lat": 47.5, "lon": 19.05, "note": "They rejoin Batu after his victory at Mohi."}
+    {"year": 1241, "place": "Moravia", "lat": 49.59, "lon": 17.25, "note": "South through Moravia, burning as they go.", "date": "May 1241"},
+    {"year": 1241, "place": "Pest", "lat": 47.5, "lon": 19.05, "note": "They rejoin Batu on the Hungarian plain after his victory at Mohi.", "date": "June 1241"}
   ],
   "informs": [
     {"region": "germania", "level": 2, "homeKnows": 1243, "confidence": "high", "note": "The battle of Legnica"},
