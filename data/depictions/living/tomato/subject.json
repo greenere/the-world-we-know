@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The tomato",
+      "caption": "Tomatoes ripen among divided leaves, beginning as green fruit before changing colour. Cultivation in the Americas preceded their long journey into European kitchens.",
+      "sources": [
+        "smith-tomato"
+      ],
+      "confidence": "medium",
+      "prompt": "Intimate branch-level study of a modest heritage tomato Solanum lycopersicum plant, hairy stems, irregular compound leaves, small yellow star flowers and a cluster of small red and green slightly ribbed tomatoes with green calyx. Earth garden background, no oversized supermarket fruit or people."
+    }
+  ]
+}

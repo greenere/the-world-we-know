@@ -1166,7 +1166,7 @@ DEPICTION_FORMATS = (".webp", ".png", ".jpg", ".jpeg")
 DEPICTION_SIZES = {"thumb": 200, "card": 720, "full": 1280}
 # What each kind of subject holds: a city has eras in time with optional companion views; a journey has scenes,
 # each pinned to one of its stops; inventions and natural wonders have standalone studies.
-DEPICTION_KINDS = {"city": "eras", "journey": "scenes", "invention": "studies", "natural": "studies", "built": "studies"}
+DEPICTION_KINDS = {"city": "eras", "journey": "scenes", "invention": "studies", "natural": "studies", "built": "studies", "living": "studies"}
 
 
 def depiction_image(src: Path, out_dir: Path, item: str) -> dict[str, str]:
@@ -1237,7 +1237,7 @@ def load_depictions(sources, vp_ids, subjects: dict) -> dict[str, dict[str, int]
         ids = [e.get("id") for e in entries]
         for k, e in enumerate(entries):
             w = f"{where} {list_key}[{k}] {e.get('id')!r}"
-            needed = ("id", "title", "caption", "sources", "confidence", "prompt") + ({"city": ("from",), "journey": ("stop", "place"), "invention": (), "natural": (), "built": ("from",)}[kind])
+            needed = ("id", "title", "caption", "sources", "confidence", "prompt") + ({"city": ("from",), "journey": ("stop", "place"), "invention": (), "natural": (), "built": ("from",), "living": ()}[kind])
             for key in needed:
                 if key not in e:
                     fail(f"{w}: missing {key}")
@@ -1984,10 +1984,14 @@ def main() -> int:
         "invention": {inv["id"] for inv in inventions},
         "natural": {c["id"] for c in cities if c.get("kind") == "natural"},
         "built": {c["id"] for c in cities if c.get("kind") == "built"},
+        "living": {x["id"] for x in living if x["kind"] in ("plant", "animal")},
     })
     for inv in inventions:
         if inv["id"] in pictured["invention"]:
             inv["pictures"] = pictured["invention"][inv["id"]]
+    for x in living:
+        if x["id"] in pictured["living"]:
+            x["pictures"] = pictured["living"][x["id"]]
     city_docs = []
     for c in cities:
         doc = {k: v for k, v in c.items() if k not in ("mid", "knownSource")}

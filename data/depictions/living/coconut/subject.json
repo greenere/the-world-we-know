@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The coconut",
+      "caption": "A fibrous husk protects the coconut's hard shell. Across tropical coasts, the palm supplied food, drink, fibre and building material.",
+      "sources": [
+        "gunn-2011"
+      ],
+      "confidence": "medium",
+      "prompt": "Low wide tropical shoreline view beneath Cocos nucifera palm, feather-like fronds and cluster of green coconuts attached beneath crown. Foreground fallen brown husked coconut and neatly split shell showing white flesh. No coconuts growing on trunk, no tourist huts, no people."
+    }
+  ]
+}

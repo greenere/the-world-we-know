@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The peach",
+      "caption": "Peaches surround a hard stone with soft flesh. Farmers selected larger, sweeter fruit over many generations before the crop spread west from China.",
+      "sources": [
+        "zheng-2014"
+      ],
+      "confidence": "medium",
+      "prompt": "Botanical study of Prunus persica fruiting twig with narrow lanceolate finely serrated leaves, two modest fuzzy blush peaches and a cut peach below showing deeply ridged stone. Soft lower Yangtze orchard setting, no blossoms required alongside ripe fruit, no smooth nectarine skin."
+    }
+  ]
+}

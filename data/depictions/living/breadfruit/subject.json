@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Breadfruit",
+      "caption": "Large starchy fruits grow among deeply lobed leaves. Pacific growers carried living cuttings between islands to establish new trees.",
+      "sources": [
+        "zerega-2004"
+      ],
+      "confidence": "medium",
+      "prompt": "Close upward botanical view of Artocarpus altilis branch with very large glossy deeply lobed leaves and two round green breadfruits with finely patterned pebbled skin; one cut fruit on woven mat below showing pale starchy flesh. No giant spiky durian or jackfruit, tropical island hints only."
+    }
+  ]
+}

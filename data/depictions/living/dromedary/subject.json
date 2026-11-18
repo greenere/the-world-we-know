@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The dromedary",
+      "caption": "One hump and broad padded feet distinguish the dromedary. Its ability to carry loads through dry country supported caravan routes across Arabia and the Sahara.",
+      "sources": [
+        "almathen-2016"
+      ],
+      "confidence": "medium",
+      "prompt": "Full-body single Camelus dromedarius walking across gravel desert in Arabia, exactly one hump, long curved neck, tan coat, broad two-toed padded feet, four natural legs. Sparse thorn shrubs, no saddle or rider, no Bactrian second hump, no pyramids."
+    }
+  ]
+}

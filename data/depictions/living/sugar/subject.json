@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Sugar cane",
+      "caption": "Jointed canes hold the sweet juice used to make sugar. Their long leaves and dense clumps belong to a grass first cultivated in New Guinea.",
+      "sources": [
+        "mintz"
+      ],
+      "confidence": "medium",
+      "prompt": "Low wide study of Saccharum officinarum clump, tall jointed purple-green canes and arching long blade leaves. Two cut cane sections resting on earth reveal pale fibrous interiors and clear nodes. Tropical vegetation background, no factory or workers, no bamboo leaves."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "subject": "living/cloves",
+  "scene": "study",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-17",
+  "prompt": "Use case: historical-scene. Asset type: plant or animal atlas card.\nONE landscape 3:2 natural-history field-sketchbook page. Visible loose graphite construction lines, fine sepia ink hatching and restrained uneven watercolour washes, with realistic species colours kept softly muted. Detailed main subject, irregular unfinished edges dissolving into warm cream lightly foxed paper. An observed working sketch, not a photograph, glossy painting, digital render or infographic. No writing, labels, numbers, signature, watermark, border or binding. Prioritise diagnostic anatomy and botanical structure; no invented hybrid species. No obligatory explorer, human hands or portrait. A single main composition, with a separate small specimen only when specifically requested.\nSubject: Two clearly separate botanical specimens on cream paper: left Syzygium aromaticum leafy twig with clustered small nail-shaped unopened clove buds and a few dried brown cloves below; right Myristica fragrans leafy twig with one yellowish fruit split open revealing red lacy aril over dark brown seed. Never merge into one plant. No bowls or labels. Accurate distinct leaves, restrained red accent.\nStudy the plant or animal itself. Maintain believable scale, structural continuity, natural pose and habitat. Do not turn this into a generic explorer scene. Treat extinct animals as restrained evidence-informed reconstructions.",
+  "sources": [
+    "turner-spice",
+    "species-spices"
+  ],
+  "reference_sources": [
+    "https://www.kew.org/read-and-watch/christmas-spices"
+  ]
+}

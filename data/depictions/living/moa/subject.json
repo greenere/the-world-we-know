@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The moa",
+      "caption": "Moa browsed New Zealand's vegetation without wings of any kind. This reconstruction shows a giant moa among the plants of its former habitat.",
+      "sources": [
+        "holdaway-2014",
+        "species-moa"
+      ],
+      "confidence": "medium",
+      "prompt": "Reconstructed female South Island giant moa Dinornis robustus browsing low shrubs in New Zealand forest edge, full-body side view, shaggy brown feathers, strong long legs, small head on curved neck held forward rather than unnaturally upright. Absolutely no wings or wing stumps, no ostrich fan tail, ferns and podocarp background, no people."
+    }
+  ]
+}

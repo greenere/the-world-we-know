@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The European rabbit",
+      "caption": "A European rabbit pauses at the edge of its burrow. People later carried this animal far beyond its original range in southwestern Europe.",
+      "sources": [
+        "irving-pease-2018"
+      ],
+      "confidence": "medium",
+      "prompt": "Low intimate full-body Oryctolagus cuniculus beside burrow in dry Iberian scrub, grey-brown fur, moderately long ears, rounded body and short white underside tail, crouched hind legs and small forepaws. Not a long-legged hare, no domestic floppy ears, no humans."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The turkey",
+      "caption": "A wild turkey moves through open woodland, its bronze feathers catching the light. Domesticated turkeys became one of the American animals carried across the Atlantic.",
+      "sources": [
+        "schorger"
+      ],
+      "confidence": "medium",
+      "prompt": "Full-body three-quarter view of one wild male Meleagris gallopavo walking calmly in Mexican oak woodland, bronze-brown layered feathers, modest red wattle, bare bluish head, tail partly spread but not huge display. Two anatomically sound feet on leaf litter, no white industrial turkey, no humans."
+    }
+  ]
+}

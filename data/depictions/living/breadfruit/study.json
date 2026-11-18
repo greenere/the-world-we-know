@@ -1,0 +1,11 @@
+{
+  "subject": "living/breadfruit",
+  "scene": "study",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-17",
+  "prompt": "Use case: historical-scene. Asset type: plant or animal atlas card.\nONE landscape 3:2 natural-history field-sketchbook page. Visible loose graphite construction lines, fine sepia ink hatching and restrained uneven watercolour washes, with realistic species colours kept softly muted. Detailed main subject, irregular unfinished edges dissolving into warm cream lightly foxed paper. An observed working sketch, not a photograph, glossy painting, digital render or infographic. No writing, labels, numbers, signature, watermark, border or binding. Prioritise diagnostic anatomy and botanical structure; no invented hybrid species. No obligatory explorer, human hands or portrait. A single main composition, with a separate small specimen only when specifically requested.\nSubject: Close upward botanical view of Artocarpus altilis branch with very large glossy deeply lobed leaves and two round green breadfruits with finely patterned pebbled skin; one cut fruit on woven mat below showing pale starchy flesh. No giant spiky durian or jackfruit, tropical island hints only.\nStudy the plant or animal itself. Maintain believable scale, structural continuity, natural pose and habitat. Do not turn this into a generic explorer scene. Treat extinct animals as restrained evidence-informed reconstructions.",
+  "sources": [
+    "zerega-2004"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The rhinoceros",
+      "caption": "This study shows an Indian rhinoceros, with one horn and deep folds in its skin. Such an animal reached Portugal in 1515 and inspired Europe's famous woodcut.",
+      "sources": [
+        "clarke-rhinoceros"
+      ],
+      "confidence": "medium",
+      "prompt": "Full-body side view of Rhinoceros unicornis beside tall riverine grass and muddy water in South Asia, exactly one nasal horn, grey skin with natural heavy folds and small bumps. No riveted armour plates, no second shoulder horn, no fantasy scales, four sturdy legs with three toes each, no humans."
+    }
+  ]
+}

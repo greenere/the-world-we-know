@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Cloves and nutmeg",
+      "caption": "Cloves are dried flower buds; nutmeg is the seed inside a different tree's fruit. The red covering around nutmeg supplies mace. These distinct island crops shared the spice routes.",
+      "sources": [
+        "turner-spice",
+        "species-spices"
+      ],
+      "confidence": "medium",
+      "prompt": "Two clearly separate botanical specimens on cream paper: left Syzygium aromaticum leafy twig with clustered small nail-shaped unopened clove buds and a few dried brown cloves below; right Myristica fragrans leafy twig with one yellowish fruit split open revealing red lacy aril over dark brown seed. Never merge into one plant. No bowls or labels. Accurate distinct leaves, restrained red accent."
+    }
+  ]
+}

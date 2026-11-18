@@ -98,7 +98,7 @@ export interface Depiction {
   made?: {provider?: string; model?: string; date?: string; artist?: string};
 }
 
-export type DepictionKind = 'city' | 'journey' | 'invention' | 'natural' | 'built';
+export type DepictionKind = 'city' | 'journey' | 'invention' | 'natural' | 'built' | 'living';
 
 export interface DepictionDoc {
   kind: DepictionKind;
@@ -384,6 +384,8 @@ export interface Living {
   spread: Arrival[];
   /** The year each viewpoint came to know it. */
   known: Record<VpId, number>;
+  /** Natural-history studies, loaded when the card opens. */
+  pictures?: number;
 }
 
 export interface SearchEntry {

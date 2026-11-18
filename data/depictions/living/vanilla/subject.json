@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Vanilla",
+      "caption": "Vanilla pods are the fruit of a climbing orchid. Growing the vine was only part of the work: flowers had to be pollinated before pods could form.",
+      "sources": [
+        "ecott-2004"
+      ],
+      "confidence": "medium",
+      "prompt": "Close botanical study of Vanilla planifolia climbing a shaded tree, thick green vine with aerial roots, fleshy elliptical leaves, one pale yellow-green orchid flower with recognizable tubular lip, several long slender green pods hanging from a separate mature cluster. No brown cured pods growing naturally, no bean tendrils or people."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The giraffe",
+      "caption": "A giraffe reaches foliage above the browsing height of most animals. Far from Africa, its height and patterned coat made it an extraordinary diplomatic gift.",
+      "sources": [
+        "duyvendak"
+      ],
+      "confidence": "medium",
+      "prompt": "Low-angle full-body giraffe browsing acacia foliage on East African savanna, long neck and forelegs, two short skin-covered ossicones, irregular tawny patches, long dark tongue touching leaves. Four sound legs grounded, full head visible, no leopard hybrid or humans."
+    }
+  ]
+}

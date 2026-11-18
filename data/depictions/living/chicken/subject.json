@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The chicken",
+      "caption": "The colours and shape of the red junglefowl remain visible in domestic chickens. Birds drawn to farming landscapes eventually travelled with people across oceans.",
+      "sources": [
+        "peters-2022"
+      ],
+      "confidence": "medium",
+      "prompt": "Full-body red junglefowl Gallus gallus rooster at edge of Southeast Asian rice clearing, gold-orange neck hackles, reddish back, dark iridescent green sickle tail, red comb and wattles, slender legs; small brown hen secondary in distance. Not giant modern meat chicken, no people or fence."
+    }
+  ]
+}

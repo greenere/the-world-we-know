@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The potato",
+      "caption": "Below the leaves, potato plants store food in underground tubers. In the high Andes, these became a dependable crop where many other staples struggled.",
+      "sources": [
+        "hawkes-potato"
+      ],
+      "confidence": "medium",
+      "prompt": "Ground-level botanical field study of a lifted potato plant, leafy stems and a few pale purple five-petalled flowers above, several modest varied-colour tubers attached by thin underground stolons exposed on loose soil beside it. Andean terrace blurred behind. Solanum tuberosum, not sweet potato, no root cutaway diagram."
+    }
+  ]
+}

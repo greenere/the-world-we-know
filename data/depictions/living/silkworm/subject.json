@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The silkworm",
+      "caption": "A silkworm feeds on mulberry leaves before spinning its cocoon. The cocoon's fine thread became the basis of silk production.",
+      "sources": [
+        "needham"
+      ],
+      "confidence": "medium",
+      "prompt": "Macro-scale natural-history study of creamy Bombyx mori caterpillar resting naturally on serrated mulberry leaf, small dark head, segmented body, tiny true legs and prolegs, short rear horn; one intact off-white oval cocoon beside twig. Clearly separate larva and cocoon, no butterfly wings attached to larva, no oversized teeth."
+    }
+  ]
+}

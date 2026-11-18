@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Rubber",
+      "caption": "A cut in a rubber tree's bark releases milky latex. Collecting that liquid connected tropical forests with a rapidly growing demand for elastic material.",
+      "sources": [
+        "dean-rubber"
+      ],
+      "confidence": "medium",
+      "prompt": "Close vertical trunk detail of Hevea brasiliensis with one shallow diagonal tapping cut, a small plain cup tied below collecting a thin white latex trail, trifoliate leaves on nearby branch. Amazonian plantation edge, no blood-like sap, no huge gashes, no worker or modern machinery."
+    }
+  ]
+}

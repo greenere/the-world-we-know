@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Steller's sea cow",
+      "caption": "Steller's sea cows grazed in the cold coastal shallows. Their enormous bodies, small heads and broad fluked tails belonged to a marine mammal lost in the eighteenth century.",
+      "sources": [
+        "steller",
+        "species-sea-cow"
+      ],
+      "confidence": "medium",
+      "prompt": "Natural-history reconstruction of Hydrodamalis gigas seen obliquely from above in clear cold shallow water, massive dark wrinkled brown body, disproportionately small blunt head browsing kelp, tiny foreflippers, broad horizontally fluked whale-like tail visible underwater. Commander Islands rocky shore. No dorsal fin, no hind legs, no walrus tusks or manatee paddle tail."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Cacao",
+      "caption": "Cacao pods grow directly from the trunk and older branches. Inside each pod, pale pulp surrounds the seeds used to make cacao drinks and chocolate.",
+      "sources": [
+        "coe-chocolate"
+      ],
+      "confidence": "medium",
+      "prompt": "Intimate low rainforest view of Theobroma cacao trunk bearing several ribbed yellow-red pods directly on trunk, broad leaves overhead. One opened pod on forest floor with white pulp around tightly packed seeds. No pods hanging like apples on twig tips, no processed chocolate."
+    }
+  ]
+}

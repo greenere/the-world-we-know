@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Cassava",
+      "caption": "Cassava stores starch in long roots beneath a branching shrub. American growers developed processing methods that made the crop useful as a staple.",
+      "sources": [
+        "jones-manioc"
+      ],
+      "confidence": "medium",
+      "prompt": "Low-angle botanical study of Manihot esculenta shrub with palmately divided narrow-lobed leaves on long petioles; several lifted long brown rough storage roots lying beside base, one cut section showing white interior. Amazonian garden, no potato eyes or roots hanging from branches, no people."
+    }
+  ]
+}

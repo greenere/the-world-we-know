@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The cat",
+      "caption": "A cat watches from beside a grain store. Settled farming brought small predators and stored food into a lasting relationship with people.",
+      "sources": [
+        "driscoll-2007"
+      ],
+      "confidence": "medium",
+      "prompt": "Low full-body profile of a slender short-haired sandy tabby domestic cat sitting alert beside plain woven grain baskets and a mudbrick wall, early Near Eastern village. Natural vertical pupils and paws, tail curling on ground, no collar, modern breed face or humans."
+    }
+  ]
+}

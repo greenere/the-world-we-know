@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The horse",
+      "caption": "On open grassland, horses could graze and move with their herds. Domestication changed the distances people could travel and the loads they could move.",
+      "sources": [
+        "librado-2021"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide eye-level Eurasian steppe view, one sturdy modest-sized bay horse grazing in foreground in side profile, two smaller herd animals distant. Natural short mane, four coherent legs and single hooves, no saddle, bridle, rider, fences or modern breed exaggeration."
+    }
+  ]
+}

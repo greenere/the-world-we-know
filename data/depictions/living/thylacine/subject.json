@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The thylacine",
+      "caption": "Dark stripes cross the thylacine's back and rump. This Tasmanian marsupial looked superficially like a dog, but belonged to a very different lineage.",
+      "sources": [
+        "paddle-2000",
+        "species-thylacine"
+      ],
+      "confidence": "medium",
+      "prompt": "Reconstructed full-body Thylacinus cynocephalus in side profile walking through open Tasmanian eucalyptus woodland, sandy short fur, dark transverse stripes across rear back and rump, long stiff tapering tail, slender doglike head with rounded upright ears. Four natural legs, no stripes on face or front legs, no wolf bushy tail, no zoo cage or hunter."
+    }
+  ]
+}

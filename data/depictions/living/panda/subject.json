@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The giant panda",
+      "caption": "A giant panda sits among the bamboo it feeds on. The animal remained little known outside China until the nineteenth century.",
+      "sources": [
+        "morris-pandas"
+      ],
+      "confidence": "medium",
+      "prompt": "Three-quarter view of giant panda Ailuropoda melanoleuca naturally seated on a mossy Sichuan mountain slope holding one bamboo stem between forepaws, chewing leaves. Correct black ears eye patches shoulders and limbs, white torso and face, foggy bamboo woodland, no human props or extra paws."
+    }
+  ]
+}

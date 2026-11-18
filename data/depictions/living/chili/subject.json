@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The chili pepper",
+      "caption": "Small peppers ripen among the leaves. Seeds carried from the Americas helped make chili part of everyday cooking across much of Asia and Africa.",
+      "sources": [
+        "andrews-peppers"
+      ],
+      "confidence": "medium",
+      "prompt": "Eye-level botanical branch study of Capsicum annuum, narrow simple leaves, small white five-lobed flowers and slender red and green chili fruits attached by their calyx and stems. Restrained natural red accents, no bell peppers or black pepper berries."
+    }
+  ]
+}

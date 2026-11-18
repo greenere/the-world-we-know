@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The kangaroo",
+      "caption": "Strong hind legs and a long tail shape the kangaroo's movement. These animals were familiar to Australia's peoples long before Europeans tried to describe them.",
+      "sources": [
+        "cook-journals"
+      ],
+      "confidence": "medium",
+      "prompt": "Full-body eastern grey kangaroo Macropus giganteus resting alert on Australian open woodland floor, large hind feet and muscular tail contacting ground, small relaxed forearms, grey-brown fur, long ears. Natural side three-quarter view, no human pose, no joey needed, no extra limbs."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The dog",
+      "caption": "Dogs travelled with people into many different environments. Their history began long before farming, although the earliest stages of domestication remain debated.",
+      "sources": [
+        "perri-2021"
+      ],
+      "confidence": "medium",
+      "prompt": "Natural full-body study of a medium-sized early domestic dog with plain tawny-grey coat, moderate muzzle and upright ears, resting alert beside a simple unoccupied hide shelter at temperate Eurasian woodland edge. No specific modern pedigree breed, collars or chained wolf, natural paws and curled resting tail."
+    }
+  ]
+}

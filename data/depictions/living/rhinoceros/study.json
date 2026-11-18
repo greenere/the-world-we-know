@@ -1,0 +1,11 @@
+{
+  "subject": "living/rhinoceros",
+  "scene": "study",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-17",
+  "prompt": "Use case: historical-scene. Asset type: plant or animal atlas card.\nONE landscape 3:2 natural-history field-sketchbook page. Visible loose graphite construction lines, fine sepia ink hatching and restrained uneven watercolour washes, with realistic species colours kept softly muted. Detailed main subject, irregular unfinished edges dissolving into warm cream lightly foxed paper. An observed working sketch, not a photograph, glossy painting, digital render or infographic. No writing, labels, numbers, signature, watermark, border or binding. Prioritise diagnostic anatomy and botanical structure; no invented hybrid species. No obligatory explorer, human hands or portrait. A single main composition, with a separate small specimen only when specifically requested.\nSubject: Full-body side view of Rhinoceros unicornis beside tall riverine grass and muddy water in South Asia, exactly one nasal horn, grey skin with natural heavy folds and small bumps. No riveted armour plates, no second shoulder horn, no fantasy scales, four sturdy legs with three toes each, no humans.\nStudy the plant or animal itself. Maintain believable scale, structural continuity, natural pose and habitat. Do not turn this into a generic explorer scene. Treat extinct animals as restrained evidence-informed reconstructions.",
+  "sources": [
+    "clarke-rhinoceros"
+  ]
+}

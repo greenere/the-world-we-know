@@ -1,0 +1,11 @@
+{
+  "subject": "living/coconut",
+  "scene": "study",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-17",
+  "prompt": "Use case: historical-scene. Asset type: plant or animal atlas card.\nONE landscape 3:2 natural-history field-sketchbook page. Visible loose graphite construction lines, fine sepia ink hatching and restrained uneven watercolour washes, with realistic species colours kept softly muted. Detailed main subject, irregular unfinished edges dissolving into warm cream lightly foxed paper. An observed working sketch, not a photograph, glossy painting, digital render or infographic. No writing, labels, numbers, signature, watermark, border or binding. Prioritise diagnostic anatomy and botanical structure; no invented hybrid species. No obligatory explorer, human hands or portrait. A single main composition, with a separate small specimen only when specifically requested.\nSubject: Low wide tropical shoreline view beneath Cocos nucifera palm, feather-like fronds and cluster of green coconuts attached beneath crown. Foreground fallen brown husked coconut and neatly split shell showing white flesh. No coconuts growing on trunk, no tourist huts, no people.\nStudy the plant or animal itself. Maintain believable scale, structural continuity, natural pose and habitat. Do not turn this into a generic explorer scene. Treat extinct animals as restrained evidence-informed reconstructions.",
+  "sources": [
+    "gunn-2011"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The sweet potato",
+      "caption": "Sweet potatoes form thick storage roots beneath spreading vines. Voyagers carried this American crop across the Pacific long before European ships followed.",
+      "sources": [
+        "roullier-2013"
+      ],
+      "confidence": "medium",
+      "prompt": "Low close view of Ipomoea batatas vines with heart-shaped leaves, one pale lilac funnel flower, a small freshly lifted cluster of elongated reddish storage roots resting on dark soil. Tropical garden, no potatoes or tubers growing above ground on vines."
+    }
+  ]
+}

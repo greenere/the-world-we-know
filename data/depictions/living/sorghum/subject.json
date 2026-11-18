@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Sorghum",
+      "caption": "Dense seed heads rise above sorghum's broad leaves. Its ability to grow in hot, dry country helped it become a staple across Africa and beyond.",
+      "sources": [
+        "winchell-2017"
+      ],
+      "confidence": "medium",
+      "prompt": "Low-angle close field study of Sorghum bicolor in dry Sudanese savanna cultivation, stout stems, broad blade leaves, dense branching reddish-brown grain panicles with many round grains. Dry earth and hazy grassland, no maize cobs or wheat awns, no machinery."
+    }
+  ]
+}

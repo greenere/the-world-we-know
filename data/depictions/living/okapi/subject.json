@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The okapi",
+      "caption": "Striped legs break up the okapi's outline in a forest of light and shadow. The animal was known to Ituri forest communities long before it became known abroad.",
+      "sources": [
+        "johnston-okapi"
+      ],
+      "confidence": "medium",
+      "prompt": "Full-body female Okapia johnstoni in shaded Congo rainforest understory, rich chocolate-brown torso, zebra-like white horizontal stripes only on rump and upper legs, pale lower legs, large ears, white cheeks. Looking back over shoulder, all four legs physically coherent, no zebra-striped torso or long giraffe neck."
+    }
+  ]
+}

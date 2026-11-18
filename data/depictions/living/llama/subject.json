@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The llama",
+      "caption": "Llamas carry loads through the high Andean landscape. Their role in transport joined the wool, meat and fuel that herds supplied to highland communities.",
+      "sources": [
+        "wheeler-1995"
+      ],
+      "confidence": "medium",
+      "prompt": "Eye-level full-body llama Lama glama on Andean puna grassland, long neck, long curved banana-shaped ears, modest woolly tan-white coat, slender legs and split padded feet; light balanced woven panniers over a simple blanket, no rider. Distant mountains and stone path, not short-faced fluffy alpaca."
+    }
+  ]
+}

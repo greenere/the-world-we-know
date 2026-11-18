@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Maize",
+      "caption": "The cob holds its grain inside a wrapping of husks. Generations of farmers turned a wild Mexican grass into a crop that depends on people to sow it.",
+      "sources": [
+        "piperno-2009"
+      ],
+      "confidence": "medium",
+      "prompt": "Close oblique view of a mature maize stalk in a small traditional Mexican field, broad strap leaves and an attached ear with husk partly opened to reveal modest uneven yellow kernels, tassel at top. Zea mays, no giant supermarket cob, no people or machinery."
+    }
+  ]
+}

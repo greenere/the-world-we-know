@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Tea",
+      "caption": "The youngest shoots provide the leaves for tea. Harvesting and preparing them turned an evergreen shrub into the centre of a far-reaching trade.",
+      "sources": [
+        "mair-hoh"
+      ],
+      "confidence": "medium",
+      "prompt": "Close natural botanical study of Camellia sinensis twig with glossy finely serrated elliptical leaves and tender terminal bud with two young leaves, one white flower with yellow stamens. Misty south Chinese hillside shrubs softly behind, no cup or people."
+    }
+  ]
+}

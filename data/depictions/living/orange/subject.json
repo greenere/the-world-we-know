@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The sweet orange",
+      "caption": "Sweet oranges combine a fragrant peel with juicy segments. Cultivated in southern China, they later travelled west through maritime trade.",
+      "sources": [
+        "wu-2018"
+      ],
+      "confidence": "medium",
+      "prompt": "Botanical still-life of sweet orange Citrus sinensis fruiting twig, glossy pointed leaves, white five-petal blossom, two small ripe orange fruits; one cut fruit placed below with realistic radial juicy segments and central pith. Soft orchard background, no giant hybrid fruit or labels."
+    }
+  ]
+}

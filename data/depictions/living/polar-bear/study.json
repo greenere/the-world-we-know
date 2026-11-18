@@ -1,0 +1,11 @@
+{
+  "subject": "living/polar-bear",
+  "scene": "study",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-17",
+  "prompt": "Use case: historical-scene. Asset type: plant or animal atlas card.\nONE landscape 3:2 natural-history field-sketchbook page. Visible loose graphite construction lines, fine sepia ink hatching and restrained uneven watercolour washes, with realistic species colours kept softly muted. Detailed main subject, irregular unfinished edges dissolving into warm cream lightly foxed paper. An observed working sketch, not a photograph, glossy painting, digital render or infographic. No writing, labels, numbers, signature, watermark, border or binding. Prioritise diagnostic anatomy and botanical structure; no invented hybrid species. No obligatory explorer, human hands or portrait. A single main composition, with a separate small specimen only when specifically requested.\nSubject: Wide Arctic sea-ice landscape with one full-body polar bear Ursus maritimus walking in side profile across a low ice floe, creamy fur, long neck, black nose, small ears and large paws. Open dark water beyond, realistic weight on all limbs, no penguins or humans.\nStudy the plant or animal itself. Maintain believable scale, structural continuity, natural pose and habitat. Do not turn this into a generic explorer scene. Treat extinct animals as restrained evidence-informed reconstructions.",
+  "sources": [
+    "hahn-tower"
+  ]
+}

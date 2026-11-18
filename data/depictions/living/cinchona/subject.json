@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Cinchona and quinine",
+      "caption": "Cinchona bark carried the substance from which quinine was later isolated. The tree's history links the Andean forests with the treatment of malaria.",
+      "sources": [
+        "honigsbaum"
+      ],
+      "confidence": "medium",
+      "prompt": "Botanical specimen study of Cinchona officinalis leafy flowering branch with opposite simple elliptical leaves and clusters of small pink tubular flowers, a few curled rough brown bark strips placed separately below. Soft cloud-forest hints at margin, no pills, bottles, dosage text or invented laboratory."
+    }
+  ]
+}

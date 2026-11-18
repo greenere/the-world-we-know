@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The grapevine",
+      "caption": "Grape clusters hang beneath lobed leaves. Growing vines and making wine carried this crop from the South Caucasus into many farming traditions.",
+      "sources": [
+        "mcgovern-2017"
+      ],
+      "confidence": "medium",
+      "prompt": "Close vineyard-edge study of Vitis vinifera old woody vine, lobed toothed leaves and coiled tendrils, modest clusters of dark purple grapes with pale bloom. Supported by simple rough timber, dry hills behind, no bottles or modern trellis wires."
+    }
+  ]
+}

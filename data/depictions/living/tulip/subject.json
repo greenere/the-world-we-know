@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The tulip",
+      "caption": "A tulip rises from a bulb that survives beneath the ground. Gardeners carried these flowers from Central Asian landscapes into Persian, Ottoman and European gardens.",
+      "sources": [
+        "pavord"
+      ],
+      "confidence": "medium",
+      "prompt": "Low botanical field view of a few wild Tulipa greigii in Central Asian rocky foothill grass, red six-tepal cup flowers, broad slightly mottled leaves at base, one flower turned to show dark centre. No dense Dutch commercial field, no striped virus fantasy, no people."
+    }
+  ]
+}

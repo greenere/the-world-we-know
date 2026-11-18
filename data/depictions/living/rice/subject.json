@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Rice",
+      "caption": "Heavy grain heads bend above wet ground. Farmers turned a marsh grass into a staple through repeated cultivation and selection.",
+      "sources": [
+        "fuller-2009"
+      ],
+      "confidence": "medium",
+      "prompt": "Close waist-height view across traditional shallow flooded rice plot, Oryza sativa slender blade leaves and mature drooping branching panicles with individual golden grains, water reflecting stems. Not wheat ears or barley spikes, no machinery, people or mountains of impossible terraces."
+    }
+  ]
+}

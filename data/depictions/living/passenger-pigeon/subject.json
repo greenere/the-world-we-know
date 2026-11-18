@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The passenger pigeon",
+      "caption": "A passenger pigeon rests beneath a passing flock. The species once filled the skies over eastern North America's forests before mass hunting drove it to extinction.",
+      "sources": [
+        "schorger-1955"
+      ],
+      "confidence": "medium",
+      "prompt": "Close adult male Ectopistes migratorius perched on oak branch, blue-grey head, warm rose-rufous breast, iridescent neck patch, small dark bill, red eye, long pointed graduated tail. Distant loose flock crossing deciduous forest sky. Not stocky city pigeon, no bands or people."
+    }
+  ]
+}

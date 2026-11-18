@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Black pepper",
+      "caption": "Black pepper begins as berries on a climbing vine. Harvesting and drying those berries supplied one of the most valuable goods in long-distance spice trade.",
+      "sources": [
+        "turner-spice"
+      ],
+      "confidence": "medium",
+      "prompt": "Close study of Piper nigrum climbing a rough tree support, simple pointed heart-ovate leaves and slender hanging spikes of many round green pepper berries. A few dried black peppercorns resting on a fallen leaf nearby. Humid Malabar setting, no chili pods or long pepper catkins."
+    }
+  ]
+}

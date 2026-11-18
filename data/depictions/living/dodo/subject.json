@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The dodo",
+      "caption": "The dodo was a flightless bird of Mauritius, with small wings and a heavy curved bill. Its loss became one of the best-known stories of human-caused extinction.",
+      "sources": [
+        "hume-dodo"
+      ],
+      "confidence": "medium",
+      "prompt": "Reconstructed Raphus cucullatus in Mauritian coastal forest, full side view, sturdy but not obese grey-brown body, tiny real wings, tuft of pale curled tail feathers, strong yellow-grey legs, large hooked two-tone bill. Natural alert bird on fallen leaves, not comic fat caricature or turkey, no humans."
+    }
+  ]
+}

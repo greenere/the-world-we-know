@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The peanut",
+      "caption": "Peanuts flower above the soil, then develop their pods below it. A lifted plant reveals why the harvest comes from the ground rather than the leafy branches.",
+      "sources": [
+        "dillehay-2007"
+      ],
+      "confidence": "medium",
+      "prompt": "Botanical study of a freshly lifted Arachis hypogaea plant on loose soil, low stems with paired four-leaflet leaves and a few small yellow flowers; thin pegs lead to modest peanut pods clustered at roots, one split pod nearby. No pods on above-ground branches, no tree, no diagram arrows."
+    }
+  ]
+}

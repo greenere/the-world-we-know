@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The soybean",
+      "caption": "Soybean pods enclose the beans used in many East Asian foods. Generations of growers selected cultivated plants from wild relatives.",
+      "sources": [
+        "lee-2011"
+      ],
+      "confidence": "medium",
+      "prompt": "Close botanical study of Glycine max, trifoliate leaves, fuzzy green and ripening tan pods each containing two or three beans, tiny pale lilac flowers, one open dry pod below. Northern East Asian field edge, no climbing pea tendrils or huge pods, no people."
+    }
+  ]
+}

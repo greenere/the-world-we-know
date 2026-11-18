@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The pig",
+      "caption": "Pigs root through the ground for food. Early farming communities kept animals descended from wild boar, beginning a relationship that later spread across oceans.",
+      "sources": [
+        "larson-2005"
+      ],
+      "confidence": "medium",
+      "prompt": "Full-body side view of a lean early domestic pig with coarse brown bristles, elongated snout and modest ears, rooting beside a traditional village garden edge. Four short sound legs with cloven hooves, curled tail not exaggerated, no giant white modern breed or people."
+    }
+  ]
+}

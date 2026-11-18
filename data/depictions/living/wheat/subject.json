@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Wheat",
+      "caption": "The dense ears of wheat hold grains that can be stored and ground into flour. Early farmers carried the crop outward from the Fertile Crescent.",
+      "sources": [
+        "zohary-hopf"
+      ],
+      "confidence": "medium",
+      "prompt": "Close natural-history study of ancient emmer wheat Triticum dicoccum, mature golden awned ears and narrow leaves, a small loose cluster of grains on pale soil near base. Dry Fertile Crescent hillside field behind. Ears correctly attached to stems, no rice panicles, no modern combine."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Tobacco",
+      "caption": "Broad tobacco leaves were the part people harvested and cured. The plant travelled far beyond the American communities that first cultivated it.",
+      "sources": [
+        "goodman-tobacco"
+      ],
+      "confidence": "medium",
+      "prompt": "Botanical portrait of Nicotiana tabacum plant in earth, large broad slightly sticky green leaves on upright stem and terminal cluster of pink tubular flowers. Focus on living plant, no smoking person, cigarettes, packaging or advertising."
+    }
+  ]
+}

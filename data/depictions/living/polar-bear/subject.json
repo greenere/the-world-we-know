@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The polar bear",
+      "caption": "A polar bear moves between sea ice and open water. Its place in Arctic life was well established before distant courts acquired living bears as rarities.",
+      "sources": [
+        "hahn-tower"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide Arctic sea-ice landscape with one full-body polar bear Ursus maritimus walking in side profile across a low ice floe, creamy fur, long neck, black nose, small ears and large paws. Open dark water beyond, realistic weight on all limbs, no penguins or humans."
+    }
+  ]
+}

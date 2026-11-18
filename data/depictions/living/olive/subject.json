@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The olive",
+      "caption": "Narrow leaves and small fruits suit the olive's dry Mediterranean setting. Pressing the fruit produced oil for food, lamps and ritual.",
+      "sources": [
+        "zohary-hopf"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide intimate Mediterranean hillside scene, gnarled Olea europaea trunk and near branch with narrow opposite grey-green leaves, silver undersides and small green and dark olives. Dry stone terrace and earth, no lush tropical canopy or humans."
+    }
+  ]
+}

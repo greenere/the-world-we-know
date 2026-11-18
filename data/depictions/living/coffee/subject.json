@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "Coffee",
+      "caption": "Coffee cherries grow in clusters along the branches. Their seeds, dried and roasted, carried a plant of the Ethiopian highlands into coffeehouses around the world.",
+      "sources": [
+        "hattox"
+      ],
+      "confidence": "medium",
+      "prompt": "Close side view of Coffea arabica branch with opposite glossy wavy-edged leaves and small clusters of ripe red cherries at nodes. A few cherries opened naturally on a stone below showing paired pale seeds, tiny white star flowers on another branch. No coffee cups or brown roasted beans on plant."
+    }
+  ]
+}

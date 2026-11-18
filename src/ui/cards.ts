@@ -764,6 +764,18 @@ export class Cards {
 
   private living(x: Living, s: State): Node[] {
     const vp = s.vps[0];
+    const plate = x.pictures && x.kind !== 'music' ? new Plate(this.data, {
+      kind: 'living', id: x.id,
+      pick: items => items[0] ?? null,
+      label: () => t('Natural-history study'),
+      range: () => t('Natural-history study'),
+      jump: () => {},
+    }, vp, (d, title, caption, range) => this.openLightbox(d, title, caption, range)) : null;
+    this.cardPlate = plate;
+    if (plate) {
+      plate.el.classList.add('plate-living');
+      plate.show(0);
+    }
     const known = x.known[vp] ?? x.origin.mid;
     const name = tx.living(x.id, 'name', x.name);
     const kicker = h('div.card-kicker.inv-kicker');
@@ -811,6 +823,7 @@ export class Cards {
         h('button.linkish', {type: 'button', title: t('Show on the map'), onclick: () => this.actions.flyTo(x.origin.lon, x.origin.lat, 3)}, tx.living(x.id, 'place', x.origin.place)),
         culture ? ` · ${culture}` : null,
       ),
+      ...(plate ? [plate.el] : []),
       h('p.card-story', tx.living(x.id, 'summary', x.summary)),
     ];
     // An instrument family: the atlas's own music that plays it, and on what.

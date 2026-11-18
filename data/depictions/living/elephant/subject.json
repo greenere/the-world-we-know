@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The elephant",
+      "caption": "This Asian elephant carries food to its mouth with its trunk. Elephants were valued for work and war, while animals sent abroad could become celebrated royal gifts.",
+      "sources": [
+        "bedini"
+      ],
+      "confidence": "medium",
+      "prompt": "Three-quarter full-body Asian elephant Elephas maximus feeding on vegetation at a South Asian forest clearing, small rounded ears, twin-domed head, gently convex back, natural short tusks, trunk curled towards mouth with grass. Four columnar legs and sound feet, no saddle or war gear, not African giant ears."
+    }
+  ]
+}

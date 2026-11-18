@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The great auk",
+      "caption": "The great auk came ashore on rocky North Atlantic islands to breed. Its short wings served in the water, but could not lift the bird into the air.",
+      "sources": [
+        "fuller-auk"
+      ],
+      "confidence": "medium",
+      "prompt": "Full-body breeding adult Pinguinus impennis standing on North Atlantic rocky shore, black head and back, white belly, conspicuous white oval patch in front of eye, heavy vertically grooved black bill, tiny narrow wings and dark webbed feet. Rough grey sea and distant colony. Not penguin or puffin, no orange beak."
+    }
+  ]
+}

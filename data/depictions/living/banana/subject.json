@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The banana",
+      "caption": "Bananas grow in clusters beneath broad leaves. People spread cultivated forms by carrying living planting material from one tropical region to another.",
+      "sources": [
+        "perrier-2011"
+      ],
+      "confidence": "medium",
+      "prompt": "Low upward view of a cultivated banana Musa plant, layered pseudostem, enormous broad leaves with naturally split edges, green curved bananas grouped in orderly hands and a single purple inflorescence hanging below. Melanesian garden, no woody palm trunk or coconuts, no people."
+    }
+  ]
+}

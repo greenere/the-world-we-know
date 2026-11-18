@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "study",
+      "title": "The coelacanth",
+      "caption": "Fleshy lobed fins distinguish the coelacanth from most familiar fish. Living specimens connected a fossil lineage with the catches of western Indian Ocean fishermen.",
+      "sources": [
+        "smith-coelacanth",
+        "species-coelacanth"
+      ],
+      "confidence": "medium",
+      "prompt": "Underwater lateral natural-history study of Latimeria chalumnae, dark blue fish with pale irregular flecks, paired fleshy lobed pectoral and pelvic fins, two dorsal fins, distinctive three-lobed caudal fin with small central projection. Swimming beside shaded submarine rock ledge, no land legs, no generic tuna tail, no scuba diver or cartoon bubbles."
+    }
+  ]
+}
