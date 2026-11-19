@@ -163,6 +163,15 @@ class App {
       const who = (j.traveler && tx.journey(j.id, 'traveler', j.traveler)) || tx.journey(j.id, 'name', j.name);
       const region = land ? this.data.regionById.get(land.region) : undefined;
       why = region ? t('With {who}, in {place}', {who, place: tx.region(region.id, region.name)}) : t('With {who}', {who});
+    } else if (s.vps[0] === 'humanity') {
+      // Humanity has no music of its own: it hears the land at the centre of the map, or the nearest one.
+      const land = this.landNearCentre(s.year);
+      if (land) this.humanityLand = land;
+      const heard = land ?? this.humanityLand;
+      vp = heard?.vp ?? 'greece';
+      tradition = traditionFor(sc, vp, s.year);
+      const region = heard ? this.data.regionById.get(heard.region) : undefined;
+      why = region ? t('Humanity, in {place}', {place: tx.region(region.id, region.name)}) : t('{vp} in {year}', {vp: tx.viewpoint(s.vps[0], 'name', this.data.vp[s.vps[0]].name), year: formatYear(Math.round(s.year))});
     } else {
       tradition = traditionFor(sc, s.vps[0], s.year);
       why = t('{vp} in {year}', {vp: tx.viewpoint(s.vps[0], 'name', this.data.vp[s.vps[0]].name), year: formatYear(Math.round(s.year))});
@@ -174,6 +183,26 @@ class App {
     const moving = s.playing || this.travelTarget !== null || !!only;
     return {known: only ? Math.max(0.6, this.knownShare()) : this.knownShare(), moving, style, voices, ...ens, year, prefer: only ? undefined : this.music.themeFor(tradition.id, tradition.themes), why};
   }
+  /** The last land the Humanity view heard, kept while the map looks at open sea. */
+  private humanityLand: {vp: VpId; region: string} | null = null;
+
+  /** Whose music belongs to the land at the centre of the map, or else the nearest land that has some. */
+  private landNearCentre(year: number): {vp: VpId; region: string} | null {
+    const sc = this.data.soundscapes;
+    const c = this.map.getCenter();
+    const at = (lon: number, lat: number) => (Math.abs(lat) > 85 ? null : landAt(sc, this.data, this.grid, ((lon + 540) % 360) - 180, lat, year));
+    const here = at(c.lng, c.lat);
+    if (here) return here;
+    for (const r of [3, 6, 10, 16, 25]) {
+      for (let k = 0; k < 12; k++) {
+        const a = (k / 12) * 2 * Math.PI;
+        const found = at(c.lng + (r * Math.cos(a)) / Math.max(0.3, Math.cos((c.lat * Math.PI) / 180)), c.lat + r * Math.sin(a));
+        if (found) return found;
+      }
+    }
+    return null;
+  }
+
   private knownKey = '';
   private known = 0;
 

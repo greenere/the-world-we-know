@@ -27,6 +27,7 @@ export const zhUi: Record<string, string> = {
   'Follow the map again': '重新跟随地图',
   'Chosen in the settings': '在设置中选择',
   'With {who}, in {place}': '随{who}，在{place}',
+  'Humanity, in {place}': '人类，在{place}',
   'With {who}': '随{who}',
   '{vp} in {year}': '{vp}，{year}',
   'The traditions': '音乐传统',
