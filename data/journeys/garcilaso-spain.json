@@ -20,7 +20,7 @@
     {"year": 1561, "place": "Montilla", "lat": 37.59, "lon": -4.64, "note": "He settles with his father's family and writes there and in Córdoba for the rest of his life."}
   ],
   "informs": [
-    {"region": "iberia", "level": 3, "homeKnows": 1609, "confidence": "high", "note": "Garcilaso writes in Spain"},
-    {"region": "europe", "level": 3, "homeKnows": 1609, "confidence": "high", "note": "The Royal Commentaries, printed in Lisbon"}
+    {"region": "iberia", "level": 4, "homeKnows": 1609, "confidence": "high", "note": "Garcilaso writes in Spain"},
+    {"region": "italy", "level": 2, "homeKnows": 1590, "confidence": "high", "note": "He translates León Hebreo's Dialogues of Love from the Italian"}
   ]
 }

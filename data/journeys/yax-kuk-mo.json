@@ -1,0 +1,18 @@
+{
+  "id": "yax-kuk-mo",
+  "name": "K'inich Yax K'uk' Mo' founds Copán",
+  "traveler": "K'inich Yax K'uk' Mo', 'Sun-eyed Green Quetzal Macaw'",
+  "years": "426–427",
+  "kind": "envoy",
+  "viewpoint": "maya",
+  "summary": "Altar Q at Copán, carved 350 years later, tells how the dynasty began. In September 426 a lord named K'uk' Mo' took the emblems of kingship at the Wiinte' Naah, a fire shrine tied to Teotihuacan, and 152 days later he arrived at Copán to found a line of sixteen kings. The strontium in his teeth, found in the tomb beneath the Acropolis, says he grew up in the central Petén, perhaps at Tikal; his portraits wear Teotihuacan's goggles. Where the Wiinte' Naah stood is still argued.",
+  "source": "stuart-copan",
+  "confidence": "medium",
+  "lifts": false,
+  "stops": [
+    {"year": 410, "place": "Tikal", "lat": 17.22, "lon": -89.62, "note": "Isotopes in his teeth point to a childhood in the central Petén, in Tikal's orbit after Teotihuacan's 'arrival' of 378.", "city": "tikal", "source": "buikstra-copan"},
+    {"year": 426, "place": "The Wiinte' Naah, perhaps at Teotihuacan", "lat": 19.69, "lon": -98.84, "note": "On 5 September 426 he 'takes the k'awiil', the sceptre of kingship, at a 'root-house' tied to Teotihuacan's fire cult.", "date": "5 September 426", "confidence": "low", "city": "teotihuacan"},
+    {"year": 427, "place": "Copán", "lat": 14.84, "lon": -89.14, "note": "'He arrives' 152 days later, on 9 February 427, and is remembered as 'the lord of the west'. His tomb lies deep beneath Temple 16.", "date": "9 February 427", "city": "copan"}
+  ],
+  "informs": []
+}

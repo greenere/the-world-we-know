@@ -1600,18 +1600,16 @@ mexica,japan,1614,3,high,chimalpahin,Hasekura's embassy
 inca,peru,-500,3,medium,moseley,Chavín's pilgrims from coast and highland
 inca,peru,700,4,medium,moseley,Wari's roads
 inca,peru,1470,5,medium,cieza,"The Inca census, roads and khipu"
-inca,andes-north,-500,1,low,moseley,
-inca,ecuador,1000,2,low,moseley,Spondylus shells from the coast of Ecuador
+inca,ecuador,1000,3,medium,moseley,Raft traders from the Spondylus coast
 inca,atacama-chile,-500,1,low,moseley,
-inca,atacama-chile,500,3,medium,moseley,Tiwanaku's colonies
-inca,atacama-chile,1490,4,medium,cieza,The empire reaches the Maule
-inca,pampas,1480,1,low,cieza,"Tucumán, the southern frontier"
+inca,atacama-chile,500,2,medium,moseley,Tiwanaku's llama caravans reach the northern valleys
+inca,andes-southeast,500,2,medium,moseley,Tiwanaku's caravans reach the oasis of San Pedro de Atacama
+inca,pampas,1480,1,low,d-altroy,"The Chaco beyond the frontier forts, and its Chiriguano raiders"
 inca,amazon,-500,1,low,moseley,"Antisuyu, the forest"
-inca,amazon,1450,2,medium,sarmiento,Inca campaigns into the forest
+inca,colombia-andes,1500,1,low,sarmiento,Beyond Pasto and the Ancasmayo river
 inca,europe,1528,1,high,cieza,Bearded men in a ship
-inca,europe,1533,2,high,guaman-poma,
-inca,iberia,1560,2,medium,garcilaso,
-inca,mexico,1533,1,medium,hoc,News of New Spain
+inca,iberia,1533,2,high,guaman-poma,"Castile, the Spaniards' homeland"
+inca,mexico,1533,1,medium,cieza,News of New Spain
 # ════ Persia (with Mesopotamia); it joins the Islamic world in 651 ════
 persia,persia,-500,5,high,behistun,"The Achaemenid heartland, measured by the royal road and its stations"
 persia,mesopotamia,-500,5,high,behistun,Babylon: a royal capital
@@ -2129,7 +2127,7 @@ mexica,maya,-1200,1,low,pool-olmec,
 inca,peru,-2000,3,low,burger-chavin,Caral and the coastal valleys
 inca,peru,-900,3,medium,burger-chavin,
 inca,amazon,-900,1,low,burger-chavin,
-inca,andes-north,-900,1,low,burger-chavin,
+inca,ecuador,-900,2,medium,burger-chavin,Spondylus shell and conch trumpets from the coast of Ecuador
 # ════ Europe's members hold the finer polar and frontier regions back until Europe reached them ════
 greece,alaska-arctic,-500,=0,high,hoc,
 greece,alaska-arctic,1831.5,0,high,hoc,
@@ -2772,6 +2770,8 @@ mexica,china-south,1610,2,medium,chimalpahin,Chimalpahin writes of China and Jap
 # The Inca under Spain: Panama, New Spain, Africa
 inca,central-america,1533,2,high,cieza,The Spaniards came from Panama
 inca,caribbean,1533,1,medium,cieza,
+inca,spanish-main,1560,2,high,garcilaso,Cartagena and the fleet for Spain
+inca,colombia-andes,1615,2,medium,guaman-poma,The New Kingdom of Granada on Guaman Poma's map
 inca,mexico,1560,2,medium,cieza,
 inca,levant,1615,2,medium,guaman-poma,
 inca,guinea-coast,1615,2,medium,guaman-poma,Africans brought to Peru
@@ -3147,19 +3147,21 @@ steppe,rus,1727,3,high,atwood,
 maya,maya,-2000,2,low,sharer,Farming villages of the lowlands
 maya,central-america,-2000,1,low,sharer,
 maya,gulf-of-mexico,-2000,1,low,pool-olmec,
-maya,mexico,-2000,1,low,pool-olmec,
+maya,mexico-south,-2000,1,low,pool-olmec,
 maya,maya,-1000,3,medium,inomata-2013,"Ceibal, Cuello and the first plazas"
 maya,mexico-south,-1000,2,medium,pool-olmec,The Olmec of the Gulf Coast
 maya,gulf-of-mexico,-1000,2,medium,pool-olmec,
-maya,central-america,-1000,2,medium,sharer,Jade from the Motagua valley
+maya,maya-highlands,-1000,3,medium,sharer,Jade from the Motagua valley and obsidian from El Chayal
 maya,caribbean,-500,1,low,sharer,
 maya,maya,-300,4,medium,sharer,"El Mirador, joined to its towns by causeways"
-maya,central-america,-300,3,medium,sharer,The highland cities of Kaminaljuyu and Chalchuapa
+maya,maya-highlands,-300,4,medium,sharer,The highland cities of Kaminaljuyu and Chalchuapa
+maya,mexico-centre,200,2,medium,sharer,Green obsidian from Teotihuacan's mines
 maya,mexico-centre,378,3,high,stuart-entrada,"Teotihuacan, the place of reeds to the west"
 maya,gulf-of-mexico,600,3,medium,sharer,Canoe trade along the coast
 maya,caribbean,600,2,medium,sharer,
-maya,central-america,900,3,high,sharer,Gold from Panama and Costa Rica in the Sacred Cenote
-maya,andes-north,1000,1,low,sharer,Gold from as far as Colombia
+maya,central-america,900,2,high,sharer,Gold from Panama and Costa Rica in the Sacred Cenote
+maya,central-america,1200,3,medium,sharer,Canoe traders on the Honduran coast at Nito and Naco
+maya,colombia-andes,1000,1,low,sharer,Gold from as far as Colombia
 maya,rio-grande-pueblos,1000,1,low,sharer,Turquoise from the far north by way of Tula
 maya,caribbean,1200,3,medium,sharer,"Cozumel, Ix Chel's island, and the canoe trade to Honduras"
 maya,mexico-centre,1450,3,high,landa,Aztec merchants at Xicalango
@@ -3175,10 +3177,10 @@ maya,levant,1550,2,medium,chilam-balam,Jerusalem in the friars' teaching
 maya,europe,1550,1,medium,restall-maya,
 maya,guinea-coast,1550,2,medium,restall-black-middle,Africans brought to Yucatán
 maya,caribbean,1600,4,medium,restall-maya,Ships to Havana and Veracruz
-maya,north-atlantic-west,1600,2,medium,restall-maya,
 maya,britain,1650,2,medium,restall-maya,English logwood cutters on the coast of Belize
 maya,britain,1850,3,high,reed-caste-war,Chan Santa Cruz trades with British Honduras for guns
-maya,north-america,1848,2,high,reed-caste-war,Yucatán's governor offers the province to the United States
+maya,mississippi,1848,2,high,reed-caste-war,American volunteers from New Orleans fight for Yucatán against the rebels
+maya,north-america,1848,1,medium,reed-caste-war,Yucatán's governor offers the province to the United States
 
 # ════ Mexica, Maya and Inca after the conquest: what their own people learned of a wider world ════
 mexica,maya,1524,4,high,kaqchikel-annals,Nahua allies march with Alvarado into Guatemala
@@ -3190,11 +3192,12 @@ mexica,north-america,1847,3,high,guardino-2017,The United States army takes Mexi
 mexica,california,1848,3,high,guardino-2017,California is lost to the United States
 mexica,gaul,1862,3,high,martinez-galicia,The French intervention
 mexica,alps-danube,1864,3,high,martinez-galicia,Maximilian of Austria learns Nahuatl from Faustino Galicia Chimalpopoca
-maya,central-america,1524,4,high,kaqchikel-annals,Alvarado's conquest of the highlands
+maya,central-america,1524,3,high,kaqchikel-annals,Alvarado's conquest goes on into Cuscatlán
+maya,central-america,1600,4,medium,macleod-1973,"The Audiencia of Guatemala, from Chiapas to Costa Rica"
+maya,mexico,1550,2,medium,restall-maya,"New Spain, whose viceroy rules Yucatán"
 maya,ecuador,1534,2,high,lovell-alvarado,Conscripts from Guatemala march with Alvarado to Quito
 maya,peru,1534,1,medium,lovell-alvarado,
 maya,peru,1580,2,medium,macleod-1973,Ships from Realejo carry Guatemala's trade to Peru
-inca,amazon,1541,3,high,hemming-inca,Thousands of Andean porters go with Gonzalo Pizarro to the land of cinnamon
 inca,amazon-river,1542,2,medium,hemming-inca,Orellana's men float down the great river
 inca,pampas,1590,3,medium,assadourian-1982,The road from Potosí to Tucumán and Buenos Aires
 inca,brazil-coast,1600,2,medium,assadourian-1982,Portuguese traders from Brazil reach Potosí

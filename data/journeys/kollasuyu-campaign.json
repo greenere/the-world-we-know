@@ -1,0 +1,25 @@
+{
+  "id": "kollasuyu-campaign",
+  "name": "Tupac Inca Yupanqui conquers Kollasuyu",
+  "traveler": "Tupac Inca Yupanqui",
+  "years": "c. 1481–1493",
+  "kind": "military",
+  "viewpoint": "inca",
+  "summary": "After his northern wars Tupac Inca turned to Kollasuyu, the south-eastern quarter of the empire. He crushed a Colla revolt at Lake Titicaca, took Charcas and the silver hills, and marched south along the eastern Andes into the valleys of Salta and Tucumán, where the Inca built roads, forts and smelters. Crossing the cordillera into Chile, his armies went down the valleys to the Maule river, where the Mapuche and Promaucae stopped them. The Inca road, the Qhapaq Ñan, ran in the end from Quito to beyond Santiago.",
+  "source": "sarmiento",
+  "confidence": "medium",
+  "stops": [
+    {"year": 1481, "place": "Cusco", "lat": -13.53, "lon": -71.97, "note": "Tupac Inca sets out for Kollasuyu.", "city": "cuzco"},
+    {"year": 1482, "place": "Hatuncolla", "lat": -15.65, "lon": -70.1, "note": "The Colla revolt is put down."},
+    {"year": 1483, "place": "Paria", "lat": -17.92, "lon": -67.03, "note": "A provincial capital on the altiplano near the lake of Poopó; storehouses for the road south.", "source": "d-altroy"},
+    {"year": 1484, "place": "Chicoana", "lat": -25.1, "lon": -65.6, "note": "In the Calchaquí valleys of Salta, an Inca administrative centre among the Diaguita.", "source": "d-altroy"},
+    {"year": 1485, "place": "Copiapó", "lat": -27.37, "lon": -70.33, "note": "Over the high passes into the valleys of Chile.", "source": "d-altroy"},
+    {"year": 1488, "place": "The Mapocho valley", "lat": -33.45, "lon": -70.66, "note": "An Inca outpost where Santiago will stand.", "source": "d-altroy"},
+    {"year": 1490, "place": "The Maule river", "lat": -35.3, "lon": -72.0, "note": "The Promaucae and the Mapuche beyond the river hold the Inca off; the Maule becomes the southern frontier.", "source": "cieza"},
+    {"year": 1493, "place": "Cusco", "lat": -13.53, "lon": -71.97, "by": "land", "note": "Tupac Inca dies; his son Huayna Capac inherits an empire from Ecuador to central Chile.", "city": "cuzco"}
+  ],
+  "informs": [
+    {"region": "andes-southeast", "level": 4, "homeKnows": 1485, "confidence": "medium", "note": "Kollasuyu: roads, forts and mines from the Puna to Tucumán and Cuyo", "source": "d-altroy"},
+    {"region": "atacama-chile", "level": 4, "homeKnows": 1490, "confidence": "medium", "note": "The empire reaches the Maule", "source": "cieza"}
+  ]
+}

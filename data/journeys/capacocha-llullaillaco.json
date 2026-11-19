@@ -1,0 +1,19 @@
+{
+  "id": "capacocha-llullaillaco",
+  "name": "The capacocha to Llullaillaco",
+  "traveler": "Three children chosen for the capacocha",
+  "years": "c. 1500",
+  "kind": "pilgrim",
+  "viewpoint": "inca",
+  "summary": "In the capacocha, the Incas' gravest offering, children from across the empire were brought to Cusco to be blessed by the ruler, then led back along the royal roads in straight lines to shrines on the highest peaks. In 1999 Johan Reinhard and Constanza Ceruti found three of them frozen near the 6,739-metre summit of Llullaillaco: a girl of about thirteen, a boy of seven and a girl of six. Isotopes in their hair record the last year of their lives: a sudden change to maize and llama meat when they were chosen, and coca and maize beer given more and more in the final weeks. It is the highest archaeological site on Earth.",
+  "source": "reinhard-ceruti",
+  "confidence": "medium",
+  "lifts": false,
+  "stops": [
+    {"year": 1499, "place": "Cusco", "lat": -13.53, "lon": -71.97, "note": "The children are presented to the Inca in the great feasts in Cusco's plaza.", "city": "cuzco"},
+    {"year": 1500, "place": "Paria", "lat": -17.92, "lon": -67.03, "note": "South along the Qhapaq Ñan across the altiplano.", "source": "d-altroy"},
+    {"year": 1500, "place": "Catarpe", "lat": -22.86, "lon": -68.2, "note": "The Inca tambo by the oasis of San Pedro de Atacama, at the foot of the high desert.", "source": "d-altroy"},
+    {"year": 1500, "place": "Llullaillaco", "lat": -24.72, "lon": -68.54, "note": "On the summit platform, with miniature figures of gold, silver and shell, they are left to sleep in the cold. Found in 1999, perfectly preserved.", "source": "wilson-2007"}
+  ],
+  "informs": []
+}

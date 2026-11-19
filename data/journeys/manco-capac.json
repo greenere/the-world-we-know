@@ -1,0 +1,19 @@
+{
+  "id": "manco-capac",
+  "name": "Manco Capac's walk from Lake Titicaca",
+  "traveler": "Manco Capac and Mama Ocllo, children of the Sun",
+  "years": "c. 1200",
+  "kind": "traveler",
+  "viewpoint": "inca",
+  "summary": "Garcilaso heard it from his mother's family in Cusco: the Sun, pitying people who lived like beasts, sent his son and daughter to the Island of the Sun in Lake Titicaca with a golden staff. Wherever it sank into the earth at a single thrust, they were to found their city. They walked north, trying the staff as they went, and at the hill of Huanacauri above the Cusco valley it vanished into the ground. Other tellings bring the founders out of a cave at Pacaritambo. Either way, the Incas placed their origin at Titicaca, the lake of the older Tiwanaku.",
+  "source": "garcilaso",
+  "confidence": "low",
+  "lifts": false,
+  "stops": [
+    {"year": 1200, "place": "Island of the Sun", "lat": -16.02, "lon": -69.18, "note": "The Sun sets his children down on the sacred rock in Lake Titicaca."},
+    {"year": 1200, "place": "Pacaritambo", "lat": -13.73, "lon": -71.94, "note": "The 'inn of the dawn', where in another telling the four Ayar brothers and their sisters climb out of the cave of Tambotoco.", "source": "sarmiento"},
+    {"year": 1200, "place": "Huanacauri", "lat": -13.57, "lon": -71.93, "note": "On the hill above the valley the golden staff sinks out of sight. Huanacauri becomes one of the holiest shrines of Cusco."},
+    {"year": 1200, "place": "Cusco", "lat": -13.53, "lon": -71.97, "note": "Manco Capac teaches the men to farm, Mama Ocllo teaches the women to spin and weave: the founding of Cusco.", "city": "cuzco"}
+  ],
+  "informs": []
+}

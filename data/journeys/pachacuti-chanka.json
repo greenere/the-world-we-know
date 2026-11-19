@@ -1,0 +1,23 @@
+{
+  "id": "pachacuti-chanka",
+  "name": "Pachacuti and the war with the Chanka",
+  "traveler": "Cusi Yupanqui, who took the name Pachacuti",
+  "years": "c. 1438–1450",
+  "kind": "military",
+  "viewpoint": "inca",
+  "summary": "When the Chanka marched on Cusco, the old ruler Viracocha Inca and his heir fled to a hill fort. A younger son, Cusi Yupanqui, stayed with a few captains and held the city; the Incas said the very stones of the field rose up as warriors to help him. He routed the Chanka, took their country, and went on to subdue the Colla and Lupaqa lords around Lake Titicaca. Taking the name Pachacuti, 'he who turns the world', he rebuilt Cusco in fitted stone and laid out the system that became Tawantinsuyu. Betanzos heard this from Pachacuti's own descendants.",
+  "source": "betanzos",
+  "confidence": "medium",
+  "lifts": false,
+  "stops": [
+    {"year": 1438, "place": "Huchuy Qosqo", "lat": -13.4, "lon": -71.92, "note": "Viracocha Inca and his heir Urco abandon Cusco for the fortress above the Sacred Valley."},
+    {"year": 1438, "place": "Cusco", "lat": -13.53, "lon": -71.97, "note": "Cusi Yupanqui holds the city; the pururauca stones rise to fight beside him.", "city": "cuzco"},
+    {"year": 1438, "place": "Yahuarpampa", "lat": -13.47, "lon": -72.15, "note": "On the 'plain of blood' near Anta, west of Cusco the Chanka are broken and their idol taken.", "source": "sarmiento"},
+    {"year": 1440, "place": "Andahuaylas", "lat": -13.66, "lon": -73.38, "note": "The Chanka homeland is taken; its warriors are made to serve in the Inca army."},
+    {"year": 1440, "place": "Vilcas", "lat": -13.65, "lon": -73.95, "note": "Vilcas, between the old Wari heartland and the Chanka, later becomes a great Inca centre with a sun temple and an ushnu platform.", "source": "cieza"},
+    {"year": 1445, "place": "Hatuncolla", "lat": -15.65, "lon": -70.1, "note": "The Colla lord of the Titicaca basin is defeated; the herds and silver of the high plateau come under Cusco.", "source": "sarmiento"},
+    {"year": 1446, "place": "Chucuito", "lat": -15.89, "lon": -69.89, "by": "land", "note": "The Lupaqa kings on the lake's western shore submit."},
+    {"year": 1450, "place": "Cusco", "lat": -13.53, "lon": -71.97, "note": "Pachacuti rebuilds the city in fitted stone round the golden Coricancha, the temple of the Sun.", "city": "cuzco"}
+  ],
+  "informs": []
+}

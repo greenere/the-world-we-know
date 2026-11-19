@@ -1099,7 +1099,7 @@
     "tagline": "The Andes, from Chavín to Cusco.",
     "color": "#c4652a",
     "seal": "inca",
-    "startNote": "Before the Inca, this view follows the Andean societies they inherited from: Caral, Chavín, Tiwanaku and Huari. After 1533 it follows Andean chroniclers under Spanish rule, such as Guamán Poma and Garcilaso, and then Inca descendants such as Juan Bautista Túpac Amaru and Dionisio Inca Yupanqui.",
+    "startNote": "Before the Inca, this view follows the Andean societies they inherited from: Caral, Chavín, the Moche, Tiwanaku and Huari. After 1533 it follows Andean chroniclers under Spanish rule, such as Guamán Poma and Garcilaso, and then Inca descendants such as Juan Bautista Túpac Amaru and Dionisio Inca Yupanqui.",
     "homes": [
       {
         "from": -2000,
@@ -1118,6 +1118,12 @@
         "place": "Chavín de Huántar",
         "lat": -9.59,
         "lon": -77.18
+      },
+      {
+        "from": 100,
+        "place": "Huacas de Moche",
+        "lat": -8.13,
+        "lon": -78.99
       },
       {
         "from": 500,
@@ -1155,6 +1161,16 @@
         "source": "moseley"
       },
       {
+        "year": 100,
+        "label": "The Moche raise the Huacas of the Sun and Moon",
+        "source": "moseley"
+      },
+      {
+        "year": 500,
+        "label": "Tiwanaku's temples rise by Lake Titicaca",
+        "source": "moseley"
+      },
+      {
         "year": 700,
         "label": "Wari builds roads across the central Andes",
         "source": "moseley"
@@ -1168,6 +1184,11 @@
         "year": 1463,
         "label": "Tupac Yupanqui's armies march north to Quito",
         "source": "sarmiento"
+      },
+      {
+        "year": 1484,
+        "label": "Kollasuyu reaches Tucumán and Cuyo",
+        "source": "d-altroy"
       },
       {
         "year": 1480,
@@ -3548,7 +3569,7 @@
     "name": "Maya",
     "longName": "The Maya",
     "adjective": "Maya",
-    "tagline": "Cities of the Petén and the Yucatán, from El Mirador to the last kingdom at Tayasal.",
+    "tagline": "Cities of the Petén, the Yucatán and the highlands, from El Mirador to the last kingdom at Tayasal.",
     "color": "#2e5e4e",
     "seal": "maya",
     "startNote": "Before about 1000 BCE this view follows the first farming villages of the Maya lowlands, known only from archaeology. After the Spanish conquest it follows Maya writers: the authors of the Popol Vuh, the Annals of the Kaqchikels and the books of Chilam Balam.",
@@ -3556,9 +3577,9 @@
     "homes": [
       {
         "from": -2000,
-        "place": "Cuello",
-        "lat": 18.09,
-        "lon": -88.57
+        "place": "Colha",
+        "lat": 18.07,
+        "lon": -88.45
       },
       {
         "from": -1000,
@@ -3597,7 +3618,7 @@
         "lon": -89.39
       },
       {
-        "from": 1847,
+        "from": 1850,
         "place": "Chan Santa Cruz",
         "lat": 19.58,
         "lon": -88.05
@@ -3653,6 +3674,11 @@
         "year": 1524,
         "label": "Alvarado conquers the K'iche' highlands",
         "source": "kaqchikel-annals"
+      },
+      {
+        "year": 1554,
+        "label": "The Popol Vuh is written down in K'iche'",
+        "source": "popol-vuh"
       },
       {
         "year": 1562,

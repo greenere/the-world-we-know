@@ -1,0 +1,19 @@
+{
+  "id": "chontal-canoe",
+  "name": "A Maya trading canoe meets Columbus",
+  "traveler": "Chontal Maya merchants",
+  "years": "1502",
+  "kind": "merchant",
+  "viewpoint": "maya",
+  "summary": "Seafaring Maya merchants paddled great dugouts around the Yucatán peninsula, from the ports of the Laguna de Términos to the shrine of Ix Chel on Cozumel and the trading towns of the Honduran coast. In July 1502, off the island of Guanaja, Columbus's ships met one of them: a canoe as long as a galley, eight feet wide, with twenty-five paddlers and a palm-thatched cabin amidships, carrying cotton mantles, copper bells and axes, obsidian-edged swords and cacao beans that the crew scrambled to pick up when they fell, 'as if they were their eyes'. They said they came from a land called Maia.",
+  "source": "colon-hernando",
+  "confidence": "medium",
+  "stops": [
+    {"year": 1502, "place": "Xicalango", "lat": 18.6, "lon": -91.9, "note": "The Chontal Maya port of trade, where cacao, cloth and Nahua goods change hands.", "source": "sharer", "confidence": "low"},
+    {"year": 1502, "place": "Cozumel", "lat": 20.45, "lon": -86.95, "note": "Ix Chel's island, a pilgrimage shrine and a waystation on the canoe route round the peninsula.", "source": "sharer", "by": "sea"},
+    {"year": 1502, "place": "Guanaja", "lat": 16.47, "lon": -85.9, "note": "Columbus's men seize the canoe and its cargo, and keep its old captain as a guide; the rest are let go.", "date": "July 1502", "by": "sea"}
+  ],
+  "informs": [
+    {"region": "iberia", "level": 1, "homeKnows": 1502, "confidence": "medium", "note": "Strangers in great ships off Guanaja"}
+  ]
+}

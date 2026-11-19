@@ -1,0 +1,22 @@
+{
+  "id": "mexica-migration",
+  "name": "The Mexica leave Aztlan",
+  "traveler": "The Mexica, led by their priests and the god Huitzilopochtli",
+  "years": "c. 1111–1325",
+  "kind": "traveler",
+  "viewpoint": "mexica",
+  "summary": "The Mexica remembered themselves as wanderers from Aztlan, a white island in a lake somewhere in the north-west. Four priests carried their god Huitzilopochtli in a bundle, and for two centuries the people moved, settled and were driven on: past Tula, through the lake towns of the Basin of Mexico, to Chapultepec and to servitude under Culhuacan. In 1325 they saw the sign the god had promised, an eagle on a nopal cactus on an island in the lake, and founded Tenochtitlan. The Codex Boturini draws the whole road as a line of footprints.",
+  "source": "boturini",
+  "confidence": "low",
+  "lifts": false,
+  "stops": [
+    {"year": 1111, "place": "Aztlan", "lat": 21.9, "lon": -105.48, "note": "The island of herons, where the Mexica lived among the Seven Tribes. Its place is unknown; Mexcaltitán in Nayarit is one guess.", "confidence": "low"},
+    {"year": 1163, "place": "Coatepec, near Tula", "lat": 20.0, "lon": -99.42, "note": "At the Hill of the Serpent, Huitzilopochtli is born armed and slays his sister Coyolxauhqui and her four hundred brothers, the moon and the stars.", "source": "sahagun"},
+    {"year": 1240, "place": "Tzompanco", "lat": 19.8, "lon": -99.1, "note": "Along the northern lakes of the Basin, already crowded with older towns that treat the newcomers as barbarians."},
+    {"year": 1280, "place": "Chapultepec", "lat": 19.42, "lon": -99.19, "note": "The Hill of the Grasshopper, with its springs. In 1299 a coalition of lake cities drives them off and sacrifices their leader Huitzilihuitl.", "source": "chimalpahin", "date": "1299"},
+    {"year": 1299, "place": "Tizaapan, under Culhuacan", "lat": 19.33, "lon": -99.11, "note": "Granted a barren lava field full of snakes, they cook and eat the snakes and serve Culhuacan as mercenaries.", "source": "duran"},
+    {"year": 1323, "place": "Culhuacan", "lat": 19.33, "lon": -99.11, "note": "Asked for the ruler's daughter as a bride for their god, they flay her; the horrified Culhua drive them into the marshes.", "source": "duran"},
+    {"year": 1325, "place": "Tenochtitlan", "lat": 19.43, "lon": -99.13, "note": "On a rocky island they find the eagle on the nopal and build a reed shrine to Huitzilopochtli: the first Templo Mayor.", "city": "tenochtitlan", "source": "duran"}
+  ],
+  "informs": []
+}

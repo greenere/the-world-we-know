@@ -1,0 +1,18 @@
+{
+  "id": "itza-peten",
+  "name": "The Itza go south to Lake Petén",
+  "traveler": "The Itza and their Kan Ek' kings",
+  "years": "c. 1450",
+  "kind": "traveler",
+  "viewpoint": "maya",
+  "summary": "The Itza remembered Chichén Itzá as the city of their ancestors. The books of Chilam Balam tell, in the cyclical language of the katuns, how they abandoned it and went south into the forest to the lakes of the Petén, where they built Nojpetén on an island. There the Kan Ek' kings kept an independent Maya kingdom, with its own books and calendar priests, for 170 years after the Spanish conquest of Yucatán. Cortés passed by in 1525 and left a lame horse, which the Itza honoured as a god; a friar smashed its statue in 1618. Nojpetén fell to a Spanish assault in March 1697.",
+  "source": "jones-itza",
+  "confidence": "low",
+  "lifts": false,
+  "stops": [
+    {"year": 1450, "place": "Chichén Itzá", "lat": 20.68, "lon": -88.57, "note": "The ancestral city, long since abandoned, from which the Kan Ek' claimed descent.", "city": "chichen-itza", "source": "chilam-balam"},
+    {"waypoint": true, "lat": 18.6, "lon": -89.4},
+    {"year": 1450, "place": "Nojpetén", "lat": 16.93, "lon": -89.89, "note": "An island town of temples and thatched houses on Lake Petén Itzá: the last independent Maya kingdom.", "confidence": "low"}
+  ],
+  "informs": []
+}
