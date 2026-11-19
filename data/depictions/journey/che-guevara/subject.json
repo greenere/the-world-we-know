@@ -1,0 +1,473 @@
+{
+  "traveller": "Ernesto Guevara in 1952, age 23 to 24, slim young Argentine man with short dark wavy hair and clean-shaven face or light travel stubble, worn civilian shirt and trousers; Alberto Granado age 29, stockier with receding dark hair, civilian shirt and trousers. No iconic later Che beret, military uniform, star, cigar, weapons or revolutionary posters. Include travelers only when the scene requests them, never an obligatory foreground figure.",
+  "scenes": [
+    {
+      "id": "packed-norton",
+      "stop": 0,
+      "place": "Buenos Aires",
+      "title": "Packing La Poderosa",
+      "caption": "Before leaving Buenos Aires, Ernesto and Alberto had to fit their belongings onto one old Norton. The luggage left little room for its two riders.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Close side-on object study of a parked 1939 Norton 500 single-cylinder motorcycle outside a modest Buenos Aires house, tied canvas bags and rolled blankets. Exactly two aligned spoked wheels, one coherent frame, fuel tank above engine, saddle above rear frame, handlebar connected to front fork, no people.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Forewarnings",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "miramar-coast",
+      "stop": 1,
+      "place": "Miramar",
+      "title": "A pause by the Atlantic",
+      "caption": "In Miramar, Ernesto visited Chichina before continuing south. The seaside stop kept him close to home for a little longer.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide beach-level landscape of Miramar Argentina in summer 1952, low dunes, sparse seaside houses, Atlantic surf, two tiny distant walkers, no identifiable portraits, no motorcycle, no skyscrapers.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Lovesick pause",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "pampas-road",
+      "stop": 2,
+      "place": "Bahía Blanca",
+      "title": "Across the pampas",
+      "caption": "Beyond Bahía Blanca, open country replaced the coast. Long unpaved roads made dust, luggage and the condition of the bike part of each day's travel.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Very wide low view along a dirt road through dry Argentine pampas, wire fences and grass, tiny distant 1930s motorcycle with two riders receding towards horizon. Landscape dominant; no close anatomy, no mountains or modern road signs.",
+      "traveller": true,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Until the last tie is broken",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "nahuel-huapi",
+      "stop": 3,
+      "place": "San Carlos de Bariloche",
+      "title": "The lakes at Bariloche",
+      "caption": "At Bariloche, the journey reached Nahuel Huapí. Forested shores and mountain ridges offered a different view from the plains they had crossed.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Shore-level panoramic Nahuel Huapi lake near Bariloche, clear blue-grey lake, rocky foreground, southern beech trees and Andean mountains, no buildings or foreground people.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "On the Seven Lakes Road",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "lake-crossing",
+      "stop": 3,
+      "place": "San Carlos de Bariloche",
+      "title": "Across the lakes into Chile",
+      "caption": "The border crossing involved boats as well as roads. From the deck, the travelers could watch the wooded slopes rise steeply from the water.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "View from the wooden deck of a small 1952 Andean lake passenger vessel towards forested mountains, simple metal railing and a coil of rope in foreground, broad lake wake to side. No motorcycle riding on water, no large ocean liner.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "And now, I feel my great roots unearth, free and...",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "temuco-paper",
+      "stop": 4,
+      "place": "Temuco",
+      "title": "News in Temuco",
+      "caption": "A newspaper in Temuco reported their visit. The attention helped turn two travelers with an unreliable motorcycle into welcomed guests.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Intimate tabletop still life in modest Chilean lodging 1952, folded local newspaper with completely illegible small marks, enamel mug, travel notebook, worn gloves and rain-damp jacket on chair, window onto timber houses. No people, no readable lettering.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "The Experts",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "truck-norton",
+      "stop": 5,
+      "place": "Los Ángeles",
+      "title": "The motorcycle becomes cargo",
+      "caption": "At Los Ángeles, they found a truck to carry them and the broken motorcycle to Santiago. La Poderosa would no longer carry them north.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Side view of a stationary early-1950s flatbed truck in Chile, a complete battered 1939 Norton motorcycle upright securely lashed within wooden cargo sides, wheels on truck bed. Two small young male travelers standing beside truck with bags, no loading stunt, no modern vehicles.",
+      "traveller": true,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Firefighters, workers and other matters",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "roadside-tools",
+      "stop": 5,
+      "place": "Los Ángeles",
+      "title": "What the road wore out",
+      "caption": "A worn tire, a handful of tools and patched luggage tell another part of the trip. Keeping an old motorcycle moving required attention that no itinerary could predict.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Close still-life study of a removed narrow vintage motorcycle spoked wheel resting on a Chilean workshop floor in 1952, tire levers and simple spanners beside canvas bag with repairs, coherent spokes radiating from hub to rim, no people, no modern power tools. Warm side light, quiet technical field sketch.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "La Poderosa II's final tour",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "valparaiso-hills",
+      "stop": 6,
+      "place": "Valparaíso",
+      "title": "Houses above the port",
+      "caption": "Valparaíso rose in layers above its harbor. Its steep streets and crowded slopes belonged to a port where the next stage of their journey depended on finding a ship.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "High oblique view from a Valparaiso hillside in 1952, tightly packed modest timber and stucco houses, corrugated roofs, steep stair street leading towards harbour with small mid-century cargo steamships. No modern container cranes or highrise skyline.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "La Gioconda's smile",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "coastal-steamer",
+      "stop": 7,
+      "place": "Antofagasta",
+      "title": "Working their passage",
+      "caption": "After hiding aboard a coastal ship, the two men were put to work. Near Antofagasta, the desert coast came into view from the deck.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Deck-level view of 1952 coastal cargo steamer off Antofagasta, bucket and mop against riveted bulwark in foreground, ochre barren coastal hills across blue Pacific, distant port. Work equipment is focus, no people, no containers or cruise ship.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Stowaways",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "desert-companions",
+      "stop": 8,
+      "place": "Chuquicamata",
+      "title": "A night with fellow travelers",
+      "caption": "On the way to the copper mine, they met a worker and his wife looking for employment. In the cold desert, they shared what little warmth they had.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Quiet eye-level nighttime desert scene near Baquedano Chile 1952, four adults seated naturally on ground around a small sheltered candle, two traveling men and a working couple wrapped in blankets. Respectful ordinary faces, cold arid open surroundings, no heroic stance, no campfire spectacle.",
+      "traveller": true,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "This time, disaster",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "copper-pit",
+      "stop": 8,
+      "place": "Chuquicamata",
+      "title": "The scale of Chuquicamata",
+      "caption": "At Chuquicamata, the open pit cut into the desert in immense steps. The mine's scale set machinery and workers against a landscape being steadily removed.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Grand high viewpoint over Chuquicamata open-pit copper mine as in 1952, broad stepped ochre benches and small historical rail ore wagons with tracks, atmospheric dust. No gigantic modern haul trucks, no futuristic excavators, no foreground hero.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Chuquicamata",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "cusco-street",
+      "stop": 9,
+      "place": "Cusco",
+      "title": "Two histories in one street",
+      "caption": "In Cusco, closely fitted Inca masonry survived beneath later buildings. Walking its streets meant seeing different periods of the city in the same wall.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Eye-level narrow Cusco street in 1952, precisely fitted polygonal Inca stone base beneath white plaster colonial houses and wooden balconies, small pedestrians carrying baskets, strong receding perspective, no tourist signage, no motorcycle.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "The navel",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "stone-joints",
+      "stop": 9,
+      "place": "Cusco",
+      "title": "Looking closely at the stonework",
+      "caption": "A close view reveals how unevenly shaped blocks meet without wide mortar joints. These surviving walls gave the travelers something more concrete than a textbook account of the Inca city.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Close architectural study of a Cusco Inca polygonal masonry wall, natural grey large stones fitted coherently, raking sunlight across subtle faces and narrow joints, a small patch of plaster above. No carved faces, no people, no invented glyphs.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "The navel",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "machu-panorama",
+      "stop": 10,
+      "place": "Machu Picchu",
+      "title": "Machu Picchu above the valley",
+      "caption": "At Machu Picchu, terraces and roofless stone buildings followed the mountain ridge. The site placed the remains of an Inca settlement within a much larger landscape.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide accurate classic elevated view of Machu Picchu with Huayna Picchu behind, 1952 sparse visitors absent, roofless granite buildings and terraces following ridge contours, deep forested valley, cloud. No giant fantasy temples or reconstructed thatched roofs everywhere.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "The land of the Incas",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "terrace-detail",
+      "stop": 10,
+      "place": "Machu Picchu",
+      "title": "Steps through the terraces",
+      "caption": "From within the terraces, the view becomes smaller: retaining walls, narrow steps and planted ground. The stonework had to hold soil on a steep mountainside.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Low oblique view along Machu Picchu agricultural terrace retaining walls and narrow stone stairway, grass terraces with coherent levels, misty Andes beyond, no people. Detail of drainage and stone construction, not the classic panorama again.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "The land of the Incas",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "pesce-table",
+      "stop": 11,
+      "place": "Lima",
+      "title": "Evenings with Dr. Pesce",
+      "caption": "In Lima, Dr. Hugo Pesce welcomed the travelers and helped them find lodging. Their visits brought medicine and conversation into the same evenings.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Quiet modest Lima dining room 1952, three men around a table in natural conversation seen obliquely from doorway, older Peruvian doctor with spectacles and two young Argentine travelers, simple plates and books, no staged handshake or medical procedure.",
+      "traveller": true,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "The city of the viceroys",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "lima-balconies",
+      "stop": 11,
+      "place": "Lima",
+      "title": "Lima's wooden balconies",
+      "caption": "In the old center of Lima, enclosed wooden balconies projected above the street. The capital offered another layer of architecture after the stonework of Cusco.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Upward street-corner view of historic central Lima wooden enclosed colonial balconies above ochre and cream plaster facades in 1952, a few tiny pedestrians, diffuse coastal overcast light, no skyline towers, no exact famous building mashup.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "The city of the viceroys",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "pucallpa-landing",
+      "stop": 12,
+      "place": "Pucallpa",
+      "title": "At the river landing",
+      "caption": "At Pucallpa, road travel gave way to river travel. A landing crowded with timber boats, sacks and passengers would have made the change of pace visible.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Wide bank-level Pucallpa Ucayali river landing 1952, muddy bank, timber passenger boat moored alongside simple wooden pier, sacks and fruit baskets, several ordinary porters at distance, tropical vegetation. No concrete container terminal.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Down the Ucayali",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "river-hammocks",
+      "stop": 13,
+      "place": "Iquitos",
+      "title": "A berth on the riverboat",
+      "caption": "On the riverboat, a hammock could serve as a berth. The shaded passenger deck put sleeping, luggage and conversation close together.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Interior perspective along covered wooden Amazon riverboat passenger deck 1952, two empty hammocks correctly suspended between sturdy posts with believable sag, canvas bags, open side showing brown river and green banks. No people, no floating supports.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Down the Ucayali",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "amazon-bend",
+      "stop": 13,
+      "place": "Iquitos",
+      "title": "The river fills the view",
+      "caption": "Near Iquitos, the river opened into broad reaches bordered by forest. From a low boat, the far bank could become a thin line across the water.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Very wide low viewpoint from a riverboat on broad Amazon near Iquitos, muddy reflective water occupying most page, distant dense forest bank, towering soft tropical clouds, tiny canoe for scale. Only sliver of wooden gunwale foreground, no portraits.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Dear Papi",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "san-pablo-veranda",
+      "stop": 14,
+      "place": "San Pablo",
+      "title": "Time at San Pablo",
+      "caption": "At San Pablo, they spent time with people receiving treatment for leprosy. Conversation and company formed part of the visit alongside their medical interests.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Respectful everyday scene on shaded wooden veranda at San Pablo Amazon settlement 1952, young Ernesto and Alberto seated at equal height chatting with two adult residents in ordinary clean shirts, river vegetation beyond. No wounds, no bandage spectacle, no white-coated savior pose, no medical procedure.",
+      "traveller": true,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "The San Pablo leper colony",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "birthday-table",
+      "stop": 14,
+      "place": "San Pablo",
+      "title": "Turning twenty-four",
+      "caption": "Ernesto turned twenty-four at San Pablo. At a birthday gathering, he thanked his hosts and spoke of Latin American unity.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Small evening gathering in a simple wooden dining room 1952 Amazon, young Ernesto seated raising a small glass among several adult hosts and Alberto, oil lamp light, modest table, candid wide view from doorway. No political banners, no uniforms, no crowd rally, no birthday cake required.",
+      "traveller": true,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Saint Guevara's day",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "mambo-tango",
+      "stop": 15,
+      "place": "Leticia",
+      "title": "Downstream on Mambo-Tango",
+      "caption": "The next vessel was a raft called Mambo-Tango. Close to the water, shelter and supplies had to share a small floating platform.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Three-quarter riverbank view of a modest lashed-log raft floating on the Amazon in 1952, small palm-thatch shelter securely supported by four posts, two small seated travelers and tied bags, entire raft above and below water relationship clear, broad brown river. No tall mast, no sailing yacht, no motorcycle.",
+      "traveller": true,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Debut for the little Kontiki",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "bogota-street",
+      "stop": 16,
+      "place": "Bogotá",
+      "title": "A cold capital after the Amazon",
+      "caption": "They flew from Leticia to Bogotá. The highland capital brought cool streets and tiled roofs after weeks among riverboats and tropical forests.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Street-level Bogota La Candelaria 1952, low plaster houses with clay tiled roofs, cobblestones, mountain slope through street opening, overcast cool light, ordinary pedestrians in coats and hats, one distant 1940s car. No motorcycle, no modern towers, no violent scene.",
+      "traveller": false,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "Dear Mama",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    },
+    {
+      "id": "caracas-parting",
+      "stop": 17,
+      "place": "Caracas",
+      "title": "Separate plans in Caracas",
+      "caption": "In Caracas, Alberto stayed while Ernesto prepared to return to Argentina. The shared journey ended with different plans for what came next.",
+      "sources": [
+        "motorcycle-diaries"
+      ],
+      "confidence": "medium",
+      "prompt": "Quiet modest Caracas lodging 1952, two young Argentine male friends in side view seated packing a canvas bag, folded civilian clothes on simple bed, open window with low city roofs and Avila mountain beyond. Natural relaxed hands, no handshake, no heroic portrait, no airplanes.",
+      "traveller": true,
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "This strange 20th century",
+        "url": "https://psi329.cankaya.edu.tr/uploads/files/Ernesto%20Che%20Guevara%20-%20The%20Motorcycle%20Diaries_%20notes%20on%20a%20latin%20american%20journey.pdf"
+      }
+    }
+  ]
+}
