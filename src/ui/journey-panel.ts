@@ -951,10 +951,10 @@ export class JourneyPanel {
           ? t('Abandoned {year}', {year: formatRange(c.dates.abandoned)})
           : t('Abandoned {abandoned}, known from {year}', {abandoned: formatRange(c.dates.abandoned), year: formatYear(from)});
       } else continue;
-      const name = tx.name(nameFor(c.names, '*' as VpId, PRESENT, c.id)!.name);
+      const name = tx.place(nameFor(c.names, '*' as VpId, PRESENT, c.id)!);
       const host = c.host ? this.data.cityById.get(c.host) : undefined;
-      if (host) meta += ` · ${t('in {city}', {city: tx.name(nameFor(host.names, vp, PRESENT, host.id)!.name)})}`;
-      const hay = [name, ...c.names.flatMap(n => [n.name, tx.name(n.name), n.native ?? ''])].join(' ').toLowerCase();
+      if (host) meta += ` · ${t('in {city}', {city: tx.place(nameFor(host.names, vp, PRESENT, host.id)!)})}`;
+      const hay = [name, ...c.names.flatMap(n => [n.name, tx.place(n), n.native ?? ''])].join(' ').toLowerCase();
       out.push({c, group, from, name, meta, hay});
     }
     return out.sort((a, b) => a.from - b.from || a.name.localeCompare(b.name));

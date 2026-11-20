@@ -153,7 +153,7 @@ export class Settings {
           'button.chip.wonder-chip',
           {type: 'button', onclick: () => this.go(() => this.actions.openCity(id))},
           h('span.chip-icon', {html: icon}),
-          tx.name(nameFor(c.names, s.vps[0], s.year, c.id)?.name ?? c.id),
+          tx.place(nameFor(c.names, s.vps[0], s.year, c.id)!),
         );
       }),
     ].filter(Boolean);

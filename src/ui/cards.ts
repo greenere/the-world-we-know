@@ -28,7 +28,7 @@ const vpName = (data: AppData, vp: VpId) => tx.viewpoint(vp, 'name', data.vp[vp]
 
 /** A name in the current language, with the original beside it when that adds something. */
 function shownName(n: NameEntry): {name: string; native: string | null} {
-  const name = tx.name(n.name);
+  const name = tx.place(n);
   const native = n.native && n.native !== name ? n.native : isZh() && name !== n.name ? n.name : null;
   return {name, native: native && native !== name ? native : null};
 }
@@ -509,7 +509,7 @@ export class Cards {
           'button.chip.wonder-chip',
           {type: 'button', onclick: () => this.actions.openCity(id)},
           h('span.chip-icon', {html: w.kind === 'natural' ? naturalIcons[w.subtype ?? ''] ?? icons.natural : icons.built}),
-          tx.name(nameFor(w.names, vp, this.store.state.year, w.id)!.name),
+          tx.place(nameFor(w.names, vp, this.store.state.year, w.id)!),
           built !== undefined ? h('span.chip-meta', formatRange(built)) : null,
         );
       }),
@@ -546,7 +546,7 @@ export class Cards {
           'button.chip.wonder-chip',
           {type: 'button', onclick: () => this.actions.openCity(id, true)},
           h('span.chip-icon', {html: icon}),
-          tx.name(nameFor(c.names, s.vps[0], s.year, c.id)?.name ?? c.id),
+          tx.place(nameFor(c.names, s.vps[0], s.year, c.id)!),
         );
       }),
     );
@@ -660,7 +660,7 @@ export class Cards {
         h(
           'p.card-part',
           t('In '),
-          host ? h('button.linkish', {type: 'button', onclick: () => this.actions.openCity(host.id)}, tx.name(nameFor(host.names, vp, s.year, host.id)!.name)) : null,
+          host ? h('button.linkish', {type: 'button', onclick: () => this.actions.openCity(host.id)}, tx.place(nameFor(host.names, vp, s.year, host.id)!)) : null,
           host && r ? t(', ') : null,
           r ? h('button.linkish', {type: 'button', onclick: () => this.actions.openRegion(r.id)}, tx.region(r.id, r.name)) : null,
         ),

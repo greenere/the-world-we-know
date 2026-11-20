@@ -1237,7 +1237,7 @@ class App {
         const called = r.names.find(n => n.vp === vp && (n.from === undefined || s.year >= n.from) && (n.to === undefined || s.year <= n.to));
         text = h(
           'div',
-          h('strong', called ? tx.name(called.name) : tx.region(r.id, r.name)),
+          h('strong', called ? tx.place(called) : tx.region(r.id, r.name)),
           called ? h('span.tip-sub', ` · ${tx.region(r.id, r.name)}`) : null,
           h('div.tip-level', levelName(vp, st.level)),
         );

@@ -364,7 +364,7 @@ export class OverlayModel {
     for (const c of data.cities) {
       if (!c.host || cityStatus(c, year) === 'unborn') continue;
       if (!humanity && state.vps.every(vp => landmarkKnown(data, field, c, vp) > year)) continue;
-      wonders.set(c.host, [...(wonders.get(c.host) ?? []), tx.name(nameFor(c.names, labelVp, year, c.id, sharedVp)!.name)]);
+      wonders.set(c.host, [...(wonders.get(c.host) ?? []), tx.place(nameFor(c.names, labelVp, year, c.id, sharedVp)!)]);
     }
     for (const c of data.cities) {
       if (c.host) continue;
@@ -389,7 +389,7 @@ export class OverlayModel {
       // A landmark rebuilt age after age (the Great Wall) marks the works of the age, and is a ruin in one that let it fall.
       const phase = phaseAt(c, year);
       const shown = phase?.idle ? 'ruin' : status;
-      views.push({city: c, status: shown, tier: tierAt(c, year), label: tx.name(name.name), pos: phase ? phase.anchor : [c.lon, c.lat], appearedAt, wonders: wonders.get(c.id)});
+      views.push({city: c, status: shown, tier: tierAt(c, year), label: tx.place(name), pos: phase ? phase.anchor : [c.lon, c.lat], appearedAt, wonders: wonders.get(c.id)});
     }
     const shown = new Set(views.map(v => v.city.id));
     for (const id of [...this.appeared.keys()]) if (!shown.has(id)) this.appeared.delete(id);
@@ -407,7 +407,7 @@ export class OverlayModel {
         const cell = labelCell(this.ctx.grid, r.id, r.label);
         if (cell >= 0 && lvl[cell] < 1) continue;
         const size = r.cells > 900 ? 15 : r.cells > 250 ? 13.5 : r.cells > 60 ? 12 : 11;
-        rl.push({id: r.id, text: spaced(tx.name(n.name)), pos: r.label, size, cells: r.cells});
+        rl.push({id: r.id, text: spaced(tx.place(n)), pos: r.label, size, cells: r.cells});
       }
     }
     this.regionLabels = rl;

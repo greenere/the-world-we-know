@@ -1337,10 +1337,19 @@ def load_translations(journeys, regions_by_id, inventions, vp_ids, viewpoints, c
     # characters already give their own.
     names = rd("names.json")
     known = set()
+    written: dict[str, set] = defaultdict(set)
     for row in read_csv(DATA / "names.csv"):
         known.add(row["name"])
-        if row["name"] not in names and row.get("native") and cjk(row["native"]):
-            names[row["name"]] = row["native"]
+        if row.get("native") and cjk(row["native"]):
+            written[row["name"]].add(row["native"])
+            if row["name"] not in names:
+                names[row["name"]] = row["native"]
+    # One spelling, several places: Suzhou is 苏州 on the Yangzi and 肃州 in Gansu. Each is keyed by its
+    # characters too ("Suzhou|肃州"), which the app looks up first (tx.place).
+    for en, natives in written.items():
+        if len(natives) > 1:
+            for nat in natives:
+                names[f"{en}|{nat}"] = nat
     for v in viewpoints:
         for hm in v["homes"]:
             known.add(hm["place"])
@@ -1349,7 +1358,7 @@ def load_translations(journeys, regions_by_id, inventions, vp_ids, viewpoints, c
             if st.get("place"):
                 known.add(st["place"])
     for k in names:
-        if k not in known:
+        if k not in known and k.split("|")[0] not in known:
             warn(f"i18n/zh/names.json: {k!r} is not a name used anywhere")
     listed = {row["name"] for row in read_csv(DATA / "names.csv")} | {hm["place"] for v in viewpoints for hm in v["homes"]}
     stats["names"] = (sum(1 for k in listed if k in names), len(listed))

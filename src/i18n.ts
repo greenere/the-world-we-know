@@ -85,6 +85,10 @@ export const tx = {
   name(en: string): string {
     return (lang === 'zh' && zh?.names[en]) || en;
   },
+  /** A name row in the current language: by its characters first, when one spelling names several places. */
+  place(n: {name: string; native?: string}): string {
+    return (lang === 'zh' && n.native && zh?.names[`${n.name}|${n.native}`]) || tx.name(n.name);
+  },
   region(id: string, en: string): string {
     return (lang === 'zh' && zh?.regions[id]) || en;
   },

@@ -5,247 +5,247 @@ id,lat,lon,tier,founded,peak,abandoned,forgotten,rediscovered,source,confidence,
 # a year it became known the world over (rare: most wait for the shared map of 1900), and knownSource, the source
 # that tells of either. Evidence: docs/ruins-known.md.
 # ── Mediterranean and Europe ──
-athens,37.97,23.73,1,-1400,-430,,,,draft-urban,high,
-sparta,37.08,22.43,2,-900,-400,,,,draft-urban,medium,
-corinth,37.91,22.88,2,-750,-400,,,,draft-urban,medium,
-syracuse,37.07,15.29,2,-734,-400,,,,draft-urban,high,
-thessaloniki,40.64,22.94,2,-315,1100,,,,draft-urban,high,
+athens,37.97,23.73,1,-1400,-430,,,,draft-urban,high,"The city of Pericles, the Parthenon and the first democracy, where Socrates questioned, Plato taught and the tragedians competed. Its schools of philosophy kept teaching until 529."
+sparta,37.08,22.43,2,-900,-400,,,,draft-urban,medium,"A city without walls that trusted its citizen-soldiers, raised from boyhood in barracks. It held Thermopylae against Persia in 480 BCE and defeated Athens in the Peloponnesian War."
+corinth,37.91,22.88,2,-750,-400,,,,draft-urban,medium,"A rich trading city on the isthmus between two seas, which dragged ships across on a stone trackway. Rome destroyed it in 146 BCE and Caesar refounded it; Paul wrote two letters to its Christians."
+syracuse,37.07,15.29,2,-734,-400,,,,draft-urban,high,"The greatest Greek city of Sicily, which crushed the Athenian invasion in 413 BCE. Archimedes defended it with his engines against Rome until it fell in 212 BCE."
+thessaloniki,40.64,22.94,2,-315,1100,,,,draft-urban,high,"Founded by a Macedonian king and named after Alexander's half-sister, the second city of Byzantium. The Ottomans took it in 1430, and for four centuries it was a city of Sephardic Jews."
 rome,41.89,12.49,1,-753,100,,,,draft-urban,high,"Perhaps a million people at its height, the first city that size. To Han China it was the capital of Daqin, the 'great Qin' at the far end of the world."
 carthage,36.85,10.32,1,-814,-300,-146,,,appian,high,A Phoenician colony that became the greatest power of the western Mediterranean. Rome razed it in 146 BCE after a three-year siege. A century later Caesar and Augustus founded a Roman city on the same site.,rome -146 greece -146,,appian
 carthago,36.86,10.33,2,-44,400,698,,,draft-urban,medium,"Roman Carthage, refounded on the ruins of the Punic city, grew into the second city of the western empire. It fell to the Umayyads in 698.",islam 698,
 alexandria,31.20,29.92,1,-331,100,,,,draft-urban,high,"Founded by Alexander, home of the Library and the Pharos lighthouse, and for centuries the place where the Mediterranean met the trade of the Red Sea."
 pompeii,40.75,14.49,3,-600,50,79,79,1748,pliny-letters,high,"A prosperous Roman town buried under four to six metres of ash when Vesuvius erupted in 79. Pliny the Younger watched from across the bay. The town was forgotten until excavation began in 1748, nearly 1,700 years later."
-herculaneum,40.81,14.35,3,-500,50,79,79,1738,pliny-letters,high,
-massalia,43.30,5.37,2,-600,,,,,draft-urban,high,
-gades,36.53,-6.29,2,-1100,,,,,draft-urban,medium,
+herculaneum,40.81,14.35,3,-500,50,79,79,1738,pliny-letters,high,A seaside resort on the Bay of Naples buried deep in volcanic mud by Vesuvius in 79. A villa here held a library of carbonised papyrus scrolls.
+massalia,43.30,5.37,2,-600,,,,,draft-urban,high,"Founded by Greeks from Phocaea around 600 BCE, the oldest city in France. Pytheas sailed from here to Britain and the far north around 325 BCE."
+gades,36.53,-6.29,2,-1100,,,,,draft-urban,medium,"A Phoenician trading post beyond the Pillars of Hercules, said to be the oldest city in western Europe. Later the port of Spain's silver fleets from the Americas."
 constantinople,41.01,28.98,1,-657,1000,,,,draft-urban,high,"Greek Byzantion, refounded by Constantine in 330 as the new capital of Rome, and from 1453 the Ottoman capital. Its names change with whoever is looking."
-troy,39.96,26.24,3,-3000,-1250,500,600,1871,draft-urban,medium,
-knossos,35.30,25.16,3,-7000,-1700,400,600,1900,draft-urban,medium,
-mycenae,37.73,22.76,3,-1600,-1300,-468,,1876,draft-urban,medium,
-delphi,38.48,22.50,3,-800,-400,395,600,1892,draft-urban,medium,
-ephesus,37.94,27.34,2,-1000,150,1450,,,draft-urban,medium,,rome 1446 britain 1869,
-miletus,37.53,27.28,3,-1000,-500,1500,,,draft-urban,medium,
-antioch,36.20,36.16,1,-300,400,,,,draft-urban,high,
-jerusalem,31.78,35.23,2,-3000,,,,,draft-urban,high,
-tyre,33.27,35.20,2,-2750,-800,,,,draft-urban,medium,
-palmyra,34.55,38.27,2,-100,250,1100,,1751,draft-urban,medium,,britain 1691,,wood-palmyra
+troy,39.96,26.24,3,-3000,-1250,500,600,1871,draft-urban,medium,"A fortified city above the Dardanelles, many times rebuilt, which Greeks remembered as the Troy of Homer's Iliad. Heinrich Schliemann dug into its mound from 1871."
+knossos,35.30,25.16,3,-7000,-1700,400,600,1900,draft-urban,medium,"The great palace of Bronze Age Crete, a maze of rooms and frescoes that later Greeks remembered as the labyrinth of King Minos. Arthur Evans dug it from 1900."
+mycenae,37.73,22.76,3,-1600,-1300,-468,,1876,draft-urban,medium,A hill citadel with a Lion Gate and walls so huge later Greeks thought Cyclopes built them; Homer's seat of Agamemnon. Schliemann found its shaft graves full of gold in 1876.
+delphi,38.48,22.50,3,-800,-400,395,600,1892,draft-urban,medium,"The sanctuary of Apollo on the slopes of Parnassus, where the Pythia gave oracles that kings and cities crossed the Greek world to hear. Greeks called it the navel of the world."
+ephesus,37.94,27.34,2,-1000,150,1450,,,draft-urban,medium,"A great Ionian port with the Temple of Artemis, one of the Seven Wonders. As its harbour silted up, the sea withdrew and left the city inland and empty.",rome 1446 britain 1869,
+miletus,37.53,27.28,3,-1000,-500,1500,,,draft-urban,medium,"An Ionian port where Thales, Anaximander and the first Greek philosophers asked what the world was made of. Its harbour silted up and the sea left it."
+antioch,36.20,36.16,1,-300,400,,,,draft-urban,high,"Capital of the Seleucid kings and the third city of the Roman empire, where followers of Jesus were first called Christians. Crusaders took it after a long siege in 1098."
+jerusalem,31.78,35.23,2,-3000,,,,,draft-urban,high,"A hill city holy to three faiths: the temple of the Jews, the place of Jesus's crucifixion, and the Dome of the Rock built in 691. It was fought over by empires, crusaders and nations."
+tyre,33.27,35.20,2,-2750,-800,,,,draft-urban,medium,"The island city of the Phoenicians, famous for its purple dye, whose colonists founded Carthage. Alexander took it in 332 BCE by building a causeway out to it."
+palmyra,34.55,38.27,2,-100,250,1100,,1751,draft-urban,medium,"A desert caravan city between Rome and Persia, whose queen Zenobia briefly ruled the Roman East until Aurelian captured her in 272. Its colonnades were sketched by European travellers in 1751.",britain 1691,,wood-palmyra
 petra,30.33,35.44,2,-300,100,700,1200,1812,draft-urban,medium,"The Nabataean caravan city carved into rose-red cliffs. After its trade moved elsewhere it emptied, and outsiders forgot it until Johann Ludwig Burckhardt talked his way in, disguised as a pilgrim, in 1812. The local Bedouin had always known it."
-damascus,33.51,36.29,1,-3000,700,,,,draft-urban,high,
-aleppo,36.20,37.15,2,-3000,1200,,,,draft-urban,high,
-venice,45.44,12.33,1,452,1500,,,,draft-urban,high,
-florence,43.77,11.25,2,-59,1450,,,,draft-urban,high,
-milan,45.46,9.19,2,-400,1400,,,,draft-urban,high,
-ravenna,44.42,12.20,2,-200,500,,,,draft-urban,medium,
-genoa,44.41,8.93,2,-500,1300,,,,draft-urban,high,
-naples,40.85,14.27,2,-600,1600,,,,draft-urban,high,
-paris,48.86,2.35,1,-250,1700,,,,draft-urban,high,
-london,51.51,-0.12,1,47,1900,,,,draft-urban,high,
-york,53.96,-1.08,3,71,,,,,draft-urban,high,
-trier,49.75,6.64,3,-16,350,,,,draft-urban,high,
-cologne,50.94,6.96,2,38,1300,,,,draft-urban,high,
-lyon,45.76,4.84,2,-43,200,,,,draft-urban,high,
-vienna,48.21,16.37,2,15,1900,,,,draft-urban,high,
-lisbon,38.71,-9.14,1,-800,1550,,,,draft-urban,medium,
-seville,37.39,-5.98,2,-700,1600,,,,draft-urban,medium,
-cordoba,37.88,-4.78,1,-169,950,,,,draft-urban,high,
-toledo,39.86,-4.02,2,-190,1100,,,,draft-urban,medium,
-granada,37.18,-3.60,2,750,1450,,,,draft-urban,medium,
-barcelona,41.38,2.17,2,-15,,,,,draft-urban,high,
-madrid,40.42,-3.70,2,865,1800,,,,draft-urban,medium,
-kyiv,50.45,30.52,2,480,1100,,,,draft-urban,medium,
-novgorod,58.52,31.27,2,859,1300,,,,draft-urban,medium,
-moscow,55.76,37.62,1,1147,1900,,,,draft-urban,high,
-st-petersburg,59.94,30.31,1,1703,1900,,,,draft-urban,high,
-hamburg,53.55,9.99,2,810,,,,,draft-urban,medium,
-lubeck,53.87,10.69,3,1143,1400,,,,draft-urban,high,
-bergen,60.39,5.32,3,1070,1350,,,,draft-urban,medium,
-birka,59.33,17.54,3,750,900,975,1100,1871,draft-urban,medium,
-hedeby,54.49,9.57,3,770,950,1066,1100,1897,draft-urban,medium,
-reykjavik,64.15,-21.94,3,874,,,,,landnamabok,medium,
-dublin,53.35,-6.26,2,841,,,,,draft-urban,high,
-edinburgh,55.95,-3.19,3,600,,,,,draft-urban,medium,
-amsterdam,52.37,4.90,2,1275,1650,,,,draft-urban,high,
-antwerp,51.22,4.40,2,900,1560,,,,draft-urban,medium,
-bruges,51.21,3.22,2,900,1350,,,,draft-urban,medium,
-krakow,50.06,19.94,2,1000,1500,,,,draft-urban,medium,
-prague,50.08,14.43,2,880,1370,,,,draft-urban,medium,
-buda,47.50,19.04,2,1000,1450,,,,draft-urban,medium,
-trebizond,41.00,39.72,3,-756,1400,,,,draft-urban,medium,
-caffa,45.03,35.38,3,-600,1350,,,,draft-urban,medium,
-sarai,48.60,45.40,2,1250,1340,1395,1500,1843,draft-urban,low,
-bulghar,54.98,49.06,3,900,1300,1430,,,ibn-fadlan,medium,
-brattahlid,61.15,-45.50,3,985,1100,1450,1500,1721,vinland-sagas,low,
+damascus,33.51,36.29,1,-3000,700,,,,draft-urban,high,"One of the oldest continuously lived-in cities, capital of the Umayyad caliphs, who built its Great Mosque in 715. Its steel and its cloth, damask, carried its name abroad."
+aleppo,36.20,37.15,2,-3000,1200,,,,draft-urban,high,"A city of markets around a citadel hill, where caravan roads from Iraq and the Mediterranean met. Its covered souks stretched for miles."
+venice,45.44,12.33,1,452,1500,,,,draft-urban,high,"A republic built on piles in a lagoon, which grew rich carrying the trade of the East and ruled a sea empire for a thousand years. Marco Polo set out from here."
+florence,43.77,11.25,2,-59,1450,,,,draft-urban,high,"A wool and banking city ruled by the Medici, where Brunelleschi, Leonardo and Michelangelo made the Renaissance. Its gold florin was the money of medieval Europe."
+milan,45.46,9.19,2,-400,1400,,,,draft-urban,high,"A capital of the late Roman empire, where Constantine proclaimed toleration of Christians in 313. Later the duchy of the Visconti and Sforza, for whom Leonardo painted the Last Supper."
+ravenna,44.42,12.20,2,-200,500,,,,draft-urban,medium,"Protected by marshes, it became the last capital of the western Roman empire and then of the Ostrogoths. Its churches keep the finest Byzantine mosaics in the West."
+genoa,44.41,8.93,2,-500,1300,,,,draft-urban,high,"Venice's great rival, a merchant republic with colonies around the Black Sea and Mediterranean. Columbus was born here, and Marco Polo dictated his book in its prison."
+naples,40.85,14.27,2,-600,1600,,,,draft-urban,high,"Founded by Greeks as the New City, and later the capital of a southern kingdom and one of Europe's largest cities. Vesuvius looms over it."
+paris,48.86,2.35,1,-250,1700,,,,draft-urban,high,"A Gallic island town on the Seine that became the capital of France, home of the first great university north of the Alps and of the Revolution of 1789."
+london,51.51,-0.12,1,47,1900,,,,draft-urban,high,"Founded by the Romans at a bridge over the Thames, it became the capital of a maritime empire and, by 1900, the largest city in the world."
+york,53.96,-1.08,3,71,,,,,draft-urban,high,"Eboracum, a Roman legionary fortress where Constantine was proclaimed emperor in 306. Later Viking Jorvik and the seat of England's northern archbishop."
+trier,49.75,6.64,3,-16,350,,,,draft-urban,high,"Founded under Augustus on the Moselle, it was a capital of the western Roman empire in the 300s, with a great black gate and an imperial throne hall that still stand."
+cologne,50.94,6.96,2,38,1300,,,,draft-urban,high,"A Roman colony on the Rhine, then the largest city of medieval Germany. Its cathedral, begun in 1248, was finished only in 1880."
+lyon,45.76,4.84,2,-43,200,,,,draft-urban,high,"Lugdunum, capital of the Three Gauls where the Rhône meets the Saône. Later famous for its silk weaving and its printers."
+vienna,48.21,16.37,2,15,1900,,,,draft-urban,high,"A Roman frontier fort on the Danube, then the capital of the Habsburgs. It held off Ottoman sieges in 1529 and 1683 and was the city of Haydn, Mozart and Beethoven."
+lisbon,38.71,-9.14,1,-800,1550,,,,draft-urban,medium,"A port at the mouth of the Tagus, from which Vasco da Gama sailed for India in 1497. Rich on the spice trade, it was largely destroyed by an earthquake in 1755."
+seville,37.39,-5.98,2,-700,1600,,,,draft-urban,medium,A Moorish city on the Guadalquivir that became Spain's only legal port for trade with the Americas in 1503. Magellan's fleet sailed from here.
+cordoba,37.88,-4.78,1,-169,950,,,,draft-urban,high,"Capital of the Umayyads of al-Andalus, around 950 perhaps the largest city in Europe, with paved streets, lamps and libraries. Its Great Mosque still stands with a cathedral inside it."
+toledo,39.86,-4.02,2,-190,1100,,,,draft-urban,medium,"Capital of the Visigoths, then a Moorish city, taken by Castile in 1085. Its translators turned Arabic science and philosophy into Latin."
+granada,37.18,-3.60,2,750,1450,,,,draft-urban,medium,"The last Muslim kingdom in Spain, ruled by the Nasrids from the Alhambra until Ferdinand and Isabella took it in January 1492."
+barcelona,41.38,2.17,2,-15,,,,,draft-urban,high,A Roman town that became the capital of the Counts of Barcelona and of a Catalan trading empire across the Mediterranean.
+madrid,40.42,-3.70,2,865,1800,,,,draft-urban,medium,"A small Moorish fortress, Mayrit, that Philip II made the capital of Spain in 1561 because it lay at the centre of the country."
+kyiv,50.45,30.52,2,480,1100,,,,draft-urban,medium,"Capital of Kievan Rus on the Dnieper, where Prince Volodymyr had his people baptised in 988. The Mongols sacked it in 1240."
+novgorod,58.52,31.27,2,859,1300,,,,draft-urban,medium,"A merchant republic in the northern forests, trading furs with the Hanseatic League. Its citizens wrote letters on birch bark."
+moscow,55.76,37.62,1,1147,1900,,,,draft-urban,high,"A small fort on the Moskva that grew into the capital of Russia, gathering the Russian lands under its grand princes and tsars. Napoleon's army burned it in 1812."
+st-petersburg,59.94,30.31,1,1703,1900,,,,draft-urban,high,"Built by Peter the Great on the marshes of the Neva in 1703 as Russia's window on Europe. Capital of Russia until 1918, and the city of the 1917 revolutions."
+hamburg,53.55,9.99,2,810,,,,,draft-urban,medium,"A fortress Charlemagne founded on the Elbe, then a leading city of the Hanseatic League and Germany's greatest port."
+lubeck,53.87,10.69,3,1143,1400,,,,draft-urban,high,"The queen of the Hanseatic League, a brick merchant city on the Baltic whose law and trade bound together towns from London to Novgorod."
+bergen,60.39,5.32,3,1070,1350,,,,draft-urban,medium,"Norway's chief town in the Middle Ages, where German Hanseatic merchants ran the stockfish trade from their wharf, the Bryggen."
+birka,59.33,17.54,3,750,900,975,1100,1871,draft-urban,medium,"A Viking trading town on an island in Lake Mälaren, where goods and coins from Byzantium and the Caliphate turned up. The missionary Ansgar preached here in 829."
+hedeby,54.49,9.57,3,770,950,1066,1100,1897,draft-urban,medium,"The great Viking market at the base of Jutland, where goods were hauled between the North Sea and the Baltic. It was burned in 1066 and its people moved to Schleswig."
+reykjavik,64.15,-21.94,3,874,,,,,landnamabok,medium,"Where Ingólfr Arnarson, the first Norse settler of Iceland, made his farm around 874. It became a town only in the 1700s."
+dublin,53.35,-6.26,2,841,,,,,draft-urban,high,"A Viking trading town on the Liffey, founded in 841, and later the centre of English rule in Ireland."
+edinburgh,55.95,-3.19,3,600,,,,,draft-urban,medium,"A castle on a volcanic crag that became the capital of Scotland, and in the 1700s a centre of the Enlightenment: Hume and Adam Smith lived here."
+amsterdam,52.37,4.90,2,1275,1650,,,,draft-urban,high,"A dam on the Amstel that grew into the hub of world trade in the 1600s, home of the Dutch East India Company and the first stock exchange."
+antwerp,51.22,4.40,2,900,1560,,,,draft-urban,medium,"In the early 1500s the commercial capital of Europe, where Portuguese spices and German silver changed hands. Ortelius printed the first modern atlas here in 1570."
+bruges,51.21,3.22,2,900,1350,,,,draft-urban,medium,"A Flemish cloth city, the great market of northern Europe until its channel to the sea silted up in the 1400s."
+krakow,50.06,19.94,2,1000,1500,,,,draft-urban,medium,"Capital of the Polish kings, whose university taught Copernicus in the 1490s."
+prague,50.08,14.43,2,880,1370,,,,draft-urban,medium,"Capital of Bohemia, which Emperor Charles IV made the seat of the Holy Roman Empire and of central Europe's first university in 1348."
+buda,47.50,19.04,2,1000,1450,,,,draft-urban,medium,"The royal seat of Hungary on its hill above the Danube, facing Pest across the river. The Ottomans held it from 1541 to 1686."
+trebizond,41.00,39.72,3,-756,1400,,,,draft-urban,medium,"A Greek port on the Black Sea at the end of a caravan road from Persia, the capital of a small Byzantine empire from 1204 until the Ottomans took it in 1461."
+caffa,45.03,35.38,3,-600,1350,,,,draft-urban,medium,"A Genoese trading colony in the Crimea for slaves, grain and silk. The Black Death is said to have reached Europe from here in 1347 after a Mongol siege."
+sarai,48.60,45.40,2,1250,1340,1395,1500,1843,draft-urban,low,"Capital of the Golden Horde on the lower Volga, a city of Mongols, Turks, Russians and Italian merchants. Timur destroyed it in 1395."
+bulghar,54.98,49.06,3,900,1300,1430,,,ibn-fadlan,medium,"Capital of the Volga Bulghars, whose king accepted Islam when Ibn Fadlan arrived as the caliph's envoy in 922. A great fur market of the north."
+brattahlid,61.15,-45.50,3,985,1100,1450,1500,1721,vinland-sagas,low,"Erik the Red's farm in the Eastern Settlement of Greenland, from which his son Leif sailed to Vinland around 1000."
 lanse-aux-meadows,51.60,-55.53,3,1000,1000,1020,1050,1960,ingstad,medium,"A Norse camp of eight timber-and-turf buildings on the tip of Newfoundland, used for a few years around 1000. Helge and Anne Stine Ingstad found it in 1960, the first proof that Europeans reached the Americas before Columbus."
 # ── West Asia and North Africa ──
-babylon,32.54,44.42,1,-2300,-600,141,,1899,draft-urban,medium,,greece 141 rome 141,,herodotus
-nineveh,36.36,43.15,2,-6000,-700,-612,100,1847,draft-urban,medium,
+babylon,32.54,44.42,1,-2300,-600,141,,1899,draft-urban,medium,"Hammurabi's capital, and under Nebuchadnezzar the greatest city in the world, with the Ishtar Gate and a ziggurat remembered as the Tower of Babel. Alexander died here in 323 BCE.",greece 141 rome 141,,herodotus
+nineveh,36.36,43.15,2,-6000,-700,-612,100,1847,draft-urban,medium,"The last capital of Assyria, whose king Ashurbanipal gathered a library of clay tablets that held the Epic of Gilgamesh. Medes and Babylonians destroyed it in 612 BCE."
 persepolis,29.93,52.89,1,-518,-400,-330,,,arrian,high,"The ceremonial capital of the Persian kings. Alexander's army burned it in 330 BCE, perhaps in revenge for Athens, perhaps after a drunken feast. The ruins were never lost: local people called them Takht-e Jamshid, the throne of the legendary king Jamshid.",greece -330,,diodorus
-susa,32.19,48.26,2,-4200,-500,1300,,,draft-urban,medium,,britain 1851,
-ctesiphon,33.09,44.58,1,-120,570,800,,,draft-urban,medium,,britain 1836,,rich
-seleucia,33.10,44.52,2,-305,0,200,,,draft-urban,medium,,rome 200,1927
+susa,32.19,48.26,2,-4200,-500,1300,,,draft-urban,medium,"The ancient capital of Elam and later a royal seat of the Persian kings, where Alexander married his officers to Persian brides in 324 BCE.",britain 1851,
+ctesiphon,33.09,44.58,1,-120,570,800,,,draft-urban,medium,"Winter capital of the Parthian and Sasanian kings on the Tigris. Its great brick arch, the Taq Kasra, still stands; the Arabs took it in 637.",britain 1836,,rich
+seleucia,33.10,44.52,2,-305,0,200,,,draft-urban,medium,"Founded by Alexander's general Seleucus on the Tigris, a Greek city in the heart of Mesopotamia, once among the largest in the world.",rome 200,1927
 baghdad,33.31,44.36,1,762,900,,,,al-tabari,high,"Built from scratch by the Abbasid caliph al-Mansur in 762 as a perfect circle of walls with the palace and mosque at its centre. Within a century it was probably the largest city in the world, and a centre of translation, mathematics and map-making."
-basra,30.50,47.80,2,636,850,,,,draft-urban,high,
-kufa,32.03,44.40,2,638,750,,,,draft-urban,medium,
-samarra,34.20,43.87,2,836,860,,,,draft-urban,medium,
-isfahan,32.65,51.67,1,-500,1600,,,,draft-urban,medium,
-shiraz,29.60,52.53,2,693,1350,,,,draft-urban,medium,
-tabriz,38.08,46.29,2,400,1300,,,,draft-urban,medium,
-rayy,35.59,51.43,2,-3000,1000,1220,,,draft-urban,medium,,britain 1818,
-tehran,35.69,51.39,2,1550,1950,,,,draft-urban,medium,
-nishapur,36.21,58.80,2,250,1100,,,,draft-urban,medium,
-merv,37.66,62.19,1,-500,1150,1221,,,draft-urban,medium,,britain 1881,
-herat,34.35,62.20,2,-500,1450,,,,draft-urban,medium,
-balkh,36.76,66.90,1,-1500,600,,,,draft-urban,medium,
-samarkand,39.65,66.96,1,-700,1400,,,,draft-urban,high,
-bukhara,39.77,64.42,2,-500,950,,,,draft-urban,high,
-tashkent,41.30,69.24,2,-200,,,,,draft-urban,medium,
-kabul,34.53,69.17,2,-500,,,,,draft-urban,medium,
-ghazni,33.55,68.42,3,600,1020,,,,draft-urban,medium,
-peshawar,34.01,71.58,2,100,150,,,,draft-urban,medium,
-mecca,21.42,39.83,1,400,,,,,draft-urban,low,
-medina,24.47,39.61,2,-600,,,,,draft-urban,medium,
-sanaa,15.35,44.21,2,-500,,,,,draft-urban,medium,
-aden,12.78,45.03,2,-500,,,,,draft-urban,medium,
-muscat,23.59,58.38,3,100,1650,,,,draft-urban,medium,
-sohar,24.35,56.75,3,300,1000,,,,draft-urban,medium,
-hormuz,27.10,56.45,2,1300,1450,,,,draft-urban,medium,
-siraf,27.67,52.33,2,300,950,1050,,,draft-urban,medium,,britain 1966,
-cairo,30.04,31.24,1,969,1340,,,,draft-urban,high,
-fustat,30.00,31.23,2,641,1000,1168,,,draft-urban,high,,france 1168,
-memphis,29.85,31.25,2,-3100,-1500,640,,,draft-urban,medium,,islam 1200 france 1799,
-thebes,25.70,32.64,2,-3200,-1400,100,,,draft-urban,medium,,greece 100 rome 100,,strabo
-meroe,16.94,33.75,2,-800,0,350,600,1821,draft-urban,medium,
-aksum,14.13,38.72,2,-100,350,,,,draft-urban,medium,
-adulis,15.27,39.65,3,-300,500,700,900,1810,draft-urban,low,
-kairouan,35.68,10.10,2,670,900,,,,draft-urban,high,
-tunis,36.80,10.18,2,-800,1300,,,,draft-urban,medium,
-fez,34.06,-4.97,1,789,1300,,,,draft-urban,high,
-marrakesh,31.63,-8.00,2,1070,1150,,,,draft-urban,high,
-sijilmasa,31.28,-4.27,2,757,1100,1400,,,levtzion-hopkins,medium,,rome 1550,
-tlemcen,34.88,-1.31,3,700,1300,,,,draft-urban,medium,
-tripoli,32.89,13.18,3,-700,,,,,draft-urban,medium,
-cyrene,32.82,21.86,2,-631,-300,650,,,draft-urban,medium,,france 1706,
-leptis-magna,32.64,14.29,2,-650,200,650,1000,1921,draft-urban,low,
+basra,30.50,47.80,2,636,850,,,,draft-urban,high,"A garrison town of the first Arab conquests that became a port for the Indian Ocean, the home port of Sindbad's tales and of grammarians and theologians."
+kufa,32.03,44.40,2,638,750,,,,draft-urban,medium,"A garrison city founded by the Arab conquerors in 638, where Ali made his capital. It gave its name to the angular Kufic script."
+samarra,34.20,43.87,2,836,860,,,,draft-urban,medium,A palace city the Abbasid caliphs built up the Tigris in 836 and left within sixty years. Its spiral minaret still stands.
+isfahan,32.65,51.67,1,-500,1600,,,,draft-urban,medium,Shah Abbas made it the Safavid capital in 1598 and built the vast Naqsh-e Jahan square. Persians called it “half the world”.
+shiraz,29.60,52.53,2,693,1350,,,,draft-urban,medium,"The city of the poets Saadi and Hafez, of gardens and of wine, in the heart of the old Persian homeland."
+tabriz,38.08,46.29,2,400,1300,,,,draft-urban,medium,"The capital of the Mongol Ilkhans, where Rashid al-Din wrote the first history of the world. Later the first capital of the Safavids."
+rayy,35.59,51.43,2,-3000,1000,1220,,,draft-urban,medium,"A great city of Persia just south of modern Tehran, birthplace of the physician al-Razi. The Mongols destroyed it in 1220.",britain 1818,
+tehran,35.69,51.39,2,1550,1950,,,,draft-urban,medium,A village beside ruined Rayy that the Qajars made the capital of Persia in 1786.
+nishapur,36.21,58.80,2,250,1100,,,,draft-urban,medium,"A great city of Khorasan on the Silk Road, home of the poet and mathematician Omar Khayyam. The Mongols massacred its people in 1221."
+merv,37.66,62.19,1,-500,1150,1221,,,draft-urban,medium,"An oasis city of Khorasan and seat of the Seljuk sultans, perhaps the largest city in the world in the 1100s. The Mongols destroyed it in 1221.",britain 1881,
+herat,34.35,62.20,2,-500,1450,,,,draft-urban,medium,"A walled city of Khorasan that Timur's son Shah Rukh made a capital of art: miniature painting, calligraphy and the poet Jami flourished here in the 1400s."
+balkh,36.76,66.90,1,-1500,600,,,,draft-urban,medium,"Bactra, “the mother of cities”, a Greek kingdom's capital and then a great Buddhist centre on the Silk Road. The poet Rumi was born near here."
+samarkand,39.65,66.96,1,-700,1400,,,,draft-urban,high,"A Sogdian merchant city on the Silk Road that Timur made his capital, filling it with blue-domed mosques built by captured craftsmen. His grandson Ulugh Beg built an observatory here."
+bukhara,39.77,64.42,2,-500,950,,,,draft-urban,high,"Capital of the Samanids and a centre of Islamic learning, where the physician Ibn Sina grew up reading in the royal library."
+tashkent,41.30,69.24,2,-200,,,,,draft-urban,medium,"Chach, an oasis on the Syr Darya; Russia took it in 1865 and made it the capital of Turkestan."
+kabul,34.53,69.17,2,-500,,,,,draft-urban,medium,A city in a high valley on the road from Central Asia to India. Babur took it in 1504 and went down from it to conquer India; he asked to be buried here.
+ghazni,33.55,68.42,3,600,1020,,,,draft-urban,medium,"Capital of Mahmud of Ghazni, who raided India seventeen times and spent the plunder on mosques and poets; al-Biruni and Ferdowsi worked under him."
+peshawar,34.01,71.58,2,100,150,,,,draft-urban,medium,"Capital of the Kushan king Kanishka, below the Khyber Pass. His great stupa here amazed Chinese pilgrims."
+mecca,21.42,39.83,1,400,,,,,draft-urban,low,"A trading town around the Kaaba in a dry valley of the Hijaz, where Muhammad was born around 570. Every Muslim is to make the pilgrimage here once."
+medina,24.47,39.61,2,-600,,,,,draft-urban,medium,"Yathrib, the oasis to which Muhammad emigrated in 622, the start of the Islamic calendar. It was the first capital of Islam, and he is buried here."
+sanaa,15.35,44.21,2,-500,,,,,draft-urban,medium,"A highland city of Yemen with tower houses of mud brick many storeys high, said to be among the oldest inhabited cities."
+aden,12.78,45.03,2,-500,,,,,draft-urban,medium,"A port in an extinct volcano at the mouth of the Red Sea, where ships from India met the ships of Egypt."
+muscat,23.59,58.38,3,100,1650,,,,draft-urban,medium,A harbour walled in by bare mountains on the Gulf of Oman. Oman drove the Portuguese out in 1650 and built a sea empire reaching to Zanzibar.
+sohar,24.35,56.75,3,300,1000,,,,draft-urban,medium,"The chief port of Oman in the 900s, which geographers called the gateway to China. Its sailors are said to have inspired the tales of Sindbad."
+hormuz,27.10,56.45,2,1300,1450,,,,draft-urban,medium,"An island port at the mouth of the Persian Gulf, the great market between India and Persia. The Portuguese held it from 1515 to 1622."
+siraf,27.67,52.33,2,300,950,1050,,,draft-urban,medium,"The great Persian Gulf port of the 800s, whose ships sailed all the way to China. An earthquake in 977 began its fall.",britain 1966,
+cairo,30.04,31.24,1,969,1340,,,,draft-urban,high,"Founded by the Fatimids in 969 as the Victorious City, with al-Azhar as its mosque and school. In the 1300s it was the largest city in the Islamic world."
+fustat,30.00,31.23,2,641,1000,1168,,,draft-urban,high,"The first Arab capital of Egypt, founded beside the Nile in 641. Its synagogue's storeroom kept hundreds of thousands of documents of medieval trade. It was burned in 1168.",france 1168,
+memphis,29.85,31.25,2,-3100,-1500,640,,,draft-urban,medium,"The first capital of united Egypt, at the head of the Nile delta, whose cemeteries include the pyramids of Saqqara and Giza.",islam 1200 france 1799,
+thebes,25.70,32.64,2,-3200,-1400,100,,,draft-urban,medium,"Capital of Egypt in the New Kingdom, with the vast temples of Karnak and Luxor; across the river the pharaohs were buried in the Valley of the Kings.",greece 100 rome 100,,strabo
+meroe,16.94,33.75,2,-800,0,350,600,1821,draft-urban,medium,"Capital of the kingdom of Kush on the Nile, ruled by queens called Kandake, with more pyramids than all of Egypt and furnaces for smelting iron."
+aksum,14.13,38.72,2,-100,350,,,,draft-urban,medium,"Capital of a trading kingdom in the Ethiopian highlands, which minted its own coins and raised tall stone stelae. Its king Ezana became Christian around 330."
+adulis,15.27,39.65,3,-300,500,700,900,1810,draft-urban,low,"The Red Sea port of Aksum, through which ivory, gold and incense went out to Rome and India. The Periplus describes its trade in the first century."
+kairouan,35.68,10.10,2,670,900,,,,draft-urban,high,"The first Arab city of North Africa, founded in 670 inland from the sea. Its Great Mosque made it a holy city of the Maghreb."
+tunis,36.80,10.18,2,-800,1300,,,,draft-urban,medium,A town beside ruined Carthage that the Hafsids made their capital in the 1200s. The historian Ibn Khaldun was born here.
+fez,34.06,-4.97,1,789,1300,,,,draft-urban,high,"Founded by Idris in 789, with al-Qarawiyyin, one of the oldest universities in the world, founded by a woman, Fatima al-Fihri, in 859."
+marrakesh,31.63,-8.00,2,1070,1150,,,,draft-urban,high,"Founded by the Almoravids in 1070 as the capital of an empire from Spain to the Sahara; the country took its name, Morocco, from the city."
+sijilmasa,31.28,-4.27,2,757,1100,1400,,,levtzion-hopkins,medium,"An oasis city at the northern edge of the Sahara, where the gold caravans from West Africa came in.",rome 1550,
+tlemcen,34.88,-1.31,3,700,1300,,,,draft-urban,medium,"Capital of the Zayyanid kings of the central Maghreb, where the gold caravans from the Sahara came north to the Mediterranean."
+tripoli,32.89,13.18,3,-700,,,,,draft-urban,medium,"Oea, one of the three cities that gave Tripolitania its name, and later a corsair port and the northern end of the caravan road to Lake Chad."
+cyrene,32.82,21.86,2,-631,-300,650,,,draft-urban,medium,"A Greek city in Libya, rich on the silphium plant, a herb so prized it was harvested to extinction.",france 1706,
+leptis-magna,32.64,14.29,2,-650,200,650,1000,1921,draft-urban,low,"A Phoenician port in Libya that the emperor Septimius Severus, born here, rebuilt in marble. Sand buried it after the Arab conquest."
 # ── Africa ──
-timbuktu,16.77,-3.00,1,1100,1500,,,,levtzion-hopkins,medium,
-djenne,13.90,-4.55,2,-250,1300,,,,draft-urban,medium,
-gao,16.27,0.04,2,700,1500,,,,levtzion-hopkins,medium,
-koumbi-saleh,15.76,-8.00,2,750,1050,1400,1600,1914,al-bakri,low,
-walata,17.27,-7.00,3,1200,1350,,,,levtzion-hopkins,medium,
-kano,12.00,8.52,2,999,1500,,,,draft-urban,medium,
-ife,7.48,4.56,2,900,1300,,,,draft-urban,medium,
-benin-city,6.34,5.62,2,1180,1600,,,,draft-urban,medium,
-elmina,5.08,-1.35,3,1482,1650,,,,draft-urban,high,
+timbuktu,16.77,-3.00,1,1100,1500,,,,levtzion-hopkins,medium,"A desert-edge city on the Niger bend where camel caravans met river boats, rich on salt and gold. Under Mali and Songhay its mosques and scholars' libraries made it a byword for learning."
+djenne,13.90,-4.55,2,-250,1300,,,,draft-urban,medium,"One of the oldest cities south of the Sahara, on the inland delta of the Niger. Its Great Mosque is the largest building made of mud brick in the world."
+gao,16.27,0.04,2,700,1500,,,,levtzion-hopkins,medium,"Capital of the Songhay empire on the Niger, which under Askia Muhammad in the early 1500s ruled the largest empire in West African history. Morocco's army took it in 1591."
+koumbi-saleh,15.76,-8.00,2,750,1050,1400,1600,1914,al-bakri,low,"Probably the capital of ancient Ghana, the “land of gold”, described by al-Bakri in 1068 as two towns: one of Muslim merchants and one of the king."
+walata,17.27,-7.00,3,1200,1350,,,,levtzion-hopkins,medium,A desert town at the southern edge of the Sahara where caravans arrived in the lands of Mali. Ibn Battuta stayed here in 1352 and was startled by its customs.
+kano,12.00,8.52,2,999,1500,,,,draft-urban,medium,A walled Hausa city of weavers and dyers at the end of a trans-Saharan caravan route. Its indigo dye pits have worked for five centuries.
+ife,7.48,4.56,2,900,1300,,,,draft-urban,medium,"The holy city of the Yoruba, where the world was created in their tradition. Its artists cast naturalistic heads in bronze and brass from the 1100s."
+benin-city,6.34,5.62,2,1180,1600,,,,draft-urban,medium,"Capital of the kingdom of Benin, ringed by great moats and earth walls, with a palace hung with brass plaques. A British expedition burned it and looted the plaques in 1897."
+elmina,5.08,-1.35,3,1482,1650,,,,draft-urban,high,"São Jorge da Mina, the castle the Portuguese built on the Gold Coast in 1482 to buy gold. It later became a prison for enslaved Africans awaiting ships."
 great-zimbabwe,-20.27,30.93,1,1100,1350,1450,,1871,pikirayi,medium,"Capital of a state that grew rich on gold traded to the Swahili coast, with curving granite walls built without mortar. It was left around 1450. Europeans who saw it from 1871 refused to believe Africans had built it; archaeology settled the question long ago.",iberia 1531 germany 1871,,barros
-mapungubwe,-22.19,29.39,3,1075,1220,1300,1400,1933,draft-urban,medium,
-kilwa,-8.96,39.51,2,900,1330,1800,,,ibn-battuta,medium,,britain 1812,
-mombasa,-4.05,39.67,2,1000,1500,,,,draft-urban,medium,
-malindi,-3.22,40.12,2,1100,1500,,,,draft-urban,medium,
-mogadishu,2.04,45.34,2,900,1300,,,,draft-urban,medium,
-zanzibar,-6.16,39.19,2,1000,1850,,,,draft-urban,medium,
-sofala,-20.15,34.73,3,900,1400,1900,,,al-masudi,low,
-lalibela,12.03,39.05,3,1180,1220,,,,draft-urban,medium,
-gondar,12.60,37.47,3,1636,1700,,,,draft-urban,high,
-harar,9.31,42.12,3,1000,1550,,,,draft-urban,medium,
-mbanza-kongo,-6.27,14.24,2,1390,1550,,,,draft-urban,medium,
-luanda,-8.84,13.23,3,1576,,,,,draft-urban,high,
-cape-town,-33.92,18.42,2,1652,,,,,draft-urban,high,
+mapungubwe,-22.19,29.39,3,1075,1220,1300,1400,1933,draft-urban,medium,"A hilltop capital above the Limpopo, the first kingdom of southern Africa, rich on gold and ivory traded to the coast. A gold rhinoceros was found in its royal graves."
+kilwa,-8.96,39.51,2,900,1330,1800,,,ibn-battuta,medium,An island sultanate off the Swahili coast that controlled the gold trade from Zimbabwe. Ibn Battuta called it one of the most beautiful cities in the world.,britain 1812,
+mombasa,-4.05,39.67,2,1000,1500,,,,draft-urban,medium,"A Swahili port on an island, a rival of Malindi, whose Fort Jesus the Portuguese built in 1593 to hold the coast."
+malindi,-3.22,40.12,2,1100,1500,,,,draft-urban,medium,A Swahili town whose ruler sent a giraffe to the Ming court in 1414 and later gave Vasco da Gama a pilot to India.
+mogadishu,2.04,45.34,2,900,1300,,,,draft-urban,medium,"A Somali port that grew rich trading gold, ivory and cloth with Arabia, India and China. Ibn Battuta visited in 1331, and Zheng He's ships called here."
+zanzibar,-6.16,39.19,2,1000,1850,,,,draft-urban,medium,"An island off East Africa that the sultans of Oman made their capital in 1840, its wealth built on cloves and on the slave trade until 1873."
+sofala,-20.15,34.73,3,900,1400,1900,,,al-masudi,low,The Swahili port where gold from the Zimbabwe plateau came down to the sea. The Portuguese built a fort here in 1505 to take the trade.
+lalibela,12.03,39.05,3,1180,1220,,,,draft-urban,medium,"Where King Lalibela had eleven churches carved down into the solid rock around 1200, as a new Jerusalem in the Ethiopian highlands."
+gondar,12.60,37.47,3,1636,1700,,,,draft-urban,high,"Founded by Emperor Fasilides in 1636 as Ethiopia's first fixed capital in centuries, with castles that mix Ethiopian, Portuguese and Indian styles."
+harar,9.31,42.12,3,1000,1550,,,,draft-urban,medium,"A walled Muslim trading city in the Ethiopian highlands, closed to outsiders until Richard Burton slipped in in 1855. Its people feed the hyenas at night."
+mbanza-kongo,-6.27,14.24,2,1390,1550,,,,draft-urban,medium,"Capital of the kingdom of Kongo, whose king Afonso I became Christian, wrote to the king of Portugal and protested against the slave trade in the 1520s."
+luanda,-8.84,13.23,3,1576,,,,,draft-urban,high,"Founded by the Portuguese in 1576, it shipped more enslaved Africans across the Atlantic, mostly to Brazil, than any other port."
+cape-town,-33.92,18.42,2,1652,,,,,draft-urban,high,"A supply station the Dutch East India Company set up in 1652 below Table Mountain, halfway on the voyage from Europe to the Indies."
 # ── South Asia ──
 mohenjo-daro,27.33,68.14,1,-2500,-2200,-1700,-1500,1922,draft-urban,medium,"One of the largest cities of the Bronze Age, with a grid of brick streets, drains and a great bath. When it was left around 1700 BCE even its name was lost. Archaeologists recognized what it was only in the 1920s, along with Harappa."
-harappa,30.63,72.86,2,-2600,-2300,-1700,-1500,1921,draft-urban,medium,
-pataliputra,25.61,85.14,1,-490,-300,,,,draft-urban,medium,
-taxila,33.74,72.79,2,-1000,-300,500,700,1863,draft-urban,medium,
-varanasi,25.32,83.00,2,-1000,,,,,draft-urban,medium,
-ujjain,23.18,75.78,2,-700,,,,,draft-urban,medium,
-mathura,27.49,77.67,2,-600,,,,,draft-urban,medium,
-kannauj,27.05,79.91,2,-500,640,,,,xuanzang,medium,
+harappa,30.63,72.86,2,-2600,-2300,-1700,-1500,1921,draft-urban,medium,"A brick city of the Indus civilisation, with granaries, drains and standard weights, whose script is still unread. It was found again in 1921."
+pataliputra,25.61,85.14,1,-490,-300,,,,draft-urban,medium,"Capital of the Maurya empire on the Ganges, described by the Greek envoy Megasthenes. The emperor Ashoka ruled from here."
+taxila,33.74,72.79,2,-1000,-300,500,700,1863,draft-urban,medium,"A city of learning at the crossroads of India, Persia and Central Asia, which Alexander entered in 326 BCE. Greek, Indian and Buddhist art mixed here."
+varanasi,25.32,83.00,2,-1000,,,,,draft-urban,medium,"The holiest city of the Hindus, on the Ganges, where pilgrims bathe and the dead are burned on the steps by the river. The Buddha preached his first sermon at Sarnath nearby."
+ujjain,23.18,75.78,2,-700,,,,,draft-urban,medium,"A holy city and capital of central India, whose meridian Indian astronomers used as their zero of longitude."
+mathura,27.49,77.67,2,-600,,,,,draft-urban,medium,"Birthplace of Krishna in Hindu tradition and a Kushan capital, where sculptors made some of the first images of the Buddha."
+kannauj,27.05,79.91,2,-500,640,,,,xuanzang,medium,"Capital of King Harsha, who welcomed Xuanzang in 643. For three centuries afterwards rival dynasties fought to hold it."
 nalanda,25.14,85.44,2,427,650,1200,1300,1861,xuanzang,medium,"A Buddhist university where thousands of monks studied, Xuanzang among them. It was sacked around 1200 and forgotten until its ruins were identified in the 1860s."
-delhi,28.65,77.23,1,1060,1650,,,,draft-urban,medium,
-agra,27.18,78.01,2,1504,1600,,,,draft-urban,medium,
-lahore,31.55,74.34,2,1000,1650,,,,draft-urban,medium,
-multan,30.20,71.47,2,-500,,,,,draft-urban,low,
-bharuch,21.70,72.97,3,-500,50,,,,periplus,medium,
-calicut,11.25,75.78,2,1100,1500,,,,draft-urban,medium,
-muziris,10.15,76.21,2,-300,100,1341,1400,2007,periplus,low,
-kochi,9.93,76.26,3,1341,1600,,,,draft-urban,medium,
-goa,15.50,73.91,2,1510,1600,1843,,,draft-urban,medium,,iberia 1843,
-arikamedu,11.90,79.82,3,-200,50,200,400,1945,periplus,medium,
-madurai,9.93,78.12,2,-300,,,,,draft-urban,medium,
-kanchipuram,12.83,79.70,2,-300,650,,,,draft-urban,medium,
-vijayanagara,15.33,76.46,1,1336,1500,1565,,,draft-urban,high,,iberia 1565 britain 1800,
-anuradhapura,8.35,80.39,2,-437,300,1017,,1820,draft-urban,medium,,britain 1833,
-polonnaruwa,7.94,81.00,3,1000,1180,1293,,,draft-urban,medium,
-gaur,24.87,88.13,2,1200,1500,1575,,,draft-urban,medium,,britain 1810,
-dhaka,23.81,90.41,2,1608,1700,,,,draft-urban,medium,
-kolkata,22.57,88.36,1,1690,1900,,,,draft-urban,high,
-mumbai,18.95,72.83,1,1534,1950,,,,draft-urban,high,
+delhi,28.65,77.23,1,1060,1650,,,,draft-urban,medium,"Seat of the Delhi sultans and the Mughal emperors, built and rebuilt as seven or more cities on the Yamuna. Shah Jahan's Red Fort was finished in 1648."
+agra,27.18,78.01,2,1504,1600,,,,draft-urban,medium,"The Mughal capital under Akbar, where Shah Jahan built the Taj Mahal as a tomb for his wife Mumtaz Mahal."
+lahore,31.55,74.34,2,1000,1650,,,,draft-urban,medium,"The cultural capital of the Punjab, a Mughal capital with its fort and Badshahi mosque, and later the capital of Ranjit Singh's Sikh empire."
+multan,30.20,71.47,2,-500,,,,,draft-urban,low,"A city of the lower Punjab, famed for its sun temple, which the Arabs reached in 712. It was a gateway for traders between India and Iran."
+bharuch,21.70,72.97,3,-500,50,,,,periplus,medium,"Barygaza, the great port of western India in Roman times, at the mouth of the Narmada. The Periplus warns ships of its dangerous tides."
+calicut,11.25,75.78,2,1100,1500,,,,draft-urban,medium,"The pepper port of Malabar, ruled by the Zamorin, where Zheng He's fleet called and Vasco da Gama landed in 1498."
+muziris,10.15,76.21,2,-300,100,1341,1400,2007,periplus,low,"The pepper port of the Chera kingdom, where Roman ships came each year with the monsoon to buy pepper with gold. A flood in 1341 is said to have blocked its river."
+kochi,9.93,76.26,3,1341,1600,,,,draft-urban,medium,"A harbour opened by a flood in 1341, which became the pepper port of Kerala, with Jewish and Syrian Christian communities. The first European fort in India was built here in 1503."
+goa,15.50,73.91,2,1510,1600,1843,,,draft-urban,medium,"Taken by the Portuguese in 1510, the capital of their empire in Asia, where Francis Xavier is buried. Disease emptied it, and the capital moved in 1843.",iberia 1843,
+arikamedu,11.90,79.82,3,-200,50,200,400,1945,periplus,medium,A bead-making and trading port on the Coromandel coast where Roman wine jars and pottery were found in the 1940s.
+madurai,9.93,78.12,2,-300,,,,,draft-urban,medium,"Capital of the Pandya kings and home of the ancient Tamil Sangam poets, built around the great temple of Meenakshi."
+kanchipuram,12.83,79.70,2,-300,650,,,,draft-urban,medium,"Capital of the Pallavas, a city of a thousand temples. Xuanzang studied here, and its silk weavers are still famous."
+vijayanagara,15.33,76.46,1,1336,1500,1565,,,draft-urban,high,"Capital of the last great Hindu empire of the south, among the largest cities in the world around 1500. After the battle of Talikota in 1565 it was sacked and left in ruins at Hampi.",iberia 1565 britain 1800,
+anuradhapura,8.35,80.39,2,-437,300,1017,,1820,draft-urban,medium,"The first capital of Sri Lanka for over a thousand years, with huge stupas and a bodhi tree grown from a cutting of the Buddha's tree. Faxian lived here for two years.",britain 1833,
+polonnaruwa,7.94,81.00,3,1000,1180,1293,,,draft-urban,medium,"The medieval capital of Sri Lanka, where King Parakramabahu I built vast irrigation tanks and great carved Buddhas in the 1100s."
+gaur,24.87,88.13,2,1200,1500,1575,,,draft-urban,medium,"Capital of Bengal under its sultans, one of the largest cities in the world around 1500. Plague and the shifting Ganges emptied it in 1575.",britain 1810,
+dhaka,23.81,90.41,2,1608,1700,,,,draft-urban,medium,"The Mughal capital of Bengal from 1608, famous for its muslin, a cotton cloth so fine it was called “woven air”."
+kolkata,22.57,88.36,1,1690,1900,,,,draft-urban,high,Founded by the English East India Company in 1690 on the Hooghly. As Calcutta it was the capital of British India until 1911.
+mumbai,18.95,72.83,1,1534,1950,,,,draft-urban,high,"Seven islands that Portugal gave to England in 1661 as part of Catherine of Braganza's dowry, joined by landfill into India's greatest port."
 # ── East Asia ──
-anyang,36.10,114.35,3,-1300,-1100,-1046,-500,1899,draft-urban,medium,
-xianyang,34.33,108.71,2,-350,-210,-206,,,shiji,high,,,1959
+anyang,36.10,114.35,3,-1300,-1100,-1046,-500,1899,draft-urban,medium,"The last capital of the Shang, where kings put questions to their ancestors by cracking ox bones and turtle shells. Inscribed “dragon bones” sold as medicine led scholars here in 1899; digging began in 1928, and Lady Fu Hao's tomb was found in 1976."
+xianyang,34.33,108.71,2,-350,-210,-206,,,shiji,high,"The Qin capital, from which the First Emperor ruled a united China. He had the palaces of every state he conquered rebuilt along the Wei river; Xiang Yu burned the city in 206 BCE.",,1959
 changan,34.26,108.94,1,-202,750,,,,draft-urban,high,"Capital of the Han and the Tang, the eastern end of the Silk Road. Around 750 perhaps a million people lived inside its grid of walled wards, including merchants and monks from Persia, Sogdiana, Korea and Japan."
-luoyang,34.62,112.45,1,-1036,100,,,,draft-urban,medium,
-kaifeng,34.80,114.31,1,-364,1100,,,,draft-urban,medium,
-hangzhou,30.27,120.15,1,589,1270,,,,draft-urban,high,
-suzhou,31.30,120.62,2,-514,1600,,,,draft-urban,medium,
-nanjing,32.06,118.78,1,-472,1400,,,,draft-urban,high,
-yangzhou,32.39,119.42,2,-486,800,,,,draft-urban,medium,
-beijing,39.90,116.40,1,-1045,1800,,,,draft-urban,medium,
-shanghai,31.23,121.47,1,1291,1950,,,,draft-urban,medium,
-quanzhou,24.87,118.68,2,700,1300,,,,draft-urban,medium,
-guangzhou,23.13,113.26,1,-214,1800,,,,draft-urban,high,
-macau,22.20,113.55,3,1557,,,,,draft-urban,high,
-hong-kong,22.28,114.16,2,1841,1990,,,,draft-urban,high,
-chengdu,30.66,104.06,2,-311,,,,,draft-urban,high,
-dunhuang,40.14,94.66,2,-111,700,,,,draft-urban,high,
-kashgar,39.47,75.99,2,-200,1000,,,,draft-urban,medium,
-khotan,37.11,79.93,2,-200,900,,,,draft-urban,medium,
-kucha,41.72,82.96,3,-100,650,,,,draft-urban,medium,
+luoyang,34.62,112.45,1,-1036,100,,,,draft-urban,medium,"Capital of the Eastern Zhou, the Eastern Han and the Northern Wei, and Wu Zetian's Divine Capital. The Northern Wei carved the Buddhas of Longmen into the cliffs to its south."
+kaifeng,34.80,114.31,1,-364,1100,,,,draft-urban,medium,"Capital of the Northern Song and perhaps the largest city in the world around 1100, its streets and canal traffic painted in Along the River During the Qingming Festival. Jurchen armies took it in 1127. A community of Jews lived here from Song times into the 1800s."
+hangzhou,30.27,120.15,1,589,1270,,,,draft-urban,high,"On the West Lake at the southern end of the Grand Canal, it became the Southern Song capital after the north fell in 1127. Marco Polo called it Quinsay, the finest and most splendid city in the world."
+suzhou,31.30,120.62,2,-514,1600,,,,draft-urban,medium,"Founded as the capital of Wu by King Helü, a city of canals, silk, scholars and private gardens. Under the Ming and Qing it was among the richest cities in China and set the empire's taste."
+nanjing,32.06,118.78,1,-472,1400,,,,draft-urban,high,"Capital of six southern dynasties and of the first Ming emperor, who gave it one of the longest city walls ever built. Zheng He's treasure ships were built in its shipyards, and the Taiping made it their Heavenly Capital in 1853."
+yangzhou,32.39,119.42,2,-486,800,,,,draft-urban,medium,"Where the Grand Canal meets the Yangzi: the richest trading city of the Tang, home to Persian and Arab merchants. Under the Qing its salt merchants paid for gardens, painters and the emperor's southern tours."
+beijing,39.90,116.40,1,-1045,1800,,,,draft-urban,medium,"A frontier city that the Liao, Jin and Mongols made a capital; Kublai Khan laid out Dadu on a new grid. The Yongle emperor moved the Ming court here in 1421 and built the Forbidden City, and it stayed the capital until 1928."
+shanghai,31.23,121.47,1,1291,1950,,,,draft-urban,medium,A county town of cotton weavers that became a treaty port in 1843. Its foreign settlements made it China's largest city and its door to the world by the 1930s.
+quanzhou,24.87,118.68,2,700,1300,,,,draft-urban,medium,"Zaitun, the great port of Song and Yuan China, where Arab, Persian, Tamil and Latin Christian merchants built mosques, temples and churches. Marco Polo and Ibn Battuta both counted it among the largest ports in the world."
+guangzhou,23.13,113.26,1,-214,1800,,,,draft-urban,high,"China's southern port for two thousand years. Arab and Persian ships came in the Tang, and from 1757 to 1842 it was the only Chinese port where Europeans were allowed to trade."
+macau,22.20,113.55,3,1557,,,,,draft-urban,high,"Settled by Portuguese traders with Ming permission around 1557. For centuries Jesuits entered China through it, and Chinese silk left through it for Japan and Manila. It was returned to China in 1999."
+hong-kong,22.28,114.16,2,1841,1990,,,,draft-urban,high,"A rocky island taken by Britain in the First Opium War, it grew into a free port and, after 1949, a city of factories and finance. It was returned to China in 1997."
+chengdu,30.66,104.06,2,-311,,,,,draft-urban,high,"Capital of Shu, in a basin watered since the 200s BCE by the Dujiangyan irrigation works. Its merchants issued the world's first paper money, and the poet Du Fu built his thatched cottage here."
+dunhuang,40.14,94.66,2,-111,700,,,,draft-urban,high,"A Han garrison at the western end of the Great Wall, where the Silk Road splits to pass north and south of the Taklamakan. In the Mogao caves nearby, a sealed library opened in 1900 held the oldest dated printed book."
+kashgar,39.47,75.99,2,-200,1000,,,,draft-urban,medium,"The oasis where the roads from China, India and the West meet below the Pamirs. Mahmud al-Kashgari, who wrote the first dictionary of the Turkic languages in the 1070s, came from here."
+khotan,37.11,79.93,2,-200,900,,,,draft-urban,medium,A Buddhist kingdom famous for the jade it sent east to China for two thousand years. Legend says silkworm eggs were smuggled here from China in a princess's headdress.
+kucha,41.72,82.96,3,-100,650,,,,draft-urban,medium,"The largest oasis kingdom on the northern Silk Road, famous for the music the Tang court adopted. Kumarajiva, who translated many Buddhist scriptures into Chinese, was born here."
 loulan,40.52,89.75,3,-200,200,330..400,500,1900,hedin,medium,"An oasis kingdom on the old shore of Lop Nur, a stop on the Silk Road for Chinese garrisons and caravans. As the rivers shifted and the lake dried, it was swallowed by the desert. Sven Hedin's guide stumbled on its ruins in 1900 while going back for a lost spade."
-niya,37.97,82.71,3,-100,200,350,500,1901,stein,medium,
-gaochang,42.86,89.53,2,-100,800,1383,,,draft-urban,medium,,china 1414 germany 1902,
-karakorum,47.20,102.82,2,1220,1260,1388,1600,1889,carpini-rubruck,low,
+niya,37.97,82.71,3,-100,200,350,500,1901,stein,medium,"An oasis town of the Shanshan kingdom, left to the sand around 350. Aurel Stein found hundreds of wooden tablets here, written in the Indian Kharosthi script, recording its daily business."
+gaochang,42.86,89.53,2,-100,800,1383,,,draft-urban,medium,"Capital of oasis kingdoms in the Turpan basin: a Chinese-ruled kingdom whose king detained and honoured Xuanzang in 630, then the Uyghur kingdom of Qocho, where Buddhists and Manichaeans flourished side by side.",china 1414 germany 1902
+karakorum,47.20,102.82,2,1220,1260,1388,1600,1889,carpini-rubruck,low,"The Mongol capital Ögedei walled in 1235, where William of Rubruck saw a silver tree that poured wine and mare's milk. Kublai moved the capital to China, and the Ming burned it in 1388."
 shangdu,42.36,116.18,2,1256,1300,1369,,,polo,high,"Kublai Khan's summer capital, Xanadu, described by Marco Polo. The Ming burned it in 1369. Coleridge made it a dream of luxury in 1797, long after the city had become grass-covered mounds.",britain 1872,
-lhasa,29.65,91.17,2,637,1700,,,,draft-urban,medium,
-kyoto,35.01,135.77,1,794,1200,,,,draft-urban,high,
-nara,34.69,135.80,2,710,750,,,,draft-urban,high,
-kamakura,35.32,139.55,3,1185,1300,,,,draft-urban,medium,
-edo,35.68,139.77,1,1457,1950,,,,draft-urban,high,
-osaka,34.69,135.50,2,645,1600,,,,draft-urban,medium,
-nagasaki,32.75,129.87,3,1571,1700,,,,draft-urban,high,
-gyeongju,35.86,129.22,2,-57,750,,,,draft-urban,medium,
-kaesong,37.97,126.55,2,919,1100,,,,draft-urban,medium,
-seoul,37.57,126.98,1,1394,1900,,,,draft-urban,high,
-pyongyang,39.02,125.75,2,-194,600,,,,draft-urban,low,
+lhasa,29.65,91.17,2,637,1700,,,,draft-urban,medium,"Founded by Songtsen Gampo, who united Tibet in the 600s and built the Jokhang temple. From 1642 it was the seat of the Dalai Lamas, who raised the Potala Palace above it."
+kyoto,35.01,135.77,1,794,1200,,,,draft-urban,high,"Heian-kyō, laid out in 794 on the grid of Chang'an, the imperial capital of Japan for over a thousand years, where Lady Murasaki wrote The Tale of Genji."
+nara,34.69,135.80,2,710,750,,,,draft-urban,high,"Heijō-kyō, Japan's first permanent capital, built on the Chinese model in 710. Its Tōdai-ji houses a giant bronze Buddha cast in 752."
+kamakura,35.32,139.55,3,1185,1300,,,,draft-urban,medium,"Seat of Japan's first shogunate from 1185, a warrior capital between hills and sea, with a great bronze Buddha cast in 1252."
+edo,35.68,139.77,1,1457,1950,,,,draft-urban,high,"A castle town that Tokugawa Ieyasu made the seat of the shoguns in 1603, perhaps the largest city in the world in the 1700s. Renamed Tokyo when the emperor moved here in 1868."
+osaka,34.69,135.50,2,645,1600,,,,draft-urban,medium,"An old port on the Inland Sea where Toyotomi Hideyoshi built his great castle in 1583. Under the Tokugawa it was the kitchen of Japan, its rice market setting prices for the whole country."
+nagasaki,32.75,129.87,3,1571,1700,,,,draft-urban,high,A fishing village opened to Portuguese ships in 1571. After 1641 the Dutch on the island of Dejima and the Chinese were Japan's only window on the outside world.
+gyeongju,35.86,129.22,2,-57,750,,,,draft-urban,medium,"Capital of Silla for nearly a thousand years, whose kings were buried in great earth mounds with gold crowns. Silla united the Korean peninsula in 668."
+kaesong,37.97,126.55,2,919,1100,,,,draft-urban,medium,"Capital of the Goryeo dynasty, which gave Korea its Western name. Its celadon potters and its printers were among the finest in Asia."
+seoul,37.57,126.98,1,1394,1900,,,,draft-urban,high,"Capital of the Joseon dynasty from 1394, walled by its founder Yi Seong-gye. King Sejong's scholars created the Korean alphabet here in 1443."
+pyongyang,39.02,125.75,2,-194,600,,,,draft-urban,low,"An ancient city on the Taedong river, seat of the Han commandery of Lelang and from 427 the capital of Goguryeo."
 # ── Southeast Asia ──
-oc-eo,10.25,105.15,3,100,400,600,700,1944,kang-tai,medium,
+oc-eo,10.25,105.15,3,100,400,600,700,1944,kang-tai,medium,"A port of Funan in the Mekong delta, where Roman coins and Indian seals were found among canals and brick foundations."
 angkor,13.41,103.87,1,802,1150,1431,,1860,mouhot,medium,"The Khmer capital, a city of perhaps 750,000 spread around great reservoirs and temples. After Ayutthaya's armies sacked it in 1431 the court moved south and the forest crept in, though monks kept Angkor Wat in use. Henri Mouhot's posthumous book made it famous in Europe from the 1860s.",iberia 1586 france 1860,,mouhot
-bagan,21.17,94.86,2,849,1200,,,,draft-urban,medium,
-ayutthaya,14.35,100.57,1,1351,1700,1767,,,draft-urban,high,,china 1767 germany 1767,
-palembang,-2.99,104.75,2,670,900,,,,yijing,medium,
-trowulan,-7.56,112.38,2,1293,1400,1527,1600,1815,draft-urban,medium,
-malacca,2.19,102.25,2,1400,1500,,,,ma-huan,medium,
-hanoi,21.03,105.85,2,1010,,,,,draft-urban,high,
-hue,16.46,107.59,3,1687,1850,,,,draft-urban,medium,
-manila,14.60,120.98,2,1571,,,,,draft-urban,high,
-cebu,10.32,123.90,3,1000,,,,,draft-urban,low,
-ternate,0.79,127.38,3,1250,1550,,,,draft-urban,low,
-batavia,-6.13,106.80,2,1619,,,,,draft-urban,high,
-singapore,1.29,103.85,2,1819,1950,,,,draft-urban,high,
+bagan,21.17,94.86,2,849,1200,,,,draft-urban,medium,"Capital of the first Burmese kingdom, whose kings and people built more than ten thousand Buddhist temples on the plain by the Irrawaddy."
+ayutthaya,14.35,100.57,1,1351,1700,1767,,,draft-urban,high,"Capital of Siam for four centuries on an island in the Chao Phraya, a trading city of Chinese, Japanese, Persian and European merchants. The Burmese destroyed it in 1767.",china 1767 germany 1767,
+palembang,-2.99,104.75,2,670,900,,,,yijing,medium,"Capital of Srivijaya, which controlled the Strait of Malacca. Yijing studied Sanskrit here in 671 on his way to India."
+trowulan,-7.56,112.38,2,1293,1400,1527,1600,1815,draft-urban,medium,"Capital of Majapahit, the greatest empire of the Indonesian islands, described in the court poem Nagarakretagama. It was left after the empire fell in the early 1500s."
+malacca,2.19,102.25,2,1400,1500,,,,ma-huan,medium,"Founded around 1400 by a prince from Sumatra, it became the great market of the Strait under Ming protection. The Portuguese took it in 1511."
+hanoi,21.03,105.85,2,1010,,,,,draft-urban,high,"Thăng Long, “the soaring dragon”, capital of the Vietnamese kings from 1010, with its Temple of Literature honouring Confucius."
+hue,16.46,107.59,3,1687,1850,,,,draft-urban,medium,"Capital of the Nguyen lords and from 1802 of a united Vietnam, with a walled citadel and palace modelled on Beijing's."
+manila,14.60,120.98,2,1571,,,,,draft-urban,high,"Founded by the Spanish in 1571 at the mouth of the Pasig, the Asian end of the Manila galleons, which carried Chinese silk to Mexico for American silver."
+cebu,10.32,123.90,3,1000,,,,,draft-urban,low,"A trading port of the Visayas where Magellan baptised its ruler in 1521 and was killed on nearby Mactan days later. Spain's first settlement in the Philippines, 1565."
+ternate,0.79,127.38,3,1250,1550,,,,draft-urban,low,"A volcanic island sultanate in the Moluccas, one of the few places cloves grew. Portugal, Spain and the Dutch fought over it for a century."
+batavia,-6.13,106.80,2,1619,,,,,draft-urban,high,"The Dutch East India Company's headquarters in Asia from 1619, built with canals like a Dutch town on the ruins of Jayakarta."
+singapore,1.29,103.85,2,1819,1950,,,,draft-urban,high,"A trading post Stamford Raffles founded for Britain in 1819 at the tip of the Malay peninsula, which grew into one of the busiest ports in the world."
 # ── The Americas ──
-caral,-10.89,-77.52,2,-2600,-2000,-1800,-1500,1994,draft-urban,low,
-chavin,-9.59,-77.18,3,-900,-500,-200,,,draft-urban,medium,
-el-mirador,17.75,-89.92,2,-600,-150,150,300,1926,draft-urban,low,
-monte-alban,17.04,-96.77,2,-500,500,850,,,draft-urban,medium,,iberia 1580,,dupaix
-teotihuacan,19.69,-98.84,1,-100,450,600,,,draft-urban,medium,,iberia 1521,1910,bernal-diaz
-tikal,17.22,-89.62,1,-600,750,900,1000,1848,draft-urban,medium,
-calakmul,18.10,-89.81,2,-500,650,900,1000,1931,draft-urban,low,
-palenque,17.48,-92.05,2,-100,700,800,900,1773,draft-urban,medium,
-copan,14.84,-89.14,2,400,750,900,1000,1839,draft-urban,medium,
-chichen-itza,20.68,-88.57,1,600,1000,1250,,,draft-urban,medium,,iberia 1533,,stephens-yucatan
-mayapan,20.63,-89.46,2,1220,1350,1450,,,draft-urban,medium,,iberia 1566,,landa
-cholula,19.06,-98.30,2,-300,600,,,,draft-urban,medium,
-tula,20.06,-99.34,2,900,1100,1150,,,draft-urban,medium,,iberia 1570,,sahagun
-tzintzuntzan,19.63,-101.58,3,1325,1500,,,,draft-urban,low,
+caral,-10.89,-77.52,2,-2600,-2000,-1800,-1500,1994,draft-urban,low,"A city of pyramids and sunken plazas in a desert valley of Peru, as old as the pyramids of Egypt, built without pottery or writing. It was recognised for what it was only in the 1990s."
+chavin,-9.59,-77.18,3,-900,-500,-200,,,draft-urban,medium,"A temple centre high in the Andes, where pilgrims entered dark stone galleries to face the carved idol of the Lanzón. Its art spread across early Peru."
+el-mirador,17.75,-89.92,2,-600,-150,150,300,1926,draft-urban,low,"A Preclassic Maya city in the forest of northern Guatemala, with La Danta, one of the largest pyramids in the world by volume, linked to other cities by raised causeways."
+monte-alban,17.04,-96.77,2,-500,500,850,,,draft-urban,medium,"The Zapotec capital, built on a levelled mountaintop above the valley of Oaxaca, with some of the earliest writing in the Americas.",iberia 1580,,dupaix
+teotihuacan,19.69,-98.84,1,-100,450,600,,,draft-urban,medium,"One of the largest cities of the ancient Americas, laid out on a grid along the Avenue of the Dead below the Pyramids of the Sun and Moon. Its name, “where the gods were born”, was given by the Aztecs, who found it in ruins.",iberia 1521,1910,bernal-diaz
+tikal,17.22,-89.62,1,-600,750,900,1000,1848,draft-urban,medium,"One of the greatest Maya cities, its temple-pyramids rising above the rainforest of Guatemala. Its long war with Calakmul shaped the Classic Maya world."
+calakmul,18.10,-89.81,2,-500,650,900,1000,1931,draft-urban,low,"Seat of the Snake kings of Kaan, Tikal's great rival, who built a network of allied and subject cities across the Maya lowlands in the 600s."
+palenque,17.48,-92.05,2,-100,700,800,900,1773,draft-urban,medium,"A Maya city in the forested hills of Chiapas, where King Pakal was buried in 683 with a jade mask inside the Temple of the Inscriptions."
+copan,14.84,-89.14,2,400,750,900,1000,1839,draft-urban,medium,A Maya city in Honduras famous for its carved stelae and a stairway inscribed with the longest Maya text known.
+chichen-itza,20.68,-88.57,1,600,1000,1250,,,draft-urban,medium,"A Maya city of northern Yucatán with the stepped pyramid of El Castillo, whose stairs cast a serpent of light at the equinoxes, and a sacred well into which offerings were thrown.",iberia 1533,,stephens-yucatan
+mayapan,20.63,-89.46,2,1220,1350,1450,,,draft-urban,medium,"The last great capital of the Maya of Yucatán, a walled city ruled by a league of lords until it was destroyed around 1450.",iberia 1566,,landa
+cholula,19.06,-98.30,2,-300,600,,,,draft-urban,medium,"A holy city of central Mexico whose Great Pyramid is the largest by volume in the world. Cortés's men massacred its people in 1519, and the Spanish built a church on top."
+tula,20.06,-99.34,2,900,1100,1150,,,draft-urban,medium,"Tollan, capital of the Toltecs, whose stone warrior columns still stand. The Aztecs remembered the Toltecs as the source of all arts and of their kings' legitimacy.",iberia 1570,,sahagun
+tzintzuntzan,19.63,-101.58,3,1325,1500,,,,draft-urban,low,"Capital of the Purépecha (Tarascan) kingdom by Lake Pátzcuaro, which beat back the Aztecs and worked copper and bronze."
 tenochtitlan,19.43,-99.13,1,1325,1519,,,,cortes-letters,high,"The Mexica capital, built on an island in Lake Texcoco and joined to the shore by causeways. In 1519 it was one of the largest cities on Earth, bigger than any in Spain. Cortés's forces and their allies destroyed it in 1521, and Mexico City was built on the ruins."
 cahokia,38.66,-90.06,2,800,1100,1350,,,pauketat,medium,"The largest city north of Mexico, around 1100 home to perhaps 10,000–20,000 people beneath a 30-metre earthen mound. By about 1350 it was empty. The mounds stayed, and later peoples and settlers saw them, but who built them was argued over for centuries."
 chaco,36.06,-107.96,2,850,1100,1150,,,draft-urban,medium,"The great houses of Chaco Canyon, the largest of them Pueblo Bonito with some 650 rooms rising four or five storeys, at the centre of roads running straight across the desert. Abandoned in the twelfth century; a US Army survey described them in 1849."
@@ -260,251 +260,251 @@ naranjo,17.13,-89.25,3,-500,700,900,1000,1905,maler-naranjo,low,"Sa'aal, the May
 edzna,19.6,-90.23,3,-400,700,1450,1500,1907,sharer,low,"A Maya city on the plain of Campeche, with a five-storey pyramid and a great system of canals and a moat dug to gather the rains. Long left to the forest, it was reported in 1907 and cleared from the 1920s."
 el-tajin,20.45,-97.38,2,600,900,1200,1300,1785,ruiz-tajin,medium,"The city of the Totonac lowlands, named for the god of thunder, with its Pyramid of the Niches, 365 square windows in the stone, and some twenty ball courts. Lost in the forest until a tobacco inspector came upon it in 1785."
 ciudad-perdida,11.04,-73.93,2,800,1300,1600,1650,1972,soto-teyuna,medium,"Teyuna, a Tairona town of stone terraces and stairways deep in the Sierra Nevada de Santa Marta, reached by some 1,200 steps through the cloud forest. Left after the Spanish wars; treasure hunters found it in 1972. The Kogi, Arhuaco and Wiwa, the Tairona's descendants, had always known it."
-mesa-verde,37.17,-108.47,3,1190,1260,1300,1400,1888,draft-urban,low,
-chan-chan,-8.11,-79.07,1,850,1400,1500,,,draft-urban,medium,,iberia 1535,,cieza
-tiwanaku,-16.55,-68.67,2,110,800,1000,,,draft-urban,medium,,iberia 1549,,cieza
+mesa-verde,37.17,-108.47,3,1190,1260,1300,1400,1888,draft-urban,low,"Ancestral Puebloans built villages of stone into the cliff alcoves of these canyons in the 1200s, then left them by 1300."
+chan-chan,-8.11,-79.07,1,850,1400,1500,,,draft-urban,medium,"Capital of the Chimú kingdom on the Peruvian coast, the largest adobe city in the Americas, until the Inca conquered it around 1470.",iberia 1535,,cieza
+tiwanaku,-16.55,-68.67,2,110,800,1000,,,draft-urban,medium,"A ceremonial city near Lake Titicaca nearly 4,000 metres up, whose carved Gateway of the Sun the Inca later revered.",iberia 1549,,cieza
 quilmes,-26.47,-66.03,3,850,1500,1666,,,lorandi-calchaqui,medium,"A walled town of stone houses climbing a hillside in the Calchaquí valleys, home to perhaps five thousand people. The Quilmes held out against the Spanish for more than a century; in 1666 the survivors were marched some 1,500 km to a reduction near Buenos Aires, which still bears their name."
-huari,-13.06,-74.20,2,500,800,1000,,,draft-urban,medium,,iberia 1549,,cieza
-cuzco,-13.53,-71.97,1,1100,1500,,,,draft-urban,medium,
+huari,-13.06,-74.20,2,500,800,1000,,,draft-urban,medium,"Capital of the Wari empire in the Andes, which built roads and administrative centres that the Inca would later follow.",iberia 1549,,cieza
+cuzco,-13.53,-71.97,1,1100,1500,,,,draft-urban,medium,"The navel of the world, capital of the Inca, with walls of fitted stone and the gold-covered Coricancha. Pizarro's men took it in 1533."
 machu-picchu,-13.16,-72.55,3,1450,1500,1572,1600,1911,bingham,medium,"A royal estate built for the Inca emperor Pachacuti in the mountains above the Urubamba. It was left around the time of the Spanish conquest and never found by the Spanish. Local farmers knew it well; Hiram Bingham's photographs made it known to the outside world in 1911–1913."
-lima,-12.05,-77.04,2,1535,,,,,draft-urban,high,
-quito,-0.22,-78.51,2,1534,,,,,draft-urban,medium,
-bogota,4.61,-74.07,2,1538,,,,,draft-urban,high,
-potosi,-19.58,-65.75,1,1545,1610,,,,draft-urban,high,
-cartagena,10.39,-75.48,2,1533,,,,,draft-urban,high,
-panama-viejo,9.01,-79.48,3,1519,1600,1671,,,draft-urban,high,
-santo-domingo,18.47,-69.89,2,1496,1520,,,,draft-urban,high,
-havana,23.13,-82.38,2,1519,,,,,draft-urban,high,
-veracruz,19.20,-96.13,3,1519,,,,,draft-urban,high,
-st-augustine,29.90,-81.31,3,1565,,,,,draft-urban,high,
-jamestown,37.21,-76.78,3,1607,1640,1699,,1994,draft-urban,medium,
-quebec,46.81,-71.21,2,1608,,,,,draft-urban,high,
-boston,42.36,-71.06,2,1630,,,,,draft-urban,high,
-new-york,40.71,-74.01,1,1625,1950,,,,draft-urban,high,
-philadelphia,39.95,-75.17,2,1682,1800,,,,draft-urban,high,
-washington,38.90,-77.04,2,1790,,,,,draft-urban,high,
-chicago,41.88,-87.63,2,1833,1950,,,,draft-urban,high,
-san-francisco,37.77,-122.42,2,1776,,,,,draft-urban,high,
-salvador,-12.97,-38.50,2,1549,1700,,,,draft-urban,high,
-rio,-22.91,-43.17,1,1565,1900,,,,draft-urban,high,
-buenos-aires,-34.60,-58.38,1,1580,1950,,,,draft-urban,high,
-santiago,-33.45,-70.67,2,1541,,,,,draft-urban,high,
+lima,-12.05,-77.04,2,1535,,,,,draft-urban,high,"The City of Kings, founded by Pizarro on the coast in 1535 as the capital of the Viceroyalty of Peru, which governed Spanish South America."
+quito,-0.22,-78.51,2,1534,,,,,draft-urban,medium,A northern Inca city high in the Andes that the Spanish refounded in 1534. Its churches are among the richest in the Americas.
+bogota,4.61,-74.07,2,1538,,,,,draft-urban,high,"Founded in 1538 on the high plain of the Muisca, whose gold offerings gave rise to the legend of El Dorado."
+potosi,-19.58,-65.75,1,1545,1610,,,,draft-urban,high,"A mining city at the foot of the silver mountain Cerro Rico, among the largest cities in the world around 1600. Its silver, dug by forced Indigenous labour, flowed to Europe and China."
+cartagena,10.39,-75.48,2,1533,,,,,draft-urban,high,"A walled Caribbean port where the Spanish treasure fleets gathered, and the largest slave market of Spanish America."
+panama-viejo,9.01,-79.48,3,1519,1600,1671,,,draft-urban,high,"The first European city on the Pacific coast of the Americas, through which Peru's silver went by mule to the Caribbean. The pirate Henry Morgan burned it in 1671."
+santo-domingo,18.47,-69.89,2,1496,1520,,,,draft-urban,high,"The first permanent European city in the Americas, founded by Columbus's brother Bartholomew in 1496, with the first cathedral and university of the New World."
+havana,23.13,-82.38,2,1519,,,,,draft-urban,high,"The harbour where Spain's treasure fleets assembled before crossing the Atlantic, guarded by great forts. It became the capital of Cuba in 1607."
+veracruz,19.20,-96.13,3,1519,,,,,draft-urban,high,"Where Cortés landed in 1519 and founded the first Spanish town in Mexico, later the port of the treasure fleets to Spain."
+st-augustine,29.90,-81.31,3,1565,,,,,draft-urban,high,"Founded by Spain in 1565 to guard the Florida coast, the oldest continuously settled European city in the United States."
+jamestown,37.21,-76.78,3,1607,1640,1699,,1994,draft-urban,medium,"The first lasting English settlement in America, founded in 1607 on a swampy island in Virginia, where most early colonists died of disease and hunger."
+quebec,46.81,-71.21,2,1608,,,,,draft-urban,high,"Founded by Samuel de Champlain in 1608 on a cliff above the St Lawrence, the capital of New France until the British took it in 1759."
+boston,42.36,-71.06,2,1630,,,,,draft-urban,high,"Founded by English Puritans in 1630, it led the colonial resistance that became the American Revolution: the Boston Tea Party of 1773."
+new-york,40.71,-74.01,1,1625,1950,,,,draft-urban,high,"New Amsterdam, a Dutch fur-trading post on Manhattan that the English took in 1664. By 1950 it was the largest city in the world and the gateway for millions of immigrants."
+philadelphia,39.95,-75.17,2,1682,1800,,,,draft-urban,high,"William Penn's Quaker city of brotherly love, founded in 1682. The Declaration of Independence and the Constitution were signed here."
+washington,38.90,-77.04,2,1790,,,,,draft-urban,high,"A capital laid out on the Potomac in 1791 by Pierre L'Enfant for the new United States, with broad avenues radiating from the Capitol."
+chicago,41.88,-87.63,2,1833,1950,,,,draft-urban,high,A portage between the Great Lakes and the Mississippi that the railways turned into the fastest-growing city of the 1800s. The first skyscrapers rose here after the fire of 1871.
+san-francisco,37.77,-122.42,2,1776,,,,,draft-urban,high,"A Spanish mission and presidio of 1776 on a great bay, which the gold rush of 1849 turned into a boom town."
+salvador,-12.97,-38.50,2,1549,1700,,,,draft-urban,high,"The first capital of Portuguese Brazil, from 1549 to 1763, a sugar port where more enslaved Africans arrived than almost anywhere in the Americas."
+rio,-22.91,-43.17,1,1565,1900,,,,draft-urban,high,"A city on Guanabara Bay below Sugarloaf Mountain, capital of Brazil from 1763, and in 1808–21 of the whole Portuguese empire when the court fled Napoleon."
+buenos-aires,-34.60,-58.38,1,1580,1950,,,,draft-urban,high,"Founded for good in 1580 on the Río de la Plata, it grew rich on cattle and immigrants to become one of the largest cities in the Americas."
+santiago,-33.45,-70.67,2,1541,,,,,draft-urban,high,"Founded by Pedro de Valdivia in 1541 in a valley below the Andes, the capital of Chile."
 # ── Oceania ──
 nan-madol,6.84,158.33,2,1180,1400,1628,,,kirch,medium,"Nearly a hundred artificial islets of stacked basalt columns off Pohnpei, the seat of the Saudeleur dynasty that ruled the island until about 1628. The only city of stone in the Pacific islands; Pohnpeians say it was raised by sorcery.",britain 1836,
-lapaha,-21.15,-175.12,3,1200,1400,,,,kirch,low,
+lapaha,-21.15,-175.12,3,1200,1400,,,,kirch,low,"The seat of the Tuʻi Tonga, sacred kings whose voyaging chiefdom reached across western Polynesia, buried in stepped stone tombs, the langi."
 taputapuatea,-16.83,-151.36,3,1000,1600,,,,kirch,low,"A great marae (sacred meeting ground) on Raʻiātea, the spiritual centre of East Polynesian voyaging. Navigators from across the region came here; stones from it were carried to found new marae on other islands."
-honolulu,21.31,-157.86,2,1200,,,,,kirch,low,
-auckland,-36.85,174.76,2,1350,,,,,kirch,low,
-sydney,-33.87,151.21,1,1788,1950,,,,draft-urban,high,
-hobart,-42.88,147.33,3,1804,,,,,draft-urban,high,
-melbourne,-37.81,144.96,2,1835,1900,,,,draft-urban,high,
+honolulu,21.31,-157.86,2,1200,,,,,kirch,low,A sheltered harbour on Oʻahu that became the capital of the Hawaiian kingdom in 1845 and a port for whalers and traders crossing the Pacific.
+auckland,-36.85,174.76,2,1350,,,,,kirch,low,"Tāmaki Makaurau, an isthmus of volcanic cones terraced as Māori hill forts, which became the first capital of colonial New Zealand in 1841."
+sydney,-33.87,151.21,1,1788,1950,,,,draft-urban,high,"Founded in 1788 as a British penal colony on the harbour of the Gadigal people, the first European settlement in Australia."
+hobart,-42.88,147.33,3,1804,,,,,draft-urban,high,"Founded in 1804 on the Derwent as a British penal colony in Van Diemen's Land, and later a base for whalers and Antarctic expeditions."
+melbourne,-37.81,144.96,2,1835,1900,,,,draft-urban,high,"Founded in 1835 on the Yarra, it boomed on the gold rush of the 1850s into one of the richest cities in the world."
 # ── Added: more cities across every region ──
-ur,30.96,46.10,2,-3800,-2100,-500,-300,1922,draft-urban,medium,
-uruk,31.32,45.64,2,-4500,-2900,300,600,1850,draft-urban,medium,
-hattusa,40.02,34.62,2,-1650,-1300,-1180,-1000,1834,draft-urban,medium,
-sardis,38.49,28.04,2,-1200,-550,1402,,,draft-urban,medium,
-pergamon,39.13,27.18,2,-300,150,1300,,,draft-urban,medium,,rome 1431 germany 1878,
-rhodes,36.43,28.22,2,-408,-200,,,,draft-urban,medium,
-byblos,34.12,35.65,3,-5000,-2000,,,,draft-urban,medium,
-ugarit,35.60,35.78,3,-6000,-1300,-1185,-1000,1928,draft-urban,medium,
-ecbatana,34.80,48.52,2,-700,-500,,,,draft-urban,medium,
-pasargadae,30.20,53.17,3,-546,-530,-300,,,draft-urban,medium,
-jerash,32.28,35.89,3,-200,200,750,1200,1806,draft-urban,medium,
-ostia,41.75,12.29,3,-400,150,850,1100,1802,draft-urban,medium,
-aquileia,45.77,13.37,2,-181,350,452,,,draft-urban,medium,
-volubilis,34.07,-5.55,3,-250,200,1100,,,draft-urban,medium,
-timgad,35.49,6.47,3,100,250,700,800,1881,draft-urban,medium,
-tangier,35.77,-5.80,3,-500,,,,,draft-urban,medium,
-algiers,36.75,3.06,2,944,1600,,,,draft-urban,medium,
-napata,18.53,31.82,3,-1450,-700,-300,,,draft-urban,low,
-kerma,19.60,30.41,3,-2500,-1600,-1500,-1000,1913,draft-urban,low,
-dongola,18.22,30.75,3,500,1200,1400,,,draft-urban,low,
-gedi,-3.31,40.02,3,1100,1450,1650,1700,1927,draft-urban,low,
-lamu,-2.27,40.90,3,1370,1800,,,,draft-urban,medium,
-zeila,11.35,43.47,3,600,1300,,,,draft-urban,low,
-shibam,15.93,48.63,3,300,1600,,,,draft-urban,low,
-khartoum,15.59,32.53,2,1821,1950,,,,draft-urban,high,
-addis-ababa,9.03,38.74,2,1886,1950,,,,draft-urban,high,
-saint-louis,16.03,-16.50,3,1659,1850,,,,draft-urban,high,
-freetown,8.48,-13.23,3,1792,,,,,draft-urban,high,
-oyo,8.53,4.07,2,1300,1700,1835,,,draft-urban,low,
-khami,-20.15,28.43,3,1450,1600,1683,,,pikirayi,low,
-durban,-29.86,31.03,3,1835,,,,,draft-urban,high,
-derbent,42.06,48.29,3,-500,600,,,,draft-urban,medium,
-astrakhan,46.35,48.04,2,1250,1700,,,,draft-urban,medium,
-kazan,55.79,49.12,2,1005,1500,,,,draft-urban,medium,
-tobolsk,58.20,68.25,3,1587,1700,,,,stroganov-chronicle,high,
-yakutsk,62.03,129.73,3,1632,,,,,draft-urban,high,
-irkutsk,52.29,104.28,3,1661,,,,,draft-urban,high,
-okhotsk,59.36,143.24,3,1647,1750,,,,draft-urban,medium,
-ani,40.51,43.57,3,500,1000,1350,,,draft-urban,medium,
-yarkand,38.42,77.24,3,-100,1550,,,,draft-urban,low,
-leh,34.16,77.58,3,1000,,,,,draft-urban,low,
-kathmandu,27.70,85.32,2,400,1700,,,,draft-urban,medium,
-pagan-mandalay,21.98,96.08,2,1857,1880,,,,draft-urban,high,
-pegu,17.34,96.48,2,825,1550,,,,draft-urban,low,
-sukhothai,17.02,99.70,2,1238,1350,1438,,,draft-urban,medium,
-luang-prabang,19.89,102.13,3,700,1550,,,,draft-urban,low,
-hoi-an,15.88,108.33,3,1500,1650,,,,draft-urban,medium,
-banten,-6.04,106.15,3,1520,1650,1813,,,draft-urban,medium,
-makassar,-5.14,119.42,3,1600,1650,,,,draft-urban,medium,
-hakata,33.59,130.40,3,600,1300,,,,draft-urban,medium,
-liangzhou,37.93,102.64,3,-100,750,,,,draft-urban,medium,
-jiaohe,42.95,89.06,3,-100,600,1300,,,draft-urban,medium,
-datong,40.08,113.30,2,-200,480,,,,draft-urban,medium,
-montreal,45.50,-73.57,2,1642,,,,,draft-urban,high,
-new-orleans,29.95,-90.07,2,1718,1850,,,,draft-urban,high,
-santa-fe,35.69,-105.94,3,1610,,,,,draft-urban,high,
-acapulco,16.85,-99.88,3,1550,1700,,,,draft-urban,medium,
-cajamarca,-7.16,-78.51,3,1300,1532,,,,draft-urban,medium,
-arequipa,-16.40,-71.54,3,1540,,,,,draft-urban,high,
-montevideo,-34.90,-56.20,2,1724,,,,,draft-urban,high,
-nukualofa,-21.14,-175.20,3,1800,,,,,kirch,low,
-papeete,-17.54,-149.57,3,1820,,,,,draft-urban,medium,
-wellington,-41.29,174.78,2,1840,,,,,draft-urban,high,
-perth,-31.95,115.86,2,1829,,,,,draft-urban,high,
-adelaide,-34.93,138.60,2,1836,,,,,draft-urban,high,
+ur,30.96,46.10,2,-3800,-2100,-500,-300,1922,draft-urban,medium,"A Sumerian city by the Euphrates whose royal tombs held gold, lyres and sacrificed attendants. Its ziggurat still stands; the Bible names it as Abraham's home."
+uruk,31.32,45.64,2,-4500,-2900,300,600,1850,draft-urban,medium,"Perhaps the first true city, home of King Gilgamesh, where writing on clay tablets began around 3300 BCE."
+hattusa,40.02,34.62,2,-1650,-1300,-1180,-1000,1834,draft-urban,medium,"Capital of the Hittites in the Anatolian highlands, whose archives held the earliest known peace treaty, made with Egypt around 1259 BCE."
+sardis,38.49,28.04,2,-1200,-550,1402,,,draft-urban,medium,"Capital of Lydia, where the first coins were struck. Its last king, Croesus, was proverbially rich; Cyrus of Persia took it in 546 BCE."
+pergamon,39.13,27.18,2,-300,150,1300,,,draft-urban,medium,"A Hellenistic capital whose library rivalled Alexandria's; parchment, “pergamena”, is named after it.",rome 1431 germany 1878,
+rhodes,36.43,28.22,2,-408,-200,,,,draft-urban,medium,"An island trading republic whose Colossus, a bronze statue of the sun god, stood over the harbour until an earthquake toppled it in 226 BCE."
+byblos,34.12,35.65,3,-5000,-2000,,,,draft-urban,medium,"One of the oldest ports in the world, which shipped cedar to Egypt. The Greeks named papyrus, and so the Bible, after it."
+ugarit,35.60,35.78,3,-6000,-1300,-1185,-1000,1928,draft-urban,medium,A trading city on the Syrian coast whose scribes wrote the earliest known alphabet in cuneiform. Sea Peoples destroyed it around 1185 BCE.
+ecbatana,34.80,48.52,2,-700,-500,,,,draft-urban,medium,"Capital of the Medes, which Herodotus says had seven walls in seven colours. The Persian kings kept it as their summer capital."
+pasargadae,30.20,53.17,3,-546,-530,-300,,,draft-urban,medium,"The first capital of Cyrus the Great, founder of the Persian empire, whose plain stone tomb still stands in the open plain."
+jerash,32.28,35.89,3,-200,200,750,1200,1806,draft-urban,medium,"Gerasa, a Roman city of the Decapolis with an oval forum and colonnaded streets, ruined by an earthquake in 749 and buried in sand."
+ostia,41.75,12.29,3,-400,150,850,1100,1802,draft-urban,medium,"The port of Rome at the mouth of the Tiber, a town of warehouses and apartment blocks. When its harbour silted up it was abandoned, and its ruins survive almost whole."
+aquileia,45.77,13.37,2,-181,350,452,,,draft-urban,medium,"A Roman city at the head of the Adriatic, one of the largest in Italy, until Attila destroyed it in 452. Its refugees fled into the lagoons and began Venice."
+volubilis,34.07,-5.55,3,-250,200,1100,,,draft-urban,medium,"The farthest Roman city in Africa, rich on olive oil. Idris I, founder of Morocco's first Muslim dynasty, was proclaimed here in 788."
+timgad,35.49,6.47,3,100,250,700,800,1881,draft-urban,medium,A Roman colony for veterans laid out by Trajan on a perfect grid in Numidia. Sand preserved it until it was dug out from 1881.
+tangier,35.77,-5.80,3,-500,,,,,draft-urban,medium,"A port at the Strait of Gibraltar, birthplace of Ibn Battuta in 1304. Portuguese, then English, held it before Morocco took it back in 1684."
+algiers,36.75,3.06,2,944,1600,,,,draft-urban,medium,"A port the Ottomans made the base of the Barbary corsairs, who raided shipping and coasts across the Mediterranean. France took it in 1830."
+napata,18.53,31.82,3,-1450,-700,-300,,,draft-urban,low,"The holy city of Kush below the mountain of Jebel Barkal, from which the Kushite pharaohs conquered Egypt around 730 BCE."
+kerma,19.60,30.41,3,-2500,-1600,-1500,-1000,1913,draft-urban,low,"Capital of the first kingdom of Kush on the Nile, with a mud-brick temple, the deffufa, still standing; its kings were buried with hundreds of attendants."
+dongola,18.22,30.75,3,500,1200,1400,,,draft-urban,low,"Capital of the Christian Nubian kingdom of Makuria, which made a treaty with the Arabs in 652 that kept the peace for six centuries."
+gedi,-3.31,40.02,3,1100,1450,1650,1700,1927,draft-urban,low,"A Swahili stone town hidden in the coastal forest of Kenya, with a palace, mosques and Chinese porcelain, abandoned in the 1600s."
+lamu,-2.27,40.90,3,1370,1800,,,,draft-urban,medium,A Swahili town of coral-stone houses and narrow lanes that has kept its old way of life since the 1300s.
+zeila,11.35,43.47,3,600,1300,,,,draft-urban,low,"An ancient port on the Gulf of Aden through which the Ethiopian highlands traded with Arabia, and the seat of the sultanate of Adal."
+shibam,15.93,48.63,3,300,1600,,,,draft-urban,low,"A walled town of mud-brick tower houses up to eleven storeys high in the Hadramawt valley, called the Manhattan of the desert."
+khartoum,15.59,32.53,2,1821,1950,,,,draft-urban,high,Founded by the Egyptians in 1821 where the Blue and White Niles meet. The Mahdi's army took it and killed General Gordon in 1885.
+addis-ababa,9.03,38.74,2,1886,1950,,,,draft-urban,high,"The “new flower” founded in 1886 by Empress Taytu and Menelik II, whose army defeated Italy at Adwa in 1896."
+saint-louis,16.03,-16.50,3,1659,1850,,,,draft-urban,high,"A French trading post on an island in the mouth of the Senegal river, founded in 1659, and later the capital of French West Africa."
+freetown,8.48,-13.23,3,1792,,,,,draft-urban,high,"Founded in 1792 by Black Loyalists from Nova Scotia, formerly enslaved Americans, as a home for freed people."
+oyo,8.53,4.07,2,1300,1700,1835,,,draft-urban,low,"Capital of the Oyo empire, whose cavalry dominated the Yoruba lands in the 1700s. It was abandoned around 1835 in the wars that followed its fall."
+khami,-20.15,28.43,3,1450,1600,1683,,,pikirayi,low,"Capital of the Torwa kingdom, successor to Great Zimbabwe, built on terraced platforms with decorated stone walls."
+durban,-29.86,31.03,3,1835,,,,,draft-urban,high,"Port Natal, a bay da Gama named at Christmas 1497, where English traders settled in 1824 with the leave of the Zulu king Shaka."
+derbent,42.06,48.29,3,-500,600,,,,draft-urban,medium,"A fortress where the Caucasus mountains come down to the Caspian, its walls built by the Sasanians to bar the steppe nomads. Arabs called it the Gate of Gates."
+astrakhan,46.35,48.04,2,1250,1700,,,,draft-urban,medium,"A Tatar khanate's capital at the mouth of the Volga, taken by Ivan the Terrible in 1556 and made Russia's door to the Caspian and Persia."
+kazan,55.79,49.12,2,1005,1500,,,,draft-urban,medium,Capital of a Tatar khanate on the Volga until Ivan the Terrible stormed it in 1552 and built St Basil's in Moscow to mark the victory.
+tobolsk,58.20,68.25,3,1587,1700,,,,stroganov-chronicle,high,"The first capital of Russian Siberia, founded in 1587 after Yermak's Cossacks broke the khanate of Sibir, with the only stone kremlin in Siberia."
+yakutsk,62.03,129.73,3,1632,,,,,draft-urban,high,"A Cossack fort of 1632 on the Lena, the base from which Russians reached the Pacific and the Arctic coast. One of the coldest cities on earth."
+irkutsk,52.29,104.28,3,1661,,,,,draft-urban,high,"A fort near Lake Baikal that became the trading capital of eastern Siberia for the tea and fur trade with China, and a place of exile for the Decembrists."
+okhotsk,59.36,143.24,3,1647,1750,,,,draft-urban,medium,"Russia's first port on the Pacific, founded in 1647, from which Bering's expeditions sailed to Kamchatka."
+ani,40.51,43.57,3,500,1000,1350,,,draft-urban,medium,"Capital of medieval Armenia, the city of a thousand and one churches. Seljuks, Mongols and an earthquake in 1319 emptied it."
+yarkand,38.42,77.24,3,-100,1550,,,,draft-urban,low,"An oasis on the road over the Karakoram to India, and from 1514 to 1705 the capital of the Yarkand Khanate."
+leh,34.16,77.58,3,1000,,,,,draft-urban,low,"Capital of Ladakh under its Buddhist kings, whose nine-storey palace looks over a caravan town on the road from Kashmir to Tibet and Yarkand."
+kathmandu,27.70,85.32,2,400,1700,,,,draft-urban,medium,"The largest of three rival royal cities in the Kathmandu valley, crowded with pagoda temples by Newar craftsmen. It became the capital of the Gorkha kings in 1768."
+pagan-mandalay,21.98,96.08,2,1857,1880,,,,draft-urban,high,"The last royal capital of Burma, built by King Mindon in 1857 below Mandalay Hill. The British deposed its king in 1885."
+pegu,17.34,96.48,2,825,1550,,,,draft-urban,low,"Capital of the Mon kingdom of Hanthawaddy and then of the Toungoo kings, whose wealth amazed European travellers in the 1500s."
+sukhothai,17.02,99.70,2,1238,1350,1438,,,draft-urban,medium,"Capital of the first Thai kingdom, where King Ram Khamhaeng is credited with creating the Thai alphabet in 1283."
+luang-prabang,19.89,102.13,3,700,1550,,,,draft-urban,low,"The royal city of Lan Xang, the kingdom of a million elephants, on the Mekong, named after the Phra Bang Buddha image kept here."
+hoi-an,15.88,108.33,3,1500,1650,,,,draft-urban,medium,"A river port of central Vietnam where Chinese and Japanese merchants had their own quarters, joined by a covered Japanese bridge."
+banten,-6.04,106.15,3,1520,1650,1813,,,draft-urban,medium,"A pepper sultanate on the Sunda Strait, where the first Dutch fleet reached the Indies in 1596. The Dutch later destroyed its palace."
+makassar,-5.14,119.42,3,1600,1650,,,,draft-urban,medium,"Capital of Gowa in Sulawesi, a free port that defied the Dutch spice monopoly until 1667. Its sailors went each year to Australia for trepang."
+hakata,33.59,130.40,3,600,1300,,,,draft-urban,medium,"Japan's gateway to China and Korea, where envoys and monks embarked, and where the Mongol fleets landed in 1274 and 1281."
+liangzhou,37.93,102.64,3,-100,750,,,,draft-urban,medium,"Guzang, the chief city of the Hexi Corridor, where Kumarajiva was held for seventeen years. Under the Tang it was known for its grapes, its wine and its foreign musicians."
+jiaohe,42.95,89.06,3,-100,600,1300,,,draft-urban,medium,"A city carved down into a narrow loess island between two rivers rather than built up from it. Capital of the kingdom of Jushi and later a Tang garrison, it was abandoned during the Mongol wars of the 1300s."
+datong,40.08,113.30,2,-200,480,,,,draft-urban,medium,"Pingcheng, the first capital of the Northern Wei, whose rulers carved the giant Buddhas of the Yungang caves nearby. Later a Ming garrison town guarding the Great Wall."
+montreal,45.50,-73.57,2,1642,,,,,draft-urban,high,"Ville-Marie, a Catholic mission founded in 1642 on an island in the St Lawrence, which became the centre of the North American fur trade."
+new-orleans,29.95,-90.07,2,1718,1850,,,,draft-urban,high,"Founded by the French in 1718 near the mouth of the Mississippi, it passed to Spain and then to the United States in the Louisiana Purchase of 1803."
+santa-fe,35.69,-105.94,3,1610,,,,,draft-urban,high,"Capital of Spanish New Mexico from 1610, the end of the Camino Real from Mexico City and later of the Santa Fe Trail from Missouri."
+acapulco,16.85,-99.88,3,1550,1700,,,,draft-urban,medium,"The Pacific port of New Spain, where the Manila galleon arrived each year with Chinese silk and porcelain."
+cajamarca,-7.16,-78.51,3,1300,1532,,,,draft-urban,medium,An Inca town in the highlands where Pizarro captured the emperor Atahualpa in November 1532 and held him for a room full of gold.
+arequipa,-16.40,-71.54,3,1540,,,,,draft-urban,high,A Spanish city of white volcanic stone founded in 1540 below the volcano El Misti.
+montevideo,-34.90,-56.20,2,1724,,,,,draft-urban,high,"A fortress the Spanish built in 1724 on the Río de la Plata to hold back the Portuguese, later the capital of Uruguay."
+nukualofa,-21.14,-175.20,3,1800,,,,,kirch,low,A fortified village on Tongatapu that became the capital of the united kingdom of Tonga under George Tupou I in the 1840s.
+papeete,-17.54,-149.57,3,1820,,,,,draft-urban,medium,"A harbour on Tahiti where whalers and missionaries called, which became the capital of French Polynesia after 1842."
+wellington,-41.29,174.78,2,1840,,,,,draft-urban,high,"A harbour at the southern tip of New Zealand's North Island, made the capital in 1865 because it lay at the centre of the colony."
+perth,-31.95,115.86,2,1829,,,,,draft-urban,high,"Founded in 1829 on the Swan River as the capital of the colony of Western Australia, the most isolated large city in the world."
+adelaide,-34.93,138.60,2,1836,,,,,draft-urban,high,"Founded in 1836 as the capital of South Australia, a planned colony of free settlers rather than convicts."
 # ── Added with the new journeys ──
-san-diego,32.72,-117.16,2,1769,,,,,draft-urban,high,
-monterey,36.6,-121.89,3,1770,1800,,,,draft-urban,high,
-los-angeles,34.05,-118.24,2,1781,,,,,draft-urban,high,
-sitka,57.05,-135.33,3,1799,1840,,,,draft-urban,high,
-kodiak,57.79,-152.41,3,1792,,,,,draft-urban,high,
-petropavlovsk,53.02,158.65,3,1740,,,,,steller,high,
-hawikuh,34.96,-108.87,3,1200,1540,1672,,1917,castaneda,medium,
-acoma,34.9,-107.58,3,1150,,,,,villagra,medium,
-taos,36.44,-105.55,3,1000,,,,,draft,medium,
-pecos,35.55,-105.68,3,1300,1500,1838,,,castaneda,medium,
-el-paso,31.76,-106.49,3,1659,,,,,draft-urban,high,
-tumbes,-3.57,-80.45,3,1400,,,,,xerez,medium,
-trujillo,-8.11,-79.03,3,1534,,,,,draft-urban,high,
-la-paz,-16.5,-68.15,2,1548,,,,,draft-urban,high,
-concepcion-chile,-36.83,-73.05,3,1550,,,,,draft-urban,high,
-asuncion,-25.26,-57.58,2,1537,,,,,draft-urban,high,
-belem,-1.45,-48.5,2,1616,,,,,acuna,high,
-manaus,-3.12,-60.02,2,1669,1900,,,,draft-urban,high,
-santarem,-2.44,-54.71,3,1661,,,,,draft-urban,high,
-iquitos,-3.75,-73.25,3,1757,1900,,,,draft-urban,high,
-san-juan,18.47,-66.11,2,1521,,,,,draft-urban,high,
-la-isabela,19.89,-71.08,3,1494,1494,1498,,1891,colon-hernando,high,
-port-royal,17.94,-76.84,3,1655,1690,,,,draft-urban,high,
-nombre-de-dios,9.58,-79.47,3,1510,1570,1597,,,draft-urban,medium,
-portobelo,9.55,-79.65,3,1597,1700,,,,draft-urban,high,
-st-johns,47.56,-52.71,3,1583,,,,,draft-urban,medium,
-york-factory,57.0,-92.3,3,1684,1800,1957,,,draft-urban,high,
-albany-ny,42.65,-73.75,3,1614,,,,,draft-urban,high,
-arkhangelsk,64.54,40.54,2,1584,1700,,,,draft-urban,high,
-kola,68.88,33.02,3,1565,,,,,de-veer,medium,
-ryazan,54.63,39.74,3,1095,1200,,,,draft-urban,medium,
-vladimir,56.13,40.4,2,1108,1200,,,,draft-urban,medium,
-legnica,51.21,16.16,3,1000,,,,,draft-urban,medium,
-esztergom,47.79,18.74,3,970,1200,,,,draft-urban,medium,
-alamut,36.44,50.59,3,865,1150,1256,,,juvaini,medium,
-maragha,37.39,46.24,3,700,1260,,,,rashid-al-din,medium,
-otrar,42.85,68.3,3,100,1200,1700,,,juvaini,low,
-taraz,42.9,71.37,3,500,,,,,jiu-tangshu,low,
-gilgit,35.92,74.31,3,600,,,,,jiu-tangshu,low,
-ghulja,43.92,81.32,3,1700,1760,,,,qing-shilu,medium,
-marib,15.42,45.33,3,-1000,-500,575,,,strabo,medium,
-charax,30.5,47.8,3,-324,100,300,,,cassius-dio,low,
-alesia,47.54,4.5,3,-300,-52,400,,1861,caesar-bg,medium,
-inchtuthil,56.54,-3.42,3,83,,87,,,tacitus,low,
-hegra,26.79,37.95,3,-100,50,300,,1876,strabo,medium,
-kediri,-7.82,112.0,3,1042,1150,,,,yuanshi,low,
-tuban,-6.9,112.05,3,1050,1400,,,,yuanshi,low,
+san-diego,32.72,-117.16,2,1769,,,,,draft-urban,high,"The first Spanish mission in California, founded by Junípero Serra in 1769."
+monterey,36.6,-121.89,3,1770,1800,,,,draft-urban,high,"The capital of Spanish and Mexican California, founded in 1770 on the bay Vizcaíno had described in 1602."
+los-angeles,34.05,-118.24,2,1781,,,,,draft-urban,high,"A farming pueblo founded by Spanish settlers in 1781, many of them of African and Indigenous descent, which grew with oil, oranges and films."
+sitka,57.05,-135.33,3,1799,1840,,,,draft-urban,high,"Novo-Arkhangelsk, capital of Russian America, a fur-trading town retaken from the Tlingit in 1804 and sold with Alaska to the United States in 1867."
+kodiak,57.79,-152.41,3,1792,,,,,draft-urban,high,On the island where Russians made their first settlement in Alaska in 1784. The fur traders forced Alutiiq hunters to hunt sea otters for them.
+petropavlovsk,53.02,158.65,3,1740,,,,,steller,high,"Founded by Bering in 1740 on a harbour of Kamchatka, from which he sailed to Alaska the next year. Cook's ships called here in 1779."
+hawikuh,34.96,-108.87,3,1200,1540,1672,,1917,castaneda,medium,"A Zuni town, one of the Seven Cities of Cíbola that Coronado came north to find in 1540, expecting gold."
+acoma,34.9,-107.58,3,1150,,,,,villagra,medium,"Sky City, a pueblo on a sheer mesa, among the oldest continuously inhabited towns in North America. Oñate's soldiers stormed it in 1599."
+taos,36.44,-105.55,3,1000,,,,,draft,medium,"A multi-storey adobe pueblo below the Sangre de Cristo mountains, lived in for a thousand years, and a centre of the Pueblo Revolt of 1680."
+pecos,35.55,-105.68,3,1300,1500,1838,,,castaneda,medium,"Cicuye, a great pueblo trading between the Pueblo world and the Plains peoples. Its last people moved to Jemez in 1838."
+el-paso,31.76,-106.49,3,1659,,,,,draft-urban,high,"The pass of the north, where the Camino Real crossed the Rio Grande; refugees from the Pueblo Revolt settled here in 1680."
+tumbes,-3.57,-80.45,3,1400,,,,,xerez,medium,"The northernmost Inca port on the coast, where Pizarro first saw the riches of Peru in 1528."
+trujillo,-8.11,-79.03,3,1534,,,,,draft-urban,high,"Founded by the Spanish in 1534 beside the ruins of Chan Chan, the Chimú capital."
+la-paz,-16.5,-68.15,2,1548,,,,,draft-urban,high,"Founded by the Spanish in 1548 in a canyon below the Altiplano, on the road from Potosí to Lima, the highest seat of government in the world."
+concepcion-chile,-36.83,-73.05,3,1550,,,,,draft-urban,high,"A Spanish town of 1550 on the frontier of the Mapuche lands, wrecked by an earthquake in 1835 that Darwin witnessed."
+asuncion,-25.26,-57.58,2,1537,,,,,draft-urban,high,"Founded in 1537 on the Paraguay river, one of the oldest cities in South America, from which the Spanish settled the Río de la Plata."
+belem,-1.45,-48.5,2,1616,,,,,acuna,high,"A Portuguese fort of 1616 at the mouth of the Amazon, the gateway for expeditions up the river."
+manaus,-3.12,-60.02,2,1669,1900,,,,draft-urban,high,A river town deep in the Amazon that the rubber boom of the 1890s made rich enough to build an opera house in the rainforest.
+santarem,-2.44,-54.71,3,1661,,,,,draft-urban,high,"A Jesuit mission of 1661 where the Tapajós meets the Amazon, beside a once-populous Indigenous chiefdom that Orellana's men passed in 1542."
+iquitos,-3.75,-73.25,3,1757,1900,,,,draft-urban,high,"A Jesuit mission town on the upper Amazon that the rubber boom made rich around 1900, reachable only by river or air."
+san-juan,18.47,-66.11,2,1521,,,,,draft-urban,high,"A walled Spanish port on Puerto Rico, guarding the entrance to the Caribbean with the great fortress of El Morro."
+la-isabela,19.89,-71.08,3,1494,1494,1498,,1891,colon-hernando,high,"The first European town in the Americas, founded by Columbus in 1494 on Hispaniola and abandoned within four years."
+port-royal,17.94,-76.84,3,1655,1690,,,,draft-urban,high,"An English port on Jamaica that was the haven of buccaneers, called the wickedest city on earth, until an earthquake sank much of it in 1692."
+nombre-de-dios,9.58,-79.47,3,1510,1570,1597,,,draft-urban,medium,"The Caribbean end of the mule road across Panama, where Peru's silver was loaded for Spain. Drake raided it in 1572, and it was abandoned for Portobelo."
+portobelo,9.55,-79.65,3,1597,1700,,,,draft-urban,high,"The fortified bay that replaced Nombre de Dios, whose treasure fairs were among the greatest markets of the Spanish empire."
+st-johns,47.56,-52.71,3,1583,,,,,draft-urban,medium,"A harbour on Newfoundland used by fishing fleets from all over Europe, where Humphrey Gilbert claimed the island for England in 1583."
+york-factory,57.0,-92.3,3,1684,1800,1957,,,draft-urban,high,"The Hudson's Bay Company's chief depot on Hudson Bay, where Cree and other traders brought furs from across the north."
+albany-ny,42.65,-73.75,3,1614,,,,,draft-urban,high,"Fort Orange, a Dutch fur-trading post on the Hudson at the edge of Mohawk country, later the capital of New York State."
+arkhangelsk,64.54,40.54,2,1584,1700,,,,draft-urban,high,"Russia's only seaport for over a century, on the White Sea, founded after English ships found the way there in 1553."
+kola,68.88,33.02,3,1565,,,,,de-veer,medium,"A Russian outpost on the Kola Peninsula, where Barentsz's crew reached safety in open boats in 1597 after wintering on Novaya Zemlya."
+ryazan,54.63,39.74,3,1095,1200,,,,draft-urban,medium,"The first Russian city to fall to Batu's Mongols, sacked in December 1237."
+vladimir,56.13,40.4,2,1108,1200,,,,draft-urban,medium,"Capital of the grand princes of north-eastern Rus in the 1100s, with white stone cathedrals. The Mongols burned it in 1238."
+legnica,51.21,16.16,3,1000,,,,,draft-urban,medium,Where a Mongol army destroyed the knights of Poland and Silesia in April 1241.
+esztergom,47.79,18.74,3,970,1200,,,,draft-urban,medium,"The first capital of Hungary, where Stephen I was crowned its first Christian king in 1000. The Mongols sacked it in 1242."
+alamut,36.44,50.59,3,865,1150,1256,,,juvaini,medium,"The mountain castle of the Nizari Ismailis, whom their enemies called the Assassins. Hülegü's Mongols took it in 1256 and burned its library."
+maragha,37.39,46.24,3,700,1260,,,,rashid-al-din,medium,"The first capital of Hülegü's Ilkhanate, where Nasir al-Din al-Tusi built a great observatory in 1259 with Chinese and Persian astronomers."
+otrar,42.85,68.3,3,100,1200,1700,,,juvaini,low,"An oasis city on the Syr Darya whose governor killed Genghis Khan's merchants in 1218, bringing the Mongols down on Central Asia. Timur died here in 1405."
+taraz,42.9,71.37,3,500,,,,,jiu-tangshu,low,"Talas, near where the Abbasid army defeated the Tang in 751 and Chinese prisoners are said to have taught papermaking to the Islamic world."
+gilgit,35.92,74.31,3,600,,,,,jiu-tangshu,low,A valley kingdom in the Karakoram where Buddhist manuscripts were found in 1931. Gao Xianzhi led a Tang army over the passes to take it in 747.
+ghulja,43.92,81.32,3,1700,1760,,,,qing-shilu,medium,"The chief town of the Ili valley, taken by the Qing from the Dzungars in the 1750s. Russia occupied it from 1871 to 1881."
+marib,15.42,45.33,3,-1000,-500,575,,,strabo,medium,"Capital of Saba, the biblical Sheba, rich on frankincense, with a great dam whose final collapse around 575 the Quran remembers."
+charax,30.5,47.8,3,-324,100,300,,,cassius-dio,low,"A port at the head of the Persian Gulf founded by Alexander. It is often taken to be Tiaozhi, the furthest point Gan Ying reached on his mission towards Rome in 97."
+alesia,47.54,4.5,3,-300,-52,400,,1861,caesar-bg,medium,"The hill fort where Caesar besieged Vercingetorix in 52 BCE, ending the Gallic war. Napoleon III had it dug up in the 1860s."
+inchtuthil,56.54,-3.42,3,83,,87,,,tacitus,low,"A Roman legionary fortress in Scotland, built under Agricola and abandoned unfinished a few years later. The departing soldiers buried nearly a million iron nails rather than leave them behind."
+hegra,26.79,37.95,3,-100,50,300,,1876,strabo,medium,"The southern city of the Nabataeans, with over a hundred tombs carved into sandstone outcrops, like Petra's."
+kediri,-7.82,112.0,3,1042,1150,,,,yuanshi,low,Capital of a Javanese kingdom whose court poets wrote the Old Javanese epics. Kublai's invasion fleet overthrew its last king in 1293.
+tuban,-6.9,112.05,3,1050,1400,,,,yuanshi,low,"A port on the north coast of Java, where Chinese ships traded and Kublai's army landed in 1292."
 # ── Before 500 BCE: Bronze and Iron Age cities ──
-erlitou,34.7,112.69,3,-1900,-1700,-1500,-1000,1959,draft-urban,medium,
-zhengzhou-shang,34.76,113.68,3,-1600,-1450,-1300,-1000,1950,draft-urban,medium,
-haojing,34.23,108.77,2,-1046,-800,-771,,,draft-urban,medium,,,1955
-sanxingdui,30.99,104.2,3,-1700,-1200,-1000,-800,1929,draft-urban,medium,
-mari,34.55,40.89,2,-2900,-1800,-1759,-500,1933,draft-urban,medium,
-assur,35.46,43.26,2,-2600,-800,-614,,,draft-urban,medium,,britain 1847,,layard
-dilmun,26.23,50.52,3,-2300,-2000,,,,draft-urban,medium,
-akhetaten,27.65,30.9,2,-1346,-1340,-1332,-1300,1887,draft-urban,medium,
-pi-ramesses,30.8,31.83,3,-1280,-1200,-1070,-1000,1966,draft-urban,medium,
-lothal,22.52,72.25,3,-2400,-2000,-1900,-1500,1954,draft-urban,medium,
-dholavira,23.89,70.21,3,-3000,-2200,-1500,-1000,1968,draft-urban,medium,
-pylos,37.03,21.69,3,-1600,-1300,-1180,-1100,1939,draft-urban,medium,
-sidon,33.56,35.37,2,-3000,-900,,,,draft-urban,medium,
-rajagriha,25.03,85.42,2,-800,-500,,,,draft-urban,medium,
-la-venta,18.1,-94.04,2,-1200,-600,-400,-300,1925,draft-urban,medium,
-san-lorenzo,17.75,-94.76,3,-1500,-1150,-900,-800,1945,draft-urban,medium,
-poverty-point,32.64,-91.41,3,-1700,-1400,-1100,-1000,1953,draft-urban,medium,
-dhar-tichitt,18.45,-9.52,3,-1800,-1300,-500,-300,1965,draft-urban,medium,
+erlitou,34.7,112.69,3,-1900,-1700,-1500,-1000,1959,draft-urban,medium,"A planned palace city of the early Bronze Age, often identified with the Xia, the first dynasty of traditional history. Its workshops cast the earliest known Chinese bronze ritual vessels. Xu Xusheng found it in 1959 while searching for the Xia."
+zhengzhou-shang,34.76,113.68,3,-1600,-1450,-1300,-1000,1950,draft-urban,medium,"An early Shang walled city, its rammed-earth wall nearly seven kilometres around. It was found in 1950 beneath modern Zhengzhou."
+haojing,34.23,108.77,2,-1046,-800,-771,,,draft-urban,medium,"Capital of the Western Zhou on the Feng river. When the Quanrong sacked it in 771 BCE, the Zhou court fled east to Luoyang.",,1955
+sanxingdui,30.99,104.2,3,-1700,-1200,-1000,-800,1929,draft-urban,medium,"The centre of a Bronze Age culture in Sichuan that no written record mentions. Pits found in 1986 held bronze masks with protruding eyes, a bronze tree and gold, unlike anything made by the Shang."
+mari,34.55,40.89,2,-2900,-1800,-1759,-500,1933,draft-urban,medium,A city on the middle Euphrates whose palace archive held some twenty thousand tablets. Hammurabi of Babylon destroyed it around 1759 BCE.
+assur,35.46,43.26,2,-2600,-800,-614,,,draft-urban,medium,"The first capital and holy city of Assyria, named after its god Ashur, on the Tigris.",britain 1847,,layard
+dilmun,26.23,50.52,3,-2300,-2000,,,,draft-urban,medium,"The island trading land of Sumerian texts, a paradise of fresh springs on Bahrain that linked Mesopotamia with the Indus."
+akhetaten,27.65,30.9,2,-1346,-1340,-1332,-1300,1887,draft-urban,medium,The city Pharaoh Akhenaten built in the desert for the sun disc Aten and abandoned soon after his death. Its letters from foreign kings were found in 1887.
+pi-ramesses,30.8,31.83,3,-1280,-1200,-1070,-1000,1966,draft-urban,medium,"The delta capital of Ramesses II, perhaps the Raamses of Exodus, abandoned when the Nile branch beside it silted up."
+lothal,22.52,72.25,3,-2400,-2000,-1900,-1500,1954,draft-urban,medium,"An Indus port in Gujarat with what may be the world's oldest dock, from which ships traded beads with the Gulf."
+dholavira,23.89,70.21,3,-3000,-2200,-1500,-1000,1968,draft-urban,medium,"An Indus city on an island in the salt marsh of Kutch, with stone reservoirs and a signboard of ten large Indus signs."
+pylos,37.03,21.69,3,-1600,-1300,-1180,-1100,1939,draft-urban,medium,"The palace of King Nestor in Homer, burned around 1180 BCE. The fire baked its clay tablets in Linear B, the earliest written Greek."
+sidon,33.56,35.37,2,-3000,-900,,,,draft-urban,medium,"A Phoenician port famous for its glass and purple dye, the mother city of Tyre in some traditions."
+rajagriha,25.03,85.42,2,-800,-500,,,,draft-urban,medium,"Capital of Magadha, ringed by hills and stone walls, where the Buddha often stayed and the first Buddhist council met after his death."
+la-venta,18.1,-94.04,2,-1200,-600,-400,-300,1925,draft-urban,medium,"A great Olmec centre on an island in the swamps of Tabasco, with a clay pyramid and colossal stone heads."
+san-lorenzo,17.75,-94.76,3,-1500,-1150,-900,-800,1945,draft-urban,medium,"The first great Olmec centre, on a plateau in the Veracruz lowlands, where colossal stone heads of rulers were carved and later buried."
+poverty-point,32.64,-91.41,3,-1700,-1400,-1100,-1000,1953,draft-urban,medium,"Huge concentric earthen ridges built by hunter-gatherers in Louisiana around 1600 BCE, one of the largest earthworks in North America."
+dhar-tichitt,18.45,-9.52,3,-1800,-1300,-500,-300,1965,draft-urban,medium,"Stone villages along a sandstone cliff in Mauritania, among the oldest towns in West Africa, built by millet farmers and herders."
 
 # ═══ More cities (2026-10-27) ═══
-belgrade,44.82,20.46,2,-279,,,,,draft-urban,medium,
+belgrade,44.82,20.46,2,-279,,,,,draft-urban,medium,"A fortress where the Sava meets the Danube, fought over by Rome, Byzantium, Hungary and the Ottomans for two thousand years."
 edirne,41.68,26.56,2,125,1450,,,,draft-urban,high,"Hadrian's city in Thrace. The Ottomans took it in 1361 and made it their capital until Constantinople fell, the base from which they crossed into the Balkans."
-bursa,40.19,29.06,3,-200,1350,,,,draft-urban,medium,
+bursa,40.19,29.06,3,-200,1350,,,,draft-urban,medium,"The first capital of the Ottomans, taken in 1326, a silk city at the foot of Mount Olympus where the early sultans are buried."
 konya,37.87,32.48,2,-1000,1220,,,,draft-urban,medium,"Iconium of Paul's journeys; from 1097 the capital of the Seljuk sultans of Rum, and the city where Rumi taught and is buried."
-nicosia,35.17,33.36,3,-700,1400,,,,draft-urban,medium,
-salamis,35.18,33.9,3,-1100,-400,648,,,draft-urban,medium,
-riga,56.95,24.11,2,1201,1600,,,,draft-urban,high,
-vilnius,54.69,25.28,2,1323,1600,,,,draft-urban,high,
-uppsala,59.9,17.63,3,500,1000,,,,draft-urban,medium,
+nicosia,35.17,33.36,3,-700,1400,,,,draft-urban,medium,"The inland capital of Cyprus, seat of the crusader Lusignan kings, which the Venetians ringed with star-shaped walls before the Ottomans took it in 1570."
+salamis,35.18,33.9,3,-1100,-400,648,,,draft-urban,medium,"The chief city of ancient Cyprus, a Greek kingdom and later a Roman and Byzantine capital. Arab raids and earthquakes ended it in the 600s."
+riga,56.95,24.11,2,1201,1600,,,,draft-urban,high,"Founded in 1201 by a German bishop on the Daugava, and a Hanseatic town trading Russian furs and wax."
+vilnius,54.69,25.28,2,1323,1600,,,,draft-urban,high,"Capital of the Grand Duchy of Lithuania, the last pagan state in Europe, whose duke Gediminas invited merchants of every faith here in 1323."
+uppsala,59.9,17.63,3,500,1000,,,,draft-urban,medium,"The pagan centre of the Swedes, with royal burial mounds and, Adam of Bremen wrote in the 1070s, a temple of gold. Later the seat of Sweden's archbishop and oldest university."
 visby,57.64,18.29,3,900,1300,,,,draft-urban,high,"A Baltic island town grown rich in the Hanseatic trade, still ringed by its thirteenth-century walls and the ruins of its churches."
-stockholm,59.33,18.07,2,1252,1700,,,,draft-urban,high,
-trondheim,63.43,10.39,3,997,1200,,,,draft-urban,high,
+stockholm,59.33,18.07,2,1252,1700,,,,draft-urban,high,"A fortified island town on the channel between Lake Mälaren and the Baltic, the capital of Sweden's Baltic empire in the 1600s."
+trondheim,63.43,10.39,3,997,1200,,,,draft-urban,high,"Nidaros, founded by Olaf Tryggvason in 997. King Olaf the Saint was buried here, and his shrine made it the great pilgrimage site of the north."
 palermo,38.12,13.36,1,-734,1150,,,,draft-urban,high,"Phoenician, Greek, Roman, Arab and Norman in turn; under the Kalbid emirs and the Norman kings it was among the largest cities in Europe, where al-Idrisi drew his map of the world."
-pisa,43.72,10.4,3,-600,1150,,,,draft-urban,medium,
+pisa,43.72,10.4,3,-600,1150,,,,draft-urban,medium,"A maritime republic that grew rich in the 1100s and built its cathedral square with the leaning tower, until Genoa crushed its fleet in 1284."
 aachen,50.78,6.08,2,795,800,,,,draft-urban,high,"Charlemagne's capital, where he built his palace chapel and was buried; German kings were crowned there for six centuries."
 avignon,43.95,4.81,3,-500,1350,,,,draft-urban,high,"Seat of the popes from 1309 to 1377, when the papacy left Rome for the Rhône."
 ebla,35.8,36.8,3,-3000,-2400,-1600,-1600,1964,draft-urban,high,"A Syrian kingdom whose palace archive of some seventeen thousand clay tablets, found in 1974, revealed a forgotten language and a great power of the third millennium BCE."
 kumasi,6.69,-1.62,2,1680,1820,,,,draft-urban,high,"Capital of the Asante, whose kings sat on the Golden Stool; British envoys in 1817 described a city of broad streets and painted houses."
-mozambique-island,-15.03,40.73,3,900,1600,,,,draft-urban,medium,
-antananarivo,-18.91,47.52,2,1610,1850,,,,draft-urban,high,
+mozambique-island,-15.03,40.73,3,900,1600,,,,draft-urban,medium,"A small coral island that was the capital of Portuguese East Africa, a port of call on the voyage to India."
+antananarivo,-18.91,47.52,2,1610,1850,,,,draft-urban,high,"A hilltop town in the Madagascar highlands that became the capital of the Merina kings, who united most of the island in the 1800s."
 kampala,0.3,32.57,2,1750,1880,,,,draft-urban,medium,"The hills of the kings of Buganda, whose capitals moved from hill to hill; Speke reached Mutesa's court here in 1862."
 sennar,13.55,33.63,3,1504,1650,1821,,,draft-urban,high,"Capital of the Funj sultanate on the Blue Nile, which ruled the middle Nile for three centuries until the Egyptian conquest of 1821."
-goree,14.67,-17.4,3,1444,1780,,,,draft-urban,high,
+goree,14.67,-17.4,3,1444,1780,,,,draft-urban,high,"A small island off Dakar, passed between Portuguese, Dutch, English and French as a trading post and slave depot."
 cidade-velha,14.92,-23.6,3,1462,1550,1770,,,draft-urban,high,"The first European town in the tropics, on Santiago in the Cape Verde islands, and an early hub of the Atlantic slave trade."
-las-palmas,28.1,-15.41,3,1478,1900,,,,draft-urban,high,
-angra,38.65,-27.22,3,1534,1600,,,,draft-urban,high,
-katsina,12.99,7.6,2,1100,1600,,,,draft-urban,medium,
+las-palmas,28.1,-15.41,3,1478,1900,,,,draft-urban,high,Founded by Castile in 1478 during the conquest of Gran Canaria. Columbus stopped here in 1492 to repair the Pinta.
+angra,38.65,-27.22,3,1534,1600,,,,draft-urban,high,The port on Terceira in the Azores where Portuguese and Spanish fleets returning from the Indies and the Americas called.
+katsina,12.99,7.6,2,1100,1600,,,,draft-urban,medium,"A walled Hausa city and centre of Islamic learning, a rival of Kano for the caravan trade across the Sahara."
 kandy,7.29,80.63,2,1470,1700,,,,draft-urban,high,"Capital of the last Sinhalese kingdom, which held the hills against the Portuguese and Dutch and kept the Tooth Relic of the Buddha until 1815."
-banda-aceh,5.55,95.32,2,1496,1630,,,,draft-urban,high,
-brunei,4.89,114.94,2,1400,1550,,,,draft-urban,medium,
-banjarmasin,-3.32,114.59,3,1526,1700,,,,draft-urban,medium,
-yogyakarta,-7.8,110.36,2,1755,1800,,,,draft-urban,high,
+banda-aceh,5.55,95.32,2,1496,1630,,,,draft-urban,high,"Capital of the sultanate of Aceh at the tip of Sumatra, which fought the Portuguese and sent pepper and pilgrims to the Red Sea."
+brunei,4.89,114.94,2,1400,1550,,,,draft-urban,medium,"A sultanate on Borneo, built on stilts over the water, which ruled much of the island's coast in the 1500s."
+banjarmasin,-3.32,114.59,3,1526,1700,,,,draft-urban,medium,"A river sultanate in southern Borneo built on stilts and boats, rich on pepper sold to Chinese and Dutch traders."
+yogyakarta,-7.8,110.36,2,1755,1800,,,,draft-urban,high,"Founded in 1755 when the kingdom of Mataram was split in two, it remains a sultanate and the heart of Javanese court culture."
 thanjavur,10.79,79.14,2,850,1010,,,,draft-urban,high,"Capital of the Chola kings, whose great temple of 1010 crowned the empire that sent fleets to Srivijaya."
-colombo,6.93,79.85,2,1000,1900,,,,draft-urban,high,
-surat,21.17,72.83,2,1500,1650,,,,draft-urban,high,
-ouro-preto,-20.39,-43.5,3,1698,1750,,,,draft-urban,high,
+colombo,6.93,79.85,2,1000,1900,,,,draft-urban,high,"A harbour on the west coast of Sri Lanka, held in turn by the Portuguese, the Dutch and the British for its cinnamon trade."
+surat,21.17,72.83,2,1500,1650,,,,draft-urban,high,"The chief port of Mughal India, where pilgrims sailed for Mecca and the English and Dutch set up their first trading houses in India."
+ouro-preto,-20.39,-43.5,3,1698,1750,,,,draft-urban,high,"Vila Rica, a mining town of the Brazilian gold rush of the 1700s, with baroque churches by the sculptor Aleijadinho."
 brasilia,-15.79,-47.88,2,1960,,,,,draft-urban,high,"A capital drawn on an empty plateau and built in four years, to turn Brazil inward from its coast."
-punta-arenas,-53.16,-70.91,3,1848,1900,,,,draft-urban,high,
-denver,39.74,-104.99,3,1858,,,,,draft-urban,high,
-salt-lake-city,40.76,-111.89,3,1847,,,,,draft-urban,high,
-apia,-13.83,-171.76,3,1850,,,,,draft-urban,medium,
-levuka,-17.68,178.84,3,1820,1874,,,,draft-urban,medium,
-port-moresby,-9.44,147.18,3,1873,,,,,draft-urban,medium,
+punta-arenas,-53.16,-70.91,3,1848,1900,,,,draft-urban,high,"A Chilean colony founded in 1848 on the Strait of Magellan, a coaling port for steamships until the Panama Canal opened."
+denver,39.74,-104.99,3,1858,,,,,draft-urban,high,A mining camp of the Colorado gold rush of 1858 that became the supply city of the Rocky Mountains.
+salt-lake-city,40.76,-111.89,3,1847,,,,,draft-urban,high,"Founded in 1847 by Mormon pioneers under Brigham Young, who irrigated the desert beside the Great Salt Lake."
+apia,-13.83,-171.76,3,1850,,,,,draft-urban,medium,"A harbour on Upolu where Germany, Britain and the United States contested Samoa; a hurricane wrecked their warships here in 1889. Robert Louis Stevenson lived nearby."
+levuka,-17.68,178.84,3,1820,1874,,,,draft-urban,medium,"A whaling and trading town on Ovalau, where Fiji's chiefs ceded the islands to Britain in 1874; it was the first colonial capital."
+port-moresby,-9.44,147.18,3,1873,,,,,draft-urban,medium,A harbour by Motu villages that Captain John Moresby named after his father in 1873. It became the capital of British New Guinea and later of Papua New Guinea.
 qufu,35.6,116.99,3,-1100,-500,,,,draft-urban,high,"Capital of the state of Lu and home of Confucius, whose descendants lived beside his temple for more than two thousand years."
 linzi,36.86,118.35,2,-859,-300,,,,draft-urban,high,"Capital of Qi, perhaps the largest city of the Warring States, home of the Jixia Academy where the philosophers of the age debated."
-handan,36.6,114.48,3,-386,-260,,,,draft-urban,high,
-jiangling,30.35,112.19,2,-689,-300,,,,draft-urban,high,
-taiyuan,37.87,112.55,2,-497,,,,,draft-urban,high,
-changsha,28.2,112.97,2,-202,,,,,draft-urban,high,
-wuchang,30.55,114.3,2,223,,,,,draft-urban,high,
-ningbo,29.87,121.55,2,738,1200,,,,draft-urban,high,
-fuzhou,26.07,119.3,2,-202,,,,,draft-urban,high,
+handan,36.6,114.48,3,-386,-260,,,,draft-urban,high,"Capital of the state of Zhao, whose King Wuling put his army in nomad trousers and taught it to fight from horseback. It fell to Qin in 228 BCE."
+jiangling,30.35,112.19,2,-689,-300,,,,draft-urban,high,"Ying, capital of the great southern state of Chu; later Jingzhou, the Yangzi fortress fought over in the Three Kingdoms."
+taiyuan,37.87,112.55,2,-497,,,,,draft-urban,high,"Jinyang, the northern base from which the Tang founder Li Yuan rose in 617. The Song razed it in 979 and built a new city nearby."
+changsha,28.2,112.97,2,-202,,,,,draft-urban,high,"Capital of the Han kingdom of Changsha. The Mawangdui tombs nearby held a noblewoman's preserved body, silk maps and lost books. Mao Zedong went to school here."
+wuchang,30.55,114.3,2,223,,,,,draft-urban,high,"Where the Han river meets the Yangzi, facing Hankou and Hanyang across the water. The revolution that ended two thousand years of empire began with an uprising here on 10 October 1911."
+ningbo,29.87,121.55,2,738,1200,,,,draft-urban,high,"A port for ships to Japan and Korea from the Tang onward, through which Japanese monks and embassies came. One of the five treaty ports opened in 1842."
+fuzhou,26.07,119.3,2,-202,,,,,draft-urban,high,"The capital of Fujian, on the Min river. Zheng He's fleets waited near here for the winter monsoon, and in 1866 the Qing built China's first modern navy yard at Mawei, downriver."
 jingdezhen,29.29,117.21,3,1004,1700,,,,draft-urban,high,"The porcelain capital, named for the Jingde reign; its blue-and-white was shipped to the Ottoman court, Persia, Africa and Europe."
-guilin,25.27,110.29,3,-214,,,,,draft-urban,high,
+guilin,25.27,110.29,3,-214,,,,,draft-urban,high,"A garrison town founded under the Qin, near the Lingqu canal that joined the Yangzi and Pearl river systems. The karst peaks along its Li river are a favourite subject of Chinese painting and poetry."
 dali,25.6,100.2,2,738,1000,,,,draft-urban,high,"Capital of Nanzhao and then the kingdom of Dali, which ruled Yunnan for five centuries until the Mongols took it in 1253."
-kunming,25.04,102.7,2,765,,,,,draft-urban,high,
-xining,36.62,101.78,3,-121,,,,,draft-urban,medium,
+kunming,25.04,102.7,2,765,,,,,draft-urban,high,Founded by the Nanzhao kingdom beside Lake Dian; Zheng He's family came from nearby Kunyang. In the war with Japan it was the end of the Burma Road and the home of the exiled universities.
+xining,36.62,101.78,3,-121,,,,,draft-urban,medium,"A frontier town at the edge of the Tibetan plateau, where tea was traded for horses. The great monastery of Kumbum, at the birthplace of Tsongkhapa, stands nearby."
 yinchuan,38.47,106.27,2,1020,1100,,,,draft-urban,high,"Xingqing, capital of the Tangut Western Xia, sacked by the Mongols in 1227 as Genghis Khan lay dying."
-shigatse,29.27,88.88,3,1447,,,,,draft-urban,high,
-tianjin,39.13,117.2,2,1404,1900,,,,draft-urban,high,
-shenyang,41.8,123.43,2,1625,1640,,,,draft-urban,high,
-harbin,45.8,126.53,3,1898,,,,,draft-urban,high,
-tainan,22.99,120.2,3,1624,1680,,,,draft-urban,high,
-buyeo,36.28,126.91,3,538,600,660,,,draft-urban,high,
-busan,35.1,129.04,2,1407,,,,,draft-urban,high,
-hiraizumi,38.99,141.11,3,1100,1180,1189,,,draft-urban,high,
-hiroshima,34.39,132.46,3,1589,,,,,draft-urban,high,
-sapporo,43.06,141.35,3,1869,,,,,draft-urban,high,
+shigatse,29.27,88.88,3,1447,,,,,draft-urban,high,"Seat of the Panchen Lamas at Tashilhunpo monastery, founded in 1447, and of the Tsang kings who ruled Tibet before 1642."
+tianjin,39.13,117.2,2,1404,1900,,,,draft-urban,high,"A Ming garrison guarding the sea approach to Beijing at the northern end of the Grand Canal. After 1860 it was a treaty port, at one time divided among nine foreign concessions."
+shenyang,41.8,123.43,2,1625,1640,,,,draft-urban,high,"Mukden, the capital Nurhaci and Hong Taiji built for the Manchu state before they took Beijing in 1644; their palace still stands. The Mukden Incident here in 1931 began Japan's occupation of Manchuria."
+harbin,45.8,126.53,3,1898,,,,,draft-urban,high,"Built by Russia from 1898 as the junction of the Chinese Eastern Railway, a city of onion domes on the Songhua river. Tens of thousands of Russians fled here after 1917."
+tainan,22.99,120.2,3,1624,1680,,,,draft-urban,high,"The first Chinese city on Taiwan, beside the Dutch post of Fort Zeelandia. Koxinga drove out the Dutch in 1662, and it was the island's capital until 1887."
+buyeo,36.28,126.91,3,538,600,660,,,draft-urban,high,"Sabi, the last capital of Baekje, which sent monks, scribes and craftsmen to Japan. Silla and Tang armies took it in 660."
+busan,35.1,129.04,2,1407,,,,,draft-urban,high,"Korea's port facing Japan, where a Japanese trading post stood under the Joseon kings and Hideyoshi's armies landed in 1592."
+hiraizumi,38.99,141.11,3,1100,1180,1189,,,draft-urban,high,"The capital of the Northern Fujiwara, rich on gold from the north of Japan, with the gold-covered hall of Chūson-ji. Minamoto Yoritomo destroyed them in 1189."
+hiroshima,34.39,132.46,3,1589,,,,,draft-urban,high,"A castle town founded in 1589 on the delta of the Ōta river, destroyed by the first atomic bomb used in war on 6 August 1945."
+sapporo,43.06,141.35,3,1869,,,,,draft-urban,high,"Laid out on a grid in 1869 as the capital of Hokkaido, when Japan began to settle the land of the Ainu."
 shuri,26.22,127.72,3,1429,1600,,,,draft-urban,high,"Capital of the Ryukyu kingdom, a trading state between China, Japan, Korea and Southeast Asia until Japan annexed it in 1879."
-urga,47.92,106.92,2,1639,,,,,draft-urban,high,
+urga,47.92,106.92,2,1639,,,,,draft-urban,high,"A wandering monastery-camp of the Mongol lamas that settled on the Tuul river in the 1700s. It became Ulaanbaatar, “red hero”, in 1924."
 khara-khoto,41.76,101.07,3,1032,1226,1372,1400,1908,draft-urban,high,"A Tangut garrison city on the Etsin river, abandoned after the Ming cut its water in 1372; Kozlov dug thousands of Tangut books from its sand in 1908."
-vijaya,13.9,109.1,3,1000,1300,1471,,,draft-urban,medium,
+vijaya,13.9,109.1,3,1000,1300,1471,,,draft-urban,medium,"Capital of the Cham kingdom of Champa on the coast of central Vietnam, which the Vietnamese took in 1471."
 # ═══ The homes of inventions ═══
 sippar,33.06,44.25,3,-3000,-1800,-100,300,1881,draft-urban,medium,"The Babylonian city of the sun god Shamash. Hormuzd Rassam dug tens of thousands of tablets from its temple in 1881, among them, it is thought, the clay map of the world."
 berenike,23.91,35.47,3,-275,50,550,700,1818,draft-urban,medium,"A Ptolemaic port on the Red Sea, built to land war elephants from Africa. Under Rome, ships sailed from it to India on the monsoon. Belzoni found its ruins in 1818."
@@ -523,3 +523,32 @@ seattle,47.61,-122.33,2,1851,1960,,,,draft-urban,high,"A timber town on Puget So
 colorado-springs,38.83,-104.82,3,1871,1990,,,,draft-urban,high,"A resort town at the foot of Pikes Peak, later home to the air force bases that run the GPS satellites."
 nuremberg,49.45,11.08,2,1050,1500,,,,draft-urban,high,"An imperial city of craftsmen and merchants, where Schedel's Chronicle was printed in 1493 and Behaim's globe, the oldest that survives, was made the year before."
 madras,13.08,80.27,2,1639,1900,,,,draft-urban,high,"Fort St George, the English East India Company's first fortress in India, grew into the capital of its southern presidency; the survey that measured India began from a baseline here in 1802."
+# ═══ More Chinese cities (2026-11-19) ═══
+shaoxing,30.00,120.58,2,-490,1200,,,,draft-urban,high,"Kuaiji, capital of the kingdom of Yue, where King Goujian is said to have slept on brushwood and tasted gall until he had his revenge on Wu. Wang Xizhi held his Orchid Pavilion gathering in its hills in 353."
+wenzhou,28.00,120.65,3,323,1200,,,,draft-urban,medium,"A port of southern Zhejiang, and home of Zhou Daguan, who sailed from here to Angkor in 1296 and wrote the only surviving eyewitness account of it."
+xiamen,24.45,118.08,3,1394,1850,,,,draft-urban,high,"A Ming sea-fort on an island, then the base of Koxinga's fleets. As the treaty port of Amoy it sent hundreds of thousands of Hokkien emigrants to Southeast Asia."
+liujiagang,31.60,121.20,3,1282,1430,,,,liujiagang,medium,"The Yangzi-mouth harbour where the Yuan grain fleets set out for Dadu, and where Zheng He's treasure fleets gathered before each voyage. In 1431 he set up a stone here recording all seven."
+chengde,40.98,117.93,3,1703,1790,,,,draft-urban,high,"The Qing emperors' summer retreat beyond the Great Wall, where they hunted and received Mongol princes, Tibetan lamas and, in 1793, Lord Macartney."
+zhangjiakou,40.82,114.88,3,1429,1900,,,,draft-urban,medium,"A Ming gate in the Great Wall, Kalgan to Mongols and Russians, through which brick tea went north by camel to Urga and Kyakhta."
+hohhot,40.82,111.65,3,1572,1700,,,,draft-urban,high,"Köke Khota, the Blue City, built in 1572 by Altan Khan with Chinese craftsmen. He made it the seat of the Tibetan Buddhism he brought back to the Mongols."
+jiuquan,39.73,98.50,3,-111,1400,,,,draft-urban,medium,"Named for a spring said to have run with wine, it guarded the western end of the Hexi Corridor. Beyond it lay the Jiayu Pass, where the Ming Great Wall ended."
+zhangye,38.93,100.45,3,-111,1300,,,,draft-urban,medium,"Ganzhou of the Hexi Corridor, ruled by Uyghur khans in the 900s until the Tanguts took it in 1028. Marco Polo says he spent a year here."
+lanzhou,36.06,103.83,2,-86,,,,,draft-urban,high,"Where the Silk Road crossed the Yellow River by ferry and pontoon bridge. Its iron bridge, opened in 1909, was the first permanent bridge across the river."
+hami,42.82,93.51,3,73,1500,,,,draft-urban,medium,"Kumul, the first oasis beyond the desert west of the Hexi Corridor, famous for its melons. Its Muslim princes ruled under Qing protection until 1930."
+urumqi,43.82,87.62,3,1763,,,,,draft-urban,high,"Dihua, a Qing garrison town founded in 1763 after the conquest of Dzungaria. It became the capital of the province of Xinjiang in 1884."
+chongqing,29.56,106.55,2,-316,1940,,,,draft-urban,high,"Capital of the old kingdom of Ba, on the rock where the Jialing meets the Yangzi. In 1938–46 it was China's wartime capital, bombed by Japan for five years."
+jinan,36.67,117.00,3,-200,,,,,draft-urban,medium,"The City of Springs, below Mount Tai in Shandong. The poets Li Qingzhao and Xin Qiji were born here."
+qingdao,36.07,120.38,3,1891,,,,,draft-urban,high,"A fishing village that Germany seized in 1897 and built into a naval port. Japan took it in 1914, and the Versailles decision to let Japan keep it set off the May Fourth Movement."
+lushun,38.81,121.26,3,1880,1904,,,,draft-urban,high,"Port Arthur, the ice-free harbour Russia leased in 1898 and lost to Japan after a five-month siege in 1904–05."
+nanchang,28.68,115.86,2,-201,,,,,draft-urban,high,"Matteo Ricci lived here from 1595 to 1598 and wrote his first Chinese book, On Friendship. The Communist army dates its birth to an uprising here on 1 August 1927."
+zhaoqing,23.05,112.47,3,-111,1600,,,,draft-urban,high,"Matteo Ricci and Michele Ruggieri opened the first Jesuit house in China here in 1583, and Ricci drew his first Chinese map of the world here."
+shaoguan,24.80,113.60,3,-111,,,,,draft-urban,medium,"On the road from the Yangzi to Guangzhou over the Meiling Pass. Huineng, the Sixth Patriarch of Chan Buddhism, taught at Nanhua temple nearby, and Matteo Ricci lived here from 1589 to 1595."
+lijiang,26.87,100.23,3,1253,1700,,,,draft-urban,medium,"A Naxi market town under the Mu chiefs, on the tea-and-horse road to Tibet. Xu Xiake was their guest in 1639."
+zunyi,27.70,106.93,3,639,,,,,draft-urban,medium,"For seven centuries the seat of the Yang lords of Bozhou, until the Ming destroyed them in 1600. In January 1935 the Long March paused here and Mao Zedong won his place at the head of the army."
+yanan,36.59,109.49,3,-300,1940,,,,draft-urban,medium,"A walled frontier town in the loess hills, and from 1937 to 1947 the Communists' capital, where they lived and worked in caves cut into the hillsides."
+hanzhong,33.07,107.03,3,-312,,,,,draft-urban,medium,"A basin between the Qinling and the Daba mountains. Liu Bang was made King of Han here in 206 BCE, and the dynasty he went on to found took its name."
+baoshan,25.12,99.16,3,69,,,,,draft-urban,medium,"Yongchang, the Han's farthest commandery to the southwest, on the road to Burma. Marco Polo tells of the battle near here in 1277 in which Mongol archers routed the war elephants of Pagan."
+linfen,36.09,111.52,3,-300,,,,,draft-urban,medium,"Pingyang, said to have been the capital of the sage-king Yao. Under the Jin dynasty its printers made it a centre of book printing in the north."
+shangqiu,34.42,115.65,3,-1046,1030,,,,draft-urban,medium,"Capital of Song, the state the Zhou gave to the heirs of the Shang kings, and a Song-dynasty southern capital whose academy was among the most famous in China."
+jining,35.41,116.58,3,-200,1500,,,,draft-urban,medium,"A city near the highest point of the Grand Canal. The Yuan cut the canal through here in the 1280s, and Ming engineers dammed the Wen river to feed it water."
+taipei,25.05,121.52,3,1709,,,,,draft-urban,medium,"Han Chinese settlers founded the riverside market of Bangka in the 1700s, and the Qing walled a new city beside it in the 1880s. It was the capital of Japanese Taiwan from 1895 and of the Republic of China from 1949."
