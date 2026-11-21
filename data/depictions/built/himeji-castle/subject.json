@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Himeji Castle — c. 1609",
+      "caption": "Himeji's white keep rises through layered roofs, stone ramparts and winding defensive walls.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Himeji's white-plastered multi-tiered keep rising from layered stone ramparts and defensive walls.",
+      "from": 1609
+    }
+  ]
+}

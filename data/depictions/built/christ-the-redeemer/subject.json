@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Christ the Redeemer — c. 1931",
+      "caption": "The outstretched figure stands above Corcovado, with Rio's peaks and bay far below.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Christ the Redeemer on Corcovado shortly after completion, with Rio's bay far below.",
+      "from": 1931
+    }
+  ]
+}

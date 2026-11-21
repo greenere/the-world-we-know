@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Great Mosque of Djenné — c. 1907",
+      "caption": "Townspeople renew the earthen surface beneath the mosque's three towers and projecting timber beams.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "medium",
+      "prompt": "Great Mosque of Djenne across its square: banco facade, three towers, projecting toron and townspeople replastering.",
+      "from": 1907
+    }
+  ]
+}

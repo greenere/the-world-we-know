@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Harmandir Sahib — c. 1830",
+      "caption": "The gilded shrine and its marble causeway are reflected in Amritsar's sacred pool.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "The gilded Golden Temple centered in its sacred pool, approached by its marble causeway.",
+      "from": 1830
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Churches of Lalibela — c. 1220",
+      "caption": "Bete Giyorgis stands within its cross-shaped trench, cut downward from the Ethiopian highland rock.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Bete Giyorgis seen obliquely from the rim of its deep rectangular rock-cut pit, cross-shaped roof and connecting trenches clear.",
+      "from": 1220
+    }
+  ]
+}

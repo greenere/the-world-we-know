@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Karnak — c. 1300 BCE",
+      "caption": "Massive papyrus-shaped columns fill the ruined Great Hypostyle Hall at Karnak.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Karnak's Great Hypostyle Hall as ruins, with massive papyrus-bundle columns, broken lintels and tiny figures.",
+      "from": -1300
+    }
+  ]
+}

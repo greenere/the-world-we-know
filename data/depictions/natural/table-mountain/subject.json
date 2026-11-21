@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Table Mountain",
+      "caption": "A thin tablecloth of cloud spills over the mountain's broad level rim above Table Bay.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Table Mountain's broad flat summit above fynbos and Table Bay before the modern city."
+    }
+  ]
+}

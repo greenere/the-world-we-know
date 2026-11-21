@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Fasil Ghebbi — c. 1700",
+      "caption": "Crenellated towers and round turrets enclose the stone palace at the heart of Gondar's royal compound.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Fasil Ghebbi's crenellated stone castle and round turrets inside Gondar's royal enclosure.",
+      "from": 1700
+    }
+  ]
+}

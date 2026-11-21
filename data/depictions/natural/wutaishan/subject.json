@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Mount Wutai",
+      "caption": "A modest monastery and pilgrim path occupy the wooded slope below a broad flat-topped peak.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "A broad flat-topped Mount Wutai peak with a modest Tang monastery and winding pilgrim path."
+    }
+  ]
+}

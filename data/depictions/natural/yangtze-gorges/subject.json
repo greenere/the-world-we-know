@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Three Gorges",
+      "caption": "Trackers haul a wooden junk through rapids beneath the sheer walls of the Three Gorges.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "The Yangzi compressed through sheer Three Gorges cliffs, with trackers hauling a wooden junk upstream."
+    }
+  ]
+}

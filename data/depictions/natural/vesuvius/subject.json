@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Vesuvius",
+      "caption": "A pine-shaped column of ash spreads above Vesuvius while Roman boats cross the bay below.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Vesuvius erupting in 79 CE across the Bay of Naples, with a plausible pine-shaped Plinian ash column."
+    }
+  ]
+}

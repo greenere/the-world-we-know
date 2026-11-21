@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Huangguoshu Falls",
+      "caption": "A broad curtain of water drops into a misty green pool, with a dark cave behind it.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Huangguoshu's broad curtain of water, misty green pool and dark cave behind the falls."
+    }
+  ]
+}

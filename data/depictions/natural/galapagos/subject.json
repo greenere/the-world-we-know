@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Galápagos Islands",
+      "caption": "Black lava, cactus and coastal reptiles occupy a spare volcanic shore in the Galápagos.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "An 1835 Galapagos volcanic coast with black lava, cactus, tortoise and marine iguanas in plausible habitats."
+    }
+  ]
+}

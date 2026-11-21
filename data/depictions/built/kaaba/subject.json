@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Kaaba — c. 632",
+      "caption": "Pilgrims circle the black-draped Kaaba within the early mosque's open court.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "medium",
+      "prompt": "The simple black-draped Kaaba in an early open mosque courtyard with respectful circling pilgrims.",
+      "from": 632
+    }
+  ]
+}

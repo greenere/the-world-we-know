@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Surtsey",
+      "caption": "Steam and ash rise where the raw black island breaks the grey Atlantic surface.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Surtsey emerging from the Atlantic in 1963 amid steam, ash, surf and raw black tephra."
+    }
+  ]
+}

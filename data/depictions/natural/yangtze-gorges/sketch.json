@@ -1,0 +1,11 @@
+{
+  "subject": "natural/yangtze-gorges",
+  "era": "sketch",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-20",
+  "prompt": "Use case: historical-scene. Asset type: landmark field sketch for an illustrated historical atlas. Style: one landscape 3:2 explorer's field-sketchbook page; visible loose graphite construction lines, quick sepia and brown ink, parallel hatching, restrained uneven watercolor washes in ochre, grey-green and faded blue, exposed slightly foxed warm cream paper, unfinished irregular vignette edges; observed architectural or natural-history study, not a polished painting, digital render, or photograph. Composition: one coherent wide view with accurate structure, spatial relationships, geology and scale. Constraints: no readable text, caption, signature, watermark, border, binding, generic foreground explorer, modern tourism clutter, fantasy forms, or anachronisms. Subject: The Yangzi compressed through sheer Three Gorges cliffs, with trackers hauling a wooden junk upstream.",
+  "reference_sources": [
+    "draft"
+  ]
+}

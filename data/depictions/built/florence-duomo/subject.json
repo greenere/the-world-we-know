@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Santa Maria del Fiore — c. 1436",
+      "caption": "Brunelleschi's red-tiled octagonal dome rises above Florence's clustered roofs.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Brunelleschi's immense octagonal brick dome just completed above medieval Florence.",
+      "from": 1436
+    }
+  ]
+}

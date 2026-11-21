@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Fatehpur Sikri — c. 1580",
+      "caption": "Carved pavilions and arcades enclose a broad, nearly empty red-sandstone court.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Fatehpur Sikri's broad red-sandstone courtyard, carved arcades and Mughal pavilions.",
+      "from": 1580
+    }
+  ]
+}

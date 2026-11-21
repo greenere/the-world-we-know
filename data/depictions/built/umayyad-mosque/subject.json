@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Umayyad Mosque — c. 715",
+      "caption": "Golden mosaics brighten the arcaded prayer-hall facade across the mosque's open courtyard.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "The Umayyad Mosque's vast courtyard, arcades and golden garden mosaics in early medieval Damascus.",
+      "from": 715
+    }
+  ]
+}

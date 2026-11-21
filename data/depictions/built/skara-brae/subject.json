@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Skara Brae — c. 1850",
+      "caption": "Roofless stone houses, hearths and covered passages lie exposed beside Orkney's shore.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Skara Brae exposed beside Orkney's shore: roofless sunken stone houses, passages, beds, hearths and dressers.",
+      "from": 1850
+    }
+  ]
+}

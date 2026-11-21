@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Mount Roraima",
+      "caption": "Cloud gathers along Roraima's immense flat rim as waterfalls descend its sheer cliffs.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Mount Roraima's vast flat top and sheer cliffs, with cloud and waterfalls above the savanna."
+    }
+  ]
+}

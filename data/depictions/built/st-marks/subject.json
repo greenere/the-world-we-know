@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "St Mark's Basilica — c. 1204",
+      "caption": "Domes, mosaic arches and bronze horses crowd the facade of St Mark's above the Venetian piazza.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "St Mark's Basilica from the piazza: five Byzantine domes, mosaic arches and four bronze horses.",
+      "from": 1204
+    }
+  ]
+}

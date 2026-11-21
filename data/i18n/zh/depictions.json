@@ -3824,5 +3824,305 @@
    "title": "被旅途磨损的东西",
    "caption": "磨损的轮胎、几件工具和打过补丁的行李，也讲述着旅途的一部分。要让旧摩托车继续前进，总有行程表上预料不到的事情需要处理。"
   }
+ },
+ "built/aachen-cathedral": {
+  "sketch": {
+   "title": "亚琛大教堂——约805年",
+   "caption": "查理曼的高耸八角礼拜堂从较低的多边形回廊之上升起。"
+  }
+ },
+ "built/aksum-stelae": {
+  "sketch": {
+   "title": "阿克苏姆方尖碑——约330年",
+   "caption": "雕花花岗岩石碑如多层塔楼般耸立在阿克苏姆王室墓地的倒塌碑石之间。"
+  }
+ },
+ "built/banaue-terraces": {
+  "sketch": {
+   "title": "伊富高梯田——约1650年",
+   "caption": "狭长的水田沿山势层层展开，上方是涵养水源的森林。"
+  }
+ },
+ "built/burj-khalifa": {
+  "sketch": {
+   "title": "哈利法塔——约2010年",
+   "caption": "哈利法塔逐级收分成一根尖针，高出迪拜低矮的天际线。"
+  }
+ },
+ "built/chengde-resort": {
+  "sketch": {
+   "title": "避暑山庄——约1790年",
+   "caption": "园林亭阁环抱静湖，仿西藏式样的寺庙坐落在远处林木覆盖的山坡上。"
+  }
+ },
+ "built/christ-the-redeemer": {
+  "sketch": {
+   "title": "救世基督像——约1931年",
+   "caption": "张开双臂的基督像立在科尔科瓦多山顶，里约的群峰与海湾远在脚下。"
+  }
+ },
+ "built/dujiangyan": {
+  "sketch": {
+   "title": "都江堰——约公元前256年",
+   "caption": "砌石水利工程把奔流的岷江分开，引导其中一支流向成都平原。"
+  }
+ },
+ "built/fasil-ghebbi": {
+  "sketch": {
+   "title": "法西尔盖比城堡——约1700年",
+   "caption": "带雉堞的塔楼和圆形角楼围合着贡德尔王室围城中心的石宫。"
+  }
+ },
+ "built/fatehpur-sikri": {
+  "sketch": {
+   "title": "法塔赫布尔西格里——约1580年",
+   "caption": "雕花亭阁和拱廊围起一座宽阔而近乎空旷的红砂岩庭院。"
+  }
+ },
+ "built/florence-duomo": {
+  "sketch": {
+   "title": "圣母百花大教堂——约1436年",
+   "caption": "布鲁内莱斯基的红瓦八角穹顶高踞在佛罗伦萨密集的屋顶之上。"
+  }
+ },
+ "built/golden-temple": {
+  "sketch": {
+   "title": "哈尔曼迪尔寺——约1830年",
+   "caption": "覆金的圣殿和大理石堤道倒映在阿姆利则的圣池中。"
+  }
+ },
+ "built/great-mosque-djenne": {
+  "sketch": {
+   "title": "杰内大清真寺——约1907年",
+   "caption": "居民在三座塔楼和外伸木梁之下，为清真寺重新抹上泥土。"
+  }
+ },
+ "built/himeji-castle": {
+  "sketch": {
+   "title": "姬路城——约1609年",
+   "caption": "姬路城洁白的天守阁从层叠屋顶、石垣和曲折城墙之上升起。"
+  }
+ },
+ "built/holy-sepulchre": {
+  "sketch": {
+   "title": "圣墓教堂——约1099年",
+   "caption": "风化的罗曼式立面朝向拥挤的石砌庭院，教堂穹顶从后方升起。"
+  }
+ },
+ "built/itsukushima": {
+  "sketch": {
+   "title": "严岛神社——约1168年",
+   "caption": "朱红色神社回廊和大鸟居立在宫岛前的浅海中。"
+  }
+ },
+ "built/jiayu-pass": {
+  "sketch": {
+   "title": "嘉峪关——约1372年",
+   "caption": "覆顶关楼和夯土城墙横过砾石荒漠，远处是积雪山脉。"
+  }
+ },
+ "built/kaaba": {
+  "sketch": {
+   "title": "克尔白——约632年",
+   "caption": "朝圣者在早期清真寺的露天庭院中环绕黑布覆盖的克尔白。"
+  }
+ },
+ "built/karnak": {
+  "sketch": {
+   "title": "卡纳克神庙——约公元前1300年",
+   "caption": "巨大的纸莎草形石柱布满卡纳克神庙残存的大柱厅。"
+  }
+ },
+ "built/lalibela-churches": {
+  "sketch": {
+   "title": "拉利贝拉岩石教堂——约1220年",
+   "caption": "圣乔治教堂立在十字形深沟之中，从埃塞俄比亚高原的整块岩石向下凿成。"
+  }
+ },
+ "built/leaning-tower": {
+  "sketch": {
+   "title": "比萨斜塔——约1372年",
+   "caption": "带拱廊的大理石钟楼倾斜着立在比萨大教堂旁。"
+  }
+ },
+ "built/longmen": {
+  "sketch": {
+   "title": "龙门石窟——约700年",
+   "caption": "卢舍那大佛与两侧造像端坐在伊河上方敞开的石龛中。"
+  }
+ },
+ "built/meenakshi": {
+  "sketch": {
+   "title": "米纳克希神庙——约1655年",
+   "caption": "布满彩塑的门塔高高矗立在通往米纳克希神庙的街道上。"
+  }
+ },
+ "built/minaret-of-jam": {
+  "sketch": {
+   "title": "贾姆宣礼塔——约1194年",
+   "caption": "细长的砖砌宣礼塔独立在阿富汗陡峭峡谷的两水交汇处。"
+  }
+ },
+ "built/mount-rushmore": {
+  "sketch": {
+   "title": "拉什莫尔山——约1941年",
+   "caption": "四张巨大的面孔从浅色花岗岩中显现，下方是松林覆盖的黑山。"
+  }
+ },
+ "built/pantheon": {
+  "sketch": {
+   "title": "万神殿——约125年",
+   "caption": "万神殿的列柱门廊立在宽阔的圆形墙体和低缓穹顶之前。"
+  }
+ },
+ "built/pont-du-gard": {
+  "sketch": {
+   "title": "加尔桥——约60年",
+   "caption": "三层逐级缩小的石拱把罗马水道托过加尔东河谷。"
+  }
+ },
+ "built/qutb-minar": {
+  "sketch": {
+   "title": "顾特卜塔——约1220年",
+   "caption": "红砂岩凹槽塔身高高耸立在清真寺庭院残破的拱廊之上。"
+  }
+ },
+ "built/sagrada-familia": {
+  "sketch": {
+   "title": "圣家堂——约1926年",
+   "caption": "圣家堂尚未完工，诞生立面和细长尖塔从脚手架与石料场中升起。"
+  }
+ },
+ "built/skara-brae": {
+  "sketch": {
+   "title": "斯卡拉布雷——约1850年",
+   "caption": "无顶的石屋、火塘和有顶通道显露在奥克尼海岸边。"
+  }
+ },
+ "built/st-marks": {
+  "sketch": {
+   "title": "圣马可大教堂——约1204年",
+   "caption": "穹顶、镶嵌画拱门和青铜马汇聚在威尼斯广场上的圣马可教堂立面。"
+  }
+ },
+ "built/umayyad-mosque": {
+  "sketch": {
+   "title": "倭马亚清真寺——约715年",
+   "caption": "清真寺开阔庭院对面，金色镶嵌画照亮了带拱廊的礼拜殿立面。"
+  }
+ },
+ "built/yellow-crane-tower": {
+  "sketch": {
+   "title": "黄鹤楼——约800年",
+   "caption": "木构楼阁的飞檐俯瞰着长江上往来的船只。"
+  }
+ },
+ "built/yungang": {
+  "sketch": {
+   "title": "云冈石窟——约494年",
+   "caption": "一尊巨大的坐佛从云冈砂岩崖壁上的石窟中俯视而出。"
+  }
+ },
+ "built/zhaozhou-bridge": {
+  "sketch": {
+   "title": "赵州桥——约605年",
+   "caption": "低缓的石拱跨过洨河，拱肩上的小孔减轻了桥身重量。"
+  }
+ },
+ "natural/damavand": {
+  "sketch": {
+   "title": "达马万德山",
+   "caption": "达马万德孤立而带雪痕的火山锥高踞在干燥的厄尔布尔士山麓之上。"
+  }
+ },
+ "natural/elbrus": {
+  "sketch": {
+   "title": "厄尔布鲁士山",
+   "caption": "两座圆缓的雪峰高出厄尔布鲁士山宽阔的冰川。"
+  }
+ },
+ "natural/galapagos": {
+  "sketch": {
+   "title": "加拉帕戈斯群岛",
+   "caption": "黑色熔岩、仙人掌和海岸爬行动物散布在加拉帕戈斯荒凉的火山海岸。"
+  }
+ },
+ "natural/huangguoshu": {
+  "sketch": {
+   "title": "黄果树瀑布",
+   "caption": "宽阔的水帘落入雾气弥漫的碧潭，后方露出幽暗洞穴。"
+  }
+ },
+ "natural/jiuzhaigou": {
+  "sketch": {
+   "title": "九寨沟",
+   "caption": "碧蓝湖泊和浅色钙华瀑布层层铺展在九寨沟的森林山谷中。"
+  }
+ },
+ "natural/k2": {
+  "sketch": {
+   "title": "乔戈里峰",
+   "caption": "乔戈里峰由暗色岩壁和积雪构成的陡峭金字塔耸立在喀喇昆仑破碎的冰川之后。"
+  }
+ },
+ "natural/pamukkale": {
+  "sketch": {
+   "title": "棉花堡",
+   "caption": "浅蓝色池水注满白色扇贝状钙华台地，希拉波利斯遗迹位于上方。"
+  }
+ },
+ "natural/paricutin": {
+  "sketch": {
+   "title": "帕里库廷火山",
+   "caption": "年轻的火山渣锥在玉米地上方冒烟，暗色熔岩流正从田间推进。"
+  }
+ },
+ "natural/roraima": {
+  "sketch": {
+   "title": "罗赖马山",
+   "caption": "云雾聚集在罗赖马山巨大的平顶边缘，瀑布从绝壁垂落。"
+  }
+ },
+ "natural/surtsey": {
+  "sketch": {
+   "title": "叙尔特塞岛",
+   "caption": "新生的黑色岛屿冲破灰色大西洋海面，蒸汽和火山灰从水边升起。"
+  }
+ },
+ "natural/table-mountain": {
+  "sketch": {
+   "title": "桌山",
+   "caption": "一层薄云越过桌山宽阔平坦的山缘，山下便是桌湾。"
+  }
+ },
+ "natural/vesuvius": {
+  "sketch": {
+   "title": "维苏威火山",
+   "caption": "松树状灰柱在维苏威火山上空展开，罗马船只从下方海湾驶过。"
+  }
+ },
+ "natural/wadi-rum": {
+  "sketch": {
+   "title": "瓦迪拉姆",
+   "caption": "红色砂岩绝壁和天然石拱从瓦迪拉姆开阔的谷底升起。"
+  }
+ },
+ "natural/white-cliffs": {
+  "sketch": {
+   "title": "多佛尔白崖",
+   "caption": "明亮的白垩绝壁沿海峡延伸，船只在漫长崖壁前显得十分渺小。"
+  }
+ },
+ "natural/wutaishan": {
+  "sketch": {
+   "title": "五台山",
+   "caption": "一座朴素的寺院和朝圣山路坐落在宽阔平顶山峰下的林坡上。"
+  }
+ },
+ "natural/yangtze-gorges": {
+  "sketch": {
+   "title": "三峡",
+   "caption": "纤夫在三峡绝壁下拉着木帆船穿过急流。"
+  }
  }
 }

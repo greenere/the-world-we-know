@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Leaning Tower of Pisa — c. 1372",
+      "caption": "Pisa's arcaded marble bell tower leans beside the cathedral that it was built to serve.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Pisa's cylindrical marble bell tower, its plausible lean and stacked arcaded galleries clearly legible.",
+      "from": 1372
+    }
+  ]
+}

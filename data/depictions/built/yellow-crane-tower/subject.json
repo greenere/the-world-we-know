@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Yellow Crane Tower — c. 800",
+      "caption": "The timber tower and its sweeping eaves overlook boats moving along the Yangzi.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "medium",
+      "prompt": "A historic timber Yellow Crane Tower with sweeping eaves above the Yangzi and Wuchang.",
+      "from": 800
+    }
+  ]
+}

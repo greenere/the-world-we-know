@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Yungang Grottoes — c. 494",
+      "caption": "A monumental seated Buddha looks out from a grotto cut into Yungang's sandstone cliff.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Yungang's sandstone cliff and a monumental seated Northern Wei Buddha inside its carved grotto.",
+      "from": 494
+    }
+  ]
+}

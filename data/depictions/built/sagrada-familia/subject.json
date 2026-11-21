@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Sagrada Família — c. 1926",
+      "caption": "The Nativity facade and slender spires rise amid the scaffolds and stone yard of Gaudí's unfinished basilica.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Sagrada Familia during Gaudi's lifetime: Nativity facade and organic spires amid period scaffolding and stone yards.",
+      "from": 1926
+    }
+  ]
+}

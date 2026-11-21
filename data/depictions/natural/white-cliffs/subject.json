@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "White Cliffs of Dover",
+      "caption": "Bright chalk cliffs extend above the Channel, with ships small against their long face.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Dover's long white chalk cliffs from Caesar's fleet, with Britons tiny along the turf rim."
+    }
+  ]
+}

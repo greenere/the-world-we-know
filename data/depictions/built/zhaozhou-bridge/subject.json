@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Zhaozhou Bridge — c. 605",
+      "caption": "A shallow stone arch spans the Xiao River, lightened by small openings through its shoulders.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Side view of Zhaozhou's shallow segmental stone arch and its four open spandrel arches.",
+      "from": 605
+    }
+  ]
+}

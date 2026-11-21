@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Parícutin",
+      "caption": "A young cinder cone smokes above cornfields as a dark lava flow advances across them.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Paricutin growing from a Michoacan cornfield in 1943, with a young cinder cone, ash and advancing lava."
+    }
+  ]
+}

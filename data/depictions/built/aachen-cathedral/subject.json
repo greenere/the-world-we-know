@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Aachen Cathedral — c. 805",
+      "caption": "Charlemagne's tall octagonal chapel rises from its lower many-sided aisle.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Charlemagne's compact tall octagonal Palatine Chapel and lower sixteen-sided aisle around 805.",
+      "from": 805
+    }
+  ]
+}

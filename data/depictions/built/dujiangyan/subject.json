@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Dujiangyan — c. 256 BCE",
+      "caption": "Stone-lined works divide the rushing Min River and guide one branch toward the Chengdu plain.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "The Min River splitting around Dujiangyan's fish-mouth levee into its ancient irrigation channels.",
+      "from": -256
+    }
+  ]
+}

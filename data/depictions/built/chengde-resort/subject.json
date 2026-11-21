@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Mountain Resort — c. 1790",
+      "caption": "Garden pavilions frame a quiet lake, with a Tibetan-inspired temple on the wooded hills beyond.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Chengde's garden lake, southern-style pavilions and distant Tibetan-inspired temple.",
+      "from": 1790
+    }
+  ]
+}

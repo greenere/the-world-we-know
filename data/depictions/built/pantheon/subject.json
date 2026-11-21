@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Pantheon — c. 125",
+      "caption": "The Pantheon's columned portico stands before the broad drum and shallow curve of its dome.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Rome's Pantheon: deep columned portico, cylindrical rotunda and shallow dome in a modest historic piazza.",
+      "from": 125
+    }
+  ]
+}

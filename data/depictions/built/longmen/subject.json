@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Longmen Grottoes — c. 700",
+      "caption": "The great Vairocana Buddha and attendant figures occupy an open niche above the Yi River.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Longmen's colossal Vairocana Buddha and guardians carved into the limestone cliff above the Yi River.",
+      "from": 700
+    }
+  ]
+}

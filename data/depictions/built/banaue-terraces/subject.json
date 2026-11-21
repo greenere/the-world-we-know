@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Rice Terraces of Ifugao — c. 1650",
+      "caption": "Narrow flooded paddies follow the mountain contours below the forested watershed.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "low",
+      "prompt": "Narrow flooded Banaue rice terraces following a steep mountain's contours below forest.",
+      "from": 1650
+    }
+  ]
+}

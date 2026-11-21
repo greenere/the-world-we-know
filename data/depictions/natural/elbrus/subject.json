@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Elbrus",
+      "caption": "Two rounded snow-covered summits rise above the broad glaciers of Elbrus.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "The two rounded snowy summit cones and sweeping glaciers of Mount Elbrus."
+    }
+  ]
+}

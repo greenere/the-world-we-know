@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Minaret of Jam — c. 1194",
+      "caption": "The slender brick minaret stands alone where two streams meet in a steep Afghan gorge.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "The slender carved-brick Minaret of Jam standing in its steep remote Afghan gorge.",
+      "from": 1194
+    }
+  ]
+}

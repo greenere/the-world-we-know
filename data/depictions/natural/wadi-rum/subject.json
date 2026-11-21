@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Wadi Rum",
+      "caption": "Red sandstone cliffs and natural arches rise from the open floor of Wadi Rum.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "medium",
+      "prompt": "Wadi Rum's sheer red sandstone massifs and arches above a tiny 1917 camel party."
+    }
+  ]
+}

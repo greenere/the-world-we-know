@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Itsukushima Shrine — c. 1168",
+      "caption": "Vermilion shrine corridors and the great torii stand in the shallow water before Miyajima.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "medium",
+      "prompt": "Itsukushima's vermilion corridors over high tide and its great offshore torii before a forested island.",
+      "from": 1168
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Jiuzhaigou",
+      "caption": "Turquoise lakes and pale travertine falls step through Jiuzhaigou's forested valley.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Jiuzhaigou's turquoise lakes, pale travertine shoals and multi-stream falls before mass tourism."
+    }
+  ]
+}

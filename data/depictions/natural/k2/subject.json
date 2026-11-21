@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "K2",
+      "caption": "K2's steep pyramid of dark rock and snow rises beyond the broken Karakoram glaciers.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "K2's immense steep pyramid above jagged Karakoram glaciers and a tiny survey camp."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Qutb Minar — c. 1220",
+      "caption": "The fluted red-sandstone Qutb Minar towers above the broken arcades of the mosque courtyard.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "The tapering fluted red-sandstone Qutb Minar above the ruined mosque courtyard and iron pillar.",
+      "from": 1220
+    }
+  ]
+}

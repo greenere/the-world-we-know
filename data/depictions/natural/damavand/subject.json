@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Damavand",
+      "caption": "Damavand's solitary snow-streaked cone rises above the dry Alborz foothills.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Damavand's solitary symmetrical snow-streaked volcanic cone above dry Alborz foothills."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Church of the Holy Sepulchre — c. 1099",
+      "caption": "The weathered Romanesque facade opens into a crowded stone court beneath the church's domes.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "The Holy Sepulchre's weathered Romanesque courtyard facade and domed rotunda in dense Jerusalem.",
+      "from": 1099
+    }
+  ]
+}

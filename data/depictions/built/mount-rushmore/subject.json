@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Mount Rushmore — c. 1941",
+      "caption": "Four immense faces emerge from pale granite above the pine-covered Black Hills.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Four presidential heads carved high in Mount Rushmore's granite amid the Black Hills.",
+      "from": 1941
+    }
+  ]
+}

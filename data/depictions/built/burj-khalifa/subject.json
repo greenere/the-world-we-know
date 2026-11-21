@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Burj Khalifa — c. 2010",
+      "caption": "Successive setbacks narrow the Burj Khalifa to a needle above Dubai's low skyline.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "The extremely slender, stepped Burj Khalifa tapering to a needle above hazy Dubai.",
+      "from": 2010
+    }
+  ]
+}

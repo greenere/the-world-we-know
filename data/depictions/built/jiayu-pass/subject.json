@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Jiayu Pass — c. 1372",
+      "caption": "A roofed gatehouse and earthen walls cross the stony desert beneath distant snowy ranges.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Jiayu Pass gatehouse and walls stretching into the Gobi toward snowy mountains.",
+      "from": 1372
+    }
+  ]
+}

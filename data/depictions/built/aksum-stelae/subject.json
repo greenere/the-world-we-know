@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Stelae of Aksum — c. 330",
+      "caption": "A carved granite stele rises like a many-storeyed tower above fallen monuments in Aksum's royal field.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "medium",
+      "prompt": "Aksum's royal stelae field: standing carved granite tower, fallen giant stele, dry Ethiopian highlands.",
+      "from": 330
+    }
+  ]
+}

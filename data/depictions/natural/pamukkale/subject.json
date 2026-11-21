@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Pamukkale",
+      "caption": "Pale turquoise pools fill scalloped white travertine terraces below the ruins of Hierapolis.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Pamukkale's white scalloped travertine basins filled with turquoise thermal water below Hierapolis."
+    }
+  ]
+}

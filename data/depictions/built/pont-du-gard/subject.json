@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Pont du Gard — c. 60",
+      "caption": "Three diminishing tiers of stone arches carry the Roman aqueduct across the Gardon valley.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Pont du Gard spanning its valley in three precisely aligned tiers of stone arches.",
+      "from": 60
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Meenakshi Temple — c. 1655",
+      "caption": "A sculpture-covered gateway tower rises above the streets approaching Meenakshi Temple.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "medium",
+      "prompt": "A vast Meenakshi Temple gopuram crowded with painted sculpture above seventeenth-century Madurai.",
+      "from": 1655
+    }
+  ]
+}
