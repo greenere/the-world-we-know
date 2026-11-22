@@ -1,0 +1,11 @@
+{
+  "subject": "natural/mossel-bay",
+  "era": "sketch",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-22",
+  "prompt": "Use case: historical-scene. Asset type: natural-landmark field sketch for an illustrated historical atlas. Style: ONE landscape 3:2 explorer's natural-history field-sketchbook page; visible loose graphite construction lines, quick sepia and brown ink, parallel hatching, restrained uneven watercolor washes in ochre, grey-green and faded blue, exposed slightly foxed warm cream paper, irregular unfinished vignette edges. An observed working sketch, not a polished painting, digital render, photograph, fantasy illustration, or glossy travel poster. Composition: one coherent view with plausible geology, coast, vessel structure, spatial relationships and scale. Constraints: no readable text, caption, signature, watermark, border, binding, generic foreground explorer, modern roads or tourism infrastructure, or invented landmark forms. Subject: Mossel Bay on South Africa's southern coast around 1497, viewed from a low sheltered shore: a broad curving bay with ochre rock shelves, pale sand, low fynbos-covered hills and calm blue-green water beyond the surf. A mature spreading milkwood tree anchors one side of the foreground; a small late-fifteenth-century Portuguese caravel lies at anchor offshore, with only tiny distant shore figures and cattle suggesting contact with Khoekhoe pastoralists. The bay and tree remain the subjects. No modern harbor, town, lighthouse, pier, readable letters, mailbox, European fort, or tropical palms.",
+  "reference_sources": [
+    "draft"
+  ]
+}

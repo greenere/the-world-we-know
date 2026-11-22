@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Cape of Good Hope",
+      "caption": "Rain sweeps across the rocky headland as a small caravel rounds it through rough water.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Low offshore view of the Cape of Good Hope around 1488: rugged layered sandstone headland under wind-driven rain, low fynbos and breaking surf, with one small Portuguese caravel rounding it far offshore."
+    }
+  ]
+}

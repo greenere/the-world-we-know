@@ -1,0 +1,11 @@
+{
+  "subject": "natural/cape-of-good-hope",
+  "era": "sketch",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-22",
+  "prompt": "Use case: historical-scene. Asset type: natural-landmark field sketch for an illustrated historical atlas. Style: ONE landscape 3:2 explorer's natural-history field-sketchbook page; visible loose graphite construction lines, quick sepia and brown ink, parallel hatching, restrained uneven watercolor washes in ochre, grey-green and faded blue, exposed slightly foxed warm cream paper, irregular unfinished vignette edges. An observed working sketch, not a polished painting, digital render, photograph, fantasy illustration, or glossy travel poster. Composition: one coherent view with plausible geology, coast, vessel structure, spatial relationships and scale. Constraints: no readable text, caption, signature, watermark, border, binding, generic foreground explorer, modern roads or tourism infrastructure, or invented landmark forms. Subject: Cape of Good Hope around 1488, viewed low from rough offshore water: the real rugged rocky headland at the southern tip of the Cape Peninsula projecting into a stormy sea, layered dark sandstone slopes with low fynbos, white surf breaking at the base, cloud and rain sweeping over the heights. One small late-fifteenth-century Portuguese caravel with coherent hull, mast and lateen sails rounds the cape far offshore for scale; the headland remains the subject, not the ship. Do not depict a needle-shaped sea stack, tropical palms, lighthouse, modern monument, or Table Mountain.",
+  "reference_sources": [
+    "draft"
+  ]
+}

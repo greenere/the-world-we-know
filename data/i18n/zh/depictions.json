@@ -4124,5 +4124,17 @@
    "title": "三峡",
    "caption": "纤夫在三峡绝壁下拉着木帆船穿过急流。"
   }
+ },
+ "natural/cape-of-good-hope": {
+  "sketch": {
+   "title": "好望角",
+   "caption": "风雨掠过岩石岬角，一艘小型卡拉维尔帆船在汹涌海面上绕角而行。"
+  }
+ },
+ "natural/mossel-bay": {
+  "sketch": {
+   "title": "莫塞尔湾",
+   "caption": "舒展的乳木俯瞰避风的弧形海湾，一艘卡拉维尔帆船停泊在岩岸外。"
+  }
  }
 }

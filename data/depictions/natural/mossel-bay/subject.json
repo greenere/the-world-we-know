@@ -1,0 +1,14 @@
+{
+  "studies": [
+    {
+      "id": "sketch",
+      "title": "Mossel Bay",
+      "caption": "A spreading milkwood overlooks the sheltered curve of the bay, where a caravel lies at anchor beyond the rocky shore.",
+      "sources": [
+        "draft"
+      ],
+      "confidence": "high",
+      "prompt": "Low sheltered-shore view of Mossel Bay around 1497: broad curving bay, ochre rock shelves, pale sand and fynbos hills, with a mature milkwood tree in the foreground, Khoekhoe cattle and tiny figures, and a small Portuguese caravel at anchor."
+    }
+  ]
+}
