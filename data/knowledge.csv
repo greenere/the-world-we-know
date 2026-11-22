@@ -3323,3 +3323,15 @@ turks,peru,1580,2,medium,goodrich-west-indies,
 turks,east-africa-coast,1585,3,high,casale-ottoman,Mir Ali Beg's voyages to the Swahili coast
 turks,north-america,1655,2,high,hagen-katib,Katib Çelebi translates the Atlas Minor
 turks,south-america,1655,2,high,hagen-katib,
+# ════ The Islamic world: what its members knew that never passed into Arabic ════
+islam,cape,641,=0,medium,hoc,Herodotus's tale of Necho's sailors never passed into Arabic
+islam,angola,641,=0,medium,hoc,
+islam,southern-africa,641,=0,medium,hoc,
+islam,guinea-coast,641,=0,medium,hoc,
+islam,atlantic-sahara,670,=1,medium,levtzion-hopkins,Hanno's voyage was Carthage's; the Arabs reach the Atlantic only in 681
+islam,atlantic-sahara,1054,3,medium,levtzion-hopkins,The Almoravids rise in the western Sahara
+islam,guinea-coast,1513,1,medium,piri-reis,West Africa's coast from Portuguese charts
+islam,cape,1521,2,medium,kitab-bahriye,The Portuguese route round the Cape
+islam,southern-africa,1521,1,medium,kitab-bahriye,
+islam,angola,1521,1,medium,kitab-bahriye,
+turks,australia,1803,2,medium,cedid-atlas,New Holland in the first printed Ottoman world atlas

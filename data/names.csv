@@ -1548,3 +1548,23 @@ city,cuenca,*,Tumebamba,,1470,1556,
 city,jauja,*,Jauja,,,,
 city,cape-of-good-hope,*,Cape of Good Hope,,,,
 city,mossel-bay,*,Mossel Bay,,,,
+# ═══ City names: the Arabic forms the Islamic world (and so Arabia) used ═══
+city,cairo,islam,al-Qahira,القاهرة,969,,al-umari
+city,antioch,islam,Antakiya,أنطاكية,638,,al-baladhuri
+city,fez,islam,Fas,فاس,789,,al-bakri
+city,babylon,islam,Babil,بابل,637,,al-baladhuri
+city,mecca,islam,Makka,مكة,622,,al-tabari
+city,samarkand,islam,Samarqand,سمرقند,712,,al-baladhuri
+city,timbuktu,islam,Tinbuktu,تنبكتو,1100,,al-umari
+city,delhi,islam,Dihli,دهلي,1192,,ibn-battuta
+city,venice,islam,al-Banadiqa,البندقية,1154,,al-idrisi
+city,athens,islam,Athina,أثينا,1154,,al-idrisi
+city,isfahan,islam,Isbahan,أصبهان,642,,al-baladhuri
+city,mogadishu,islam,Maqdishu,مقديشو,900,,ibn-battuta
+city,kilwa,islam,Kulwa,كلوة,900,,ibn-battuta
+city,kairouan,islam,al-Qayrawan,القيروان,670,,al-baladhuri
+city,tripoli,islam,Tarabulus,طرابلس,643,,al-baladhuri
+city,sofala,islam,Sufala,سفالة,947,,al-masudi
+city,mombasa,islam,Manbasa,منبسة,1000,,ibn-battuta
+city,merv,islam,Marw,مرو,651,,al-baladhuri
+city,nishapur,islam,Naysabur,نيسابور,651,,al-baladhuri

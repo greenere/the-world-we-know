@@ -27,6 +27,13 @@ export function momentsFor(data: AppData, s: State): MomentRef[] {
   const out: MomentRef[] = [];
   for (const vp of s.vps) {
     for (const m of data.vp[vp].moments) out.push({...m, vp});
+    // A member shares its community's moments while it belongs: Arabia after 622 sees al-Andalus and al-Idrisi.
+    for (const c of data.viewpoints) {
+      for (const {viewpoint, from, until} of c.community?.members ?? []) {
+        if (viewpoint !== vp) continue;
+        for (const m of c.moments) if (m.year >= from && (until === undefined || m.year < until) && !out.some(o => o.label === m.label)) out.push({...m, vp: c.id});
+      }
+    }
     // A community marks the year each member joins with that member's own moment.
     for (const {viewpoint, from} of data.vp[vp].community?.members ?? []) {
       for (const m of data.vp[viewpoint].moments) if (m.year === from && !out.some(o => o.label === m.label)) out.push({...m, vp: viewpoint});
