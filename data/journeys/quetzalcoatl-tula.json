@@ -13,7 +13,7 @@
     {"year": 987, "place": "Tula", "lat": 20.06, "lon": -99.34, "note": "Tollan's palaces of turquoise, shell and quetzal feathers. Shamed by Tezcatlipoca, he burns them and leaves.", "city": "tula"},
     {"year": 987, "place": "Cuauhtitlan", "lat": 19.67, "lon": -99.18, "note": "He rests under a great tree and throws stones at it, which stay lodged in the trunk.", "source": "annals-cuauhtitlan"},
     {"year": 987, "place": "Cholula", "lat": 19.06, "lon": -98.3, "note": "Cholula keeps him, some say for twenty years; it becomes the great shrine of Quetzalcoatl.", "city": "cholula"},
-    {"year": 987, "place": "Coatzacoalcos", "lat": 18.15, "lon": -94.43, "note": "At the 'place where the serpent hides', on the Gulf shore, he sets out east on a raft of serpents for Tlillan Tlapallan."},
+    {"year": 987, "place": "Coatzacoalcos", "lat": 18.15, "lon": -94.43, "note": "At the 'place where the serpent hides', on the Gulf shore, he sets out east on a raft of serpents for Tlillan Tlapallan.", "city": "coatzacoalcos"},
     {"year": 987, "place": "Isla Cerritos", "lat": 21.57, "lon": -88.27, "note": "A small island harbour on the north coast, the port of Chichén Itzá.", "by": "sea", "source": "sharer"},
     {"year": 987, "place": "Chichén Itzá", "lat": 20.68, "lon": -88.57, "note": "Landa's informants said Kukulcan, the Feathered Serpent, came from the west and ruled at Chichén Itzá.", "city": "chichen-itza", "source": "landa", "by": "land"}
   ],

@@ -11,7 +11,7 @@
   "stops": [
     {"year": 1528, "place": "Tenochtitlan", "lat": 19.43, "lon": -99.13, "note": "They leave the rebuilt city with Cortés.", "city": "tenochtitlan"},
     {"year": 1528, "place": "Veracruz", "lat": 19.2, "lon": -96.13, "note": "They take ship for Spain.", "city": "veracruz"},
-    {"year": 1528, "place": "Palos de la Frontera", "lat": 37.23, "lon": -6.89, "note": "Landfall in Castile.", "date": "May 1528", "by": "sea"},
+    {"year": 1528, "place": "Palos de la Frontera", "lat": 37.23, "lon": -6.89, "note": "Landfall in Castile.", "date": "May 1528", "by": "sea", "city": "palos"},
     {"year": 1528, "place": "Toledo", "lat": 39.86, "lon": -4.02, "note": "At the emperor's court, Weiditz draws the ballplayers and jugglers.", "city": "toledo"},
     {"year": 1529, "place": "Seville", "lat": 37.39, "lon": -5.98, "note": "Most of the nobles wait here for months.", "city": "seville"},
     {"year": 1529, "place": "Rome", "lat": 41.89, "lon": 12.49, "note": "Received by Pope Clement VII.", "city": "rome", "by": "sea", "source": "hamann-1529"}

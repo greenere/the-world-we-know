@@ -10,7 +10,7 @@
   "confidence": "medium",
   "stops": [
     {"year": 61, "place": "Alexandria", "lat": 31.2, "lon": 29.92, "note": "The party sets out up the Nile.", "city": "alexandria"},
-    {"year": 61, "place": "Syene (Aswan)", "lat": 24.09, "lon": 32.9, "note": "The edge of Roman Egypt.", "by": "river"},
+    {"year": 61, "place": "Syene (Aswan)", "lat": 24.09, "lon": 32.9, "note": "The edge of Roman Egypt.", "by": "river", "city": "aswan"},
     {"year": 62, "place": "Meroë", "lat": 16.94, "lon": 33.75, "note": "The Kushite king provides guides and letters to the rulers beyond.", "city": "meroe", "by": "river"},
     {"year": 62, "place": "The Sudd", "lat": 8.0, "lon": 30.5, "note": "Endless marshes where 'the plants are so entangled that the water cannot be crossed on foot or by boat.'", "by": "river"},
     {"year": 63, "place": "Alexandria", "lat": 31.2, "lon": 29.92, "note": "They report to Nero.", "city": "alexandria", "by": "river"}

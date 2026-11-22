@@ -10,7 +10,7 @@
   "source": "challenger-report",
   "confidence": "high",
   "stops": [
-    {"year": 1872, "place": "Portsmouth", "lat": 50.8, "lon": -1.1, "note": "A warship with most of its guns removed to make room for laboratories.", "date": "December 1872"},
+    {"year": 1872, "place": "Portsmouth", "lat": 50.8, "lon": -1.1, "note": "A warship with most of its guns removed to make room for laboratories.", "date": "December 1872", "city": "portsmouth"},
     {"year": 1873, "place": "Tenerife", "lat": 28.47, "lon": -16.25, "note": "First deep soundings."},
     {"year": 1873, "place": "St Thomas", "lat": 18.34, "lon": -64.93, "note": "Soundings across the Atlantic reveal a ridge down its middle."},
     {"year": 1873, "place": "Bahia", "lat": -12.97, "lon": -38.5, "note": "A stop to rest, resupply and take soundings.", "city": "salvador"},
@@ -31,13 +31,13 @@
     {"year": 1875, "place": "Yokohama", "lat": 35.44, "lon": 139.64, "note": "A stop to rest, resupply and take soundings."},
     {"year": 1875, "place": "Honolulu", "lat": 21.31, "lon": -157.86, "note": "A stop to rest, resupply and take soundings.", "city": "honolulu"},
     {"year": 1875, "place": "Tahiti", "lat": -17.5, "lon": -149.5, "note": "A stop to rest, resupply and take soundings."},
-    {"year": 1875, "place": "Valparaíso", "lat": -33.05, "lon": -71.62, "note": "A stop to rest, resupply and take soundings."},
+    {"year": 1875, "place": "Valparaíso", "lat": -33.05, "lon": -71.62, "note": "A stop to rest, resupply and take soundings.", "city": "valparaiso"},
     {"waypoint": true, "lat": -52.5, "lon": -74.5},
     {"waypoint": true, "lat": -53.6, "lon": -70.9},
     {"year": 1876, "place": "Montevideo", "lat": -34.9, "lon": -56.2, "note": "A stop to rest, resupply and take soundings.", "date": "February 1876"},
     {"waypoint": true, "lat": -8.0, "lon": -14.4},
     {"waypoint": true, "lat": 20.0, "lon": -25.0},
-    {"year": 1876, "place": "Spithead", "lat": 50.77, "lon": -1.1, "note": "Home after 1,000 days; the results take 19 years and 50 volumes to publish.", "date": "May 1876"}
+    {"year": 1876, "place": "Spithead", "lat": 50.77, "lon": -1.1, "note": "Home after 1,000 days; the results take 19 years and 50 volumes to publish.", "date": "May 1876", "city": "portsmouth"}
   ],
   "informs": [
     {"region": "southern-ocean", "level": 4, "homeKnows": 1880, "confidence": "high"},

@@ -11,7 +11,7 @@
   "lifts": false,
   "stops": [
     {"year": 1780, "place": "Hanseong", "lat": 37.57, "lon": 126.98, "note": "The birthday embassy sets out.", "city": "seoul", "date": "June 1780"},
-    {"year": 1780, "place": "Uiju", "lat": 40.2, "lon": 124.53, "note": "Across the Yalu in flood."},
+    {"year": 1780, "place": "Uiju", "lat": 40.2, "lon": 124.53, "note": "Across the Yalu in flood.", "city": "uiju"},
     {"year": 1780, "place": "Shenyang", "lat": 41.8, "lon": 123.43, "note": "The Qing's old capital in Manchuria.", "city": "shenyang"},
     {"year": 1780, "place": "Shanhaiguan", "lat": 40.0, "lon": 119.75, "note": "Through the Great Wall."},
     {"year": 1780, "place": "Beijing", "lat": 39.9, "lon": 116.4, "note": "The emperor is away.", "city": "beijing", "date": "August 1780"},

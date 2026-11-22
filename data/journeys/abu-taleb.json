@@ -12,7 +12,7 @@
     {"year": 1799, "place": "Calcutta", "lat": 22.57, "lon": 88.36, "note": "He sails in February on a Danish ship.", "city": "kolkata"},
     {"waypoint": true, "lat": -35.3, "lon": 20.0},
     {"year": 1799, "place": "Cape Town", "lat": -33.92, "lon": 18.42, "note": "Two months at the Cape.", "city": "cape-town", "by": "sea"},
-    {"year": 1799, "place": "Cork", "lat": 51.9, "lon": -8.47, "note": "Landed in Ireland in December.", "by": "sea"},
+    {"year": 1799, "place": "Cork", "lat": 51.9, "lon": -8.47, "note": "Landed in Ireland in December.", "by": "sea", "city": "cork"},
     {"year": 1800, "place": "Dublin", "lat": 53.35, "lon": -6.26, "note": "A winter in Dublin.", "city": "dublin", "by": "land"},
     {"waypoint": true, "lat": 53.31, "lon": -4.63},
     {"year": 1800, "place": "London", "lat": 51.51, "lon": -0.13, "note": "Across to Holyhead and through Wales. Two years in London: the opera, the Royal Society, the king and queen.", "city": "london", "by": "land"},

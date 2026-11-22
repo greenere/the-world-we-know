@@ -11,7 +11,7 @@
   "stops": [
     {"year": 1709, "place": "Tiononderoge", "lat": 42.94, "lon": -74.28, "note": "The lower Mohawk town, at the eastern door of the League."},
     {"year": 1710, "place": "Boston", "lat": 42.36, "lon": -71.06, "note": "They sail with Schuyler and Francis Nicholson at the end of February.", "by": "land", "city": "boston"},
-    {"year": 1710, "place": "Portsmouth", "lat": 50.8, "lon": -1.09, "note": "Landfall in England at the beginning of April.", "by": "sea"},
+    {"year": 1710, "place": "Portsmouth", "lat": 50.8, "lon": -1.09, "note": "Landfall in England at the beginning of April.", "by": "sea", "city": "portsmouth"},
     {"year": 1710, "place": "London", "lat": 51.51, "lon": -0.12, "note": "Lodged in Covent Garden; Queen Anne receives them at St James's Palace, and their speech is read to her.", "date": "19 April 1710", "by": "land", "city": "london"},
     {"year": 1710, "place": "Boston", "lat": 42.36, "lon": -71.06, "note": "Home in the summer, with gifts from the Queen.", "by": "sea", "city": "boston"},
     {"year": 1710, "place": "Tiononderoge", "lat": 42.94, "lon": -74.28, "note": "The Queen's chapel and communion silver follow for Fort Hunter.", "by": "land"}

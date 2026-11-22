@@ -9,7 +9,7 @@
   "source": "amati",
   "confidence": "high",
   "stops": [
-    {"year": 1613, "place": "Tsukinoura, Sendai", "lat": 38.4, "lon": 141.4, "note": "The San Juan Bautista sails with 180 men.", "date": "October 1613"},
+    {"year": 1613, "place": "Tsukinoura, Sendai", "lat": 38.4, "lon": 141.4, "note": "The San Juan Bautista sails with 180 men.", "date": "October 1613", "city": "sendai"},
     {"waypoint": true, "lat": 38.6, "lon": 144.5},
     {"waypoint": true, "lat": 40.0, "lon": 160.0},
     {"waypoint": true, "lat": 40.8, "lon": 180.0},
@@ -34,7 +34,7 @@
     {"year": 1618, "place": "Mexico City", "lat": 19.43, "lon": -99.13, "note": "Retracing the road across New Spain.", "city": "tenochtitlan", "by": "land"},
     {"year": 1618, "place": "Acapulco", "lat": 16.85, "lon": -99.88, "note": "Sails for Manila on the galleon; sources differ on whether in 1618 or 1619.", "city": "acapulco", "by": "land", "confidence": "medium"},
     {"year": 1618, "place": "Manila", "lat": 14.6, "lon": 120.98, "note": "Two years waiting in the Philippines.", "city": "manila"},
-    {"year": 1620, "place": "Sendai", "lat": 38.27, "lon": 140.87, "note": "Home, to a country that has banned Christianity.", "date": "September 1620"}
+    {"year": 1620, "place": "Sendai", "lat": 38.27, "lon": 140.87, "note": "Home, to a country that has banned Christianity.", "date": "September 1620", "city": "sendai"}
   ],
   "informs": [
     {"region": "mexico-centre", "level": 3, "homeKnows": 1620, "confidence": "high"},

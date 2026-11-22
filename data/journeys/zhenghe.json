@@ -13,8 +13,8 @@
     {"year": 1405, "place": "Changle, Fujian", "lat": 25.96, "lon": 119.52, "note": "The fleet waits for the north-east monsoon.", "source": "liujiagang"},
     {"year": 1406, "place": "Champa", "lat": 13.77, "lon": 109.22, "note": "The first port of call.", "source": "ma-huan"},
     {"year": 1406, "place": "Java", "lat": -7.25, "lon": 112.75, "note": "Majapahit. Some 170 of the fleet's men are killed in a local war.", "source": "ma-huan"},
-    {"year": 1406, "place": "Semudera", "lat": 5.2, "lon": 97.1, "note": "A sultanate at the northern tip of Sumatra.", "source": "ma-huan"},
-    {"year": 1406, "place": "Galle, Ceylon", "lat": 6.03, "lon": 80.22, "note": "A first call in Ceylon."},
+    {"year": 1406, "place": "Semudera", "lat": 5.2, "lon": 97.1, "note": "A sultanate at the northern tip of Sumatra.", "source": "ma-huan", "city": "samudra-pasai"},
+    {"year": 1406, "place": "Galle, Ceylon", "lat": 6.03, "lon": 80.22, "note": "A first call in Ceylon.", "city": "galle"},
     {"year": 1407, "place": "Calicut", "lat": 11.25, "lon": 75.78, "note": "Guli, 'the great country of the Western Ocean': the voyage's goal.", "city": "calicut", "source": "ma-huan"},
     {"year": 1407, "place": "Palembang", "lat": -2.99, "lon": 104.75, "note": "On the way home, defeats the pirate chief Chen Zuyi and takes him to Nanjing.", "city": "palembang"},
     {"year": 1407, "place": "Nanjing", "lat": 32.06, "lon": 118.78, "note": "Home with envoys from Calicut and other kingdoms.", "city": "nanjing"}

@@ -22,7 +22,7 @@
     {"year": 1254, "place": "Batu's camp", "lat": 48.5, "lon": 45.0, "note": "Back west with a letter from Möngke to Louis.", "by": "land", "confidence": "medium"},
     {"year": 1254, "place": "Derbent", "lat": 42.06, "lon": 48.29, "note": "South through the Iron Gate of the Caucasus.", "city": "derbent", "by": "land"},
     {"year": 1255, "place": "Konya", "lat": 37.87, "lon": 32.48, "note": "Across Armenia to the Seljuk sultan.", "city": "konya", "by": "land"},
-    {"year": 1255, "place": "Ayas", "lat": 36.77, "lon": 35.79, "note": "Through Cilicia to the Armenian port.", "by": "land"},
+    {"year": 1255, "place": "Ayas", "lat": 36.77, "lon": 35.79, "note": "Through Cilicia to the Armenian port.", "by": "land", "city": "ayas"},
     {"year": 1255, "place": "Tripoli", "lat": 34.43, "lon": 35.84, "note": "By sea; his superiors keep him in Acre and he writes his report to the king.", "by": "sea", "date": "August 1255"}
   ],
   "informs": [

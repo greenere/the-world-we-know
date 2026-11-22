@@ -16,7 +16,7 @@
     {"year": 1488, "place": "Yangzhou", "lat": 32.39, "lon": 119.42, "note": "North along the Grand Canal.", "city": "yangzhou"},
     {"year": 1488, "place": "Beijing", "lat": 39.9, "lon": 116.4, "note": "Received at the Ming court.", "city": "beijing", "date": "April 1488"},
     {"year": 1488, "place": "Shanhaiguan", "lat": 40.0, "lon": 119.75, "note": "Through the pass at the end of the Great Wall."},
-    {"year": 1488, "place": "Uiju", "lat": 40.2, "lon": 124.53, "note": "Across the Yalu into Joseon.", "date": "June 1488"},
+    {"year": 1488, "place": "Uiju", "lat": 40.2, "lon": 124.53, "note": "Across the Yalu into Joseon.", "date": "June 1488", "city": "uiju"},
     {"year": 1488, "place": "Hanseong", "lat": 37.57, "lon": 126.98, "note": "He writes his diary for the king before going home to mourn.", "city": "seoul"}
   ],
   "informs": [

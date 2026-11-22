@@ -14,7 +14,7 @@
     {"year": 1910, "place": "Kristiania (Oslo)", "lat": 59.91, "lon": 10.75, "note": "The Fram leaves; the crew think they are bound for the Arctic.", "date": "June 1910"},
     {"waypoint": true, "lat": 55.0, "lon": 3.0},
     {"waypoint": true, "lat": 47.0, "lon": -8.0},
-    {"year": 1910, "place": "Funchal, Madeira", "lat": 32.65, "lon": -16.91, "note": "Amundsen tells the crew the real goal and cables Scott: 'Beg leave to inform you Fram proceeding Antarctic.'", "date": "September 1910"},
+    {"year": 1910, "place": "Funchal, Madeira", "lat": 32.65, "lon": -16.91, "note": "Amundsen tells the crew the real goal and cables Scott: 'Beg leave to inform you Fram proceeding Antarctic.'", "date": "September 1910", "city": "funchal"},
     {"waypoint": true, "lat": 5.0, "lon": -20.0},
     {"waypoint": true, "lat": -25.0, "lon": -10.0},
     {"waypoint": true, "lat": -42.0, "lon": 15.0},

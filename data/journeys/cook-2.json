@@ -9,7 +9,7 @@
   "source": "cook-journals",
   "confidence": "high",
   "stops": [
-    {"year": 1772, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "The Resolution and the Adventure sail, with Larcum Kendall's copy of Harrison's chronometer.", "date": "13 July 1772"},
+    {"year": 1772, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "The Resolution and the Adventure sail, with Larcum Kendall's copy of Harrison's chronometer.", "date": "13 July 1772", "city": "plymouth"},
     {"year": 1772, "place": "Cape Town", "lat": -33.92, "lon": 18.42, "note": "Last port before the southern ice.", "city": "cape-town"},
     {"year": 1773, "place": "Antarctic Circle", "lat": -66.6, "lon": 39.6, "note": "The first ship known to cross the Antarctic Circle.", "date": "17 January 1773"},
     {"year": 1773, "place": "Dusky Sound, Aotearoa", "lat": -45.75, "lon": 166.6, "note": "Rest and repairs in the fiords after four months without sight of land."},
@@ -20,7 +20,7 @@
     {"year": 1774, "place": "Vanuatu", "lat": -15.4, "lon": 167.2, "note": "Charts the islands he names the New Hebrides."},
     {"year": 1774, "place": "New Caledonia", "lat": -20.7, "lon": 164.8, "note": "A large island no European had seen."},
     {"year": 1775, "place": "South Georgia", "lat": -54.3, "lon": -36.5, "note": "Claims the icy island for Britain: 'savage and horrible'.", "date": "January 1775"},
-    {"year": 1775, "place": "Spithead", "lat": 50.77, "lon": -1.1, "note": "Home after three years and 110,000 km; the chronometer has kept time.", "date": "30 July 1775"}
+    {"year": 1775, "place": "Spithead", "lat": 50.77, "lon": -1.1, "note": "Home after three years and 110,000 km; the chronometer has kept time.", "date": "30 July 1775", "city": "portsmouth"}
   ],
   "informs": [
     {"region": "southern-ocean", "level": 3, "homeKnows": "1775..1777", "confidence": "high", "note": "Cook circles the far south"},

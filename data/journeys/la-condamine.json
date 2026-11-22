@@ -14,7 +14,7 @@
     {"year": 1743, "place": "Napo–Amazon confluence", "lat": -3.32, "lon": -72.6, "note": "Fixes positions by the stars as he goes.", "by": "river"},
     {"year": 1743, "place": "Mouth of the Rio Negro", "lat": -3.14, "lon": -59.9, "note": "Hears of a channel linking the Amazon to the Orinoco.", "by": "river", "city": "manaus"},
     {"year": 1743, "place": "Belém", "lat": -1.45, "lon": -48.5, "note": "Measures the tides at the mouth.", "by": "river", "date": "September 1743", "city": "belem"},
-    {"year": 1744, "place": "Cayenne", "lat": 4.93, "lon": -52.33, "note": "On to French Guiana and home to Paris in 1745."}
+    {"year": 1744, "place": "Cayenne", "lat": 4.93, "lon": -52.33, "note": "On to French Guiana and home to Paris in 1745.", "city": "cayenne"}
   ],
   "informs": [
     {"region": "amazon-river", "level": 4, "homeKnows": 1745, "confidence": "high", "note": "La Condamine's map of the river"}

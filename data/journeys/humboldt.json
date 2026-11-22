@@ -12,7 +12,7 @@
     {"year": 1799, "place": "A Coruña", "lat": 43.37, "lon": -8.4, "note": "Sail on the Pizarro with royal permission to go anywhere in Spanish America.", "date": "June 1799"},
     {"year": 1799, "place": "Teide, Tenerife", "lat": 28.27, "lon": -16.64, "note": "Climb the volcano and record how vegetation changes with height."},
     {"waypoint": true, "lat": 20.0, "lon": -40.0},
-    {"year": 1799, "place": "Cumaná", "lat": 10.46, "lon": -64.17, "note": "First landfall in America.", "date": "July 1799"},
+    {"year": 1799, "place": "Cumaná", "lat": 10.46, "lon": -64.17, "note": "First landfall in America.", "date": "July 1799", "city": "cumana"},
     {"year": 1800, "place": "The Llanos", "lat": 8.0, "lon": -67.5, "note": "Experiments with electric eels on the grassy plains."},
     {"year": 1800, "place": "Casiquiare", "by": "river", "lat": 2.0, "lon": -66.8, "note": "Confirm that the Casiquiare joins the Orinoco to the Amazon basin."},
     {"year": 1801, "place": "Bogotá", "lat": 4.61, "lon": -74.07, "note": "Studies the cinchona trees that give quinine.", "city": "bogota", "from": "The Llanos"},

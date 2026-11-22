@@ -11,7 +11,7 @@
   "lifts": false,
   "stops": [
     {"year": 1593, "place": "Timbuktu", "lat": 16.77, "lon": -3.01, "note": "The Moroccan pasha arrests the scholars of Sankore.", "city": "timbuktu"},
-    {"year": 1594, "place": "Taghaza", "lat": 23.6, "lon": -5.0, "note": "North across the desert by the salt road.", "by": "land", "confidence": "medium"},
+    {"year": 1594, "place": "Taghaza", "lat": 23.6, "lon": -5.0, "note": "North across the desert by the salt road.", "by": "land", "confidence": "medium", "city": "taghaza"},
     {"year": 1594, "place": "Marrakesh", "lat": 31.63, "lon": -7.99, "note": "Prisoner of al-Mansur, then free to teach in the city's mosques.", "city": "marrakesh", "by": "land", "date": "May 1594"},
     {"year": 1608, "place": "Timbuktu", "lat": 16.77, "lon": -3.01, "note": "Allowed home at last, after al-Mansur's death.", "city": "timbuktu", "by": "land"}
   ],

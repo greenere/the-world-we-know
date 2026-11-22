@@ -9,7 +9,7 @@
   "source": "cortes-letters",
   "confidence": "high",
   "stops": [
-    {"year": 1519, "place": "Santiago de Cuba", "lat": 20.02, "lon": -75.82, "note": "Cortés sails against the governor's orders with eleven ships.", "date": "February 1519"},
+    {"year": 1519, "place": "Santiago de Cuba", "lat": 20.02, "lon": -75.82, "note": "Cortés sails against the governor's orders with eleven ships.", "date": "February 1519", "city": "santiago-de-cuba"},
     {"waypoint": true, "lat": 21.8, "lon": -84.8},
     {"year": 1519, "place": "Cozumel", "lat": 20.5, "lon": -86.95, "note": "Finds Gerónimo de Aguilar, a shipwrecked Spaniard who speaks Maya."},
     {"waypoint": true, "lat": 21.5, "lon": -88.0},

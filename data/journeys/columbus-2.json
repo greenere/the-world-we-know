@@ -13,7 +13,7 @@
     {"year": 1493, "place": "Dominica", "lat": 15.4, "lon": -61.37, "note": "Landfall in the Lesser Antilles after three weeks.", "date": "3 November 1493"},
     {"year": 1493, "place": "Guadeloupe", "lat": 16.2, "lon": -61.6, "note": "Kalinago villages."},
     {"year": 1493, "place": "Puerto Rico", "lat": 18.2, "lon": -66.5, "note": "Borikén, the island of the Taíno."},
-    {"year": 1493, "place": "La Navidad", "lat": 19.7, "lon": -72.2, "note": "The fort is burned and all 39 men are dead.", "date": "27 November 1493"},
+    {"year": 1493, "place": "La Navidad", "lat": 19.7, "lon": -72.2, "note": "The fort is burned and all 39 men are dead.", "date": "27 November 1493", "city": "la-navidad"},
     {"year": 1494, "place": "La Isabela", "lat": 19.89, "lon": -71.08, "note": "The first Spanish town in the Americas.", "date": "January 1494", "city": "la-isabela"},
     {"year": 1494, "place": "Jamaica", "lat": 18.4, "lon": -77.1, "note": "Xaymaca, explored along its north coast."},
     {"year": 1494, "place": "Cuba, south coast", "lat": 21.6, "lon": -79.0, "note": "Columbus has his crews swear that Cuba is a mainland."},

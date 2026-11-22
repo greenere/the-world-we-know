@@ -11,7 +11,7 @@
   "lifts": false,
   "stops": [
     {"year": 90, "place": "Leptis Magna", "lat": 32.64, "lon": 14.29, "note": "Maternus sets out from the coast of Tripolitania.", "city": "leptis-magna"},
-    {"year": 90, "place": "Garama", "lat": 26.55, "lon": 12.99, "note": "The capital of the Garamantes, desert traders and charioteers of the Fezzan.", "by": "land"},
+    {"year": 90, "place": "Garama", "lat": 26.55, "lon": 12.99, "note": "The capital of the Garamantes, desert traders and charioteers of the Fezzan.", "by": "land", "city": "garama"},
     {"year": 90, "place": "Agisymba", "lat": 13.0, "lon": 14.5, "note": "Four months to the south with the Garamantian king, to a land of rhinoceroses.", "by": "land", "confidence": "low"},
     {"year": 91, "place": "Leptis Magna", "lat": 32.64, "lon": 14.29, "note": "Home with the farthest report of Africa Rome ever had.", "by": "land", "city": "leptis-magna"}
   ],

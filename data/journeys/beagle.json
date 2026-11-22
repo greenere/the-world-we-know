@@ -10,14 +10,14 @@
   "source": "darwin-voyage",
   "confidence": "high",
   "stops": [
-    {"year": 1831, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "Sails on a five-year voyage.", "date": "27 December 1831"},
+    {"year": 1831, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "Sails on a five-year voyage.", "date": "27 December 1831", "city": "plymouth"},
     {"year": 1832, "place": "Santiago, Cape Verde", "lat": 14.92, "lon": -23.51, "note": "Darwin's first look at the geology of a volcanic island."},
     {"year": 1832, "place": "Bahia", "lat": -12.97, "lon": -38.5, "note": "The tropical forest; Darwin is horrified by slavery.", "city": "salvador"},
-    {"year": 1832, "place": "Bahía Blanca", "lat": -38.72, "lon": -62.27, "note": "Fossils of giant extinct ground sloths."},
+    {"year": 1832, "place": "Bahía Blanca", "lat": -38.72, "lon": -62.27, "note": "Fossils of giant extinct ground sloths.", "city": "bahia-blanca"},
     {"year": 1832, "place": "Tierra del Fuego", "lat": -54.8, "lon": -68.3, "note": "Three Fuegians brought to England on an earlier voyage are returned home.", "date": "December 1832"},
     {"year": 1834, "place": "Santa Cruz river", "lat": -50.0, "lon": -68.5, "note": "Two years charting the coast of Patagonia."},
     {"waypoint": true, "lat": -56.5, "lon": -70.0},
-    {"year": 1835, "place": "Valparaíso", "lat": -33.05, "lon": -71.62, "note": "Darwin crosses the Andes and finds sea shells near the summits."},
+    {"year": 1835, "place": "Valparaíso", "lat": -33.05, "lon": -71.62, "note": "Darwin crosses the Andes and finds sea shells near the summits.", "city": "valparaiso"},
     {"year": 1835, "place": "Concepción", "lat": -36.8, "lon": -73.05, "note": "An earthquake raises the coast by metres before his eyes.", "date": "February 1835"},
     {"year": 1835, "place": "Galápagos", "lat": -0.9, "lon": -89.6, "note": "Five weeks among tortoises and mockingbirds that differ from island to island.", "date": "September 1835"},
     {"year": 1835, "place": "Tahiti", "lat": -17.5, "lon": -149.5, "note": "A stop on the voyage."},
@@ -28,7 +28,7 @@
     {"year": 1836, "place": "Cape Town", "lat": -33.92, "lon": 18.42, "note": "Meets the astronomer John Herschel.", "city": "cape-town"},
     {"waypoint": true, "lat": -10.0, "lon": -30.0},
     {"waypoint": true, "lat": 30.0, "lon": -30.0},
-    {"year": 1836, "place": "Falmouth", "lat": 50.15, "lon": -5.07, "note": "Home after almost five years.", "date": "2 October 1836"}
+    {"year": 1836, "place": "Falmouth", "lat": 50.15, "lon": -5.07, "note": "Home after almost five years.", "date": "2 October 1836", "city": "falmouth"}
   ],
   "informs": [
     {"region": "magellan-strait", "level": 5, "homeKnows": 1839, "confidence": "high", "note": "FitzRoy's charts"},

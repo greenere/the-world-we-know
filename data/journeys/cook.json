@@ -9,8 +9,8 @@
   "source": "cook-journals",
   "confidence": "high",
   "stops": [
-    {"year": 1768, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "The Endeavour sails for the Pacific.", "date": "26 August 1768"},
-    {"year": 1768, "place": "Madeira", "lat": 32.65, "lon": -16.91, "note": "Wine and onions against scurvy."},
+    {"year": 1768, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "The Endeavour sails for the Pacific.", "date": "26 August 1768", "city": "plymouth"},
+    {"year": 1768, "place": "Madeira", "lat": 32.65, "lon": -16.91, "note": "Wine and onions against scurvy.", "city": "funchal"},
     {"waypoint": true, "lat": 15.0, "lon": -25.0},
     {"waypoint": true, "lat": 0.0, "lon": -30.0},
     {"waypoint": true, "lat": -12.0, "lon": -35.5},

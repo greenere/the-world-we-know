@@ -11,7 +11,7 @@
   "stops": [
     {"year": 1510, "place": "Fez", "lat": 34.03, "lon": -5.0, "note": "The embassy leaves the Marinid capital.", "city": "fez"},
     {"year": 1510, "place": "Sijilmasa", "lat": 31.28, "lon": -4.27, "note": "South over the Atlas to the old caravan city of the Tafilalt.", "by": "land", "city": "sijilmasa"},
-    {"year": 1510, "place": "Taghaza", "lat": 23.6, "lon": -5.0, "note": "The salt mines, where houses are built of salt blocks.", "by": "land"},
+    {"year": 1510, "place": "Taghaza", "lat": 23.6, "lon": -5.0, "note": "The salt mines, where houses are built of salt blocks.", "by": "land", "city": "taghaza"},
     {"year": 1510, "place": "Timbuktu", "lat": 16.77, "lon": -3.0, "note": "Its many judges, scholars and booksellers, and its king's store of gold.", "by": "land", "city": "timbuktu"},
     {"year": 1511, "place": "Gao", "lat": 16.27, "lon": -0.05, "note": "Down the Niger to the Songhay capital.", "by": "river", "city": "gao", "confidence": "low"},
     {"year": 1513, "place": "Fez", "lat": 34.03, "lon": -5.0, "note": "Home across the desert.", "by": "land", "city": "fez", "confidence": "low"}

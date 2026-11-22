@@ -11,7 +11,7 @@
   "stops": [
     {"year": 1829, "place": "Batavia", "lat": -6.13, "lon": 106.81, "note": "He sails for the Netherlands.", "city": "batavia"},
     {"year": 1829, "place": "The Hague", "lat": 52.08, "lon": 4.3, "note": "Ten years of study under Dutch painters.", "by": "sea"},
-    {"year": 1839, "place": "Dresden", "lat": 51.05, "lon": 13.74, "note": "Friend of dukes and poets at the Saxon court."},
+    {"year": 1839, "place": "Dresden", "lat": 51.05, "lon": 13.74, "note": "Friend of dukes and poets at the Saxon court.", "city": "dresden"},
     {"year": 1845, "place": "Paris", "lat": 48.86, "lon": 2.35, "note": "He befriends Horace Vernet.", "city": "paris"},
     {"year": 1846, "place": "Marseille", "lat": 43.3, "lon": 5.37, "note": "South to the sea with Vernet.", "confidence": "medium"},
     {"year": 1846, "place": "Algiers", "lat": 36.75, "lon": 3.06, "note": "In French Algeria, which he paints for years after.", "city": "algiers", "by": "sea"},

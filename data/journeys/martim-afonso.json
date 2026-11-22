@@ -14,7 +14,7 @@
     {"year": 1531, "place": "Rio de Janeiro", "lat": -22.9, "lon": -43.17, "note": "Three months building ships in Guanabara Bay.", "by": "sea"},
     {"year": 1531, "place": "Río de la Plata", "lat": -34.6, "lon": -58.4, "note": "Pero Lopes charts the estuary and sails up the Paraná.", "by": "sea"},
     {"year": 1532, "place": "São Vicente", "lat": -23.96, "lon": -46.39, "note": "The first town of Portuguese Brazil, founded in January.", "by": "sea"},
-    {"year": 1532, "place": "Piratininga", "lat": -23.55, "lon": -46.63, "note": "Up the escarpment to the plateau, where João Ramalho lives among the Tupi.", "by": "land"},
+    {"year": 1532, "place": "Piratininga", "lat": -23.55, "lon": -46.63, "note": "Up the escarpment to the plateau, where João Ramalho lives among the Tupi.", "by": "land", "city": "sao-paulo"},
     {"year": 1533, "place": "Lisbon", "lat": 38.7, "lon": -9.14, "note": "Home; Brazil is soon divided into hereditary captaincies.", "by": "sea"}
   ],
   "informs": [

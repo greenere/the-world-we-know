@@ -15,7 +15,7 @@
     {"year": 1609, "place": "Chesapeake Bay", "lat": 37.0, "lon": -76.0, "note": "South to the English colony's bay, without entering."},
     {"year": 1609, "place": "Manhattan", "lat": 40.7, "lon": -74.0, "note": "Enters the great river and meets the Lenape.", "date": "September 1609", "city": "new-york"},
     {"year": 1609, "place": "Albany", "lat": 42.65, "lon": -73.75, "note": "Upriver until the water grows shallow: no passage.", "by": "river", "city": "albany-ny"},
-    {"year": 1609, "place": "Dartmouth", "lat": 50.35, "lon": -3.58, "note": "Detained in England with his news.", "date": "November 1609"}
+    {"year": 1609, "place": "Dartmouth", "lat": 50.35, "lon": -3.58, "note": "Detained in England with his news.", "date": "November 1609", "city": "dartmouth"}
   ],
   "informs": [
     {"region": "woodlands-northeast", "level": 3, "homeKnows": 1610, "confidence": "high", "note": "The Hudson River, with Jamestown's Virginia"},

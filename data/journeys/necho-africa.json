@@ -17,7 +17,7 @@
     {"waypoint": true, "lat": -15.0, "lon": 41.5},
     {"year": -599, "place": "First autumn", "lat": -24.0, "lon": 35.7, "note": "They land, sow grain and wait for the harvest before sailing on."},
     {"waypoint": true, "lat": -34.9, "lon": 25.0},
-    {"year": -599, "place": "The southern cape", "lat": -34.4, "lon": 18.5, "note": "Sailing west round the continent, they see the noon sun to the north, on their right hand."},
+    {"year": -599, "place": "The southern cape", "lat": -34.4, "lon": 18.5, "note": "Sailing west round the continent, they see the noon sun to the north, on their right hand.", "city": "cape-of-good-hope"},
     {"waypoint": true, "lat": -28.0, "lon": 14.5},
     {"waypoint": true, "lat": -16.0, "lon": 11.0},
     {"waypoint": true, "lat": -6.0, "lon": 11.0},

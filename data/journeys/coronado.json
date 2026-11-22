@@ -10,7 +10,7 @@
   "confidence": "high",
   "stops": [
     {"year": 1540, "place": "Compostela, New Spain", "lat": 21.23, "lon": -104.9, "note": "The army musters.", "date": "February 1540"},
-    {"year": 1540, "place": "Culiacán", "lat": 24.8, "lon": -107.4, "note": "The last Spanish town."},
+    {"year": 1540, "place": "Culiacán", "lat": 24.8, "lon": -107.4, "note": "The last Spanish town.", "city": "culiacan"},
     {"year": 1540, "place": "Hawikuh (Cíbola)", "lat": 34.96, "lon": -108.87, "note": "The first Zuni town is stormed. 'Such were the curses that some hurled at Fray Marcos.'", "date": "July 1540", "city": "hawikuh"},
     {"year": 1540, "place": "Grand Canyon", "lat": 36.06, "lon": -112.14, "note": "Hopi guides lead García López de Cárdenas to the rim; his men cannot reach the river.", "from": "Hawikuh (Cíbola)"},
     {"year": 1540, "place": "Tiguex", "lat": 35.3, "lon": -106.55, "note": "The army winters in the Rio Grande pueblos and wages war on them.", "from": "Hawikuh (Cíbola)"},

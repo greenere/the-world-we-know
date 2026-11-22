@@ -11,7 +11,7 @@
   "by": "land",
   "stops": [
     {"year": -671, "place": "Nineveh", "lat": 36.36, "lon": 43.15, "note": "The Assyrian capital.", "city": "nineveh"},
-    {"year": -671, "place": "Harran", "lat": 36.86, "lon": 39.03, "note": "West across upper Mesopotamia."},
+    {"year": -671, "place": "Harran", "lat": 36.86, "lon": 39.03, "note": "West across upper Mesopotamia.", "city": "harran"},
     {"year": -671, "place": "Tyre", "lat": 33.27, "lon": 35.2, "note": "Tyre, allied with Taharqa, is put under siege on the way.", "city": "tyre"},
     {"year": -671, "place": "Raphia", "lat": 31.28, "lon": 34.25, "note": "The edge of the desert."},
     {"year": -671, "place": "Across Sinai", "lat": 30.9, "lon": 33.0, "note": "Arab kings bring camels and water for the army's crossing."},

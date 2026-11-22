@@ -34,7 +34,7 @@
     {"waypoint": true, "lat": 13.5, "lon": 74.2},
     {"year": 50, "place": "Muziris", "lat": 10.15, "lon": 76.21, "note": "Pepper port of the Chera kingdom. Some ships sail here directly from Arabia on the monsoon.", "city": "muziris"},
     {"waypoint": true, "lat": 8.4, "lon": 76.7},
-    {"year": 50, "place": "Komarei (Cape Comorin)", "lat": 8.08, "lon": 77.55, "note": "The southern tip of India."},
+    {"year": 50, "place": "Komarei (Cape Comorin)", "lat": 8.08, "lon": 77.55, "note": "The southern tip of India.", "city": "kanyakumari"},
     {"waypoint": true, "lat": 9.2, "lon": 79.4},
     {"year": 50, "place": "Poduke", "lat": 11.9, "lon": 79.82, "note": "A market town on the east coast; Roman pottery has been dug up at nearby Arikamedu.", "city": "arikamedu"},
     {"waypoint": true, "lat": 16.0, "lon": 82.7},

@@ -11,7 +11,7 @@
   "source": "polo",
   "confidence": "medium",
   "stops": [
-    {"year": 1277, "place": "Juju (Zhuozhou)", "lat": 39.49, "lon": 115.97, "note": "Where the roads part, he takes the western one."},
+    {"year": 1277, "place": "Juju (Zhuozhou)", "lat": 39.49, "lon": 115.97, "note": "Where the roads part, he takes the western one.", "city": "zhuozhou"},
     {"year": 1277, "place": "Taianfu (Taiyuan)", "lat": 37.87, "lon": 112.55, "note": "Vineyards, and workshops making arms for the Khan's armies.", "city": "taiyuan"},
     {"year": 1277, "place": "Pianfu (Pingyang)", "lat": 36.09, "lon": 111.52, "note": "A great city of merchants and silk."},
     {"year": 1277, "place": "The Caramoran (Yellow River)", "lat": 34.83, "lon": 110.3, "note": "Too wide and deep to bridge; he crosses by boat. Ginger and silk on the far bank.", "confidence": "medium"},
@@ -19,7 +19,7 @@
     {"year": 1278, "place": "Acbalec Manzi (Hanzhong)", "lat": 33.07, "lon": 107.03, "note": "Twenty days through the valleys of the Qinling, with forests full of 'lions' (tigers), bears and deer.", "confidence": "medium"},
     {"year": 1278, "place": "Sindufu (Chengdu)", "lat": 30.66, "lon": 104.06, "note": "A great city crossed by wide rivers, with bridges roofed over, where merchants keep their stalls.", "city": "chengdu"},
     {"year": 1278, "place": "Tebet", "lat": 30.0, "lon": 103.0, "note": "A country laid waste by Möngke's wars. Travellers burn green canes at night; they burst so loudly that wild beasts flee.", "confidence": "medium"},
-    {"year": 1278, "place": "Caindu (Xichang)", "lat": 27.9, "lon": 102.26, "note": "A lake that yields pearls, and cakes of salt stamped with the Khan's mark, used as money.", "confidence": "medium"},
+    {"year": 1278, "place": "Caindu (Xichang)", "lat": 27.9, "lon": 102.26, "note": "A lake that yields pearls, and cakes of salt stamped with the Khan's mark, used as money.", "confidence": "medium", "city": "xichang"},
     {"year": 1278, "place": "The Brius (Jinsha River)", "lat": 26.1, "lon": 102.25, "note": "Gold dust in the river, which gave it its Chinese name, Jinsha, 'golden sand'.", "confidence": "medium"},
     {"year": 1278, "place": "Yachi (Kunming)", "lat": 25.04, "lon": 102.7, "note": "A great city of merchants. Cowrie shells serve as money, and people eat raw meat.", "city": "kunming"},
     {"year": 1278, "place": "Carajan (Dali)", "lat": 25.6, "lon": 100.2, "note": "Great serpents with jaws that could swallow a man: crocodiles. This was the old kingdom of Dali, which Kublai himself conquered in 1253.", "city": "dali"},

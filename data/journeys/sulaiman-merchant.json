@@ -11,11 +11,11 @@
   "stops": [
     {"year": 850, "place": "Siraf", "lat": 27.67, "lon": 52.34, "note": "The great port of the Gulf, where cargoes are loaded for China.", "city": "siraf"},
     {"year": 850, "place": "Muscat", "lat": 23.59, "lon": 58.41, "note": "The ships take on water before the open sea.", "city": "muscat", "by": "sea"},
-    {"year": 850, "place": "Kulam Mali", "lat": 8.88, "lon": 76.6, "note": "A month's sail to Quilon on the Malabar coast, where Chinese ships pay a toll.", "by": "sea"},
+    {"year": 850, "place": "Kulam Mali", "lat": 8.88, "lon": 76.6, "note": "A month's sail to Quilon on the Malabar coast, where Chinese ships pay a toll.", "by": "sea", "city": "quilon"},
     {"waypoint": true, "lat": 7.6, "lon": 77.4},
     {"waypoint": true, "lat": 5.7, "lon": 80.6},
     {"year": 850, "place": "Lanjabalus", "lat": 8.0, "lon": 93.5, "note": "The Nicobar Islands, where islanders row out to trade ambergris for iron.", "by": "sea"},
-    {"year": 851, "place": "Kalah", "lat": 5.9, "lon": 100.3, "note": "Kalah Bar on the Malay coast, a market for tin.", "by": "sea"},
+    {"year": 851, "place": "Kalah", "lat": 5.9, "lon": 100.3, "note": "Kalah Bar on the Malay coast, a market for tin.", "by": "sea", "city": "kedah"},
     {"waypoint": true, "lat": 3.4, "lon": 100.4},
     {"waypoint": true, "lat": 1.2, "lon": 103.8},
     {"waypoint": true, "lat": 2.8, "lon": 104.4},

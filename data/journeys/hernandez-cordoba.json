@@ -11,7 +11,7 @@
   "stops": [
     {"year": 1517, "place": "Havana", "lat": 23.13, "lon": -82.38, "note": "Three ships and 110 men.", "city": "havana", "date": "February 1517"},
     {"year": 1517, "place": "Cabo Catoche", "lat": 21.6, "lon": -87.1, "note": "A town they call 'Great Cairo' for its size.", "date": "March 1517"},
-    {"year": 1517, "place": "Campeche", "lat": 19.84, "lon": -90.53, "note": "Temples and painted walls; they are told to leave."},
+    {"year": 1517, "place": "Campeche", "lat": 19.84, "lon": -90.53, "note": "Temples and painted walls; they are told to leave.", "city": "campeche"},
     {"year": 1517, "place": "Champotón", "lat": 19.35, "lon": -90.72, "note": "Attacked by Maya warriors; half the men are killed and Córdoba is mortally wounded."},
     {"year": 1517, "place": "Florida", "lat": 25.5, "lon": -81.1, "note": "Driven to Florida looking for water."},
     {"year": 1517, "place": "Havana", "lat": 23.13, "lon": -82.38, "note": "Córdoba dies of his wounds; his report spreads through Cuba.", "city": "havana"}

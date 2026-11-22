@@ -14,7 +14,7 @@
     {"year": 921, "place": "Rayy", "lat": 35.59, "lon": 51.43, "note": "Rayy, near today's Tehran.", "city": "rayy"},
     {"year": 921, "place": "Nishapur", "lat": 36.21, "lon": 58.8, "note": "The great city of Khorasan.", "city": "nishapur"},
     {"year": 921, "place": "Bukhara", "lat": 39.77, "lon": 64.42, "note": "Received by the Samanid emir.", "city": "bukhara"},
-    {"year": 922, "place": "Gurganj, Khwarazm", "lat": 42.3, "lon": 59.15, "note": "Winter so cold that beards freeze to blocks of ice."},
+    {"year": 922, "place": "Gurganj, Khwarazm", "lat": 42.3, "lon": 59.15, "note": "Winter so cold that beards freeze to blocks of ice.", "city": "gurganj"},
     {"year": 922, "place": "The Oghuz steppe", "lat": 45.5, "lon": 55.0, "note": "Among the Oghuz Turks, whose customs he describes with curiosity and disapproval."},
     {"year": 922, "place": "The Yayiq (Ural river)", "lat": 51.2, "lon": 51.4, "note": "Crossing the rivers on rafts of camel skin."},
     {"year": 922, "place": "Bulghar", "lat": 54.98, "lon": 49.06, "note": "Meets the Volga Bulghar king, and the Rus traders, whose chieftain's ship burial he witnesses.", "date": "May 922", "city": "bulghar"},

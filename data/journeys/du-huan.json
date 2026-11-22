@@ -9,7 +9,7 @@
   "source": "du-huan",
   "confidence": "medium",
   "stops": [
-    {"year": 751, "place": "Talas", "lat": 42.52, "lon": 72.24, "note": "Taken prisoner when Gao Xianzhi's army is defeated."},
+    {"year": 751, "place": "Talas", "lat": 42.52, "lon": 72.24, "note": "Taken prisoner when Gao Xianzhi's army is defeated.", "city": "taraz"},
     {"year": 751, "place": "Samarkand", "lat": 39.65, "lon": 66.96, "note": "Through Sogdiana.", "city": "samarkand"},
     {"year": 752, "place": "Merv", "lat": 37.66, "lon": 62.19, "note": "The Abbasids' base in Khorasan.", "city": "merv", "confidence": "low"},
     {"year": 754, "place": "Kufa", "lat": 32.03, "lon": 44.4, "note": "The Abbasid capital; Chinese weavers and painters work there.", "city": "kufa"},

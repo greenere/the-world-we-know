@@ -9,7 +9,7 @@
   "source": "raposo-tavares",
   "confidence": "medium",
   "stops": [
-    {"year": 1648, "place": "São Paulo", "lat": -23.55, "lon": -46.63, "note": "Some two hundred Paulistas and a thousand Tupi set out in May."},
+    {"year": 1648, "place": "São Paulo", "lat": -23.55, "lon": -46.63, "note": "Some two hundred Paulistas and a thousand Tupi set out in May.", "city": "sao-paulo"},
     {"year": 1648, "place": "Down the Tietê", "lat": -20.7, "lon": -51.6, "note": "By canoe down the Tietê to the Paraná.", "by": "river"},
     {"year": 1648, "place": "Itatim missions", "lat": -20.5, "lon": -56.5, "note": "They fall on the Jesuit missions on the Paraguay.", "by": "land"},
     {"year": 1649, "place": "Chiquitos", "lat": -16.5, "lon": -60.5, "note": "West across the swamps and scrub of the Chaco.", "by": "land"},

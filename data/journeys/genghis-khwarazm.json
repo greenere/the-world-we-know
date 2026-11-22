@@ -18,7 +18,7 @@
     {"year": 1221, "place": "Indus River", "lat": 33.0, "lon": 71.6, "note": "Jalal al-Din spurs his horse into the river and escapes to India.", "date": "November 1221"},
     {"year": 1222, "place": "Hindu Kush", "lat": 35.0, "lon": 69.2, "note": "Summer in the cool of the mountains, where the Daoist master Changchun reaches his camp.", "date": "May 1222", "by": "land"},
     {"year": 1222, "place": "Samarkand", "lat": 39.65, "lon": 66.96, "note": "He winters by the city, and hears Changchun on the Dao.", "city": "samarkand", "date": "November 1222"},
-    {"year": 1223, "place": "Sayram", "lat": 42.3, "lon": 69.77, "note": "North across the Syr Darya; Changchun takes his leave here.", "date": "April 1223", "by": "land", "confidence": "medium"},
+    {"year": 1223, "place": "Sayram", "lat": 42.3, "lon": 69.77, "note": "North across the Syr Darya; Changchun takes his leave here.", "date": "April 1223", "by": "land", "confidence": "medium", "city": "sayram"},
     {"year": 1224, "place": "Black Irtysh", "lat": 47.9, "lon": 85.5, "note": "Summer on the Irtysh, where Subutai rejoins him from the west.", "date": "July 1224", "by": "land", "confidence": "low"},
     {"year": 1225, "place": "Tuul River", "lat": 47.9, "lon": 106.9, "note": "Home to the steppe after six years."}
   ],

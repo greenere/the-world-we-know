@@ -10,9 +10,9 @@
   "confidence": "medium",
   "stops": [
     {"year": 1870, "place": "Zanzibar", "lat": -6.16, "lon": 39.19, "note": "He sets out with a large caravan for the interior.", "city": "zanzibar"},
-    {"year": 1870, "place": "Bagamoyo", "lat": -6.44, "lon": 38.9, "note": "The mainland port where the caravan road begins.", "by": "sea"},
-    {"year": 1870, "place": "Tabora", "lat": -5.02, "lon": 32.8, "note": "The Arab and Swahili trading town of Unyanyembe.", "by": "land"},
-    {"year": 1871, "place": "Ujiji", "lat": -4.91, "lon": 29.68, "note": "Across Lake Tanganyika into the Congo basin.", "by": "land"},
+    {"year": 1870, "place": "Bagamoyo", "lat": -6.44, "lon": 38.9, "note": "The mainland port where the caravan road begins.", "by": "sea", "city": "bagamoyo"},
+    {"year": 1870, "place": "Tabora", "lat": -5.02, "lon": 32.8, "note": "The Arab and Swahili trading town of Unyanyembe.", "by": "land", "city": "tabora"},
+    {"year": 1871, "place": "Ujiji", "lat": -4.91, "lon": 29.68, "note": "Across Lake Tanganyika into the Congo basin.", "by": "land", "city": "ujiji"},
     {"year": 1874, "place": "Kasongo", "lat": -4.45, "lon": 26.66, "note": "His capital in Manyema, ruling a wide country by force.", "by": "land"},
     {"year": 1876, "place": "Nyangwe", "lat": -4.22, "lon": 26.18, "note": "He agrees to escort Stanley down the Lualaba.", "by": "land", "date": "October 1876"},
     {"year": 1882, "place": "Zanzibar", "lat": -6.16, "lon": 39.19, "note": "Back on the coast after twelve years, rich in ivory.", "city": "zanzibar", "by": "land"},

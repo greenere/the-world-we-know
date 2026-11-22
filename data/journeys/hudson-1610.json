@@ -15,7 +15,7 @@
     {"year": 1610, "place": "Hudson Bay", "lat": 58.0, "lon": -84.0, "note": "South along the east coast of the bay."},
     {"year": 1611, "place": "James Bay", "lat": 52.0, "lon": -80.0, "note": "Frozen in for the winter; starvation and quarrels.", "date": "November 1610"},
     {"year": 1611, "place": "James Bay", "lat": 52.5, "lon": -79.5, "note": "The mutineers set Hudson adrift.", "date": "June 1611"},
-    {"year": 1611, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "Eight survivors bring the Discovery home.", "date": "October 1611"}
+    {"year": 1611, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "Eight survivors bring the Discovery home.", "date": "October 1611", "city": "plymouth"}
   ],
   "informs": [
     {"region": "hudson-bay", "level": 3, "homeKnows": 1612, "confidence": "high"}

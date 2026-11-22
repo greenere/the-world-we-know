@@ -9,7 +9,7 @@
   "source": "cook-journals",
   "confidence": "high",
   "stops": [
-    {"year": 1776, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "The Resolution sails; the Discovery under Clerke follows.", "date": "12 July 1776"},
+    {"year": 1776, "place": "Plymouth", "lat": 50.37, "lon": -4.14, "note": "The Resolution sails; the Discovery under Clerke follows.", "date": "12 July 1776", "city": "plymouth"},
     {"year": 1776, "place": "Cape Town", "lat": -33.92, "lon": 18.42, "note": "Livestock taken on board for the islands.", "city": "cape-town"},
     {"year": 1777, "place": "Tasmania", "lat": -43.3, "lon": 147.3, "note": "Adventure Bay, Van Diemen's Land."},
     {"year": 1777, "place": "Tonga", "lat": -21.14, "lon": -175.2, "note": "Three months in Tonga.", "city": "nukualofa"},

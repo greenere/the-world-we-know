@@ -15,7 +15,7 @@
     {"year": 402, "place": "Purushapura", "lat": 34.01, "lon": 71.58, "note": "Over the Pamirs into Gandhara.", "city": "peshawar"},
     {"year": 404, "place": "Mathura", "lat": 27.49, "lon": 77.67, "note": "A great centre of Buddhist sculpture.", "city": "mathura"},
     {"year": 405, "place": "Pataliputra", "lat": 25.61, "lon": 85.14, "note": "Three years copying texts in the Gupta capital.", "city": "pataliputra"},
-    {"year": 409, "place": "Tamralipti", "lat": 22.3, "lon": 87.92, "note": "Takes ship for the Lion Kingdom."},
+    {"year": 409, "place": "Tamralipti", "lat": 22.3, "lon": 87.92, "note": "Takes ship for the Lion Kingdom.", "city": "tamralipti"},
     {"waypoint": true, "lat": 16.0, "lon": 85.5},
     {"waypoint": true, "lat": 9.5, "lon": 82.0},
     {"year": 410, "place": "Anuradhapura", "lat": 8.35, "lon": 80.39, "note": "Two years in Sri Lanka; seeing a fan from China, he weeps with homesickness.", "city": "anuradhapura"},

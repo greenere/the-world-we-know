@@ -15,7 +15,7 @@
     {"year": 1534, "place": "Rio Grande", "lat": 26.4, "lon": -98.6, "note": "After six years enslaved and then trading, four men escape inland."},
     {"year": 1535, "place": "La Junta de los Ríos", "lat": 29.56, "lon": -104.4, "note": "Famous as healers, they are passed from village to village."},
     {"year": 1536, "place": "Sonora valley", "lat": 29.5, "lon": -110.4, "note": "Villagers tell of great towns to the north and give them turquoise and emeralds."},
-    {"year": 1536, "place": "Culiacán", "lat": 24.8, "lon": -107.4, "note": "They meet Spanish slavers, to the soldiers' astonishment.", "date": "April 1536"},
+    {"year": 1536, "place": "Culiacán", "lat": 24.8, "lon": -107.4, "note": "They meet Spanish slavers, to the soldiers' astonishment.", "date": "April 1536", "city": "culiacan"},
     {"year": 1536, "place": "Mexico City", "lat": 19.43, "lon": -99.13, "note": "Received by the viceroy; their report sets off the search for Cíbola.", "city": "tenochtitlan", "date": "July 1536"}
   ],
   "informs": [

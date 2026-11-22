@@ -53,7 +53,7 @@
     {"waypoint": true, "lat": -15.0, "lon": 110.0},
     {"waypoint": true, "lat": -25.0, "lon": 90.0},
     {"year": 1522, "place": "The southern Indian Ocean", "lat": -35.0, "lon": 60.0, "note": "Elcano keeps far south to avoid Portuguese ships."},
-    {"year": 1522, "place": "Cape of Good Hope", "lat": -34.36, "lon": 18.47, "note": "Rounded after weeks of storms.", "date": "May 1522"},
+    {"year": 1522, "place": "Cape of Good Hope", "lat": -34.36, "lon": 18.47, "note": "Rounded after weeks of storms.", "date": "May 1522", "city": "cape-of-good-hope"},
     {"waypoint": true, "lat": -25.0, "lon": 8.0},
     {"waypoint": true, "lat": -10.0, "lon": -5.0},
     {"waypoint": true, "lat": 5.0, "lon": -18.0},
