@@ -31,6 +31,21 @@ export class Samples {
   private manifest: Promise<Manifest | null> | null = null;
   private loaded = new Map<string, {notes: number[]; buffers: AudioBuffer[]; held: boolean; gain: number}>();
   private loading = new Map<string, Promise<boolean>>();
+  /** Every fetch still under way, so an offline render can wait for its instruments rather than stand in for them. */
+  private pending = new Set<Promise<unknown>>();
+
+  private track<T>(p: Promise<T>): Promise<T> {
+    this.pending.add(p);
+    void p.finally(() => this.pending.delete(p));
+    return p;
+  }
+
+  /** Resolves once nothing is loading (including what finishing loads start). */
+  async settled(): Promise<void> {
+    while (this.pending.size) await Promise.allSettled([...this.pending]);
+    // What a load's own .then does with it (parsing a MIDI piece) runs before this returns.
+    await null;
+  }
 
   constructor(
     private ctx: BaseAudioContext,
@@ -65,7 +80,7 @@ export class Samples {
       }
     });
     this.loading.set(id, p);
-    return p;
+    return this.track(p);
   }
 
   /** Play a note on a loaded instrument; false if it is not loaded yet. */
@@ -122,12 +137,8 @@ export class Samples {
   }
 
   /** Fetch a file served beside the samples (a MIDI piece), or null. */
-  async file(path: string): Promise<ArrayBuffer | null> {
-    try {
-      return await this.fetcher(audioUrl(path));
-    } catch {
-      return null;
-    }
+  file(path: string): Promise<ArrayBuffer | null> {
+    return this.track(this.fetcher(audioUrl(path)).catch(() => null));
   }
 
   /** Decode a whole recording (for traditions heard from a recording rather than composed). */

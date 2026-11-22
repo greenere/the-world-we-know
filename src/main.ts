@@ -25,6 +25,7 @@ import {atYear, buildJourneyGeo, km, legDuration, placeAt, progressForYear, span
 import {createMap} from './map/basemap';
 import {type CityView, cityStatus, clampLat, type InventionView, type LivingPoint, OverlayModel, type RouteView, type Traveller} from './map/overlay';
 import {WideningFrame} from './map/widen';
+import {Capture, captureOptions} from './capture';
 import {Sight} from './sight';
 import {DEFAULT_STATE, isListPanel, type ListPanel, readUrl, type Shelf, SHELVES, type State, Store, writeUrl} from './state';
 import {formatRange, formatYear, PRESENT, START} from './time';
@@ -123,6 +124,8 @@ class App {
   private music = new Music(() => this.hearing());
   private travellerKey = '';
   private travellerAt: [number, number] | null = null;
+  /** Capture mode (?capture=1): the map alone, framed for a video and played by the capture itself. */
+  capture: Capture | null = null;
 
   /**
    * What the music should play now. A tradition picked in the settings, or, while following a journey, the
@@ -243,8 +246,25 @@ class App {
     this.map.addControl(this.overlay as unknown as IControl);
     this.model = new OverlayModel({data, grid, field: this.field, map: this.map});
     this.widen = new WideningFrame(grid, this.field, this.map);
+    if (captureOptions()) {
+      // A video frames the known world close and widens only as it reaches the edge.
+      this.widen.fillTo = 0.78;
+      this.widen.outgrown = 0.97;
+    }
 
     this.ui = this.buildUi();
+    const co = captureOptions();
+    if (co) {
+      this.capture = new Capture({data, store: this.store, geo: id => this.geo(id), playSeconds: PLAY_SECONDS, hearing: () => this.hearing()}, co);
+      for (const n of this.uiNodes) n.style.display = 'none';
+      // The timeline's moments are told in the capture's own caption.
+      const timeline = this.ui.timeline;
+      const show = timeline.showCaption.bind(timeline);
+      timeline.showCaption = (text, color) => {
+        show(text, color);
+        this.capture?.caption(text, color);
+      };
+    }
     // The music button in the top bar and the settings both show the music's state.
     this.music.onChange = () => {
       this.ui.top.showMusic();
@@ -383,6 +403,13 @@ class App {
       if (g.journey.globe && url.globe === undefined) s.globe = true;
     }
     if (s.region) s.regionCell = this.labelCell(s.region);
+    if (captureOptions()) {
+      s.playing = false;
+      s.panel = 'none';
+      // A journey shows its whole route unless asked to follow (view=follow): a video needs the map around it.
+      if (s.journey) s.follow = new URLSearchParams(location.search).get('view') === 'follow';
+      else if (new URLSearchParams(location.search).get('camera') !== 'free') s.autoCamera = true;
+    }
     return s;
   }
 
@@ -522,7 +549,8 @@ class App {
     const s = this.store.state;
     const geo = this.geo(s.journey);
 
-    if (s.playing || this.travelTarget !== null) this.advance(dt, s, geo);
+    this.capture?.tick(dt);
+    if (this.store.state.playing || this.travelTarget !== null) this.advance(dt, this.store.state, geo);
 
     const st = this.store.state;
     const highlight = st.region ? this.data.regionIndex.get(st.region) ?? null : null;
@@ -559,7 +587,7 @@ class App {
     if (geo && st.follow) this.followCamera(st, geo, false);
     const card = !!(st.city || st.region || st.invention || st.book || st.living);
     if (st.autoCamera && !geo && !st.scrubbing && !card) {
-      this.widen.update(st.vps, st.year, homeAt(this.data.vp[st.vps[0]], st.year).lon, this.widenPadding(), st.globe, now);
+      this.widen.update(st.vps, st.year, homeAt(this.data.vp[st.vps[0]], st.year), this.widenPadding(), st.globe, now);
     }
     requestAnimationFrame(t => this.frame(t));
   }
@@ -797,6 +825,7 @@ class App {
   /** Room the panels take, so "centred" means centred in the open part of the map: the cards on the right, and
    * the left panel when a list is open. */
   private cameraPadding() {
+    if (this.capture) return this.capture.padding();
     const s = this.store.state;
     const narrow = innerWidth < 760;
     return narrow
@@ -806,6 +835,7 @@ class App {
 
   /** The widening frame runs with no card or journey open: only the top bar and the timeline cover the map. */
   private widenPadding() {
+    if (this.capture) return this.capture.framePadding();
     const s = this.store.state;
     const narrow = innerWidth < 760;
     return narrow ? {top: 110, bottom: 150, left: 16, right: 16} : {top: 90, bottom: 130, left: isListPanel(s.panel) ? 400 : 40, right: 40};
@@ -830,6 +860,7 @@ class App {
 
   /** A comfortable zoom for following: closer for short legs (Everest), wider for ocean crossings. */
   private followZoom(g: JourneyGeo) {
+    if (this.capture?.opts.zoom) return this.capture.opts.zoom;
     const kms = g.legs.filter(l => l.onMap && l.km > 0).map(l => l.km).sort((a, b) => a - b);
     if (!kms.length) return 3;
     const median = kms[Math.floor(kms.length / 2)];
@@ -839,7 +870,9 @@ class App {
 
   /** Keep the traveller centred: glide along legs frame by frame, fly across jumps. */
   private followCamera(s: State, g: JourneyGeo, entering: boolean) {
-    if (this.followPaused || (performance.now() < this.flightUntil && !entering)) return;
+    // Our own flight runs to its end, however late its frames come (a slow device, a page still loading): a
+    // follow step mid-flight would stop it short of its zoom.
+    if (this.followPaused || ((performance.now() < this.flightUntil || this.map.isMoving()) && !entering)) return;
     const {pos} = travelled(g, s.progress);
     if (!pos) return;
     const center: [number, number] = [pos[0], clampLat(pos[1], s.globe)];
@@ -877,7 +910,9 @@ class App {
     }
     if (!g.bounds) return;
     const narrow = innerWidth < 760;
-    const pad = narrow
+    const pad = this.capture
+      ? this.capture.padding()
+      : narrow
       ? {top: 90, bottom: Math.round(innerHeight * 0.45), left: 30, right: 30}
       : {top: 110, bottom: 170, left: isListPanel(this.store.state.panel) ? 420 : 60, right: (document.querySelector<HTMLElement>('.card-stack')?.offsetWidth ?? 392) + 50};
     const [[w, sb], [e, n]] = g.bounds;
@@ -1332,6 +1367,7 @@ async function main() {
     const grid = buildGrid(data.grid);
     const app = new App(data, grid);
     (window as unknown as {atlas: App}).atlas = app;
+    if (app.capture) (window as unknown as {capture: Capture}).capture = app.capture;
     const done = () => {
       loading.classList.add('done');
       setTimeout(() => loading.remove(), 900);

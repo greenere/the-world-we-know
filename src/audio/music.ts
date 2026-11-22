@@ -307,6 +307,10 @@ export interface Score {
   resume(time: number): void;
   /** The tradition playing now, and the piece if it has a name. */
   current(): {tradition: string; piece: string | null} | null;
+  /** Start loading what a hearing will play: its instruments and its MIDI pieces. */
+  preload(h: Hearing): void;
+  /** Resolves once every instrument and piece asked for so far has loaded. */
+  settled(): Promise<void>;
 }
 
 /** How long the place must stay the same before the music follows it, in seconds. */
@@ -579,6 +583,11 @@ export function createScore(ctx: BaseAudioContext, rand: () => number = Math.ran
       current?.resume(time);
     },
     current: () => (current ? {tradition: current.id, piece: current.piece?.() ?? null} : null),
+    preload(h) {
+      for (const m of h.ensemble ?? []) if (m.sample) void samples.load(m.sample);
+      preloadMidi(samples, h.tunes);
+    },
+    settled: () => samples.settled(),
   };
 }
 

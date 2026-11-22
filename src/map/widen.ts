@@ -1,5 +1,5 @@
 import {cellToLatLng} from 'h3-js';
-import type {Map as MlMap, PaddingOptions} from 'maplibre-gl';
+import {type Map as MlMap, MercatorCoordinate, type PaddingOptions} from 'maplibre-gl';
 import type {FogField} from '../fog/field';
 import type {Grid} from '../fog/grid';
 import type {VpId} from '../types';
@@ -14,8 +14,16 @@ const FILL = 0.6;
 /** …and the frame widens once the known world fills more than this, or spills out of the view. */
 const OUTGROWN = 0.85;
 const MAX_ZOOM = 4.5;
-/** Mercator's poles would swell any frame that reached them. */
-const LAT_LIMIT: [number, number] = [-58, 74];
+/** Mercator's poles would swell any frame that reached them: the Norse in Greenland would size Europe's
+ * frame to the whole world centuries before the Americas. */
+const LAT_LIMIT: [number, number] = [-58, 70];
+/** A frame round the whole world shows the known band of latitudes, from the Arctic coasts down to the
+ * southern capes (Cape Town, Sydney, Buenos Aires), with home as near its centre as that allows. */
+const WORLD_NORTH = 70;
+const WORLD_SOUTH = -46;
+/** On a wide, short screen the band would not fit one world's width: the frame may draw back this much
+ * further (zoom levels), showing a sliver of the map's next copy at each side, rather than cut the south off. */
+const WORLD_SLACK = 0.4;
 /** A known world with no empty stretch of longitude this wide circles the globe: it centres on home. */
 const GLOBAL_GAP = 60;
 const CHECK_MS = 500;
@@ -26,7 +34,12 @@ interface Box {
   e: number;
   s: number;
   n: number;
+  /** Known all the way round: framed on home, not on the box. */
+  global?: boolean;
 }
+
+const mercY = (lat: number) => MercatorCoordinate.fromLngLat({lng: 0, lat}).y;
+const latOfY = (y: number) => new MercatorCoordinate(0, y, 0).toLngLat().lat;
 
 /**
  * The auto camera's widening frame: the camera opens on what the viewpoint knows and steps outward as that
@@ -38,6 +51,9 @@ export class WideningFrame {
   private lat: Float32Array | null = null;
   private started = false;
   private nextCheck = 0;
+  /** How much of the view the framed known world fills, and how full it may grow before the frame widens. */
+  fillTo = FILL;
+  outgrown = OUTGROWN;
 
   constructor(
     private grid: Grid,
@@ -51,16 +67,20 @@ export class WideningFrame {
     this.nextCheck = 0;
   }
 
-  update(vps: VpId[], year: number, home: number, padding: PaddingOptions, globe: boolean, now: number) {
+  update(vps: VpId[], year: number, home: {lon: number; lat: number}, padding: PaddingOptions, globe: boolean, now: number) {
     if (now < this.nextCheck) return;
     this.nextCheck = now + CHECK_MS;
-    const box = this.knownBox(vps, year, home);
+    const box = this.knownBox(vps, year, home.lon);
     if (!box) return;
     const {map} = this;
     const zoom = map.getZoom();
+    if (box.global && !globe) {
+      this.frameWorld(home, padding, box);
+      return;
+    }
     if (this.started) {
       const fill = this.fill(box, padding);
-      if (fill === null || fill <= OUTGROWN) return;
+      if (fill === null || fill <= this.outgrown) return;
     }
     const cam = map.cameraForBounds(
       [
@@ -73,12 +93,46 @@ export class WideningFrame {
     // The globe turns to the known world rather than zooming; the flat map never closes in within a run.
     // Never so far out that the flat map repeats: one world (512 px at zoom 0) spans the view at the widest.
     const widest = Math.max(map.getMinZoom(), Math.log2(map.getContainer().clientWidth / 512));
-    let next = Math.min(MAX_ZOOM, Math.max(widest, cam.zoom + Math.log2(FILL)));
+    let next = Math.min(MAX_ZOOM, Math.max(widest, cam.zoom + Math.log2(this.fillTo)));
     if (globe) next = zoom;
     else if (this.started) next = Math.min(next, zoom);
     this.started = true;
     this.nextCheck = now + EASE_MS + CHECK_MS;
     map.easeTo({center: cam.center, zoom: next, padding, duration: EASE_MS});
+  }
+
+  /**
+   * The whole world, with home at the centre: on its own longitude, and on its own latitude as far as the
+   * view allows without passing Cape Horn or the Arctic coasts (a Mercator world centred on the equator
+   * would push Europe to the top edge and spend a third of the picture on the Southern Ocean).
+   */
+  private frameWorld(home: {lon: number; lat: number}, padding: PaddingOptions, box: Box) {
+    const {map} = this;
+    const el = map.getContainer();
+    const h = el.clientHeight;
+    const top = padding.top ?? 0;
+    const bottom = padding.bottom ?? 0;
+    const room = Math.max(40, h - top - bottom);
+    // The band to show: what is known, from the Arctic coasts to the southern capes.
+    const yN = mercY(Math.min(box.n, WORLD_NORTH));
+    const yS = mercY(Math.max(box.s, WORLD_SOUTH));
+    // One world across the width, or a little further out if the band would not fit the height.
+    const across = Math.log2(el.clientWidth / 512);
+    const fits = Math.log2(room / (512 * (yS - yN)));
+    const zoom = Math.max(map.getMinZoom(), across - WORLD_SLACK, Math.min(across, fits));
+    const world = 512 * 2 ** zoom;
+    // Home at the centre, moved only as far as keeps the band inside the padded view; a band taller than
+    // the view loses as much at the top as at the bottom.
+    const half = room / 2 / world;
+    const lo = yN + half;
+    const hi = yS - half;
+    const y = lo <= hi ? Math.max(lo, Math.min(hi, mercY(home.lat))) : (lo + hi) / 2;
+    const center: [number, number] = [home.lon, latOfY(y)];
+    const c = map.getCenter();
+    if (this.started && Math.abs(zoom - map.getZoom()) < 0.01 && Math.abs(((c.lng - center[0] + 540) % 360) - 180) < 0.5 && Math.abs(c.lat - center[1]) < 0.5) return;
+    this.started = true;
+    this.nextCheck = performance.now() + EASE_MS + CHECK_MS;
+    map.easeTo({center, zoom, padding, duration: EASE_MS});
   }
 
   /** How much of the padded view the box fills (1 = edge to edge), or Infinity once any of it spills out. */
@@ -126,7 +180,7 @@ export class WideningFrame {
     ys.sort((a, b) => a - b);
     const q = (v: number[], f: number) => v[Math.min(v.length - 1, Math.max(0, Math.round(f * (v.length - 1))))];
     const [s, n] = [q(ys, TRIM), q(ys, 1 - TRIM)];
-    if (cut < GLOBAL_GAP) return {w: home - 180, e: home + 180, s, n};
+    if (cut < GLOBAL_GAP) return {w: home - 180, e: home + 180, s, n, global: true};
     const unwrapped = xs.map((x, i) => (i < start ? x + 360 : x)).sort((a, b) => a - b);
     return {w: q(unwrapped, TRIM), e: q(unwrapped, 1 - TRIM), s, n};
   }
