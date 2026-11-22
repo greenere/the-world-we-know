@@ -30,6 +30,9 @@ export interface CaptureOptions {
   pause: number;
   /** A journey: how much faster than the app's own pace the traveller moves between stops. */
   travel: number;
+  /** A journey: the whole video faster (or slower) by this factor, both the holds on the sketches and the
+   * travel between stops. At 1 each story is held long enough to read in full. */
+  pace: number;
   /** A journey: the last stop to travel to (1-based, as in ?stop=), or the whole journey. */
   until: number | null;
   /** Under a journey's sketch: its caption (the story of the scene), the stop's one-line note, or nothing. */
@@ -54,6 +57,7 @@ export function captureOptions(): CaptureOptions | null {
     sketch: num('sketch', 2.6),
     pause: num('pause', 0.5),
     travel: num('travel', 1.6),
+    pace: Math.max(0.25, num('pace', 1)),
     until: q.has('until') ? num('until', 0) : null,
     story: q.get('story') === 'note' ? 'note' : q.get('story') === 'none' ? 'none' : 'caption',
     credit: q.get('credit') ?? 'greenere.github.io/the-world-we-know',
@@ -208,7 +212,9 @@ export class Capture {
     const H = innerHeight;
     const head = this.head.getBoundingClientRect();
     const foot = this.foot.getBoundingClientRect();
-    const pad = {top: Math.round(head.bottom + 12), bottom: Math.round(H - foot.top + 12), left: 32, right: 32};
+    // A route's far end is kept off the frame's edge.
+    const side = Math.round(W * 0.05);
+    const pad = {top: Math.round(head.bottom + 12), bottom: Math.round(H - foot.top + 12), left: side, right: side};
     if (this.plate) {
       const p = this.plate.getBoundingClientRect();
       if (W > H) pad.right = Math.round(W - p.left + 16);
@@ -356,7 +362,7 @@ export class Capture {
       case 'travel': {
         const k = this.stop;
         const dur = k >= geo.stops.length - 1 ? 2.4 : legDuration(geo.legs[k]);
-        const next = s.progress + (dt * this.opts.travel) / dur;
+        const next = s.progress + (dt * this.opts.travel * this.opts.pace) / dur;
         if (next >= k + 1) {
           store.set({progress: k + 1});
           this.arrive(k + 1);
@@ -378,14 +384,14 @@ export class Capture {
     this.pages = this.scenes.filter(d => (d.stop ?? 0) === k);
     this.page = 0;
     if (this.pages.length) this.current = this.pages[0];
-    this.holdLeft = this.pages.length ? this.holdFor(this.pages[0]) : this.opts.pause;
+    this.holdLeft = this.pages.length ? this.holdFor(this.pages[0]) : this.opts.pause / this.opts.pace;
   }
 
   /** Long enough to read the story under a sketch, at about four and a half words a second. */
   private holdFor(d: Depiction): number {
     const story = this.story(d);
     const words = story ? story.split(/\s+/).length : 0;
-    return Math.max(this.opts.sketch, Math.min(12, 1.2 + words / 4.5));
+    return Math.max(this.opts.sketch, Math.min(12, 1.2 + words / 4.5)) / this.opts.pace;
   }
 
   /** What the plate says under a scene: its caption, or its stop's note. */
