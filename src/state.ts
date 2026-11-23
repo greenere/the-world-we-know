@@ -22,7 +22,7 @@ export interface State {
   year: number;
   playing: boolean;
   speed: number;
-  /** Timeline playback: show every journey under way, slowing to `journeySpeed` while one is. */
+  /** Timeline playback: show every journey under way, each given time on screen by its length, times `journeySpeed`. */
   allJourneys: boolean;
   /** Timeline camera: frame what the viewpoint knows and widen with it. Any touch on the map turns it off. */
   autoCamera: boolean;
@@ -99,7 +99,7 @@ export const DEFAULT_STATE: State = {
   allJourneys: false,
   autoCamera: false,
   routes: null,
-  journeySpeed: 0.05,
+  journeySpeed: 1,
   scrubbing: false,
   journey: null,
   progress: 0,

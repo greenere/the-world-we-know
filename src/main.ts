@@ -51,8 +51,11 @@ const EDGE = '#8a6a43';
 const HIGHLIGHT = '#9b2f20';
 /** Seconds to play the whole timeline at 1×. */
 const PLAY_SECONDS = 150;
-/** Journey pace is measured against the average 1× rate: about 17 years a second. */
-const YEARS_PER_SECOND = 2526 / PLAY_SECONDS;
+/** Seconds a journey is given on screen while the timeline plays through it, at journey pace 1×: about two for a
+ * voyage of months, four for one of years, at most twelve for a migration of centuries. */
+const journeySeconds = (years: number) => Math.min(12, 2 + 1.2 * Math.log2(1 + years));
+/** Real seconds over which playback eases between paces, and in which it slows ahead of a journey's start. */
+const EASE_SECONDS = 0.6;
 /** Years a finished journey's trail lingers during playback. */
 const FADE_YEARS = 0.4;
 /** Contemporaries closer than this to the followed traveller are named on the map. */
@@ -522,6 +525,7 @@ class App {
     }
     if (s.playing && !p.playing) {
       this.dwell = 0;
+      this.paceRate = NaN;
       if (s.journey) {
         const g = this.geo(s.journey)!;
         if (s.progress >= stepCount(g) - 1) this.store.set({progress: 0});
@@ -604,9 +608,15 @@ class App {
       const sc = scaleFor(s);
       let x = sc.toX(s.year) + (dt * s.speed) / PLAY_SECONDS;
       let year = sc.fromX(x);
-      if (s.allJourneys) {
-        // Slow to the journey pace while anyone is travelling, and never skip a journey's start.
-        if (this.journeyUnderWay(s.year)) year = Math.min(year, s.year + dt * s.journeySpeed * YEARS_PER_SECOND);
+      if (s.allJourneys && dt > 0) {
+        // Each journey under way gets its own time on screen, so playback slows as much as the shortest of
+        // them needs, eases into and out of that pace, and slows ahead of a start rather than braking at it.
+        const normal = (year - s.year) / dt;
+        const target = Math.min(normal, this.journeyRate(s.year, s.journeySpeed));
+        const k = 1 - Math.exp(-dt / (target < this.paceRate ? EASE_SECONDS / 3 : EASE_SECONDS));
+        this.paceRate = Number.isFinite(this.paceRate) ? Math.exp(Math.log(this.paceRate) + (Math.log(Math.max(target, 1e-6)) - Math.log(this.paceRate)) * k) : target;
+        year = Math.min(year, s.year + dt * this.paceRate);
+        // Never skip a journey's start.
         for (const j of this.data.journeys) {
           const t0 = j.t[0];
           if (t0 > s.year && t0 <= year) year = t0;
@@ -684,6 +694,31 @@ class App {
 
   private journeyUnderWay(year: number) {
     return this.data.journeys.some(j => year >= j.t[0] && year <= j.t[j.t.length - 1] + FADE_YEARS);
+  }
+
+  /** Playback's eased rate in years a second while every journey is shown; NaN until playing starts. */
+  private paceRate = NaN;
+
+  /**
+   * The rate (years a second) the journeys around `year` ask for. Each under way wants `journeySeconds` of its
+   * length on screen; together they share the screen, so the pace is the geometric mean of theirs (a short
+   * voyage during a long migration plays a little quicker than alone, and the migration a little slower). A
+   * journey about to set out asks for a pace that reaches its own after about EASE_SECONDS.
+   */
+  private journeyRate(year: number, factor: number) {
+    const own = (t0: number, t1: number) => (Math.max(t1 - t0, 0.05) / journeySeconds(t1 - t0)) * factor;
+    let logs = 0;
+    let n = 0;
+    let ahead = Infinity;
+    for (const j of this.data.journeys) {
+      const t0 = j.t[0];
+      const t1 = j.t[j.t.length - 1];
+      if (year >= t0 && year <= t1 + FADE_YEARS) {
+        logs += Math.log(own(t0, t1));
+        n++;
+      } else if (t0 > year) ahead = Math.min(ahead, own(t0, t1) + (t0 - year) / EASE_SECONDS);
+    }
+    return Math.min(n ? Math.exp(logs / n) : Infinity, ahead);
   }
 
   /**

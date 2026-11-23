@@ -10,8 +10,8 @@ import {h, setIcon} from './dom';
 import {icons, inventionIcons, kindIcons} from './icons';
 
 export const SPEEDS = [0.5, 1, 2, 4];
-/** Slower paces used while a journey is under way during timeline playback. */
-export const JOURNEY_SPEEDS = [0.02, 0.05, 0.1, 0.25];
+/** With every journey shown: how much faster or slower than its own pace each journey plays. */
+export const JOURNEY_SPEEDS = [0.5, 1, 2, 4];
 
 const speedLabel = (x: number) => `${x < 0.1 ? String(x).replace(/^0/, '') : x}×`;
 
