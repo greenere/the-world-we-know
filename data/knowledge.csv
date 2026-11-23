@@ -64,10 +64,18 @@ greece,balkans,-430,3,medium,herodotus,
 # Alexander, 334–323 BCE
 # Hellenistic and Roman expansion
 greece,india-north,-300,3,medium,strabo,Megasthenes' Indika
+greece,sri-lanka,-300,2,medium,pliny,Taprobane from Onesicritus and Megasthenes
+greece,bengal,-300,1,medium,strabo,The Gangaridai at the Ganges mouth
+greece,deccan,-300,1,low,pliny,The Andhra kingdom in Megasthenes
 greece,iberia,-206,3,high,strabo,
 greece,balkans,-148,4,high,strabo,Macedonia becomes a province
 rome,ifriqiya,-146,4,high,appian,Carthage destroyed; the province of Africa
 greece,iberia,-133,4,high,strabo,
+greece,malabar,-20,2,medium,strabo,"Under Augustus, 120 ships a year sail from Myos Hormos to India"
+rome,malabar,-20,2,medium,strabo,"Under Augustus, 120 ships a year sail from Myos Hormos to India"
+greece,tamilakam,-20,2,medium,strabo,A Pandyan embassy reaches Augustus
+rome,tamilakam,-20,2,medium,strabo,A Pandyan embassy reaches Augustus
+greece,deccan,60,2,medium,periplus,Paithan and Tagara inland from Barygaza
 rome,iberia,-133,4,high,strabo,
 greece,gaul,-121,3,high,strabo,Gallia Narbonensis
 rome,gaul,-121,3,high,strabo,Gallia Narbonensis
