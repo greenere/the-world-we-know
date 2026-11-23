@@ -318,6 +318,11 @@
         "source": "shiji"
       },
       {
+        "year": 11,
+        "label": "The Yellow River breaks its dikes and finds a new course",
+        "source": "tan-atlas"
+      },
+      {
         "year": 97,
         "label": "Gan Ying reaches the Persian Gulf",
         "source": "houhanshu"
@@ -341,6 +346,11 @@
         "year": 762,
         "label": "Du Huan returns from the Abbasid lands",
         "source": "du-huan"
+      },
+      {
+        "year": 1128,
+        "label": "The Song break the Yellow River's dikes; it turns south into the Huai",
+        "source": "mostern-yellow-river"
       },
       {
         "year": 1225,
@@ -371,6 +381,16 @@
         "year": 1843,
         "label": "Wei Yuan's Illustrated Treatise on the Sea Kingdoms",
         "source": "haiguo-tuzhi"
+      },
+      {
+        "year": 1855,
+        "label": "The Yellow River breaks north at Tongwaxiang, to the Bohai",
+        "source": "mostern-yellow-river"
+      },
+      {
+        "year": 1938,
+        "label": "The Huayuankou dikes are breached; the Yellow River floods south",
+        "source": "muscolino-ecology-war"
       }
     ]
   },

@@ -45,6 +45,12 @@ function graticule() {
   return {type: 'FeatureCollection', features} as GeoJSON.FeatureCollection;
 }
 
+/** Rivers and lakes that moved are drawn only in their own years (`f` from, inclusive; `u` until): the Yellow
+ * River's course of 1495–1855 to the Yellow Sea, of 1855 on to the Bohai; the Aral Sea before it shrank. */
+export function riverFilter(year: number): ExpressionSpecification {
+  return ['all', ['<=', ['coalesce', ['get', 'f'], -1e9], year], ['>', ['coalesce', ['get', 'u'], 1e9], year]];
+}
+
 export function mapStyle(globe: boolean): StyleSpecification {
   const width = (a: number, b: number): ExpressionSpecification => [
     'interpolate',

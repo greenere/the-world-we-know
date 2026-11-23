@@ -28,7 +28,7 @@ from pathlib import Path
 import h3
 import numpy as np
 import shapely
-from shapely.geometry import Point, Polygon, mapping, shape
+from shapely.geometry import LineString, MultiLineString, Point, Polygon, mapping, shape
 from shapely.geometry.polygon import orient
 from shapely.ops import unary_union
 
@@ -140,6 +140,106 @@ def load_natural_earth() -> dict[str, dict]:
     return out
 
 
+def span_props(base: dict, start, until) -> dict:
+    """A river line drawn only from `start` (inclusive) until `until`; either may be open."""
+    out = dict(base)
+    if start is not None:
+        out["f"] = start
+    if until is not None:
+        out["u"] = until
+    return out
+
+
+def river_by_years(g, river: dict, rank) -> list[dict]:
+    """Cut Natural Earth's present-day river into the stretches data/rivers-history.json dates: each stretch is
+    drawn only in the years it carried the river (the Yellow River below Lankao only from 1855)."""
+    stretches = river["modern"]
+    def which(lon):
+        return next((i for i, s in enumerate(stretches) if s["lon_from"] <= lon < s["lon_to"]), None)
+    pieces: dict[int | None, list] = defaultdict(list)
+    for line in (g.geoms if g.geom_type == "MultiLineString" else [g]):
+        cs = list(line.coords)
+        run, key = [cs[0]], None
+        for a, b in zip(cs, cs[1:]):
+            k = which((a[0] + b[0]) / 2)
+            if run[1:] and k != key:
+                pieces[key].append(run)
+                run = [a]
+            key = k
+            run.append(b)
+        if len(run) > 1:
+            pieces[key].append(run)
+    out = []
+    for key, runs in pieces.items():
+        geom = rounded(mapping(MultiLineString(runs)))
+        spans = [[None, None]] if key is None else stretches[key]["spans"]
+        for start, until in spans:
+            out.append({"type": "Feature", "properties": span_props({"r": rank}, start, until), "geometry": geom})
+    return out
+
+
+def catmull_rom(points: list, steps: int = 6) -> list:
+    """A smooth line through the given points, as a river's course is drawn by hand through its towns."""
+    p = [points[0], *points, points[-1]]
+    out = []
+    for i in range(1, len(p) - 2):
+        p0, p1, p2, p3 = (np.array(q, dtype=float) for q in p[i - 1 : i + 3])
+        for s in range(steps):
+            t = s / steps
+            out.append(0.5 * (2 * p1 + (p2 - p0) * t + (2 * p0 - 5 * p1 + 4 * p2 - p3) * t**2 + (-p0 + 3 * p1 - 3 * p2 + p3) * t**3))
+    out.append(np.array(points[-1], dtype=float))
+    return [tuple(q) for q in out]
+
+
+def river_courses(history: dict, land) -> list[dict]:
+    """The courses a river ran in before its present one, each drawn in its own years and cut at the coast."""
+    sources = {r["id"] for r in read_csv(DATA / "sources.csv")}
+    out = []
+    for rid, river in history.items():
+        if rid.startswith("_"):
+            continue
+        for c in river["courses"]:
+            where = f"rivers-history.json {rid}/{c['id']}"
+            if c.get("source") not in sources:
+                fail(f"{where}: unknown source {c.get('source')!r}")
+            if c.get("confidence") not in ("high", "medium", "low"):
+                fail(f"{where}: confidence must be high, medium or low")
+            pts = c["points"] if c.get("smooth") is False else catmull_rom(c["points"])
+            g = LineString(pts).intersection(land).simplify(0.01)
+            if g.is_empty:
+                fail(f"{where}: the course lies entirely at sea")
+                continue
+            props = span_props({"r": 3, "course": f"{rid}/{c['id']}"}, c.get("from"), c.get("until"))
+            out.append({"type": "Feature", "properties": props, "geometry": rounded(mapping(g))})
+    return out
+
+
+def dated_lakes(lakes: dict) -> dict:
+    """Lakes whose shores moved (the Aral Sea, Lake Chad): Natural Earth draws them as they are today, so its
+    polygons give way to the dated outlines in landmark-paths.json, each drawn only in its own years. The
+    basemap lies under the fog, so a lake a viewpoint has only heard of shows at its size in that year."""
+    paths = json.loads((DATA / "landmark-paths.json").read_text(encoding="utf-8"))
+    dated = []
+    for lid, line in paths.items():
+        area = line.get("area") or {}
+        if area.get("texture") != "water":
+            continue
+        outlines = area.get("outlines", [])
+        polys_of = [unary_union([Polygon(p) for p in o.get("polygons", [])]) for o in outlines]
+        whole = unary_union(polys_of)
+        before = len(lakes["features"])
+        lakes["features"] = [f for f in lakes["features"] if not shape(f["geometry"]).intersects(whole)]
+        for k, (o, g) in enumerate(zip(outlines, polys_of)):
+            if g.is_empty:
+                continue  # dried away (Lop Nur from 1972)
+            until = outlines[k + 1].get("from") if k + 1 < len(outlines) else None
+            props = span_props({"lake": lid}, o.get("from"), until)
+            dated.append({"type": "Feature", "properties": props, "geometry": rounded(mapping(orient(g, 1.0) if g.geom_type == "Polygon" else g))})
+        print(f"    {lid}: {before - len(lakes['features'])} modern lake shapes give way to {len(outlines)} dated outlines")
+    lakes["features"] += dated
+    return lakes
+
+
 def build_basemap(ne: dict[str, dict]):
     """Simplify Natural Earth (public domain) into the parchment basemap layers."""
     def polys(fc, tol, keep=lambda p: True):
@@ -159,15 +259,22 @@ def build_basemap(ne: dict[str, dict]):
 
     land = polys(ne["ne_50m_land"], 0.02)
     ice = polys(ne["ne_50m_antarctic_ice_shelves_polys"], 0.03)
-    lakes = polys(ne["ne_50m_lakes"], 0.02, keep=lambda p: (p.get("scalerank") or 0) <= 4)
+    lakes = dated_lakes(polys(ne["ne_50m_lakes"], 0.02, keep=lambda p: (p.get("scalerank") or 0) <= 4))
+    history = json.loads((DATA / "rivers-history.json").read_text(encoding="utf-8"))
+    moved = {r["ne_name"]: r for k, r in history.items() if not k.startswith("_")}
     rivers = []
     for f in ne["ne_50m_rivers_lake_centerlines"]["features"]:
         p = f["properties"]
         if (p.get("scalerank") or 9) > 5 or p.get("featurecla") not in ("River", "Lake Centerline"):
             continue
         g = shape(f["geometry"]).simplify(0.03)
-        if not g.is_empty:
+        if g.is_empty:
+            continue
+        if p.get("featurecla") == "River" and p.get("name") in moved:
+            rivers += river_by_years(g, moved[p["name"]], p.get("scalerank"))
+        else:
             rivers.append({"type": "Feature", "properties": {"r": p.get("scalerank")}, "geometry": rounded(mapping(g))})
+    rivers += river_courses(history, unary_union([shape(f["geometry"]) for f in ne["ne_50m_land"]["features"]]))
     sizes = {
         "basemap/land.json": write_json("basemap/land.json", land),
         "basemap/ice.json": write_json("basemap/ice.json", ice),

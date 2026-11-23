@@ -374,8 +374,8 @@ export const zhUi: Record<string, string> = {
   'Sources and accuracy': '来源与准确性',
   '{regions} regions, {cities} cities, {landmarks} landmarks, {journeys} journeys, {inventions} inventions and {living} plants and animals':
     '{regions}个地区、{cities}座城市、{landmarks}处地标、{journeys}段旅程、{inventions}项发明和{living}个物种',
-  'This first version holds {counts}. Every knowledge change, journey stop, city date, landmark, invention, and arrival of a plant or animal carries a source and a confidence rating, shown on its card. Dates are approximate until each viewpoint has been reviewed by a specialist; Polynesian dates in particular come from archaeology and genetics and carry wide ranges. The basemap is Natural Earth (public domain).':
-    '第一版收录了{counts}。每一次知识变化、每一站旅程、每一个城市年代、每一处地标、每一项发明和物种的每一次传入都附有来源和可信度，显示在各自的卡片上。在每个视角经专家审阅之前，年代都只是近似值；波利尼西亚的年代尤其来自考古学与遗传学，范围很宽。底图来自 Natural Earth（公有领域）。',
+  'This first version holds {counts}. Every knowledge change, journey stop, city date, landmark, invention, and arrival of a plant or animal carries a source and a confidence rating, shown on its card. Dates are approximate until each viewpoint has been reviewed by a specialist; Polynesian dates in particular come from archaeology and genetics and carry wide ranges. The basemap is Natural Earth (public domain); the Yellow River\'s old bed of 1495–1855 follows OpenStreetMap (© OpenStreetMap contributors, ODbL).':
+    '第一版收录了{counts}。每一次知识变化、每一站旅程、每一个城市年代、每一处地标、每一项发明和物种的每一次传入都附有来源和可信度，显示在各自的卡片上。在每个视角经专家审阅之前，年代都只是近似值；波利尼西亚的年代尤其来自考古学与遗传学，范围很宽。底图来自 Natural Earth（公有领域）；1495–1855年的黄河故道取自 OpenStreetMap（© OpenStreetMap 贡献者，ODbL）。',
   Pictures: '图画',
   'The sketches of cities, journeys and inventions are imagined: drawn by an image model from a sourced description of each era, scene or object, in the manner of an explorer’s sketchbook. They are illustrations, not period artworks.':
     '城市、旅程与发明的速写是想象之作：由图像模型根据每个时代、场景或器物的有据描述，仿照探险家速写本的风格绘制。它们是插图，不是当时的艺术品。',

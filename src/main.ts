@@ -22,7 +22,7 @@ import {buildGrid, cellAt, type Grid} from './fog/grid';
 import type {FogLayerUniforms} from './fog/layer';
 import type {JourneyGeo} from './journey-geo';
 import {atYear, buildJourneyGeo, km, legDuration, placeAt, progressForYear, span, stepCount, travelled, yearAt} from './journey-geo';
-import {createMap} from './map/basemap';
+import {createMap, riverFilter} from './map/basemap';
 import {type CityView, cityStatus, clampLat, type InventionView, type LivingPoint, OverlayModel, type RouteView, type Traveller} from './map/overlay';
 import {WideningFrame} from './map/widen';
 import {Capture, captureOptions} from './capture';
@@ -117,6 +117,8 @@ class App {
   private urlTimer = 0;
   private uiNodes: HTMLElement[] = [];
   private highlightFor: number | null = null;
+  /** The year the rivers and lakes are filtered for: those that moved show the course or shore of their time. */
+  private riverYear = NaN;
   private highlightMask: Uint8Array | null = null;
   /** The auto camera on the timeline: frames what the viewpoint knows and widens with it. */
   private widen: WideningFrame;
@@ -557,6 +559,11 @@ class App {
     if (highlight !== this.highlightFor) {
       this.highlightFor = highlight;
       this.highlightMask = highlight === null ? null : this.regionMask(st.region!);
+    }
+    const riverYear = Math.floor(st.year);
+    if (riverYear !== this.riverYear && this.map.getLayer('rivers')) {
+      for (const id of ['rivers', 'lakes', 'lake-shore']) this.map.setFilter(id, riverFilter(riverYear));
+      this.riverYear = riverYear;
     }
     const sight = geo ? this.sight(geo) : null;
     const fogKey = `${st.vps.join()}|${Math.round(st.year * 2)}|${highlight}|${st.journey}|${geo ? Math.round(st.progress * 40) : 0}`;

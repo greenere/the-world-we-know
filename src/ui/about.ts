@@ -83,7 +83,7 @@ export class About {
         h('h3.card-h', t('Sources and accuracy')),
         h(
           'p',
-          t('This first version holds {counts}. Every knowledge change, journey stop, city date, landmark, invention, and arrival of a plant or animal carries a source and a confidence rating, shown on its card. Dates are approximate until each viewpoint has been reviewed by a specialist; Polynesian dates in particular come from archaeology and genetics and carry wide ranges. The basemap is Natural Earth (public domain).', {counts}),
+          t('This first version holds {counts}. Every knowledge change, journey stop, city date, landmark, invention, and arrival of a plant or animal carries a source and a confidence rating, shown on its card. Dates are approximate until each viewpoint has been reviewed by a specialist; Polynesian dates in particular come from archaeology and genetics and carry wide ranges. The basemap is Natural Earth (public domain); the Yellow River\'s old bed of 1495–1855 follows OpenStreetMap (© OpenStreetMap contributors, ODbL).', {counts}),
         ),
         h('h3.card-h', t('Pictures')),
         h(
