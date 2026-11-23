@@ -3,7 +3,7 @@ import type {JourneyGeo} from '../journey-geo';
 import {stepCount} from '../journey-geo';
 import {type Ribbon, ribbonLayout, ribbonProgress, ribbonX, ribbonXAtYear} from '../journey-ribbon';
 import type {State, Store} from '../state';
-import {deepScale, ERAS, formatYear, mainScale, type TimeScale, yearParts} from '../time';
+import {deepScale, ERAS, formatYear, mainScale, type TimeScale, yearOf, yearParts} from '../time';
 import type {Moment, VpId} from '../types';
 import {isZh, t, tx} from '../i18n';
 import {h, setIcon} from './dom';
@@ -226,7 +226,7 @@ export class Timeline {
         this.stopBtns.forEach((b, i) => b.classList.toggle('ahead', i > passed));
       }
     }
-    this.track.setAttribute('aria-valuenow', String(Math.round(s.year)));
+    this.track.setAttribute('aria-valuenow', String(yearOf(s.year)));
     this.track.setAttribute('aria-valuetext', formatYear(s.year));
     const p = yearParts(s.year);
     this.yearNum.textContent = p.num;

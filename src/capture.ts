@@ -11,7 +11,7 @@ import {t, tx} from './i18n';
 import type {JourneyGeo} from './journey-geo';
 import {legDuration, stepCount} from './journey-geo';
 import type {State, Store} from './state';
-import {formatYear, PRESENT, yearParts} from './time';
+import {formatYear, PRESENT, yearOf, yearParts} from './time';
 import type {Depiction} from './types';
 import {h} from './ui/dom';
 import {scaleFor} from './ui/timeline';
@@ -412,7 +412,7 @@ export class Capture {
 
   private showYear(s: State) {
     const geo = this.host.geo(s.journey);
-    const y = Math.round(s.year);
+    const y = yearOf(s.year);
     let where = '';
     if (geo) {
       const k = Math.min(geo.stops.length - 1, Math.floor(s.progress + 1e-6));

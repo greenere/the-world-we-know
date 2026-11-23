@@ -1,6 +1,7 @@
 import type {VpId} from './types';
 import {getLang} from './i18n';
 import {ALL_VPS} from './types';
+import {yearOf} from './time';
 
 export type Panel = 'none' | 'journeys' | 'discoveries' | 'about' | 'settings';
 
@@ -155,7 +156,7 @@ export function writeUrl(s: State, currentStop: number | null) {
     if (!s.follow) q.set('view', 'route');
   } else {
     q.set('vp', s.vps.join(','));
-    q.set('year', String(Math.round(s.year)));
+    q.set('year', String(yearOf(s.year)));
   }
   if (s.region) {
     q.set('region', s.region);

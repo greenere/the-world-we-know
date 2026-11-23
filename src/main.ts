@@ -28,7 +28,7 @@ import {WideningFrame} from './map/widen';
 import {Capture, captureOptions} from './capture';
 import {Sight} from './sight';
 import {DEFAULT_STATE, isListPanel, type ListPanel, readUrl, type Shelf, SHELVES, type State, Store, writeUrl} from './state';
-import {formatRange, formatYear, PRESENT, START} from './time';
+import {formatRange, formatYear, PRESENT, START, yearOf} from './time';
 import type {Living, SearchEntry, VpId} from './types';
 import {About} from './ui/about';
 import {Settings} from './ui/settings';
@@ -179,10 +179,10 @@ class App {
       vp = heard?.vp ?? 'greece';
       tradition = traditionFor(sc, vp, s.year);
       const region = heard ? this.data.regionById.get(heard.region) : undefined;
-      why = region ? t('Humanity, in {place}', {place: tx.region(region.id, region.name)}) : t('{vp} in {year}', {vp: tx.viewpoint(s.vps[0], 'name', this.data.vp[s.vps[0]].name), year: formatYear(Math.round(s.year))});
+      why = region ? t('Humanity, in {place}', {place: tx.region(region.id, region.name)}) : t('{vp} in {year}', {vp: tx.viewpoint(s.vps[0], 'name', this.data.vp[s.vps[0]].name), year: formatYear(yearOf(s.year))});
     } else {
       tradition = traditionFor(sc, s.vps[0], s.year);
-      why = t('{vp} in {year}', {vp: tx.viewpoint(s.vps[0], 'name', this.data.vp[s.vps[0]].name), year: formatYear(Math.round(s.year))});
+      why = t('{vp} in {year}', {vp: tx.viewpoint(s.vps[0], 'name', this.data.vp[s.vps[0]].name), year: formatYear(yearOf(s.year))});
     }
     const {style, voices} = styleFor(tradition, this.data, vp, year);
     const ens = ensembleFor(tradition, this.data, vp, year);

@@ -42,9 +42,13 @@ export function formatYear(y: number): string {
   return String(r);
 }
 
+/** The calendar year a moment falls in: years run from 1 January, so July 1952 (1952.54) is still 1952 and
+ * May 334 BCE (−333.78) is 334 BCE. A hair of slack keeps a whole year set by hand (1500) from reading 1499. */
+export const yearOf = (y: number) => Math.floor(y + 1e-6);
+
 /** The year in two parts for the big display. In Chinese the era comes first (`pre`): 公元前 325. */
 export function yearParts(y: number): {num: string; era: string; pre?: boolean} {
-  const r = Math.round(y);
+  const r = yearOf(y);
   if (isZh()) {
     if (r <= -10000) return {num: wan(Math.round((PRESENT - r) / 1000) * 1000), era: '年前'};
     if (r < 0) return {num: String(-r), era: '公元前', pre: true};
