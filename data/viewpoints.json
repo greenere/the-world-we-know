@@ -5,6 +5,8 @@
     "longName": "Europe",
     "adjective": "European",
     "tagline": "The Greek and Latin learned world, from Homer to the age of surveys.",
+    "startNote": "Europe is a knowledge community, not a continent or a people. Until 146 BCE it shows the Greek world it grew from; Ptolemaic Egypt, Roman Africa, Spain, Gaul and Britain join as they enter the Greek and Latin record, and the Frankish lands at Charlemagne's coronation in 800. What one member knows, all keep. The Gauls' own view is under France.",
+    "noteUntil": 800,
     "color": "#34588f",
     "seal": "europe",
     "community": {
