@@ -372,8 +372,8 @@ iberia,canaries,1312..1341,3,medium,hoc,Lancelotto Malocello; the voyage of 1341
 rome,canaries,1312..1341,3,medium,hoc,Lancelotto Malocello; the voyage of 1341
 europe,canaries,1312..1341,3,medium,hoc,Lancelotto Malocello; the voyage of 1341
 rome,azores,1351,1,low,hoc,Islands in the Atlantic on the Medici atlas
-rome,madeira,1351,1,low,hoc,
-europe,madeira,1351,1,low,hoc,
+rome,madeira,1351,1,low,hoc,"The Medici Atlas charts Madeira as the Isle of Wood (Isola de lo Legname)"
+europe,madeira,1351,1,low,hoc,"The Medici Atlas charts Madeira as the Isle of Wood (Isola de lo Legname)"
 rome,china-north,1370..1400,2,low,hoc,The Mongol roads close; Cathay becomes a legend again
 europe,china-north,1370..1400,2,low,hoc,The Mongol roads close; Cathay becomes a legend again
 rome,china-south,1370..1400,2,low,hoc,
@@ -1236,6 +1236,7 @@ humanity,barents-sea,1596,4,high,hoc,
 humanity,arctic-central,1948,3,high,draft,A Soviet party lands at the North Pole
 humanity,arctic-central,1968..1969,4,medium,draft,The first surface journeys to the pole
 humanity,canaries,-1000..100,5,low,draft,Ancestors of the Guanches
+humanity,madeira,900..1036,3,medium,rando-2014,"Ships call at the empty island, and leave house mice behind"
 humanity,madeira,1420,5,high,zurara,
 humanity,azores,1427..1439,5,high,zurara,
 humanity,cape-verde,1456..1462,5,high,hoc,
