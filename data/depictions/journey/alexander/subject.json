@@ -47,7 +47,7 @@
     },
     {
       "id": "granicus-ford",
-      "stop": 1,
+      "stop": 2,
       "place": "The Granicus",
       "title": "The opposite bank",
       "caption": "At the Granicus, the approach to the far bank mattered as much as the water itself. Arrian describes cavalry trying to gain footing while Persian horsemen held the higher ground opposite them.",
@@ -69,7 +69,7 @@
     },
     {
       "id": "gordium-wagon",
-      "stop": 2,
+      "stop": 4,
       "place": "Gordium",
       "title": "The knot on the wagon",
       "caption": "The famous knot fastened a wagon's yoke to its pole. Ancient accounts disagree about how Alexander released it: the sword stroke is one version, while another describes him removing a fastening pin.",
@@ -91,7 +91,7 @@
     },
     {
       "id": "issus-shore",
-      "stop": 3,
+      "stop": 5,
       "place": "Issus",
       "title": "Mountains beside the sea",
       "caption": "The ground near Issus squeezed the armies between the mountains and the Mediterranean. From the coastal plain, the steep slopes and narrow river crossings help explain why Darius could not use his larger army as freely as he wished.",
@@ -113,7 +113,7 @@
     },
     {
       "id": "tyre-causeway",
-      "stop": 4,
+      "stop": 6,
       "place": "Tyre",
       "title": "A road into the water",
       "caption": "Timber and stone went into the causeway towards Tyre. As work reached deeper water, the builders faced a harder task and greater exposure to attacks from the island's walls and ships.",
@@ -135,7 +135,7 @@
     },
     {
       "id": "tyre-ships",
-      "stop": 4,
+      "stop": 6,
       "place": "Tyre",
       "title": "Ships under the walls",
       "caption": "The siege changed when fleets from Phoenicia and Cyprus joined Alexander. Ships could block the harbours and bring siege equipment against the seaward walls, adding an approach the causeway alone could not provide.",
@@ -157,7 +157,7 @@
     },
     {
       "id": "alexandria-lines",
-      "stop": 5,
+      "stop": 9,
       "place": "Alexandria",
       "title": "Marking a future city",
       "caption": "Alexander chose places for streets, sanctuaries and the market on the Egyptian coast. Arrian preserves a story that the builders used grain to mark out the walls when they had nothing suitable for scoring the ground.",
@@ -179,7 +179,7 @@
     },
     {
       "id": "siwa-oasis",
-      "stop": 6,
+      "stop": 10,
       "place": "Siwa oasis",
       "title": "Green ground in the desert",
       "caption": "The approach to Ammon's sanctuary ended in an oasis surrounded by desert. Water and cultivated ground made this a place where people could live, receive travellers and maintain a shrine far from the Nile valley.",
@@ -201,7 +201,7 @@
     },
     {
       "id": "siwa-sanctuary",
-      "stop": 6,
+      "stop": 10,
       "place": "Siwa oasis",
       "title": "At the sanctuary of Ammon",
       "caption": "The oracle mattered to Alexander as a place of divine authority. Arrian says that he heard an answer pleasing to him, but does not give a dependable transcript of the private consultation.",
@@ -223,7 +223,7 @@
     },
     {
       "id": "gaugamela-plain",
-      "stop": 7,
+      "stop": 11,
       "place": "Gaugamela",
       "title": "Room to manoeuvre",
       "caption": "Darius selected open ground at Gaugamela and had obstacles removed for his chariots. The broad plain gave cavalry room to move, making the direction and timing of each advance especially important.",
@@ -245,7 +245,7 @@
     },
     {
       "id": "babylon-gateway",
-      "stop": 8,
+      "stop": 12,
       "place": "Babylon",
       "title": "Through the city gate",
       "caption": "Babylon presented the army with a different scale of urban life. Glazed brick, broad approaches and massive defensive walls belonged to a city whose buildings and institutions had developed long before the Macedonians arrived.",
@@ -267,7 +267,7 @@
     },
     {
       "id": "babylon-water",
-      "stop": 8,
+      "stop": 12,
       "place": "Babylon",
       "title": "Fields supplied by canals",
       "caption": "Around Babylon, channels carried river water into cultivated land. An army passing through this plain depended on the same grain, water and transport networks that supported the people living there.",
@@ -289,7 +289,7 @@
     },
     {
       "id": "persepolis-hall",
-      "stop": 9,
+      "stop": 14,
       "place": "Persepolis",
       "title": "Under the palace columns",
       "caption": "Persepolis had received delegations from across the Persian empire. Its high columns, carved stairways and large reception spaces gave the Macedonians a physical view of the royal power they were taking over.",
@@ -311,7 +311,7 @@
     },
     {
       "id": "persepolis-fire",
-      "stop": 9,
+      "stop": 14,
       "place": "Persepolis",
       "title": "After the palace fire",
       "caption": "Arrian records that Alexander burned the royal palace despite Parmenion's objections. The destruction removed more than a symbol of kingship: timber roofs and the rooms beneath them could not be recovered once the fire had passed.",
@@ -333,7 +333,7 @@
     },
     {
       "id": "ecbatana-horses",
-      "stop": 10,
+      "stop": 15,
       "place": "Ecbatana",
       "title": "Changing the pace of pursuit",
       "caption": "At Ecbatana, Alexander reorganised his forces and sent some allied troops home. The pursuit of Darius continued eastwards, with fresh horses and a lighter column becoming more useful than the full weight of an army.",
@@ -355,7 +355,7 @@
     },
     {
       "id": "bactra-town",
-      "stop": 11,
+      "stop": 19,
       "place": "Bactra",
       "title": "A city at the crossing of routes",
       "caption": "Bactra stood within a settled landscape of cultivation and trade. The army's arrival brought it into contact with communities whose roads, stores and local knowledge mattered as much as the fortress walls.",
@@ -377,7 +377,7 @@
     },
     {
       "id": "oxus-skins",
-      "stop": 11,
+      "stop": 19,
       "place": "Bactra",
       "title": "Crossing without timber",
       "caption": "On the march north from Bactra, the Oxus was difficult to bridge. Arrian describes hides filled with dry material and sewn shut, allowing the army to improvise floats where suitable timber was scarce.",
@@ -399,7 +399,7 @@
     },
     {
       "id": "maracanda-orchards",
-      "stop": 12,
+      "stop": 20,
       "place": "Maracanda",
       "title": "Beyond the garrison",
       "caption": "Holding Maracanda did not mean controlling the surrounding country. Irrigated fields, villages and routes through the valleys sustained communities that continued to resist Macedonian rule under Spitamenes.",
@@ -421,7 +421,7 @@
     },
     {
       "id": "eschate-wall",
-      "stop": 13,
+      "stop": 21,
       "place": "Alexandria Eschate",
       "title": "Building a frontier town",
       "caption": "Arrian describes the new settlement on the Jaxartes as both a base and a barrier. Soldiers no longer fit for service joined other settlers there, while the army built defences beside a river separating it from mobile groups on the far bank.",
@@ -443,7 +443,7 @@
     },
     {
       "id": "taxila-street",
-      "stop": 14,
+      "stop": 24,
       "place": "Taxila",
       "title": "Through the older town",
       "caption": "The Taxila of Alexander's day belonged to the settlement now called Bhir Mound. Its narrow streets and houses formed an older urban landscape, centuries before the monasteries and planned cities that survive elsewhere around Taxila.",
@@ -466,7 +466,7 @@
     },
     {
       "id": "taxila-supplies",
-      "stop": 14,
+      "stop": 24,
       "place": "Taxila",
       "title": "Provisioning the visitors",
       "caption": "The ruler of Taxila supplied animals, money and other gifts to Alexander. Receiving an army was also a practical problem: food had to be gathered, loads counted and people assigned to move them.",
@@ -488,7 +488,7 @@
     },
     {
       "id": "hydaspes-night",
-      "stop": 15,
+      "stop": 25,
       "place": "The Hydaspes",
       "title": "The crossing in the rain",
       "caption": "Alexander repeatedly moved men along the river to confuse Porus about where he would cross. The eventual passage took place upstream during stormy weather, using boats and floats while much of the army remained opposite the Indian camp.",
@@ -510,7 +510,7 @@
     },
     {
       "id": "hydaspes-elephants",
-      "stop": 15,
+      "stop": 25,
       "place": "The Hydaspes",
       "title": "Elephants across the field",
       "caption": "Porus placed elephants along the front of his army, with infantry in the spaces between them. Their size and effect on horses made them a tactical problem very different from the Persian cavalry the Macedonians had fought farther west.",
@@ -532,7 +532,7 @@
     },
     {
       "id": "hyphasis-camp",
-      "stop": 16,
+      "stop": 26,
       "place": "The Hyphasis",
       "title": "Men who would go no farther",
       "caption": "At the Hyphasis, the soldiers' exhaustion became a limit Alexander could not overcome. Arrian gives Coenus a speech asking him to consider the survivors who wanted to return home, rather than another river to cross.",
@@ -554,7 +554,7 @@
     },
     {
       "id": "patala-tide",
-      "stop": 17,
+      "stop": 28,
       "place": "Patala",
       "title": "Boats on the mud",
       "caption": "Near the Indus mouth, the falling tide left vessels stranded. When the water returned, some boats were damaged as they lifted unevenly from the ground, a coastal hazard unfamiliar to many men used to inland rivers.",
@@ -576,7 +576,7 @@
     },
     {
       "id": "patala-harbour",
-      "stop": 17,
+      "stop": 28,
       "place": "Patala",
       "title": "A base for the fleet",
       "caption": "At Patala, Alexander ordered work on a harbour and dockyard. The river journey was becoming a sea expedition, and the fleet needed repairs, supplies and a place from which Nearchus could prepare to sail.",
@@ -598,7 +598,7 @@
     },
     {
       "id": "gedrosia-march",
-      "stop": 18,
+      "stop": 29,
       "place": "Gedrosian desert",
       "title": "The distance between water",
       "caption": "The Gedrosian march crossed country where water and supplies could not reliably be found. A long column, baggage animals and people already weakened by the journey had to cover the same exposed ground, with little shelter from the heat.",
@@ -620,7 +620,7 @@
     },
     {
       "id": "gedrosia-water",
-      "stop": 18,
+      "stop": 29,
       "place": "Gedrosian desert",
       "title": "The water in a helmet",
       "caption": "Arrian tells of a small quantity of water brought to Alexander in a helmet while the army was suffering from thirst. He poured it away where the soldiers could see, refusing a drink that could not be shared with them.",
@@ -642,7 +642,7 @@
     },
     {
       "id": "carmania-meeting",
-      "stop": 19,
+      "stop": 30,
       "place": "Carmania",
       "title": "News from the coast",
       "caption": "When Nearchus reached Alexander in Carmania, the land and sea parties could finally compare what had happened to them. His report brought news of the fleet and of a coastline the army crossing the desert had scarcely seen.",
@@ -664,7 +664,7 @@
     },
     {
       "id": "susa-wedding",
-      "stop": 21,
+      "stop": 33,
       "place": "Susa",
       "title": "A ceremony of alliance",
       "caption": "At Susa, marriages linked Macedonian officers with women from Persian noble families. Arrian describes the ceremony as following Persian custom; it was also an attempt to bind the conquerors to the elite of the empire they had taken.",
@@ -686,7 +686,7 @@
     },
     {
       "id": "babylon-last-ships",
-      "stop": 22,
+      "stop": 36,
       "place": "Babylon",
       "title": "Boats for another voyage",
       "caption": "In Babylon, preparations continued for an expedition towards Arabia. Ships, crews and harbour works belonged to plans Alexander would not carry out; his death left the army and its commanders facing the question of what came next.",
@@ -703,6 +703,314 @@
       "evidence": {
         "basis": "account-and-context",
         "passage": "VII.19–21,24–26",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "troy-achilles",
+      "stop": 1,
+      "place": "Troy",
+      "title": "A wreath for Achilles",
+      "caption": "Near Ilium, Alexander laid a wreath on the mound people took for Achilles' grave. Arrian says he counted Achilles fortunate to have had Homer to tell his story.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Troy (Ilium), 334 BCE. Quiet low three-quarter view at the weathered earthen burial mound traditionally identified as Achilles' tomb. Alexander, small in the composition, places a simple leafy wreath on the mound while one companion stands back; the low fortified settlement of fourth-century BCE Ilium lies distant. Windy spring grass, Aegean haze. No Homeric battle, giant statue, marble temple fantasy, later Roman buildings, or readable inscription.",
+      "traveller": true,
+      "composition": {
+        "focus": "ritual",
+        "view": "Troy (Ilium), 334 BCE. Quiet low three-quarter view at the weathered earthen burial mound traditionally identified as Achilles' tomb. Alexander, small in the composition, places a simple leafy wreath on the mound while one companion stands back; the low fortified settlement of fourth-century BCE Ilium lies distant. Windy spring grass, Aegean haze. No Homeric battle, giant statue, marble temple fantasy, later Roman buildings, or readable inscription."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "I.11–12",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "halicarnassus-smoke",
+      "stop": 3,
+      "place": "Halicarnassus",
+      "title": "Smoke over the harbour",
+      "caption": "Smoke rose from the lower town as Memnon's men withdrew. From the harbour at Halicarnassus, the two citadels were still in view. Both remained in the defenders' hands when Alexander marched on.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Halicarnassus, 334 BCE, after Memnon's withdrawal. Dawn view from outside battered city walls: smoke rises from timber roofs inside while the two stone citadels still stand separately on their heights; exhausted Macedonian soldiers watch from an abandoned earth-and-timber siege approach, small and secondary. Show a plausible Carian Greek fortified coastal city and harbor edge. No giant flames, cheering victory pose, medieval castle, trebuchet, cannon, Mausoleum fantasy dominating, or bodies.",
+      "traveller": false,
+      "composition": {
+        "focus": "aftermath",
+        "view": "Halicarnassus, 334 BCE, after Memnon's withdrawal. Dawn view from outside battered city walls: smoke rises from timber roofs inside while the two stone citadels still stand separately on their heights; exhausted Macedonian soldiers watch from an abandoned earth-and-timber siege approach, small and secondary. Show a plausible Carian Greek fortified coastal city and harbor edge. No giant flames, cheering victory pose, medieval castle, trebuchet, cannon, Mausoleum fantasy dominating, or bodies."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "I.20–23",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "gaza-ramp",
+      "stop": 7,
+      "place": "Gaza",
+      "title": "Baskets of earth",
+      "caption": "On the sandy plain below Gaza, the foot of the city wall stood well above the Macedonian camp. Labourers carried earth up the growing mound a basket at a time.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Gaza, 332 BCE. Low side view of the immense earth siege ramp being built against a high mudbrick-and-stone city wall on its tell: laborers carry baskets of soil and roll stones, timber braces and simple fourth-century BCE siege screens visible; the scale and engineering are the subject. A small shielded group works under the wall, but no visible wound or Alexander portrait. Dry coastal plain, no medieval minarets, Roman arches, giant fantasy tower, gore, or modern Gaza skyline.",
+      "traveller": false,
+      "composition": {
+        "focus": "work",
+        "view": "Gaza, 332 BCE. Low side view of the immense earth siege ramp being built against a high mudbrick-and-stone city wall on its tell: laborers carry baskets of soil and roll stones, timber braces and simple fourth-century BCE siege screens visible; the scale and engineering are the subject. A small shielded group works under the wall, but no visible wound or Alexander portrait. Dry coastal plain, no medieval minarets, Roman arches, giant fantasy tower, gore, or modern Gaza skyline."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "II.26–27",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "memphis-apis",
+      "stop": 8,
+      "place": "Memphis",
+      "title": "The bull in the temple court",
+      "caption": "At Memphis the Egyptians honoured Apis in the form of a living bull. When Alexander made offerings to the gods of the city, Arrian singles out the offering he made to Apis.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Memphis in Egypt, 332 BCE. Calm temple forecourt scene centered on a living Apis bull with black coat and restrained natural markings, led respectfully by Egyptian attendants in linen while Macedonian visitors stand back; papyrus-bundle columns and low mudbrick city edge, palms beyond. Religious encounter rather than coronation. No pharaoh crown on Alexander, no giant pyramid backdrop, no later Ptolemaic or Roman fantasy, no animal sacrifice or readable hieroglyphs.",
+      "traveller": false,
+      "composition": {
+        "focus": "ritual",
+        "view": "Memphis in Egypt, 332 BCE. Calm temple forecourt scene centered on a living Apis bull with black coat and restrained natural markings, led respectfully by Egyptian attendants in linen while Macedonian visitors stand back; papyrus-bundle columns and low mudbrick city edge, palms beyond. Religious encounter rather than coronation. No pharaoh crown on Alexander, no giant pyramid backdrop, no later Ptolemaic or Roman fantasy, no animal sacrifice or readable hieroglyphs."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.1",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "persian-gates-path",
+      "stop": 13,
+      "place": "The Persian Gates",
+      "title": "A path above the pass",
+      "caption": "Snow lay on the ridges above the Persian Gates. Far below the mountain path ran the road to Persepolis, narrow enough here for Ariobarzanes and his men to hold up the Macedonian army.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Persian Gates in the Zagros, winter 330 BCE. High oblique landscape view into a narrow rocky pass blocked by a rough Persian stone-and-timber defensive wall; far above, a small Macedonian column follows a steep snow-dusted shepherd path around the ridge. Emphasize terrain, cold and the hidden route; troops tiny. No cinematic melee, bodies, Alpine castle, modern road, or impossible cliff path.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Persian Gates in the Zagros, winter 330 BCE. High oblique landscape view into a narrow rocky pass blocked by a rough Persian stone-and-timber defensive wall; far above, a small Macedonian column follows a steep snow-dusted shepherd path around the ridge. Emphasize terrain, cold and the hidden route; troops tiny. No cinematic melee, bodies, Alpine castle, modern road, or impossible cliff path."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.18",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "darius-wagon",
+      "stop": 16,
+      "place": "Near Hecatompylos",
+      "title": "The wagon by the road",
+      "caption": "East of the Caspian Gates, the Macedonian riders came upon a wagon left behind on the road. Darius lay inside. In Arrian's account he had died of his wounds by the time Alexander reached him.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Near Hecatompylos, July 330 BCE. Somber roadside scene on a dry Iranian plain: an abandoned covered royal wagon stands beside a sparse tamarisk, its curtain partly open; Darius lies within only as a still indistinct clothed figure, with no visible wound or blood. Alexander has just dismounted and stands quietly at a respectful distance with two attendants; tired horses and pursuit dust behind. No embrace, crown, gore, melodramatic deathbed, Roman vehicle, or victory gesture.",
+      "traveller": true,
+      "composition": {
+        "focus": "aftermath",
+        "view": "Near Hecatompylos, July 330 BCE. Somber roadside scene on a dry Iranian plain: an abandoned covered royal wagon stands beside a sparse tamarisk, its curtain partly open; Darius lies within only as a still indistinct clothed figure, with no visible wound or blood. Alexander has just dismounted and stands quietly at a respectful distance with two attendants; tired horses and pursuit dust behind. No embrace, crown, gore, melodramatic deathbed, Roman vehicle, or victory gesture."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.21",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "phrada-sealed-orders",
+      "stop": 17,
+      "place": "Phrada",
+      "title": "Letters for Ecbatana",
+      "caption": "After Philotas was executed at Phrada, a courier rode west with letters for officers serving under his father, Parmenion. They received the order to kill Parmenion before he had heard what had happened to his son.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Phrada in Drangiana, 330 BCE. Interior of a plain command tent: a Macedonian courier receives two small sealed folded orders from an officer across a low table, while another guard waits at the entrance; oil lamp, wax tablets turned away, rolled blankets, weapons set aside. The secrecy and machinery of command are the subject, all writing illegible. No execution, torture, severed heads, readable letters, Roman armor, throne, or Alexander portrait.",
+      "traveller": false,
+      "composition": {
+        "focus": "objects",
+        "view": "Phrada in Drangiana, 330 BCE. Interior of a plain command tent: a Macedonian courier receives two small sealed folded orders from an officer across a low table, while another guard waits at the entrance; oil lamp, wax tablets turned away, rolled blankets, weapons set aside. The secrecy and machinery of command are the subject, all writing illegible. No execution, torture, severed heads, readable letters, Roman armor, throne, or Alexander portrait."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.26",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "caucasus-snow",
+      "stop": 18,
+      "place": "Alexandria under the Caucasus",
+      "title": "A settlement below the snow",
+      "caption": "Timber posts marked out the new Alexandria on the valley floor. For the settlers the journey ended at the foot of the Hindu Kush. The army still had the snowy passes to cross on its way to Bactria.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Alexandria under the Caucasus, 329 BCE. Wide winter landscape below the Hindu Kush: a newly staked modest settlement of timber palisade, mudbrick foundations and a few tents on the valley floor, while a long Macedonian column climbs toward a high snow-covered pass beyond. Workers set a post in frozen ground, pack animals and people small. No grand later city, Buddhist stupa, medieval fortress, Everest-like peaks, or modern road.",
+      "traveller": false,
+      "composition": {
+        "focus": "landscape",
+        "view": "Alexandria under the Caucasus, 329 BCE. Wide winter landscape below the Hindu Kush: a newly staked modest settlement of timber palisade, mudbrick foundations and a few tents on the valley floor, while a long Macedonian column climbs toward a high snow-covered pass beyond. Workers set a post in frozen ground, pack animals and people small. No grand later city, Buddhist stupa, medieval fortress, Everest-like peaks, or modern road."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "III.28",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "sogdian-rock-climb",
+      "stop": 22,
+      "place": "The Sogdian Rock",
+      "title": "Figures on the ridge",
+      "caption": "Arrian says the defenders of the Sogdian Rock told Alexander he would need men with wings to reach them. By morning they could make out Macedonian soldiers on the ridge above their refuge.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "low",
+      "prompt": "The Sogdian Rock, 327 BCE. Dramatic but plausible side view of a steep Central Asian limestone crag at dawn: a small group of Macedonian climbers ascends a narrow snow-dusted fissure using linen ropes and iron tent pegs, packs close to bodies; fortified refuge and astonished defenders tiny on plateau rim. Anatomically secure climbing, no dangling fantasy army, no wedding portrait, no sheer impossible smooth wall, no falls or violence.",
+      "traveller": false,
+      "composition": {
+        "focus": "travel",
+        "view": "The Sogdian Rock, 327 BCE. Dramatic but plausible side view of a steep Central Asian limestone crag at dawn: a small group of Macedonian climbers ascends a narrow snow-dusted fissure using linen ropes and iron tent pegs, packs close to bodies; fortified refuge and astonished defenders tiny on plateau rim. Anatomically secure climbing, no dangling fantasy army, no wedding portrait, no sheer impossible smooth wall, no falls or violence."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "IV.18–19",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "aornos-earthwork",
+      "stop": 23,
+      "place": "Aornos",
+      "title": "Across the ravine",
+      "caption": "At Aornos a ravine broke the approach to the rock above the Indus. For days the men hauled timber and earth. From the rim they could measure each day's work by how much of the gap was left.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Aornos, 326 BCE. Wide view across a rugged Indus frontier valley toward the fortified rock plateau; in the foreground Macedonian laborers extend a broad earthen-and-timber mound across a ravine toward the defenders' height, carrying baskets and setting woven retaining screens. Emphasize topography and siege work, troops tiny. No fantasy mesa, medieval battlements, giant siege tower, modern Pir-Sar village, or graphic combat.",
+      "traveller": false,
+      "composition": {
+        "focus": "work",
+        "view": "Aornos, 326 BCE. Wide view across a rugged Indus frontier valley toward the fortified rock plateau; in the foreground Macedonian laborers extend a broad earthen-and-timber mound across a ravine toward the defenders' height, carrying baskets and setting woven retaining screens. Emphasize topography and siege work, troops tiny. No fantasy mesa, medieval battlements, giant siege tower, modern Pir-Sar village, or graphic combat."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "IV.28–30",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "malli-wall",
+      "stop": 27,
+      "place": "A town of the Malli",
+      "title": "Under the shields",
+      "caption": "Inside the Malli town, Alexander's companions held their shields over him after an arrow struck him in the chest. Beyond the wall few men could see what had happened, and word spread that he was dead.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "A town of the Malli, 325 BCE. Tense aftermath viewed inside a modest mudbrick town: Macedonian soldiers brace a large round shield over a fallen wounded Alexander while companions form a protective ring near the inner face of a low breached wall; bow and arrow lie aside, wound fully covered, no blood. Dust, broken ladder, local defenders distant on rooftops. Show vulnerability and confusion, not a heroic pose; no gore, impalement, giant city, Roman armor, or medieval crenellations.",
+      "traveller": true,
+      "composition": {
+        "focus": "aftermath",
+        "view": "A town of the Malli, 325 BCE. Tense aftermath viewed inside a modest mudbrick town: Macedonian soldiers brace a large round shield over a fallen wounded Alexander while companions form a protective ring near the inner face of a low breached wall; bow and arrow lie aside, wound fully covered, no blood. Dust, broken ladder, local defenders distant on rooftops. Show vulnerability and confusion, not a heroic pose; no gore, impalement, giant city, Roman armor, or medieval crenellations."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VI.9–11",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "pasargadae-tomb",
+      "stop": 31,
+      "place": "Pasargadae",
+      "title": "The door of Cyrus's tomb",
+      "caption": "Above the stone steps at Pasargadae, a small doorway led into Cyrus's burial chamber. Robbers had stripped it. Alexander entrusted the repairs to Aristobulus, who had the entrance walled up and set a seal on it.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Pasargadae, 324 BCE. Quiet architectural conservation scene at Cyrus's tomb: the simple gabled stone chamber on six stepped courses dominates; masons reset a displaced stone and inventory plain recovered objects in small baskets while Alexander observes from a distance. Dry Persian garden plain and low hills. No carved reliefs on the tomb, grand Persepolis columns, modern scaffolding, readable inscription, treasure spectacle, or looters.",
+      "traveller": true,
+      "composition": {
+        "focus": "architecture",
+        "view": "Pasargadae, 324 BCE. Quiet architectural conservation scene at Cyrus's tomb: the simple gabled stone chamber on six stepped courses dominates; masons reset a displaced stone and inventory plain recovered objects in small baskets while Alexander observes from a distance. Dry Persian garden plain and low hills. No carved reliefs on the tomb, grand Persepolis columns, modern scaffolding, readable inscription, treasure spectacle, or looters."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VI.29",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "opis-reconciliation",
+      "stop": 34,
+      "place": "Opis",
+      "title": "Wine from the same bowl",
+      "caption": "At the feast at Opis, Alexander and the guests around him drew wine from one bowl to pour an offering to the gods. Arrian records the king's prayer that Macedonians and Persians might live in concord and share in the rule of the empire.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Opis on the Tigris, 324 BCE. Broad evening feast of reconciliation under simple awnings: Macedonian veterans and Persian officers sit mixed in several small circles sharing bread and bowls, weapons stacked away, cooks and servers moving naturally; Alexander is small at the central table rather than elevated. Riverbank and palms beyond. No mass military parade, throne, submissive prostration, Roman banquet couches, drunken revel, or readable standards.",
+      "traveller": true,
+      "composition": {
+        "focus": "people",
+        "view": "Opis on the Tigris, 324 BCE. Broad evening feast of reconciliation under simple awnings: Macedonian veterans and Persian officers sit mixed in several small circles sharing bread and bowls, weapons stacked away, cooks and servers moving naturally; Alexander is small at the central table rather than elevated. Riverbank and palms beyond. No mass military parade, throne, submissive prostration, Roman banquet couches, drunken revel, or readable standards."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VII.8–12",
+        "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+      }
+    },
+    {
+      "id": "ecbatana-hephaestion",
+      "stop": 35,
+      "place": "Ecbatana",
+      "title": "Mourning Hephaestion",
+      "caption": "When Hephaestion died at Ecbatana, Alexander went two days without food. The cavalry Hephaestion had commanded kept his name, and his likeness was still carried at the head of the column.",
+      "sources": [
+        "arrian"
+      ],
+      "confidence": "medium",
+      "prompt": "Ecbatana, autumn 324 BCE. Restrained mourning scene in a quiet palace courtyard: Hephaestion's bier is covered completely with a plain dark cloth and set beneath a simple canopy; Alexander sits alone on a low step at some distance, head bowed, muted red cloak pooled beside him, attendants remain far back. Stone columns, cold mountain light, fallen autumn leaves. No visible corpse, giant pyre, self-harm, theatrical collapse, crown, gore, or later monumental palace.",
+      "traveller": true,
+      "composition": {
+        "focus": "people",
+        "view": "Ecbatana, autumn 324 BCE. Restrained mourning scene in a quiet palace courtyard: Hephaestion's bier is covered completely with a plain dark cloth and set beneath a simple canopy; Alexander sits alone on a low step at some distance, head bowed, muted red cloak pooled beside him, attendants remain far back. Stone columns, cold mountain light, fallen autumn leaves. No visible corpse, giant pyre, self-harm, theatrical collapse, crown, gore, or later monumental palace."
+      },
+      "evidence": {
+        "basis": "account-and-context",
+        "passage": "VII.14",
         "url": "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
       }
     }

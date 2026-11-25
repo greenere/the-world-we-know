@@ -12,7 +12,7 @@
   "confidence": "medium",
   "by": "sea",
   "stops": [
-    {"year": -325, "place": "Patala", "lat": 25.4, "lon": 68.4, "note": "The fleet prepares in the Indus delta before descending towards the sea.", "city": "patala"},
+    {"year": -325, "place": "Patala", "lat": 25.4, "lon": 68.4, "note": "The fleet prepares in the Indus delta before descending towards the sea.", "date": "September 325 BCE", "city": "patala"},
     {"waypoint": true, "lat": 25.25, "lon": 68.3},
     {"waypoint": true, "lat": 25.05, "lon": 68.0},
     {"waypoint": true, "lat": 24.65, "lon": 67.55},

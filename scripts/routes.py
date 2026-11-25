@@ -467,15 +467,25 @@ MONTHS = {m: i for i, m in enumerate(
     ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"])}
 
 
+# A season stands for its middle month.
+SEASONS = {"spring": 3, "summer": 6, "autumn": 9, "fall": 9}
+
+
 def parse_date(text: str | None, year: int) -> float | None:
-    """'27 December 1831' or 'May 1854' → a fractional year (mid-month when no day is given)."""
+    """'27 December 1831', 'May 1854', '1 October 331 BCE' or 'Autumn 324 BCE' → a fractional year (mid-month
+    when no day is given). BCE years are negative, as in the data: May 334 BCE is −334 + 4.5/12."""
     if not text:
         return None
-    m = re.fullmatch(r"(?:(\d{1,2}) )?([A-Za-z]+) (-?\d+)", text.strip())
-    if not m or m.group(2).lower() not in MONTHS:
+    m = re.fullmatch(r"(?:(\d{1,2}) )?([A-Za-z]+) (-?\d+)( BCE)?", text.strip())
+    if not m:
+        return None
+    word = m.group(2).lower()
+    month = MONTHS.get(word, SEASONS.get(word))
+    if month is None:
         return None
     day = int(m.group(1)) if m.group(1) else 15
-    return int(m.group(3)) + (MONTHS[m.group(2).lower()] + (day - 1) / 30.5) / 12
+    y = -int(m.group(3)) if m.group(4) else int(m.group(3))
+    return y + (month + (day - 1) / 30.5) / 12
 
 
 def leg_mode(router: Router, j: dict, stop: dict, a, b, year: float) -> str:

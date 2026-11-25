@@ -1,0 +1,11 @@
+{
+  "subject": "journey/alexander",
+  "era": "ecbatana-hephaestion",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-24",
+  "prompt": "Use case: historical-scene. Asset type: illustrated journey sketchbook card for Alexander's campaign in a historical atlas. Style: one landscape 3:2 page from an explorer's journal, with a visible graphite underdrawing and construction lines, quick sepia and brown ink, loose parallel hatching, restrained uneven watercolor washes in ochre, grey-green, faded blue and a touch of muted red; exposed slightly foxed warm cream paper; irregular unfinished vignette edges. Detail concentrates on one particular observed moment; one coherent perspective, accurate load-bearing structures, connected anatomy and plausible scale. Fourth-century BCE people, clothing, tools, animals, ships and architecture only. No readable writing, labels, captions, numbers, signature, watermark, border or binding. Not a photograph, digital render, glossy painting, fantasy scene, heroic poster, collage, graphic violence, Roman segmented armor, medieval equipment, stirrups, or modern archaeology/tourism. Alexander appears only where explicitly requested: a young clean-shaven Macedonian man with wavy light-brown hair, plain off-white short tunic and muted red travel cloak, lean athletic build, no crown. Subject: Ecbatana, autumn 324 BCE. Restrained mourning scene in a quiet palace courtyard: Hephaestion's bier is covered completely with a plain dark cloth and set beneath a simple canopy; Alexander sits alone on a low step at some distance, head bowed, muted red cloak pooled beside him, attendants remain far back. Stone columns, cold mountain light, fallen autumn leaves. No visible corpse, giant pyre, self-harm, theatrical collapse, crown, gore, or later monumental palace.",
+  "reference_sources": [
+    "https://www.gutenberg.org/files/46976/46976-h/46976-h.htm"
+  ]
+}
