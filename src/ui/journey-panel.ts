@@ -17,6 +17,7 @@ const FILTERS: {id: string; label: string; kinds: string[]}[] = [
   {id: 'military', label: 'Military', kinds: ['military']},
   {id: 'science', label: 'Science', kinds: ['scientific']},
   {id: 'frontier', label: 'Frontiers', kinds: ['polar', 'mountaineering', 'deep dive', 'spaceflight']},
+  {id: 'fiction', label: 'Fiction', kinds: ['fictional']},
 ];
 
 /** Left panel: the lists of journeys and landmarks, inventions and plants and animals. */

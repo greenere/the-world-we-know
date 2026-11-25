@@ -64,6 +64,7 @@ export const kindIcons: Record<string, string> = {
   'deep dive': wrap('<circle cx="10" cy="12" r="4"/><path d="M6 8.5h8M10 3v5M7.5 3h5"/><circle cx="10" cy="12" r="1.3"/>'),
   military: wrap('<path d="M4 4l9.5 9.5M16 4l-9.5 9.5M3.5 3.5l2 .2.2 2M16.5 3.5l-2 .2-.2 2M11.8 15.2l3.4-3.4M8.2 15.2l-3.4-3.4M14 14l2.5 2.5M6 14l-2.5 2.5"/>'),
   scientific: wrap('<path d="M10 3.5v2M10 5.5l-5 10.5M10 5.5l5 10.5M6.2 13.4a8 8 0 0 0 7.6 0"/><circle cx="10" cy="5.5" r="1.1" fill="currentColor" stroke="none"/><path d="M10 5.5l2.2 6.6"/>'),
+  fictional: wrap('<path d="M10 5.5C8 4 5.5 3.5 3 4v11c2.5-.5 5 0 7 1.5 2-1.5 4.5-2 7-1.5V4c-2.5-.5-5 0-7 1.5zM10 5.5v11"/>'),
   spaceflight: wrap('<path d="M10 2.5c2.5 2 3.5 5 3.2 8.5H6.8C6.5 7.5 7.5 4.5 10 2.5z"/><path d="M6.8 11l-2 3.5 3-.7M13.2 11l2 3.5-3-.7M9 14.5l1 3 1-3"/>'),
 };
 

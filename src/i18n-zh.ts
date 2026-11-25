@@ -569,6 +569,7 @@ export const zhUi: Record<string, string> = {
   Military: '军事',
   Science: '科学',
   Frontiers: '边疆',
+  Fiction: '虚构',
   'Kind of journey': '旅程类型',
   'The trail shows what the traveller saw. The fog lifts only when the news reaches home.': '路线显示旅人见到了什么。只有当消息传回故乡，迷雾才会散去。',
   sailor: '航海',
@@ -586,6 +587,7 @@ export const zhUi: Record<string, string> = {
   spaceflight: '航天',
   military: '军事远征',
   scientific: '科学考察',
+  fictional: '虚构',
 
   // Journey view
   'The news reaches home': '消息传回故乡',

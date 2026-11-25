@@ -1110,6 +1110,9 @@ def load_journeys(sources: dict, vp_ids: set[str]) -> list[dict]:
             fail(f"{where}: 'by' must be one of {', '.join(MODES)}")
         if not j.get("informs") and j.get("lifts") is not False:
             fail(f"{where}: must inform at least one viewpoint about at least one region (or say \"lifts\": false)")
+        # A novel's voyage can be followed on the map, but it tells no one anything about the world.
+        if j.get("kind") == "fictional" and (j.get("informs") or j.get("lifts") is not False):
+            fail(f"{where}: a fictional journey informs no one (no 'informs', and \"lifts\": false)")
         journeys.append(j)
     # A party sent out from a larger journey: its parent must exist, it must set out from one of the parent's
     # stops, and it must fall within the parent's years.

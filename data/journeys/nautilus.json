@@ -1,0 +1,344 @@
+{
+  "id": "nautilus",
+  "name": "Twenty Thousand Leagues Under the Sea",
+  "traveler": "Professor Aronnax, Conseil and Ned Land, aboard Captain Nemo's Nautilus",
+  "years": "1867–1868 (fiction)",
+  "kind": "fictional",
+  "by": "sea",
+  "viewpoint": "france",
+  "summary": "Jules Verne's novel of 1869–70. Three men hunting a sea monster are taken aboard Captain Nemo's submarine and carried round the world under the sea in ten months: across the Pacific, under the Isthmus of Suez, to Atlantis, the South Pole and the Maelstrom. This is fiction. The route follows the positions and dates Aronnax logs, converted from Verne's Paris meridian, through real seas and a few places that never existed. It makes nothing known to anyone.",
+  "source": "verne-1870",
+  "confidence": "medium",
+  "lifts": false,
+  "informs": [],
+  "stops": [
+    {
+      "year": 1867,
+      "place": "Brooklyn",
+      "lat": 40.69,
+      "lon": -74.0,
+      "note": "The frigate Abraham Lincoln sails to hunt the 'monster' that has been holing ships. Aboard are Professor Aronnax of the Paris Museum, his servant Conseil and the harpooner Ned Land (Part 1, ch. 3–4).",
+      "date": "July 1867",
+      "confidence": "low"
+    },
+    {
+      "year": 1867,
+      "place": "Cape Horn",
+      "lat": -56.1,
+      "lon": -67.3,
+      "note": "Commander Farragut will not risk the Strait of Magellan, and doubles the Horn into the Pacific (Part 1, ch. 5)."
+    },
+    {
+      "year": 1867,
+      "place": "The encounter",
+      "lat": 31.25,
+      "lon": 139.05,
+      "note": "Some 200 miles south of Japan, after three months of empty sea, a glow in the night. Ned's harpoon rings on metal, and the three men are thrown overboard onto the back of a submarine: the Nautilus (Part 1, ch. 5–7).",
+      "date": "5 November 1867"
+    },
+    {
+      "year": 1867,
+      "place": "The Kuroshio",
+      "lat": 33.5,
+      "lon": 145.0,
+      "note": "Captain Nemo takes his first noon sight, and sets course along the warm 'Black River' current. Aronnax will not see land for weeks (Part 1, ch. 13–14).",
+      "date": "8 November 1867",
+      "confidence": "low"
+    },
+    {
+      "year": 1867,
+      "place": "Island of Crespo",
+      "lat": 32.67,
+      "lon": -165.5,
+      "note": "A hunt in Nemo's 'forests': the three walk the seabed in diving suits around an island Verne took from the charts of his day. It does not exist (Part 1, ch. 14–16).",
+      "date": "17 November 1867",
+      "confidence": "low"
+    },
+    {
+      "year": 1867,
+      "place": "The Sandwich Islands",
+      "lat": 20.0,
+      "lon": -156.6,
+      "note": "Hawaii, where Cook died in 1779, slips past. The Nautilus has gone 4,860 leagues (Part 1, ch. 17).",
+      "date": "27 November 1867"
+    },
+    {
+      "year": 1867,
+      "place": "Nuku Hiva",
+      "lat": -8.95,
+      "lon": -140.1,
+      "note": "The Marquesas, three miles off (Part 1, ch. 17).",
+      "date": "4 December 1867"
+    },
+    {
+      "year": 1867,
+      "place": "Clermont-Tonnerre",
+      "lat": -18.47,
+      "lon": -136.45,
+      "note": "Off a Tuamotu atoll Aronnax studies how coral builds islands (Part 1, ch. 18).",
+      "date": "11 December 1867"
+    },
+    {
+      "year": 1867,
+      "place": "Tahiti",
+      "lat": -17.6,
+      "lon": -149.0,
+      "note": "The Society Islands left to the east (Part 1, ch. 18).",
+      "date": "15 December 1867"
+    },
+    {
+      "year": 1867,
+      "place": "Vanikoro",
+      "lat": -11.62,
+      "lon": 166.95,
+      "note": "Nemo shows where La Pérouse's ships were lost in 1788, and the box of papers he raised from the wreck (Part 1, ch. 18).",
+      "date": "26 December 1867"
+    },
+    {
+      "year": 1868,
+      "place": "Torres Strait",
+      "lat": -9.8,
+      "lon": 143.4,
+      "note": "Aground on a reef off Gueboroar. The prisoners go ashore to hunt; Papuan canoes gather, and Nemo electrifies the hand-rail (Part 1, ch. 19–21).",
+      "date": "4 January 1868",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
+      "place": "Cape Wessel",
+      "lat": -10.98,
+      "lon": 136.76,
+      "note": "Round the eastern point of the Gulf of Carpentaria (Part 1, ch. 22).",
+      "date": "11 January 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The coral cemetery",
+      "lat": -15.0,
+      "lon": 107.3,
+      "note": "The prisoners are drugged and shut in. A crewman, hurt in the night, dies, and is buried in a coral grove on the seabed (Part 1, ch. 22–23).",
+      "date": "18 January 1868",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
+      "place": "Keeling Island",
+      "lat": -12.08,
+      "lon": 96.88,
+      "note": "Logged at noon: 12°5' S, 94°33' east of Paris (Part 2, ch. 1).",
+      "date": "24 January 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The Bank of Mannar",
+      "lat": 8.75,
+      "lon": 79.75,
+      "note": "Off Ceylon, a walk among the pearl oysters. Nemo kills a shark to save an Indian diver, and gives him a bag of pearls (Part 2, ch. 2–3).",
+      "date": "29 January 1868"
+    },
+    {
+      "year": 1868,
+      "place": "Kiltan",
+      "lat": 11.48,
+      "lon": 73.0,
+      "note": "Between the Maldives and the Laccadives (Part 2, ch. 4)."
+    },
+    {
+      "year": 1868,
+      "place": "Aden",
+      "lat": 12.75,
+      "lon": 45.05,
+      "note": "Past the fortress at the mouth of the Red Sea (Part 2, ch. 4).",
+      "date": "6 February 1868"
+    },
+    {
+      "year": 1868,
+      "place": "Jeddah",
+      "lat": 21.5,
+      "lon": 38.9,
+      "note": "Ned Land harpoons a dugong (Part 2, ch. 5).",
+      "date": "10 February 1868"
+    },
+    {
+      "waypoint": true,
+      "lat": 24.5,
+      "lon": 36.6
+    },
+    {
+      "waypoint": true,
+      "lat": 27.4,
+      "lon": 34.0
+    },
+    {
+      "waypoint": true,
+      "lat": 28.4,
+      "lon": 33.1
+    },
+    {
+      "waypoint": true,
+      "lat": 29.6,
+      "lon": 32.6
+    },
+    {
+      "year": 1868,
+      "place": "The Arabian Tunnel",
+      "lat": 31.27,
+      "lon": 32.3,
+      "note": "Nemo's own passage under the Isthmus of Suez, found, he says, by tagging fish on both sides. In twenty minutes the Nautilus is off Port Said. No such tunnel exists; the canal opened in 1869 (Part 2, ch. 5).",
+      "date": "11 February 1868",
+      "by": "direct",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
+      "place": "Karpathos",
+      "lat": 35.55,
+      "lon": 27.25,
+      "note": "'Scarpanto', the home of Proteus (Part 2, ch. 6).",
+      "date": "12 February 1868"
+    },
+    {
+      "year": 1868,
+      "place": "Crete",
+      "lat": 35.5,
+      "lon": 25.2,
+      "note": "A diver comes to the window, and Nemo sends him off with a chest of gold. Crete is in revolt against the Ottomans (Part 2, ch. 6).",
+      "date": "14 February 1868",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
+      "place": "Santorini",
+      "lat": 36.4,
+      "lon": 25.4,
+      "note": "The sea boils over a new volcanic island (Part 2, ch. 6)."
+    },
+    {
+      "year": 1868,
+      "place": "The Strait of Gibraltar",
+      "lat": 35.95,
+      "lon": -5.6,
+      "note": "The whole Mediterranean in forty-eight hours, by sunrise on the 18th (Part 2, ch. 7).",
+      "date": "18 February 1868"
+    },
+    {
+      "year": 1868,
+      "place": "Vigo Bay",
+      "lat": 42.25,
+      "lon": -8.8,
+      "note": "Nemo's crew walk the seabed, gathering gold from the Spanish galleons sunk here in 1702 (Part 2, ch. 8).",
+      "date": "18 February 1868"
+    },
+    {
+      "year": 1868,
+      "place": "Atlantis",
+      "lat": 33.37,
+      "lon": -13.95,
+      "note": "By night, on foot, to the ruins of a drowned city under a living volcano (Part 2, ch. 9).",
+      "date": "19 February 1868",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
+      "place": "The Sargasso Sea",
+      "lat": 29.0,
+      "lon": -48.0,
+      "note": "A day under a raft of weed and wreckage (Part 2, ch. 11).",
+      "date": "22 February 1868",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
+      "place": "The deep sounding",
+      "lat": -45.62,
+      "lon": -40.22,
+      "note": "Nemo sounds the South Atlantic and finds no bottom at 7,000 fathoms (Part 2, ch. 11).",
+      "date": "13 March 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The ice barrier",
+      "lat": -67.65,
+      "lon": -53.8,
+      "note": "Blocked by the pack. Nemo dives under it (Part 2, ch. 13).",
+      "date": "18 March 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The South Pole",
+      "lat": -90.0,
+      "lon": -53.8,
+      "note": "Nemo takes the sun's altitude at noon of the equinox, and plants a black flag with a gold N. Real explorers reached the pole only in 1911 (Part 2, ch. 14).",
+      "date": "21 March 1868",
+      "by": "direct"
+    },
+    {
+      "year": 1868,
+      "place": "Under the ice",
+      "lat": -66.0,
+      "lon": -52.0,
+      "note": "An iceberg turns over and seals the Nautilus in. Five days of digging and boiling water, the air running out, before she rams her way free (Part 2, ch. 15–16).",
+      "date": "22 March 1868",
+      "by": "direct",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
+      "place": "Cape Horn",
+      "lat": -56.1,
+      "lon": -67.3,
+      "note": "North again (Part 2, ch. 17).",
+      "date": "31 March 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The mouth of the Amazon",
+      "lat": 0.6,
+      "lon": -48.5,
+      "note": "Land at last, too far for Ned to swim (Part 2, ch. 17).",
+      "date": "11 April 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The Bahamas",
+      "lat": 25.0,
+      "lon": -76.5,
+      "note": "Giant squid seize the Nautilus. A crewman is lost in the fight (Part 2, ch. 18).",
+      "date": "20 April 1868",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
+      "place": "Cape Hatteras",
+      "lat": 35.2,
+      "lon": -75.1,
+      "note": "In the Gulf Stream (Part 2, ch. 19).",
+      "date": "8 May 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The Grand Banks",
+      "lat": 43.0,
+      "lon": -50.5,
+      "note": "The southern edge of the Newfoundland Bank. Two days later Aronnax sees the Atlantic telegraph cable on the seabed (Part 2, ch. 19).",
+      "date": "15 May 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The wreck of the Vengeur",
+      "lat": 47.4,
+      "lon": -15.13,
+      "note": "Nemo stops over the French ship sunk in 1794, 'seventy-four years ago, day for day'. The next day a warship hunts the Nautilus, and he sinks it (Part 2, ch. 20–21).",
+      "date": "1 June 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The Maelstrom",
+      "lat": 67.8,
+      "lon": 12.75,
+      "note": "After some weeks adrift in the north, the three escape in the dinghy as the Nautilus is drawn into the whirlpool. They wake in a fisherman's hut in the Lofoten Islands (Part 2, ch. 22–23).",
+      "date": "20 June 1868",
+      "confidence": "low"
+    }
+  ]
+}
