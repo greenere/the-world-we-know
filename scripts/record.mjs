@@ -32,6 +32,8 @@ const {values: opt, positionals} = parseArgs({
     plain: {type: 'boolean', default: false},
     /** No soundtrack (the atlas's music is rendered and muxed in by default). */
     silent: {type: 'boolean', default: false},
+    /** Testing the recovery from a frozen browser: act as if this frame froze, once. */
+    'fail-at': {type: 'string'},
     port: {type: 'string', default: '5199'},
     chrome: {type: 'string', default: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'},
   },
@@ -100,39 +102,59 @@ const vite = await createServer({root: resolve(dirname(new URL(import.meta.url).
 await vite.listen();
 const origin = vite.resolvedUrls.local[0].replace(/\/$/, '');
 
-const browser = await puppeteer.launch({
-  executablePath: opt.chrome,
-  headless: true,
-  args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--hide-scrollbars', '--mute-audio'],
-  // Rendering the soundtrack can take a while.
-  protocolTimeout: 900_000,
-  defaultViewport: {width: Math.round(W / scale), height: Math.round(H / scale), deviceScaleFactor: scale},
-});
+const launch = () =>
+  puppeteer.launch({
+    executablePath: opt.chrome,
+    headless: true,
+    args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--hide-scrollbars', '--mute-audio'],
+    // Rendering the soundtrack can take a while.
+    protocolTimeout: 900_000,
+    defaultViewport: {width: Math.round(W / scale), height: Math.round(H / scale), deviceScaleFactor: scale},
+  });
 
-let ffmpeg = null;
-try {
+// The language is the link's, or English: never the machine's.
+const lang = /(^|&)lang=/.test(query) ? '' : '&lang=en';
+const music = opt.silent || opt.still ? '' : '&music=1';
+const url = `${origin}/?${query}${lang}${opt.plain ? '' : `&capture=1${music}`}`;
+
+/** A browser with the page loaded, ready for its first frame (and, unless plain, its clock started). */
+async function openPage() {
+  const browser = await launch();
   const page = await browser.newPage();
   page.on('pageerror', e => console.error('[page]', e.message));
   page.on('console', m => m.type() === 'error' && console.error('[console]', m.text()));
   if (!opt.plain) await page.evaluateOnNewDocument(virtualClock);
-  // The language is the link's, or English: never the machine's.
-  const lang = /(^|&)lang=/.test(query) ? '' : '&lang=en';
-  const music = opt.silent || opt.still ? '' : '&music=1';
-  const url = `${origin}/?${query}${lang}${opt.plain ? '' : `&capture=1${music}`}`;
-  console.log(`Recording ${url} at ${W}×${H}, ${fps} fps → ${out}`);
   await page.goto(url, {waitUntil: 'networkidle0', timeout: 120_000});
+  if (opt.plain) return {browser, page};
+  await page.waitForFunction(() => window.capture && window.atlas?.map?.loaded() && !document.getElementById('loading'), {timeout: 120_000, polling: 250});
+  await page.evaluate(() => window.capture.ready());
+  // Let the first frame settle: tiles, labels, the fog snapped to its year.
+  await new Promise(r => setTimeout(r, 1500));
+  await page.evaluate(() => (window.__clock.start(), window.capture.start()));
+  return {browser, page};
+}
+
+/** Closes a browser that may have hung: its process is killed if it will not close. */
+async function closeBrowser(browser) {
+  const proc = browser.process();
+  await Promise.race([browser.close().catch(() => {}), new Promise(r => setTimeout(r, 10_000))]);
+  if (proc && proc.exitCode === null) proc.kill('SIGKILL');
+}
+
+/** A promise that fails after `ms`, so one frozen frame does not wait out the protocol's long timeout. */
+const within = (promise, ms, what) =>
+  Promise.race([promise, new Promise((_, reject) => setTimeout(() => reject(new Error(`${what} took over ${ms / 1000} s`)), ms))]);
+
+console.log(`Recording ${url} at ${W}×${H}, ${fps} fps → ${out}`);
+let {browser, page} = await openPage();
+let ffmpeg = null;
+try {
   if (opt.plain) {
     await new Promise(r => setTimeout(r, 6000));
     await page.screenshot({path: out, type: 'png'});
     console.log(`Saved ${out}`);
     process.exit(0);
   }
-  await page.waitForFunction(() => window.capture && window.atlas?.map?.loaded() && !document.getElementById('loading'), {timeout: 120_000, polling: 250});
-  await page.evaluate(() => window.capture.ready());
-  // Let the first frame settle: tiles, labels, the fog snapped to its year.
-  await new Promise(r => setTimeout(r, 1500));
-  await page.evaluate(() => (window.__clock.start(), window.capture.start()));
-
   if (opt.still) {
     await page.evaluate(ms => window.__clock.tick(ms), 1000 / fps);
     await page.screenshot({path: out, type: 'png'});
@@ -146,9 +168,25 @@ try {
     );
     const limit = opt.frames ? Number(opt.frames) : Infinity;
     const t0 = Date.now();
+    let restarts = 0;
     for (let n = 0; n < limit; n++) {
-      const done = await page.evaluate(ms => window.__clock.tick(ms), 1000 / fps);
-      const png = await page.screenshot({type: 'png', optimizeForSpeed: true});
+      let done, png;
+      try {
+        if (opt['fail-at'] && n === Number(opt['fail-at']) && !restarts) throw new Error('a pretend freeze');
+        done = await within(page.evaluate(ms => window.__clock.tick(ms), 1000 / fps), 120_000, 'a frame');
+        png = await within(page.screenshot({type: 'png', optimizeForSpeed: true}), 120_000, 'a screenshot');
+      } catch (e) {
+        // Headless Chrome sometimes freezes on a long software-rendered run. The clock is virtual and steps the
+        // same way every time, so a fresh browser replays the frames already taken (unseen, but heard by the
+        // soundtrack's log) and carries on from this one.
+        if (++restarts > 8) throw e;
+        console.error(`\n  ${e.message} at frame ${n}; restarting the browser (${restarts}) and replaying ${n} frames…`);
+        await closeBrowser(browser);
+        ({browser, page} = await openPage());
+        for (let k = 0; k < n; k++) await within(page.evaluate(ms => window.__clock.tick(ms), 1000 / fps), 120_000, 'a replayed frame');
+        n--;
+        continue;
+      }
       if (!ffmpeg.stdin.write(png)) await new Promise(r => ffmpeg.stdin.once('drain', r));
       if (n % fps === 0) {
         const s = await page.evaluate(() => window.atlas.store.state);
@@ -175,6 +213,6 @@ try {
     console.log(`\nSaved ${out}`);
   }
 } finally {
-  await browser.close();
+  await closeBrowser(browser);
   await vite.close();
 }

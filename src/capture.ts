@@ -35,6 +35,9 @@ export interface CaptureOptions {
   pace: number;
   /** A journey: the last stop to travel to (1-based, as in ?stop=), or the whole journey. */
   until: number | null;
+  /** A journey: its sketchbook on a plate beside the map (?sketches=0 for the map alone, each stop's note
+   * under its place instead, held long enough to read). */
+  sketches: boolean;
   /** Under a journey's sketch: its caption (the story of the scene), the stop's one-line note, or nothing. */
   story: 'caption' | 'note' | 'none';
   /** Shown small in a corner. Empty for none. */
@@ -59,6 +62,7 @@ export function captureOptions(): CaptureOptions | null {
     travel: num('travel', 1.6),
     pace: Math.max(0.25, num('pace', 1)),
     until: q.has('until') ? num('until', 0) : null,
+    sketches: q.get('sketches') !== '0',
     story: q.get('story') === 'note' ? 'note' : q.get('story') === 'none' ? 'none' : 'caption',
     credit: q.get('credit') ?? 'greenere.github.io/the-world-we-know',
     zoom: q.has('zoom') ? num('zoom', 3) : null,
@@ -139,6 +143,10 @@ export class Capture {
   private wav: Uint8Array | null = null;
   private musicCredit: HTMLElement | null = null;
   private musicFade: Fade | null = null;
+  /** The map alone (?sketches=0): the stop's note under its place, and the note waiting to replace it. */
+  private noteEl: HTMLElement | null = null;
+  private noteFade: Fade | null = null;
+  private nextNote: string | null = null;
 
   constructor(
     private host: CaptureHost,
@@ -159,7 +167,11 @@ export class Capture {
       this.musicCredit = h('div.cap-music', t('Music: the atlas’s own, on FluidR3 GM samples (CC BY 3.0)'));
       this.musicFade = new Fade(this.musicCredit, 1.2);
     }
-    this.foot = h('div.cap-foot', h('div.cap-year', this.yearNum, this.yearEra), this.captionEl, this.musicCredit);
+    if (j && !opts.sketches && opts.story !== 'none') {
+      this.noteEl = h('div.cap-note');
+      this.noteFade = new Fade(this.noteEl, 4);
+    }
+    this.foot = h('div.cap-foot', h('div.cap-year', this.yearNum, this.yearEra), this.captionEl, this.noteEl, this.musicCredit);
     this.el = h('div.cap', {style: `--vp:${vp.color}`}, this.head, this.foot);
     // The title is up from the first frame: that frame is the video's thumbnail.
     this.headFade = new Fade(this.head, 3);
@@ -167,7 +179,7 @@ export class Capture {
     this.head.style.opacity = '1';
     this.captionFade = new Fade(this.captionEl, 3);
     this.loading = Promise.resolve();
-    if (j?.pictures) {
+    if (j?.pictures && opts.sketches) {
       this.plateImgs = [h('img', {alt: ''}), h('img', {alt: ''})];
       this.plateFades = this.plateImgs.map(img => new Fade(img, 2.5));
       this.plate = h('figure.cap-plate', h('div.cap-plate-img', ...this.plateImgs), h('figcaption', this.plateTitle, this.plateWhere, opts.story === 'none' ? null : this.plateStory));
@@ -253,7 +265,12 @@ export class Capture {
       this.nextText = null;
       this.textFade.target = 1;
     }
-    for (const f of [this.headFade, this.captionFade, this.plateFade, this.textFade, this.musicFade, ...this.plateFades]) f?.step(dt);
+    if (this.nextNote !== null && this.noteEl && this.noteFade!.value === 0) {
+      this.noteEl.textContent = this.nextNote;
+      this.noteFade!.target = this.nextNote ? 1 : 0;
+      this.nextNote = null;
+    }
+    for (const f of [this.headFade, this.captionFade, this.plateFade, this.textFade, this.musicFade, this.noteFade, ...this.plateFades]) f?.step(dt);
     // Time runs throughout a video, so one theme carries on rather than the two taking turns.
     if (this.opts.music) this.heard.push({t: this.clock, h: {...this.host.hearing(), moving: true}});
   }
@@ -385,11 +402,22 @@ export class Capture {
     this.page = 0;
     if (this.pages.length) this.current = this.pages[0];
     this.holdLeft = this.pages.length ? this.holdFor(this.pages[0]) : this.opts.pause / this.opts.pace;
+    if (this.noteEl) {
+      // The map alone: the stop's note is what there is to read, so the stop is held for it.
+      const geo = this.host.geo(this.host.store.state.journey)!;
+      const note = geo.stops[k]?.stop.note ? tx.stop(geo.journey.id, k, 'note', geo.stops[k].stop.note!) : '';
+      this.nextNote = note;
+      this.noteFade!.target = 0;
+      if (note) this.holdLeft = this.holdText(note);
+    }
   }
 
   /** Long enough to read the story under a sketch, at about four and a half words a second. */
   private holdFor(d: Depiction): number {
-    const story = this.story(d);
+    return this.holdText(this.story(d));
+  }
+
+  private holdText(story: string): number {
     const words = story ? story.split(/\s+/).length : 0;
     return Math.max(this.opts.sketch, Math.min(12, 1.2 + words / 4.5)) / this.opts.pace;
   }
