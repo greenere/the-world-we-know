@@ -6,6 +6,8 @@
 
 **[Open the atlas →](https://greenere.github.io/the-world-we-know/)** · in English and Chinese · runs in any modern browser
 
+**Watch:** [Following Alexander the Great, stop by stop](https://www.youtube.com/watch?v=ptMkkR1E8Jo) · [4,000 years of the known world, as Europe saw it](https://www.youtube.com/watch?v=DNynZTx8CYY)
+
 ![Zheng He's fifth voyage at Aden, 1418: China's known world, the fleet's route and its own timeline, and the journey card with a sketch of the king of Aden's gifts, giraffe included](docs/images/zheng-he-fifth-voyage.jpg)
 
 ![Marco Polo at Tabriz, 1272: Rome's known world, his whole route, and the journey card with a sketch of the Tabriz bazaar](docs/images/marco-polo.jpg)

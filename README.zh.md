@@ -6,6 +6,8 @@
 
 **[打开地图集 →](https://greenere.github.io/the-world-we-know/?lang=zh)** · 中英双语 · 任何现代浏览器均可运行
 
+**视频：**[一站一站，跟随亚历山大大帝](https://www.youtube.com/watch?v=ptMkkR1E8Jo) · [四千年来欧洲所知的世界](https://www.youtube.com/watch?v=DNynZTx8CYY)
+
 ![郑和第五次下西洋，1418年，船队在阿丹：中国所知的世界、船队航线与它自己的时间轴，以及旅程卡片上阿丹国王回赠长颈鹿等礼物的速写](docs/images/zheng-he-fifth-voyage.zh.jpg)
 
 ![马可·波罗在大不里士，1272年：罗马所知的世界、他的全程路线，以及旅程卡片上大不里士集市的速写](docs/images/marco-polo.zh.jpg)
