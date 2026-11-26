@@ -1,0 +1,11 @@
+{
+  "subject": "journey/nautilus",
+  "era": "hatteras-schooner",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-25",
+  "prompt": "Use case: illustration-story. A single landscape 3:2 illustration for the historical atlas sketchbook of Jules Verne's Twenty Thousand Leagues Under the Sea. A nineteenth-century naturalist's field sketch in graphite and sepia pen with restrained transparent watercolour washes on warm ivory paper. Fine irregular parallel hatching, economical contour lines, a few details sharply observed; leave areas of cream paper around irregular unfinished edges. One coherent scene that reads at small sizes. No captions, labels, border, binding, signatures, photorealism, modern equipment, or Disney submarine designs. Off North Carolina in 1868, a small two-masted coasting schooner heels under plain sails in the Gulf Stream. View across open water from a corner of the low iron submarine platform, distant thin trail of steamer smoke. No modern lighthouse or naval action.",
+  "reference_sources": [
+    "https://www.gutenberg.org/ebooks/164"
+  ]
+}

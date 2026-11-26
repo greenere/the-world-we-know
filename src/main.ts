@@ -21,7 +21,7 @@ import {FogField, fogAmount} from './fog/field';
 import {buildGrid, cellAt, type Grid} from './fog/grid';
 import type {FogLayerUniforms} from './fog/layer';
 import type {JourneyGeo} from './journey-geo';
-import {atYear, buildJourneyGeo, km, legDuration, placeAt, progressForYear, span, stepCount, travelled, yearAt} from './journey-geo';
+import {atYear, buildJourneyGeo, currentStopIndex, km, legDuration, progressForYear, span, stepCount, travelled, yearAt} from './journey-geo';
 import {createMap, riverFilter} from './map/basemap';
 import {type CityView, cityStatus, clampLat, type InventionView, type LivingPoint, OverlayModel, type RouteView, type Traveller} from './map/overlay';
 import {WideningFrame} from './map/widen';
@@ -76,6 +76,14 @@ async function zhFontsReady(chars: string) {
 async function fontsReady() {
   const wanted = ['16px "IM Fell English"', 'italic 16px "IM Fell English"', '16px "IM Fell English SC"', '16px "EB Garamond"'];
   await Promise.race([Promise.all(wanted.map(f => document.fonts.load(f))), new Promise(r => setTimeout(r, 2500))]);
+}
+
+function placeAt(g: JourneyGeo, progress: number): string {
+  const k = currentStopIndex(g, progress);
+  const id = g.journey.id;
+  const at = tx.stop(id, k, 'place', g.stops[k].stop.place ?? '');
+  const next = g.stops[k + 1]?.stop.place;
+  return progress - k > 0.15 && next ? t('bound for {place}', {place: tx.stop(id, k + 1, 'place', next)}) : t('at {place}', {place: at});
 }
 
 class App {

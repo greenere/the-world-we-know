@@ -18,7 +18,7 @@
       "lat": 40.69,
       "lon": -74.0,
       "note": "The frigate Abraham Lincoln sails to hunt the 'monster' that has been holing ships. Aboard are Professor Aronnax of the Paris Museum, his servant Conseil and the harpooner Ned Land (Part 1, ch. 3–4).",
-      "date": "July 1867",
+      "date": "June 1867",
       "confidence": "low"
     },
     {
@@ -130,6 +130,15 @@
     },
     {
       "year": 1868,
+      "place": "The milk sea",
+      "lat": 5.5,
+      "lon": 85.0,
+      "note": "At the entrance to the Bay of Bengal, the Nautilus crosses a patch of luminous water after nightfall. Aronnax gives no bearings for it (Part 2, ch. 1).",
+      "date": "27 January 1868",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
       "place": "The Bank of Mannar",
       "lat": 8.75,
       "lon": 79.75,
@@ -152,6 +161,16 @@
       "date": "6 February 1868"
     },
     {
+      "waypoint": true,
+      "lat": 12.5,
+      "lon": 44.2
+    },
+    {
+      "waypoint": true,
+      "lat": 12.57,
+      "lon": 43.37
+    },
+    {
       "year": 1868,
       "place": "Jeddah",
       "lat": 21.5,
@@ -168,6 +187,11 @@
       "waypoint": true,
       "lat": 27.4,
       "lon": 34.0
+    },
+    {
+      "waypoint": true,
+      "lat": 27.83,
+      "lon": 33.65
     },
     {
       "waypoint": true,
@@ -198,6 +222,11 @@
       "date": "12 February 1868"
     },
     {
+      "waypoint": true,
+      "lat": 35.35,
+      "lon": 27.2
+    },
+    {
       "year": 1868,
       "place": "Crete",
       "lat": 35.5,
@@ -207,11 +236,21 @@
       "confidence": "low"
     },
     {
+      "waypoint": true,
+      "lat": 36.38,
+      "lon": 25.3
+    },
+    {
       "year": 1868,
       "place": "Santorini",
       "lat": 36.4,
       "lon": 25.4,
       "note": "The sea boils over a new volcanic island (Part 2, ch. 6)."
+    },
+    {
+      "waypoint": true,
+      "lat": 35.99,
+      "lon": -5.32
     },
     {
       "year": 1868,
@@ -236,6 +275,15 @@
       "lon": -13.95,
       "note": "By night, on foot, to the ruins of a drowned city under a living volcano (Part 2, ch. 9).",
       "date": "19 February 1868",
+      "confidence": "low"
+    },
+    {
+      "year": 1868,
+      "place": "The volcanic harbour",
+      "lat": 28.0,
+      "lon": -18.5,
+      "note": "The Nautilus enters an extinct volcano through a submerged passage to replenish its stores of sodium. Aronnax can only guess which Atlantic island shelters Nemo’s harbour (Part 2, ch. 10).",
+      "date": "20–21 February 1868",
       "confidence": "low"
     },
     {
@@ -320,8 +368,17 @@
       "place": "The Grand Banks",
       "lat": 43.0,
       "lon": -50.5,
-      "note": "The southern edge of the Newfoundland Bank. Two days later Aronnax sees the Atlantic telegraph cable on the seabed (Part 2, ch. 19).",
+      "note": "The Nautilus skirts the southern edge of the Newfoundland fishing banks, then turns east over the Atlantic plateau (Part 2, ch. 20).",
       "date": "15 May 1868"
+    },
+    {
+      "year": 1868,
+      "place": "The Atlantic cable",
+      "lat": 46.0,
+      "lon": -41.5,
+      "note": "Heading east along the telegraph plateau, Aronnax sights the submarine cable about 500 miles from its Newfoundland landing at Heart’s Content (Part 2, ch. 20).",
+      "date": "17 May 1868",
+      "confidence": "low"
     },
     {
       "year": 1868,

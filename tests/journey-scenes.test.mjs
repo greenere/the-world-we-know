@@ -1,6 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {JourneySketchPlayback, journeyPageStep, journeySceneAt} from '../src/journey-scenes.ts';
+import nautilus from '../data/journeys/nautilus.json' with {type: 'json'};
+import nautilusSketchbook from '../data/depictions/journey/nautilus/subject.json' with {type: 'json'};
 const pages = [{id: 'start', stop: 0}, {id: 'city', stop: 3}, {id: 'objects', stop: 3}, {id: 'next', stop: 6}];
 test('playback selects the first page at each illustrated stop and spans gaps', () => {
   assert.equal(journeySceneAt(pages, 0), pages[0]);
@@ -11,6 +13,15 @@ test('playback selects the first page at each illustrated stop and spans gaps', 
 test('manual browsing survives ticks at the same illustrated stop', () => {
   assert.equal(journeySceneAt(pages, 3, pages[2]), pages[2]);
   assert.equal(journeySceneAt(pages, 5.9, pages[2]), pages[2]);
+});
+
+test('every listed Nautilus stop opens its own sketch on arrival', () => {
+  const stops = nautilus.stops.filter(stop => !stop.waypoint);
+  for (const [index, stop] of stops.entries()) {
+    const page = journeySceneAt(nautilusSketchbook.scenes, index);
+    assert.equal(page?.stop, index, stop.place);
+    assert.equal(page.place, stop.place);
+  }
 });
 test('moving to another illustrated stop clears the manual choice in either direction', () => {
   assert.equal(journeySceneAt(pages, 6, pages[2]), pages[3]);

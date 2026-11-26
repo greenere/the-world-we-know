@@ -1,0 +1,11 @@
+{
+  "subject": "journey/nautilus",
+  "era": "pack-ice-edge",
+  "provider": "openai",
+  "method": "built-in imagegen",
+  "date": "2026-11-25",
+  "prompt": "Use case: illustration-story. A single landscape 3:2 illustration for the historical atlas sketchbook of Jules Verne's Twenty Thousand Leagues Under the Sea. A nineteenth-century naturalist's field sketch in graphite and sepia pen with restrained transparent watercolour washes on warm ivory paper. Fine irregular parallel hatching, economical contour lines, a few details sharply observed; leave areas of cream paper around irregular unfinished edges. One coherent scene that reads at small sizes. No captions, labels, border, binding, signatures, photorealism, modern equipment, or Disney submarine designs. The sheer broken edge of Antarctic pack ice seen from the low bare iron platform of the Nautilus. Overlapping ice blocks close off the horizon, a few open leads in foreground narrow to nothing against the barrier. Cold muted blue and white.",
+  "reference_sources": [
+    "https://www.gutenberg.org/ebooks/164"
+  ]
+}

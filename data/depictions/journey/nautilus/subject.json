@@ -1,0 +1,685 @@
+{
+  "traveller": "Professor Pierre Aronnax, a French naturalist travelling with Conseil and Ned Land aboard Captain Nemo’s Nautilus in 1867–68. Plain nineteenth-century seagoing clothes on deck and helmeted diving dress on underwater walks.",
+  "scenes": [
+    {
+      "id": "brooklyn-wharf",
+      "stop": 0,
+      "place": "Brooklyn",
+      "title": "Leaving the wharf",
+      "caption": "Handkerchiefs wave above the crowd as the frigate pulls away from Brooklyn. The little boats that follow her down the harbour turn back at the lightship. From there the Abraham Lincoln goes on alone.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "At a timber wharf in Brooklyn in 1867, people stand close together watching a large dark steam frigate ease out into New York harbour. Three sailing masts and one smoking funnel, tug and small spectator boats distant, period jackets and bonnets, no modern bridge, skyscrapers or Statue of Liberty. Low view along the planks past the cast-off mooring line toward the departing ship.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.3",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "horn-outbound",
+      "stop": 1,
+      "place": "Cape Horn",
+      "title": "The Horn from the frigate",
+      "caption": "From the deck of the Abraham Lincoln, Cape Horn is a solitary rock fifteen miles to the north. The frigate turns northwest, and by the next day her screw is turning in Pacific water.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Distant high black island headland of Cape Horn, from the afterdeck of the Abraham Lincoln, a three-masted 1860s US steam frigate. Stays, rigging and the taut curve of a sail frame one side; slate winter swells and a clear southern afternoon horizon. No submarine.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.5",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "iron-deck",
+      "stop": 2,
+      "place": "The encounter",
+      "title": "Rivets in the dark",
+      "caption": "Aronnax runs a hand over the back that has carried the three men out of the water. Under his fingers are smooth plates joined by rivets. Ned stamps his foot, and the hollow hull rings.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Three exhausted men in wet 1860s sailor clothes crouch together on a low, gently convex expanse of dark riveted iron barely above the Pacific swells. Predawn, close viewpoint at water level, seams and bolts under their hands. No ship superstructure.",
+      "traveller": true,
+      "evidence": {
+        "passage": "I.7",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "kuroshio-noon",
+      "stop": 3,
+      "place": "The Kuroshio",
+      "title": "The noon sight",
+      "caption": "Nemo holds his sextant so still that Aronnax watches his hand. Below deck, the captain has clocks set to three different meridians. For his French guest he gives the reading from Paris.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "A solitary dark-coated Captain Nemo taking a noon sight with a small brass sextant held to one eye on the flat iron platform of the Nautilus. Open Pacific, a crisp horizon and warm blue water; the rim of a low hatch at his feet.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.13",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "crespo-forest",
+      "stop": 4,
+      "place": "Island of Crespo",
+      "title": "Branches that spring back",
+      "caption": "Every stem in the forest of Crespo grows straight up through the water. Aronnax pushes a branch aside to pass. As soon as he lets go, it stands upright again.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Inside a tall submerged grove: stiff brown kelp fronds grow straight upward like slim trees. Two small nineteenth-century helmeted walkers wearing metal air reservoirs, with no lines to the surface, look up from the sandy floor; shafts of blue-green light.",
+      "traveller": true,
+      "evidence": {
+        "passage": "I.16",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "hawaii-fields",
+      "stop": 5,
+      "place": "The Sandwich Islands",
+      "title": "Fields below Mauna Kea",
+      "caption": "From the platform Aronnax can pick out the cultivated strip along the coast of Hawaii. Behind the fields he sees one ridge after another, with the broad summit of Mauna Kea above them.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "The cultivated coastal belt of the island of Hawaii viewed offshore in morning light, modest fields along the shore, behind them sloping green ridges and the broad dome of Mauna Kea above the haze, layered broadside composition. No modern structures or eruption.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.17",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "nuku-hiva-catch",
+      "stop": 6,
+      "place": "Nuku Hiva",
+      "title": "Blue fins and a golden tail",
+      "caption": "Nuku Hiva stays on the horizon while the nets bring something of its waters aboard. Among the catch Aronnax picks out the dolphinfish by its blue fins and golden tail.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Fresh dolphinfish with a long blunt forehead, blue-green dorsal fin and golden forked tail lying in damp knotted net on a low iron deck. Soft wooded Marquesan mountains rise distantly out of the Pacific. Naturalist specimen study.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.17",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "atoll-wall",
+      "stop": 7,
+      "place": "Clermont-Tonnerre",
+      "title": "The wall below the reef",
+      "caption": "Alongside the atoll, the electric lamps light up a wall that falls away for hundreds of metres. Conseil wants to know how long it took creatures so small to raise a reef so high.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Underwater side view along the steep living coral rampart of a Tuamotu atoll dropping away into blue depth. Shallow branching coral on the lip gives way to shadowed limestone lower down. Light from the unseen submarine sweeps the face. No labels or cutaway.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.18",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "tahiti-peaks",
+      "stop": 8,
+      "place": "Tahiti",
+      "title": "Peaks to windward",
+      "caption": "In the morning Aronnax can see Tahiti’s high peaks several miles to windward. The island slips astern, but mackerel and bonito from these waters find their way to the table aboard the Nautilus.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Above water, a small gap between wind-driven clouds reveals the jagged twin ridges and high blue-green interior of Tahiti several miles to windward. Slanting morning light and low cloud hide much of the shore. Open ocean fills foreground.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.18",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "vanikoro-papers",
+      "stop": 9,
+      "place": "Vanikoro",
+      "title": "The papers in the tin",
+      "caption": "Salt water has eaten into the box. Inside, La Pérouse’s sailing orders are still legible, down to the notes that Louis XVI wrote in the margins. Nemo lets Aronnax read them.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "A battered tin box sits open on a polished saloon table; a few folded yellowed papers rest inside. The captain’s hand lifts a sheet by its corner, tropical daylight at a small port behind him. No legible letters or map.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.18",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "torres-breadfruit",
+      "stop": 10,
+      "place": "Torres Strait",
+      "title": "Breadfruit in the embers",
+      "caption": "Ned cuts a breadfruit into thick slices and lays them on the embers. A thin crust forms around the soft white centre. After weeks of eating from the sea, the three men have something very like fresh bread.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "On the shore of a tropical island in Torres Strait, Ned Land in simple 1860s seagoing clothes roasts thick slices of breadfruit on small glowing embers, rough green round breadfruit and broad lobed leaves nearby, laden skiff on sand, low reef beyond. Hands tending food are the focus.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.20",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "wessel-breakers",
+      "stop": 11,
+      "place": "Cape Wessel",
+      "title": "Breakers on either side",
+      "caption": "Beyond Cape Wessel the reefs stand farther apart. The charts give them in enough detail for the Nautilus to leave one line of breakers to port and the next reef to starboard.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Looking west across scattered reefs in the Arafura Sea near Cape Wessel. White breakers curl in short lines over separate ochre patches beneath turquoise water. Between them a long quiet blue lane opens toward a low distant headland. Offshore view.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.22",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "coral-cross",
+      "stop": 12,
+      "place": "The coral cemetery",
+      "title": "A cross of coral",
+      "caption": "A red coral cross rises from a heap of stones. The crew kneel around the new grave. When the men take their leave, each holds out a hand over the sand in a last farewell.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Subdued underwater funeral, a rough red coral cross among branching growths and a low mound of fresh seabed. A few crewmen with rounded copper diving helmets and canvas suits kneel quietly, lamps low. Sparse red in otherwise green-grey water.",
+      "traveller": false,
+      "evidence": {
+        "passage": "I.23",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "keeling-shell",
+      "stop": 13,
+      "place": "Keeling Island",
+      "title": "A shell for the collection",
+      "caption": "Coconut palms mark the low shore as the crew haul in the nets. Aronnax sorts through the catch with Nemo’s collection in mind and sets aside a spiral shell.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "A wet heavy spiral turban shell with a knobbled whorl just lifted out of a coarse fishing net onto the plain iron platform of an 1860s submarine. Beyond it the narrow shoreline of the Keeling atoll is lined with coconut palms. Foreground shell and net clearly visible.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.1",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "milk-sea",
+      "stop": 14,
+      "place": "The milk sea",
+      "title": "Light on the water",
+      "caption": "The stars are out, but the sea is brighter than the sky. Near midnight the bow slips back into dark water. Looking astern, Aronnax can still see the pale glow along the horizon.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "A stretch of pale luminous seawater at night, smooth swells softly glowing off-white to the horizon, sky dark above with faint reflected light. Two tiny figures at the far edge of a narrow iron submarine platform in foreground. Soft continuous luminous field, no sparkling wave tips.",
+      "traveller": true,
+      "evidence": {
+        "passage": "II.1",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "mannar-diver",
+      "stop": 15,
+      "place": "The Bank of Mannar",
+      "title": "A bag of oysters",
+      "caption": "A stone on a rope carries the pearl fisher down from his boat. He fills the little bag at his waist with oysters, then kicks back to the surface for another breath. Nemo and his visitors watch from below.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "A lone Tamil pearl diver with a waistcloth, seen underwater in profile, reaches for a small oyster on a shallow bank. Woven collecting bag at his waist and weighted line descending from a little boat above. Dappled sunlight across the sand. No helmet on the pearl diver, no sharks.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.3",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "kiltan-reef",
+      "stop": 16,
+      "place": "Kiltan",
+      "title": "Channels among the reefs",
+      "caption": "Kiltan scarcely rises above its reef. With Ceylon astern, the course threads narrow channels between coral islands. From the surface the white water breaking along their rims is easier to see than the land.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Seen from just above the shallows at Kiltan, Lakshadweep, ripples break over the pale coral reef rim of a flat sandy palm island. A narrow winding channel of deeper dark blue water parallels the edge. No mountains, harbour or modern boats.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.4",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "aden-minarets",
+      "stop": 17,
+      "place": "Aden",
+      "title": "Minarets on the headland",
+      "caption": "For a moment Aronnax can distinguish the many-sided minarets of Aden against the bare hills. He expects Nemo to turn back here. By the following day they are on their way through Bab el Mandeb.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Aden in the 1860s as glimpsed from the sea: slender faceted minarets and low stone buildings among bare jagged volcanic hills on the peninsula. Restrained ochre light, dark slopes and grey-blue water, a small lateen sail for scale, no modern port infrastructure.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.4",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "red-sea-dugong",
+      "stop": 18,
+      "place": "Jeddah",
+      "title": "A muzzle above water",
+      "caption": "From a distance the dugong looks asleep on the Red Sea. When it comes up for air, Aronnax can see the wide nostrils on top of its muzzle. Then its back slips under again.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Quiet close water-level study of a living solitary dugong surfacing in the nineteenth-century Red Sea near Jeddah. The broad downturned whiskered muzzle breaks the surface to breathe; one curved flipper and a faint crescent tail visible under clear green water. No hunters or injuries.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.5",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "tunnel-wheel",
+      "stop": 19,
+      "place": "The Arabian Tunnel",
+      "title": "Nemo at the wheel",
+      "caption": "Aronnax stands beside Nemo in the pilot house. In the electric light he can see the rock walls stream past the glass. The roar of the current fills the little room.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "View from behind Captain Nemo at the pilot wheel in a low iron pilothouse. Through thick forward windows the submarine’s electric lantern lights rough flooded rock walls sweeping past. Strong contrast of a small pale aperture surrounded by dark metal and stone. Unadorned 1860s engineering.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.5",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "karpathos-granite",
+      "stop": 20,
+      "place": "Karpathos",
+      "title": "The island below the waterline",
+      "caption": "Aronnax knows Karpathos as the island where Proteus once tended his flocks in the old stories. His whole view of it from the saloon is a stretch of granite passing beyond the glass.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Underwater view of the submarine base of Karpathos, massive rough pink-grey granitic blocks step down into dark Aegean water. Seen past the narrow brass edge of the Nautilus saloon glass, raking lamplight brings out the grain of the stone.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.6",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "crete-diver",
+      "stop": 21,
+      "place": "Crete",
+      "title": "A hand at the glass",
+      "caption": "The swimmer presses his face close to the saloon window. Aronnax thinks someone needs rescuing. Nemo makes a sign, the man answers with one hand, and the two part without a word.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "A barefoot Cretan free diver with dark hair in simple waistcloth swims toward the broad observation glass of the Nautilus, raising his open hand in greeting. From the dim saloon, dark rim of the window in foreground, figure fully submerged in blue-green Aegean water. No helmet or air tanks.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.6",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "santorini-vents",
+      "stop": 22,
+      "place": "Santorini",
+      "title": "An island in the making",
+      "caption": "A current flows east from the Atlantic at the surface. Deeper in the strait another current runs west. It carries the Nautilus through the narrow passage and out into the open Atlantic.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Undersea volcanic landscape off Santorini in the 1860s. Ochre and reddish mineral stains on black basalt, a pale plume of bubbles and cloudy water rising from a fissure into green water. Quiet close geological sketch. No surface island catastrophe.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.6",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "gibraltar-current",
+      "stop": 23,
+      "place": "The Strait of Gibraltar",
+      "title": "The lower current",
+      "caption": "Water from the Atlantic runs east at the surface. Down in the strait the flow reverses. The Nautilus rides that deeper current west, and within a few minutes the Mediterranean is astern.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Submerged in the Strait of Gibraltar, seen from the side, a small long low spindle-shaped 1860s iron submarine carried west through a gap between dark underwater rock shoulders. Small shoal and suspended particles angled along the flow, blue open Atlantic ahead, no modern conning tower or props diagram.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.7",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "vigo-coins",
+      "stop": 24,
+      "place": "Vigo Bay",
+      "title": "Coins in the silt",
+      "caption": "In the light outside the saloon Aronnax watches men stoop among the wrecked timbers. A chest has come apart on the bottom. The sailors gather its scattered coins, then go back for another load.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Close underwater still life of scattered old Spanish silver coins and an open decayed wooden chest amid the ribs of a sunken galleon in Vigo Bay. A single gloved hand of a diver gathers coins into a plain sack in the light of an electric lamp. Barnacles and silt, no lettering.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.8",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "atlantis-ruins",
+      "stop": 25,
+      "place": "Atlantis",
+      "title": "Streets by volcanic light",
+      "caption": "Nemo leads Aronnax up a slope in the dark. From the crest the professor can trace streets between broken columns. The red light that reaches them comes from a volcano on the sea floor.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Distant broken columns, arches and ruined streets on the ocean floor faintly illuminated by a red submarine volcano on the far horizon. From a rocky underwater slope two tiny brass-helmeted divers look down over the drowned city. A quiet desolate landscape, no people in the ruins.",
+      "traveller": true,
+      "evidence": {
+        "passage": "II.9",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "crater-harbour",
+      "stop": 26,
+      "place": "The volcanic harbour",
+      "title": "A patch of sky",
+      "caption": "Aronnax climbs onto the platform expecting morning light. Far overhead he can make out a small patch of sky. The air he is breathing has come down through the mouth of the crater.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Inside a vast hollow volcanic cone filled by a still lake. A small round hole high overhead admits daylight; it makes a pale patch on the water. The long low spindle-shaped iron Nautilus rests beside a rocky shore, no exterior decks stacked high. View from a ledge looking across.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.10",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "sargasso-weed",
+      "stop": 27,
+      "place": "The Sargasso Sea",
+      "title": "What the weed holds",
+      "caption": "Small floats like berries keep the brown weed at the surface. Among its branches Aronnax can pick out bits of timber from lost ships. The Nautilus has room to travel beneath the tangle.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Water-level naturalist study of a floating mat of golden-brown sargassum in the open Atlantic. Delicate branching blades and round air bladders in focus, a weathered timber spar tangled at the edge; long calm surface to horizon with no land.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.11",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "deep-sea-camera",
+      "stop": 28,
+      "place": "The deep sounding",
+      "title": "A camera in the saloon",
+      "caption": "Aronnax wishes he could take home the sight of these bare rocks. Nemo has a camera brought to the window. The boat holds still while its electric lamps give the photographic plate enough light for an exposure.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Inside the dry 1860s saloon of the Nautilus, a period wooden bellows plate camera on a wooden tripod is aimed directly out through a broad observation glass. Beyond the glass the ship’s electric lamp picks out bare black rock ridges on the deep ocean floor. No sunlight, no modern equipment.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.11",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "pack-ice-edge",
+      "stop": 29,
+      "place": "The ice barrier",
+      "title": "Where the leads close",
+      "caption": "For days the Nautilus has followed openings between the floes. Now the white blocks meet ahead of her. From the platform Aronnax can trace the edge of the pack as far as he can see in either direction.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "The sheer broken edge of Antarctic pack ice seen from the low bare iron platform of the Nautilus. Overlapping ice blocks close off the horizon, a few open leads in foreground narrow to nothing against the barrier. Cold muted blue and white.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.13",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "pole-sun",
+      "stop": 30,
+      "place": "The South Pole",
+      "title": "The last of the sun",
+      "caption": "At noon Nemo watches the rim of the sun touch the horizon. In the polar sea Verne imagined, this is the last sunset before six months of darkness. The black flag goes up on the rock.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "A small black pennant with one golden initial N unfurls from a pole beside a lone dark-coated Nemo on a low bare rock promontory. The setting sun rests on an ocean horizon interrupted by drift ice. Illustrate the imaginary open polar sea of Verne, no station, no other lettering.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.14",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "ice-ceiling",
+      "stop": 31,
+      "place": "Under the ice",
+      "title": "Taking turns on the ice",
+      "caption": "The men go out in shifts with air on their backs. Each time they return through the hatch, the air inside the Nautilus is a little harder to breathe. Outside, the cut in the ice is slowly deepening.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Seen from inside an 1860s submarine saloon, a dim blue-green wall of ice stands close outside the broad observation glass. On the other side a small helmeted crewman works on the thick ice floor by electric lamplight. Show cramped water-filled space between ice surfaces, muted cold colours.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.16",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "horn-homeward",
+      "stop": 32,
+      "place": "Cape Horn",
+      "title": "North by the Atlantic",
+      "caption": "At seven in the evening the Nautilus is level with the Horn again. Aronnax has been following the mate’s pencil marks on the chart. Tonight he can tell Ned and Conseil that their course leads north into the Atlantic.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "At dusk on the return from the polar ice, Cape Horn is a small dark silhouette against a clearing sky. From above and behind, the long nearly submerged spindle-shaped iron hull of Nemo’s Nautilus traces a faint wake heading into open Atlantic water. Bare low platform, no masts or sails.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.17",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "amazon-water",
+      "stop": 33,
+      "place": "The mouth of the Amazon",
+      "title": "River water at sea",
+      "caption": "A pale wash spreads from the river mouth into the darker Atlantic. It carries so much fresh water that the sea is less salty for leagues offshore.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Off the Amazon mouth, surface view of an immense tongue of pale muddy river water spreading into deeper blue Atlantic swells. A low distant Brazilian coast barely separates sky and water. The iron lip of a submarine platform at bottom right establishes viewpoint.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.17",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "squid-window",
+      "stop": 34,
+      "place": "The Bahamas",
+      "title": "An eye at the window",
+      "caption": "Aronnax has been trying to describe a giant squid when one swims alongside. There is time to see the suckers on its arms and the colour of its eye. Then the propeller stops turning.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "View from the dark saloon through a broad oval observation window. A huge solitary eye with a restrained sea-green iris and the curled sucker-lined arm of a reddish cephalopod pass just outside, its mantle fading into green water. Naturalist pencil detail on suckers; keep creature anatomy coherent.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.18",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "hatteras-schooner",
+      "stop": 35,
+      "place": "Cape Hatteras",
+      "title": "Sails in the Gulf Stream",
+      "caption": "Schooners work along the coast and steamers pass on their way north. To Ned each sail off Cape Hatteras means someone might pick them up. The shore itself is still thirty miles away.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Off North Carolina in 1868, a small two-masted coasting schooner heels under plain sails in the Gulf Stream. View across open water from a corner of the low iron submarine platform, distant thin trail of steamer smoke. No modern lighthouse or naval action.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.19",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "grand-banks-cod",
+      "stop": 36,
+      "place": "The Grand Banks",
+      "title": "Stones among the shells",
+      "caption": "Cod cruise over a bank strewn with pale shells. Among them lie boulders from farther north. Aronnax pictures the drifting ice that carried the stones out to sea and dropped them here.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Newfoundland Grand Banks underwater naturalist study. Several Atlantic cod with mottled backs, three dorsal fins and small chin barbels hover above a gravel bank littered with shells and scattered rounded boulders. The submarine’s light falls across the steep edge.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.20",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "atlantic-cable",
+      "stop": 37,
+      "place": "The Atlantic cable",
+      "title": "A line across the seabed",
+      "caption": "Conseil spots a long dark shape on the bottom and takes it for a sea serpent. It keeps its course as the Nautilus passes overhead. Aronnax tells him that messages travel along it between America and Europe.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Close study of one thin, dark 1860s armoured telegraph cable lying slack across pale Atlantic ooze. A deep-sea star next to it establishes scale. Seen in a pool of light from a passing vessel; in the distance the slender line vanishes over a low rise. No thick modern plastic piping, wires or text.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.20",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "vengeur-wreck",
+      "stop": 38,
+      "place": "The wreck of the Vengeur",
+      "title": "A hull under white shells",
+      "caption": "At first Aronnax sees only a pale mound. Beneath the crust of shells he begins to make out a hull with all its masts gone. Beside him, Nemo knows the ship well enough to tell its story from the day it was launched.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "The Vengeur du Peuple as a very old French wooden warship wreck on the Atlantic seabed. Its mastless timber ribs emerge from silt in the pale electric light of an unseen submarine. Quiet broadside view across dark water, no battle, flags or people.",
+      "traveller": false,
+      "evidence": {
+        "passage": "II.20",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    },
+    {
+      "id": "lofoten-notebook",
+      "stop": 39,
+      "place": "The Maelstrom",
+      "title": "The notebook ashore",
+      "caption": "In a fisherman’s cottage in the Lofoten Islands, Aronnax goes back over the notes he kept at sea. All three companions have reached land. What became of Nemo is the one thing the professor cannot put in his account.",
+      "sources": [
+        "verne-1870"
+      ],
+      "confidence": "low",
+      "prompt": "Quiet interior of a small nineteenth-century Lofoten fisherman’s cottage. A tired French naturalist in plain 1860s clothes at a rough table revises his loosely gathered manuscript, one hand resting on a page. Through the small square window there is grey Norwegian water and a jagged island silhouette. Fishing nets drying on a peg. The written marks are indistinct. No modern objects.",
+      "traveller": true,
+      "evidence": {
+        "passage": "II.22–23",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    }
+  ]
+}
